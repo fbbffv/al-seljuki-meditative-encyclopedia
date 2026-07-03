@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fbbffv.github.io/al-seljuki-meditative-encyclopedia/sitemap.xml
