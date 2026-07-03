@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الخُنَّسِ الْجَوَارِ الْكُنَّسِ — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#08060f;--bg:#f4f0fc;--bg2:#e8e0f8;
+  --cosmos:#1a0a3e;--cm:#3a1a8a;--clt:#7a50d0;
+  --cd:#060310;--ct:#e8d8ff;--cg:#b090ff;
+  --silver:#a090c0;--gold:#b8860b;--gold-m:#c9a84c;
+  --div:#9878d0;--mist:#2a1a5a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 15% 0%,rgba(26,10,62,.09) 0%,transparent 55%),radial-gradient(ellipse at 85% 100%,rgba(122,80,208,.06) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--cm),var(--clt));z-index:400;transform-origin:top;}
+.hdr{background:var(--cd);border-bottom:2px solid var(--cm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.7);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--clt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--cg);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--ct);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--cosmos);color:var(--cg);border:1px solid rgba(122,80,208,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--cm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#04020c;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(122,80,208,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--clt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(122,80,208,.2);}
+.toc-s{color:rgba(122,80,208,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#8068b0;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--ct);background:rgba(122,80,208,.1);border-right-color:var(--clt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--cm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--clt);}
+.hcat{display:inline-block;background:var(--cosmos);color:var(--ct);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.6rem;font-weight:700;color:var(--cd);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--cm);border-radius:50%;}
+.vb{background:var(--cd);border:1px solid rgba(122,80,208,.45);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(122,80,208,.13),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--ct);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.42rem;}
+.vr{color:var(--cg);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#08060f;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--cm);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--cosmos);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--cm);background:rgba(26,10,62,.06);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--cm);font-weight:700;text-align:center;margin:9px 0;}
+.trio-list{list-style:none;padding:0;margin:10px 0 20px;}
+.trio-list li{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--cosmos);text-align:center;padding:8px 0;border-bottom:1px dashed var(--div);}
+.trio-list li:last-child{border-bottom:none;}
+.tuba-list{list-style:none;padding:0;margin:10px 0;}
+.tuba-list li{font-family:'Scheherazade New',serif;font-size:1.25rem;color:var(--cd);text-align:center;padding:10px 0;border-bottom:1px dashed var(--div);font-weight:600;}
+.tuba-list li:last-child{border-bottom:none;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--cd);color:var(--clt);border:2px solid var(--cm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--cd);border-bottom:2px solid var(--clt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--cosmos);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.c{border-right:5px solid var(--cm);}
+.card.c2{border-right:5px solid var(--cosmos);}
+.card.c3{border-right:5px solid var(--clt);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#060310;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#08060f;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--cm);color:var(--ct);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--cd);color:var(--cg);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--cm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(122,80,208,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#060310;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ex{color:var(--cosmos);font-style:italic;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#060310;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#060310;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--clt);border-bottom:2px solid var(--clt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--clt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#04020c,#0c0620);border:1px solid rgba(122,80,208,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--clt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(122,80,208,.25);}
+.ci{color:#a890d8;padding:9px 0;border-bottom:1px dashed rgba(122,80,208,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--ct);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--cg);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#04020c,#0a0620);border:1px solid rgba(122,80,208,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#a890d8;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--ct);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--cm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#060310;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#08060f;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--cm);font-size:.85em;top:11px;}
+.asec{background:var(--cd);border:1px solid rgba(122,80,208,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--cm),var(--cosmos));border:3px solid var(--clt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--ct);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--cg);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#a890d8;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(122,80,208,.1);border:1px solid rgba(122,80,208,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--cg);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--ct);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(122,80,208,.16);color:var(--clt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(122,80,208,.28);}
+.orn{text-align:center;color:var(--clt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--cd);color:#3a2a6a;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(122,80,208,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--clt);}
+footer .fb span{color:var(--cg);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:2.1rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.28rem;}.hero h1{font-size:1.7rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">⌂ الفهرس الرئيسي</a>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">حِينَ يَخْتَبِئُ الظَّاهِرُ وَتَتَكَشَّفُ الْحَقِيقَةُ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تدبر كوني · التكوير · مقالة فلسفية روحية</div>
+  <h1>حِينَ يَخْتَبِئُ الظَّاهِرُ وَتَتَكَشَّفُ الْحَقِيقَةُ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>التكوير: ١٥–١٦</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿فَلَا أُقْسِمُ بِالْخُنَّسِ ۝ الْجَوَارِ الْكُنَّسِ﴾</div>
+    <div class="vr">سورة التكوير، الآيتان ١٥–١٦</div>
+  </div>
+  <div class="abody">
+    <p>لَيْسَتْ هَذِهِ الْكَلِمَاتُ الْقُرْآنِيَّةُ إِشَارَاتٍ إِلَى أَجْرَامٍ تَسْرِي فِي أَعْمَاقِ السَّمَاءِ فَحَسْبُ، بَلْ هِيَ إِيحَاءَاتٌ وَاسِعَةُ الْمَدَى، تَمْتَدُّ مِنْ آفَاقِ الْكَوْنِ السَّحِيقَةِ إِلَى أَغْوَارِ النَّفْسِ الْإِنْسَانِيَّةِ، وَمِنْ حَرَكَةِ النُّجُومِ فِي الْفَضَاءِ إِلَى حَرَكَةِ الْأَحْدَاثِ فِي حَيَاةِ الْبَشَرِ.</p>
+
+    <p style="font-family:'Scheherazade New',serif;font-size:1.4rem;font-weight:700;text-align:center;color:var(--cosmos);padding:16px 0;">الْخُنَّسِ...</p>
+
+    <div class="hl">كُلُّ مَا يَظْهَرُ ثُمَّ يَتَوَارَى.</div>
+    <div class="hl">كُلُّ مَا يَلُوحُ لِلْعَيْنِ ثُمَّ يَغِيبُ.</div>
+    <div class="hl">كُلُّ مَا يَخْدَعُ النَّاظِرَ بِسَطْحِهِ بَيْنَمَا يُخْفِي فِي دَاخِلِهِ حَقِيقَةً أُخْرَى.</div>
+
+    <p>إِنَّهَا سُنَّةٌ مِنْ سُنَنِ اللهِ فِي هَذَا الْوُجُودِ. فَكَمْ مِنْ قُوَّةٍ ظَنَّهَا النَّاسُ خَالِدَةً ثُمَّ خَنَسَتْ وَاخْتَفَتْ! وَكَمْ مِنْ دَوْلَةٍ مَلَأَتِ الدُّنْيَا ضَجِيجاً ثُمَّ أَصْبَحَتْ ذِكْرَى فِي بُطُونِ الْكُتُبِ! وَكَمْ مِنْ ظَالِمٍ مَلَأَ الْأَرْضَ بَطْشاً، حَتَّى إِذَا ظَنَّ النَّاسُ أَنَّهُ لَا يُقْهَرُ، خَانَهُ غُرُورُهُ، وَخَنَسَ سُلْطَانُهُ، وَتَبَدَّدَتْ هَيْبَتُهُ كَمَا يَتَبَدَّدُ الضَّبَابُ أَمَامَ شَمْسِ الصَّبَاحِ.</p>
+
+    <p>وَالْخُنَسُ فِي حَيَاةِ الْقُلُوبِ أَكْثَرُ حُضُوراً وَأَشَدُّ أَثَراً. فَالشَّيْطَانُ نَفْسُهُ وَصَفَهُ اللهُ بِالْخَنَّاسِ. يَقْتَرِبُ ثُمَّ يَبْتَعِدُ. يُوَسْوِسُ ثُمَّ يَخْتَفِي. يَتَسَلَّلُ إِلَى الْقَلْبِ إِذَا غَفَلَ عَنْ رَبِّهِ، فَإِذَا ذَكَرَ الْعَبْدُ رَبَّهُ خَنَسَ وَانْكَمَشَ وَتَرَاجَعَ.</p>
+
+    <div class="hl">وَالشَّهَوَاتُ خُنَّسٌ. تَتَلَأْلَأُ فِي أَوَّلِ الطَّرِيقِ كَأَنَّهَا نَعِيمٌ مُقِيمٌ، ثُمَّ لَا تَلْبَثُ أَنْ تَنْكَشِفَ عَنْ حَسْرَةٍ وَأَلَمٍ.</div>
+    <div class="hl">وَالدُّنْيَا كُلُّهَا خُنَّسٌ. تُقْبِلُ عَلَى النَّاسِ بِزُخْرُفِهَا وَبَرِيقِهَا، ثُمَّ تَتْرُكُهُمْ عِنْدَ أَبْوَابِ الْقُبُورِ فُرَادَى لَا يَحْمِلُونَ مِنْهَا إِلَّا أَعْمَالَهُمْ.</div>
+
+    <p style="font-family:'Scheherazade New',serif;font-size:1.4rem;font-weight:700;text-align:center;color:var(--cosmos);padding:16px 0;">أَمَّا الْجَوَارِ...</p>
+
+    <p>فَهِيَ حَرَكَةُ الْحَيَاةِ الَّتِي لَا تَتَوَقَّفُ.</p>
+
+    <ul class="trio-list">
+      <li>كُلُّ شَيْءٍ يَجْرِي.</li>
+      <li>النُّجُومُ تَجْرِي.</li>
+      <li>وَالْأَيَّامُ تَجْرِي.</li>
+      <li>وَالْأَعْمَارُ تَجْرِي.</li>
+      <li>وَالْأَقْدَارُ تَجْرِي.</li>
+      <li>وَالْإِنْسَانُ يَجْرِي فِي رِحْلَتِهِ الطَّوِيلَةِ بَيْنَ الْمِيلَادِ وَالرَّحِيلِ.</li>
+    </ul>
+
+    <p>لَا سُكُونَ فِي هَذَا الْكَوْنِ إِلَّا فِي ظَنِّ الْغَافِلِينَ. فَكُلُّ شَيْءٍ يَتَحَرَّكُ نَحْوَ غَايَةٍ أَرَادَهَا اللهُ. وَكُلُّ شَيْءٍ يَسِيرُ وَفْقَ نِظَامٍ دَقِيقٍ لَا يَخْتَلُّ. سُبْحَانَ مَنْ أَمْسَكَ هَذَا الْكَوْنَ الْهَائِلَ بِكَلِمَةٍ وَاحِدَةٍ: كُنْ.</p>
+
+    <p style="font-family:'Scheherazade New',serif;font-size:1.4rem;font-weight:700;text-align:center;color:var(--cosmos);padding:16px 0;">ثُمَّ تَأْتِي الْكُنَّسُ...</p>
+
+    <p>الْكَلِمَةُ الَّتِي تَحْمِلُ مَعْنَى الِاخْتِفَاءِ بَعْدَ الْجَرَيَانِ. وَمَعْنَى الِانْزِوَاءِ بَعْدَ الظُّهُورِ. كَأَنَّهَا تُذَكِّرُ الْإِنْسَانَ بِالنِّهَايَةِ الَّتِي تَنْتَظِرُ كُلَّ مُتَحَرِّكٍ.</p>
+
+    <ul class="trio-list">
+      <li>فَالنُّجُومُ تَغِيبُ.</li>
+      <li>وَالشَّمْسُ تَغْرُبُ.</li>
+      <li>وَالْجُيُوشُ تَنْسَحِبُ.</li>
+      <li>وَالْمُلُوكُ يَرْحَلُونَ.</li>
+      <li>وَالْأَصْوَاتُ تَخْفُتُ.</li>
+      <li>وَالْأَجْسَادُ تَعُودُ إِلَى التُّرَابِ.</li>
+    </ul>
+
+    <p>مَا مِنْ شَيْءٍ فِي هَذِهِ الدُّنْيَا إِلَّا وَلَهُ كِنَاسٌ يَأْوِي إِلَيْهِ فِي النِّهَايَةِ. أَمَّا الْمُؤْمِنُ فَكِنَاسُهُ الْحَقِيقِيُّ هُوَ رَحْمَةُ اللهِ. وَأَمَّا الْغَافِلُ فَكِنَاسُهُ غَفْلَتُهُ الَّتِي تَأْكُلُهُ حَتَّى يَلْقَى رَبَّهُ.</p>
+
+    <p>إِنَّ الْآيَةَ تَرْسُمُ مَشْهَداً كَوْنِيّاً هَائِلاً، لَكِنَّهَا فِي الْوَقْتِ ذَاتِهِ تَرْسُمُ مَشْهَدَ الْإِنْسَانِ. فَالْإِنْسَانُ يَظْهَرُ ثُمَّ يَخْتَفِي. وَيَجْرِي فِي حَيَاتِهِ كُلِّهَا. ثُمَّ يَكْنِسُ إِلَى مَصِيرِهِ الْأَخِيرِ.</p>
+
+    <ul class="tuba-list">
+      <li>فَطُوبَى لِمَنْ جَعَلَ جَرْيَهُ إِلَى اللهِ.</li>
+      <li>وَطُوبَى لِمَنْ كَانَتْ خَنَسَاتُهُ رُجُوعاً إِلَى الْحَقِّ لَا هُرُوباً مِنْهُ.</li>
+      <li>وَطُوبَى لِمَنْ أَدْرَكَ أَنَّ وَرَاءَ هَذِهِ الْأَفْلَاكِ الْجَارِيَةِ رَبّاً عَظِيماً يُدَبِّرُ الْأَمْرَ كُلَّهُ بِحِكْمَةٍ وَرَحْمَةٍ وَعَدْلٍ.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="sub"><h3>بلاغة الآيتين الكريمتين — التكوير ١٥–١٦</h3>
+    <div class="card c"><div class="ct">أولاً: القَسَم بـ﴿فَلَا أُقْسِمُ﴾ — التوكيد بالنفي</div><p>«فَلَا أُقْسِمُ» أسلوب بلاغي فريد في القرآن — اختلف العلماء في دلالته على قولين: الأول أن «لا» زائدة للتوكيد لا للنفي (فالمعنى: أُقسم). الثاني أن المعنى: الأمر أعظم من أن يُقسَم عليه، فهو مُقرَّر بلا قسم. وكلا القولين يُفيد التعظيم والتأكيد — والمُقسَم به (الخنس) أمرٌ عظيم يستحق هذا الأسلوب الاستثنائي.</p></div>
+    <div class="card c2"><div class="ct">ثانياً: «الخُنَّسِ» صيغة المبالغة — الكثرة والتكرار</div><p>«الخُنَّس» جمع «خانِس» على وزن «فُعَّل» صيغة مبالغة تدل على كثرة الخنوس وتكراره — ليس خنوساً واحداً بل خنوس متكرر مستمر. وهذا يُصوّر النجوم في حالة تراجع دائم ومتجدد، وكذلك كل ما يُشبهها من أحداث الحياة.</p></div>
+    <div class="card c"><div class="ct">ثالثاً: التتابع الثلاثي «الخُنَّسِ الْجَوَارِ الْكُنَّسِ» — مراحل الوجود</div><p>تتابعت ثلاث صفات متتالية: الخنوس (التواري)، الجري (الحركة)، الكنوس (الإيواء والاختفاء) — وهذا الترتيب يُصوّر دورة الوجود كاملة: ظهور وتوارٍ، ثم حركة وجريان، ثم اختفاء نهائي. دورة تنطبق على النجوم وعلى الإنسان معاً.</p></div>
+    <div class="card c2"><div class="ct">رابعاً: الجمع بين الكوني والإنساني — التوظيف الشمولي</div><p>أعظم ما في هاتين الآيتين أن المُقسَم به (النجوم) يُصبح مرآةً للحياة البشرية — وهذا ما يُسميه علماء البلاغة «التمثيل الكوني» حيث يستعير القرآن ظاهرة كونية ليُبيّن بها حقيقة إنسانية. المقال استثمر هذا الأسلوب عمقاً حين جعل الخنوس والجري والكنوس سُنناً في النفوس والأحداث لا في النجوم فحسب.</p></div>
+    <div class="card c"><div class="ct">خامساً: مقابلة «يَذْكُرُ / يَغْفُلُ» الضمنية في ذكر الشيطان</div><p>قوله «يَتَسَلَّلُ إِلَى الْقَلْبِ إِذَا غَفَلَ / فَإِذَا ذَكَرَ خَنَسَ» — مقابلة ضمنية بين الغفلة والذكر، وهي مقابلة قرآنية الروح تستند إلى ﴿مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ﴾. الخنوس هنا مرتبط بالذكر لا بقوة الإنسان الذاتية.</p></div>
+  </div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <table class="tbl">
+      <tr><th>الصورة</th><th>النص</th><th>التحليل</th></tr>
+      <tr><td class="term">تشبيه تمثيلي</td><td class="ex">«تَبَدَّدَتْ هَيْبَتُهُ كَمَا يَتَبَدَّدُ الضَّبَابُ أَمَامَ شَمْسِ الصَّبَاحِ»</td><td class="def">شبّه زوال سلطان الظالم بتبدّد الضباب — الضباب يوهم بالكثافة ثم يذوب فجأةً أمام أول شعاع.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«الدُّنْيَا كُلُّهَا خُنَّسٌ»</td><td class="def">استعار للدنيا صفة النجوم الخُنَّس — تظهر بزينتها ثم تتوارى وتتركك عند القبر.</td></tr>
+      <tr><td class="term">كناية</td><td class="ex">«تَتْرُكُهُمْ عِنْدَ أَبْوَابِ الْقُبُورِ فُرَادَى»</td><td class="def">كناية عن الموت والانفراد به — الدنيا تتخلى عنك عند آخر باب.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«الشَّيْطَانُ يَتَسَلَّلُ إِلَى الْقَلْبِ»</td><td class="def">شبّه الشيطان بلص يتسلل خفيةً — التسلل يوحي بالخفة والحذر والاستغلال للغفلة.</td></tr>
+      <tr><td class="term">تدريج تصاعدي</td><td class="ex">«النجوم تغيب... الشمس تغرب... الجيوش تنسحب... الملوك يرحلون... الأجساد تعود»</td><td class="def">تصاعد من الكوني إلى الفردي يُغطي كل مستويات الوجود — كل شيء له كِناس.</td></tr>
+      <tr><td class="term">مفارقة بلاغية</td><td class="ex">«كِنَاسُهُ الْحَقِيقِيُّ رَحْمَةُ اللهِ / كِنَاسُهُ غَفْلَتُهُ»</td><td class="def">مقابلة بين مصيرَين: المؤمن يأوي إلى رحمة الله، الغافل يأوي إلى غفلته. الكِناس واحد لكن ما يُأوى إليه مختلف جذرياً.</td></tr>
+    </table>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">الجناس الاشتقاقي</span><div class="mv">مادة خ.ن.س</div><div class="md">«الْخُنَّسِ، الْخَنَّاسِ، خَنَسَ، خَنَسَاتُهُ» — المادة الواحدة تتكرر في المقال بصور صرفية متعددة تُبني عليها الفكرة المحورية.</div></div>
+      <div class="mc"><span class="ml">التثليث الموضوعي</span><div class="mv">خنوس / جري / كنوس</div><div class="md">بنى المقال على ثلاثة محاور دقيقة مستقاة من الآيتين — وهذا التثليث يُصوّر دورة الحياة الكاملة: ظهور، حركة، اختفاء.</div></div>
+      <div class="mc"><span class="ml">الترديد الإيقاعي</span><div class="mv">«وطوبى لمن...» ×٣</div><div class="md">ثلاث «طوبى» متتالية تختم المقال بإيقاع تصاعدي يُحوّل الوصف إلى بشارة — من الكوني إلى الشخصي إلى الإيماني.</div></div>
+      <div class="mc"><span class="ml">الاستفاضة بـ«كم»</span><div class="mv">ثلاث «كَم» خبرية</div><div class="md">«كم من قوة... كم من دولة... كم من ظالم» — استشهاد بالتاريخ الإنساني كله شاهداً على سنة الخنوس.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LINGUISTIC -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card c"><div class="ct">التحليل الصرفي للكلمات الثلاث</div></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن الصرفي</th><th>الجذر</th><th>الدلالة</th></tr>
+      <tr><td class="term">الْخُنَّسِ</td><td>فُعَّل</td><td>خ.ن.س</td><td class="def">جمع «خانِس» على صيغة مبالغة — الكثير الخنوس والتواري. مؤنثه «خُنَّسة».</td></tr>
+      <tr><td class="term">الْجَوَارِ</td><td>فَوَاعِل</td><td>ج.ر.ي</td><td class="def">جمع «جارية» على وزن فواعل — الكثير الجري والحركة. أصله «الجواري» بالياء فحُذفت للتخفيف.</td></tr>
+      <tr><td class="term">الْكُنَّسِ</td><td>فُعَّل</td><td>ك.ن.س</td><td class="def">جمع «كانِس» على صيغة مبالغة — الكثير الكنوس والإيواء إلى الكِناس.</td></tr>
+    </table>
+    <div class="card c2"><div class="ct">قراءات «الخُنَّس» عند المفسرين</div><p>اختلف المفسرون في المراد بـ«الخُنَّسِ الْجَوَارِ الْكُنَّسِ» على أقوال: (أ) الكواكب الخمسة السيارة (زحل، المشتري، المريخ، الزهرة، عطارد) لأنها تخنس أي تتراجع في مساراتها ظاهرياً. (ب) النجوم عموماً تخنس نهاراً وتجري ليلاً وتكنس آخر الليل. (ج) الوحش في الغاب يأوي إلى كِناسه. والأرجح الأول أو الثاني، وكلاهما يُثبت عظمة الخالق.</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card c"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْخُنُوسُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">تراجع الكواكب ظاهرياً</td><td class="def">﴿فَلَا أُقْسِمُ بِالْخُنَّسِ﴾ — الكواكب تبدو متراجعة في مساراتها.</td></tr>
+        <tr><td class="term">اختفاء النجوم نهاراً</td><td class="def">النجوم تخنس عند الفجر أي تتوارى عن الأبصار.</td></tr>
+        <tr><td class="term">تراجع الشيطان عند الذكر</td><td class="def">﴿مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ﴾ — الشيطان يتراجع حين يُذكر الله.</td></tr>
+        <tr><td class="term">الانكماش والانزواء</td><td class="def">«خنس الرجل» إذا انزوى وتراجع عن مكانه.</td></tr>
+      </table>
+    </div>
+    <div class="card c2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْكِنَاسُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">مأوى الوحش في الغاب</td><td class="def">الأصل اللغوي: الكِناس موضع الظل الذي يأوي إليه الوحش.</td></tr>
+        <tr><td class="term">مكان الاختباء</td><td class="def">«الجوار الكُنَّس» — الكواكب تأوي إلى مواضعها.</td></tr>
+        <tr><td class="term">النهاية والمآل</td><td class="def">بالمعنى التوسعي: كل شيء له كِناس يصير إليه في النهاية.</td></tr>
+      </table>
+    </div>
+    <div class="card c"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْجَارِيَةُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الكوكب السائر</td><td class="def">﴿الْجَوَارِ الْكُنَّسِ﴾ — الكواكب الجارية في الفلك.</td></tr>
+        <tr><td class="term">السفينة</td><td class="def">﴿وَلَهُ الْجَوَارِ الْمُنشَآتُ فِي الْبَحْرِ﴾ — السفن الجارية.</td></tr>
+        <tr><td class="term">النعمة المستمرة</td><td class="def">«النعمة الجارية» أي المتواصلة الدائمة.</td></tr>
+        <tr><td class="term">الخادمة الشابة</td><td class="def">«الجارية» في الفقه الإسلامي: المرأة الشابة.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card c"><div class="ct">الفرق بين: خَنَسَ / غَابَ / اخْتَفَى / تَوَارَى / اكْتَنَّ</div>
+      <table class="tbl">
+        <tr><th>الفعل</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">خَنَسَ</td><td class="def">تراجع بعد ظهور — فيه معنى الحركة الرجعية لا مجرد الغياب.</td></tr>
+        <tr><td class="term">غَابَ</td><td class="def">اختفى عن الإدراك — أعم وأشمل، يشمل الغياب الطويل والقصير.</td></tr>
+        <tr><td class="term">اخْتَفَى</td><td class="def">إخفاء النفس إرادياً — فيه معنى القصد والتعمد.</td></tr>
+        <tr><td class="term">تَوَارَى</td><td class="def">الاستتار خلف حاجب — «تَوَارَتْ بِالحِجَابِ» خلف الأفق.</td></tr>
+        <tr><td class="term">اكْتَنَّ</td><td class="def">الاستتار في الكِنّ — الاختباء في مكان مخصص للحماية.</td></tr>
+      </table>
+    </div>
+    <div class="card c2"><div class="ct">الفرق بين: الكَوْكَبُ / النَّجْمُ / الكُوكَبُ / الْفَلَكُ / الْبُرْجُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الدلالة الدقيقة</th></tr>
+        <tr><td class="term">الكَوْكَبُ</td><td class="def">الجرم السماوي المضيء — يشمل النجوم والكواكب السيارة.</td></tr>
+        <tr><td class="term">النَّجْمُ</td><td class="def">الجرم اللامع في الفضاء — ومنه «النجم» أي الطالع.</td></tr>
+        <tr><td class="term">الْفَلَكُ</td><td class="def">المدار الذي تجري فيه الكواكب — ﴿كُلٌّ فِي فَلَكٍ يَسْبَحُونَ﴾.</td></tr>
+        <tr><td class="term">الْبُرْجُ</td><td class="def">المنزل الفلكي — ﴿وَالسَّمَاءِ ذَاتِ الْبُرُوجِ﴾.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card c"><div class="ct">سرّ وصف الشيطان بـ«الخَنَّاس» في سورة الناس</div><p>وصف الله الشيطان في آخر القرآن بـ«الْوَسْوَاسِ الْخَنَّاسِ» — والخنّاس صيغة مبالغة من «خَنَسَ» تدل على كثرة الخنوس وتكراره. والصلة بآيات التكوير: الشيطان يُشبه الكواكب الخُنَّسَ في أنه يظهر ثم يتوارى، ويقترب ثم ينسحب. والعلاج: الذكر الذي يُخنّسه كما تُخنَّس النجوم أمام الفجر.</p></div>
+    <div class="card c2"><div class="ct">مفهوم «كُنْ» في سياق الجوار الكوني</div><p>«سُبْحَانَ مَنْ أَمْسَكَ هَذَا الْكَوْنَ الْهَائِلَ بِكَلِمَةٍ وَاحِدَةٍ: كُنْ» — هذه الجملة تُوظّف إشارةً قرآنية لـ﴿إِنَّمَا قَوْلُنَا لِشَيْءٍ إِذَا أَرَدْنَاهُ أَن نَّقُولَ لَهُ كُن فَيَكُونُ﴾. وفي ربطها بجريان الكواكب عمقٌ: الكون الجاري بكل هذا الجريان الهائل محكوم بكلمة واحدة.</p></div>
+    <div class="card c"><div class="ct">دلالة «طُوبَى» في خاتمة المقال</div><p>«طُوبَى» كلمة عربية تعني السعادة الكاملة والحسنى — وقد وردت في القرآن ﴿طُوبَىٰ لَهُمْ وَحُسْنُ مَآبٍ﴾. واختار المقال ختامه بثلاث «طوبى» يُعطي المقال بُعداً بشارياً بعد الوصف الكوني والتحليل النفسي — كأن رحلة الخنوس والجري والكنوس تنتهي ببشارة لمن حسّن الرحلة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السباق: ما قبل الآيتين (١–١٤)</div>
+    <div class="ci"><span class="vi">﴿إِذَا الشَّمْسُ كُوِّرَتْ ۝ وَإِذَا النُّجُومُ انكَدَرَتْ﴾</span><span class="vs">التكوير: ١–٢ — السورة كلها مشهد أحداث يوم القيامة — الخنوس والجري والكنوس تسبق هذه النهاية الكبرى.</span></div>
+    <div class="ci"><span class="vi">﴿وَإِذَا الْجِبَالُ سُيِّرَتْ ۝ وَإِذَا الْعِشَارُ عُطِّلَتْ﴾</span><span class="vs">التكوير: ٣–٤ — حتى الثوابت الكبرى (الجبال، الناقة العشراء) تنتهي — فكل جارٍ له كناس.</span></div>
+  </div>
+  <div class="cb"><div class="bt">اللحاق: ما بعد الآيتين (١٧–٢٩)</div>
+    <div class="ci"><span class="vi">﴿وَاللَّيْلِ إِذَا عَسْعَسَ ۝ وَالصُّبْحِ إِذَا تَنَفَّسَ﴾</span><span class="vs">التكوير: ١٧–١٨ — الليل يتراجع (خنوس) والصبح يُقبل (فلق) — تكامل بين سورتي التكوير والفلق.</span></div>
+    <div class="ci"><span class="vi">﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾</span><span class="vs">التكوير: ١٩ — بعد القسم بالكواكب يأتي الغرض: إثبات أن القرآن وحي حق لا شعر ولا كهانة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات المتعلقة في القرآن الكريم</div>
+    <div class="ci"><span class="vi">﴿مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ﴾</span><span class="vs">الناس: ٤–٥ — الشيطان الخنّاس: تطبيق مفهوم الخنوس على النفس البشرية.</span></div>
+    <div class="ci"><span class="vi">﴿وَالشَّمْسُ تَجْرِي لِمُسْتَقَرٍّ لَّهَا ۚ ذَٰلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ﴾</span><span class="vs">يس: ٣٨ — الشمس تجري (الجوار) إلى مستقر (الكناس) بتقدير العزيز العليم.</span></div>
+    <div class="ci"><span class="vi">﴿كُلٌّ فِي فَلَكٍ يَسْبَحُونَ﴾</span><span class="vs">يس: ٤٠ — الجريان الكوني المنظّم: الخنوس والجري والكنوس في نظام لا يختل.</span></div>
+    <div class="ci"><span class="vi">﴿وَسَخَّرَ لَكُمُ اللَّيْلَ وَالنَّهَارَ وَالشَّمْسَ وَالْقَمَرَ ۖ وَالنُّجُومُ مُسَخَّرَاتٌ بِأَمْرِهِ﴾</span><span class="vs">النحل: ١٢ — الكواكب الجارية الخنّسة كلها مُسخَّرة بأمر الله.</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية كونية ✅</div><div class="md">قسم بظاهرة فلكية — تُثبت عظمة الله في خلق الكواكب وتسخيرها وتنظيمها.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عقدية ✅</div><div class="md">تُقرّر توحيد الربوبية: الله المتصرف في حركة الكواكب وسُكونها — لا يخرج شيء عن إرادته.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">إخبار وتأمل ✅</div><div class="md">تدعو إلى التأمل في الكون كدليل على وجود الله وعظمته — من آيات التفكر والنظر.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> آيتا التكوير ١٥–١٦ منظومة كونية-عقدية-تأملية: تُقسِم بالكواكب لإثبات صدق الوحي، وتُقرّر الربوبية الإلهية، وتدعو إلى التأمل الكوني.</div>
+  <div class="sub"><h3>الأحكام الشرعية المستنبطة</h3>
+    <div class="card c"><div class="ct">الحكم الأول: استحباب التفكر في آيات الكون</div><p>دلّت الآيتان على مشروعية التفكر في الكواكب والنجوم بوصفها آيات على عظمة الله — وهو فريضة قرآنية متكررة: ﴿أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ﴾. التأمل في الكون عبادة.</p></div>
+    <div class="card c2"><div class="ct">الحكم الثاني: الاستعاذة من الشيطان الخنّاس بالذكر</div><p>دلّ ربط المقال بين الخنوس والشيطان الخنّاس (الناس: ٤) على أن الذكر هو علاج الوسوسة — وهو مستفاد من الحديث: «إن الشيطان واضع خطمه على قلب ابن آدم، فإن ذكر الله خنس، وإن غفل وسوس».</p></div>
+    <div class="card c"><div class="ct">الحكم الثالث: تحريم الغرور بالقوة والسلطان</div><p>سنة الخنوس التاريخية (كم من قوة خنست) دليلٌ شرعي على تحريم الاغترار بالقوة — فكل قوة تخنس إلا قوة الله. وهذا يُقرّر حكم تحريم الكبر والإعجاب بالنفس.</p></div>
+    <div class="card c2"><div class="ct">الحكم الرابع: واجب الاستعداد للكناس (الموت)</div><p>مفهوم الكناس كمآل لكل جارٍ يُفيد وجوب الاستعداد للموت — وهو حكم شرعي مستفاد من الآية بطريق التأمل والاستدلال.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآيتين الكريمتين تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.5rem;">﴿فَلَا أُقْسِمُ بِالْخُنَّسِ ۝ الْجَوَارِ الْكُنَّسِ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">فَ</div><div class="id">الفاء: استئنافية تربط هذا الكلام بما قبله من مشاهد يوم القيامة.</div></div>
+    <div class="ir"><div class="iw">لَا</div><div class="id">قيل: نافية زائدة للتوكيد (لا تنفي القسم بل تُؤكده). وقيل: نافية والمعنى: لا أحتاج إلى قسم لأن الأمر أوضح من ذلك. والأول أشهر عند البلاغيين.</div></div>
+    <div class="ir"><div class="iw">أُقْسِمُ</div><div class="id">فعل مضارع مرفوع بالضمة الظاهرة. الفاعل مستتر وجوباً «أنا» يعود على الله سبحانه.</div></div>
+    <div class="ir"><div class="iw">بِالْخُنَّسِ</div><div class="id">الباء: حرف جر للقسم. «الخُنَّس»: اسم مجرور بالكسرة الظاهرة — المُقسَم به. والجار والمجرور متعلقان بـ«أقسم».</div></div>
+    <div class="ir"><div class="iw">الْجَوَارِ</div><div class="id">نعت للخُنَّس مجرور بالكسرة. وأصله «الجواري» بالياء فحُذفت للتخفيف — وهو جمع «جارية». وقيل: بدل من «الخُنَّس».</div></div>
+    <div class="ir"><div class="iw">الْكُنَّسِ</div><div class="id">نعت ثانٍ للخُنَّس أو نعت للجوار — مجرور بالكسرة الظاهرة. جمع «كانِس» على وزن «فُعَّل».</div></div>
+  </div>
+  <div class="card c" style="margin-top:14px;"><div class="ct">ملاحظة: جواب القسم</div><p>جواب القسم في هذه الآيات محذوف دلّ عليه السياق — وهو ما يُسميه النحاة «حذف جواب القسم لدلالة ما بعده عليه». والتقدير: لَرَسولٌ كريم إنه (كما ورد في الآية ١٩: ﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾) — أي القسم بالكواكب الخنّسة لإثبات أن القرآن وحيٌ حق.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«طُوبَى لِمَنْ جَعَلَ جَرْيَهُ إِلَى اللهِ — وَطُوبَى لِمَنْ كَانَتْ خَنَسَاتُهُ رُجُوعاً إِلَى الْحَقِّ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card c"><div class="ct">أولاً: الخنوس الإيجابي — التوبة كخنوس نحو الله</div><p>أعمق ما في المقال أنه جعل «الخنوس» سُنّةً يمكن توظيفها إيجابياً: «خَنَسَاتُهُ رُجُوعاً إِلَى الْحَقِّ لَا هُرُوباً مِنْهُ» — التوبة خنوسٌ من الذنب، والرجوع إلى الله خنوسٌ من الغفلة. <strong>التطبيق:</strong> كل لحظة تراجع فيها عن معصية هي «خنسة» في الاتجاه الصحيح.</p></div>
+  <div class="card c2"><div class="ct">ثانياً: الجريان نحو هدف — لا جري بلا غاية</div><p>«الأيام تجري والأعمار تجري» — والجري بلا اتجاه طاقة مُهدَرة. المقال يُعلّم أن الجري الحقيقي هو «مَنْ جَعَلَ جَرْيَهُ إِلَى اللهِ». <strong>التطبيق:</strong> سؤال محاسبي يومي: أين أجري؟ ما وجهة يومي وعمري؟</p></div>
+  <div class="card c"><div class="ct">ثالثاً: اختيار الكِناس — ماذا تحمل إلى قبرك؟</div><p>«مَا مِنْ شَيْءٍ إِلَّا وَلَهُ كِنَاسٌ يَأْوِي إِلَيْهِ» — الكِناس هو المآل الأخير. والمؤمن يختار كِناسه بأعماله. <strong>التطبيق:</strong> «رحمة الله» ليست كِناساً يأتي تلقائياً بل يُبنى بالعمل — الصلاة، التوبة، الإحسان.</p></div>
+  <div class="card c2"><div class="ct">رابعاً: الكون دليل لا ديكور — التدبر الكوني</div><p>يُعلّم المقال أن النجوم ليست ديكوراً للسماء بل آيات مُقسَم بها — وهذا يفتح باب «العلم بوصفه عبادة»: فمن تأمل في حركة الكواكب وأدرك نظامها تجلّت له عظمة الله. <strong>التطبيق:</strong> أن تنظر إلى السماء كل ليلة وتقرأ ﴿فَلَا أُقْسِمُ بِالْخُنَّسِ﴾ — تدبّرٌ يُحيي القلب.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>التوسيع الدلالي من الكوني إلى الإنساني:</strong> لم يتوقف عند تفسير الكواكب بل جعلها مدخلاً لفهم النفس والتاريخ والمصير — منهج القرآن نفسه في التأمل الكوني.</li>
+      <li><strong>التثليث البنيوي:</strong> بنى المقال على ثلاثة محاور (خنوس / جريان / كنوس) يُوازي كل منها محوراً في الحياة البشرية (ظهور / سعي / مصير).</li>
+      <li><strong>الاستشهاد بالشيطان الخنّاس:</strong> ربط بين آيتي التكوير وآية الناس — توظيف سياقي يُغني التدبر ويُعمّق الفهم.</li>
+      <li><strong>الخاتمة البشارية:</strong> انتهى بـ«طوبى» لا بـ«ويل» — رغم أن الموضوع يحتمل الوعيد، آثر المؤلف أن يختم بالبشارة لمن اختار الطريق الصحيح.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong style="color:var(--cg);">العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضراً أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong style="color:var(--cg);">البُعد الزمني:</strong> الربط الحي بين النص القرآني ومستجدات العصر — يُجسّد الآيات الكونية حياةً إنسانية نابضة.</p>
+      <p><strong style="color:var(--cg);">التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ مما يُضفي على كتاباته دقةً عقدية نادرة.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم، ونفع به الأمة في زمن كثرت فيه الغفلة وقلّ التدبر.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">سورة التكوير</span>
+        <span class="atag">التأمل الكوني</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  const sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+const secs=document.querySelectorAll('.sec[id]');
+const links=document.querySelectorAll('.toc-a');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a) a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>{
+  document.getElementById('sb').classList.add('off');
+  document.getElementById('sb').classList.remove('open');
+}));
+</script>
+</body>
+</html>

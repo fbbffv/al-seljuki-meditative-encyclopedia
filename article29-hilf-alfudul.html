@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حِلْفُ الْفُضُولِ — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a1a12;--bg:#eef6f0;--bg2:#d8ecdc;
+  --teal:#0e4a2a;--tm:#1c7a44;--tlt:#3aa868;
+  --td:#06140c;--tt:#d4f0dc;--tg:#80d0a0;
+  --amber:#5a4a0e;--gold:#a8841e;--gold-m:#c2a44c;
+  --div:#a8d4b8;--mist:#1a3a28;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(28,122,68,.07) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(58,168,104,.05) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--tm),var(--amber));z-index:400;transform-origin:top;}
+.hdr{background:var(--td);border-bottom:2px solid var(--tm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--tlt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--tg);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--tt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--teal);color:var(--tg);border:1px solid rgba(58,168,104,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--tm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#040c08;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(58,168,104,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--tlt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(58,168,104,.2);}
+.toc-s{color:rgba(58,168,104,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#5ab080;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--tt);background:rgba(58,168,104,.1);border-right-color:var(--tlt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--tm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--tlt);}
+.hcat{display:inline-block;background:var(--teal);color:var(--tt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.3rem;font-weight:700;color:var(--td);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--tm);border-radius:50%;}
+.vb{background:var(--td);border:1px solid rgba(58,168,104,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(58,168,104,.1),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.6rem;color:var(--tt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.35rem;}
+.vr{color:var(--tg);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#0a1a12;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--tm);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--teal);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--tm);background:rgba(28,122,68,.06);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--tm);font-weight:700;text-align:center;margin:9px 0;}
+.scene-list{list-style:none;padding:0;margin:10px 0 20px;}
+.scene-list li{font-family:'Scheherazade New',serif;font-size:1.12rem;color:var(--teal);padding:8px 0;border-bottom:1px dashed var(--div);text-align:center;}
+.scene-list li:last-child{border-bottom:none;}
+.contrast-list{list-style:none;padding:0;margin:14px 0;}
+.contrast-list li{font-family:'Scheherazade New',serif;font-size:1.15rem;color:var(--td);padding:9px 0;border-bottom:1px dashed var(--div);text-align:center;font-weight:600;}
+.contrast-list li:last-child{border-bottom:none;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--td);color:var(--tlt);border:2px solid var(--tm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--td);border-bottom:2px solid var(--tlt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--teal);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.t{border-right:5px solid var(--tm);}
+.card.t2{border-right:5px solid var(--teal);}
+.card.t3{border-right:5px solid var(--amber);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#06140c;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#0a1a12;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--tm);color:var(--tt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--td);color:var(--tg);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--tm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(28,122,68,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#06140c;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ex{color:var(--teal);font-style:italic;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#06140c;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#06140c;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--tlt);border-bottom:2px solid var(--tlt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--tlt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#040c08,#081810);border:1px solid rgba(58,168,104,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--tlt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(58,168,104,.25);}
+.ci{color:#70c090;padding:9px 0;border-bottom:1px dashed rgba(58,168,104,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--tt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--tg);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#040c08,#081810);border:1px solid rgba(58,168,104,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#70c090;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--tt);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--tm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#06140c;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#0a1a12;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--tm);font-size:.85em;top:11px;}
+.src{background:#fff8e8;border:1px solid #d4b870;border-radius:7px;padding:14px 18px;margin:12px 0;font-size:.88rem;color:#5a4410;line-height:1.85;}
+.src strong{color:#3a2c0a;}
+.src .src-label{font-family:'IBM Plex Sans Arabic','Noto Naskh Arabic',sans-serif;font-size:.72rem;font-weight:700;color:#a8741e;letter-spacing:.06em;margin-bottom:6px;display:block;}
+.asec{background:var(--td);border:1px solid rgba(58,168,104,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--tm),var(--teal));border:3px solid var(--tlt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--tt);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--tg);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#70c090;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(58,168,104,.1);border:1px solid rgba(58,168,104,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--tg);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--tt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(58,168,104,.16);color:var(--tlt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(58,168,104,.28);}
+.orn{text-align:center;color:var(--tlt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--td);color:#2a6a44;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(58,168,104,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--tlt);}
+footer .fb span{color:var(--tg);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.8rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.18rem;}.hero h1{font-size:1.4rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;">⌂ الفهرس الرئيسي</a>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">حِلْفُ الْفُضُولِ... دَلِيلٌ عَلَى مَشْرُوعِيَّةِ الِاسْتِعَانَةِ بِالنِّظَامِ وَالْقَضَاءِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s0">٠. توثيق الحديث والآيات</a>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالنصوص</a>
+  <a class="toc-a" href="#s4">٤. نوع النص والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب النصوص</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تأمل فقهي مقاصدي · حديث نبوي · مقالة فقهية</div>
+  <h1>حِلْفُ الْفُضُولِ... دَلِيلٌ عَلَى مَشْرُوعِيَّةِ الِاسْتِعَانَةِ بِالنِّظَامِ وَالْقَضَاءِ لِاسْتِرْدَادِ الْحُقُوقِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>حديث نبوي شريف</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">«لَقَدْ شَهِدْتُ فِي دَارِ عَبْدِ اللهِ بْنِ جُدْعَانَ حِلْفًا مَا أُحِبُّ أَنَّ لِي بِهِ حُمْرَ النَّعَمِ، وَلَوْ دُعِيتُ بِهِ فِي الْإِسْلَامِ لَأَجَبْتُ»</div>
+    <div class="vr">قاله النبي ﷺ — رواه البيهقي في السنن الكبرى (٦/٣٦٧) من طريق ابن إسحاق، مرسلاً، وقال الألباني: «إسناده صحيح؛ لكنه مرسل، وله شواهد مرسلة تقويه» (فقه السيرة، ص٧٥)</div>
+  </div>
+  <div class="abody">
+    <p>إِنَّ هَذَا الْحَدِيثَ الشَّرِيفَ مِنَ النُّصُوصِ الْعَظِيمَةِ الَّتِي تُظْهِرُ أَنَّ الْإِسْلَامَ لَا يَرْفِضُ كُلَّ مَا كَانَ قَبْلَهُ بِإِطْلَاقٍ، بَلْ يُقِرُّ كُلَّ نِظَامٍ أَوْ مَبْدَأٍ يُحَقِّقُ الْعَدْلَ وَيَرْفَعُ الظُّلْمَ، وَلَوْ كَانَ أَصْلُهُ سَابِقًا لِلْإِسْلَامِ، مَا دَامَ لَا يُصَادِمُ كِتَابَ اللهِ وَسُنَّةَ رَسُولِهِ ﷺ.</p>
+
+    <p>فَقَدْ كَانَ حِلْفُ الْفُضُولِ اتِّفَاقًا بَيْنَ عَدَدٍ مِنْ أَشْرَافِ مَكَّةَ لِنُصْرَةِ الْمَظْلُومِ، وَرَدِّ الْحُقُوقِ إِلَى أَصْحَابِهَا، وَمَنْعِ الظَّالِمِ مِنَ الِاسْتِبْدَادِ بِقُوَّتِهِ أَوْ مَكَانَتِهِ. فَلَمَّا بَعَثَ اللهُ نَبِيَّهُ ﷺ لَمْ يَذُمَّ ذَلِكَ الْحِلْفَ، بَلْ أَثْنَى عَلَيْهِ، وَقَالَ إِنَّهُ وَلَوْ دُعِيَ إِلَيْهِ بَعْدَ الْإِسْلَامِ لَأَجَابَ.</p>
+
+    <p>وَفِي هَذَا دَلَالَةٌ فِقْهِيَّةٌ مُهِمَّةٌ، وَهِيَ أَنَّ الْوَسَائِلَ الَّتِي تُحَقِّقُ الْعَدْلَ وَتَحْفَظُ الْحُقُوقَ مَشْرُوعَةٌ إِذَا كَانَتْ لَا تُخَالِفُ الشَّرِيعَةَ، وَلِذَلِكَ فَإِنَّ الْمُسْلِمَ إِذَا سُلِبَ حَقُّهُ، أَوْ وَقَعَ عَلَيْهِ ظُلْمٌ، جَازَ لَهُ أَنْ يَلْجَأَ إِلَى الْقَضَاءِ، وَالْأَنْظِمَةِ الْمَرْعِيَّةِ، وَالْقَوَانِينِ الَّتِي تُعِيدُ إِلَيْهِ حَقَّهُ، وَلَوْ كَانَتْ هَذِهِ الْقَوَانِينُ مِنَ الْأَنْظِمَةِ الْوَضْعِيَّةِ، مَا دَامَتْ تُنْصِفُ الْمَظْلُومَ وَلَا تُلْزِمُهُ بِمَعْصِيَةِ اللهِ.</p>
+
+    <p>وَقَدْ قَرَّرَ الْفُقَهَاءُ أَنَّ الْأَحْكَامَ لَهَا مَقَاصِدُ، وَمِنْ أَعْظَمِ مَقَاصِدِ الشَّرِيعَةِ:</p>
+
+    <ul class="scene-list">
+      <li>حِفْظُ الدِّينِ.</li>
+      <li>حِفْظُ النَّفْسِ.</li>
+      <li>حِفْظُ الْعَقْلِ.</li>
+      <li>حِفْظُ الْمَالِ.</li>
+      <li>حِفْظُ الْعِرْضِ.</li>
+    </ul>
+
+    <p>فَإِذَا كَانَتِ الْأَنْظِمَةُ الْقَضَائِيَّةُ أَوِ الْقَوَانِينُ تَكْفَلُ حِمَايَةَ هَذِهِ الضَّرُورَاتِ، فَإِنَّ الِاسْتِفَادَةَ مِنْهَا لِاسْتِرْدَادِ الْحُقُوقِ تَدْخُلُ فِي بَابِ دَفْعِ الظُّلْمِ، لَا فِي بَابِ الرِّضَا بِكُلِّ مَا فِيهَا.</p>
+
+    <p>وَمِنْ شَوَاهِدِ الْوَاقِعِ:</p>
+
+    <ul class="contrast-list">
+      <li>عَامِلٌ حُرِمَ أَجْرَهُ فَلَجَأَ إِلَى الْمَحْكَمَةِ فَأُعِيدَ إِلَيْهِ حَقُّهُ.</li>
+      <li>يَتِيمٌ اغْتُصِبَ مِيرَاثُهُ فَقَضَى الْقَاضِي بِرَدِّهِ إِلَيْهِ.</li>
+      <li>امْرَأَةٌ اعْتُدِيَ عَلَى مَالِهَا فَأَنْصَفَهَا الْقَضَاءُ.</li>
+      <li>تَاجِرٌ تَعَرَّضَ لِلِاحْتِيَالِ فَأَعَادَ لَهُ النِّظَامُ حَقَّهُ.</li>
+      <li>مَظْلُومٌ اسْتَطَاعَ عَبْرَ الْقَضَاءِ أَنْ يُوقِفَ تَعَدِّيَ أَصْحَابِ النُّفُوذِ.</li>
+    </ul>
+
+    <p>وَلَيْسَ الْمَقْصُودُ مِنْ ذَلِكَ تَعْظِيمَ كُلِّ قَانُونٍ وَضْعِيٍّ، وَلَا التَّسْوِيَةَ بَيْنَهُ وَبَيْنَ شَرِيعَةِ اللهِ، وَإِنَّمَا الْمَقْصُودُ أَنَّ الِاسْتِفَادَةَ مِنَ الْوَسَائِلِ الْمَشْرُوعَةِ الَّتِي تُحَقِّقُ الْعَدْلَ وَرَدَّ الْمَظَالِمِ أَمْرٌ تُؤَيِّدُهُ مَقَاصِدُ الشَّرِيعَةِ، لِأَنَّ اللهَ تَعَالَى أَمَرَ بِالْعَدْلِ وَنَهَى عَنِ الظُّلْمِ، فَقَالَ:</p>
+
+    <div class="vb" style="margin:18px 0;"><div class="vt sm">﴿ إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالإِحْسَانِ ﴾</div><div class="vr">سورة النحل، الآية ٩٠</div></div>
+
+    <p>وَقَالَ سُبْحَانَهُ:</p>
+
+    <div class="vb" style="margin:18px 0;"><div class="vt sm">﴿ وَإِذَا حَكَمْتُمْ بَيْنَ النَّاسِ أَنْ تَحْكُمُوا بِالْعَدْلِ ﴾</div><div class="vr">سورة النساء، الآية ٥٨</div></div>
+
+    <p>فَالْعَدْلُ قِيمَةٌ عَظِيمَةٌ، وَالظُّلْمُ مُحَرَّمٌ، وَكُلُّ وَسِيلَةٍ مُبَاحَةٍ تُعِينُ عَلَى رَفْعِ الظُّلْمِ وَرَدِّ الْحُقُوقِ فَهِيَ مِنَ الْمَصَالِحِ الَّتِي جَاءَتِ الشَّرِيعَةُ بِرِعَايَتِهَا، مَعَ بَقَاءِ الْأَصْلِ أَنَّ الشَّرِيعَةَ الْإِسْلَامِيَّةَ هِيَ أَكْمَلُ الشَّرَائِعِ وَأَتَمُّهَا، وَأَنَّ الْمُسْلِمَ لَا يُجِيزُ مَا خَالَفَ نُصُوصَهَا وَأَحْكَامَهَا.</p>
+
+    <div class="vb" style="margin-top:24px;"><div class="vt sm">نَسْأَلُ اللهَ أَنْ يَنْصُرَ الْمَظْلُومَ، وَيَكُفَّ يَدَ الظَّالِمِ، وَيَجْعَلَ الْعَدْلَ قَائِمًا بَيْنَ النَّاسِ، وَأَنْ يَرْزُقَ الْأُمَّةَ قَضَاءً نَزِيهًا، وَقُلُوبًا تَخَافُ اللهَ، وَأَلْسِنَةً تَنْطِقُ بِالْحَقِّ، وَأَيْدِيَ تَمْتَدُّ لِنُصْرَةِ الْمَظْلُومِينَ لَا لِإِعَانَةِ الْمُعْتَدِينَ.</div></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S0 SOURCING -->
+<div id="s0" class="sec">
+  <div class="sec-h"><div class="sec-n">٠</div><h2>توثيق الحديث والآيات الواردة</h2></div>
+  <div class="src">
+    <span class="src-label">توثيق الحديث النبوي</span>
+    <strong>المتن:</strong> «لَقَدْ شَهِدْتُ فِي دَارِ عَبْدِ اللهِ بْنِ جُدْعَانَ حِلْفًا مَا أُحِبُّ أَنَّ لِي بِهِ حُمْرَ النَّعَمِ، وَلَوْ دُعِيتُ بِهِ فِي الْإِسْلَامِ لَأَجَبْتُ»<br><br>
+    <strong>التخريج:</strong> أخرجه البيهقي في «السنن الكبرى» كتاب قسم الفيء والغنيمة (٦/٣٦٧، رقم ١٢٤٢٨ في بعض الطبعات) من طريق محمد بن إسحاق بن يسار، عن محمد بن زيد بن المهاجر بن قنفذ التيمي، عن طلحة بن عبد الله بن عوف الزهري. كما أورده ابن هشام في «السيرة النبوية» (١/١٣٤) عن ابن إسحاق بنفس الإسناد، وأورده ابن كثير في «البداية والنهاية» (٣/٤٥٦).<br><br>
+    <strong>الحكم على الإسناد:</strong> قال الشيخ محمد ناصر الدين الألباني في تخريجه لكتاب «فقه السيرة» لمحمد الغزالي (ص ٧٥): «إسناده صحيح؛ لكنه مرسل، وله شواهد مرسلة تقويه». والمرسل هنا هو إرسال طلحة بن عبد الله بن عوف (وهو من التابعين) للحديث دون ذكر الصحابي الذي حدّثه، إلا أن طرقه المتعددة وشواهده ترفعه إلى درجة الاحتجاج به عند المحدثين في باب السيرة والفضائل.<br><br>
+    <strong>رواية موافقة:</strong> روى الحميدي في «مسنده» عن سفيان بن عيينة، عن عبد الله، عن محمد وعبد الرحمن ابنَي أبي بكر الصديق، قالا: قال رسول الله ﷺ: «لَقَدْ شَهِدْتُ فِي دَارِ عَبْدِ اللهِ بْنِ جُدْعَانَ حِلْفًا، لَوْ دُعِيتُ بِهِ فِي الْإِسْلَامِ لَأَجَبْتُ، تَحَالَفُوا أَنْ يَرُدُّوا الْفُضُولَ عَلَى أَهْلِهَا، وَأَلَّا يَعَزَّ ظَالِمٌ مَظْلُومًا» — كما نقله ابن كثير في «البداية والنهاية» (٣/٤٥٦).
+  </div>
+  <div class="src">
+    <span class="src-label">توثيق الآية الأولى</span>
+    ﴿إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى وَيَنْهَى عَنِ الْفَحْشَاءِ وَالْمُنكَرِ وَالْبَغْيِ﴾ — سورة النحل، الآية ٩٠ (وهي جزء من الآية في المصحف، الجزء الرابع عشر، الصفحة ٢٧٧ في مصحف المدينة). نُقل عن عبد الله بن مسعود رضي الله عنه قوله: «إِنَّ أَجْمَعَ آيَةٍ فِي الْقُرْآنِ لِخَيْرٍ أَوْ شَرٍّ، آيَةٌ فِي سُورَةِ النَّحْلِ» يعني هذه الآية، رواه الطبري في «جامع البيان» (تفسير الآية ٩٠ من سورة النحل).
+  </div>
+  <div class="src">
+    <span class="src-label">توثيق الآية الثانية</span>
+    ﴿إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَى أَهْلِهَا وَإِذَا حَكَمْتُمْ بَيْنَ النَّاسِ أَنْ تَحْكُمُوا بِالْعَدْلِ﴾ — سورة النساء، الآية ٥٨ (الجزء الخامس). قال الإمام ابن كثير في تفسيره عند هذه الآية: «أَمَرَ مِنْهُ تَعَالَى بِالْحُكْمِ بِالْعَدْلِ بَيْنَ النَّاسِ» (تفسير القرآن العظيم، تفسير سورة النساء، الآية ٥٨).
+  </div>
+  <div class="vrd"><strong>ملاحظة منهجية:</strong> يلتزم هذا الموقع بتوثيق كل حديث نبوي وكل قول منقول عن العلماء بذكر مصدره (الكتاب، الجزء، الصفحة) قدر المستطاع، تحقيقاً للأمانة العلمية، وتمييزاً بين الحديث الصحيح والحسن والضعيف والمرسل عند الاقتضاء.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="sub"><h3>بلاغة الحديث النبوي الشريف</h3>
+    <div class="card t"><div class="ct">أولاً: التوكيد بـ«لَقَدْ» في صدر الحديث</div><p>اللام الموطئة للقسم مع «قَدْ» تفيد تحقيق الفعل وتوكيده، أي أن النبي ﷺ يقرر بكل جزم وثبات أنه شهد هذا الحلف، وهذا التوكيد المزدوج (اللام + قد) يدل على عناية النبي ﷺ البالغة بهذا الموقف وحرصه على تثبيته في أذهان من يسمعه.</p></div>
+    <div class="card t2"><div class="ct">ثانياً: أسلوب التفضيل في «مَا أُحِبُّ أَنَّ لِي بِهِ حُمْرَ النَّعَمِ»</div><p>هذا أسلوب عربي أصيل في المفاضلة، إذ يجعل النبي ﷺ أثمن ما تملكه العرب (حمر النعم، أي الإبل الحمراء النفيسة) في كفة، وشهوده ذلك الحلف في الكفة الأخرى، ليقرر رجحان القيمة المعنوية (العدل ونصرة المظلوم) على أعظم قيمة مادية معروفة عند العرب آنذاك.</p></div>
+    <div class="card t"><div class="ct">ثالثاً: الشرطية في «وَلَوْ دُعِيتُ بِهِ فِي الْإِسْلَامِ لَأَجَبْتُ»</div><p>«لو» الشرطية هنا تفيد امتناع الجواب لامتناع الشرط في الظاهر، لكنها هنا تحمل معنى استمرار الاستعداد وعدم التوقف الزمني، فكأن النبي ﷺ يقرر مبدأً عاماً ثابتاً: أن قيمة هذا الحلف لا ترتبط بزمن الجاهلية بل تتجاوزه إلى كل العصور.</p></div>
+    <div class="card t2"><div class="ct">رابعاً: الإيجاز البليغ في تعريف مقاصد الشريعة</div><p>سرد المؤلف الضروريات الخمس في خمس جمل قصيرة متوازية «حفظ الدين، حفظ النفس...» وهذا الإيجاز يعكس منهج علم المقاصد الذي يكثف معاني عظيمة في عبارات مختصرة جامعة.</p></div>
+  </div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <table class="tbl">
+      <tr><th>الصورة</th><th>النص</th><th>التحليل</th></tr>
+      <tr><td class="term">كناية</td><td class="ex">«حُمْرَ النَّعَمِ»</td><td class="def">كناية عن أنفس الأموال وأغلاها عند العرب، فالإبل الحمراء كانت غاية ما يتمناه الموسرون، فاستعملت كناية عن مطلق المال النفيس.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«مَنْعِ الظَّالِمِ مِنَ الِاسْتِبْدَادِ بِقُوَّتِهِ»</td><td class="def">صوّر الظلم كأنه قوة منفلتة تحتاج إلى لجام يمنعها، وهذا يجسد الفكرة المجردة (الظلم) في صورة حسية يمكن إدراكها ومقاومتها.</td></tr>
+      <tr><td class="term">تمثيل</td><td class="ex">شواهد العامل واليتيم والمرأة والتاجر والمظلوم</td><td class="def">خمسة أمثلة واقعية متنوعة تمثيل تطبيقي للمبدأ النظري، يجسد القاعدة الفقهية المجردة في صور حياتية ملموسة يفهمها كل قارئ.</td></tr>
+      <tr><td class="term">طباق</td><td class="ex">«لِنُصْرَةِ الْمَظْلُومِينَ لَا لِإِعَانَةِ الْمُعْتَدِينَ»</td><td class="def">طباق ختامي بين نصرة المظلوم وإعانة المعتدي يلخص الفكرة المحورية للمقال في جملة دعائية واحدة.</td></tr>
+    </table>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">الجناس الاشتقاقي</span><div class="mv">الظَّالِمِ / الظُّلْمِ / ظُلْمٌ</div><div class="md">تكرار المادة اللغوية «ظ ل م» في صور متعددة يربط أجزاء المقال بخيط معجمي محكم.</div></div>
+      <div class="mc"><span class="ml">التوازي التركيبي</span><div class="mv">«عَامِلٌ... يَتِيمٌ... امْرَأَةٌ... تَاجِرٌ... مَظْلُومٌ»</div><div class="md">خمس جمل اسمية متوازية البنية تسرد الشواهد الواقعية في نسق إيقاعي متناغم.</div></div>
+      <div class="mc"><span class="ml">السجع الدعائي</span><div class="mv">«قُلُوبًا تَخَافُ اللهَ، وَأَلْسِنَةً تَنْطِقُ بِالْحَقِّ»</div><div class="md">سجع متوازن في الخاتمة الدعائية يمنح العبارة وقعاً موسيقياً يسهل حفظه.</div></div>
+      <div class="mc"><span class="ml">المقابلة</span><div class="mv">«الرِّضَا بِكُلِّ مَا فِيهَا» مقابل «دَفْعِ الظُّلْمِ»</div><div class="md">مقابلة دقيقة تنفي سوء الفهم المحتمل وتحدد الموقف الشرعي الصحيح بدقة بالغة.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LINGUISTIC -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات والتحليل الصرفي</h3>
+    <div class="card t"><div class="ct">ملاحظة حول «القراءات»</div><p>بما أن النص الأساسي للمقال حديثٌ نبويٌّ شريف لا آية قرآنية، فلا مجال للحديث عن «القراءات» بالمعنى الاصطلاحي الخاص بالقرآن الكريم. غير أن رواية الحديث وردت بألفاظ متقاربة عند المحدثين، منها رواية «وَلَوْ دُعِيَ بِهِ فِي الْإِسْلَامِ لَأَجَبْتُ» ورواية «لَوْ دُعِيتُ بِهِ فِي الْإِسْلَامِ لَأَجَبْتُ» — وهذا من اختلاف الرواة في الألفاظ مع اتفاق المعنى، وهو شائع في كتب الحديث ولا يُعدّ تعارضاً.</p></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>التحليل الصرفي</th></tr>
+      <tr><td class="term">شَهِدْتُ</td><td>فَعِلْتُ</td><td class="def">فعل ماضٍ من «شَهِدَ» الثلاثي، مسند إلى ضمير المتكلم — يفيد المعاينة والحضور الفعلي.</td></tr>
+      <tr><td class="term">حِلْفًا</td><td>فِعْل</td><td class="def">مصدر بمعنى المعاهدة والتحالف، من «حَلَفَ» بمعنى أقسم وعاهد.</td></tr>
+      <tr><td class="term">حُمْرَ</td><td>فُعْل (جمع أَحْمَر)</td><td class="def">جمع تكسير لـ«أحمر»، صفة مشبهة تدل على لون الإبل النفيسة.</td></tr>
+      <tr><td class="term">النَّعَمِ</td><td>فَعَل</td><td class="def">اسم جمع يطلق على الإبل والبقر والغنم، والمراد هنا الإبل خاصة.</td></tr>
+      <tr><td class="term">دُعِيتُ</td><td>فُعِلْتُ</td><td class="def">فعل ماضٍ مبني للمجهول من «دَعَا»، مسند إلى ضمير المتكلم في محل رفع نائب فاعل.</td></tr>
+      <tr><td class="term">لَأَجَبْتُ</td><td>فَعَلْتُ</td><td class="def">فعل ماضٍ من «أَجَابَ» مقترن بلام جواب الشرط (لو).</td></tr>
+    </table>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card t"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْحِلْف»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">المعاهدة والتحالف</td><td class="def">اتفاق بين طرفين أو أكثر على أمر معين، وهو المعنى المراد في حديث حلف الفضول.</td></tr>
+        <tr><td class="term">القَسَم</td><td class="def">اليمين المؤكدة، من «حَلَفَ» بمعنى أقسم.</td></tr>
+        <tr><td class="term">التحالف القبلي الجاهلي</td><td class="def">نظام التحالفات بين القبائل العربية قبل الإسلام لأغراض الحماية المتبادلة.</td></tr>
+      </table>
+    </div>
+    <div class="card t2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْفُضُول»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الزائد عن الحاجة</td><td class="def">المعنى اللغوي العام لكلمة «فضل» وجمعها «فضول».</td></tr>
+        <tr><td class="term">رد الحقوق الزائدة المغتصبة</td><td class="def">المعنى المقصود في تسمية الحلف: «أن يردوا الفضول على أهلها» أي ما زاد في يد الظالم من حق الغير.</td></tr>
+        <tr><td class="term">أسماء المتحالفين (الفضل)</td><td class="def">قيل أيضاً إن التسمية لأن من قام بالحلف كان في أسمائهم لفظ «الفضل» كالفضل بن الحارث والفضل بن وداعة، كما ذكره بعض أهل السير.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card t"><div class="ct">الفرق بين: الْعَدْلُ / الْإِحْسَانُ / الْإِنْصَافُ / الْقِسْطُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْعَدْلُ</td><td class="def">إعطاء كل ذي حق حقه دون زيادة أو نقصان — التسوية الدقيقة بين الحقوق.</td></tr>
+        <tr><td class="term">الْإِحْسَانُ</td><td class="def">تجاوز العدل إلى الفضل والتفضل، كما فسّره ابن عيينة: «أن تكون سريرته أحسن من علانيته» (تفسير القرآن للقرطبي، سورة النحل، الآية ٩٠).</td></tr>
+        <tr><td class="term">الْإِنْصَافُ</td><td class="def">إعطاء النصف، أي المساواة التامة بين الطرفين المتنازعين.</td></tr>
+        <tr><td class="term">الْقِسْطُ</td><td class="def">العدل المقترن بالقسمة والتوزيع العادل للحقوق والأموال.</td></tr>
+      </table>
+      <div class="vrd"><strong>لطيفة:</strong> اقتران «الْعَدْلِ» بـ«الْإِحْسَانِ» في الآية ٩٠ من سورة النحل وصفه ابن مسعود رضي الله عنه بأنها «أَجْمَعُ آيَةٍ فِي الْقُرْآنِ» كما رواه الطبري في تفسيره، لأنها جمعت بين أداء الواجب (العدل) والتفضل بما فوقه (الإحسان).</div>
+    </div>
+    <div class="card t2"><div class="ct">الفرق بين: النِّظَامُ الْوَضْعِيُّ / الْقَانُونُ / الشَّرِيعَةُ / الْقَضَاءُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الشَّرِيعَةُ</td><td class="def">ما شرعه الله تعالى من أحكام، وهي المصدر الأعلى الذي لا يجوز مخالفته.</td></tr>
+        <tr><td class="term">الْقَانُونُ الْوَضْعِيُّ</td><td class="def">ما يسنّه البشر من تشريعات تنظيمية، وقد يوافق الشريعة أو يخالفها.</td></tr>
+        <tr><td class="term">النِّظَامُ</td><td class="def">مجموعة القواعد الإدارية أو الإجرائية المنظمة لجانب من جوانب الحياة العامة.</td></tr>
+        <tr><td class="term">الْقَضَاءُ</td><td class="def">الجهة أو السلطة المنوط بها الفصل في الخصومات وتطبيق الأحكام.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card t"><div class="ct">معنى «الْمَقَاصِدِ» في علم أصول الفقه</div><p>المقاصد جمع مقصد، والمراد بها في اصطلاح الفقهاء الغايات التي شرعت الأحكام لأجلها، وقد قسّمها العلماء إلى ضروريات وحاجيات وتحسينيات، والضروريات الخمس المذكورة في المقال (الدين، النفس، العقل، المال، العرض) هي أعظمها وأصلها، وقد فصّلها الإمام الشاطبي في كتابه «الموافقات» (الجزء الثاني، كتاب المقاصد).</p></div>
+    <div class="card t2"><div class="ct">دلالة «الْمَصَالِحِ الْمُرْسَلَةِ» في السياق الفقهي</div><p>المصالح المرسلة هي كل مصلحة لم يرد نص خاص بإثباتها أو إلغائها لكنها تتفق مع مقاصد الشريعة العامة، والاستفادة من الأنظمة القضائية الوضعية لرد الحقوق تدخل في هذا الباب الأصولي المعروف عند الفقهاء.</p></div>
+    <div class="card t"><div class="ct">الفرق بين الاستعانة بالقانون والرضا به ديناً</div><p>يميز المؤلف بدقة بين أمرين: الاستعانة بوسيلة لتحقيق غاية مشروعة (وهي جائزة)، والتسليم بأن هذه الوسيلة شريعة بديلة عن شريعة الله (وهو ممنوع). وهذا تمييز أصولي دقيق بين «استعمال الوسيلة المباحة» و«اعتقاد مشروعيتها الذاتية المستقلة عن الشرع».</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالنصوص</h2></div>
+  <div class="cb"><div class="bt">السياق التاريخي لحديث حلف الفضول</div>
+    <div class="ci"><span class="vi">سبب الحلف: قصة الزبيدي والعاص بن وائل</span><span class="vs">ذكر ابن إسحاق في السيرة (كما نقله ابن هشام، السيرة النبوية ١/١٣٣-١٣٤) أن رجلاً من زبيد قدم مكة ببضاعة فاشتراها منه العاص بن وائل ومنعه حقه، فاستغاث الزبيدي بأشراف قريش، فاجتمعت بنو هاشم وبنو المطلب وبنو أسد وبنو زهرة وبنو تيم في دار عبد الله بن جدعان وتحالفوا على نصرة كل مظلوم حتى يرد إليه حقه.</span></div>
+  </div>
+  <div class="cb"><div class="bt">شهادة النبي ﷺ للحلف وعمره آنذاك</div>
+    <div class="ci"><span class="vi">شهد النبي ﷺ هذا الحلف قبل البعثة بعشرين سنة</span><span class="vs">ذكر ابن كثير في «البداية والنهاية» (٣/٤٥٦) أن حلف الفضول كان قبل المبعث بعشرين سنة في شهر ذي القعدة، بعد حرب الفجار بأربعة أشهر، وكان النبي ﷺ شاباً في العشرين من عمره حين شهده مع أعمامه.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات والأحاديث المتعلقة بمبدأ إنصاف المظلوم</div>
+    <div class="ci"><span class="vi">﴿وَلَمَنِ انتَصَرَ بَعْدَ ظُلْمِهِ فَأُولَٰئِكَ مَا عَلَيْهِم مِّن سَبِيلٍ﴾</span><span class="vs">سورة الشورى، الآية ٤١ — تقرر مشروعية انتصار المظلوم لنفسه واسترداد حقه دون أن يكون عليه حرج في ذلك.</span></div>
+    <div class="ci"><span class="vi">«إِنَّ اللَّهَ مَعَ الْحَاكِمِ مَا لَمْ يَجُرْ، فَإِذَا جَارَ وَكَلَهُ إِلَى نَفْسِهِ»</span><span class="vs">حديث أورده ابن كثير في تفسيره عند الآية ٥٨ من سورة النساء دون إسناد كامل، وينبغي التحقق من إسناده قبل الاحتجاج به مستقلاً، وإن كان معناه يتفق مع نصوص أخرى صحيحة في وجوب العدل على الحاكم.</span></div>
+    <div class="ci"><span class="vi">«لَا حِلْفَ فِي الْإِسْلَامِ، وَأَيُّمَا حِلْفٍ كَانَ فِي الْجَاهِلِيَّةِ، فَلَمْ يَزِدْهُ الْإِسْلَامُ إِلَّا شِدَّةً»</span><span class="vs">رواه مسلم في صحيحه عن جبير بن مطعم رضي الله عنه — وهذا الحديث يوضح أن المنفي هو الحلف على الباطل أو على نصرة القبيلة بإطلاق، أما الحلف على نصرة المظلوم وإحقاق الحق فهو مما زاده الإسلام تأكيداً وقوة، وهو ما يفسر ثناء النبي ﷺ على حلف الفضول تحديداً.</span></div>
+  </div>
+  <div class="vrd" style="margin-top:14px;"><strong>ملاحظة الترابط:</strong> يتضح من الجمع بين حديث «لَا حِلْفَ فِي الْإِسْلَامِ» وحديث الثناء على حلف الفضول أن النبي ﷺ فرّق بين نوعين من الأحلاف: حلف العصبية الجاهلية المطلقة الذي نسخه الإسلام، وحلف نصرة الحق والمظلوم الذي أقرّه الإسلام وزاده تأكيداً، وهذا التمييز هو جوهر الاستدلال الفقهي في المقال.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع النص والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">حديث فقهي مقاصدي ✅</div><div class="md">حديث يؤسس لقاعدة فقهية أصولية كبرى في باب المصالح المرسلة وإقرار الإسلام لما وافق مقاصده من أنظمة سابقة.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">حديث إقرار وثناء ✅</div><div class="md">إقرار نبوي صريح لنظام اجتماعي قائم قبل البعثة، وهو من أصول الاستدلال على الإقرار النبوي كمصدر تشريعي.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">ليس من أحاديث الأحكام التفصيلية</div><div class="md">الحديث لا يتضمن حكماً تفصيلياً في عبادة أو معاملة بعينها، بل يؤسس لمبدأ كلي عام يُستنبط منه أحكام فرعية متعددة.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> الحديث من نصوص التأصيل المقاصدي، وهو دليل معتبر عند الأصوليين على مشروعية الأخذ بما وافق مقاصد الشريعة من الأعراف والأنظمة السابقة، وهو ما يُعرف عند الفقهاء بـ«شرع من قبلنا إذا لم يخالف شرعنا» في بعض تطبيقاته.</div>
+  <div class="sub"><h3>الأحكام والقيم المستنبطة</h3>
+    <div class="card t"><div class="ct">الحكم الأول: مشروعية الاستعانة بالقضاء لاسترداد الحقوق</div><p>يُستنبط من إقرار النبي ﷺ لحلف الفضول جواز بل استحباب لجوء المظلوم إلى القضاء والأنظمة المرعية لاسترداد حقه، ما دامت هذه الأنظمة تنصف ولا تُلزم بمعصية.</p></div>
+    <div class="card t2"><div class="ct">الحكم الثاني: التفريق بين استعمال الوسيلة المباحة والرضا بها ديناً</div><p>يستنبط من تقييد المؤلف للمسألة أن الاستفادة من نظام وضعي لرد الظلم لا تعني تفضيله على الشريعة أو الرضا بكل أحكامه، بل هي استعمال مقيد بضابط عدم مخالفة الشرع.</p></div>
+    <div class="card t"><div class="ct">الحكم الثالث: اعتبار العرف السابق إذا وافق مقاصد الشريعة</div><p>يُستفاد من الحديث أصل فقهي معتبر عند جمع من العلماء: أن كل عرف أو نظام سابق للإسلام يحقق العدل ولا يخالف نصاً شرعياً فهو معتبر، وهذا من تطبيقات قاعدة «العادة محكّمة» المعروفة عند الفقهاء.</p></div>
+    <div class="card t2"><div class="ct">الحكم الرابع: وجوب نصرة المظلوم ولو لم يكن قريباً أو من الأهل</div><p>يُستفاد من أصل حلف الفضول وجوب التعاون على نصرة المظلوم ولو كان غريباً، كما كان الزبيدي غريباً عن مكة، وهذا تأصيل لمبدأ التضامن الاجتماعي العابر للقرابة والعصبية.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب النصوص تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.25rem;">«لَقَدْ شَهِدْتُ فِي دَارِ عَبْدِ اللهِ بْنِ جُدْعَانَ حِلْفًا مَا أُحِبُّ أَنَّ لِي بِهِ حُمْرَ النَّعَمِ»</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">لَقَدْ</div><div class="id">اللام موطئة للقسم، حرف مبني لا محل له من الإعراب. «قَدْ» حرف تحقيق مبني لا محل له، يفيد توكيد وقوع الفعل.</div></div>
+    <div class="ir"><div class="iw">شَهِدْتُ</div><div class="id">فعل ماضٍ مبني على السكون لاتصاله بضمير الرفع المتحرك «التاء»، والتاء ضمير متصل في محل رفع فاعل.</div></div>
+    <div class="ir"><div class="iw">فِي دَارِ</div><div class="id">جار ومجرور متعلق بـ«شَهِدْتُ»، و«دار» مضاف.</div></div>
+    <div class="ir"><div class="iw">عَبْدِ اللهِ</div><div class="id">مضاف إليه مجرور، و«عبد» مضاف، ولفظ الجلالة «الله» مضاف إليه مجرور وعلامة جره الكسرة.</div></div>
+    <div class="ir"><div class="iw">بْنِ جُدْعَانَ</div><div class="id">«بن» نعت أو بدل مجرور من «عبد الله»، وهو مضاف. «جُدْعَانَ» مضاف إليه مجرور وعلامة جره الفتحة نيابة عن الكسرة لأنه ممنوع من الصرف للعلمية ووزن الفعل.</div></div>
+    <div class="ir"><div class="iw">حِلْفًا</div><div class="id">مفعول به منصوب وعلامة نصبه تنوين الفتح، وهو نكرة تفيد التعظيم والتفخيم (حلفاً عظيماً لا يُحاط بوصفه).</div></div>
+    <div class="ir"><div class="iw">مَا أُحِبُّ</div><div class="id">«مَا» نافية لا عمل لها. «أُحِبُّ» فعل مضارع مرفوع وعلامة رفعه الضمة، والفاعل ضمير مستتر تقديره «أنا». والجملة في محل نصب نعت لـ«حِلْفًا».</div></div>
+    <div class="ir"><div class="iw">أَنَّ لِي بِهِ</div><div class="id">«أنّ» حرف توكيد ونصب، و«لي» جار ومجرور خبر «أنّ» مقدم، و«به» جار ومجرور متعلق بمحذوف حال.</div></div>
+    <div class="ir"><div class="iw">حُمْرَ النَّعَمِ</div><div class="id">«حُمْرَ» اسم «أنّ» مؤخر منصوب وعلامة نصبه الفتحة، وهو مضاف. «النَّعَمِ» مضاف إليه مجرور. والمصدر المؤول من «أنّ» وما بعدها في محل نصب سدّ مسدّ مفعولَي «أُحِبُّ».</div></div>
+  </div>
+
+  <div class="vb" style="margin:22px 0;">
+    <div class="vt" style="font-size:1.25rem;">«وَلَوْ دُعِيتُ بِهِ فِي الْإِسْلَامِ لَأَجَبْتُ»</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَلَوْ</div><div class="id">الواو عاطفة أو استئنافية. «لَوْ» حرف شرط غير جازم يفيد امتناع الجواب لامتناع الشرط، أو الاستمرارية حسب السياق.</div></div>
+    <div class="ir"><div class="iw">دُعِيتُ</div><div class="id">فعل ماضٍ مبني للمجهول مبني على السكون لاتصاله بتاء الفاعل، والتاء ضمير متصل في محل رفع نائب فاعل. وهي فعل الشرط.</div></div>
+    <div class="ir"><div class="iw">بِهِ</div><div class="id">جار ومجرور متعلق بـ«دُعِيتُ»، والضمير يعود على «الحلف».</div></div>
+    <div class="ir"><div class="iw">فِي الْإِسْلَامِ</div><div class="id">جار ومجرور متعلق بـ«دُعِيتُ»، يفيد ظرفية الزمان أو الحال (أي في زمن الإسلام أو في حال كوني مسلماً).</div></div>
+    <div class="ir"><div class="iw">لَأَجَبْتُ</div><div class="id">اللام واقعة في جواب «لو»، حرف مبني لا محل له. «أَجَبْتُ» فعل ماضٍ مبني على السكون لاتصاله بتاء الفاعل، والتاء ضمير متصل في محل رفع فاعل، وهي جواب الشرط.</div></div>
+  </div>
+
+  <div class="vb" style="margin:22px 0;">
+    <div class="vt" style="font-size:1.25rem;">﴿ إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالإِحْسَانِ ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">إِنَّ</div><div class="id">حرف توكيد ونصب مبني على الفتح.</div></div>
+    <div class="ir"><div class="iw">اللَّهَ</div><div class="id">لفظ الجلالة اسم «إنّ» منصوب وعلامة نصبه الفتحة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">يَأْمُرُ</div><div class="id">فعل مضارع مرفوع وعلامة رفعه الضمة، والفاعل ضمير مستتر تقديره «هو» يعود على لفظ الجلالة. والجملة الفعلية في محل رفع خبر «إنّ».</div></div>
+    <div class="ir"><div class="iw">بِالْعَدْلِ</div><div class="id">جار ومجرور متعلق بـ«يَأْمُرُ».</div></div>
+    <div class="ir"><div class="iw">وَالإِحْسَانِ</div><div class="id">الواو عاطفة، «الإحسان» معطوف على «العدل» مجرور مثله وعلامة جره الكسرة.</div></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«الْحَقُّ لَا يَضِيعُ مَا دَامَ هُنَاكَ مَنْ يُطَالِبُ بِهِ بِالْوَسِيلَةِ الْمَشْرُوعَةِ»<br><small style="font-size:.65em;color:var(--mist);">— مستفاد من توجيه الشيخ علي خليل السلجوقي</small></div>
+  <div class="card t"><div class="ct">أولاً: علاج الشعور بالعجز أمام الظلم</div><p>كثير من المظلومين يستسلمون لظلمهم ظناً منهم أن لا سبيل لرد حقهم، والحديث يبني وعياً مغايراً: أن السعي المشروع لاسترداد الحق عبادة لا مذلة. <strong>التطبيق:</strong> تشجيع من وقع عليه ظلم على اللجوء للوسائل المشروعة بدل الاستسلام أو اللجوء لوسائل محرمة.</p></div>
+  <div class="card t2"><div class="ct">ثانياً: بناء الثقة بمؤسسات العدل دون تقديسها</div><p>يرسم المقال توازناً نفسياً دقيقاً: الثقة بالقضاء كوسيلة لرد الحق دون الوقوع في تقديسه أو اعتقاد كماله المطلق. <strong>التطبيق:</strong> التعامل مع الأنظمة القضائية بواقعية، فهي وسيلة بشرية قد تصيب وقد تخطئ، لكنها معتبرة شرعاً في أصلها.</p></div>
+  <div class="card t"><div class="ct">ثالثاً: تربية الحس الجماعي بنصرة المظلوم</div><p>حلف الفضول قام على مبدأ التكاتف الجماعي لنصرة الغريب المظلوم، وهذا يربي في النفس قيمة تجاوز الأنانية الفردية إلى الشعور بمسؤولية اجتماعية تجاه ظلم الآخرين. <strong>التطبيق:</strong> المبادرة لمساندة من يتعرض لظلم ولو لم تربطنا به قرابة أو معرفة سابقة.</p></div>
+  <div class="card t2"><div class="ct">رابعاً: الاعتدال في الموقف من تراث ما قبل الإسلام</div><p>إقرار النبي ﷺ لهذا الحلف يربي عقلية نقدية متوازنة: لا الرفض المطلق لكل ما سبق الإسلام، ولا القبول المطلق له، بل عرضه على ميزان الشرع. <strong>التطبيق:</strong> تطبيق نفس المنهج على الأنظمة والقوانين المعاصرة: أخذ ما يحقق العدل منها ورفض ما يخالف الشرع.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>البدء بالنص النبوي الموثق:</strong> افتتح المؤلف بالحديث الشريف كأصل يُبنى عليه الاستدلال الفقهي اللاحق.</li>
+      <li><strong>الانتقال من الجزئي إلى الكلي:</strong> من واقعة حلف الفضول التاريخية إلى القاعدة الفقهية العامة (مقاصد الشريعة) ثم إلى التطبيق المعاصر.</li>
+      <li><strong>التوازن بين الترغيب والتقييد:</strong> الترغيب في الاستعانة بالأنظمة لرد الحقوق، مع التقييد الصريح بعدم تعظيم القانون الوضعي أو مساواته بالشريعة.</li>
+      <li><strong>الختام بالدعاء الجامع:</strong> تحويل الاستدلال الفقهي إلى دعاء عملي يطلب نصرة المظلوم وكف يد الظالم، فتنتهي المقالة بعبادة لا بمجرد استنتاج نظري.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong style="color:var(--tg);">العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضراً أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong style="color:var(--tg);">البُعد الزمني:</strong> الربط الحي بين النص الشرعي ومستجدات العصر — يُحيي التأمل في النصوص الفقهية بلغة معاصرة.</p>
+      <p><strong style="color:var(--tg);">التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ مما يُضفي على كتاباته دقةً عقدية وفقهية نادرة.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم وسنة نبيه ﷺ، ونفع به الأمة في زمن كثرت فيه الحاجة إلى الفقه المقاصدي المتوازن.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">الفقه المقاصدي</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">السيرة النبوية</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَالسُّنَّةِ النَّبَوِيَّةِ وَأَهْلِهِمَا</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  const sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+const secs=document.querySelectorAll('.sec[id]');
+const links=document.querySelectorAll('.toc-a');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a) a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>{
+  document.getElementById('sb').classList.add('off');
+  document.getElementById('sb').classList.remove('open');
+}));
+</script>
+</body>
+</html>

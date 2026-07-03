@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سُورَةُ الْفَلَقِ — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#071a0a;--bg:#f0faf2;--bg2:#dff0e4;
+  --green:#0a5c1a;--gm:#1a8c30;--glt:#2ab850;
+  --gd:#030f06;--gt:#d8f5e0;--gg:#80e0a0;
+  --gold:#b8860b;--gold-m:#c9a84c;
+  --div:#70c88a;--mist:#1a4a24;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(10,92,26,.08) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(42,184,80,.05) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--gm),var(--glt));z-index:400;transform-origin:top;}
+.hdr{background:var(--gd);border-bottom:2px solid var(--gm);position:sticky;top:0;z-index:200;box-shadow:0 2px 20px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--glt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--gg);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--gt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--green);color:var(--gg);border:1px solid rgba(42,184,80,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--gm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#021006;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(42,184,80,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--glt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(42,184,80,.2);}
+.toc-s{color:rgba(42,184,80,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#60a870;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--gt);background:rgba(42,184,80,.1);border-right-color:var(--glt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--gm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--glt);}
+.hcat{display:inline-block;background:var(--green);color:var(--gt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.6rem;font-weight:700;color:var(--gd);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--gm);border-radius:50%;}
+.vb{background:var(--gd);border:1px solid rgba(42,184,80,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(42,184,80,.1),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--gt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.42rem;}
+.vr{color:var(--gg);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#071a0a;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--gm);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--green);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--gm);background:rgba(10,92,26,.06);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--gm);font-weight:700;text-align:center;margin:9px 0;}
+.falaq-list{list-style:none;padding:0;margin:10px 0 20px;}
+.falaq-list li{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--green);text-align:center;padding:8px 0;border-bottom:1px dashed var(--div);}
+.falaq-list li:last-child{border-bottom:none;font-weight:700;color:var(--gd);}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--gd);color:var(--glt);border:2px solid var(--gm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--gd);border-bottom:2px solid var(--glt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--green);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.g{border-right:5px solid var(--gm);}
+.card.g2{border-right:5px solid var(--green);}
+.card.g3{border-right:5px solid var(--gold);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#030f06;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#071a0a;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--gm);color:var(--gt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--gd);color:var(--gg);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--gm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(42,184,80,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#030f06;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ex{color:var(--green);font-style:italic;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#030f06;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#030f06;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--glt);border-bottom:2px solid var(--glt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--glt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#021006,#041a0a);border:1px solid rgba(42,184,80,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--glt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(42,184,80,.25);}
+.ci{color:#90c8a0;padding:9px 0;border-bottom:1px dashed rgba(42,184,80,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--gt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--gg);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#021006,#062010);border:1px solid rgba(42,184,80,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#90c8a0;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--gt);}
+.g2col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--gm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#030f06;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#071a0a;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--gm);font-size:.85em;top:11px;}
+.asec{background:var(--gd);border:1px solid rgba(42,184,80,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--gm),var(--green));border:3px solid var(--glt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--gt);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--gg);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#90c8a0;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(42,184,80,.1);border:1px solid rgba(42,184,80,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--gg);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--gt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(42,184,80,.16);color:var(--glt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(42,184,80,.28);}
+.orn{text-align:center;color:var(--glt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--gd);color:#2a6a3a;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(42,184,80,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--glt);}
+footer .fb span{color:var(--gg);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2col,.g3col,.amg{grid-template-columns:1fr;}.hero h1{font-size:2.1rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.28rem;}.hero h1{font-size:1.7rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">⌂ الفهرس الرئيسي</a>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">سُورَةُ الْفَلَقِ — حِينَ يَشُقُّ اللهُ ظُلُمَاتِ الْوُجُودِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تدبر قرآني · سورة الفلق · مقالة روحية</div>
+  <h1>سُورَةُ الْفَلَقِ... حِينَ يَشُقُّ اللهُ ظُلُمَاتِ الْوُجُودِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>الفلق: ١</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾</div>
+    <div class="vr">سورة الفلق، الآية ١</div>
+  </div>
+  <div class="abody">
+    <p>لَيْسَتْ كَلِمَةُ «الْفَلَقِ» مُجَرَّدَ مَشْهَدٍ لِلصَّبَاحِ وَهُوَ يَتَسَلَّلُ مِنْ بَيْنِ سِتَائِرِ اللَّيْلِ، بَلْ هِيَ إِعْلَانٌ كَوْنِيٌّ عَظِيمٌ عَنْ سُنَّةِ اللهِ فِي هَذَا الْوُجُودِ؛ سُنَّةِ الشَّقِّ بَعْدَ الِانْغِلَاقِ، وَالنُّورِ بَعْدَ الظُّلْمَةِ، وَالْفَرَجِ بَعْدَ الْكُرْبَةِ، وَالْحَيَاةِ بَعْدَ السُّكُونِ.</p>
+    <p>إِنَّ اللهَ سُبْحَانَهُ لَمْ يَقُلْ: «أَعُوذُ بِرَبِّ الصَّبَاحِ»، وَلَا «بِرَبِّ النُّورِ»، وَإِنَّمَا قَالَ: ﴿رَبِّ الْفَلَقِ﴾؛ لِأَنَّ الْفَلَقَ يَحْمِلُ مَعْنَى الْحَرَكَةِ وَالِانْبِثَاقِ وَالِانْفِجَارِ بِالْحَيَاةِ.</p>
+    <div class="hl">الْفَلَقُ هُوَ اللَّحْظَةُ الَّتِي يَنْشَقُّ فِيهَا اللَّيْلُ الطَّوِيلُ عَنْ أَوَّلِ خَيْطٍ مِنَ النُّورِ.</div>
+    <div class="hl">وَهُوَ اللَّحْظَةُ الَّتِي تَنْفَلِقُ فِيهَا الْبِذْرَةُ الْمَدْفُونَةُ تَحْتَ التُّرَابِ لِتُخْرِجَ سَاقًا خَضْرَاءَ.</div>
+    <div class="hl">وَهُوَ انْشِقَاقُ الْبَيْضَةِ عَنْ فَرْخٍ صَغِيرٍ كَانَ حَبِيسَ الظُّلُمَاتِ.</div>
+    <div class="hl">وَهُوَ انْبِثَاقُ الزَّهْرَةِ مِنْ بَيْنِ الْأَغْصَانِ الْيَابِسَةِ.</div>
+    <div class="hl">وَهُوَ خُرُوجُ النَّبْعِ مِنْ جَوْفِ الصُّخُورِ الصَّلْبَةِ.</div>
+    <p>فَكُلُّ مَا فِي الْكَوْنِ فَلَقٌ بَعْدَ انْغِلَاقٍ، وَانْبِثَاقٌ بَعْدَ احْتِبَاسٍ، وَنُورٌ بَعْدَ الظُّلْمَةِ.</p>
+    <p>وَمِنْ هُنَا كَانَتِ الِاسْتِعَاذَةُ بِرَبِّ الْفَلَقِ. لِأَنَّ الْإِنْسَانَ يَعِيشُ بَيْنَ أَنْوَاعٍ مِنَ الظُّلُمَاتِ:</p>
+    <ul class="falaq-list">
+      <li>ظُلْمَةُ الْخَوْفِ.</li>
+      <li>ظُلْمَةُ الْحُزْنِ.</li>
+      <li>ظُلْمَةُ الْمَرَضِ.</li>
+      <li>ظُلْمَةُ الْفَقْرِ.</li>
+      <li>ظُلْمَةُ الْفِتَنِ.</li>
+      <li>ظُلْمَةُ الشَّهَوَاتِ.</li>
+      <li>ظُلْمَةُ الشُّبُهَاتِ.</li>
+      <li>ظُلْمَةُ الظُّلْمِ وَالطُّغْيَانِ.</li>
+    </ul>
+    <p>وَحِينَ تَتَرَاكَمُ هَذِهِ الظُّلُمَاتُ حَوْلَ الْقَلْبِ، يَحْتَاجُ الْإِنْسَانُ إِلَى مَنْ يَمْلِكُ مَفَاتِيحَ الْفَلَقِ كُلِّهَا.</p>
+    <div class="ql">فَمَنِ الَّذِي يَشُقُّ اللَّيْلَ عَنِ الْفَجْرِ؟</div>
+    <div class="ql">وَمَنِ الَّذِي يَشُقُّ الْأَرْضَ عَنِ النَّبَاتِ؟</div>
+    <div class="ql">وَمَنِ الَّذِي يَشُقُّ الْغَمَامَ عَنِ الْمَطَرِ؟</div>
+    <div class="ql">وَمَنِ الَّذِي يَشُقُّ الْبَحْرَ عَنِ الطَّرِيقِ؟</div>
+    <div class="ql" style="font-size:1.5rem;color:var(--gd);">إِنَّهُ اللهُ.</div>
+    <p>وَلِهَذَا فَإِنَّ الْمُؤْمِنَ حِينَ يَقُولُ ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾ فَكَأَنَّهُ يَقُولُ:</p>
+    <div class="vb" style="margin:22px 0;">
+      <div class="vt sm">يَا رَبَّ كُلِّ فَجْرٍ بَعْدَ لَيْلٍ...<br>وَيَا رَبَّ كُلِّ فَرَجٍ بَعْدَ ضِيقٍ...<br>وَيَا رَبَّ كُلِّ نُورٍ بَعْدَ ظُلْمَةٍ...<br>وَيَا رَبَّ كُلِّ حَيَاةٍ بَعْدَ مَوْتٍ...<br>إِنِّي أَلْجَأُ إِلَيْكَ.</div>
+    </div>
+    <p>إِنَّ اخْتِيَارَ اسْمِ «الْفَلَقِ» هُنَا يَفْتَحُ بَابَ الرَّجَاءِ عَلَى مِصْرَاعَيْهِ. فَالْمُؤْمِنُ لَا يَنْظُرُ إِلَى الظُّلْمَةِ وَحْدَهَا، بَلْ يَنْظُرُ إِلَى الْيَدِ الَّتِي تُمَزِّقُ الظُّلْمَةَ. وَلَا يَقِفُ عِنْدَ الشِّدَّةِ، بَلْ يَرَى خَلْفَهَا الْفَرَجَ. وَلَا يَكْتَفِي بِمُشَاهَدَةِ اللَّيْلِ، بَلْ يَنْتَظِرُ الْفَجْرَ الَّذِي وَعَدَ اللهُ بِهِ.</p>
+    <p>كَمْ مِنْ أُمَمٍ ظَنَّتْ أَنَّ الطُّغْيَانَ خَالِدٌ، ثُمَّ جَاءَ فَلَقُ اللهِ فَانْهَارَ الْجَبَّارُونَ. وَكَمْ مِنْ قُلُوبٍ أَظْلَمَتْ بِالْمَعَاصِي، ثُمَّ أَشْرَقَ فِيهَا نُورُ التَّوْبَةِ. وَكَمْ مِنْ مَرِيضٍ أَحَاطَ بِهِ الْأَلَمُ، ثُمَّ فَلَقَ اللهُ عَنْهُ غَمَامَةَ الْبَلَاءِ. وَكَمْ مِنْ مَهْمُومٍ ظَنَّ أَنَّ الطَّرِيقَ قَدِ انْسَدَّ، فَإِذَا بِاللهِ يَفْتَحُ لَهُ أَبْوَابًا لَمْ تَخْطُرْ لَهُ عَلَى بَالٍ.</p>
+    <p>إِنَّ الْفَلَقَ لَيْسَ حَادِثَةً يَوْمِيَّةً نَرَاهَا فِي الْأُفُقِ فَحَسْبُ؛ إِنَّهُ قَانُونُ اللهِ الْجَارِي فِي الْأَنْفُسِ وَالْآفَاقِ.</p>
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا﴾</div><div class="vr">الشرح: ٥</div></div>
+    <ul class="falaq-list">
+      <li>فَالْيُسْرُ فَلَقٌ.</li>
+      <li>وَالْفَرَجُ فَلَقٌ.</li>
+      <li>وَالْهِدَايَةُ فَلَقٌ.</li>
+      <li>وَالتَّوْبَةُ فَلَقٌ.</li>
+      <li>وَالنَّجَاةُ فَلَقٌ.</li>
+      <li>وَالْجَنَّةُ أَعْظَمُ فَلَقٍ بَعْدَ ظُلُمَاتِ الدُّنْيَا كُلِّهَا.</li>
+    </ul>
+    <p>وَحِينَ تَتَرَدَّدُ هَذِهِ الْآيَةُ عَلَى لِسَانِ الْمُؤْمِنِ كُلَّ صَبَاحٍ وَمَسَاءٍ، فَإِنَّهَا تَزْرَعُ فِي قَلْبِهِ يَقِينًا عَجِيبًا:</p>
+    <div class="hl">أَنَّ وَرَاءَ كُلِّ لَيْلٍ فَجْرًا...</div>
+    <div class="hl">وَوَرَاءَ كُلِّ مِحْنَةٍ مِنْحَةً...</div>
+    <div class="hl">وَوَرَاءَ كُلِّ ظُلْمَةٍ نُورًا...</div>
+    <div class="hl">وَأَنَّ رَبَّ الْفَلَقِ قَادِرٌ عَلَى أَنْ يَشُقَّ عَنْكَ مَا عَجَزْتَ أَنْتَ عَنْ شَقِّهِ.</div>
+    <p>فَاسْتَعِذْ بِهِ... وَالْجَأْ إِلَيْهِ... وَاطْرُقْ بَابَهُ...<br>فَمَا خَابَ قَلْبٌ احْتَمَى بِرَبِّ الْفَلَقِ.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="sub"><h3>بلاغة الآية الكريمة — الفلق ١</h3>
+    <div class="card g"><div class="ct">أولاً: الأمر بـ﴿قُلْ﴾ — التعليم والتكريم</div><p>افتتحت السورة بالأمر «قُلْ» الذي يُعلّم النبي ﷺ وأمته صيغة الاستعاذة — وفي هذا تكريم للمؤمن بأن يُنبَّه إلى هذه الكلمة العظيمة ويُأمر بقولها. كما أن «قُلْ» يُفيد أن هذا الدعاء يُنطق باللسان لا يُضمر في القلب فحسب — الاستعاذة الكاملة ظاهر وباطن.</p></div>
+    <div class="card g2"><div class="ct">ثانياً: الاستعاذة لا الدعاء — الفرق الدقيق</div><p>«أَعُوذُ» من العَوذ وهو اللجوء والالتصاق بالشيء للاحتماء به — أشد من مجرد الطلب. فالمستعيذ يُلصق نفسه بالمستعاذ به كما يلتصق الطائر بالشجرة هرباً من الصقر. وهذا التصوير الحركي في «أعوذ» أعمق دلالةً من «أدعو» أو «أطلب».</p></div>
+    <div class="card g"><div class="ct">ثالثاً: ﴿رَبِّ الْفَلَقِ﴾ لا «رب الصباح» أو «رب النور» — الاختيار الإلهي الدقيق</div><p>«الصباح» وصف لحالة، و«النور» وصف لنتيجة — أما «الْفَلَقِ» فهو وصف للفعل نفسه: الشق والانبثاق. واختيار الفعل على الحالة أو النتيجة يُفيد أن الله يُعلّم المؤمن أن يستعيذ بالرب الفاعل المتصرف لا بالرب الساكن — الرب الذي يَشُقّ ويُفلِق ويُخرج.</p></div>
+    <div class="card g2"><div class="ct">رابعاً: الإضافة في ﴿رَبِّ الْفَلَقِ﴾ — التخصيص بعد التعميم</div><p>«رب» من أسماء الله الحسنى تدل على الملك والتصرف والرعاية. وإضافتها إلى «الفلق» تُخصّص ربوبيته لهذه الظاهرة الكونية الدالة على سنة الفرج — كأن الآية تقول: الرب الذي يملك مفتاح كل شقٍّ وفلقٍّ في الوجود هو المستعاذ به.</p></div>
+    <div class="card g"><div class="ct">خامساً: الاستفهامات الأربعة «مَنِ الَّذِي يَشُقُّ...» في المقال</div><p>وظّف المقال أربعة استفهامات متتالية: «من الذي يشق الليل... الأرض... الغمام... البحر؟» ثم أجاب بكلمة واحدة: «إِنَّهُ اللهُ» — وهذا الأسلوب القرآني المستعار (السؤال ثم الجواب المقتضب) من أقوى أساليب الإقناع بالبرهان لا بالادعاء.</p></div>
+  </div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <table class="tbl">
+      <tr><th>الصورة</th><th>النص</th><th>التحليل</th></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«يَتَسَلَّلُ مِنْ بَيْنِ سِتَائِرِ اللَّيْلِ»</td><td class="def">شبّه الليل بغرفة لها ستائر — الفجر يتسلل من بين الستائر بحركة رقيقة حذرة.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«الْيَدِ الَّتِي تُمَزِّقُ الظُّلْمَةَ»</td><td class="def">شبّه قدرة الله على إزالة الظلمة بيد تُمزّق ثوباً — التمزيق يوحي بالقوة والحسم.</td></tr>
+      <tr><td class="term">تشبيه ضمني</td><td class="ex">«الْبِذْرَةُ الْمَدْفُونَةُ... سَاقًا خَضْرَاءَ تَتَّجِهُ نَحْوَ السَّمَاءِ»</td><td class="def">الإنسان في المحنة كالبذرة تحت التراب — مدفون محاصر لكنه يشق الأرض صعوداً نحو النور.</td></tr>
+      <tr><td class="term">تشبيه تمثيلي</td><td class="ex">«فَرْخٌ صَغِيرٌ كَانَ حَبِيسَ الظُّلُمَاتِ»</td><td class="def">المؤمن في ضيق الدنيا كالفرخ داخل البيضة — الحبس مؤقت والاختراق حتمي بإذن الله.</td></tr>
+      <tr><td class="term">استعارة تصريحية</td><td class="ex">«فَلَقُ اللهِ فَانْهَارَ الْجَبَّارُونَ»</td><td class="def">استعار «الفلق» لانهيار الطغيان — فكما ينفلق الليل عن الفجر، ينفلق الظلم عن العدل.</td></tr>
+      <tr><td class="term">تكرار موضوعي</td><td class="ex">«فَالْيُسْرُ فَلَقٌ — وَالْفَرَجُ فَلَقٌ — وَالْهِدَايَةُ فَلَقٌ...»</td><td class="def">تعميق مفهوم الفلق بتطبيقه على ست حالات متصاعدة — تكرار بنيوي يُبني معجماً روحياً متكاملاً.</td></tr>
+    </table>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="g2col">
+      <div class="mc"><span class="ml">الطباق الثنائي المتكرر</span><div class="mv">ظلمة / نور — ليل / فجر</div><div class="md">يتكرر طباق الظلمة والنور، والليل والفجر، وهو طباق ليس زخرفياً بل هو جوهر الفكرة: كل شيء في الوجود يسير وفق هذا الثنائي.</div></div>
+      <div class="mc"><span class="ml">الجناس الاشتقاقي</span><div class="mv">مادة ف.ل.ق</div><div class="md">«الْفَلَقِ، تَنْفَلِقُ، فَلَقَ، فَلَقٌ» — المادة الواحدة تتكرر في صور صرفية متعددة تُغني النص دلالياً.</div></div>
+      <div class="mc"><span class="ml">التصاعد في قائمة الظلمات</span><div class="mv">من الفردي إلى الكوني</div><div class="md">قائمة الظلمات تبدأ بالفردي (الخوف، الحزن، المرض) وتنتهي بالكوني (الظلم والطغيان) — تصاعد يُشمل الإنسان والمجتمع.</div></div>
+      <div class="mc"><span class="ml">الترصيع في الخاتمة</span><div class="mv">«وراء كل... وراء كل»</div><div class="md">«وَرَاءَ كُلِّ لَيْلٍ فَجْرًا / وَرَاءَ كُلِّ مِحْنَةٍ مِنْحَةً / وَرَاءَ كُلِّ ظُلْمَةٍ نُورًا» — ترصيع في ثلاثة مقاطع متوازية يُعطي الخاتمة إيقاعاً شعرياً.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LINGUISTIC -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card g"><div class="ct">كلمة «الْفَلَقِ» — التحليل الصرفي</div><p>«الفَلَق» مصدر على وزن «فَعَل» من «فَلَقَ يَفلِقُ» — والمصدر يدل على الحدث المجرد. وقد آثر القرآن المصدر لا اسم الفاعل «الفالق» في هذه الآية، لأن الاسم «الفَلَق» يحمل الحدث في ذاته لا الفاعل — كأن الشقق والانبثاق هو ما يُستعاذ بربه لا مجرد الصفة.</p></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن الصرفي</th><th>الدلالة</th></tr>
+      <tr><td class="term">الْفَلَقُ</td><td>فَعَل</td><td class="def">مصدر «فَلَقَ» — الشق والانبثاق. وقيل اسم مكان: موضع الشق — أي الفجر حين ينشق الليل.</td></tr>
+      <tr><td class="term">أَعُوذُ</td><td>أَفعُل</td><td class="def">مضارع من «عَاذَ يَعُوذُ» — اللجوء والالتصاق بالمستعاذ به هرباً من المخوف.</td></tr>
+      <tr><td class="term">الْفَالِقُ</td><td>فَاعِل</td><td class="def">اسم فاعل — ورد في ﴿فَالِقُ الْإِصْبَاحِ﴾ الأنعام:٩٦ — الله الشاق للإصباح.</td></tr>
+      <tr><td class="term">تَنْفَلِقُ</td><td>تَنفَعِل</td><td class="def">صيغة المطاوعة: الانفلاق استجابةً للفلق — البذرة تنفلق لأن الله فلقها.</td></tr>
+    </table>
+    <div class="card g2"><div class="ct">قراءات «الفَلَق» عند المفسرين</div><p>اختلف المفسرون في المراد بـ«الفَلَق» على أقوال: (أ) الصبح وانشقاق الليل عنه — وهو قول الجمهور. (ب) الخلق كله لأن كل مخلوق انفلق عن العدم. (ج) بيت في جهنم — قول شاذ. (د) كل ما انشق عن شيء كالبذرة والبيضة والأرض. والأرجح الأول مع الشمول للثاني.</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card g"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْفَلَقُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">الصبح وانبثاق الفجر</td><td class="def">﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾ — القول الأشهر عند المفسرين.</td></tr>
+        <tr><td class="term">الشق والانبثاق الكوني</td><td class="def">كل ما انفلق: بذرة، بيضة، أرض، صخرة.</td></tr>
+        <tr><td class="term">الخلق كله</td><td class="def">لأن كل مخلوق انفلق من عدم إلى وجود — قول بعض المفسرين.</td></tr>
+        <tr><td class="term">البئر أو النبع</td><td class="def">في بعض اللهجات العربية: الفَلَق مكان تفجر الماء.</td></tr>
+      </table>
+    </div>
+    <div class="card g2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الرَّبُّ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">المالك المتصرف</td><td class="def">﴿رَبِّ الْفَلَقِ﴾ — مالك الفلق ومتصرف فيه.</td></tr>
+        <tr><td class="term">المربّي والقائم على الشيء</td><td class="def">«ربّ الدار» أي صاحبها وقيّمها.</td></tr>
+        <tr><td class="term">السيد والمطاع</td><td class="def">«الرب» في سياق العبودية.</td></tr>
+        <tr><td class="term">المصلح والمدبّر</td><td class="def">«ربّ الأمر» أي أصلحه ودبّره.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card g"><div class="ct">الفرق بين: فَلَقَ / شَقَّ / فَتَحَ / خَرَقَ / انْبَثَقَ</div>
+      <table class="tbl">
+        <tr><th>الفعل</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">فَلَقَ</td><td class="def">الشق من داخل بقوة مُولِّدة — كانفلاق البذرة بنموها لا بسكين.</td></tr>
+        <tr><td class="term">شَقَّ</td><td class="def">أعم — الشق من خارج أو داخل بأداة أو بقوة.</td></tr>
+        <tr><td class="term">فَتَحَ</td><td class="def">الإزالة بلا تدمير للحاجز — «فتح الباب» لا يُدمره.</td></tr>
+        <tr><td class="term">خَرَقَ</td><td class="def">الاختراق بعنف مع ترك ثقب — «خرق الثوب».</td></tr>
+        <tr><td class="term">انْبَثَقَ</td><td class="def">الخروج المفاجئ بقوة — «انبثق الماء» فجأةً.</td></tr>
+      </table>
+      <div class="vrd"><strong>الخلاصة:</strong> «فَلَقَ» أدق الأفعال لوصف الفجر لأنه يحمل دلالة القوة الداخلية المُولِّدة لا الكسر من خارج — كما يتجلى في الفجر الذي ينبثق من رحم الليل لا من خارجه.</div>
+    </div>
+    <div class="card g2"><div class="ct">الفرق بين: الظُّلْمَةُ / الظَّلَامُ / الْغَسَقُ / الدَّيْجُورُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الدلالة الدقيقة</th></tr>
+        <tr><td class="term">الظُّلْمَةُ</td><td class="def">غياب النور — تُستعمل للحسي والمعنوي.</td></tr>
+        <tr><td class="term">الظَّلَامُ</td><td class="def">الظلمة الشاملة الغامرة — أشد من الظلمة.</td></tr>
+        <tr><td class="term">الْغَسَقُ</td><td class="def">ظلمة أول الليل — ﴿وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ﴾.</td></tr>
+        <tr><td class="term">الدَّيْجُورُ</td><td class="def">الظلام الكثيف الشديد — من ألفاظ الشعر العربي.</td></tr>
+      </table>
+    </div>
+    <div class="card g"><div class="ct">الفرق بين: الِاسْتِعَاذَةُ / الدُّعَاءُ / الِالْتِجَاءُ / التَّوَسُّلُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الِاسْتِعَاذَةُ</td><td class="def">اللجوء والالتصاق بالمستعاذ به هرباً من شر — فيها حركة نحو الله وهرب من العدو.</td></tr>
+        <tr><td class="term">الدُّعَاءُ</td><td class="def">طلب الخير من الله — فيها طلب لا هرب بالضرورة.</td></tr>
+        <tr><td class="term">الِالْتِجَاءُ</td><td class="def">اللجوء إلى الملجأ في الضيق — قريب من الاستعاذة.</td></tr>
+        <tr><td class="term">التَّوَسُّلُ</td><td class="def">التقرب بوسيلة — طلب بالواسطة لا الهروب المباشر.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card g"><div class="ct">لماذا «رَبِّ الْفَلَقِ» لا «فَالِقِ الإِصْبَاحِ»؟</div><p>في الأنعام: ﴿فَالِقُ الإِصْبَاحِ﴾ جاء الله فاعلاً (فالق) — أما هنا فجاء ربًّا للفلق «رَبِّ الْفَلَقِ». الفرق دقيق: «فالق الإصباح» يُركّز على الفعل الإلهي، و«رب الفلق» يُركّز على الملكية والسيادة — فالمستعيذ يلجأ إلى من يملك الفلق ويتصرف فيه كيف يشاء.</p></div>
+    <div class="card g2"><div class="ct">الفلق قانون كوني في الأنفس والآفاق</div><p>عبارة المقال «الْفَلَقُ لَيْسَ حَادِثَةً يَوْمِيَّةً... إِنَّهُ قَانُونُ اللهِ الْجَارِي فِي الْأَنْفُسِ وَالْآفَاقِ» — هذه عبارة قرآنية الروح: ﴿سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنفُسِهِمْ﴾. الفلق في الآفاق (الفجر، النبات، المطر) مرآةٌ للفلق في الأنفس (التوبة، الهداية، الفرج).</p></div>
+    <div class="card g"><div class="ct">الجنة «أَعْظَمُ فَلَقٍ» — دلالة الختام</div><p>ختم المقال قائمة الفلق بـ«الْجَنَّةُ أَعْظَمُ فَلَقٍ بَعْدَ ظُلُمَاتِ الدُّنْيَا كُلِّهَا» — وهذه خاتمة موضوعية مُحكمة: إذا كان كل فلق في الدنيا عظيماً، فأعظمه هو دخول الجنة بعد ظلمات الدنيا وأهوال القيامة — الفلق الأبدي النهائي.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">سياق السورة — الآيات التالية (٢–٥)</div>
+    <div class="ci"><span class="vi">﴿مِن شَرِّ مَا خَلَقَ﴾</span><span class="vs">الفلق: ٢ — الاستعاذة من شر المخلوقات كلها: الحيوانات الضارة والكوارث والجن.</span></div>
+    <div class="ci"><span class="vi">﴿وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ﴾</span><span class="vs">الفلق: ٣ — شر الليل وظلامه حين يشتد — الفلق نقيض الغاسق: نور مقابل ظلام.</span></div>
+    <div class="ci"><span class="vi">﴿وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ﴾</span><span class="vs">الفلق: ٤ — الاستعاذة من السحر الذي يعمل في الخفاء كالظلام.</span></div>
+    <div class="ci"><span class="vi">﴿وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ﴾</span><span class="vs">الفلق: ٥ — الحسد ظلمة من ظلمات النفوس — رب الفلق يقيك من هذه الظلمة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات المتعلقة في القرآن الكريم</div>
+    <div class="ci"><span class="vi">﴿فَالِقُ الْإِصْبَاحِ وَجَعَلَ اللَّيْلَ سَكَنًا﴾</span><span class="vs">الأنعام: ٩٦ — الله فالق الإصباح: الفعل الإلهي في شق الليل عن الفجر.</span></div>
+    <div class="ci"><span class="vi">﴿فَالِقُ الْحَبِّ وَالنَّوَىٰ يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ﴾</span><span class="vs">الأنعام: ٩٥ — الله يفلق الحبة فتخرج منها الحياة — هذا هو الفلق الكوني الذي يصفه المقال.</span></div>
+    <div class="ci"><span class="vi">﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾</span><span class="vs">الشرح: ٥–٦ — قانون الفلق في الأنفس: اليسر كامن في العسر نفسه.</span></div>
+    <div class="ci"><span class="vi">﴿أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ ۝ وَوَجَدَكَ ضَالًّا فَهَدَىٰ ۝ وَوَجَدَكَ عَائِلًا فَأَغْنَىٰ﴾</span><span class="vs">الضحى: ٦–٨ — نماذج قرآنية للفلق في حياة النبي ﷺ: يتم ← إيواء / ضلال ← هداية / فقر ← غنى.</span></div>
+    <div class="ci"><span class="vi">﴿وَأَوْحَيْنَا إِلَىٰ مُوسَىٰ أَنِ اضْرِب بِّعَصَاكَ الْبَحْرَ فَانفَلَقَ﴾</span><span class="vs">الشعراء: ٦٣ — فلق البحر: أعظم صور الفلق في التاريخ النبوي.</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3col">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية عبادة ✅</div><div class="md">تُعلّم الاستعاذة بالله وصيغتها الصحيحة — من أبواب الذكر والدعاء المشروع.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عقدية ✅</div><div class="md">تُثبت ربوبية الله على الفلق كله — توحيد الربوبية بالاستعاذة بالرب الفاعل المتصرف.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">تكليف وأمر ✅</div><div class="md">«قُلْ» أمرٌ للنبي ﷺ وأمته بالاستعاذة — تكليف عملي بذكر يومي.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> الآية الأولى من سورة الفلق آيةُ عبادة-عقيدة-تكليف: تُعلّم العبادة (الاستعاذة)، وتُثبت العقيدة (ربوبية الله)، وتُكلّف بالفعل («قُلْ»).</div>
+  <div class="sub"><h3>الأحكام الشرعية المستنبطة</h3>
+    <div class="card g"><div class="ct">الحكم الأول: استحباب قراءة المعوذتين صباحاً ومساءً</div><p>ثبت في السنن أن النبي ﷺ كان يقرأ المعوذتين (الفلق والناس) كل صباح ومساء ثلاث مرات. وفي السنن أيضاً أنه ﷺ كان ينفث بهما في يديه ثم يمسح بهما جسده عند النوم.</p></div>
+    <div class="card g2"><div class="ct">الحكم الثاني: مشروعية الاستعاذة من الشر قبل وقوعه</div><p>الاستعاذة قبل وقوع الشر لا بعده — وهذا يُفيد أن التحصين الاستباقي مشروع بل مُستحَبّ. والمؤمن يتحصن بالمعوذات دون أن يكون قد أُصيب بشر، تماماً كما يُغلق الباب قبل أن يأتي السارق.</p></div>
+    <div class="card g"><div class="ct">الحكم الثالث: كفاية المعوذات في الرقية</div><p>ثبت عن النبي ﷺ استخدامه المعوذات رقيةً لنفسه ولغيره — وهو دليل على مشروعية الرقية بالقرآن وأن المعوذات كافية في دفع الأذى بإذن الله.</p></div>
+    <div class="card g2"><div class="ct">الحكم الرابع: حرمة اليأس وواجب الرجاء</div><p>دلّ مفهوم «رَبِّ الْفَلَقِ» على وجوب الرجاء بالله في كل ضيق — وأن اليأس من رحمة الله محرّم لأنه يُكذّب سنة الفلق الإلهية التي لا تتخلف.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.55rem;">﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">قُلْ</div><div class="id">فعل أمر مبني على السكون. الفاعل ضمير مستتر وجوباً تقديره «أنت» يعود على النبي ﷺ وكل من يتلو الآية. والجملة ابتدائية لا محل لها من الإعراب.</div></div>
+    <div class="ir"><div class="iw">أَعُوذُ</div><div class="id">فعل مضارع مرفوع بالضمة الظاهرة. الفاعل مستتر وجوباً «أنا». والجملة في محل نصب مقول القول لـ«قُلْ».</div></div>
+    <div class="ir"><div class="iw">بِرَبِّ</div><div class="id">الباء: حرف جر. «رَبِّ»: اسم مجرور بالكسرة وهو مضاف. والجار والمجرور متعلقان بـ«أعوذ».</div></div>
+    <div class="ir"><div class="iw">الْفَلَقِ</div><div class="id">مضاف إليه مجرور بالكسرة الظاهرة. والمعنى: أعوذ بالله الذي يملك الفلق ويتصرف فيه.</div></div>
+  </div>
+  <div class="card g" style="margin-top:14px;"><div class="ct">ملاحظة إعرابية: «قُلْ» وعلاقتها بـ«أعوذ»</div><p>«قُلْ» فعل أمر وجملة «أعوذ برب الفلق» مقول القول في محل نصب. وهذا يعني أن المؤمن مأمور بالقول لا بمجرد الاعتقاد — فالاستعاذة نطقٌ باللسان وليست فقط نيةً في القلب. وهذا دليل على أن التعبد بالاستعاذة له صيغة لفظية معينة لا تحصل بغيرها.</p></div>
+
+  <div class="sub"><h3>إعراب الآية المصاحبة ﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا﴾</h3>
+  <div class="ib">
+    <div class="ir"><div class="iw">فَإِنَّ</div><div class="id">الفاء: استئنافية أو تعليلية. «إنّ»: حرف توكيد ونصب.</div></div>
+    <div class="ir"><div class="iw">مَعَ الْعُسْرِ</div><div class="id">«مع»: ظرف مكان أو زمان منصوب على الظرفية، وهو في محل نصب خبر «إنّ» مقدَّم. «العسر»: مضاف إليه مجرور — تقديم الظرف على الاسم يُفيد أن اليسر مصاحب للعسر لا بعده.</div></div>
+    <div class="ir"><div class="iw">يُسْرًا</div><div class="id">اسم «إنّ» مؤخر منصوب بالفتحة — جاء نكرة ليُفيد التنويع والتكثير: يُسرٌ عظيم كثير.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:12px;"><strong>ملاحظة نحوية دقيقة:</strong> تكرار الآية ﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ مرتين في السورة مع تعريف «العسر» (ال-) وتنكير «يسراً» — يُفيد أن العسر الواحد المحدد يصاحبه يُسران متعددان، وهو ما أشار إليه الحديث النبوي: «لن يغلب عسرٌ يسرَيْن».</div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«فَمَا خَابَ قَلْبٌ احْتَمَى بِرَبِّ الْفَلَقِ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card g"><div class="ct">أولاً: قانون الفلق — التفاؤل الإيماني لا السذاجة</div><p>يُؤسّس المقال لما يمكن تسميته «التفاؤل الإيماني المُدلَّل» — ليس تفاؤلاً ساذجاً بأن كل شيء سيكون بخير، بل يقيناً مبنياً على سنة الله: الشق والانبثاق قانونٌ كوني لا يتخلف. <strong>التطبيق:</strong> في كل ضيق — تذكّر أن البذرة لا تبقى تحت التراب إلى الأبد.</p></div>
+  <div class="card g2"><div class="ct">ثانياً: الاستعاذة كموقف لا كطقس</div><p>يُعلّم المقال أن «أعوذ برب الفلق» ليست كلمات تُنطق بالعادة بل موقف وجودي: اللجوء الكامل إلى الله والالتصاق به في مواجهة ظلمات الحياة. <strong>التطبيق:</strong> قبل كل تحدٍّ — توقف لحظة وقُل «أعوذ برب الفلق» مع استحضار معناها الكامل لا مجرد لفظها.</p></div>
+  <div class="card g"><div class="ct">ثالثاً: الظلمات الثماني — تشخيص الواقع النفسي</div><p>قائمة الظلمات الثماني في المقال (خوف، حزن، مرض، فقر، فتن، شهوات، شبهات، ظلم) خريطةٌ نفسية متكاملة لأنواع الضيق البشري. <strong>التطبيق:</strong> أيّ ظلمة تعيشها الآن؟ حدّدها واسمّها — ثم تذكّر أن رب الفلق قادر على شقّها تحديداً.</p></div>
+  <div class="card g2"><div class="ct">رابعاً: الجنة أعظم فلق — إعادة تأطير الحياة</div><p>ختم المقال بأن الجنة «أَعْظَمُ فَلَقٍ بَعْدَ ظُلُمَاتِ الدُّنْيَا كُلِّهَا» — وهذا التأطير يُغيّر زاوية النظر إلى الدنيا كلها: هي ليلٌ طويل والجنة هي الفجر الأبدي. <strong>التطبيق:</strong> حين تثقل عليك الدنيا — تذكّر أنك في ليل والفجر آتٍ لا محالة.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>التعمق في الكلمة الواحدة:</strong> بنى المقال كله على كلمة «الْفَلَقِ» — وهذا منهج التدبر الحقيقي: الغوص في كلمة حتى تُخرج كنوزها.</li>
+      <li><strong>التنقل من الكوني إلى الإنساني:</strong> بدأ بالفلق الكوني (الفجر، البذرة، البيضة) ثم انتقل إلى الفلق الإنساني (التوبة، الهداية، الفرج) — رحلة من الخارج إلى الداخل.</li>
+      <li><strong>الاستدلال بالمشاهَد على الغائب:</strong> «من الذي يشق الليل؟» — الجواب الحسي المشاهَد يُثبت القدرة الإلهية على ما لا يُرى.</li>
+      <li><strong>الخاتمة المفتوحة على الأمل:</strong> «فَمَا خَابَ قَلْبٌ احْتَمَى بِرَبِّ الْفَلَقِ» — ختام لا يُغلق بابَ الرجاء بل يُقنّنه في جملة واحدة لا تُنسى.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong style="color:var(--gg);">العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضراً أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong style="color:var(--gg);">البُعد الزمني:</strong> الربط الحي بين النص القرآني ومستجدات العصر — يُصوّر الغيب بلغة تُلامس قلب الإنسان المعاصر.</p>
+      <p><strong style="color:var(--gg);">التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ مما يُضفي على كتاباته دقةً عقدية نادرة.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم، ونفع به الأمة في زمن كثرت فيه الغفلة وقلّ التدبر.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">أحاديث الفتن</span>
+        <span class="atag">سورة الفلق</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  const sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+const secs=document.querySelectorAll('.sec[id]');
+const links=document.querySelectorAll('.toc-a');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a) a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>{
+  document.getElementById('sb').classList.add('off');
+  document.getElementById('sb').classList.remove('open');
+}));
+</script>
+</body>
+</html>

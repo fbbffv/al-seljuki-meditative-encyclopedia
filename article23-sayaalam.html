@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>وَسَيَعْلَمُ... حِينَ يَنْكَشِفُ الغِطَاءُ — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#160a0a;--bg:#f6f0ee;--bg2:#eaddd8;
+  --maroon:#5a1414;--mm:#8a2626;--mlt:#c04848;
+  --md:#180404;--mt:#f5d8d0;--mg:#e0a090;
+  --steel:#4a5460;--gold:#a8841a;--gold-m:#c9a84c;
+  --div:#c89088;--mist:#3a1414;
+  --src-bg:#fdf6e8;--src-bd:#d4a838;--src-ink:#5a4410;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(90,20,20,.07) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(74,84,96,.05) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--mm),var(--gold));z-index:400;transform-origin:top;}
+.hdr{background:var(--md);border-bottom:2px solid var(--mm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--mlt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--gold-m);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--mt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--maroon);color:var(--mg);border:1px solid rgba(192,72,72,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--mm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#100404;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(192,72,72,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--mlt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(192,72,72,.2);}
+.toc-s{color:rgba(192,72,72,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#b06858;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--mt);background:rgba(192,72,72,.1);border-right-color:var(--mlt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--mm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--mlt);}
+.hcat{display:inline-block;background:var(--maroon);color:var(--mt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.5rem;font-weight:700;color:var(--md);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--mm);border-radius:50%;}
+.vb{background:var(--md);border:1px solid rgba(192,72,72,.45);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(192,72,72,.1),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.68rem;color:var(--mt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.4rem;}
+.vr{color:var(--mg);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#160a0a;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--mm);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--maroon);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--mm);background:rgba(90,20,20,.06);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--mm);font-weight:700;text-align:center;margin:9px 0;}
+.zalim-list{list-style:none;padding:0;margin:10px 0 20px;}
+.zalim-list li{font-family:'Scheherazade New',serif;font-size:1.13rem;color:var(--maroon);padding:9px 0;border-bottom:1px dashed var(--div);text-align:center;}
+.zalim-list li:last-child{border-bottom:none;}
+.stage-title{font-family:'Scheherazade New',serif;font-size:1.35rem;color:var(--steel);text-align:center;margin:26px 0 14px;letter-spacing:.1em;font-weight:700;}
+.dua-block{background:var(--md);border:1px solid rgba(168,132,26,.4);border-radius:8px;padding:28px 36px;margin:28px 0;text-align:center;}
+.dua-line{font-family:'Scheherazade New',serif;font-size:1.25rem;color:var(--mt);line-height:2.2;margin:4px 0;}
+.src{background:var(--src-bg);border:1px solid var(--src-bd);border-right:5px solid var(--src-bd);border-radius:7px;padding:14px 18px;margin:14px 0;}
+.src .sh{font-family:'Scheherazade New',serif;font-size:.95rem;color:#7a5a12;font-weight:700;margin-bottom:5px;display:flex;align-items:center;gap:7px;}
+.src .sh::before{content:'📖';font-size:.9rem;}
+.src p{color:var(--src-ink);font-size:.9rem;line-height:1.8;margin:0;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--md);color:var(--mlt);border:2px solid var(--mm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--md);border-bottom:2px solid var(--mlt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--maroon);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.m{border-right:5px solid var(--mm);}
+.card.m2{border-right:5px solid var(--maroon);}
+.card.m3{border-right:5px solid var(--steel);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#180404;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#160a0a;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--mm);color:var(--mt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--md);color:var(--mg);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--mm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(192,72,72,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#180404;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ex{color:var(--maroon);font-style:italic;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#180404;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#180404;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--mlt);border-bottom:2px solid var(--mlt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--mlt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#100404,#1c0808);border:1px solid rgba(192,72,72,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--mlt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(192,72,72,.25);}
+.ci{color:#c08878;padding:9px 0;border-bottom:1px dashed rgba(192,72,72,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--mt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--mg);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#100404,#180606);border:1px solid rgba(192,72,72,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#c08878;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--mt);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--mm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#180404;font-weight:700;margin-bottom:4px;}
+.mc .md2{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#160a0a;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--mm);font-size:.85em;top:11px;}
+.asec{background:var(--md);border:1px solid rgba(192,72,72,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--mm),var(--maroon));border:3px solid var(--mlt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--mt);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--mg);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#c08878;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(192,72,72,.1);border:1px solid rgba(192,72,72,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--mg);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--mt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(192,72,72,.16);color:var(--mlt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(192,72,72,.28);}
+.orn{text-align:center;color:var(--mlt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--md);color:#6a2a2a;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(192,72,72,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--mlt);}
+footer .fb span{color:var(--mg);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:2rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.22rem;}.hero h1{font-size:1.5rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">⌂ الفهرس الرئيسي</a>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">وَسَيَعْلَمُ... حِينَ يَنْكَشِفُ الغِطَاءُ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">عدل ووعيد · الشعراء ٢٢٧ · مقالة تدبرية</div>
+  <h1>وَسَيَعْلَمُ... حِينَ يَنْكَشِفُ الغِطَاءُ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>الشعراء: ٢٢٧</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَذَكَرُوا اللَّهَ كَثِيرًا وَانْتَصَرُوا مِنْ بَعْدِ مَا ظُلِمُوا ۗ وَسَيَعْلَمُ الَّذِينَ ظَلَمُوا أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ﴾</div>
+    <div class="vr">سورة الشعراء، الآية ٢٢٧</div>
+  </div>
+  <div class="abody">
+    <p>لَيْسَتْ هَذِهِ الآيَةُ صَرْخَةَ غَضَبٍ، بَلْ وَعْدٌ إِلَهِيٌّ هَادِئٌ، وَلَكِنَّهُ مُزَلْزِلٌ...</p>
+
+    <p>تَأَمَّلْ كَيْفَ قَالَ اللهُ تَعَالَى: ﴿وَسَيَعْلَمُ﴾... لَمْ يَقُلْ: سَيُقَالُ لَهُمْ، وَلَمْ يَقُلْ: سَيُخْبَرُونَ، بَلْ قَالَ: ﴿وَسَيَعْلَمُ﴾.</p>
+
+    <p>سَيَأْتِي يَوْمٌ لَا يَحْتَاجُ فِيهِ الظَّالِمُ إِلَى وَاعِظٍ، وَلَا إِلَى شَاهِدٍ، وَلَا إِلَى مَحْكَمَةٍ مِنَ البَشَرِ؛ لِأَنَّ الحَقِيقَةَ نَفْسَهَا سَتَقِفُ أَمَامَهُ، فَيَعْلَمُ بِعَيْنِهِ مَا كَانَ يُكَذِّبُ بِهِ، وَيَذُوقُ بِعَمَلِهِ مَا كَانَ يَسْتَخِفُّ بِهِ.</p>
+
+    <p>ثُمَّ تَأَمَّلْ هَذَا التَّعْبِيرَ المَهِيبَ: ﴿أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ﴾.</p>
+
+    <p>مَا قَالَ: أَيَّ مَصِيرٍ يَصِيرُونَ إِلَيْهِ، وَلَا قَالَ: أَيَّ عَذَابٍ يُعَذَّبُونَ بِهِ. بَلِ اخْتَارَ كَلِمَةَ "مُنْقَلَبٍ"... وَكَأَنَّ الحَيَاةَ كُلَّهَا طَرِيقٌ، وَالنَّاسَ جَمِيعًا فِي سَفَرٍ، وَلِكُلِّ مُسَافِرٍ مَحَطَّةٌ أَخِيرَةٌ.</p>
+
+    <div class="hl">لَكِنَّ هُنَاكَ مَنْ يَنْقَلِبُ إِلَى رَحْمَةِ اللهِ، وَهُنَاكَ مَنْ يَنْقَلِبُ إِلَى حَسْرَةٍ لَا تَنْقَضِي.</div>
+
+    <p>المُنْقَلَبُ هُوَ الرُّجُوعُ... العَوْدَةُ... النِّهَايَةُ الَّتِي يَعُودُ إِلَيْهَا الإِنْسَانُ بَعْدَ أَنْ تَنْتَهِيَ المَسْرَحِيَّةُ، وَتَسْقُطَ الأَقْنِعَةُ، وَتَجِفَّ الأَقْلَامُ، وَتُطْوَى الصَّحَائِفُ.</p>
+
+    <p>كَمْ مِنْ ظَالِمٍ ظَنَّ أَنَّ كُرْسِيَّهُ خَالِدٌ! وَكَمْ مِنْ مُتَكَبِّرٍ حَسِبَ أَنَّ سُلْطَانَهُ لَا يَزُولُ! وَكَمْ مِنْ سَارِقٍ ظَنَّ أَنَّ الأَمْوَالَ المَنْهُوبَةَ سَتَبْنِي لَهُ مَجْدًا! وَكَمْ مِنْ مُفْتَرٍ ظَنَّ أَنَّ النَّاسَ إِنْ صَدَّقُوهُ اليَوْمَ فَلَنْ تَنْكَشِفَ حَقِيقَتُهُ غَدًا!</p>
+
+    <div class="stage-title">ثُمَّ دَارَتِ الأَيَّامُ...</div>
+
+    <p>فَرَأَيْنَا مَنْ كَانَ يَأْمُرُ فَيُطَاعُ، فَإِذَا بِهِ يَنْتَظِرُ كَلِمَةً مِنْ سَجَّانٍ. وَرَأَيْنَا مَنْ كَانَتِ المَوَاكِبُ تَفْسَحُ لَهُ الطَّرِيقَ، فَإِذَا بِهِ يُحْمَلُ عَلَى الأَكْتَافِ إِلَى قَبْرٍ ضَيِّقٍ. وَرَأَيْنَا مَنْ مَلَأَ الدُّنْيَا ضَجِيجًا، ثُمَّ أَصْبَحَ لَا يَمْلِكُ لِنَفْسِهِ جَوَابًا أَمَامَ رَبِّهِ.</p>
+
+    <div class="hl">هَذِهِ سُنَّةُ اللهِ فِي الحَيَاةِ قَبْلَ الآخِرَةِ.</div>
+
+    <p>فَالظَّالِمُ قَدْ يَفِرُّ مِنَ النَّاسِ... وَقَدْ يَخْدَعُ القَضَاءَ... وَقَدْ يَشْتَرِي الذِّمَمَ... وَقَدْ يُزَوِّرُ الحَقَائِقَ... لَكِنَّهُ لَنْ يَفِرَّ مِنْ لَحْظَةِ ﴿وَسَيَعْلَمُ﴾.</p>
+
+    <p>هُنَاكَ... لَا يَنْفَعُ المَالُ. وَلَا الجَاهُ. وَلَا الحَرَسُ. وَلَا الإِعْلَامُ. وَلَا المَنَاصِبُ. وَلَا التَّصْفِيقُ الكَاذِبُ. هُنَاكَ يَقِفُ الإِنْسَانُ مُجَرَّدًا مِنْ كُلِّ شَيْءٍ إِلَّا عَمَلَهُ.</p>
+
+    <div class="stage-title">وَمَا أَعْجَبَ القُرْآنَ...</div>
+
+    <p>تَرَكَ النِّهَايَةَ مَفْتُوحَةً بِقَوْلِهِ: ﴿أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ﴾. فَلَمْ يُحَدِّدْهَا؛ لِيَبْقَى الخَيَالُ يَرْتَجِفُ، وَالقَلْبُ يَخَافُ، وَالنَّفْسُ تَتَسَاءَلُ: أَيُّ انْقِلَابٍ هَذَا؟ وَأَيُّ رُجُوعٍ؟ وَأَيُّ هَوْلٍ يَنْتَظِرُ مَنْ بَاعَ الحَقَّ بِالبَاطِلِ، وَالعَدْلَ بِالظُّلْمِ، وَالأَمَانَةَ بِالخِيَانَةِ؟</p>
+
+    <div class="hl">إِنَّهَا نِهَايَةٌ يَعْجِزُ عَنْهَا الوَصْفُ، لِأَنَّ مَا عِنْدَ اللهِ أَعْظَمُ مِنْ أَنْ تُحِيطَ بِهِ الكَلِمَاتُ.</div>
+
+    <p>فَيَا مَنْ ظَلَمْتَ عَبْدًا... وَيَا مَنْ أَكَلْتَ حَقًّا... وَيَا مَنْ كَسَرْتَ قَلْبًا... وَيَا مَنْ شَهِدْتَ زُورًا... وَيَا مَنْ فَرِحْتَ بِقُوَّةٍ زَائِلَةٍ...</p>
+
+    <div class="ql">لَا تَغْتَرَّ بِإِمْهَالِ اللهِ؛ فَإِنَّ الإِمْهَالَ لَيْسَ إِهْمَالًا.</div>
+
+    <div class="src">
+      <div class="sh">في أن الإمهال ليس إهمالاً</div>
+      <p>ما قرّره المؤلف من أن إمهال الله للظالم ليس إهمالاً له أصلٌ ثابت في السنة، فقد روى البخاري ومسلم عن أبي موسى الأشعري رضي الله عنه أن النبي ﷺ قال: «إنَّ اللهَ ليُملي للظالمِ حتى إذا أخذَه لم يُفلِتْه»، ثم قرأ ﴿وَكَذَٰلِكَ أَخْذُ رَبِّكَ إِذَا أَخَذَ الْقُرَىٰ وَهِيَ ظَالِمَةٌ ۚ إِنَّ أَخْذَهُ أَلِيمٌ شَدِيدٌ﴾ (هود: ١٠٢). والحديث متفق عليه، وهو أصلٌ في أن تأخير عقوبة الظالم استدراجٌ لا إهمال.</p>
+    </div>
+
+    <p>وَاذْكُرْ دَائِمًا أَنَّ بَيْنَكَ وَبَيْنَ الحَقِيقَةِ مَوْعِدًا لَا يَتَأَخَّرُ، وَأَنَّ بَيْنَكَ وَبَيْنَ ﴿وَسَيَعْلَمُ﴾ أَيَّامًا مَعْدُودَةً، وَأَنَّ بَيْنَكَ وَبَيْنَ ﴿أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ﴾ رِحْلَةً تَنْتَهِي عِنْدَ العَدْلِ المُطْلَقِ، حَيْثُ لَا يَظْلِمُ رَبُّكَ أَحَدًا.</p>
+
+    <div class="src">
+      <div class="sh">في أن الله لا يظلم أحداً</div>
+      <p>ختم المؤلف بمعنى العدل الإلهي المطلق، وهو مقرّرٌ في القرآن في مواضع، منها قوله تعالى ﴿وَمَا رَبُّكَ بِظَلَّامٍ لِّلْعَبِيدِ﴾ (فصلت: ٤٦)، وقوله ﴿إِنَّ اللَّهَ لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ﴾ (النساء: ٤٠). وفي الحديث القدسي الذي رواه مسلم عن أبي ذر رضي الله عنه: «يا عبادي إني حرّمتُ الظلمَ على نفسي وجعلتُه بينكم محرَّماً فلا تَظالموا».</p>
+    </div>
+
+    <div class="dua-block">
+      <div class="dua-line">اللَّهُمَّ إِنَّا نَعُوذُ بِكَ أَنْ نَظْلِمَ أَوْ نُظْلَمَ،</div>
+      <div class="dua-line">وَنَسْأَلُكَ حُسْنَ المُنْقَلَبِ، وَجَمِيلَ العَاقِبَةِ،</div>
+      <div class="dua-line">وَأَنْ تَجْعَلَنَا مِمَّنْ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَذَكَرُوكَ كَثِيرًا،</div>
+      <div class="dua-line">وَاجْعَلْ مُنْقَلَبَنَا إِلَى رَحْمَتِكَ وَرِضْوَانِكَ.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="sub"><h3>بلاغة الآية الكريمة — الشعراء ٢٢٧</h3>
+    <div class="card m"><div class="ct">أولاً: ﴿وَسَيَعْلَمُ﴾ — العلم اليقيني لا مجرد الإخبار</div><p>اختار «سَيَعْلَمُ» دون «سيُقال لهم» أو «سيُخبَرون» — والعلم أبلغ لأنه إدراك يقيني مباشر لا واسطة فيه. فالظالم سيعلم بنفسه الحقيقة معاينةً، لا أن يُخبره بها أحد. والمقال التقط هذا: «الحَقِيقَةُ نَفْسَهَا سَتَقِفُ أَمَامَهُ فَيَعْلَمُ بِعَيْنِهِ». وفي السين «سَيَعْلَمُ» وعدٌ مؤكد قريب التحقق.</p></div>
+    <div class="card m2"><div class="ct">ثانياً: ﴿الَّذِينَ ظَلَمُوا﴾ — الوصف بالظلم لا بالأسماء</div><p>عبّر عنهم بـ«الَّذِينَ ظَلَمُوا» — وصفهم بالفعل الذي استحقوا به العقوبة، لا بأسمائهم أو أشخاصهم. وفي هذا تعميم يشمل كل ظالم في كل زمان، وربطٌ للعقوبة بالسبب (الظلم). فالوصف علّة الحكم — من ظلم دخل في هذا الوعيد.</p></div>
+    <div class="card m"><div class="ct">ثالثاً: ﴿أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ﴾ — اختيار «المنقلب» وإبهامه</div><p>اختار «مُنْقَلَبٍ» (الرجوع والمصير) دون «مصير» أو «عذاب» — والمنقلب يُصوّر الحياة سفراً له نهاية يعود إليها المسافر. وأبهم النهاية «أَيَّ مُنْقَلَبٍ» تهويلاً — كأن هولها يعجز عنه الوصف. والمقال أبرز هذا: «تَرَكَ النِّهَايَةَ مَفْتُوحَةً لِيَبْقَى الخَيَالُ يَرْتَجِفُ».</p></div>
+    <div class="card m2"><div class="ct">رابعاً: الجناس الاشتقاقي ﴿مُنْقَلَبٍ يَنْقَلِبُونَ﴾</div><p>جمع بين «مُنْقَلَبٍ» و«يَنْقَلِبُونَ» من مادة واحدة (قلب) — جناس اشتقاقي يُعمّق المعنى ويُرسّخه بالتكرار الصوتي. فالمصدر (المنقلب) والفعل (ينقلبون) يتضافران في تصوير الرجوع المهول. وهذا من إعجاز التعبير القرآني في تكثيف المعنى.</p></div>
+    <div class="card m"><div class="ct">خامساً: العنوان البليغ «وَسَيَعْلَمُ... حِينَ يَنْكَشِفُ الغِطَاءُ»</div><p>العنوان يربط «سيعلم» القرآنية بلحظة انكشاف الغطاء — مقتبسة من ﴿فَكَشَفْنَا عَنكَ غِطَاءَكَ فَبَصَرُكَ الْيَوْمَ حَدِيدٌ﴾ (ق: ٢٢). فالعلم يتحقق حين ينكشف الغطاء عن الحقائق. والعنوان يجمع بين الوعيد (سيعلم) وسببه (انكشاف الغطاء) في تصوير موجز مهيب.</p></div>
+  </div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <table class="tbl">
+      <tr><th>الصورة</th><th>النص</th><th>التحليل</th></tr>
+      <tr><td class="term">تشبيه تمثيلي</td><td class="ex">«الحَيَاةَ كُلَّهَا طَرِيقٌ وَالنَّاسَ فِي سَفَرٍ»</td><td class="def">شبّه الحياة برحلة والناس بمسافرين لكل منهم محطة أخيرة — تصوير للمنقلب.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«تَنْتَهِيَ المَسْرَحِيَّةُ وَتَسْقُطَ الأَقْنِعَةُ»</td><td class="def">شبّه الدنيا بمسرحية والزيف بأقنعة تسقط — انكشاف الحقائق عند النهاية.</td></tr>
+      <tr><td class="term">كناية</td><td class="ex">«تَجِفَّ الأَقْلَامُ وَتُطْوَى الصَّحَائِفُ»</td><td class="def">كناية عن انتهاء زمن العمل وختم صحائف الأعمال — نهاية فرصة التدارك.</td></tr>
+      <tr><td class="term">مقابلة</td><td class="ex">«يَأْمُرُ فَيُطَاعُ / يَنْتَظِرُ كَلِمَةً مِنْ سَجَّانٍ»</td><td class="def">مقابلة بين عزّ الظالم وذلّه — تصوير انقلاب الحال في الدنيا قبل الآخرة.</td></tr>
+      <tr><td class="term">طباق</td><td class="ex">«الإِمْهَالَ لَيْسَ إِهْمَالًا»</td><td class="def">جناس وطباق معنوي بين الإمهال (التأخير) والإهمال (الترك) — الفرق بينهما دقيق.</td></tr>
+      <tr><td class="term">الترديد بـ«كم»</td><td class="ex">«كَمْ مِنْ ظَالِمٍ... مُتَكَبِّرٍ... سَارِقٍ... مُفْتَرٍ»</td><td class="def">تعداد نماذج المغترّين بالإمهال — أسلوب يرسّخ زوال سلطان الظالمين.</td></tr>
+    </table>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">الجناس الاشتقاقي</span><div class="mv">منقلب / ينقلبون</div><div class="md">من مادة واحدة (قلب) في الآية — تكثيف صوتي ومعنوي يرسّخ صورة الرجوع المهول.</div></div>
+      <div class="mc"><span class="ml">الترديد بـ«كم من»</span><div class="mv">أربعة نماذج للظالمين</div><div class="md">ظالم، متكبر، سارق، مفترٍ — تعداد يبرز شمول الوعيد لكل صنف.</div></div>
+      <div class="mc"><span class="ml">الجناس الناقص</span><div class="mv">الإمهال / الإهمال</div><div class="md">تقارب لفظي مع تباعد معنوي — من أبلغ ما يُنبّه على خطأ الظالم في فهم تأخير العقوبة.</div></div>
+      <div class="mc"><span class="ml">التعداد بالنفي</span><div class="mv">لا مال / لا جاه / لا حرس</div><div class="md">تعداد ما لا ينفع يوم القيامة — ترسيخ لتجرّد الإنسان إلا من عمله.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LINGUISTIC -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card m"><div class="ct">التحليل الصرفي لكلمات الآية</div></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>الدلالة الصرفية</th></tr>
+      <tr><td class="term">وَسَيَعْلَمُ</td><td>سَيَفعَلُ</td><td class="def">السين للاستقبال + مضارع من «علم». الوعد المؤكد بالعلم اليقيني في المستقبل.</td></tr>
+      <tr><td class="term">انْتَصَرُوا</td><td>افْتَعَلوا</td><td class="def">من «نصر» — وزن افتعل يُفيد طلب النصر لأنفسهم بعد الظلم — الانتصار المشروع.</td></tr>
+      <tr><td class="term">مُنْقَلَب</td><td>مُنْفَعَل</td><td class="def">اسم مكان أو مصدر ميمي من «انقلب» — موضع الرجوع أو الرجوع نفسه.</td></tr>
+      <tr><td class="term">يَنْقَلِبُونَ</td><td>يَنْفَعِلون</td><td class="def">من «قلب» — وزن انفعل للمطاوعة. يرجعون وينصرفون إلى مصيرهم.</td></tr>
+    </table>
+    <div class="src">
+      <div class="sh">في معنى «أيّ منقلب ينقلبون»</div>
+      <p>ذكر المفسرون كالطبري في «جامع البيان» وابن كثير في «تفسير القرآن العظيم» أن معنى ﴿أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ﴾ أي: أيّ مرجع يرجعون إليه ومنقلب ينقلبون إليه بعد الموت والبعث، وأنه وعيدٌ شديد للظالمين. وذكر ابن كثير أن الآية خُتمت بها سورة الشعراء تهديداً لمن كذّب وظلم من المشركين والشعراء الذين يقولون ما لا يفعلون.</p>
+    </div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card m"><div class="ct"><span class="bdg">مشترك</span> كلمة «الانقلاب»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">الرجوع إلى المصير</td><td class="def">﴿أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ﴾ — المرجع بعد البعث.</td></tr>
+        <tr><td class="term">الارتداد عن الدين</td><td class="def">﴿انقَلَبْتُمْ عَلَىٰ أَعْقَابِكُمْ﴾ — آل عمران: ١٤٤.</td></tr>
+        <tr><td class="term">الرجوع الحسي</td><td class="def">﴿انقَلَبُوا بِنِعْمَةٍ مِّنَ اللَّهِ﴾ — رجعوا سالمين.</td></tr>
+        <tr><td class="term">التحول والتقلب</td><td class="def">﴿تَتَقَلَّبُ فِيهِ الْقُلُوبُ وَالْأَبْصَارُ﴾ — النور: ٣٧.</td></tr>
+      </table>
+    </div>
+    <div class="card m2"><div class="ct"><span class="bdg">مشترك</span> كلمة «العِلم»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الإدراك اليقيني المعاينة</td><td class="def">﴿وَسَيَعْلَمُ الَّذِينَ ظَلَمُوا﴾ — العلم بالمعاينة.</td></tr>
+        <tr><td class="term">المعرفة والدراية</td><td class="def">﴿قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ﴾ — الزمر: ٩.</td></tr>
+        <tr><td class="term">العلامة والأثر</td><td class="def">«العَلَم» الجبل أو الراية — من العلامة.</td></tr>
+      </table>
+    </div>
+    <div class="card m"><div class="ct"><span class="bdg">مشترك</span> كلمة «النصر»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الانتصار من الظالم</td><td class="def">﴿وَانْتَصَرُوا مِنْ بَعْدِ مَا ظُلِمُوا﴾ — أخذ الحق.</td></tr>
+        <tr><td class="term">التأييد والإعانة</td><td class="def">﴿إِن يَنصُرْكُمُ اللَّهُ فَلَا غَالِبَ لَكُمْ﴾ — آل عمران: ١٦٠.</td></tr>
+        <tr><td class="term">العطاء والإغاثة</td><td class="def">«نصر الغيثُ الأرضَ» أي أغاثها بالمطر.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card m"><div class="ct">الفرق بين: المُنقَلَبُ / المَصيرُ / المَرجِعُ / المَآلُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">المُنقَلَبُ</td><td class="def">موضع الرجوع بعد سفر أو الانصراف إلى المستقر — فيه معنى الحركة والتحول.</td></tr>
+        <tr><td class="term">المَصيرُ</td><td class="def">ما يصير إليه الأمر — النهاية والعاقبة.</td></tr>
+        <tr><td class="term">المَرجِعُ</td><td class="def">موضع الرجوع — أعم من المنقلب.</td></tr>
+        <tr><td class="term">المَآلُ</td><td class="def">ما يؤول إليه الشيء — العاقبة النهائية.</td></tr>
+      </table>
+    </div>
+    <div class="card m2"><div class="ct">الفرق بين: الظُّلمُ / البَغيُ / العُدوانُ / الجَورُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الظُّلمُ</td><td class="def">وضع الشيء في غير موضعه ومجاوزة الحق — أعم.</td></tr>
+        <tr><td class="term">البَغيُ</td><td class="def">الظلم مع الاستطالة والتعدي على الغير.</td></tr>
+        <tr><td class="term">العُدوانُ</td><td class="def">تجاوز الحد بالاعتداء المباشر.</td></tr>
+        <tr><td class="term">الجَورُ</td><td class="def">الميل عن العدل في الحكم خاصة.</td></tr>
+      </table>
+    </div>
+    <div class="card m"><div class="ct">الفرق بين: الإمهالُ / الإملاءُ / الاستدراجُ / الإمداد</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الإمهالُ</td><td class="def">التأخير والإنظار مع بقاء المؤاخذة — لا يعني الترك.</td></tr>
+        <tr><td class="term">الإملاءُ</td><td class="def">إطالة المدة والإمهال — ﴿وَأُمْلِي لَهُمْ﴾.</td></tr>
+        <tr><td class="term">الاستدراجُ</td><td class="def">أخذهم بالنعم درجة درجة من حيث لا يشعرون تمهيداً للعقوبة.</td></tr>
+        <tr><td class="term">الإمداد</td><td class="def">إعطاء المدد — قد يكون في خير أو شر (استدراجاً).</td></tr>
+      </table>
+      <div class="vrd"><strong>ملاحظة:</strong> ركّز المقال على أن «الإمهال ليس إهمالاً» — والفرق دقيق: الإمهال تأخيرٌ لعقوبة محقّقة، والإهمال تركٌ وإغفال. والله يُمهل الظالم استدراجاً لا إهمالاً، كما في الحديث «إن الله ليُملي للظالم حتى إذا أخذه لم يُفلته».</div>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card m"><div class="ct">سرّ اختيار «سيعلم» في تصوير عاقبة الظالم</div><p>وقف المقال عند بلاغة «سَيَعْلَمُ» — فالعلم إدراك يقيني بالمعاينة لا مجرد إخبار. والظالم في الدنيا كان يُكذّب ويستخفّ، فيأتي يوم يعلم فيه الحقيقة بنفسه معاينةً. وهذا أبلغ في الوعيد من أن يُقال له أو يُخبَر — فالعلم المباشر لا مهرب منه ولا جدال فيه.</p></div>
+    <div class="card m2"><div class="ct">دلالة إبهام «أيّ منقلب» في التهويل</div><p>ترك القرآن النهاية مبهمة «أَيَّ مُنْقَلَبٍ» ولم يحدّدها — والإبهام هنا أبلغ من التحديد، لأنه يترك النفس تتخيّل أهوالاً لا تنتهي. وقد نبّه المقال على هذه اللطيفة: «تَرَكَ النِّهَايَةَ مَفْتُوحَةً لِيَبْقَى الخَيَالُ يَرْتَجِفُ» — فما عند الله أعظم من أن تحيط به العبارة.</p></div>
+    <div class="card m"><div class="ct">موقع الآية من ختام سورة الشعراء</div><p>جاءت الآية خاتمةً لسورة الشعراء بعد ذكر الشعراء الذين يقولون ما لا يفعلون، فاستُثني منهم المؤمنون العاملون الذاكرون المنتصرون بحق. وبيّن المفسرون كابن كثير أن الوعيد في ﴿وَسَيَعْلَمُ الَّذِينَ ظَلَمُوا﴾ موجّه لكل ظالم مكذّب. والمقال عمّم هذا الوعيد على كل ظالم في كل زمان.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السباق: ما قبل الآية (٢٢٤-٢٢٦)</div>
+    <div class="ci"><span class="vi">﴿وَالشُّعَرَاءُ يَتَّبِعُهُمُ الْغَاوُونَ ۝ أَلَمْ تَرَ أَنَّهُمْ فِي كُلِّ وَادٍ يَهِيمُونَ ۝ وَأَنَّهُمْ يَقُولُونَ مَا لَا يَفْعَلُونَ﴾</span><span class="vs">الشعراء: ٢٢٤-٢٢٦ — ذم الشعراء الذين يقولون ما لا يفعلون — قبل استثناء المؤمنين.</span></div>
+  </div>
+  <div class="cb"><div class="bt">صدر الآية: الاستثناء (٢٢٧)</div>
+    <div class="ci"><span class="vi">﴿إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَذَكَرُوا اللَّهَ كَثِيرًا وَانْتَصَرُوا مِنْ بَعْدِ مَا ظُلِمُوا﴾</span><span class="vs">الشعراء: ٢٢٧ — استثناء الشعراء المؤمنين الذاكرين — أربع صفات للنجاة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات المتعلقة في وعيد الظالمين وعاقبتهم</div>
+    <div class="ci"><span class="vi">﴿وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ ۚ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍ تَشْخَصُ فِيهِ الْأَبْصَارُ﴾</span><span class="vs">إبراهيم: ٤٢ — تأخير الظالمين ليوم القيامة لا غفلة — أصل «الإمهال ليس إهمالاً».</span></div>
+    <div class="ci"><span class="vi">﴿وَكَذَٰلِكَ أَخْذُ رَبِّكَ إِذَا أَخَذَ الْقُرَىٰ وَهِيَ ظَالِمَةٌ ۚ إِنَّ أَخْذَهُ أَلِيمٌ شَدِيدٌ﴾</span><span class="vs">هود: ١٠٢ — الآية التي قرأها النبي ﷺ بعد حديث الإملاء للظالم.</span></div>
+    <div class="ci"><span class="vi">﴿فَكَشَفْنَا عَنكَ غِطَاءَكَ فَبَصَرُكَ الْيَوْمَ حَدِيدٌ﴾</span><span class="vs">ق: ٢٢ — انكشاف الغطاء يوم القيامة — الذي أشار إليه عنوان المقال.</span></div>
+    <div class="ci"><span class="vi">﴿يَوْمَئِذٍ يُوَفِّيهِمُ اللَّهُ دِينَهُمُ الْحَقَّ وَيَعْلَمُونَ أَنَّ اللَّهَ هُوَ الْحَقُّ الْمُبِينُ﴾</span><span class="vs">النور: ٢٥ — علم الظالمين بالحق يوم القيامة — نظير «وسيعلم».</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية وعيد ✅</div><div class="md2">تحمل وعيداً شديداً للظالمين بسوء المنقلب والمصير يوم القيامة.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عقدية ✅</div><div class="md2">تُقرّر العدل الإلهي المطلق وأن الظالم لا يفلت من عقوبة الله.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تربية وتزكية ✅</div><div class="md2">تُربّي على اجتناب الظلم والتحلّي بصفات النجاة الأربع.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> الآية ٢٢٧ من الشعراء منظومة وعيدية-عقدية-تربوية: تتوعّد الظالمين، وتُقرّر عدل الله، وتُربّي على صفات النجاة.</div>
+  <div class="sub"><h3>الأحكام والقيم المستنبطة</h3>
+    <div class="card m"><div class="ct">القيمة الأولى: تحريم الظلم والتحذير من عاقبته</div><p>دلّت الآية على شناعة الظلم وسوء عاقبة الظالمين — والظلم محرّم في حق الله وحق العباد، وقد حرّمه الله على نفسه وجعله بين العباد محرّماً كما في الحديث القدسي «يا عبادي إني حرّمت الظلم على نفسي».</p></div>
+    <div class="card m2"><div class="ct">القيمة الثانية: مشروعية الانتصار من الظالم</div><p>في قوله ﴿وَانْتَصَرُوا مِنْ بَعْدِ مَا ظُلِمُوا﴾ دليلٌ على مشروعية أخذ المظلوم حقه والانتصار لنفسه بالحق — فليس كل صبر محموداً، بل الانتصار من الظالم بالعدل مشروع.</p></div>
+    <div class="card m"><div class="ct">القيمة الثالثة: صفات النجاة الأربع</div><p>ذكرت الآية أربع صفات للناجين: الإيمان، والعمل الصالح، وذكر الله كثيراً، والانتصار بحق بعد الظلم — وهذه منهج متكامل يجمع بين الاعتقاد والعمل والذكر والعزّة.</p></div>
+    <div class="card m2"><div class="ct">القيمة الرابعة: عدم الاغترار بإمهال الله</div><p>حذّر المقال من الاغترار بتأخير عقوبة الظالم — فالإمهال استدراج لا إهمال، كما في الحديث المتفق عليه «إن الله ليُملي للظالم حتى إذا أخذه لم يُفلته».</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.3rem;">﴿وَسَيَعْلَمُ الَّذِينَ ظَلَمُوا أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَسَيَعْلَمُ</div><div class="id">الواو: استئنافية. السين: حرف تنفيس للاستقبال. «يعلم»: فعل مضارع مرفوع بالضمة.</div></div>
+    <div class="ir"><div class="iw">الَّذِينَ</div><div class="id">اسم موصول مبني في محل رفع فاعل «يعلم».</div></div>
+    <div class="ir"><div class="iw">ظَلَمُوا</div><div class="id">فعل ماضٍ مبني على الضم، والواو فاعل. والجملة صلة الموصول لا محل لها من الإعراب.</div></div>
+    <div class="ir"><div class="iw">أَيَّ مُنْقَلَبٍ</div><div class="id">«أيّ»: اسم استفهام مفعول مطلق مقدم لـ«ينقلبون» منصوب، وهو مضاف. «منقلب»: مضاف إليه مجرور. والاستفهام هنا للتهويل والتعظيم.</div></div>
+    <div class="ir"><div class="iw">يَنْقَلِبُونَ</div><div class="id">فعل مضارع مرفوع بثبوت النون، والواو فاعل. والجملة في محل نصب سدّت مسدّ مفعولي «يعلم» (المعلّق عن العمل بالاستفهام).</div></div>
+  </div>
+  <div class="card m" style="margin-top:14px;"><div class="ct">ملاحظة: «أيّ» الاستفهامية وتعليق الفعل «يعلم» عن العمل</div><p>«أَيَّ مُنْقَلَبٍ» اسم استفهام تضمّن معنى التهويل، وهو مفعول مطلق لـ«ينقلبون» (أي: ينقلبون انقلاباً أيَّ انقلاب). وقد عُلّق الفعل «يعلم» عن العمل في مفعوليه بسبب الاستفهام الذي له صدر الكلام، فصارت الجملة الاستفهامية «أيّ منقلب ينقلبون» في محل نصب سادّة مسدّ المفعولين. وتقديم «أيّ» المتضمنة للاستفهام على عاملها «ينقلبون» واجبٌ لأن للاستفهام صدر الكلام — وهذا التقديم يزيد المعنى تهويلاً وإبهاماً.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«لَا تَغْتَرَّ بِإِمْهَالِ اللهِ؛ فَإِنَّ الإِمْهَالَ لَيْسَ إِهْمَالًا»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card m"><div class="ct">أولاً: العدل الإلهي المطلق يطمئن المظلوم</div><p>«رِحْلَةً تَنْتَهِي عِنْدَ العَدْلِ المُطْلَقِ حَيْثُ لَا يَظْلِمُ رَبُّكَ أَحَدًا» — وعد يطمئن كل مظلوم. <strong>التطبيق:</strong> إن ظُلمت ولم تجد نصيراً، فاطمئن إلى عدل الله — فلكل ظالم موعد، ولكل حق مستقر، والله لا يضيع مثقال ذرة.</p></div>
+  <div class="card m2"><div class="ct">ثانياً: الحذر من الاغترار بالإمهال</div><p>«الإِمْهَالَ لَيْسَ إِهْمَالًا» — تأخير العقوبة ليس نجاة. <strong>التطبيق:</strong> إن أمهلك الله في ظلم أو معصية فلا تحسب ذلك رضاً أو نجاة — بل بادر بالتوبة قبل أن يأتي الأخذ، فمن أُمهل ثم أُخذ لم يُفلت.</p></div>
+  <div class="card m"><div class="ct">ثالثاً: التجرّد من كل شيء إلا العمل</div><p>«يَقِفُ الإِنْسَانُ مُجَرَّدًا مِنْ كُلِّ شَيْءٍ إِلَّا عَمَلَهُ» — لا مال ولا جاه ينفع هناك. <strong>التطبيق:</strong> لا تعتمد على مالك أو منصبك أو أنصارك — فكلها تزول، ولا يبقى إلا عملك. اجعل زادك العمل الصالح لا زخارف الدنيا الزائلة.</p></div>
+  <div class="card m2"><div class="ct">رابعاً: التحلّي بصفات النجاة الأربع</div><p>الآية ذكرت: الإيمان، العمل الصالح، ذكر الله كثيراً، الانتصار بحق. <strong>التطبيق:</strong> اجعل هذه الصفات منهج حياتك — آمن واعمل صالحاً وأكثر من ذكر الله، وإذا ظُلمت فانتصر بالحق لا بالظلم، فهذا طريق الناجين.</p></div>
+  <div class="src">
+    <div class="sh">في تحريم الظلم وعاقبته</div>
+    <p>ما قرّره المقال من خطورة الظلم يشهد له الحديث المتفق عليه عن ابن عمر رضي الله عنهما أن النبي ﷺ قال: «الظلمُ ظلماتٌ يومَ القيامةِ» (رواه البخاري ومسلم). كما في الحديث القدسي عند مسلم عن أبي ذر رضي الله عنه: «يا عبادي إني حرّمتُ الظلمَ على نفسي وجعلتُه بينكم محرَّماً فلا تَظالموا». وهذان أصلان في شناعة الظلم وسوء عاقبته.</p>
+  </div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>التحليل اللفظي الدقيق:</strong> وقف عند «سيعلم» و«منقلب» مستخرجاً دلالاتهما — منهج يستنطق اللفظ القرآني.</li>
+      <li><strong>الإسقاط على الواقع:</strong> ربط وعيد الظالمين بمشاهد سقوط الطغاة في الدنيا — تنزيل حي للسنة الإلهية.</li>
+      <li><strong>استثمار الإبهام القرآني:</strong> أبرز بلاغة ترك النهاية مبهمة «أيّ منقلب» — تأمل في إعجاز التعبير.</li>
+      <li><strong>الختام بالدعاء والتوازن:</strong> ختم بدعاء حسن المنقلب والاستعاذة من الظلم — جمع بين الترهيب من الظلم والترغيب في صفات النجاة.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong style="color:var(--mg);">العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضراً أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong style="color:var(--mg);">البُعد الزمني:</strong> الربط الحي بين النص القرآني ومستجدات العصر — يُذكّر بعدل الله وعاقبة الظالمين بلغة معاصرة مؤثرة.</p>
+      <p><strong style="color:var(--mg);">التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ مما يُضفي على كتاباته دقةً عقدية نادرة.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم، ونفع به الأمة في زمن كثر فيه الظلم والاغترار بالإمهال.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">العدل والوعيد</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">عاقبة الظالمين</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  const sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+const secs=document.querySelectorAll('.sec[id]');
+const links=document.querySelectorAll('.toc-a');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a) a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>{
+  document.getElementById('sb').classList.add('off');
+  document.getElementById('sb').classList.remove('open');
+}));
+</script>
+</body>
+</html>

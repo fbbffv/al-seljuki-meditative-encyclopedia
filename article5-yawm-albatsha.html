@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>يومُ البطشةِ الكبرى — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a0a1a;--bg:#f0f0fa;--bg2:#e0e0f0;
+  --indigo:#1a0a6e;--indigo-m:#3020a0;--indigo-lt:#6050d0;
+  --id:#060412;--it:#e8e0ff;--ig:#c0a8ff;
+  --silver:#8080c0;--purple:#4a1a8a;
+  --div:#a090d0;--mist:#2a1a5a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(26,10,110,.08) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(96,80,208,.05) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--indigo-m),var(--indigo-lt));z-index:400;transform-origin:top;}
+.hdr{background:var(--id);border-bottom:2px solid var(--indigo-m);position:sticky;top:0;z-index:200;box-shadow:0 2px 20px rgba(0,0,0,.7);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--silver);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--ig);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--it);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--indigo);color:var(--ig);border:1px solid rgba(96,80,208,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--indigo-m);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#080414;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(96,80,208,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--silver);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(96,80,208,.2);}
+.toc-s{color:rgba(96,80,208,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#9080c0;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--it);background:rgba(96,80,208,.1);border-right-color:var(--indigo-lt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--indigo-m),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--indigo-lt);}
+.hcat{display:inline-block;background:var(--indigo);color:var(--it);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.6rem;font-weight:700;color:var(--id);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--indigo-m);border-radius:50%;}
+.vb{background:var(--id);border:1px solid rgba(96,80,208,.45);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(96,80,208,.13),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--it);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.42rem;}
+.vr{color:var(--ig);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#0a0a20;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--indigo-m);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--indigo);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--indigo-m);background:rgba(26,10,110,.06);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--indigo-m);font-weight:700;text-align:center;margin:9px 0;}
+.dua-block{background:var(--id);border:1px solid rgba(192,168,255,.35);border-radius:8px;padding:28px 36px;margin:28px 0;text-align:center;}
+.dua-line{font-family:'Scheherazade New',serif;font-size:1.25rem;color:var(--it);line-height:2.2;margin:4px 0;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--id);color:var(--silver);border:2px solid var(--indigo-m);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--id);border-bottom:2px solid var(--indigo-lt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--indigo);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--silver);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.i{border-right:5px solid var(--indigo-m);}
+.card.i2{border-right:5px solid var(--indigo);}
+.card.i3{border-right:5px solid var(--indigo-lt);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#060412;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#0a0a20;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--indigo-m);color:var(--it);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--id);color:var(--ig);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--indigo-m);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(96,80,208,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#060412;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ex{color:var(--indigo);font-style:italic;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#060412;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#060412;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--indigo-lt);border-bottom:2px solid var(--indigo-lt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--indigo-lt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#060412,#0e0828);border:1px solid rgba(96,80,208,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--silver);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(96,80,208,.25);}
+.ci{color:#b0a0e0;padding:9px 0;border-bottom:1px dashed rgba(96,80,208,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--it);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--ig);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#060412,#0e0830);border:1px solid rgba(96,80,208,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#b0a0e0;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--it);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--indigo-m);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#060412;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#0a0a20;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--indigo-m);font-size:.85em;top:11px;}
+.asec{background:var(--id);border:1px solid rgba(96,80,208,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--indigo-m),var(--purple));border:3px solid var(--indigo-lt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--it);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--ig);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#b0a0d8;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(96,80,208,.1);border:1px solid rgba(96,80,208,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--ig);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--it);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(96,80,208,.16);color:var(--indigo-lt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(96,80,208,.28);}
+.orn{text-align:center;color:var(--indigo-lt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--id);color:#4a3a7a;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(96,80,208,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--silver);}
+footer .fb span{color:var(--ig);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:2.1rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.28rem;}.hero h1{font-size:1.7rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">⌂ الفهرس الرئيسي</a>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">يَوْمُ الْبَطْشَةِ الْكُبْرَى</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">وعيد إلهي · مشهد يوم القيامة · تدبر قرآني</div>
+  <h1>يَوْمُ الْبَطْشَةِ الْكُبْرَى... حِينَ تَنْطَفِئُ كُلُّ قُوَّةٍ إِلَّا قُوَّةُ اللهِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>الدخان: ١٦</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿يَوْمَ نَبْطِشُ الْبَطْشَةَ الْكُبْرَىٰ إِنَّا مُنْتَقِمُونَ﴾</div>
+    <div class="vr">سورة الدخان، الآية ١٦</div>
+  </div>
+  <div class="abody">
+    <p>مَا أَشَدَّ وَقْعَ هَذِهِ الآيَةِ عَلَى القُلُوبِ! وَمَا أَعْظَمَ رَهْبَتَهَا فِي النُّفُوسِ الَّتِي تَعْرِفُ مَنْ هُوَ المُتَكَلِّمُ بِهَا! إِنَّهَا لَيْسَتْ كَلِمَاتٍ تُتْلَى فَحَسْبُ، بَلْ صَيْحَةٌ سَمَاوِيَّةٌ تَهُزُّ عُرُوشَ المُتَكَبِّرِينَ، وَتُزَلْزِلُ أَوْهَامَ الجَبَابِرَةِ، وَتُوقِظُ الغَافِلِينَ مِنْ سُبَاتِ الدُّنْيَا الطَّوِيلِ.</p>
+    <p>فِي هَذِهِ الدُّنْيَا قَدْ يَظُنُّ الظَّالِمُ أَنَّهُ نَجَا... قَدْ يَجْلِسُ عَلَى كُرْسِيِّ سُلْطَانِهِ، وَيُحِيطُ نَفْسَهُ بِالحُرَّاسِ، وَيَمْلِكُ المَالَ، وَالإِعْلَامَ، وَالأَتْبَاعَ، فَيَحْسَبُ أَنَّ الأَيَّامَ دَانَتْ لَهُ، وَأَنَّ القُوَّةَ أَصْبَحَتْ مِلْكاً أَبَدِيّاً بَيْنَ يَدَيْهِ.</p>
+    <p>لَكِنَّ القُرْآنَ يَرْفَعُ السِّتَارَ عَنِ المَشْهَدِ الأَخِيرِ...</p>
+    <div class="hl">مَشْهَدٍ لَا حُرَّاسَ فِيهِ... وَلَا جُيُوشَ... وَلَا قُصُورَ... وَلَا مَنَاصِبَ...</div>
+    <p>يَوْمٌ يَهْرُبُ فِيهِ الإِنْسَانُ مِنْ أَخِيهِ، وَأُمِّهِ، وَأَبِيهِ، وَصَاحِبَتِهِ، وَبَنِيهِ.</p>
+    <p>يَوْمٌ تَتَنَاثَرُ فِيهِ الجِبَالُ كَالعِهْنِ المَنْفُوشِ، وَتَتَفَجَّرُ البِحَارُ، وَتَنْكَدِرُ النُّجُومُ، وَتَنْشَقُّ السَّمَاءُ، وَتُبَعْثَرُ القُبُورُ.</p>
+    <p>يَوْمٌ يَسْمَعُ الخَلْقُ كُلُّهُمُ النِّدَاءَ العَظِيمَ:</p>
+    <div class="ql">أَيْنَ المُلُوكُ؟ أَيْنَ الجَبَابِرَةُ؟ أَيْنَ المُتَكَبِّرُونَ؟</div>
+    <p>ثُمَّ يَأْتِي الجَوَابُ الَّذِي يَمْلَأُ أَرْجَاءَ الكَوْنِ:</p>
+    <div class="vb" style="margin:20px 0;"><div class="vt sm">﴿لِمَنِ المُلْكُ اليَوْمَ؟ لِلَّهِ الوَاحِدِ القَهَّارِ﴾</div><div class="vr">غافر: ١٦</div></div>
+    <p>هُنَاكَ تَنْكَشِفُ الحَقَائِقُ...</p>
+    <div class="hl">الوُجُوهُ الَّتِي كَانَتْ تَضْحَكُ اسْتِهْزَاءً بِالدَّعْوَةِ تَصْبَحُ شَاحِبَةً مُرْتَجِفَةً.</div>
+    <div class="hl">وَالأَلْسِنَةُ الَّتِي جَادَلَتْ بِالبَاطِلِ تَعْجَزُ عَنِ النُّطْقِ.</div>
+    <div class="hl">وَالأَقْدَامُ الَّتِي سَعَتْ إِلَى المَعْصِيَةِ تَرْتَجِفُ تَحْتَ هَوْلِ الحِسَابِ.</div>
+    <div class="hl">وَالقُلُوبُ الَّتِي قَسَتْ عَلَى ذِكْرِ اللهِ تَتَحَوَّلُ إِلَى كُتَلٍ مِنَ الخَوْفِ وَالرُّعْبِ.</div>
+    <p>هُنَاكَ لَا يَنْفَعُ مَالٌ وَلَا جَاهٌ وَلَا نَسَبٌ. هُنَاكَ لَا يَشْتَرِي الإِنْسَانُ دَقِيقَةً وَاحِدَةً مِنَ النَّجَاةِ بِكُلِّ مَا مَلَكَ فِي الدُّنْيَا.</p>
+    <div class="hl">هُنَاكَ تَبْدَأُ البَطْشَةُ الكُبْرَى...</div>
+    <div class="hl">البَطْشَةُ الَّتِي لَا تُشْبِهُهَا بَطْشَةٌ.</div>
+    <div class="hl">وَالأَخْذَةُ الَّتِي لَا تُقَارَنُ بِهَا أَخْذَةٌ.</div>
+    <div class="hl">وَالحِسَابُ الَّذِي لَا يَظْلِمُ رَبُّكَ فِيهِ أَحَداً.</div>
+    <p>كَمْ مِنْ طَاغِيَةٍ مَرَّ عَلَى الأَرْضِ! كَمْ مِنْ جَبَّارٍ مَلَأَ الدُّنْيَا ضَجِيجاً! كَمْ مِنْ مُتَكَبِّرٍ ظَنَّ أَنَّ سُلْطَانَهُ لَا يَزُولُ! ثُمَّ صَارُوا جَمِيعاً تَحْتَ التُّرَابِ.</p>
+    <p>أَمَّا اللهُ جَلَّ جَلَالُهُ فَبَاقٍ لَا يَزُولُ... حَيٌّ لَا يَمُوتُ... قَوِيٌّ لَا يُغْلَبُ... عَزِيزٌ لَا يُقْهَرُ...</p>
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿يَوْمَ نَبْطِشُ الْبَطْشَةَ الْكُبْرَىٰ إِنَّا مُنْتَقِمُونَ﴾</div></div>
+    <p>وَكَأَنَّهَا تَقُولُ لِكُلِّ غَافِلٍ:</p>
+    <div class="hl">رَاجِعْ نَفْسَكَ قَبْلَ أَنْ يُغْلَقَ بَابُ التَّوْبَةِ.</div>
+    <div class="hl">أَصْلِحْ قَلْبَكَ قَبْلَ أَنْ يَأْتِيَ يَوْمُ الحَسْرَةِ.</div>
+    <div class="hl">أَقْبِلْ عَلَى اللهِ قَبْلَ أَنْ تَسْمَعَ النِّدَاءَ الَّذِي لَا رَجْعَةَ بَعْدَهُ.</div>
+    <div class="dua-block">
+      <div class="dua-line">فَيَا رَبِّ... اجْعَلْنَا مِمَّنْ يَخَافُونَ ذَلِكَ اليَوْمَ قَبْلَ أَنْ يَرَوْهُ.</div>
+      <div class="dua-line">وَاجْعَلْنَا مِمَّنْ تَثْقُلُ مَوَازِينُهُمْ بِالحَسَنَاتِ.</div>
+      <div class="dua-line">وَاجْعَلْنَا مِمَّنْ يُنَادَى عَلَيْهِمْ بِالأَمْنِ يَوْمَ الفَزَعِ الأَكْبَرِ.</div>
+      <div class="dua-line">وَاجْعَلْ آخِرَ كَلَامِنَا مِنَ الدُّنْيَا شَهَادَةَ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَنَّ مُحَمَّداً رَسُولُ اللهِ ﷺ.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="sub"><h3>بلاغة الآية الكريمة — الدخان ١٦</h3>
+    <div class="card i"><div class="ct">أولاً: المفعول المطلق ﴿الْبَطْشَةَ الْكُبْرَىٰ﴾ — التوكيد والتعظيم</div><p>«نَبْطِشُ الْبَطْشَةَ» مفعول مطلق مؤكِّد، إذ تكررت المادة (ب.ط.ش) في الفعل والمصدر — وهذا ما يُسميه البلاغيون التوكيد اللفظي بالمصدر. ثم وصف المصدر بـ«الكُبْرَى» صيغة تفضيل تدل على أنها أعظم بطشة في الوجود — لا يُشبهها شيء مضى ولا يأتي.</p></div>
+    <div class="card i2"><div class="ct">ثانياً: الالتفات من الغيبة إلى التكلم ﴿إِنَّا مُنْتَقِمُونَ﴾</div><p>لم تقل الآية «إن الله منتقم» بصيغة الغيبة، بل جاءت بصيغة المتكلم «إِنَّا» — وهذا الالتفات البلاغي الحاد يُحدث صدمةً في النفس: كأن الله سبحانه يُخاطب المستكبرين خطاباً مباشراً لا يتوسط فيه أحد. والتعبير بـ«نا» يُفيد العظمة والهيبة.</p></div>
+    <div class="card i"><div class="ct">ثالثاً: الجملة الاسمية ﴿إِنَّا مُنْتَقِمُونَ﴾ — الثبوت والحتمية</div><p>جاء الخبر اسماً لا فعلاً «مُنْتَقِمُونَ» لا «سَنَنْتَقِمُ» — والجملة الاسمية تدل على الثبوت والديمومة: الانتقام الإلهي حقيقة ثابتة راسخة في العلم الإلهي، لا حدث مستقبل قابل للتغيير.</p></div>
+    <div class="card i2"><div class="ct">رابعاً: تنكير «يَوْمَ» في الظرف — التهويل والإبهام</div><p>«يَوْمَ» منصوب على الظرفية متعلق بـ«منتقمون» — وهو مُبهَم لا مُحدَّد بوصف مذكور في الآية ذاتها، مما يُفيد التهويل: هذا اليوم معلوم لله وحده في كُنهه وهوله وتفاصيله، والإبهام أشد وقعاً في النفس من التحديد.</p></div>
+    <div class="card i"><div class="ct">خامساً: التكرار الثلاثي في المقال «كَمْ مِنْ...»</div><p>وظّف المقال أسلوب «كم» الخبرية ثلاث مرات: «كَمْ مِنْ طَاغِيَةٍ... كَمْ مِنْ جَبَّارٍ... كَمْ مِنْ مُتَكَبِّرٍ» — وهذا التكرار يُفيد الاستفاضة في التمثيل والاستدلال بالتاريخ الإنساني كله شاهداً على مضمون الآية.</p></div>
+    <div class="card i2"><div class="ct">سادساً: الاستفهامات الثلاثة «أَيْنَ»</div><p>«أَيْنَ المُلُوكُ؟ أَيْنَ الجَبَابِرَةُ؟ أَيْنَ المُتَكَبِّرُونَ؟» — ثلاثة استفهامات إنكارية توبيخية تُوجَّه يوم القيامة لتثبيت أن هذه العناوين والألقاب زالت كلياً ولم يبقَ منها شيء.</p></div>
+  </div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <table class="tbl">
+      <tr><th>الصورة</th><th>النص</th><th>التحليل</th></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«صَيْحَةٌ سَمَاوِيَّةٌ تَهُزُّ عُرُوشَ المُتَكَبِّرِينَ»</td><td class="def">شبّه الآية القرآنية بصيحة مدوّية كالرعد تهزّ العروش — والصيحة السماوية توحي بالقوة المُنزَلة لا البشرية.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«يَرْفَعُ السِّتَارَ عَنِ المَشْهَدِ الأَخِيرِ»</td><td class="def">شبّه القرآن بمسرح يُكشف ستاره عن مشهد خفي — توظيف بصري يُحوّل القارئ إلى مُشاهد.</td></tr>
+      <tr><td class="term">تشبيه قرآني مستعار</td><td class="ex">«الجِبَالُ كَالعِهْنِ المَنْفُوشِ»</td><td class="def">استعار المؤلف التشبيه القرآني للجبال بالصوف المندوف — أعظم الرواسي تصير خفيفةً كالريشة.</td></tr>
+      <tr><td class="term">مقابلة تضادية</td><td class="ex">«صَارُوا جَمِيعاً تَحْتَ التُّرَابِ — أَمَّا اللهُ فَبَاقٍ لَا يَزُولُ»</td><td class="def">مقابلة بين الفناء البشري والبقاء الإلهي — الجبابرة تحت التراب، والله باقٍ فوق كل شيء.</td></tr>
+      <tr><td class="term">كناية</td><td class="ex">«لَا يَشْتَرِي الإِنْسَانُ دَقِيقَةً وَاحِدَةً مِنَ النَّجَاةِ»</td><td class="def">كناية عن انعدام القيمة التبادلية يوم القيامة — كل ثروات الدنيا لا تساوي دقيقة نجاة واحدة.</td></tr>
+      <tr><td class="term">تدريج تصاعدي</td><td class="ex">«وُجُوهٌ شَاحِبَةٌ... أَلْسِنَةٌ عَاجِزَةٌ... أَقْدَامٌ مُرْتَجِفَةٌ... قُلُوبٌ خَائِفَةٌ»</td><td class="def">تصاعد من الظاهر (الوجه) إلى الأداة (اللسان) إلى الحركة (القدم) إلى الباطن (القلب) — يُغطي الإنسان كله.</td></tr>
+    </table>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">الجناس الاشتقاقي</span><div class="mv">مادة ب.ط.ش</div><div class="md">«نَبْطِشُ الْبَطْشَةَ» — تكرار المادة في الفعل والمصدر يُعمّق دلالة الشدة والحسم.</div></div>
+      <div class="mc"><span class="ml">الطباق الضمني</span><div class="mv">الدنيا / الآخرة</div><div class="md">«يَجْلِسُ عَلَى كُرْسِيِّ سُلْطَانِهِ» مقابل «لَا حُرَّاسَ وَلَا جُيُوشَ» — طباق بين حال الدنيا والآخرة.</div></div>
+      <div class="mc"><span class="ml">الاستفهام الإنكاري المتسلسل</span><div class="mv">«أَيْنَ» ×٣</div><div class="md">ثلاثة استفهامات تُطارد الملوك والجبابرة والمتكبرين سؤالاً عن مكانهم — والجواب: تحت التراب.</div></div>
+      <div class="mc"><span class="ml">سلسلة «كَمْ»</span><div class="mv">التمثيل التاريخي</div><div class="md">ثلاث «كم» خبرية تستحضر التاريخ الإنساني كله شاهداً — البلاغة في الاستشهاد لا الادعاء.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LINGUISTIC -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card i"><div class="ct">قراءة ﴿نَبْطِشُ﴾ — التحليل الصرفي</div><p>«نَبْطِشُ» فعل مضارع مرفوع على وزن «نَفعِل» من «بَطَشَ يَبطِشُ» — والمضارع يُفيد الاستمرار والحضور، كأن البطشة قائمة في علم الله حاضرة لا تنتظر إلا اليوم الموعود. وجاء بضمير المتكلم «نحن» تعظيماً وهيبةً.</p></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن الصرفي</th><th>الدلالة</th></tr>
+      <tr><td class="term">نَبْطِشُ</td><td>نَفعِل</td><td class="def">البطش: الأخذ بالعنف والشدة — أصله الضرب القوي والقبض الشديد.</td></tr>
+      <tr><td class="term">الْبَطْشَةَ</td><td>الفَعْلَة</td><td class="def">صيغة المرة من البطش — تدل على وحدة الفعل التي جمعت كل الهول.</td></tr>
+      <tr><td class="term">الْكُبْرَىٰ</td><td>فُعْلَى</td><td class="def">صيغة التفضيل المؤنثة — الأعظم والأشد بلا منازع.</td></tr>
+      <tr><td class="term">مُنْتَقِمُونَ</td><td>مُفتَعِلون</td><td class="def">اسم فاعل على وزن الافتعال — يُفيد التكلف والاهتمام: الانتقام حاضر ثابت في الصفة الإلهية.</td></tr>
+    </table>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card i"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْبَطْشُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">الأخذ بالشدة والعنف</td><td class="def">﴿نَبْطِشُ الْبَطْشَةَ الْكُبْرَىٰ﴾ — البطش الإلهي يوم القيامة.</td></tr>
+        <tr><td class="term">الضرب الشديد</td><td class="def">«بَطَشَ بِهِ» أي ضربه وأخذه بقوة.</td></tr>
+        <tr><td class="term">القوة والبأس</td><td class="def">﴿وَإِذَا بَطَشْتُم بَطَشْتُمْ جَبَّارِينَ﴾ — الشعراء: ١٣٠ — في سياق ذم الجبابرة.</td></tr>
+        <tr><td class="term">الانتقام العادل</td><td class="def">في السياق الإلهي يتضمن العدل لا الظلم — ولذا ورد مع «مُنْتَقِمُونَ».</td></tr>
+      </table>
+      <div class="vrd"><strong>ملاحظة:</strong> «البطش» في أصل اللغة يحمل معنى القوة والشدة، وحين يُنسب إلى الله يتحوّل إلى عدل مطلق لا ظلم فيه — وهذا ما أشار إليه المقال بقوله «الحِسَابُ الَّذِي لَا يَظْلِمُ رَبُّكَ فِيهِ أَحَداً».</div>
+    </div>
+    <div class="card i2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الِانْتِقَامُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>التوضيح</th></tr>
+        <tr><td class="term">العقوبة العادلة</td><td class="def">في السياق الإلهي: الجزاء العادل على الكفر والظلم.</td></tr>
+        <tr><td class="term">رد الظلم بالمثل</td><td class="def">في السياق البشري: المقابلة بالمثل وإن أبيحت أحياناً.</td></tr>
+        <tr><td class="term">الإذلال والقهر</td><td class="def">«انتقم منه» أي أذله وقهره جزاءً لما فعل.</td></tr>
+      </table>
+      <div class="vrd"><strong>تنبيه عقدي:</strong> «المنتقم» من أسماء الله الحسنى — وهو لا يُطلق على الله إلا مقيَّداً أو في سياق العقوبة على الظلم، لأن الانتقام بغير سبب صفة ذم.</div>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card i"><div class="ct">الفرق بين: الْبَطْشُ / الأَخْذُ / الْعِقَابُ / النِّقْمَةُ / العَذَابُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْبَطْشُ</td><td class="def">الأخذ بالقوة والشدة فجأةً — يتضمن السرعة والحسم والقهر.</td></tr>
+        <tr><td class="term">الأَخْذُ</td><td class="def">أعم وأشمل — يشمل الأخذ برفق أو بشدة.</td></tr>
+        <tr><td class="term">الْعِقَابُ</td><td class="def">الجزاء بعد الذنب — أكثر استعمالاً في القوانين والأنظمة.</td></tr>
+        <tr><td class="term">النِّقْمَةُ</td><td class="def">العقوبة الشديدة المُصيبة — ﴿فَانتَقَمْنَا مِنَ الَّذِينَ أَجْرَمُوا﴾.</td></tr>
+        <tr><td class="term">الْعَذَابُ</td><td class="def">الألم المديد المستمر — أشمل من البطش إذ يتضمن الاستمرار.</td></tr>
+      </table>
+    </div>
+    <div class="card i2"><div class="ct">الفرق بين: الطَّاغِيَةُ / الجَبَّارُ / الْمُتَكَبِّرُ / الظَّالِمُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الطَّاغِيَةُ</td><td class="def">من تجاوز الحد في القوة والفساد — الطغيان تعدٍّ على حق الله والناس معاً.</td></tr>
+        <tr><td class="term">الجَبَّارُ</td><td class="def">من يقهر الناس ويُكرههم على ما يريد — الجبر: الإكراه القسري.</td></tr>
+        <tr><td class="term">الْمُتَكَبِّرُ</td><td class="def">من رأى نفسه أعظم من الحق — الكبر الإعراض عن الحق واحتقار الناس.</td></tr>
+        <tr><td class="term">الظَّالِمُ</td><td class="def">من وضع الشيء في غير موضعه — أعم الأوصاف ويشمل كل من تجاوز حده.</td></tr>
+      </table>
+    </div>
+    <div class="card i"><div class="ct">الفرق بين: كُبْرَى / أَكْبَرُ / عُظْمَى / أَعْظَمُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الدلالة الدقيقة</th></tr>
+        <tr><td class="term">كُبْرَى</td><td class="def">صيغة تفضيل مؤنثة من «كبير» — تُفيد الأعلى في الحجم والأثر.</td></tr>
+        <tr><td class="term">أَكْبَرُ</td><td class="def">المذكر من «كبرى» — «الله أكبر» من كل شيء.</td></tr>
+        <tr><td class="term">عُظْمَى</td><td class="def">من «عظيم» — تُفيد الأعلى في الشأن والمكانة لا الحجم فقط.</td></tr>
+        <tr><td class="term">أَعْظَمُ</td><td class="def">المذكر من «عظمى» — يُفيد التفوق في الرفعة والمنزلة والقدر.</td></tr>
+      </table>
+      <div class="vrd"><strong>ملاحظة:</strong> اختار القرآن «الكُبْرَى» لا «العُظمى» لأن البطشة تتعلق بالأثر المادي والوقع العملي، وهو ما تُفيده مادة (ك.ب.ر) دون (ع.ظ.م).</div>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card i"><div class="ct">لماذا «إِنَّا مُنْتَقِمُونَ» بالجمع لا «إِنِّي مُنْتَقِمٌ»؟</div><p>«إنّا» ضمير العظمة لا الجمع — وهو أسلوب عربي راسخ يُعبّر به العظيم عن نفسه تعظيماً لا إشراكاً. وجمهور المفسرين على أن «إنّا» هنا من باب التعظيم، وهو في أعلى درجاته حين يتكلم الله سبحانه عن انتقامه من المجرمين.</p></div>
+    <div class="card i2"><div class="ct">سرّ الختم بـ«مُنْتَقِمُونَ» بعد «الْبَطْشَةَ الْكُبْرَى»</div><p>لو اكتفى القرآن بـ«نبطش البطشة الكبرى» لكان التهديد بالفعل وحده. لكنه ختم بـ«إِنَّا مُنْتَقِمُونَ» لإفادة أن هذا الانتقام صفةٌ ذاتية ثابتة في الله لمن استحقه — ليست مجرد حدث يمر بل حكمٌ إلهي أزلي.</p></div>
+    <div class="card i"><div class="ct">السياق التاريخي للآية وخلاف المفسرين في مرجع «يوم»</div><p>اختلف المفسرون في «يوم» على قولين: الأول أنه يوم القيامة (قول الجمهور). والثاني أنه يوم بدر — إذ جاءت الآية في سياق الحديث عن قريش وعنادهم. والمقال بنى على القول الأول وهو الأشهر والأوسع أثراً في التدبر والوعظ.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السباق: ما قبل الآية (١٠–١٥)</div>
+    <div class="ci"><span class="vi">﴿فَارْتَقِبْ يَوْمَ تَأْتِي السَّمَاءُ بِدُخَانٍ مُّبِينٍ﴾</span><span class="vs">الدخان: ١٠ — مشهد الدخان الذي يسبق البطشة الكبرى.</span></div>
+    <div class="ci"><span class="vi">﴿يَغْشَى النَّاسَ هَٰذَا عَذَابٌ أَلِيمٌ﴾</span><span class="vs">الدخان: ١١ — العذاب يسبق البطشة تتابعاً.</span></div>
+    <div class="ci"><span class="vi">﴿إِنَّا كَاشِفُو الْعَذَابِ قَلِيلًا إِنَّكُمْ عَائِدُونَ﴾</span><span class="vs">الدخان: ١٥ — الإمهال لا يُفيد لأنهم عائدون إلى الكفر — ثم تأتي الآية ١٦ بالبطشة النهائية.</span></div>
+  </div>
+  <div class="cb"><div class="bt">اللحاق: ما بعد الآية (١٧–٢٩)</div>
+    <div class="ci"><span class="vi">﴿وَلَقَدْ فَتَنَّا قَبْلَهُمْ قَوْمَ فِرْعَوْنَ وَجَاءَهُمْ رَسُولٌ كَرِيمٌ﴾</span><span class="vs">الدخان: ١٧ — يأتي بعد البطشة مباشرةً: قصة فرعون نموذجٌ تاريخي على البطشة.</span></div>
+    <div class="ci"><span class="vi">﴿فَأَخَذْنَاهُمْ أَخْذَ عَزِيزٍ مُّقْتَدِرٍ﴾</span><span class="vs">الدخان: ٤٢ — تفسير البطشة بالأخذ القوي في سياق الإهلاك.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات المتعلقة في القرآن الكريم</div>
+    <div class="ci"><span class="vi">﴿لِمَنِ الْمُلْكُ الْيَوْمَ ۖ لِلَّهِ الْوَاحِدِ الْقَهَّارِ﴾</span><span class="vs">غافر: ١٦ — الجواب الإلهي يوم القيامة لسؤال «أين الملوك؟».</span></div>
+    <div class="ci"><span class="vi">﴿وَإِذَا بَطَشْتُم بَطَشْتُمْ جَبَّارِينَ﴾</span><span class="vs">الشعراء: ١٣٠ — البطش البشري ذمٌّ، في مقابل البطش الإلهي عدلٌ.</span></div>
+    <div class="ci"><span class="vi">﴿يَوْمَ تَرْجُفُ الْأَرْضُ وَالْجِبَالُ وَكَانَتِ الْجِبَالُ كَثِيبًا مَّهِيلًا﴾</span><span class="vs">المزمل: ١٤ — مشهد تفتت الجبال الذي وظّفه المقال.</span></div>
+    <div class="ci"><span class="vi">﴿يَوْمَ يَفِرُّ الْمَرْءُ مِنْ أَخِيهِ ۝ وَأُمِّهِ وَأَبِيهِ﴾</span><span class="vs">عبس: ٣٤–٣٥ — الفرار من الأهل الذي ذكره المقال.</span></div>
+    <div class="ci"><span class="vi">﴿إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ﴾</span><span class="vs">البروج: ١٢ — تأكيد صفة البطش الإلهي في سورة مستقلة.</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية وعيد ✅</div><div class="md">تُحذّر المستكبرين والجبابرة من يوم البطشة الكبرى — من أشد آيات الوعيد في القرآن الكريم.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عقدية ✅</div><div class="md">تُقرّر صفة الانتقام الإلهي من أسماء الله الحسنى، وتُثبت يوم الجزاء حقيقةً لا مجاز فيها.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">إخبار غيبي ✅</div><div class="md">تُخبر عن حدث مستقبلي غيبي لا يُدرك بالحواس — يوم القيامة وما فيه من أخذ الله للمجرمين.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> الآية ١٦ من الدخان منظومة وعيدية-عقدية-إخبارية: تُحذّر وتُقرّر وتُخبر — ثلاثة في واحدة.</div>
+  <div class="sub"><h3>الأحكام الشرعية المستنبطة</h3>
+    <div class="card i"><div class="ct">الحكم الأول: تحريم الاستكبار والجبروت</div><p>دلّت الآية في سياقها على أن الاستكبار والجبروت من أسباب البطشة الكبرى — وهو حكم شرعي يُقرّر تحريم الكبر والتجبّر. وقد روى مسلم: «لَا يَدْخُلُ الجَنَّةَ مَنْ كَانَ فِي قَلْبِهِ مِثْقَالُ ذَرَّةٍ مِنْ كِبْرٍ».</p></div>
+    <div class="card i2"><div class="ct">الحكم الثاني: وجوب الخوف من الله وعدم الاغترار بالإمهال</div><p>السياق: «إِنَّا كَاشِفُو الْعَذَابِ قَلِيلًا إِنَّكُمْ عَائِدُونَ» يُفيد أن الإمهال لا يعني الرضا الإلهي — وهذا أصل في وجوب دوام الخوف من الله.</p></div>
+    <div class="card i"><div class="ct">الحكم الثالث: المبادرة بالتوبة قبل غلق بابها</div><p>خاتمة المقال تُفيد الإسراع بالتوبة — وهذا مستفاد من قوله: «رَاجِعْ نَفْسَكَ قَبْلَ أَنْ يُغْلَقَ بَابُ التَّوْبَةِ». وباب التوبة يُغلق بالموت أو بطلوع الشمس من مغربها.</p></div>
+    <div class="card i2"><div class="ct">الحكم الرابع: استحباب الدعاء بالأمن يوم الفزع الأكبر</div><p>وظّف المقال دعاء «اجْعَلْنَا مِمَّنْ يُنَادَى عَلَيْهِمْ بِالأَمْنِ يَوْمَ الفَزَعِ الأَكْبَرِ» — وهو دعاء مأثور تُؤيده الآية ﴿لَا يَحْزُنُهُمُ الْفَزَعُ الْأَكْبَرُ﴾.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.55rem;">﴿يَوْمَ نَبْطِشُ الْبَطْشَةَ الْكُبْرَىٰ إِنَّا مُنْتَقِمُونَ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">يَوْمَ</div><div class="id">ظرف زمان منصوب بالفتحة الظاهرة متعلق بـ«مُنْتَقِمُونَ» — أي إنّا في ذلك اليوم منتقمون. وقيل متعلق بفعل محذوف تقديره «اذكر يوم». والأول أقوى لأنه يربط الانتقام باليوم ربطاً مباشراً.</div></div>
+    <div class="ir"><div class="iw">نَبْطِشُ</div><div class="id">فعل مضارع مرفوع بالضمة الظاهرة. والفاعل ضمير مستتر وجوباً تقديره «نحن» يعود على الله سبحانه بضمير العظمة. والجملة في محل جر بإضافة «يوم» إليها.</div></div>
+    <div class="ir"><div class="iw">الْبَطْشَةَ</div><div class="id">مفعول مطلق منصوب بالفتحة الظاهرة — يُؤكد معنى الفعل «نبطش» ويُبيّن نوعه. وهو مضاف إلى وصفه «الكُبرى».</div></div>
+    <div class="ir"><div class="iw">الْكُبْرَىٰ</div><div class="id">نعت للبطشة منصوب وعلامة نصبه الفتحة المقدرة على الألف للتعذر. وهو على وزن «فُعلى» صيغة تفضيل مؤنثة: أكبر البطشات وأشدها.</div></div>
+    <div class="ir"><div class="iw">إِنَّا</div><div class="id">«إنّ»: حرف توكيد ونصب. «نا»: ضمير متصل مبني في محل نصب اسم «إنّ» — ضمير العظمة يعود على الله سبحانه.</div></div>
+    <div class="ir"><div class="iw">مُنْتَقِمُونَ</div><div class="id">خبر «إنّ» مرفوع وعلامة رفعه الواو لأنه جمع مذكر سالم — وهو جمع العظمة لا الجمع الحقيقي. والجملة «إنّا منتقمون» تعليل وتوكيد للبطشة: سببها الانتقام الإلهي العادل.</div></div>
+  </div>
+  <div class="card i" style="margin-top:14px;"><div class="ct">ملاحظة إعرابية دقيقة: تعلّق «يَوْمَ» بـ«مُنْتَقِمُونَ»</div><p>تعلّق الظرف «يَوْمَ» بخبر «إنّ» وهو «مُنْتَقِمُونَ» — وهذا ترتيب بلاغي: قدّم الظرف (اليوم) على الخبر (الانتقام) لأن الاهتمام بالتوقيت أشد من الاهتمام بنفس الفعل، إذ اليوم هو مناط الرهبة والهول.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«كَمْ مِنْ طَاغِيَةٍ مَرَّ عَلَى الأَرْضِ... ثُمَّ صَارَ تَحْتَ التُّرَابِ — أَمَّا اللهُ فَبَاقٍ لَا يَزُولُ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card i"><div class="ct">أولاً: الخوف المُنتِج — الخوف الذي يُصلح لا يُشلّ</div><p>فرّق المقال بين الغافل والمُصلِح: الغافل ينتظر، والمُصلِح يراجع نفسه قبل يوم الحسرة. الخوف الصحيح هو ما يدفع للعمل لا ما يُشلّ عن العمل. <strong>التطبيق:</strong> تحويل هذه الآية إلى خطة عملية: ما الذي أحتاج إصلاحه في حياتي قبل لقاء الله؟</p></div>
+  <div class="card i2"><div class="ct">ثانياً: الجبابرة والتراب — درس التاريخ العملي</div><p>استثمر المقال التاريخ كشاهد: «كَمْ مِنْ طَاغِيَةٍ مَرَّ عَلَى الأَرْضِ ثُمَّ صَارَ تَحْتَ التُّرَابِ» — هذا الدرس التاريخي أقوى من أي وعظ نظري. <strong>التطبيق:</strong> النظر في مصارع الطغاة عبر التاريخ كتمرين روحي دوري.</p></div>
+  <div class="card i"><div class="ct">ثالثاً: رفع الستار — التدبر البصري للمشهد الغيبي</div><p>«القُرْآنُ يَرْفَعُ السِّتَارَ عَنِ المَشْهَدِ الأَخِيرِ» — أسلوب يُحوّل الغيب إلى مشهد قريب يُدركه الخيال. <strong>التطبيق:</strong> تخيّل هذا المشهد بتفاصيله في لحظة خلوة يومية — التدبر البصري أعمق أثراً من التلاوة السريعة.</p></div>
+  <div class="card i2"><div class="ct">رابعاً: الإمهال ليس رضا — درس الغرور بالنعمة</div><p>«فَيَحْسَبُ أَنَّ الأَيَّامَ دَانَتْ لَهُ» — الغرور بالإمهال من أشد أمراض القلب. <strong>التطبيق:</strong> كلما توسّعت في الدنيا — تذكّر أن الإمهال مرحلة لا نهاية، وأن «إِنَّا كَاشِفُو الْعَذَابِ قَلِيلًا إِنَّكُمْ عَائِدُونَ».</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>الانتقال من الوصف إلى الاستحضار:</strong> لم يقل «سيكون هناك يوم» بل «يوم يهرب فيه الإنسان من أخيه» — صياغة الحاضر لا المستقبل.</li>
+      <li><strong>التوظيف القرآني المتقاطع:</strong> استدعى المقال آيات من عبس وغافر والمزمل لبناء مشهد يوم القيامة — تدبر شمولي لا تأمل في آية واحدة.</li>
+      <li><strong>المقابلة بين الفناء والبقاء:</strong> «صَارُوا تَحْتَ التُّرَابِ / أَمَّا اللهُ فَبَاقٍ» — أقوى خاتمة موضوعية لمقال الوعيد.</li>
+      <li><strong>الختم بالرجاء بعد الخوف:</strong> انتهى بالدعاء والرجاء لا بالرعب المجرد — لأن الخوف بلا رجاء قنوط، والرجاء بلا خوف غرور.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong style="color:var(--ig);">العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضراً أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong style="color:var(--ig);">البُعد الزمني:</strong> الربط الحي بين النص القرآني ومستجدات العصر — يُصوّر الغيب بلغة تُلامس قلب الإنسان المعاصر.</p>
+      <p><strong style="color:var(--ig);">التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ مما يُضفي على كتاباته دقةً عقدية نادرة.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم، ونفع به الأمة في زمن كثرت فيه الغفلة وقلّ التدبر.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">أحاديث الفتن</span>
+        <span class="atag">مشاهد القيامة</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  const sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+const secs=document.querySelectorAll('.sec[id]');
+const links=document.querySelectorAll('.toc-a');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a) a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>{
+  document.getElementById('sb').classList.add('off');
+  document.getElementById('sb').classList.remove('open');
+}));
+</script>
+</body>
+</html>

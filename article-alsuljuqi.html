@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>على أبواب العروش المهدمة — الشيخ علي خليل السلجوقي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1208;
+    --parchment: #f7f2e8;
+    --parchment-deep: #ede5d0;
+    --gold: #b8860b;
+    --gold-light: #d4a017;
+    --gold-muted: #c9a84c;
+    --copper: #8b4513;
+    --shadow-ink: #2d1f0e;
+    --emerald: #1a4a2e;
+    --emerald-light: #2d6b45;
+    --mist: #6b5a3e;
+    --divider: #c4a882;
+    --verse-bg: #1c1008;
+    --verse-text: #f0d890;
+    --sidebar-w: 300px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+    line-height: 1.9;
+    min-height: 100vh;
+    background-image:
+      radial-gradient(ellipse at 20% 10%, rgba(184,134,11,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 90%, rgba(26,74,46,0.05) 0%, transparent 60%);
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: var(--verse-bg);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .site-logo {
+    font-family: 'Scheherazade New', serif;
+    color: var(--gold-muted);
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .site-logo span { color: var(--verse-text); font-weight: 700; }
+
+  .header-title {
+    font-family: 'Scheherazade New', serif;
+    color: var(--verse-text);
+    font-size: 1.05rem;
+    text-align: center;
+    opacity: 0.85;
+    flex: 1;
+  }
+
+  .toc-toggle {
+    background: var(--gold);
+    color: var(--ink);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.2s;
+  }
+  .toc-toggle:hover { background: var(--gold-light); }
+
+  /* ── LAYOUT ── */
+  .layout {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 60px);
+    position: relative;
+  }
+
+  /* ── SIDEBAR TOC ── */
+  .sidebar {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    background: var(--shadow-ink);
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    padding: 24px 0;
+    transition: transform 0.35s ease;
+    z-index: 50;
+    border-left: 1px solid rgba(184,134,11,0.3);
+  }
+
+  .sidebar.hidden {
+    transform: translateX(100%);
+    position: fixed;
+    top: 60px;
+    left: 0;
+  }
+
+  .toc-header {
+    color: var(--gold);
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.15rem;
+    padding: 0 20px 16px;
+    border-bottom: 1px solid rgba(184,134,11,0.3);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .toc-header::before { content: '◈'; font-size: 0.8em; color: var(--gold-muted); }
+
+  .toc-section-label {
+    color: var(--gold-muted);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 12px 20px 4px;
+    font-family: 'Noto Naskh Arabic', sans-serif;
+    opacity: 0.7;
+  }
+
+  .toc-link {
+    display: block;
+    color: #c4a882;
+    text-decoration: none;
+    padding: 7px 20px 7px 28px;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    border-right: 3px solid transparent;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .toc-link:hover,
+  .toc-link.active {
+    color: var(--verse-text);
+    background: rgba(184,134,11,0.1);
+    border-right-color: var(--gold);
+  }
+
+  .toc-link.sub { padding-right: 36px; font-size: 0.82rem; opacity: 0.85; }
+
+  /* ── MAIN CONTENT ── */
+  .main {
+    flex: 1;
+    min-width: 0;
+    padding: 48px 60px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    text-align: center;
+    margin-bottom: 56px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--divider);
+    position: relative;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  .ornament {
+    color: var(--gold);
+    font-size: 2rem;
+    margin-bottom: 16px;
+    display: block;
+    opacity: 0.7;
+  }
+
+  .hero h1 {
+    font-family: 'Scheherazade New', serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--shadow-ink);
+    line-height: 1.4;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 0 rgba(184,134,11,0.15);
+  }
+
+  .hero-meta {
+    color: var(--mist);
+    font-size: 1rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+
+  .hero-meta span { display: flex; align-items: center; gap: 6px; }
+  .hero-meta .dot { width: 4px; height: 4px; background: var(--gold-muted); border-radius: 50%; }
+
+  .category-tag {
+    display: inline-block;
+    background: var(--emerald);
+    color: #a8d5b5;
+    font-size: 0.78rem;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── QURANIC VERSE BLOCK ── */
+  .verse-block {
+    background: var(--verse-bg);
+    border: 1px solid rgba(184,134,11,0.4);
+    border-radius: 8px;
+    padding: 36px 40px;
+    margin: 40px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .verse-block::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(184,134,11,0.08), transparent 70%);
+    pointer-events: none;
+  }
+
+  .verse-block::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: 8px;
+    background: repeating-linear-gradient(
+      90deg, transparent 0, transparent 60px, rgba(184,134,11,0.02) 60px, rgba(184,134,11,0.02) 61px
+    );
+  }
+
+  .verse-text {
+    font-family: 'Scheherazade New', serif;
+    font-size: 2rem;
+    color: var(--verse-text);
+    line-height: 2;
+    position: relative;
+    z-index: 1;
+  }
+
+  .verse-ref {
+    color: var(--gold-muted);
+    font-size: 0.9rem;
+    margin-top: 14px;
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+  }
+
+  /* ── ARTICLE BODY ── */
+  .article-body {
+    font-size: 1.15rem;
+    line-height: 2;
+    color: var(--shadow-ink);
+  }
+
+  .article-body p {
+    margin-bottom: 1.6em;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .article-body p:first-child::first-letter {
+    font-size: 3em;
+    font-family: 'Scheherazade New', serif;
+    color: var(--gold);
+    float: right;
+    line-height: 0.85;
+    margin-left: 8px;
+    margin-bottom: 4px;
+  }
+
+  .highlight-line {
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.3rem;
+    color: var(--emerald);
+    text-align: center;
+    padding: 16px;
+    margin: 8px 0;
+    border-right: 4px solid var(--gold);
+    background: rgba(26,74,46,0.05);
+  }
+
+  .closing-verse {
+    margin: 48px 0 32px;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section {
+    margin-top: 72px;
+    padding-top: 24px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .section-num {
+    background: var(--verse-bg);
+    color: var(--gold);
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.1rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 2px solid var(--gold);
+  }
+
+  .section h2 {
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.9rem;
+    color: var(--shadow-ink);
+    border-bottom: 2px solid var(--gold-muted);
+    padding-bottom: 8px;
+    flex: 1;
+  }
+
+  .subsection {
+    margin-top: 36px;
+    margin-bottom: 20px;
+  }
+
+  .subsection h3 {
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.4rem;
+    color: var(--emerald);
+    margin-bottom: 14px;
+    padding-right: 16px;
+    border-right: 3px solid var(--gold-muted);
+  }
+
+  .subsection h4 {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 1.1rem;
+    color: var(--copper);
+    margin: 20px 0 10px;
+    font-weight: 600;
+  }
+
+  /* ── CARDS & TABLES ── */
+  .analysis-card {
+    background: white;
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin: 20px 0;
+    border-right: 5px solid var(--gold);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+
+  .analysis-card.emerald { border-right-color: var(--emerald); }
+  .analysis-card.copper { border-right-color: var(--copper); }
+  .analysis-card.blue { border-right-color: #2a5c8a; }
+
+  .card-title {
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.2rem;
+    color: var(--shadow-ink);
+    margin-bottom: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-title .badge {
+    background: var(--gold);
+    color: var(--ink);
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: 'Noto Naskh Arabic', sans-serif;
+  }
+  .card-title .badge.emerald { background: var(--emerald); color: #a8d5b5; }
+  .card-title .badge.copper { background: var(--copper); color: #f0d0b0; }
+
+  table.analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 1rem;
+  }
+
+  .analysis-table th {
+    background: var(--verse-bg);
+    color: var(--gold-muted);
+    padding: 12px 16px;
+    text-align: right;
+    font-family: 'Scheherazade New', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .analysis-table td {
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--parchment-deep);
+    vertical-align: top;
+    line-height: 1.8;
+  }
+
+  .analysis-table tr:hover td { background: rgba(184,134,11,0.04); }
+
+  .term { font-family: 'Scheherazade New', serif; font-size: 1.15rem; color: var(--shadow-ink); font-weight: 600; }
+  .def { color: var(--mist); font-size: 0.95rem; }
+  .example { color: var(--emerald); font-style: italic; }
+
+  /* ── IRAB SECTION ── */
+  .irab-word {
+    display: inline-block;
+    background: var(--verse-bg);
+    color: var(--verse-text);
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.4rem;
+    padding: 4px 14px;
+    border-radius: 4px;
+    margin: 4px;
+  }
+
+  .irab-detail {
+    background: var(--parchment-deep);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+
+  .irab-row {
+    display: flex;
+    gap: 16px;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--divider);
+    align-items: flex-start;
+  }
+
+  .irab-row:last-child { border-bottom: none; }
+
+  .irab-word-label {
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.3rem;
+    color: var(--shadow-ink);
+    min-width: 140px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .irab-desc { color: var(--mist); font-size: 0.95rem; flex: 1; }
+
+  /* ── QUOTE HIGHLIGHT ── */
+  .pull-quote {
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.6rem;
+    color: var(--shadow-ink);
+    text-align: center;
+    padding: 32px 40px;
+    margin: 40px 0;
+    border-top: 2px solid var(--gold-muted);
+    border-bottom: 2px solid var(--gold-muted);
+    position: relative;
+  }
+
+  .pull-quote::before {
+    content: '❝';
+    position: absolute;
+    top: -1px;
+    right: 40px;
+    font-size: 3rem;
+    color: var(--gold);
+    opacity: 0.3;
+    line-height: 1;
+  }
+
+  /* ── CONNECTIONS BOX ── */
+  .connections-box {
+    background: linear-gradient(135deg, #0f2318, #1a3825);
+    border: 1px solid rgba(184,134,11,0.3);
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin: 24px 0;
+  }
+
+  .connections-box .box-title {
+    color: var(--gold);
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(184,134,11,0.3);
+  }
+
+  .connection-item {
+    color: #c4d9c9;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(184,134,11,0.15);
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .connection-item:last-child { border-bottom: none; }
+
+  .connection-item .verse-inline {
+    font-family: 'Scheherazade New', serif;
+    color: var(--verse-text);
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .connection-item .verse-source {
+    color: var(--gold-muted);
+    font-size: 0.82rem;
+  }
+
+  /* ── AUTHOR BIO ── */
+  .author-section {
+    background: var(--verse-bg);
+    border: 1px solid rgba(184,134,11,0.4);
+    border-radius: 8px;
+    padding: 36px 40px;
+    margin: 60px 0 40px;
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+  }
+
+  .author-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--copper));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Scheherazade New', serif;
+    font-size: 2rem;
+    color: var(--ink);
+    flex-shrink: 0;
+    border: 3px solid var(--gold-muted);
+  }
+
+  .author-info h3 {
+    font-family: 'Scheherazade New', serif;
+    color: var(--verse-text);
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .author-info .author-title {
+    color: var(--gold-muted);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+  }
+
+  .author-info p {
+    color: #c4b89a;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  .author-tag {
+    display: inline-block;
+    background: rgba(184,134,11,0.2);
+    color: var(--gold-muted);
+    font-size: 0.78rem;
+    padding: 3px 12px;
+    border-radius: 12px;
+    margin: 3px;
+    border: 1px solid rgba(184,134,11,0.3);
+  }
+
+  /* ── GRID ── */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 20px 0; }
+
+  .mini-card {
+    background: white;
+    border: 1px solid var(--divider);
+    border-radius: 6px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  }
+
+  .mini-card .mc-label {
+    color: var(--gold);
+    font-size: 0.78rem;
+    font-family: 'Noto Naskh Arabic', sans-serif;
+    margin-bottom: 6px;
+    display: block;
+    font-weight: 600;
+  }
+
+  .mini-card .mc-value {
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.15rem;
+    color: var(--shadow-ink);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .mini-card .mc-desc { color: var(--mist); font-size: 0.87rem; line-height: 1.6; }
+
+  /* ── DIVIDERS ── */
+  .ornamental-divider {
+    text-align: center;
+    color: var(--gold-muted);
+    font-size: 1.4rem;
+    margin: 48px 0;
+    opacity: 0.6;
+    letter-spacing: 0.4em;
+  }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    background: var(--verse-bg);
+    color: #8a7a60;
+    text-align: center;
+    padding: 32px 20px;
+    font-size: 0.88rem;
+    border-top: 1px solid rgba(184,134,11,0.3);
+    margin-top: 80px;
+  }
+
+  .site-footer .footer-brand {
+    color: var(--gold-muted);
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1100px) {
+    .sidebar { display: none; }
+    .sidebar.mobile-open { display: block; position: fixed; right: 0; top: 60px; width: 280px; }
+    .main { padding: 32px 28px; }
+    .two-col, .three-col { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.4rem; }
+    .author-section { flex-direction: column; }
+  }
+
+  @media (max-width: 640px) {
+    .main { padding: 24px 16px; }
+    .verse-text { font-size: 1.4rem; }
+    .hero h1 { font-size: 1.9rem; }
+    .pull-quote { font-size: 1.3rem; padding: 24px 20px; }
+    .header-inner { padding: 10px 16px; }
+    .site-logo { display: none; }
+  }
+
+  /* ── SCROLL PROGRESS ── */
+  .progress-bar {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 3px;
+    background: var(--gold);
+    z-index: 200;
+    transition: height 0.1s;
+    transform-origin: top;
+  }
+
+  /* ── ACTIVE SECTION INDICATOR ── */
+  .section[data-id] { scroll-margin-top: 80px; }
+
+  /* list styles */
+  .styled-list { padding-right: 24px; margin: 12px 0; }
+  .styled-list li { margin-bottom: 10px; line-height: 1.8; color: var(--shadow-ink); }
+  .styled-list li::marker { color: var(--gold); }
+
+  .check-list { list-style: none; padding: 0; margin: 12px 0; }
+  .check-list li { padding: 8px 0 8px 0; padding-right: 28px; position: relative; border-bottom: 1px dashed var(--divider); color: var(--shadow-ink); line-height: 1.8; }
+  .check-list li:last-child { border-bottom: none; }
+  .check-list li::before { content: '◈'; position: absolute; right: 0; color: var(--gold); font-size: 0.9em; top: 10px; }
+
+  .verdict-box {
+    background: linear-gradient(135deg, #0d1f10, #162b1a);
+    border: 1px solid rgba(168,213,181,0.3);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 16px 0;
+    color: #a8d5b5;
+    font-size: 0.97rem;
+    line-height: 1.9;
+  }
+
+  .verdict-box strong { color: #d4f0dc; }
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">⌂ الفهرس الرئيسي</a>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+    <div class="header-title">على أبواب العروش المهدمة</div>
+    <button class="toc-toggle" onclick="toggleSidebar()">☰ الفهرس</button>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- SIDEBAR TOC -->
+  <aside class="sidebar" id="sidebar">
+    <div class="toc-header">فهرس المحتوى</div>
+
+    <div class="toc-section-label">المقال الأصلي</div>
+    <a class="toc-link" href="#article">نص المقال كاملاً</a>
+
+    <div class="toc-section-label">الدراسة التحليلية</div>
+    <a class="toc-link" href="#s1">١. الجانب البلاغي</a>
+    <a class="toc-link sub" href="#s1-1">البلاغة الدقيقة</a>
+    <a class="toc-link sub" href="#s1-2">الصور البيانية</a>
+    <a class="toc-link sub" href="#s1-3">المحسنات البديعية</a>
+    <a class="toc-link" href="#s2">٢. الجانب اللغوي والأدبي</a>
+    <a class="toc-link sub" href="#s2-1">القراءات المتنوعة والصرف</a>
+    <a class="toc-link sub" href="#s2-2">المشترك اللفظي</a>
+    <a class="toc-link sub" href="#s2-3">الفروق اللغوية والمعجمية</a>
+    <a class="toc-link sub" href="#s2-4">الإيضاح اللغوي والبلاغي</a>
+    <a class="toc-link" href="#s3">٣. ترابط السياقات بالآيات</a>
+    <a class="toc-link sub" href="#s3-1">ما قبل الآية وما بعدها</a>
+    <a class="toc-link sub" href="#s3-2">الآيات المتعلقة</a>
+    <a class="toc-link" href="#s4">٤. نوع الآية وأحكامها</a>
+    <a class="toc-link sub" href="#s4-1">تصنيف الآية</a>
+    <a class="toc-link sub" href="#s4-2">الأحكام الشرعية</a>
+    <a class="toc-link" href="#s5">٥. إعراب الآية</a>
+    <a class="toc-link" href="#s6">٦. التدبر النفسي والتربوي</a>
+    <a class="toc-link" href="#author">نبذة عن المؤلف</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- HERO -->
+    <div class="hero" id="top">
+      <span class="ornament">✦ ✧ ✦</span>
+      <div class="category-tag">تدبر قرآني · مقالة أدبية</div>
+      <h1>عَلَى أَبْوَابِ الْعُرُوشِ الْمُهَدَّمَةِ</h1>
+      <div class="hero-meta">
+        <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+        <span class="dot"></span>
+        <span>موسوعة التدبر المعاصر</span>
+        <span class="dot"></span>
+        <span>آل عمران: ٢٦</span>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════ -->
+    <!-- ARTICLE TEXT -->
+    <!-- ══════════════════════════════ -->
+    <section id="article" data-id="article" class="section">
+      <div class="section-header">
+        <div class="section-num">نص</div>
+        <h2>نص المقال كاملاً</h2>
+      </div>
+
+      <div class="verse-block">
+        <div class="verse-text">
+          ﴿قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ﴾
+        </div>
+        <div class="verse-ref">سورة آل عمران، الآية ٢٦</div>
+      </div>
+
+      <div class="article-body">
+        <p>مَا أَعْظَمَهَا مِنْ آيَةٍ! إِنَّهَا لَيْسَتْ آيَةً تُقْرَأُ بِاللِّسَانِ فَحَسْبُ، بَلْ حَقِيقَةٌ كَوْنِيَّةٌ تَهُزُّ الْجِبَالَ، وَتُخَلْخِلُ عُرُوشَ الْجَبَابِرَةِ، وَتَسْكُبُ السَّكِينَةَ فِي قُلُوبِ الْمُؤْمِنِينَ.</p>
+
+        <p>إِنَّهَا إِعْلَانٌ رَبَّانِيٌّ مُدَوٍّ فِي وَجْهِ الْغُرُورِ الْبَشَرِيِّ كُلِّهِ:</p>
+
+        <div class="highlight-line">لَيْسَ الْمُلْكُ لِمَنْ جَلَسَ عَلَى الْعَرْشِ...</div>
+        <div class="highlight-line">وَلَيْسَ السُّلْطَانُ لِمَنْ أَحَاطَ نَفْسَهُ بِالْجُنْدِ وَالْحَرَسِ...</div>
+        <div class="highlight-line">وَلَيْسَ الْأَمْرُ لِمَنْ مَلَكَ الذَّهَبَ وَالنَّفْطَ وَالسِّلَاحَ...</div>
+
+        <p>بَلِ الْمُلْكُ لِلَّهِ وَحْدَهُ، مُنْذُ أَنْ خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ، وَإِلَى أَنْ يَرِثَ الْأَرْضَ وَمَنْ عَلَيْهَا.</p>
+
+        <p>كَمْ مِنْ تَاجٍ لَمَعَ تَحْتَ الشَّمْسِ ثُمَّ صَارَ تُرَاباً! وَكَمْ مِنْ عَرْشٍ ارْتَفَعَ حَتَّى ظَنَّ أَهْلُهُ أَنَّهُ يُلَامِسُ النُّجُومَ، ثُمَّ هَوَى كَأَنَّهُ لَمْ يَكُنْ! وَكَمْ مِنْ جَبَّارٍ كَانَتْ تَرْتَجِفُ مِنْ ذِكْرِ اسْمِهِ الْقُلُوبُ، ثُمَّ أَصْبَحَ خَبَراً فِي بُطُونِ الْكُتُبِ!</p>
+
+        <p>إِنَّ التَّارِيخَ كُلَّهُ لَيْسَ إِلَّا شَرْحاً عَمَلِيّاً لِهَذِهِ الْآيَةِ.</p>
+
+        <p>فَكُلَّمَا مَرَرْتَ عَلَى أَطْلَالِ دَوْلَةٍ، أَوْ وَقَفْتَ أَمَامَ قَصْرٍ مَهْجُورٍ، أَوْ قَرَأْتَ سِيرَةَ سُلْطَانٍ كَانَ يَمْلَأُ الدُّنْيَا صَخَباً وَضَجِيجاً، فَاعْلَمْ أَنَّكَ تَقْرَأُ تَفْسِيراً مِنْ تَفَاسِيرِ: ﴿وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ﴾.</p>
+
+        <p>هُنَا يَقِفُ الْإِنْسَانُ مَذْهُولاً أَمَامَ مَشْهَدِ الدُّنْيَا...</p>
+
+        <p>أَمْسِ كَانُوا يَأْمُرُونَ فَيُطَاعُونَ... وَيُشِيرُونَ فَتَتَحَرَّكُ الْجُيُوشُ... وَيَغْضَبُونَ فَتَرْتَعِدُ الْمُدُنُ... وَالْيَوْمَ لَا يَمْلِكُونَ لِأَنْفُسِهِمْ حَرَكَةً فِي قُبُورِهِمْ.</p>
+
+        <p>أَيْنَ الْجَبَرُوتُ؟ أَيْنَ السُّلْطَانُ؟ أَيْنَ الْحُرَّاسُ؟ أَيْنَ الْقُصُورُ؟ أَيْنَ الرَّايَاتُ؟ ذَهَبَ كُلُّ شَيْءٍ... وَبَقِيَ اللَّهُ. بَقِيَ الْمَلِكُ الْحَقُّ. بَقِيَ الْقَهَّارُ. بَقِيَ الْوَاحِدُ الْأَحَدُ.</p>
+
+        <p>أَمَّا الْبَشَرُ فَقَدْ مَرُّوا كَمَا تَمُرُّ سَحَابَةُ صَيْفٍ فِي سَمَاءٍ وَاسِعَةٍ.</p>
+
+        <p>لَقَدْ خَدَعَتِ الدُّنْيَا أَقْوَاماً كَثِيرِينَ. رَأَوُا الْقُوَّةَ فَظَنُّوهَا خَالِدَةً. وَرَأَوُا الْمَالَ فَظَنُّوهُ حِصْناً. وَرَأَوُا الْجُيُوشَ فَظَنُّوهَا مَانِعَةً. لَكِنَّ اللَّهَ أَرَادَ أَنْ يُعَلِّمَ عِبَادَهُ أَنَّ بَيْنَ كَلِمَةِ كُنْ وَوُقُوعِ الْقَدَرِ مَسَافَةً لَا يُدْرِكُهَا الْبَشَرُ.</p>
+
+        <p>قَدْ يَنَامُ الْإِنْسَانُ عَزِيزاً وَيُصْبِحُ ذَلِيلاً. وَقَدْ يَنَامُ فَقِيراً وَيُصْبِحُ غَنِيّاً. وَقَدْ يَنَامُ مُسْتَضْعَفاً وَيُصْبِحُ قَائِداً. وَقَدْ يَنَامُ ظَالِماً مُتَجَبِّراً وَيُصْبِحُ حَدِيثاً يَتَنَاقَلُهُ النَّاسُ لِلْعِبْرَةِ. لِأَنَّ الْقُلُوبَ وَالْأَرْزَاقَ وَالْعُرُوشَ وَالْمَمَالِكَ كُلَّهَا بَيْنَ يَدَيِ اللَّهِ.</p>
+
+        <p>إِذَا شَاءَ رَفَعَكَ فَلَا يَسْتَطِيعُ أَهْلُ الْأَرْضِ خَفْضَكَ. وَإِذَا شَاءَ نَصَرَكَ فَلَنْ تَهْزِمَكَ الدُّنْيَا كُلُّهَا. وَإِذَا شَاءَ أَنْ يَفْتَحَ لَكَ بَاباً فَلَنْ تُغْلِقَهُ قُوَى الْأَرْضِ مُجْتَمِعَةً. وَإِذَا شَاءَ أَنْ يَنْزِعَ شَيْئاً مِنْكَ فَلَنْ تَسْتَطِيعَ خَزَائِنُ الْعَالَمِ أَنْ تُبْقِيَهُ لَكَ.</p>
+
+        <p>وَلِهَذَا كَانَ الْمُؤْمِنُ أَعَزَّ النَّاسِ قَلْباً. لَا يَبِيعُ دِينَهُ لِطَاغِيَةٍ، وَلَا يَرْكَعُ لِصَاحِبِ مَالٍ، وَلَا يَذُوبُ أَمَامَ أَصْحَابِ النُّفُوذِ، لِأَنَّهُ يَعْلَمُ أَنَّ الْجَمِيعَ عَبِيدٌ لِمَالِكِ الْمُلْكِ، وَأَنَّ أَعْنَاقَ الْمُلُوكِ أَنْفُسَهُمْ بِيَدِ اللَّهِ، وَأَنَّ الْقُلُوبَ الَّتِي تُخِيفُ النَّاسَ تَخَافُ هِيَ الْأُخْرَى مِنْ رَبِّ النَّاسِ.</p>
+
+        <p>تَأَمَّلُوا... كَمْ مِنْ ظَالِمٍ ظَنَّ أَنَّ الْمُهْلَةَ أَمَانٌ! وَكَمْ مِنْ مُتَكَبِّرٍ ظَنَّ أَنَّ التَّأْخِيرَ رِضاً! وَكَمْ مِنْ طَاغِيَةٍ ظَنَّ أَنَّ صَمْتَ النَّاسِ عَنْهُ دَلِيلُ قُوَّةٍ! وَمَا عَلِمَ أَنَّ اللَّهَ يُمْلِي وَلَا يُهْمِلُ، وَأَنَّ عَجَلَةَ الْقَدَرِ تَدُورُ بِصَمْتٍ، وَأَنَّ يَدَ الْقُدْرَةِ تَعْمَلُ فِي الْخَفَاءِ، وَأَنَّ السَّاعَةَ الَّتِي يَكْتُبُهَا اللَّهُ لِسُقُوطِ الْبَاطِلِ لَا يَسْتَطِيعُ أَحَدٌ تَقْدِيمَهَا أَوْ تَأْخِيرَهَا.</p>
+
+        <p>وَلِذَلِكَ فَإِنَّ الْمُؤْمِنَ لَا يَنْكَسِرُ إِذَا رَأَى الْبَاطِلَ مُنْتَفِشاً، وَلَا يَيْأَسُ إِذَا رَأَى الظَّالِمَ قَوِيّاً، وَلَا يَفْقِدُ يَقِينَهُ إِذَا رَأَى الْمَوَازِينَ مُخْتَلَّةً، لِأَنَّهُ يَنْظُرُ بِعَيْنِ الْآيَةِ لَا بِعَيْنِ اللَّحْظَةِ، وَيَرَى بِعَيْنِ الْإِيمَانِ لَا بِعَيْنِ الْحَدَثِ الْعَابِرِ، وَيُوقِنُ أَنَّ مَالِكَ الْمُلْكِ لَا يَتْرُكُ مُلْكَهُ لِلْفَوْضَى، وَأَنَّ رَبَّ الْعَالَمِينَ يُدَبِّرُ الْأَمْرَ مِنَ السَّمَاءِ إِلَى الْأَرْضِ بِحِكْمَةٍ لَا تُخْطِئُ وَعَدْلٍ لَا يَضِيعُ.</p>
+
+        <p>فَيَا مَنْ أَثْقَلَتْكَ الْهُمُومُ... ارْفَعْ حَاجَتَكَ إِلَى مَالِكِ الْمُلْكِ.</p>
+        <p>وَيَا مَنْ أَخَافَكَ الْمُسْتَقْبَلُ... تَعَلَّقْ بِمَالِكِ الْمُلْكِ.</p>
+        <p>وَيَا مَنْ أَرْهَقَكَ ظُلْمُ النَّاسِ... قِفْ عَلَى بَابِ مَالِكِ الْمُلْكِ.</p>
+
+        <p>فَإِنَّ خَزَائِنَهُ لَا تَنْفَدُ، وَرَحْمَتَهُ لَا تَنْقَطِعُ، وَعَطَاءَهُ لَا يَحُدُّهُ حَدٌّ، وَقُوَّتَهُ لَا يَغْلِبُهَا غَالِبٌ.</p>
+
+        <div class="verse-block closing-verse">
+          <div class="verse-text">﴿بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ﴾</div>
+        </div>
+
+        <p>آيَةٌ لَوِ اسْتَقَرَّتْ فِي الْقُلُوبِ لَذَابَتْ أَمَامَهَا جِبَالُ الْخَوْفِ، وَانْكَسَرَتْ أَصْنَامُ التَّعَلُّقِ بِالْبَشَرِ، وَعَاشَ الْمُؤْمِنُ حُرّاً عَزِيزاً شَامِخاً، لَا يَرَى فَوْقَ قُدْرَةِ اللَّهِ قُدْرَةً، وَلَا فَوْقَ سُلْطَانِ اللَّهِ سُلْطَاناً، وَلَا فَوْقَ مُلْكِ اللَّهِ مُلْكاً.</p>
+      </div>
+    </section>
+
+    <div class="ornamental-divider">✦ ✧ ❖ ✧ ✦</div>
+
+    <!-- ══════════════════════════════ -->
+    <!-- SECTION 1: BALAGHA -->
+    <!-- ══════════════════════════════ -->
+    <section id="s1" data-id="s1" class="section">
+      <div class="section-header">
+        <div class="section-num">١</div>
+        <h2>الجانب البلاغي للآية والمقال</h2>
+      </div>
+
+      <div id="s1-1" class="subsection">
+        <h3>الْجَانِبُ الْبَلَاغِيُّ الدَّقِيقُ للآية الكريمة</h3>
+
+        <div class="analysis-card">
+          <div class="card-title">أولاً: الاستهلال بالأمر ﴿قُلِ﴾ — دلالة الاستحضار</div>
+          <p>الأمر ﴿قُلِ﴾ صيغةٌ تحمل دلالةَ التحقير من أمر الدنيا وأصحاب السلطان، إذ لو كان المُخاطَب فرداً ضعيفاً فقيراً أُمر بقول هذه المناجاة، فكأن القرآن يُعلِّمه أن بين يديه من الملك والسلطان الإلهي ما يفوق كل ملك بشري مهما عَظُمَ. وفي الكسر في ﴿قُلِ﴾ التقاءُ ساكنين محقق بالحركة العارضة، وهو من لطيف العناية الصوتية بالبيان.</p>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title">ثانياً: النداء بالاسم المضاف ﴿اللَّهُمَّ﴾ — أسلوب التوسل الكوني</div>
+          <p>﴿اللَّهُمَّ﴾ أصله «يا اللهُ» مع عوض الميم المشددة عن ياء النداء، وهو من خصائص العربية في إفادة ثِقَل المناجاة واستيعاب كل معاني الالتجاء. وقد جمع الاسمُ الجليل صفاتِ الألوهية كلها، فجاء النداء به ابتداءً إيذاناً بأن من يُدعى لا يُشبهه شيء ولا يُنازعه في ملكه مُنازع.</p>
+        </div>
+
+        <div class="analysis-card copper">
+          <div class="card-title">ثالثاً: الإضافة في ﴿مَالِكَ الْمُلْكِ﴾ — التوكيد المركّب</div>
+          <p>إضافة اسم الفاعل «مالك» إلى «الملك» من أبلغ التعبيرات، لأنها تحتمل ثلاثة معانٍ متكاملة: (أ) مالك كل ملك موجود. (ب) مالك الملك في ذاته ومفهومه. (ج) مالك مَن ادّعى الملك من البشر. ومجيء «الملك» معرَّفاً بالألف واللام يدل على الاستغراق الشامل لكل ملك في الوجود، وهذا ما يُسميه علماء البلاغة «لام الجنس» المفيدة للعموم.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="analysis-card">
+            <div class="card-title">رابعاً: الطباق ﴿تُؤْتِي - تَنزِعُ﴾</div>
+            <p>طباق الإيجاب بين الإيتاء والنزع يُبرز قدرة الله المطلقة على الضدين معاً، وأن لا واسطة بين العطاء والسلب إلا مشيئته سبحانه. وهو طباق بالفعل لا بالاسم، مما يُضفي ديناميكيةً وحركةً متجددة على المشهد.</p>
+          </div>
+          <div class="analysis-card emerald">
+            <div class="card-title">خامساً: الطباق ﴿تُعِزُّ - تُذِلُّ﴾</div>
+            <p>طباق حي بين العز والذل، وفيه تقابل يُذكّر بأن العز الحقيقي لا يكون إلا من الله، وأن الذل لا يُصيب إلا من ابتعد عنه. وقد جاء الطباقان متعاقبَين لإفادة شمول القدرة الإلهية على كل الأحوال.</p>
+          </div>
+        </div>
+
+        <div class="analysis-card">
+          <div class="card-title">سادساً: التكرار الوظيفي لـ﴿مَن تَشَاءُ﴾ — التنبيه على الإطلاق</div>
+          <p>تكررت عبارة ﴿مَن تَشَاءُ﴾ أربع مرات: مع الإيتاء، والنزع، والإعزاز، والإذلال. وهذا التكرار بلاغيٌّ مقصود يُفيد: (أ) أن المشيئة الإلهية حاضرة في كل حال. (ب) أن لا قانون بشري يحدّ هذه المشيئة. (ج) أن كل حالة بمفردها خاضعة لإرادته سبحانه. وهو ما يُسميه البلاغيون «التكرار التأكيدي المقامي».</p>
+        </div>
+
+        <div class="analysis-card copper">
+          <div class="card-title">سابعاً: الجملة الاعتراضية ﴿بِيَدِكَ الْخَيْرُ﴾</div>
+          <p>جاءت الجملة الاسمية ﴿بِيَدِكَ الْخَيْرُ﴾ في موضع الاعتراض والتذييل، وفيها تقديم الجار والمجرور «بيدك» على المبتدأ «الخير» للتخصيص والقصر: أي الخير كله بيدك وحدك لا بيد أحد سواك. ولم تقل الآية «بيدك الخير والشر» لأن الله سبحانه خير محض، والشر لا يُنسب إليه ابتداءً بل هو من لوازم عالم الأسباب.</p>
+        </div>
+
+        <div class="analysis-card">
+          <div class="card-title">ثامناً: الختم بالجملة الاسمية المؤكدة ﴿إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ﴾</div>
+          <p>جاء الختم بـ«إنّ» المؤكِّدة، وبـ«كلّ» الدالة على الشمول والاستغراق، وبـ«قدير» صيغة مبالغة من القدرة، لتكون خاتمة الآية أقوى في التوكيد من مفتتحها. وفي هذا ما يسميه البلاغيون «حسن الختام» أو «براعة المقطع».</p>
+        </div>
+      </div>
+
+      <div id="s1-2" class="subsection">
+        <h3>الصور البيانية في المقال الأدبي</h3>
+
+        <table class="analysis-table">
+          <tr>
+            <th>الصورة البيانية</th>
+            <th>النص</th>
+            <th>التحليل والدلالة</th>
+          </tr>
+          <tr>
+            <td class="term">استعارة مكنية</td>
+            <td class="example">«حَقِيقَةٌ كَوْنِيَّةٌ تَهُزُّ الْجِبَالَ»</td>
+            <td class="def">شبّه الآية بقوة زلزالية تحرّك الجبال، فحذف المشبه به وأبقى شيئاً من لوازمه وهو الهزّ. والجبال رمز الثبات والرسوخ، فكأن الآية تزعزع حتى ما استقرّ في الوجود.</td>
+          </tr>
+          <tr>
+            <td class="term">استعارة مكنية</td>
+            <td class="example">«تُخَلْخِلُ عُرُوشَ الْجَبَابِرَةِ»</td>
+            <td class="def">استعار للآية قوة تسلل إلى بنية العروش وفكّ تماسكها، وفعل «تُخلخل» يوحي بالتسلل البطيء الحتمي لا الانهيار الفوري.</td>
+          </tr>
+          <tr>
+            <td class="term">استعارة مكنية</td>
+            <td class="example">«تَسْكُبُ السَّكِينَةَ فِي قُلُوبِ الْمُؤْمِنِينَ»</td>
+            <td class="def">شبّه السكينة بسائل يُسكَب في إناء القلب، وهي صورة توحي بالانسكاب الرقيق التدريجي لا بالصدمة الفجائية. اليد التي تسكب محذوفة وهي يد الله.</td>
+          </tr>
+          <tr>
+            <td class="term">تشبيه بليغ</td>
+            <td class="example">«التَّارِيخُ شَرْحٌ عَمَلِيٌّ لِلْآيَةِ»</td>
+            <td class="def">حذف أداة التشبيه ووجه الشبه فصار تشبيهاً بليغاً، ومعناه أن الحوادث التاريخية نسخ مجسَّدة من مضمون الآية.</td>
+          </tr>
+          <tr>
+            <td class="term">تشبيه تمثيلي</td>
+            <td class="example">«مَرُّوا كَمَا تَمُرُّ سَحَابَةُ صَيْفٍ»</td>
+            <td class="def">صورة مركّبة تصف عابريّة البشر بعابريّة سحاب الصيف: سريع المجيء، لا ثمرة له، ولا أثر بعد مرحله. وتخصيص الصيف دون الشتاء دقيق لأن سحاب الصيف أقل مطراً وأقل خيراً.</td>
+          </tr>
+          <tr>
+            <td class="term">كناية</td>
+            <td class="example">«أَصْبَحَ خَبَراً فِي بُطُونِ الْكُتُبِ»</td>
+            <td class="def">كناية عن الموت والنسيان، بطريقة غير مباشرة تُعظّم شأن الزوال من الواقع إلى الورق.</td>
+          </tr>
+          <tr>
+            <td class="term">كناية</td>
+            <td class="example">«لَا يَمْلِكُونَ لِأَنْفُسِهِمْ حَرَكَةً»</td>
+            <td class="def">كناية عن الموت، إذ أشد ما يُبيّن عجز الجبار أن يكون ميتاً في قبره لا يملك أن يتحرك لا أن يأمر.</td>
+          </tr>
+          <tr>
+            <td class="term">مجاز مرسل</td>
+            <td class="example">«قَوْسُ الْقُدْرَةِ تَعْمَلُ فِي الْخَفَاءِ»</td>
+            <td class="def">ذكر اليد وأراد القدرة، وعلاقته الجزئية (اليد جزء من الفاعل).</td>
+          </tr>
+          <tr>
+            <td class="term">أسلوب الشرط</td>
+            <td class="example">«إِذَا شَاءَ رَفَعَكَ... وَإِذَا شَاءَ نَصَرَكَ...»</td>
+            <td class="def">تكرار أسلوب الشرط «إذا شاء» أربع مرات يوحي بإطلاق القدرة الإلهية في كل الاتجاهات.</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="s1-3" class="subsection">
+        <h3>المحسنات البديعية</h3>
+
+        <div class="two-col">
+          <div class="mini-card">
+            <span class="mc-label">السجع المتوازي</span>
+            <div class="mc-value">الجناس والإيقاع</div>
+            <div class="mc-desc">يتوازى المقال في قرائن كثيرة: «تَهُزُّ الْجِبَالَ / تُخَلْخِلُ الْعُرُوشَ / تَسْكُبُ السَّكِينَةَ» — ثلاثة أفعال بثلاثة مفاعيل في نسق متوازٍ يشبه التصريع الشعري.</div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-label">ازدواج الجمل</span>
+            <div class="mc-value">المقابلة المزدوجة</div>
+            <div class="mc-desc">«أَمْسِ كَانُوا يَأْمُرُونَ فَيُطَاعُونَ / وَالْيَوْمَ لَا يَمْلِكُونَ» — مقابلة زمنية بين الأمس واليوم، والقوة والعجز، من أبلغ ضروب المقابلة.</div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-label">الاستفهام الإنكاري</span>
+            <div class="mc-value">سلسلة الأين</div>
+            <div class="mc-desc">«أَيْنَ الْجَبَرُوتُ؟ أَيْنَ السُّلْطَانُ؟ أَيْنَ الْحُرَّاسُ؟» — خمسة استفهامات متتالية تُفيد الإنكار التقريري والتحسّر الجمالي على الزوال.</div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-label">التدريج والتصاعد</span>
+            <div class="mc-value">الترقي البلاغي</div>
+            <div class="mc-desc">يبدأ المقال بهزّ الجبال، ثم خلخلة العروش، ثم سكب السكينة — تصاعد من الخارج إلى الداخل، ومن الكوني إلى الشخصي.</div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-label">أسلوب النداء</span>
+            <div class="mc-value">الخطاب الوجداني</div>
+            <div class="mc-desc">«فَيَا مَنْ أَثْقَلَتْكَ الْهُمُومُ / يَا مَنْ أَخَافَكَ الْمُسْتَقْبَلُ» — ثلاث نداءات تستهدف فئات مختلفة من الجمهور، موظِّفةً النداء للشفقة والاستحضار.</div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-label">الجناس الاشتقاقي</span>
+            <div class="mc-value">في الآية</div>
+            <div class="mc-desc">«مَالِكَ الْمُلْكِ / تُؤْتِي الْمُلْكَ / تَنزِعُ الْمُلْكَ» — تكرار مادة (م.ل.ك) ثلاث مرات جناسٌ اشتقاقي يُغني الآية إيقاعياً ودلالياً.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornamental-divider">✦ ✧ ❖ ✧ ✦</div>
+
+    <!-- ══════════════════════════════ -->
+    <!-- SECTION 2: LINGUISTIC -->
+    <!-- ══════════════════════════════ -->
+    <section id="s2" data-id="s2" class="section">
+      <div class="section-header">
+        <div class="section-num">٢</div>
+        <h2>الجانب اللغوي والأدبي</h2>
+      </div>
+
+      <div id="s2-1" class="subsection">
+        <h3>القراءات المتنوعة والتحليل الصرفي</h3>
+
+        <div class="analysis-card">
+          <div class="card-title">قراءة ﴿مَالِكَ الْمُلْكِ﴾ — التحليل الصرفي</div>
+          <p><strong>مَالِكَ:</strong> اسم فاعل من الفعل الثلاثي «مَلَكَ» على وزن «فاعِل»، وهو وصف دائم ثابت لا منقطع، وجاء منادىً منصوباً بالفتحة. وقد آثر القرآن صيغة اسم الفاعل الدالة على الحدوث والتجدد والاستمرار، لا على المصدر، ليُشعر بأن الملك في يده تعالى فعلٌ حاضر متجدد لا صفة ثابتة مجمّدة.</p>
+          <p>وهنا تجدر الإشارة إلى الفرق بين قراءتين وردتا في الذكر الحكيم:</p>
+          <ul class="styled-list">
+            <li><strong>﴿مَالِكِ يَوْمِ الدِّينِ﴾</strong> في الفاتحة: قُرئت «مَلِكِ» بلا ألف في بعض القراءات المتواترة (قراءة عاصم وغيره)، وهي تُفيد المُلك في يوم بعينه.</li>
+            <li><strong>﴿مَالِكَ الْمُلْكِ﴾</strong> في آل عمران: بالألف لاسم الفاعل، مما يُفيد ملكيةً مستمرة لا تنقطع في كل زمان.</li>
+          </ul>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title">التحليل الصرفي لأفعال الآية</div>
+          <table class="analysis-table">
+            <tr>
+              <th>الفعل</th>
+              <th>الوزن الصرفي</th>
+              <th>المعنى الصرفي الدقيق</th>
+            </tr>
+            <tr>
+              <td class="term">تُؤْتِي</td>
+              <td>تُفْعِل</td>
+              <td class="def">الإفعال يفيد التعدية: إيصال الملك إلى من لم يكن له. وهمزة الوصل في «تُؤتي» تحقق صوتياً فكرة الإدخال والإيصال.</td>
+            </tr>
+            <tr>
+              <td class="term">تَنزِعُ</td>
+              <td>تَفعِل</td>
+              <td class="def">النزع على وزن ثلاثي مجرد، يُفيد الاقتلاع القوي من الجذر. وأصل النزع: شدّ الشيء حتى ينفصل، وفيه دلالة على أن الملك لو تشبّث به صاحبه لنُزع قسراً.</td>
+            </tr>
+            <tr>
+              <td class="term">تُعِزُّ</td>
+              <td>تُفِعّل</td>
+              <td class="def">الإعزاز: جعل الذليل عزيزاً، وفيه انتقال من حال إلى حال. أما مادة «عزّ» في أصلها فتعني الشيء الصلب الذي يصعب نيله، ومنه «العَزاز» للأرض الصلبة.</td>
+            </tr>
+            <tr>
+              <td class="term">تُذِلُّ</td>
+              <td>تُفِعّل</td>
+              <td class="def">الإذلال: جعل العزيز ذليلاً. وأصل «الذّل» في العربية السهولة والانقياد، ومنه «الطريق الذلول» للطريق السهل المُنقاد. فالذليل من انقاد لغير ربّه.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="s2-2" class="subsection">
+        <h3>المشترك اللفظي في الآية والمقال</h3>
+
+        <div class="analysis-card copper">
+          <div class="card-title"><span class="badge copper">مشترك لفظي</span> كلمة «الْمُلْكُ»</div>
+          <table class="analysis-table">
+            <tr>
+              <th>المعنى</th>
+              <th>السياق الدال عليه</th>
+            </tr>
+            <tr>
+              <td class="term">السلطة السياسية</td>
+              <td class="def">﴿تُؤْتِي الْمُلْكَ مَن تَشَاءُ﴾ — ملك الدول والأمم</td>
+            </tr>
+            <tr>
+              <td class="term">الملكية العامة</td>
+              <td class="def">﴿مَالِكَ الْمُلْكِ﴾ — ملكية كل الوجود</td>
+            </tr>
+            <tr>
+              <td class="term">الكمال والتمام</td>
+              <td class="def">في الاستعمال القديم «مَلَكَ الشيءَ» أي أتقنه وأحكمه</td>
+            </tr>
+            <tr>
+              <td class="term">الملَكة الفكرية</td>
+              <td class="def">«مَلَكة» في اصطلاح علماء النفس: القدرة الراسخة في النفس</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="analysis-card">
+          <div class="card-title"><span class="badge">مشترك لفظي</span> كلمة «الْيَد»</div>
+          <table class="analysis-table">
+            <tr>
+              <th>المعنى</th>
+              <th>الشاهد</th>
+            </tr>
+            <tr>
+              <td class="term">الجارحة الحقيقية</td>
+              <td class="def">عند الإنسان والحيوان</td>
+            </tr>
+            <tr>
+              <td class="term">القدرة والسلطان</td>
+              <td class="def">﴿بِيَدِكَ الْخَيْرُ﴾ أي بقدرتك وقهرك</td>
+            </tr>
+            <tr>
+              <td class="term">النعمة</td>
+              <td class="def">«له عليّ يدٌ» أي نعمة</td>
+            </tr>
+            <tr>
+              <td class="term">الجانب والناحية</td>
+              <td class="def">«عن يمينه وعن يساره» الجهات</td>
+            </tr>
+          </table>
+          <div class="verdict-box">
+            <strong>ملاحظة عقدية:</strong> قوله تعالى ﴿بِيَدِكَ الْخَيْرُ﴾ يُثبت لله صفة اليد إثباتاً يليق بجلاله، لا كأيدي المخلوقين، وهو مذهب السلف الصالح رضي الله عنهم في الإثبات بلا تكييف ولا تمثيل ولا تحريف ولا تعطيل.
+            </div>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title"><span class="badge emerald">مشترك لفظي</span> كلمة «الْخَيْر»</div>
+          <table class="analysis-table">
+            <tr>
+              <th>المعنى</th>
+              <th>التوضيح</th>
+            </tr>
+            <tr>
+              <td class="term">المال</td>
+              <td class="def">﴿إِنْ تَرَكَ خَيْرًا﴾ أي مالاً (البقرة:180)</td>
+            </tr>
+            <tr>
+              <td class="term">الفضل والبركة الكاملة</td>
+              <td class="def">﴿بِيَدِكَ الْخَيْرُ﴾ كل الخيرات بمشيئته</td>
+            </tr>
+            <tr>
+              <td class="term">الأفضلية التفضيلية</td>
+              <td class="def">«أيّهما خير؟» مقارنة بين شيئين</td>
+            </tr>
+            <tr>
+              <td class="term">المنفعة الأخلاقية</td>
+              <td class="def">«فعل الخير» أي الصلاح والبر</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="s2-3" class="subsection">
+        <h3>الفروق اللغوية والمعجمية الدقيقة</h3>
+
+        <div class="analysis-card">
+          <div class="card-title">الفرق بين: مَلَكَ / مَلَّكَ / أَمْلَكَ / تَمَلَّكَ</div>
+          <table class="analysis-table">
+            <tr>
+              <th>الفعل</th>
+              <th>المعنى الدقيق</th>
+              <th>ملاحظة</th>
+            </tr>
+            <tr>
+              <td class="term">مَلَكَ</td>
+              <td class="def">امتلك الشيء بحق أصيل</td>
+              <td>أقوى صيغ الملكية دلالةً</td>
+            </tr>
+            <tr>
+              <td class="term">مَلَّكَ</td>
+              <td class="def">أعطى الملك لغيره (التمليك)</td>
+              <td>للبشر: تفويض من ذي سلطة</td>
+            </tr>
+            <tr>
+              <td class="term">أَمْلَكَ</td>
+              <td class="def">جعله يملك، ومنه إملاك المرأة (الزواج)</td>
+              <td>يُفيد التمكين</td>
+            </tr>
+            <tr>
+              <td class="term">تَمَلَّكَ</td>
+              <td class="def">تكلّف الملك أو استولى عليه</td>
+              <td>فيه معنى التصنّع والجهد</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title">الفرق بين: الْمُلْكُ / الْمَلَكُوتُ / الْمَلَكِيَّةُ / الْمَمْلَكَةُ</div>
+          <table class="analysis-table">
+            <tr>
+              <th>اللفظ</th>
+              <th>الدلالة الدقيقة</th>
+            </tr>
+            <tr>
+              <td class="term">الْمُلْكُ</td>
+              <td class="def">السلطة والتصرف في الظاهر، وغالبه في السياق الدنيوي.</td>
+            </tr>
+            <tr>
+              <td class="term">الْمَلَكُوتُ</td>
+              <td class="def">الملك العظيم الغيبي، ولذا قُرن بعالم الغيب: ﴿وَكَذَٰلِكَ نُرِي إِبْرَاهِيمَ مَلَكُوتَ السَّمَاوَاتِ﴾. والواو والتاء زيادة للتعظيم والمبالغة.</td>
+            </tr>
+            <tr>
+              <td class="term">الْمَلَكِيَّةُ</td>
+              <td class="def">حق التملك القانوني المجرد، مصطلح فقهي وقانوني.</td>
+            </tr>
+            <tr>
+              <td class="term">الْمَمْلَكَةُ</td>
+              <td class="def">الرقعة الجغرافية التي يسودها المَلِك، ومنه «المملكة العربية السعودية».</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="analysis-card copper">
+          <div class="card-title">الفرق بين: الْعِزُّ / الْعِزَّةُ / الْعَزِيزُ / الْمَعِزَّةُ</div>
+          <table class="analysis-table">
+            <tr>
+              <th>اللفظ</th>
+              <th>الفرق الدقيق</th>
+            </tr>
+            <tr>
+              <td class="term">الْعِزُّ</td>
+              <td class="def">الحالة أو الصفة القائمة بالذات، وهو الغلبة والامتناع عن القهر.</td>
+            </tr>
+            <tr>
+              <td class="term">الْعِزَّةُ</td>
+              <td class="def">المصدر الدال على قوة الصفة وتمكّنها، وهي أكمل من «العز»، ولذا قال تعالى: ﴿وَلِلَّهِ الْعِزَّةُ﴾ بالتاء.</td>
+            </tr>
+            <tr>
+              <td class="term">الْعَزِيزُ</td>
+              <td class="def">اسم الله الحسنى الدال على الكمال في العزة، وأنه لا مثيل له ولا ند.</td>
+            </tr>
+            <tr>
+              <td class="term">الْمَعِزَّةُ</td>
+              <td class="def">مكان العز أو سببه، «كان في معزة من قومه» أي في منعة وحماية.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="analysis-card">
+          <div class="card-title">الفرق بين: الذُّلُّ / الذِّلَّةُ / الذَّلَالُ / المَذَلَّةُ</div>
+          <table class="analysis-table">
+            <tr>
+              <th>اللفظ</th>
+              <th>الفرق الدقيق</th>
+            </tr>
+            <tr>
+              <td class="term">الذُّلُّ</td>
+              <td class="def">الانقياد وعدم المقاومة. وقد يكون محموداً كذلّ المؤمن بين يدي ربه.</td>
+            </tr>
+            <tr>
+              <td class="term">الذِّلَّةُ</td>
+              <td class="def">الصغار والهوان أمام الخلق، وهي مذمومة دائماً. ومنه ﴿وَضُرِبَتْ عَلَيْهِمُ الذِّلَّةُ وَالْمَسْكَنَةُ﴾.</td>
+            </tr>
+            <tr>
+              <td class="term">الذَّلَالُ</td>
+              <td class="def">الذلّ المتمادي المتكرر، صيغة مبالغة من الذل.</td>
+            </tr>
+            <tr>
+              <td class="term">المَذَلَّةُ</td>
+              <td class="def">موضع الذل وسببه، «هذا مَذلّة لي» أي سبب لذلي.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="s2-4" class="subsection">
+        <h3>الإيضاح اللغوي والبلاغي التفصيلي</h3>
+
+        <div class="analysis-card">
+          <div class="card-title">دلالة الفصل بـ«الواو» في ﴿بِيَدِكَ الْخَيْرُ﴾ بعد الأفعال</div>
+          <p>جاءت هذه الجملة بعد سلسلة من الأفعال المتقابلة (إيتاء، نزع، إعزاز، إذلال) كجملة جامعة تُعلّل كل ما قبلها وتُلخّصه: كل هذه التصرفات «خير» في حكمة الله وتدبيره، لأن المرجع «الخير» وهو بيده سبحانه. وهذه قفزة بلاغية من التفصيل إلى التجميع.</p>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title">لماذا ﴿قَدِيرٌ﴾ ولم تقل الآية «قادر»؟</div>
+          <p>«قدير» صيغة مبالغة من «فعيل» تدل على كمال القدرة وشمولها، بينما «قادر» مجرد اسم فاعل يدل على حصول القدرة دون مبالغة في الشمول والاتساع. وجاءت «قدير» مناسبةً للسياق الذي يتحدث عن قدرة لا تحدّها حدود: على الإيتاء والنزع والإعزاز والإذلال معاً.</p>
+        </div>
+
+        <div class="analysis-card copper">
+          <div class="card-title">الإيقاع الصوتي في الآية</div>
+          <p>تتوالى في الآية حروف المقاطع الصوتية الثقيلة (القاف، الكاف، العين، الزاي) في كلمات الجلالة والعظمة: «الْمُلْكِ، تَنزِعُ، تُعِزُّ، قَدِيرٌ» — مما يُكسب الآية طابعاً صوتياً مهيباً يتناسب مع مضمونها. وقد لاحظ المفسرون أن تتابع حرف القاف في القرآن يكون غالباً في سياقات القوة والقهر الإلهي.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornamental-divider">✦ ✧ ❖ ✧ ✦</div>
+
+    <!-- ══════════════════════════════ -->
+    <!-- SECTION 3: CONTEXTS -->
+    <!-- ══════════════════════════════ -->
+    <section id="s3" data-id="s3" class="section">
+      <div class="section-header">
+        <div class="section-num">٣</div>
+        <h2>ترابط السياقات — الآيات قبلها وبعدها</h2>
+      </div>
+
+      <div id="s3-1" class="subsection">
+        <h3>سياق الآية في سورة آل عمران</h3>
+
+        <div class="connections-box">
+          <div class="box-title">السباق: ما قبل الآية (٢٤ — ٢٥)</div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿ذَٰلِكَ بِأَنَّهُمْ قَالُوا لَن تَمَسَّنَا النَّارُ إِلَّا أَيَّامًا مَّعْدُودَاتٍ﴾</span>
+            <span class="verse-source">آل عمران: ٢٤ — استكبار بني إسرائيل وادعاؤهم الأمان من الحساب</span>
+            الآية ٢٦ جاءت رداً على هذا الغرور: من ادعى الأمان فليعلم أن الملك لله وحده يعز ويذل.
+          </div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿فَكَيْفَ إِذَا جَمَعْنَاهُمْ لِيَوْمٍ لَّا رَيْبَ فِيهِ﴾</span>
+            <span class="verse-source">آل عمران: ٢٥ — تهديد بيوم الجمع</span>
+            فكيف تدّعون الأمان وقد جُمعتم ليوم لا يملك أحد فيه التصرف إلا الله؟
+          </div>
+        </div>
+
+        <div class="connections-box">
+          <div class="box-title">اللحاق: ما بعد الآية (٢٧ — ٢٨)</div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿تُولِجُ اللَّيْلَ فِي النَّهَارِ وَتُولِجُ النَّهَارَ فِي اللَّيْلِ وَتُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَتُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ وَتَرْزُقُ مَن تَشَاءُ بِغَيْرِ حِسَابٍ﴾</span>
+            <span class="verse-source">آل عمران: ٢٧</span>
+            الآية التالية تُجلّي مظاهر القدرة الكونية كالليل والنهار والحياة والموت، فكأنها تُفسّر الآية ٢٦ بشواهد كونية ملموسة.
+          </div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿لَّا يَتَّخِذِ الْمُؤْمِنُونَ الْكَافِرِينَ أَوْلِيَاءَ مِن دُونِ الْمُؤْمِنِينَ﴾</span>
+            <span class="verse-source">آل عمران: ٢٨</span>
+            ثمرة تقرير الملك الإلهي: لا تتوالَوا مع من لا يملك لكم نفعاً ولا ضراً، فالملك لله.
+          </div>
+        </div>
+      </div>
+
+      <div id="s3-2" class="subsection">
+        <h3>الآيات المتعلقة بمضمون الآية في القرآن الكريم</h3>
+
+        <div class="connections-box">
+          <div class="box-title">آيات الملك الإلهي المطلق</div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿لِّلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ﴾</span>
+            <span class="verse-source">البقرة: ٢٨٤ — الملكية الشاملة للأرض والسماء</span>
+          </div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ﴾</span>
+            <span class="verse-source">الملك: ١ — سورة الملك كلها شرح لمفهوم الملك الإلهي</span>
+          </div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿قُلْ مَن بِيَدِهِ مَلَكُوتُ كُلِّ شَيْءٍ وَهُوَ يُجِيرُ وَلَا يُجَارُ عَلَيْهِ﴾</span>
+            <span class="verse-source">المؤمنون: ٨٨</span>
+          </div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿وَإِن يَمْسَسْكَ اللَّهُ بِضُرٍّ فَلَا كَاشِفَ لَهُ إِلَّا هُوَ ۖ وَإِن يُرِدْكَ بِخَيْرٍ فَلَا رَادَّ لِفَضْلِهِ﴾</span>
+            <span class="verse-source">يونس: ١٠٧ — تعميق مفهوم ﴿بِيَدِكَ الْخَيْرُ﴾</span>
+          </div>
+        </div>
+
+        <div class="connections-box">
+          <div class="box-title">آيات زوال الملوك والجبابرة</div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ ۝ إِرَمَ ذَاتِ الْعِمَادِ ۝ الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ﴾</span>
+            <span class="verse-source">الفجر: ٦–٨ — شاهد على نزع الملك من الجبابرة</span>
+          </div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿وَكَمْ أَهْلَكْنَا مِنَ الْقُرُونِ مِن بَعْدِ نُوحٍ﴾</span>
+            <span class="verse-source">الإسراء: ١٧</span>
+          </div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿فَتِلْكَ بُيُوتُهُمْ خَاوِيَةً بِمَا ظَلَمُوا﴾</span>
+            <span class="verse-source">النمل: ٥٢ — مشهد العروش المهدّمة عينه</span>
+          </div>
+        </div>
+
+        <div class="connections-box">
+          <div class="box-title">آيات صلة الآية بقصة بلقيس ونبوخذنصر وفرعون</div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿إِنَّ الْمُلُوكَ إِذَا دَخَلُوا قَرْيَةً أَفْسَدُوهَا وَجَعَلُوا أَعِزَّةَ أَهْلِهَا أَذِلَّةً﴾</span>
+            <span class="verse-source">النمل: ٣٤ — قول بلقيس، ويُفسّر معنى تذليل العزيز</span>
+          </div>
+          <div class="connection-item">
+            <span class="verse-inline">﴿فَأَخَذَهُ اللَّهُ نَكَالَ الْآخِرَةِ وَالْأُولَىٰ ۝ إِنَّ فِي ذَٰلِكَ لَعِبْرَةً لِّمَن يَخْشَىٰ﴾</span>
+            <span class="verse-source">النازعات: ٢٥–٢٦ — في قصة فرعون</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornamental-divider">✦ ✧ ❖ ✧ ✦</div>
+
+    <!-- ══════════════════════════════ -->
+    <!-- SECTION 4: CLASSIFICATION -->
+    <!-- ══════════════════════════════ -->
+    <section id="s4" data-id="s4" class="section">
+      <div class="section-header">
+        <div class="section-num">٤</div>
+        <h2>تصنيف الآية ونوعها الشرعي</h2>
+      </div>
+
+      <div id="s4-1" class="subsection">
+        <h3>ما نوع الآية؟</h3>
+
+        <div class="three-col">
+          <div class="mini-card">
+            <span class="mc-label">النوع الأول</span>
+            <div class="mc-value">آية عقدية ✅</div>
+            <div class="mc-desc">تُرسّخ عقيدة التوحيد في الربوبية: أن الله هو المالك الوحيد للملك كله، وأن لا شريك له في التصرف في الكون. وهذا هو المحور الأساسي للآية.</div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-label">النوع الثاني</span>
+            <div class="mc-value">دعاء وتعليم العبادة ✅</div>
+            <div class="mc-desc">﴿قُلِ اللَّهُمَّ﴾ صيغة دعاء علّمها الله نبيَّه ﷺ وأمته. فهي تعليمٌ للعبادة القلبية (التوكل، التفويض، الرجاء).</div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-label">النوع الثالث</span>
+            <div class="mc-value">إخبار وتقرير ✅</div>
+            <div class="mc-desc">تُقرّر حقيقة كونية ثابتة: أن الملك لله، وأنه يعطيه ويسلبه بحسب حكمته ومشيئته. وهذا الإخبار متضمّن للوعد والوعيد معاً.</div>
+          </div>
+        </div>
+
+        <div class="verdict-box" style="margin-top:20px;">
+          <strong>الخلاصة التصنيفية:</strong> الآية الكريمة آية عقدية-تعبدية-إخبارية مركّبة. فهي في آنٍ واحد: تُقرر عقيدة التوحيد الربوبي، وتُعلّم دعاءً عملياً، وتُخبر بسنّة الله في ملكه ووعيداً للطغاة ووعداً للمؤمنين.
+        </div>
+      </div>
+
+      <div id="s4-2" class="subsection">
+        <h3>هل نستطيع استخراج حكم شرعي من الآية؟</h3>
+
+        <div class="analysis-card">
+          <div class="card-title">الحكم الأول: استحباب قراءة هذه الآية دعاءً</div>
+          <p>روى الإمام مسلم في صحيحه أن النبي ﷺ كان يقرأ هذه الآية عند فتح مكة وفي أدعيته. وقد استحب العلماء قراءتها دعاءً في الأوقات الفاضلة كما بعد الصلوات. وذهب بعض الفقهاء إلى أن تلاوتها مع التدبر لها فضل خاص.</p>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title">الحكم الثاني: تحريم الغرور بالسلطة والثروة</div>
+          <p>دلّت الآية بمفهومها على حرمة الاغترار بالملك والسلطان، لأن الملك إنما هو أمانة وعطية من الله قابلة للنزع في أي لحظة. ومن أُعجب بملكه ونسي صاحب الملك الحقيقي فقد وقع في الشرك الخفي بالكبر والغرور.</p>
+        </div>
+
+        <div class="analysis-card copper">
+          <div class="card-title">الحكم الثالث: وجوب الاعتبار والتفكر في مصارع الأمم</div>
+          <p>أمر الله نبيّه ﷺ والمؤمنين بالسير في الأرض والنظر في عواقب المتكبرين. وهذه الآية توجّه إلى أن التاريخ معلم وليس مجرد أحداث، وقد أخذ العلماء من ذلك وجوب دراسة التاريخ للاعتبار والعظة.</p>
+        </div>
+
+        <div class="analysis-card">
+          <div class="card-title">الحكم الرابع: عزة المؤمن وعدم إذلال النفس لغير الله</div>
+          <p>استنبط العلماء من هذه الآية أن المؤمن لا يجوز له أن يُذلّ نفسه لمخلوق لا يملك له نفعاً ولا ضراً، وأن الذل لغير الله محرّم بل هو من أعمال الجاهلية. قال الشافعي رحمه الله: «وتهون علينا في المعالي نفوسنا ومن خطب الحسناء لم يُغله المهر».</p>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title">الحكم الخامس: المشيئة الإلهية والقضاء والقدر</div>
+          <p>تكرار ﴿مَن تَشَاءُ﴾ دليل على أن ما يقع في ملكه سبحانه خاضع لمشيئته الكاملة، ومن ذلك: وجوب الإيمان بالقضاء والقدر خيره وشره، والاطمئنان إلى أن ما أصاب العبد لم يكن ليخطئه.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornamental-divider">✦ ✧ ❖ ✧ ✦</div>
+
+    <!-- ══════════════════════════════ -->
+    <!-- SECTION 5: IRAB -->
+    <!-- ══════════════════════════════ -->
+    <section id="s5" data-id="s5" class="section">
+      <div class="section-header">
+        <div class="section-num">٥</div>
+        <h2>إعراب الآية الكريمة تفصيلاً</h2>
+      </div>
+
+      <div class="verse-block" style="margin-bottom:32px;">
+        <div class="verse-text">﴿قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ﴾</div>
+      </div>
+
+      <div class="irab-detail">
+        <div class="irab-row">
+          <div class="irab-word-label">قُلِ</div>
+          <div class="irab-desc">فعل أمر مبني على السكون المقدر، وحُرّك بالكسر لالتقاء الساكنين (سكون اللام وسكون لام التعريف بعدها). والفاعل ضمير مستتر وجوباً تقديره «أنت» يعود على النبي ﷺ.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">اللَّهُمَّ</div>
+          <div class="irab-desc">منادى علم مبني على الضم في محل نصب، والميم المشددة في آخره عوضٌ عن ياء النداء المحذوفة، لذا لا يجوز الجمع بينهما فلا يُقال «يا اللهم».</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">مَالِكَ</div>
+          <div class="irab-desc">بدل من لفظ الجلالة منصوب بالفتحة الظاهرة (على رأي سيبويه وجمهور النحاة)، أو نعت له (على رأي آخر). وهو مضاف. وقيل: منادى ثانٍ منصوب بالفتحة.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">الْمُلْكِ</div>
+          <div class="irab-desc">مضاف إليه مجرور بالكسرة الظاهرة. والألف واللام للاستغراق الجنسي: كل ملك في الوجود.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">تُؤْتِي</div>
+          <div class="irab-desc">فعل مضارع مرفوع بالضمة المقدرة على الياء منع من ظهورها الثقل. والفاعل ضمير مستتر تقديره «أنت» يعود على الله. والجملة الفعلية في محل نصب صفة لـ«مالك» أو حال.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">الْمُلْكَ</div>
+          <div class="irab-desc">مفعول به منصوب بالفتحة الظاهرة. (تكررت كلمة الملك في الآية أربع مرات، كلها منصوبة كمفعول به، وهذا التكرار مقصود للتأكيد الدلالي).</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">مَن تَشَاءُ</div>
+          <div class="irab-desc">«من»: اسم موصول مبني على السكون في محل نصب مفعول به ثانٍ (لأن تُؤتي متعدٍ لمفعولين). «تشاء»: فعل مضارع مرفوع بالضمة الظاهرة، والفاعل مستتر «أنت»، والجملة صلة الموصول لا محل لها من الإعراب. والعائد محذوف تقديره: «من تشاء إيتاءَه».</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">وَتَنزِعُ</div>
+          <div class="irab-desc">الواو: عاطفة. «تنزع»: فعل مضارع مرفوع بالضمة الظاهرة، معطوف على «تُؤتي».</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">مِمَّن تَشَاءُ</div>
+          <div class="irab-desc">«من»: حرف جر. «مَن»: اسم موصول مبني في محل جر. وكان حقّه أن يكون «ممن تشاء نزعَه منه»، فحُذف العائد والمضاف للإيجاز. والجار والمجرور متعلقان بـ«تنزع».</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">وَتُعِزُّ / وَتُذِلُّ</div>
+          <div class="irab-desc">كلاهما فعل مضارع مرفوع معطوف بالواو، وإعرابهما كإعراب «تنزع» تماماً. و«من تشاء» في كل منهما: مفعول به.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">بِيَدِكَ</div>
+          <div class="irab-desc">الباء: حرف جر. «يد»: اسم مجرور بالكسرة وهو مضاف. والكاف: ضمير متصل مبني في محل جر مضاف إليه. والجار والمجرور متعلقان بمحذوف خبر مقدم.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">الْخَيْرُ</div>
+          <div class="irab-desc">مبتدأ مؤخر مرفوع بالضمة الظاهرة. والجملة الاسمية «بيدك الخير» مستأنفة في محل التعليل، أو في محل نصب حال. وتقديم الخبر (بيدك) على المبتدأ (الخير) يفيد الحصر والتخصيص.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">إِنَّكَ</div>
+          <div class="irab-desc">«إنّ»: حرف توكيد ونصب. والكاف: اسم «إن» ضمير متصل مبني في محل نصب.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">عَلَىٰ كُلِّ شَيْءٍ</div>
+          <div class="irab-desc">جار ومجرور متعلقان بـ«قدير». «كل»: مضاف. «شيء»: مضاف إليه مجرور بالكسرة الظاهرة.</div>
+        </div>
+        <div class="irab-row">
+          <div class="irab-word-label">قَدِيرٌ</div>
+          <div class="irab-desc">خبر «إنّ» مرفوع بالضمة الظاهرة. وهو صيغة مبالغة على وزن «فعيل» تدل على الكمال والشمول في القدرة. والجملة «إنك على كل شيء قدير» خبرية تعليلية مؤكَّدة.</div>
+        </div>
+      </div>
+
+      <div class="analysis-card" style="margin-top:24px;">
+        <div class="card-title">ملاحظة نحوية دقيقة: الجمل الفعلية في الآية</div>
+        <p>جاءت أفعال الآية كلها (تُؤتي، تنزع، تُعزّ، تُذلّ) مضارعةً لا ماضيةً، وفي هذا دلالة عميقة: القرآن لا يقول «أعطيتَ الملك وأخذتَه» — بل «تُؤتي وتنزع» بالمضارع الدال على الاستمرار والتجدد، كأن فعل الله في الملك فعلٌ حاضر متواصل لا منقطع.</p>
+      </div>
+    </section>
+
+    <div class="ornamental-divider">✦ ✧ ❖ ✧ ✦</div>
+
+    <!-- ══════════════════════════════ -->
+    <!-- SECTION 6: TADABBUR -->
+    <!-- ══════════════════════════════ -->
+    <section id="s6" data-id="s6" class="section">
+      <div class="section-header">
+        <div class="section-num">٦</div>
+        <h2>جانب التدبر النفسي والتربوي</h2>
+      </div>
+
+      <div class="pull-quote">
+        «آيَةٌ لَوِ اسْتَقَرَّتْ فِي الْقُلُوبِ لَذَابَتْ أَمَامَهَا جِبَالُ الْخَوْفِ»
+        <br><small style="font-size:0.7em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small>
+      </div>
+
+      <div class="subsection">
+        <h3>الأثر النفسي للآية على النفس البشرية</h3>
+
+        <div class="analysis-card">
+          <div class="card-title">أولاً: علاج الخوف من المخلوقين</div>
+          <p>من أعظم أمراض النفس البشرية خوفها من أصحاب السلطة والنفوذ. وهذه الآية دواء ناجع لهذا الداء: فالذي تخشاه هو ذاتُه محتاجٌ إلى من يُبقيه على عرشه، وقد يسلبه الله ما أعطاه في لحظة. فما معنى الخوف من كلب في يد سيده؟</p>
+          <p><strong>التطبيق التربوي:</strong> يُستحب لمن استولى عليه الخوف من ظالم أن يستحضر هذه الآية ويتدبرها، وأن يستحضر قصص الجبابرة الذين ذهبوا كأنهم لم يكونوا.</p>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title">ثانياً: تقوية الرجاء وإحسان الظن بالله</div>
+          <p>يقع كثير من الناس في اليأس حين يرون أبواب الرزق موصدة أو أبواب الفرج مغلقة. والآية تُعلّم أن الذي يُعطي الملك لمن يشاء قادر أن يُفتح لك باباً من حيث لا تحتسب. وأن المشيئة الإلهية لا تُقيّدها قوانين البشر ولا ظروف الاقتصاد ولا حسابات البشر.</p>
+          <p><strong>التطبيق التربوي:</strong> ينبغي للداعية والمربي أن يُعلّم الناشئة أن توقّع الفرج من الله مع انسداد الأسباب البشرية هو عين التوحيد.</p>
+        </div>
+
+        <div class="analysis-card copper">
+          <div class="card-title">ثالثاً: بناء شخصية المؤمن العزيز</div>
+          <p>قرّر المقال بعمق أن الإيمان بهذه الآية يُنتج شخصيةً لا تنكسر أمام الطواغيت، لأنها وضعت ميزانها الحقيقي: «الملك لله وحده». فالمؤمن المتشرّب لهذه الآية لا يتسوّل عند أحد، لأنه يعرف أن المُعطي الحقيقي هو الله.</p>
+          <p><strong>التطبيق التربوي:</strong> ينبغي تعليم الآية للأطفال منذ الصغر مع شرح مضمونها، ليترعرعوا على عزة النفس وعدم التذلل لأحد من الخلق.</p>
+        </div>
+
+        <div class="analysis-card">
+          <div class="card-title">رابعاً: علاج الكبر والغرور بالسلطة</div>
+          <p>إذا كان أثرها على المستضعف طرد الخوف، فأثرها على الممكَّن طرد الكبر. فمن أعطاه الله ملكاً أو سلطاناً أو مالاً وتذكّر هذه الآية أدرك أنه ليس سوى أمين مؤقت على هذه النعمة، وأنها في يد الله في أي لحظة، فيزول عنه الغرور ويحل محله الشكر والتواضع.</p>
+          <p><strong>التطبيق التربوي:</strong> من أُعجب بما آتاه الله من مال أو منصب فليقرأ هذه الآية ويتأمّل قصص من سبقوه ممن كانوا أعظم منه قوةً وأكثر جمعاً.</p>
+        </div>
+
+        <div class="analysis-card emerald">
+          <div class="card-title">خامساً: التصالح مع المقدور والصبر على الابتلاء</div>
+          <p>حين ينزع الله من شخص ملكاً أو نعمةً كان يظنها ثابتة، فالآية تُعلّمه أن ذلك النزع ذاته من مشيئة الله ولحكمة يعلمها. وهذا يُولّد في القلب رضاً لا انكساراً، وصبراً يُعمّره الرجاء لا اليأس.</p>
+          <p><strong>التطبيق التربوي:</strong> حين يُصاب المؤمن في دنياه فيُذكَّر بهذه الآية — لا للتهوين من مصيبته — بل لتأطير مصيبته في سياق إيماني أوسع.</p>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>مناهج المقال التربوية والأسلوبية</h3>
+
+        <ul class="check-list">
+          <li><strong>الاستشهاد بالتاريخ كمعلّم:</strong> وظّف المؤلف مفهوم «شرح التاريخ للآية» وهو منهج تربوي راسخ في القرآن نفسه: السير في الأرض والنظر في العواقب.</li>
+          <li><strong>الخطاب الوجداني المباشر:</strong> انتقل المقال من التقرير العقلي إلى المناداة الوجدانية «فيا من أثقلتك الهموم» — وهو انتقال ذكي من العقل إلى القلب.</li>
+          <li><strong>المقابلة الزمنية (أمس / اليوم):</strong> استخدم المؤلف الفجوة الزمنية بين عظمة الأمس وعجز اليوم كأداة تعليمية فعّالة لاستحضار الفناء.</li>
+          <li><strong>التصاعد العاطفي:</strong> يبدأ المقال بالآية الكونية، ثم ينتقل للتاريخ، ثم للواقع المعيش، ثم للقلب الفردي — رحلة من الكلي إلى الشخصي.</li>
+          <li><strong>الختم بالدعاء لا بالوعظ:</strong> أحسن المقال حين ختم بـ«قف على باب مالك الملك» لا بوعظ جاف، فكأنه يُحيل القارئ من قراءة المقال إلى الوقوف بين يدي الله.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="ornamental-divider">✦ ✧ ❖ ✧ ✦</div>
+
+    <!-- ══════════════════════════════ -->
+    <!-- AUTHOR BIO -->
+    <!-- ══════════════════════════════ -->
+    <section id="author" data-id="author" class="section">
+      <div class="section-header">
+        <div class="section-num">✦</div>
+        <h2>نبذة عن المؤلف</h2>
+      </div>
+
+      <div class="author-section">
+        <div class="author-avatar">ع</div>
+        <div class="author-info">
+          <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+          <div class="author-title">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+          <p>هو الشيخ علي خليل عبّاس السلجوقي التركماني، باحثٌ متخصص في علوم القرآن الكريم والتدبر المعاصر لآياته، مولودٌ في العراق سنة ١٩٧٠م. تتجلى مناهجه العلمية في عمله على هذه الموسوعة من خلال:</p>
+          <p><strong style="color:var(--gold-muted);">العمق التفسيري:</strong> يقوم بدراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة النبوية.</p>
+          <p><strong style="color:var(--gold-muted);">البُعد الزمني:</strong> يتسم بحثه بالربط الحي بين النص ومستجدات العصر، مما يمنح التأمل الأدبي روحاً معاصرة.</p>
+          <p><strong style="color:var(--gold-muted);">التحصيل العلمي:</strong> شملت دراساته علم الحديث، مركّزاً على أحاديث الفتن وإخبارات النبي ﷺ؛ وهذا يؤكد عمق النظر وسلامة المنهج التي بُنيت عليها مقالاته.</p>
+          <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم.</p>
+          <div style="margin-top:14px;">
+            <span class="author-tag">علوم القرآن</span>
+            <span class="author-tag">التدبر المعاصر</span>
+            <span class="author-tag">علم الحديث</span>
+            <span class="author-tag">أحاديث الفتن</span>
+            <span class="author-tag">الأدب الإسلامي</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-brand">مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:8px;font-size:0.8rem;opacity:0.6;">الشيخ علي خليل عباس السلجوقي التركماني — العراق</p>
+</footer>
+
+<script>
+  // ── SIDEBAR TOGGLE ──
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('mobile-open');
+  }
+
+  // ── SCROLL PROGRESS ──
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById('progressBar').style.height = progress + 'vh';
+  });
+
+  // ── ACTIVE TOC ──
+  const sections = document.querySelectorAll('[data-id]');
+  const tocLinks = document.querySelectorAll('.toc-link');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const id = entry.target.getAttribute('data-id');
+        const active = document.querySelector(`.toc-link[href="#${id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '-80px 0px -60% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+
+  // ── Close sidebar when clicking a link on mobile ──
+  tocLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const sidebar = document.getElementById('sidebar');
+      if (sidebar.classList.contains('mobile-open')) {
+        sidebar.classList.remove('mobile-open');
+      }
+    });
+  });
+</script>
+</body>
+</html>

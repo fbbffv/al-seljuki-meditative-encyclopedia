@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حِينَ يُسْلَخُ القَلْبُ مِنَ النُّورِ — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a140e;--bg:#eef5f0;--bg2:#dcebe0;
+  --pine:#0e4a30;--pm:#1a7050;--plt:#3ca078;
+  --pd:#04140c;--pt:#d0f0e0;--pg:#88d8b0;
+  --amber:#c8901a;--gold:#a8841a;--gold-m:#c9a84c;
+  --div:#7cc4a0;--mist:#123a28;
+  --src-bg:#fdf6e8;--src-bd:#d4a838;--src-ink:#5a4410;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(14,74,48,.07) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(60,160,120,.05) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--pm),var(--amber));z-index:400;transform-origin:top;}
+.hdr{background:var(--pd);border-bottom:2px solid var(--pm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--plt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--gold-m);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--pt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--pine);color:var(--pg);border:1px solid rgba(60,160,120,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--pm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#02100a;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(60,160,120,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--plt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(60,160,120,.2);}
+.toc-s{color:rgba(60,160,120,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#5ca882;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--pt);background:rgba(60,160,120,.1);border-right-color:var(--plt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--pm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--plt);}
+.hcat{display:inline-block;background:var(--pine);color:var(--pt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.5rem;font-weight:700;color:var(--pd);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--pm);border-radius:50%;}
+.vb{background:var(--pd);border:1px solid rgba(60,160,120,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(60,160,120,.1),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.8rem;color:var(--pt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.42rem;}
+.vr{color:var(--pg);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#0a140e;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--pm);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--pine);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--pm);background:rgba(14,74,48,.06);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--pm);font-weight:700;text-align:center;margin:9px 0;}
+.neg-list{list-style:none;padding:0;margin:10px 0 20px;}
+.neg-list li{font-family:'Scheherazade New',serif;font-size:1.15rem;color:var(--pine);padding:9px 0;border-bottom:1px dashed var(--div);text-align:center;}
+.neg-list li:last-child{border-bottom:none;}
+.contrast-pair{list-style:none;padding:0;margin:14px 0;}
+.contrast-pair li{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--pd);padding:10px 0;border-bottom:1px dashed var(--div);text-align:center;font-weight:600;}
+.contrast-pair li:last-child{border-bottom:none;}
+.dua-block{background:var(--pd);border:1px solid rgba(200,144,26,.4);border-radius:8px;padding:28px 36px;margin:28px 0;text-align:center;}
+.dua-line{font-family:'Scheherazade New',serif;font-size:1.25rem;color:var(--pt);line-height:2.2;margin:4px 0;}
+.src{background:var(--src-bg);border:1px solid var(--src-bd);border-right:5px solid var(--src-bd);border-radius:7px;padding:14px 18px;margin:14px 0;}
+.src .sh{font-family:'Scheherazade New',serif;font-size:.95rem;color:#7a5a12;font-weight:700;margin-bottom:5px;display:flex;align-items:center;gap:7px;}
+.src .sh::before{content:'📖';font-size:.9rem;}
+.src p{color:var(--src-ink);font-size:.9rem;line-height:1.8;margin:0;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--pd);color:var(--plt);border:2px solid var(--pm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--pd);border-bottom:2px solid var(--plt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--pine);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.p{border-right:5px solid var(--pm);}
+.card.p2{border-right:5px solid var(--pine);}
+.card.p3{border-right:5px solid var(--amber);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#04140c;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#0a140e;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--pm);color:var(--pt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--pd);color:var(--pg);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--pm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(60,160,120,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#04140c;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ex{color:var(--pine);font-style:italic;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#04140c;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#04140c;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--plt);border-bottom:2px solid var(--plt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--plt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#02100a,#061810);border:1px solid rgba(60,160,120,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--plt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(60,160,120,.25);}
+.ci{color:#80c0a0;padding:9px 0;border-bottom:1px dashed rgba(60,160,120,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--pt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--pg);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#02100a,#04160e);border:1px solid rgba(60,160,120,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#80c0a0;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--pt);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--pm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#04140c;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#0a140e;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--pm);font-size:.85em;top:11px;}
+.asec{background:var(--pd);border:1px solid rgba(60,160,120,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--pm),var(--pine));border:3px solid var(--plt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--pt);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--pg);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#80c0a0;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(60,160,120,.1);border:1px solid rgba(60,160,120,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--pg);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--pt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(60,160,120,.16);color:var(--plt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(60,160,120,.28);}
+.orn{text-align:center;color:var(--plt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--pd);color:#2a5a44;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(60,160,120,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--plt);}
+footer .fb span{color:var(--pg);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:2.1rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.28rem;}.hero h1{font-size:1.65rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">⌂ الفهرس الرئيسي</a>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">حِينَ يُسْلَخُ القَلْبُ مِنَ النُّورِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تدبر وتحذير · الأعراف ١٧٥ · مقالة تربوية</div>
+  <h1>حِينَ يُسْلَخُ القَلْبُ مِنَ النُّورِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>الأعراف: ١٧٥</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿وَاتْلُ عَلَيْهِمْ نَبَأَ الَّذِي آتَيْنَاهُ آيَاتِنَا فَانْسَلَخَ مِنْهَا فَأَتْبَعَهُ الشَّيْطَانُ فَكَانَ مِنَ الْغَاوِينَ﴾</div>
+    <div class="vr">سورة الأعراف، الآية ١٧٥</div>
+  </div>
+  <div class="abody">
+    <p>لَيْسَتْ هَذِهِ الآيَةُ قِصَّةَ رَجُلٍ مَضَى وَانْتَهَى، وَإِنَّمَا هِيَ جَرَسُ إِنْذَارٍ يُدَوِّي فِي أُذُنِ كُلِّ مَنْ عَرَفَ الحَقَّ، ثُمَّ أَعْرَضَ عَنْهُ. إِنَّهَا لَيْسَتْ خَبَراً لِلتَّسْلِيَةِ، بَلْ نَبَأٌ لِلْهِدَايَةِ وَالاِعْتِبَارِ.</p>
+
+    <p>تَأَمَّلْ افْتِتَاحَ الآيَةِ: ﴿وَاتْلُ عَلَيْهِمْ﴾. لَمْ يَقُلْ: أَخْبِرْهُمْ، وَلَا: قُلْ لَهُمْ، بَلْ قَالَ: اتْلُ؛ لِأَنَّ التِّلَاوَةَ لَيْسَتْ مُجَرَّدَ نَقْلِ كَلِمَاتٍ، وَإِنَّمَا هِيَ إِحْيَاءٌ لِلْقُلُوبِ، وَاسْتِحْضَارٌ لِلْمَشْهَدِ، وَإِقَامَةٌ لِلْحُجَّةِ، حَتَّى كَأَنَّ السَّامِعَ يَرَاهُ رَأْيَ العَيْنِ.</p>
+
+    <p>ثُمَّ قَالَ سُبْحَانَهُ: ﴿نَبَأَ﴾. وَلَمْ يَقُلْ: خَبَرَ. فَالخَبَرُ قَدْ يَكُونُ عَابِراً، أَمَّا النَّبَأُ فَهُوَ الخَبَرُ العَظِيمُ الَّذِي تَتَرَتَّبُ عَلَيْهِ العِبَرُ، وَيُغَيِّرُ مَصِيرَ الأُمَمِ وَالأَفْرَادِ. إِنَّهُ حَدَثٌ تَهْتَزُّ لَهُ القُلُوبُ، وَيَفِيقُ بِهِ الغَافِلُونَ.</p>
+
+    <div class="src">
+      <div class="sh">في معنى «النبأ» ودلالته</div>
+      <p>فرّق الراغب الأصفهاني في «مفردات ألفاظ القرآن» (مادة: نبأ) بين النبأ والخبر، فذكر أن النبأ خبرٌ ذو فائدة عظيمة يحصل به علمٌ أو غلبة ظن، ولا يقال للخبر في الأصل «نبأ» حتى يتضمن هذه الأمور. وهذا يوافق ما قرّره المقال من أن النبأ هو الخبر العظيم الذي تترتب عليه العِبَر.</p>
+    </div>
+
+    <p>ثُمَّ تَأْتِي المُفَاجَأَةُ المُزَلْزِلَةُ: ﴿آتَيْنَاهُ آيَاتِنَا﴾. لَمْ يَقُلْ: آيَةً، بَلْ آيَاتِنَا؛ جَمْعٌ يَدُلُّ عَلَى كَثْرَةِ مَا أُعْطِيَ مِنْ دَلَائِلِ الهُدَى، وَبَرَاهِينِ الإِيمَانِ، وَأَنْوَارِ المَعْرِفَةِ. لَقَدْ عَاشَ فِي ظِلَالِ الوَحْيِ، وَتَقَلَّبَ بَيْنَ البَيِّنَاتِ، حَتَّى كَأَنَّ بَيْنَهُ وَبَيْنَ مَقَامِ النُّبُوَّةِ خَطْوَةً وَاحِدَةً، وَلَكِنَّهُ لَمْ يَبْلُغْهَا، لِأَنَّ العِبْرَةَ لَيْسَتْ بِقُرْبِ الإِنْسَانِ مِنَ النُّورِ، وَإِنَّمَا بِثَبَاتِهِ عَلَيْهِ.</p>
+
+    <div class="src">
+      <div class="sh">في تعيين «الذي آتيناه آياتنا»</div>
+      <p>ذكر الطبري في «جامع البيان» عند تفسير هذه الآية أقوال السلف في تعيين هذا الرجل، وروى عن ابن عباس ومجاهد وغيرهما أنه «بلعام بن باعوراء» رجل من بني إسرائيل. وأورد ابن كثير في «تفسير القرآن العظيم» هذه الأقوال أيضاً، ونبّه إلى أن العبرة بعموم اللفظ لا بخصوص السبب، فالآية عظة لكل من عرف الحق ثم انسلخ منه.</p>
+    </div>
+
+    <p>ثُمَّ تَأْتِي الكَلِمَةُ الَّتِي تَقْشَعِرُّ لَهَا الجُلُودُ: ﴿فَانْسَلَخَ مِنْهَا﴾. لَمْ يَقُلْ: نَزَعَهَا... وَلَا خَلَعَهَا... وَلَا تَرَكَهَا... بَلْ قَالَ: انْسَلَخَ. وَكَأَنَّ الآيَاتِ كَانَتْ جِلْدَهُ الَّذِي يَحْيَا بِهِ، وَرُوحَهُ الَّتِي يَتَنَفَّسُ بِهَا، ثُمَّ سَلَخَ نَفْسَهُ مِنْهَا كَمَا تُسْلَخُ الدَّابَّةُ مِنْ جِلْدِهَا.</p>
+
+    <div class="src">
+      <div class="sh">في دلالة «الانسلاخ»</div>
+      <p>بيّن الزمخشري في «الكشاف» عند هذه الآية أن في لفظ «انسلخ» استعارةً بديعة، شبّه خروجه من العلم بالآيات ومفارقته لها بانسلاخ الجلد عن الشاة، وهو تصوير للمفارقة التامة التي لا تُبقي أثراً. وأصل مادة «سلخ» في اللغة نزع الجلد عن الذبيحة كما ذكره الراغب في «المفردات» (مادة: سلخ).</p>
+    </div>
+
+    <p>وَالجِلْدُ إِذَا سُلِخَ لَا يَعُودُ كَمَا كَانَ، بَلْ يَصْبَحُ الجَسَدُ مَكْشُوفاً لِكُلِّ أَلَمٍ، مُعَرَّضاً لِكُلِّ جُرْحٍ، فَاقِداً لِأَعْظَمِ وَسَائِلِ الحِمَايَةِ. وَهَكَذَا القَلْبُ إِذَا يُسْلَخُ مِنَ القُرْآنِ... يَصْبَحُ نَهْباً لِلشَّهَوَاتِ، وَفَرِيسَةً لِلشُّبُهَاتِ، وَمَسْرَحاً لِلشَّيْطَانِ.</p>
+
+    <p>ثُمَّ لَمْ يَقُلْ سُبْحَانَهُ: فَاتَّبَعَ الشَّيْطَانَ. بَلْ قَالَ: ﴿فَأَتْبَعَهُ الشَّيْطَانُ﴾. مَا أَبْلَغَ هَذَا التَّعْبِيرَ! كَأَنَّ الشَّيْطَانَ كَانَ يَنْتَظِرُ تِلْكَ اللَّحْظَةَ، فَلَمَّا خَرَجَ العَبْدُ مِنْ حِصْنِ الآيَاتِ، انْطَلَقَ خَلْفَهُ، ثُمَّ لَحِقَهُ، ثُمَّ صَارَ يَقُودُهُ حَيْثُ شَاءَ، يُزَيِّنُ لَهُ البَاطِلَ، وَيُقَبِّحُ لَهُ الحَقَّ، حَتَّى فَقَدَ إِرَادَتَهُ، وَأَصْبَحَ يَسِيرُ فِي الطَّرِيقِ الَّذِي يَرْسُمُهُ لَهُ عَدُوُّهُ.</p>
+
+    <div class="src">
+      <div class="sh">في الفرق بين «اتّبع» و«أتبعه»</div>
+      <p>أشار أبو حيان الأندلسي في «البحر المحيط» عند هذه الآية إلى دقة التعبير بـ«أَتْبَعَهُ» على وزن «أَفْعَلَ»، ففيها معنى الإدراك واللحاق، أي أدركه الشيطان ولحقه وصار قريناً له، وهو أبلغ من «اتّبعه» التي قد تقتصر على مجرد السير خلفه. فالبناء يدل على أن الشيطان أدرك هذا المنسلخ وتمكّن منه.</p>
+    </div>
+
+    <p>فَالقُرْآنُ حِصْنٌ... فَإِذَا انْهَارَ الحِصْنُ، دَخَلَ اللِّصُّ بِلَا اسْتِئْذَانٍ. ثُمَّ كَانَتِ النِّهَايَةُ: ﴿فَكَانَ مِنَ الْغَاوِينَ﴾. لَمْ يَقُلْ: مِنَ الضَّالِّينَ. فَالضَّالُّ قَدْ يَبْحَثُ عَنِ الطَّرِيقِ فَيَجِدُهُ، أَمَّا الغَاوِي فَهُوَ الَّذِي عَرَفَ الطَّرِيقَ ثُمَّ أَعْرَضَ عَنْهُ وَاتَّبَعَ هَوَاهُ، فَصَارَ يُغْوِي وَيُغْوَى، وَيَقُودُ غَيْرَهُ إِلَى الاِنْحِرَافِ كَمَا قَادَتْهُ نَفْسُهُ إِلَيْهِ.</p>
+
+    <div class="src">
+      <div class="sh">في الفرق بين «الغيّ» و«الضلال»</div>
+      <p>فرّق الراغب الأصفهاني في «مفردات ألفاظ القرآن» (مادة: غوى) بين الغيّ والضلال، فذكر أن الغيّ جهلٌ من اعتقاد فاسد، وأنه قد يكون أخصّ من الضلال، إذ الضلال قد يُطلق على من لم يعرف الطريق أصلاً، والغيّ فيمن انحرف بعد المعرفة باتباع الهوى. وهذا موافق لما قرّره المقال من أن الغاوي عرف الحق ثم أعرض عنه.</p>
+    </div>
+
+    <p>وَكَمْ نَرَى فِي وَاقِعِ الحَيَاةِ مِنْ أُنَاسٍ كَانُوا أَهْلَ قُرْآنٍ، وَأَهْلَ عِلْمٍ، وَأَهْلَ دَعْوَةٍ، فَلَمَّا بَاعُوا مَبَادِئَهُمْ بِدُنْيَا زَائِلَةٍ، أَوْ بِمَنْصِبٍ، أَوْ بِمَالٍ، أَوْ بِشَهْوَةٍ، انْسَلَخُوا مِنَ الآيَاتِ، فَأَصْبَحُوا يُبَرِّرُونَ البَاطِلَ، وَيُزَيِّنُونَ الظُّلْمَ، وَيُحَارِبُونَ مَا كَانُوا يَدْعُونَ إِلَيْهِ بِالأَمْسِ.</p>
+
+    <p>وَكَمْ مِنْ قَلْبٍ بَدَأَ رِحْلَتَهُ مَعَ القُرْآنِ خَاشِعاً، ثُمَّ اسْتَبْدَلَ مَجَالِسَ الذِّكْرِ بِمَجَالِسِ اللَّهْوِ، وَاسْتَبْدَلَ نُورَ الوَحْيِ بِضَجِيجِ الدُّنْيَا، حَتَّى صَارَ القُرْآنُ ثَقِيلاً عَلَى سَمْعِهِ، بَعْدَ أَنْ كَانَ أَنِيسَ رُوحِهِ.</p>
+
+    <div class="contrast-pair">
+      <li>إِنَّ الخَطَرَ لَيْسَ أَنْ تَجْهَلَ الحَقَّ... بَلْ أَنْ تَعْرِفَهُ ثُمَّ تَتْرُكَهُ.</li>
+      <li>وَلَيْسَ البَلَاءُ أَنْ تَكُونَ بَعِيداً عَنِ النُّورِ... بَلْ أَنْ تَخْرُجَ مِنْهُ بِإِرَادَتِكَ.</li>
+    </div>
+
+    <div class="hl">فَالنِّعْمَةُ العُظْمَى لَيْسَتْ أَنْ تُعْطَى الآيَاتِ، وَإِنَّمَا أَنْ يُثَبِّتَكَ اللهُ عَلَيْهَا حَتَّى تَلْقَاهُ.</div>
+
+    <div class="src">
+      <div class="sh">في دعاء تثبيت القلب</div>
+      <p>ثبت في الحديث عن أنس بن مالك رضي الله عنه أن النبي ﷺ كان يُكثر أن يقول: «يا مُقلِّبَ القلوبِ ثبِّتْ قلبي على دينِك». أخرجه الترمذي في سننه (كتاب القدر / أبواب الدعوات)، وقال عنه: حديث حسن. وقد ضمّن المؤلف دعاءه هذا المعنى النبوي في ختام مقاله.</p>
+    </div>
+
+    <div class="dua-block">
+      <div class="dua-line">اللَّهُمَّ يَا مُقَلِّبَ القُلُوبِ ثَبِّتْ قُلُوبَنَا عَلَى دِينِكَ،</div>
+      <div class="dua-line">وَلَا تَجْعَلْنَا مِمَّنْ عَرَفُوا الحَقَّ ثُمَّ انْسَلَخُوا مِنْهُ،</div>
+      <div class="dua-line">وَلَا مِمَّنْ أَتْبَعَهُمُ الشَّيْطَانُ فَكَانُوا مِنَ الغَاوِينَ،</div>
+      <div class="dua-line">وَاجْعَلِ القُرْآنَ رَبِيعَ قُلُوبِنَا، وَنُورَ صُدُورِنَا، وَسَبَبَ نَجَاتِنَا فِي الدُّنْيَا وَالآخِرَةِ.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="sub"><h3>بلاغة الآية الكريمة — الأعراف ١٧٥</h3>
+    <div class="card p"><div class="ct">أولاً: ﴿وَاتْلُ﴾ لا «أخبِرْ» — التلاوة إحياء للمشهد</div><p>اختار القرآن «اتْلُ» دون «أخبِرْ» أو «قُلْ» — والتلاوة أبلغ لأنها استحضار للمشهد وإقامة للحجة حتى يكاد السامع يرى الحدث رأي العين. والمقال التقط هذا: التلاوة إحياء للقلوب لا مجرد نقل كلمات.</p></div>
+    <div class="card p2"><div class="ct">ثانياً: ﴿نَبَأَ﴾ لا «خبر» — الخبر العظيم ذو العِبرة</div><p>«النبأ» أخص من «الخبر» — فهو الخبر العظيم الذي تترتب عليه العِبَر ويتغير به المصير. واختياره يُشعر بأهمية القصة وخطورة العبرة فيها.</p></div>
+    <div class="card p"><div class="ct">ثالثاً: ﴿آيَاتِنَا﴾ بالجمع والإضافة — تعظيم النعمة</div><p>الجمع «آيَاتِنَا» لا «آية» يدل على كثرة ما أُعطي من دلائل الهدى، وإضافتها إلى ضمير العظمة «نا» تُعظّم شأنها. فكانت نعمة عظيمة، وكان الانسلاخ منها أفظع.</p></div>
+    <div class="card p2"><div class="ct">رابعاً: ﴿فَانْسَلَخَ﴾ — الاستعارة المُوجعة</div><p>«انسلخ» أبلغ من «نزع» أو «خلع» أو «ترك» — فالانسلاخ نزع الجلد عن اللحم، فكأن الآيات صارت جلده الذي يحيا به فسلخ نفسه منها. استعارة تُصوّر المفارقة التامة التي لا تُبقي أثراً.</p></div>
+    <div class="card p"><div class="ct">خامساً: ﴿فَأَتْبَعَهُ الشَّيْطَانُ﴾ لا «فاتّبع» — الشيطان يلحقه</div><p>لم يقل «فاتّبع الشيطانَ» (بجعله تابعاً) بل «فَأَتْبَعَهُ الشَّيْطَانُ» (بجعل الشيطان لاحقاً مدركاً له). فكأن الشيطان كان ينتظر لحظة خروجه من حصن الآيات، فلمّا خرج لحقه وأدركه وقاده.</p></div>
+    <div class="card p2"><div class="ct">سادساً: ﴿مِنَ الْغَاوِينَ﴾ لا «الضالين» — الانحراف بعد المعرفة</div><p>«الغاوي» أخص من «الضال» — فالضال قد يجهل الطريق، أما الغاوي فعرف الحق ثم أعرض عنه اتباعاً للهوى. واختيار «الغاوين» يُناسب حال من أُعطي الآيات ثم انسلخ منها عن علم.</p></div>
+  </div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <table class="tbl">
+      <tr><th>الصورة</th><th>النص</th><th>التحليل</th></tr>
+      <tr><td class="term">استعارة قرآنية</td><td class="ex">«فَانْسَلَخَ مِنْهَا»</td><td class="def">استعار الانسلاخ (نزع الجلد) لمفارقة الآيات — صورة قرآنية أصيلة تُصوّر المفارقة التامة.</td></tr>
+      <tr><td class="term">تشبيه تمثيلي</td><td class="ex">«القُرْآنُ حِصْنٌ... فَإِذَا انْهَارَ دَخَلَ اللِّصُّ»</td><td class="def">شبّه القرآن بحصن يحمي، والشيطان بلص ينتظر انهياره — تمثيل يوضح وظيفة الآيات الواقية.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«القَلْبُ يَصْبَحُ نَهْباً لِلشَّهَوَاتِ، فَرِيسَةً لِلشُّبُهَاتِ»</td><td class="def">شبّه القلب المسلوخ بجسد مكشوف يصير فريسة — امتداد لصورة الجلد المسلوخ.</td></tr>
+      <tr><td class="term">جرس إنذار</td><td class="ex">«جَرَسُ إِنْذَارٍ يُدَوِّي فِي أُذُنِ كُلِّ مَنْ عَرَفَ الحَقَّ»</td><td class="def">استعار جرس الإنذار للآية — تنبيه لكل من عرف الحق ثم أعرض.</td></tr>
+      <tr><td class="term">مقابلة</td><td class="ex">«أَنِيسَ رُوحِهِ / ثَقِيلاً عَلَى سَمْعِهِ»</td><td class="def">مقابلة بين حالين للقلب مع القرآن: قبل الانسلاخ وبعده — تصوير التحول المؤلم.</td></tr>
+      <tr><td class="term">التدرج التصاعدي</td><td class="ex">«انْطَلَقَ خَلْفَهُ ← لَحِقَهُ ← صَارَ يَقُودُهُ»</td><td class="def">ثلاث مراحل لتمكّن الشيطان: الانطلاق ثم اللحاق ثم القيادة — تصوير فقدان الإرادة تدريجياً.</td></tr>
+    </table>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">أسلوب النفي والإثبات</span><div class="mv">«لم يقل... بل قال»</div><div class="md">تكرار هذا الأسلوب (اتل لا أخبر، نبأ لا خبر، انسلخ لا نزع...) لإبراز دقة الاختيار القرآني.</div></div>
+      <div class="mc"><span class="ml">الطباق</span><div class="mv">جهل الحق / معرفته</div><div class="md">«الخَطَرَ لَيْسَ أَنْ تَجْهَلَ الحَقَّ بَلْ أَنْ تَعْرِفَهُ ثُمَّ تَتْرُكَهُ» — طباق يُبرز خطورة الإعراض بعد العلم.</div></div>
+      <div class="mc"><span class="ml">الجناس الاشتقاقي</span><div class="mv">يُغوي / يُغوى</div><div class="md">«يُغْوِي وَيُغْوَى» — من مادة واحدة بمعنيين: يُضل غيره ويُضل هو — تصوير العدوى في الغواية.</div></div>
+      <div class="mc"><span class="ml">المقابلة الختامية</span><div class="mv">تُعطى / تُثبَّت</div><div class="md">«النِّعْمَةُ العُظْمَى لَيْسَتْ أَنْ تُعْطَى الآيَاتِ بَلْ أَنْ يُثَبِّتَكَ اللهُ» — تحويل الأنظار من العطاء إلى الثبات.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LINGUISTIC -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card p"><div class="ct">التحليل الصرفي لكلمات الآية</div></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>الدلالة الصرفية</th></tr>
+      <tr><td class="term">اتْلُ</td><td>افعُ</td><td class="def">فعل أمر من «تلا» — حُذفت لامه (الواو) للأمر. التلاوة: القراءة المتتابعة.</td></tr>
+      <tr><td class="term">نَبَأَ</td><td>فَعَل</td><td class="def">من «نبأ» — الخبر العظيم ذو الشأن. مهموز اللام.</td></tr>
+      <tr><td class="term">فَانْسَلَخَ</td><td>فَانْفَعَلَ</td><td class="def">من «سلخ» — وزن «انفعل» يُفيد المطاوعة والقبول للفعل: سُلِخ فانسلخ. يدل على تأثّره التام.</td></tr>
+      <tr><td class="term">فَأَتْبَعَهُ</td><td>فَأَفْعَلَهُ</td><td class="def">من «تبع» — وزن «أفعل» يُفيد الإدراك واللحاق: أدركه ولحقه، لا مجرد السير خلفه.</td></tr>
+      <tr><td class="term">الْغَاوِينَ</td><td>الفَاعِلين</td><td class="def">جمع «غاوٍ» اسم فاعل من «غوى» — المنحرف عن الرشد باتباع الهوى بعد المعرفة.</td></tr>
+    </table>
+    <div class="src">
+      <div class="sh">في دلالة صيغة «انفعل» في «انسلخ»</div>
+      <p>ذكر أهل اللغة أن وزن «انفعل» موضوع للمطاوعة، تقول: كسرته فانكسر، وسلخته فانسلخ. وقد أشار إلى هذا المعنى صاحب «الكشاف» الزمخشري في تعليقه على الآية، حيث جعل الانسلاخ صورةً للخروج التام من الآيات كخروج المسلوخ من جلده.</p>
+    </div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card p"><div class="ct"><span class="bdg">مشترك</span> كلمة «الآيَة»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">العلامة والدليل</td><td class="def">﴿آتَيْنَاهُ آيَاتِنَا﴾ — دلائل الهدى والبراهين.</td></tr>
+        <tr><td class="term">آية القرآن</td><td class="def">﴿تِلْكَ آيَاتُ الْكِتَابِ﴾ — جمل القرآن.</td></tr>
+        <tr><td class="term">المعجزة</td><td class="def">﴿وَآتَيْنَا مُوسَىٰ تِسْعَ آيَاتٍ بَيِّنَاتٍ﴾ — المعجزات.</td></tr>
+        <tr><td class="term">العبرة والآية الكونية</td><td class="def">﴿وَفِي الْأَرْضِ آيَاتٌ لِّلْمُوقِنِينَ﴾ — آيات الكون.</td></tr>
+      </table>
+    </div>
+    <div class="card p2"><div class="ct"><span class="bdg">مشترك</span> كلمة «السَّلْخ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">نزع الجلد</td><td class="def">أصل المادة: سلخ الشاة أي نزع جلدها.</td></tr>
+        <tr><td class="term">الخروج والمفارقة</td><td class="def">﴿فَانْسَلَخَ مِنْهَا﴾ — فارق الآيات مفارقة تامة.</td></tr>
+        <tr><td class="term">انقضاء الزمان</td><td class="def">﴿فَإِذَا انسَلَخَ الْأَشْهُرُ الْحُرُمُ﴾ — التوبة: ٥ — انقضت.</td></tr>
+        <tr><td class="term">إخراج النهار من الليل</td><td class="def">﴿نَسْلَخُ مِنْهُ النَّهَارَ﴾ — يس: ٣٧ — نُخرجه.</td></tr>
+      </table>
+    </div>
+    <div class="card p"><div class="ct"><span class="bdg">مشترك</span> كلمة «الغَيّ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الانحراف عن الرشد</td><td class="def">﴿فَكَانَ مِنَ الْغَاوِينَ﴾ — المنحرفين بعد المعرفة.</td></tr>
+        <tr><td class="term">الخيبة والهلاك</td><td class="def">﴿فَسَوْفَ يَلْقَوْنَ غَيًّا﴾ — مريم: ٥٩ — عذاباً وخسراناً.</td></tr>
+        <tr><td class="term">ضد الرشد</td><td class="def">﴿قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ﴾ — البقرة: ٢٥٦.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card p"><div class="ct">الفرق بين: الغَيُّ / الضَّلالُ / الفِسقُ / الإغواءُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الغَيُّ</td><td class="def">الانحراف عن الحق بعد معرفته باتباع الهوى — عن علم.</td></tr>
+        <tr><td class="term">الضَّلالُ</td><td class="def">فقدان الطريق — قد يكون عن جهل لا عن علم.</td></tr>
+        <tr><td class="term">الفِسقُ</td><td class="def">الخروج عن الطاعة مع بقاء أصل الإيمان.</td></tr>
+        <tr><td class="term">الإغواءُ</td><td class="def">إيقاع الغير في الغيّ وحمله عليه.</td></tr>
+      </table>
+      <div class="src">
+        <div class="sh">في تحرير الفرق بين الغيّ والضلال</div>
+        <p>قرّر الراغب الأصفهاني في «مفردات ألفاظ القرآن» (مادة: غوى) أن الغيّ ضلالٌ من جهة الاعتقاد الفاسد أو اتباع الهوى، ونبّه على أنه يقابل الرشد كما يقابل الضلال الهدى. وبهذا يظهر أن الغاوي أخصّ حالاً من الضال، لأنه انحرف بعد أن تبيّن له الرشد.</p>
+      </div>
+    </div>
+    <div class="card p2"><div class="ct">الفرق بين: النَّبأُ / الخَبرُ / الحَديثُ / القِصّةُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">النَّبأُ</td><td class="def">الخبر العظيم ذو الفائدة الجليلة الذي تترتب عليه عبرة.</td></tr>
+        <tr><td class="term">الخَبرُ</td><td class="def">ما يُنقل من كلام، عظيماً كان أو يسيراً — أعم.</td></tr>
+        <tr><td class="term">الحَديثُ</td><td class="def">الكلام المُحدَث المنقول — أعم من الخبر.</td></tr>
+        <tr><td class="term">القِصّةُ</td><td class="def">الخبر المتتابع الأحداث المقصوص على التمام.</td></tr>
+      </table>
+      <div class="src">
+        <div class="sh">في تخصيص «النبأ»</div>
+        <p>ذكر الراغب الأصفهاني في «المفردات» (مادة: نبأ) أن النبأ لا يُطلق إلا على خبر ذي فائدة عظيمة يحصل به علم أو غلبة ظن، وأنه لتضمّنه هذا المعنى صحّ أن يُشتقّ منه لفظ «النبيّ» لكونه مُنبِئاً بما فيه عظيم الفائدة. وهو ما يوافق تحليل المقال لدلالة «نبأ» في الآية.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card p"><div class="ct">سرّ اختيار «انسلخ» دون سائر ألفاظ الترك</div><p>وقف المقال عند بلاغة «انسلخ» مقابل «نزع، خلع، ترك» — فهذه الألفاظ تدل على مفارقة قد يبقى معها شيء، أما «انسلخ» فمفارقة تامة كنزع الجلد الذي لا يعود. وقد أكّد الزمخشري في «الكشاف» أن هذا اللفظ استعارة لتصوير الخروج الكلي من العلم بالآيات.</p></div>
+    <div class="card p2"><div class="ct">من هو صاحب القصة؟ — والعبرة بعموم اللفظ</div><p>وردت أقوال في تعيين الرجل، أشهرها أنه «بلعام بن باعوراء» كما رواه الطبري في «جامع البيان» عن ابن عباس ومجاهد. لكن العبرة — كما نبّه ابن كثير في «تفسيره» — بعموم اللفظ لا بخصوص السبب، فالآية عظة لكل من عرف الحق ثم انسلخ منه في كل زمان، وهو المعنى الذي بنى عليه المقال إسقاطه المعاصر.</p></div>
+    <div class="card p"><div class="ct">دلالة العنوان «حِينَ يُسْلَخُ القَلْبُ مِنَ النُّورِ»</div><p>طوّر المقال استعارة الآية: الآيات نور، والانسلاخ منها انسلاخ من النور. فبدّل «الآيات» بـ«النور» لأنها مصدر الهداية، وجعل القلب هو المسلوخ لأنه محل الإيمان. والعنوان يستثمر الاستعارة القرآنية ويُعمّقها في اتجاه القلب والنور.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">اللحاق: ما بعد الآية (١٧٦)</div>
+    <div class="ci"><span class="vi">﴿وَلَوْ شِئْنَا لَرَفَعْنَاهُ بِهَا وَلَٰكِنَّهُ أَخْلَدَ إِلَى الْأَرْضِ وَاتَّبَعَ هَوَاهُ ۚ فَمَثَلُهُ كَمَثَلِ الْكَلْبِ إِن تَحْمِلْ عَلَيْهِ يَلْهَثْ أَوْ تَتْرُكْهُ يَلْهَث﴾</span><span class="vs">الأعراف: ١٧٦ — تكملة القصة: كان يمكن أن يُرفع بالآيات لكنه أخلد إلى الأرض واتبع هواه، فضُرب له مثل الكلب اللاهث.</span></div>
+    <div class="ci"><span class="vi">﴿ذَّٰلِكَ مَثَلُ الْقَوْمِ الَّذِينَ كَذَّبُوا بِآيَاتِنَا ۚ فَاقْصُصِ الْقَصَصَ لَعَلَّهُمْ يَتَفَكَّرُونَ﴾</span><span class="vs">الأعراف: ١٧٦ (تتمة) — الغاية من القصة: التفكر والاعتبار.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات المتعلقة في الإعراض بعد العلم واتباع الهوى</div>
+    <div class="ci"><span class="vi">﴿أَفَرَأَيْتَ مَنِ اتَّخَذَ إِلَٰهَهُ هَوَاهُ وَأَضَلَّهُ اللَّهُ عَلَىٰ عِلْمٍ﴾</span><span class="vs">الجاثية: ٢٣ — الإضلال على علم — نظير الانسلاخ بعد المعرفة.</span></div>
+    <div class="ci"><span class="vi">﴿كَبُرَ مَقْتًا عِندَ اللَّهِ أَن تَقُولُوا مَا لَا تَفْعَلُونَ﴾</span><span class="vs">الصف: ٣ — مقت من يعرف الحق ويدعو إليه ثم يخالفه.</span></div>
+    <div class="ci"><span class="vi">﴿وَلَا تَكُونُوا كَالَّذِينَ نَسُوا اللَّهَ فَأَنسَاهُمْ أَنفُسَهُمْ﴾</span><span class="vs">الحشر: ١٩ — نسيان الله يورث الانسلاخ من النور ونسيان النفس.</span></div>
+    <div class="ci"><span class="vi">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَجِيبُوا لِلَّهِ وَلِلرَّسُولِ ... وَاعْلَمُوا أَنَّ اللَّهَ يَحُولُ بَيْنَ الْمَرْءِ وَقَلْبِهِ﴾</span><span class="vs">الأنفال: ٢٤ — تقليب القلوب بيد الله — أصل دعاء التثبيت.</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية قصصية عبرية ✅</div><div class="md">تَقُصّ نبأ من أُعطي الآيات فانسلخ منها — قصة للاعتبار لا للتسلية.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية تربية وتحذير ✅</div><div class="md">تُحذّر من الإعراض عن الحق بعد معرفته واتباع الهوى.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية عقدية ✅</div><div class="md">تُقرّر أن الثبات على الهدى نعمة من الله، والقلوب بين أصبعيه يقلّبها.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> الآية ١٧٥ من الأعراف منظومة قصصية-تربوية-عقدية: تَقُصّ نبأ المنسلخ، وتُحذّر من اتباع الهوى، وتُقرّر أن الثبات بيد الله.</div>
+  <div class="sub"><h3>القيم والأحكام المستنبطة</h3>
+    <div class="card p"><div class="ct">الحكم الأول: خطورة الإعراض عن العلم بعد تحصيله</div><p>دلّت الآية على أن أعظم الخطر ليس الجهل بالحق بل معرفته ثم تركه — وهذا يوجب على العالم وطالب العلم الثبات والعمل بعلمه، والحذر من مخالفته.</p></div>
+    <div class="card p2"><div class="ct">الحكم الثاني: وجوب سؤال الله الثبات على الدين</div><p>لمّا كانت القلوب بيد الله يقلّبها، شُرع الإكثار من دعاء التثبيت. وقد ثبت أن النبي ﷺ كان يُكثر من قوله «يا مقلّب القلوب ثبّت قلبي على دينك» — رواه الترمذي عن أنس وحسّنه.</p></div>
+    <div class="card p"><div class="ct">الحكم الثالث: التحذير من علماء السوء والانسلاخ لأجل الدنيا</div><p>حذّر المقال ممن باعوا مبادئهم بالدنيا فانسلخوا من الآيات وبرّروا الباطل — وهذا يُفيد ذمّ علماء السوء الذين يكتمون الحق أو يُحرّفونه لمصلحة دنيوية.</p></div>
+    <div class="card p2"><div class="ct">الحكم الرابع: ملازمة القرآن وعدم هجره</div><p>في تصوير المقال لمن استثقل القرآن بعد أنسه به تحذيرٌ من هجر القرآن — والواجب ملازمة تلاوته وتدبّره لأنه حصن القلب من الشهوات والشبهات.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.4rem;">﴿وَاتْلُ عَلَيْهِمْ نَبَأَ الَّذِي آتَيْنَاهُ آيَاتِنَا فَانْسَلَخَ مِنْهَا فَأَتْبَعَهُ الشَّيْطَانُ فَكَانَ مِنَ الْغَاوِينَ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَاتْلُ</div><div class="id">الواو: عاطفة أو استئنافية. «اتلُ»: فعل أمر مبني على حذف حرف العلة، الفاعل مستتر «أنت».</div></div>
+    <div class="ir"><div class="iw">عَلَيْهِمْ</div><div class="id">جار ومجرور متعلقان بـ«اتلُ».</div></div>
+    <div class="ir"><div class="iw">نَبَأَ الَّذِي</div><div class="id">«نبأ»: مفعول به منصوب وهو مضاف. «الذي»: اسم موصول مبني في محل جر مضاف إليه.</div></div>
+    <div class="ir"><div class="iw">آتَيْنَاهُ آيَاتِنَا</div><div class="id">«آتينا»: فعل ماضٍ و«نا» فاعل. «الهاء»: مفعول أول. «آياتنا»: مفعول ثانٍ منصوب بالكسرة (جمع مؤنث سالم) وهو مضاف و«نا» مضاف إليه. والجملة صلة الموصول.</div></div>
+    <div class="ir"><div class="iw">فَانْسَلَخَ مِنْهَا</div><div class="id">الفاء: عاطفة. «انسلخ»: فعل ماضٍ والفاعل مستتر «هو». «منها»: جار ومجرور متعلقان بـ«انسلخ». والجملة معطوفة على الصلة.</div></div>
+    <div class="ir"><div class="iw">فَأَتْبَعَهُ الشَّيْطَانُ</div><div class="id">الفاء: عاطفة. «أتبع»: فعل ماضٍ. «الهاء»: مفعول به مقدم. «الشيطان»: فاعل مؤخر مرفوع.</div></div>
+    <div class="ir"><div class="iw">فَكَانَ مِنَ الْغَاوِينَ</div><div class="id">الفاء: عاطفة. «كان»: فعل ماضٍ ناقص واسمها مستتر «هو». «من الغاوين»: جار ومجرور متعلقان بمحذوف خبر «كان».</div></div>
+  </div>
+  <div class="card p" style="margin-top:14px;"><div class="ct">ملاحظة: تقديم المفعول ﴿فَأَتْبَعَهُ﴾ ودلالته</div><p>في «فَأَتْبَعَهُ الشَّيْطَانُ» قُدّم المفعول (الهاء) على الفاعل (الشيطان) لفظاً، والفعل «أتبع» على وزن «أفعل» يُفيد الإدراك واللحاق. وقد نبّه أبو حيان في «البحر المحيط» إلى دقة هذا التعبير، إذ يدل على أن الشيطان أدرك هذا المنسلخ ولحقه وصار قريناً له، لا أن العبد سار خلف الشيطان طائعاً ابتداءً — فبيّن أن التمكّن حصل بعد الانسلاخ.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«الخَطَرَ لَيْسَ أَنْ تَجْهَلَ الحَقَّ... بَلْ أَنْ تَعْرِفَهُ ثُمَّ تَتْرُكَهُ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card p"><div class="ct">أولاً: العبرة بالثبات لا بمجرد القرب من النور</div><p>«العِبْرَةُ لَيْسَتْ بِقُرْبِ الإِنْسَانِ مِنَ النُّورِ وَإِنَّمَا بِثَبَاتِهِ عَلَيْهِ» — كان صاحب القصة قريباً من مقام النبوة ثم انسلخ. <strong>التطبيق:</strong> لا تغترّ بما بلغته من علم أو قرب من الطاعة — بل اسأل الله الثبات دائماً، فالعبرة بالخواتيم لا بالبدايات.</p></div>
+  <div class="card p2"><div class="ct">ثانياً: القرآن حصنٌ فلا تهجره</div><p>«فَالقُرْآنُ حِصْنٌ... فَإِذَا انْهَارَ الحِصْنُ دَخَلَ اللِّصُّ» — هجر القرآن ثغرةٌ يدخل منها الشيطان. <strong>التطبيق:</strong> اجعل للقرآن ورداً يومياً لا تتركه — تلاوةً وتدبّراً وعملاً، فهو حصنك الذي يحميك من الشهوات والشبهات.</p></div>
+  <div class="card p"><div class="ct">ثالثاً: مراقبة بدايات الانسلاخ</div><p>«اسْتَبْدَلَ مَجَالِسَ الذِّكْرِ بِمَجَالِسِ اللَّهْوِ... حَتَّى صَارَ القُرْآنُ ثَقِيلاً» — الانسلاخ يبدأ صغيراً. <strong>التطبيق:</strong> راقب أول علامات الفتور: استثقال الطاعة، هجر مجالس الخير، ثقل القرآن على السمع — عالِجها فوراً قبل أن تستفحل.</p></div>
+  <div class="card p2"><div class="ct">رابعاً: الإكثار من دعاء تثبيت القلب</div><p>ختم المؤلف بدعاء «يا مقلّب القلوب ثبّت قلوبنا» — وهو معنى نبوي ثابت. <strong>التطبيق:</strong> أكثِر من هذا الدعاء الذي كان النبي ﷺ يُكثر منه (رواه الترمذي وحسّنه)، فالقلوب بين أصبعي الرحمن يقلّبها، ولا ثبات إلا بتثبيته.</p></div>
+  <div class="src">
+    <div class="sh">في ثبوت إكثار النبي ﷺ من هذا الدعاء</div>
+    <p>روى الترمذي في «سننه» عن أنس بن مالك رضي الله عنه قال: كان رسول الله ﷺ يُكثر أن يقول: «يا مُقلِّبَ القلوبِ ثبِّتْ قلبي على دينِك»، قال الترمذي: هذا حديث حسن. كما جاء معنى تقليب القلوب في أحاديث أخرى صحيحة، منها ما رواه مسلم عن عبد الله بن عمرو مرفوعاً: «إنَّ قلوبَ بني آدمَ كلَّها بين إصبعينِ من أصابعِ الرحمنِ كقلبٍ واحدٍ يُصرِّفُه حيث يشاءُ».</p>
+  </div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>التحليل اللفظي المقارن:</strong> بنى المقال على أسلوب «لم يقل كذا بل قال كذا» — استخراج الدلالة من اختيار اللفظ القرآني الدقيق.</li>
+      <li><strong>استثمار الاستعارة القرآنية:</strong> طوّر استعارة «الانسلاخ» إلى صورة القلب المسلوخ من النور — تعميق للصورة الأصلية.</li>
+      <li><strong>الإسقاط على الواقع:</strong> ربط القصة بمن باعوا مبادئهم بالدنيا من أهل العلم والدعوة — تنزيل حي للعبرة.</li>
+      <li><strong>الختام بالدعاء النبوي:</strong> ضمّن دعاءه معنى حديث «يا مقلّب القلوب» — ربط الموعظة بالسنة الثابتة.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong style="color:var(--pg);">العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضراً أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong style="color:var(--pg);">البُعد الزمني:</strong> الربط الحي بين النص القرآني ومستجدات العصر — يُحذّر من فتن الانسلاخ عن الدين بلغة معاصرة.</p>
+      <p><strong style="color:var(--pg);">التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ مما يُضفي على كتاباته دقةً عقدية نادرة.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم، ونفع به الأمة في زمن كثرت فيه أسباب الفتنة والانسلاخ.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">التزكية والرقائق</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">الثبات على الدين</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  const sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+const secs=document.querySelectorAll('.sec[id]');
+const links=document.querySelectorAll('.toc-a');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a) a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>{
+  document.getElementById('sb').classList.add('off');
+  document.getElementById('sb').classList.remove('open');
+}));
+</script>
+</body>
+</html>

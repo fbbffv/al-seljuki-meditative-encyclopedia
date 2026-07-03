@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة — الفهرس الرئيسي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0e1410;--bg:#eef2ee;--bg2:#dde6de;
+  --green:#0d3b2a;--gm:#155e42;--glt:#2e9068;
+  --gd:#04140c;--gt:#d0f0e0;--gg:#88d8b0;
+  --gold:#b0902a;--gold-m:#c9a838;--gold-l:#e0c860;
+  --div:#a8c8b4;--mist:#123424;
+  --new:#c0392b;--new-l:#e05545;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.9;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(13,59,42,.08) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(176,144,42,.06) 0%,transparent 55%);min-height:100vh;}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--gm),var(--gold));z-index:400;transform-origin:top;height:0;}
+.hdr{background:var(--gd);border-bottom:2px solid var(--gm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:center;padding:0 32px;max-width:1300px;margin:0 auto;height:60px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--glt);font-size:1.15rem;font-weight:700;}
+.logo span{color:var(--gold-m);}
+.hero{text-align:center;padding:60px 24px 40px;max-width:1000px;margin:0 auto;}
+.crown{font-size:2.4rem;color:var(--gold-m);margin-bottom:20px;letter-spacing:.3em;opacity:.85;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:3rem;font-weight:700;color:var(--gd);line-height:1.4;margin-bottom:16px;}
+.hero .sub{font-family:'Scheherazade New',serif;font-size:1.3rem;color:var(--gm);margin-bottom:24px;}
+.hero .desc{font-size:1.05rem;color:var(--mist);max-width:720px;margin:0 auto;line-height:2;}
+.author-badge{display:inline-flex;align-items:center;gap:12px;background:var(--gd);border:1px solid rgba(46,144,104,.4);border-radius:40px;padding:10px 26px;margin-top:22px;}
+.author-badge .a-ava{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gm),var(--green));display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;color:#fff;font-size:1.2rem;border:2px solid var(--glt);}
+.author-badge .a-txt{text-align:right;}
+.author-badge .a-name{color:var(--gt);font-family:'Scheherazade New',serif;font-size:1rem;}
+.author-badge .a-meta{color:var(--gg);font-size:.76rem;}
+.stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;max-width:900px;margin:36px auto 10px;padding:0 24px;}
+.stat{text-align:center;}
+.stat .num{font-family:'Scheherazade New',serif;font-size:2.8rem;font-weight:700;color:var(--gm);position:relative;display:inline-block;}
+.stat .num .pulse{position:absolute;top:-6px;left:-14px;width:10px;height:10px;background:var(--new);border-radius:50%;animation:pulse 1.6s infinite;}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(192,57,43,.6);}70%{box-shadow:0 0 0 12px rgba(192,57,43,0);}100%{box-shadow:0 0 0 0 rgba(192,57,43,0);}}
+.stat .lbl{color:var(--mist);font-size:.9rem;}
+.divider{text-align:center;color:var(--gold-m);font-size:1.3rem;letter-spacing:.5em;margin:30px 0 40px;opacity:.6;}
+.wrap{max-width:1300px;margin:0 auto;padding:0 32px 80px;}
+/* LATEST */
+.latest{background:linear-gradient(135deg,var(--gd),#0a2a1e);border:2px solid var(--gold-m);border-radius:18px;padding:30px 32px;margin-bottom:56px;position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(13,59,42,.25);}
+.latest::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(201,168,56,.14),transparent 60%);pointer-events:none;}
+.latest-label{display:flex;align-items:center;gap:12px;margin-bottom:22px;position:relative;}
+.latest-label .spark{font-size:1.4rem;color:var(--gold-l);animation:twinkle 2s infinite;}
+@keyframes twinkle{0%,100%{opacity:1;}50%{opacity:.4;}}
+.latest-label h2{font-family:'Scheherazade New',serif;font-size:1.6rem;color:var(--gt);}
+.latest-label .count{margin-right:auto;background:var(--new);color:#fff;font-size:.72rem;padding:4px 14px;border-radius:20px;font-weight:600;}
+.latest-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;position:relative;}
+.latest-card{background:#fff;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 20px rgba(0,0,0,.2);text-decoration:none;transition:transform .22s;position:relative;}
+.latest-card:hover{transform:translateY(-4px);}
+.latest-card .lc-side{background:linear-gradient(135deg,var(--lc-a),var(--lc-b));padding:24px 26px;position:relative;min-height:130px;display:flex;flex-direction:column;justify-content:center;}
+.latest-card .lc-verse{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#fff;line-height:1.85;}
+.latest-card .lc-ref{color:var(--gold-l);font-size:.8rem;margin-top:10px;}
+.latest-card .lc-body{padding:22px 26px;display:flex;flex-direction:column;flex:1;}
+.latest-card .lc-body h3{font-family:'Scheherazade New',serif;font-size:1.4rem;color:var(--gd);line-height:1.5;margin-bottom:10px;}
+.latest-card .lc-topic{color:var(--gm);font-size:.86rem;margin-bottom:14px;}
+.latest-card .lc-cta{margin-top:auto;color:var(--gold);font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:8px;}
+.latest-card .lc-arrow{transition:transform .2s;}
+.latest-card:hover .lc-arrow{transform:translateX(-6px);}
+.new-ribbon{position:absolute;top:16px;left:-42px;background:linear-gradient(90deg,var(--new),var(--new-l));color:#fff;font-size:.76rem;font-weight:700;padding:6px 48px;transform:rotate(-45deg);box-shadow:0 3px 10px rgba(0,0,0,.35);z-index:5;letter-spacing:.05em;}
+.date-tag{color:var(--gg);font-size:.76rem;margin-top:10px;display:flex;align-items:center;gap:6px;}
+/* GRID */
+.sec-label{display:flex;align-items:center;gap:16px;margin:0 0 34px;}
+.sec-label h2{font-family:'Scheherazade New',serif;font-size:1.9rem;color:var(--gd);white-space:nowrap;}
+.sec-label::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,var(--gold-m),transparent);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px;}
+.card{background:#fff;border:1px solid var(--div);border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.06);transition:transform .22s,box-shadow .22s,border-color .22s;text-decoration:none;display:flex;flex-direction:column;position:relative;}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(13,59,42,.18);border-color:var(--gm);}
+.card-top{padding:22px 24px 16px;position:relative;background:linear-gradient(135deg,var(--card-a,#0d3b2a),var(--card-b,#155e42));min-height:116px;display:flex;flex-direction:column;justify-content:space-between;}
+.card-num{position:absolute;top:14px;left:18px;font-family:'Scheherazade New',serif;font-size:2.6rem;font-weight:700;color:rgba(255,255,255,.18);line-height:1;}
+.card-badge{align-self:flex-start;background:rgba(255,255,255,.16);color:#fff;font-size:.68rem;padding:3px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.2);}
+.card-verse{font-family:'Scheherazade New',serif;font-size:1rem;color:rgba(255,255,255,.92);margin-top:auto;line-height:1.7;}
+.card-body{padding:18px 24px 22px;display:flex;flex-direction:column;flex:1;}
+.card-body h3{font-family:'Scheherazade New',serif;font-size:1.28rem;color:var(--gd);line-height:1.5;margin-bottom:10px;}
+.card-ref{color:var(--gm);font-size:.82rem;margin-bottom:14px;}
+.card-cta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px dashed var(--div);}
+.card-cta .read{color:var(--gm);font-size:.86rem;font-weight:600;}
+.card-cta .arrow{color:var(--gold-m);font-size:1.1rem;transition:transform .2s;}
+.card:hover .card-cta .arrow{transform:translateX(-5px);}
+footer{background:var(--gd);color:#4a6a54;text-align:center;padding:40px 20px;font-size:.85rem;border-top:1px solid rgba(46,144,104,.22);}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.2rem;margin-bottom:9px;color:var(--glt);}
+footer .fb span{color:var(--gg);}
+footer .fl{margin-top:8px;font-size:.77rem;opacity:.6;}
+@media(max-width:640px){.hero h1{font-size:2.1rem;}.grid{grid-template-columns:1fr;}.latest-grid{grid-template-columns:1fr;}.wrap{padding:0 16px 60px;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i"><div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div></div>
+</header>
+
+<div class="hero">
+  <div class="crown">✦ ✧ ❖ ✧ ✦</div>
+  <h1>مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</h1>
+  <div class="sub">تَأَمُّلَاتٌ فِي كِتَابِ اللهِ · تَحْلِيلٌ بَلَاغِيٌّ وَلُغَوِيٌّ وَإِعْرَابِيٌّ</div>
+  <p class="desc">مَجْمُوعَةٌ مِنَ المَقَالَاتِ التَّدَبُّرِيَّةِ فِي آيَاتِ القُرْآنِ الكَرِيمِ، تَجْمَعُ التَّحْلِيلَ البَلَاغِيَّ وَاللُّغَوِيَّ وَالإِعْرَابِيَّ مَعَ تَوْثِيقِ المَصَادِرِ.</p>
+  <div class="author-badge">
+    <div class="a-ava">ع</div>
+    <div class="a-txt">
+      <div class="a-name">الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</div>
+      <div class="a-meta">باحث في علوم القرآن والتدبر المعاصر · العراق ١٩٧٠م</div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="num">٣٣<span class="pulse"></span></div><div class="lbl">مقالاً تدبرياً</div></div>
+    <div class="stat"><div class="num">٦</div><div class="lbl">محاور لكل مقال</div></div>
+    <div class="stat"><div class="num">✦</div><div class="lbl">يُحدَّث باستمرار</div></div>
+  </div>
+</div>
+
+<div class="divider">✦ ✧ ✦</div>
+
+<div class="wrap">
+
+  <!-- أحدث ما أُضيف: مقالان -->
+  <div class="latest">
+    <div class="latest-label">
+      <span class="spark">✦</span>
+      <h2>أَحْدَثُ مَا أُضِيفَ إِلَى الْمَوْسُوعَةِ</h2>
+      <span class="count">جديد</span>
+    </div>
+    <div class="latest-grid">
+
+      <a class="latest-card" href="article31-ibtila-tamhis.html" style="--lc-a:#1a5a4a;--lc-b:#2a8a6e;">
+        <div class="new-ribbon">جديد ✦</div>
+        <div class="lc-side">
+          <div class="lc-verse">﴿أَحَسِبَ النَّاسُ أَن يُتْرَكُوا أَن يَقُولُوا آمَنَّا وَهُمْ لَا يُفْتَنُونَ﴾</div>
+          <div class="lc-ref">العنكبوت: ٢</div>
+        </div>
+        <div class="lc-body">
+          <h3>حِينَ يَبْتَلِي اللَّهُ... وَحِينَ يُمَحِّصُ</h3>
+          <div class="lc-topic">◈ الابتلاء والفتنة والتمحيص</div>
+          <div class="lc-cta"><span>اقرأ المقال الجديد</span><span class="lc-arrow">←</span></div>
+          <div class="date-tag">🗓 أُضيف حديثاً</div>
+        </div>
+      </a>
+
+      <a class="latest-card" href="article24-alqab-mamlaka.html" style="--lc-a:#2e2a20;--lc-b:#54503e;">
+        <div class="new-ribbon">جديد ✦</div>
+        <div class="lc-side">
+          <div class="lc-verse">﴿وَتِلْكَ الْأَيَّامُ نُدَاوِلُهَا بَيْنَ النَّاسِ﴾</div>
+          <div class="lc-ref">آل عمران: ١٤٠ · القصص: ٢٦</div>
+        </div>
+        <div class="lc-body">
+          <h3>أَلْقَابُ مَمْلَكَةٍ... لَيْسَتْ فِي مَوَاضِعِهَا</h3>
+          <div class="lc-topic">◈ الكفاءة والأمانة والموازين</div>
+          <div class="lc-cta"><span>اقرأ المقال الجديد</span><span class="lc-arrow">←</span></div>
+          <div class="date-tag">🗓 أُضيف حديثاً</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="sec-label"><h2>فهرس المقالات</h2></div>
+  <div class="grid">
+
+    <a class="card" href="article34-tuhsi-alniam.html" style="--card-a:#1a6a4a;--card-b:#2a9a6e;">
+      <div class="card-top"><div class="card-num">٣٤</div><div class="card-badge">الضحى ١١</div><div class="card-verse">﴿وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ﴾</div></div>
+      <div class="card-body"><h3>حِينَ تُحْصِي النِّعَمَ يَزْهَرُ الْقَلْبُ</h3><div class="card-ref">◈ شكر النعم</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article33-tuqallabu-wujuhuhum.html" style="--card-a:#7a2a1a;--card-b:#b0442a;">
+      <div class="card-top"><div class="card-num">٣٣</div><div class="card-badge">الأحزاب ٦٦</div><div class="card-verse">﴿يَوْمَ تُقَلَّبُ وُجُوهُهُمْ فِي النَّارِ﴾</div></div>
+      <div class="card-body"><h3>حِينَ تُقَلَّبُ وُجُوهُهُمْ فِي النَّارِ</h3><div class="card-ref">◈ طاعة الله والرسول</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article32-yaiduka-alshaytan.html" style="--card-a:#4a2a6a;--card-b:#6e42a0;">
+      <div class="card-top"><div class="card-num">٣٢</div><div class="card-badge">البقرة ٢٦٨</div><div class="card-verse">﴿الشَّيْطَانُ يَعِدُكُمُ الْفَقْرَ﴾</div></div>
+      <div class="card-body"><h3>حِينَ يَعِدُكَ الشَّيْطَانُ بِالْفَقْرِ</h3><div class="card-ref">◈ الإنفاق ووساوس الشيطان</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article30-firawn-qarun.html" style="--card-a:#6a4a1a;--card-b:#9a742a;">
+      <div class="card-top"><div class="card-num">٣٠</div><div class="card-badge">العنكبوت ٤٠</div><div class="card-verse">﴿فَكُلًّا أَخَذْنَا بِذَنبِهِ﴾</div></div>
+      <div class="card-body"><h3>بَيْنَ فِرْعَوْنَ وَقَارُونَ</h3><div class="card-ref">◈ الطغيان والاستكبار</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article29-hilf-alfudul.html" style="--card-a:#1a5a5a;--card-b:#2a8a86;">
+      <div class="card-top"><div class="card-num">٢٩</div><div class="card-badge">حديث نبوي</div><div class="card-verse">«لَقَدْ شَهِدْتُ حِلْفًا... وَلَوْ دُعِيتُ بِهِ فِي الْإِسْلَامِ لَأَجَبْتُ»</div></div>
+      <div class="card-body"><h3>حِلْفُ الْفُضُولِ</h3><div class="card-ref">◈ نصرة المظلوم والعدل</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article28-kayfa-jamaanahum.html" style="--card-a:#2a3a6a;--card-b:#42589a;">
+      <div class="card-top"><div class="card-num">٢٨</div><div class="card-badge">آل عمران ٢٥</div><div class="card-verse">﴿فَكَيْفَ إِذَا جَمَعْنَاهُمْ لِيَوْمٍ لَّا رَيْبَ فِيهِ﴾</div></div>
+      <div class="card-body"><h3>كَيْفَ إِذَا جَمَعْنَاهُمْ؟!</h3><div class="card-ref">◈ يوم الجمع والحساب</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article27-tashri-lighayrillah.html" style="--card-a:#5a1a3a;--card-b:#8a2a5e;">
+      <div class="card-top"><div class="card-num">٢٧</div><div class="card-badge">الشورى ٢١</div><div class="card-verse">﴿أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم مِّنَ الدِّينِ﴾</div></div>
+      <div class="card-body"><h3>حِينَ يُصْبِحُ التَّشْرِيعُ لِغَيْرِ اللَّهِ</h3><div class="card-ref">◈ التشريع والتوحيد</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article26-sabbih-alaala.html" style="--card-a:#1a5a3a;--card-b:#2a8a5e;">
+      <div class="card-top"><div class="card-num">٢٦</div><div class="card-badge">الأعلى ١</div><div class="card-verse">﴿سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى﴾</div></div>
+      <div class="card-body"><h3>سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى</h3><div class="card-ref">◈ التسبيح والتنزيه</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article23-sayaalam.html" style="--card-a:#5a1414;--card-b:#8a2626;">
+      <div class="card-top"><div class="card-num">٢٣</div><div class="card-badge">الشعراء ٢٢٧</div><div class="card-verse">﴿أَيَّ مُنقَلَبٍ يَنقَلِبُونَ﴾</div></div>
+      <div class="card-body"><h3>وَسَيَعْلَمُ حِينَ يَنْكَشِفُ الغِطَاءُ</h3><div class="card-ref">◈ العدل وعاقبة الظالمين</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article22-qa-aljubb.html" style="--card-a:#3a1a6a;--card-b:#5e2ea8;">
+      <div class="card-top"><div class="card-num">٢٢</div><div class="card-badge">يوسف ١٩</div><div class="card-verse">﴿قَالَ يَا بُشْرَىٰ هَٰذَا غُلَامٌ﴾</div></div>
+      <div class="card-body"><h3>مِنْ قَاعِ الجُبِّ تَبْدَأُ الحِكَايَةُ لَا تَنْتَهِي</h3><div class="card-ref">◈ الأمل والفرج</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article21-suqut-alashkhas.html" style="--card-a:#0a4a4a;--card-b:#1a7a76;">
+      <div class="card-top"><div class="card-num">٢١</div><div class="card-badge">آل عمران ١٤٤</div><div class="card-verse">﴿وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ﴾</div></div>
+      <div class="card-body"><h3>حِينَ يَسْقُطُ الْأَشْخَاصُ فَلَا تَسْقُطُ الْمَبَادِئُ</h3><div class="card-ref">◈ التعلق بالحق لا بالأشخاص</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article20-sakrat-almawt.html" style="--card-a:#4a3420;--card-b:#785030;">
+      <div class="card-top"><div class="card-num">٢٠</div><div class="card-badge">ق ١٩</div><div class="card-verse">﴿وَجَاءَتْ سَكْرَةُ الْمَوْتِ بِالْحَقِّ﴾</div></div>
+      <div class="card-body"><h3>حِينَ تَنْطَفِئُ الْأَصْوَاتُ وَلَا يَبْقَى إِلَّا الْعَمَلُ</h3><div class="card-ref">◈ الموت وبقاء العمل</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article19-dhun-nun.html" style="--card-a:#0e2a5a;--card-b:#1e4a8a;">
+      <div class="card-top"><div class="card-num">١٩</div><div class="card-badge">الأنبياء ٨٧</div><div class="card-verse">﴿لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ﴾</div></div>
+      <div class="card-body"><h3>مِنْ أَعْمَاقِ الظُّلُمَاتِ يُولَدُ فَجْرُ النَّجَاةِ</h3><div class="card-ref">◈ دعاء ذي النون</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article18-insalakha.html" style="--card-a:#0e4a30;--card-b:#1a7050;">
+      <div class="card-top"><div class="card-num">١٨</div><div class="card-badge">الأعراف ١٧٥</div><div class="card-verse">﴿فَانْسَلَخَ مِنْهَا فَأَتْبَعَهُ الشَّيْطَانُ﴾</div></div>
+      <div class="card-body"><h3>حِينَ يُسْلَخُ القَلْبُ مِنَ النُّورِ</h3><div class="card-ref">◈ الثبات على الدين</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article17-ali-ibn-abi-talib.html" style="--card-a:#2a3344;--card-b:#43526e;">
+      <div class="card-top"><div class="card-num">١٧</div><div class="card-badge">البقرة ١٤١</div><div class="card-verse">﴿تِلْكَ أُمَّةٌ قَدْ خَلَتْ﴾</div></div>
+      <div class="card-body"><h3>أَمِيرُ الْمُؤْمِنِينَ عليّ... الْمُبْتَلَى الْمَظْلُومُ</h3><div class="card-ref">◈ الإنصاف والوسطية</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article16-yusuf-raf-aldhulm.html" style="--card-a:#6a1a2a;--card-b:#9a2e44;">
+      <div class="card-top"><div class="card-num">١٦</div><div class="card-badge">يوسف ٥٤</div><div class="card-verse">﴿إِنَّكَ الْيَوْمَ لَدَيْنَا مَكِينٌ أَمِينٌ﴾</div></div>
+      <div class="card-body"><h3>يُوسُفُ بَيْنَ رَفْعِ الظُّلْمِ وَالتَّحَاكُمِ</h3><div class="card-ref">◈ العدل والتمكين</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article15-bara-aisha.html" style="--card-a:#1a4a6a;--card-b:#2a6e9a;">
+      <div class="card-top"><div class="card-num">١٥</div><div class="card-badge">النور ١١</div><div class="card-verse">﴿إِنَّ الَّذِينَ جَاءُوا بِالْإِفْكِ﴾</div></div>
+      <div class="card-body"><h3>حِينَ تَمْتَدُّ الأَلْسِنَةُ إِلَى الطُّهْرِ</h3><div class="card-ref">◈ الدفاع عن عائشة</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article14-allama-alquran.html" style="--card-a:#4a5a1a;--card-b:#76902e;">
+      <div class="card-top"><div class="card-num">١٤</div><div class="card-badge">الرحمن ١</div><div class="card-verse">﴿الرَّحْمَٰنُ ۝ عَلَّمَ الْقُرْآنَ﴾</div></div>
+      <div class="card-body"><h3>قَبْلَ أَنْ يُخْلَقَ الإِنْسَانُ كَانَ القُرْآنُ</h3><div class="card-ref">◈ فضل القرآن</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article13-tasheea-alfahisha.html" style="--card-a:#7a1a5a;--card-b:#a82e80;">
+      <div class="card-top"><div class="card-num">١٣</div><div class="card-badge">النور ١٩</div><div class="card-verse">﴿إِنَّ الَّذِينَ يُحِبُّونَ أَن تَشِيعَ الْفَاحِشَةُ﴾</div></div>
+      <div class="card-body"><h3>حِينَ تَتَحَوَّلُ الْفَضِيحَةُ إِلَى تِجَارَةٍ</h3><div class="card-ref">◈ حادثة الإفك</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article12-zilal-alrahma.html" style="--card-a:#0d5a54;--card-b:#159888;">
+      <div class="card-top"><div class="card-num">١٢</div><div class="card-badge">الفرقان ٤٥</div><div class="card-verse">﴿أَلَمْ تَرَ إِلَىٰ رَبِّكَ كَيْفَ مَدَّ الظِّلَّ﴾</div></div>
+      <div class="card-body"><h3>ظِلَالُ الرَّحْمَةِ بَيْنَ حَرَكَةِ الْكَوْنِ وَسُكُونِ الْفَنَاءِ</h3><div class="card-ref">◈ آيات الكون والرحمة</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article11-sarab-aldunya.html" style="--card-a:#7a5a1a;--card-b:#a8842a;">
+      <div class="card-top"><div class="card-num">١١</div><div class="card-badge">البقرة ٢١٢</div><div class="card-verse">﴿زُيِّنَ لِلَّذِينَ كَفَرُوا الْحَيَاةُ الدُّنْيَا﴾</div></div>
+      <div class="card-body"><h3>بَيْنَ سَرَابِ الدُّنْيَا وَعُلُوِّ الْآخِرَةِ</h3><div class="card-ref">◈ الدنيا والآخرة</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article10-saraqathu-alrahma.html" style="--card-a:#3a4a1a;--card-b:#5e762e;">
+      <div class="card-top"><div class="card-num">١٠</div><div class="card-badge">فصلت ٣٤</div><div class="card-verse">﴿ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ﴾</div></div>
+      <div class="card-body"><h3>جَاءَ لِيَسْرِقَ الدُّنْيَا فَسَرَقَتْهُ الرَّحْمَةُ</h3><div class="card-ref">◈ دفع السيئة بالحسنة</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article9-hina-tustanzaf.html" style="--card-a:#1a3a7a;--card-b:#2a5ab0;">
+      <div class="card-top"><div class="card-num">٩</div><div class="card-badge">الأنفال ٣٦</div><div class="card-verse">﴿يُنفِقُونَ أَمْوَالَهُمْ لِيَصُدُّوا﴾</div></div>
+      <div class="card-body"><h3>حِينَ تُسْتَنْزَفُ المِلْيَارَاتُ</h3><div class="card-ref">◈ الإنفاق في الباطل</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article8-ma-asbarahum.html" style="--card-a:#8a1a1a;--card-b:#c03434;">
+      <div class="card-top"><div class="card-num">٨</div><div class="card-badge">البقرة ١٧٥</div><div class="card-verse">﴿فَمَا أَصْبَرَهُمْ عَلَى النَّارِ﴾</div></div>
+      <div class="card-body"><h3>فَمَا أَصْبَرَهُمْ عَلَى النَّارِ</h3><div class="card-ref">◈ العناد والضلال</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article7-alkhunnas.html" style="--card-a:#3a2a6a;--card-b:#5a3e9a;">
+      <div class="card-top"><div class="card-num">٧</div><div class="card-badge">التكوير ١٥</div><div class="card-verse">﴿فَلَا أُقْسِمُ بِالْخُنَّسِ﴾</div></div>
+      <div class="card-body"><h3>الخُنَّسِ الْجَوَارِ الْكُنَّسِ</h3><div class="card-ref">◈ آيات الكون</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article6-surat-alfalaq.html" style="--card-a:#0d5a3a;--card-b:#159060;">
+      <div class="card-top"><div class="card-num">٦</div><div class="card-badge">الفلق ١</div><div class="card-verse">﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾</div></div>
+      <div class="card-body"><h3>سُورَةُ الْفَلَقِ</h3><div class="card-ref">◈ الاستعاذة والحفظ</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article5-yawm-albatsha.html" style="--card-a:#2a2a7a;--card-b:#4444b0;">
+      <div class="card-top"><div class="card-num">٥</div><div class="card-badge">الدخان ١٦</div><div class="card-verse">﴿يَوْمَ نَبْطِشُ الْبَطْشَةَ الْكُبْرَىٰ﴾</div></div>
+      <div class="card-body"><h3>يَوْمُ الْبَطْشَةِ الْكُبْرَى</h3><div class="card-ref">◈ الوعيد والجزاء</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article4-yathoob-alwajh.html" style="--card-a:#8a3410;--card-b:#c85a1e;">
+      <div class="card-top"><div class="card-num">٤</div><div class="card-badge">المؤمنون ١٠٤</div><div class="card-verse">﴿تَلْفَحُ وُجُوهَهُمُ النَّارُ﴾</div></div>
+      <div class="card-body"><h3>حِينَ يَذُوبُ الوَجْهُ فِي اللَّهَبِ</h3><div class="card-ref">◈ أهوال الآخرة</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article3-zagm-iman.html" style="--card-a:#0d5a54;--card-b:#159088;">
+      <div class="card-top"><div class="card-num">٣</div><div class="card-badge">النساء ٦٠</div><div class="card-verse">﴿يُرِيدُونَ أَن يَتَحَاكَمُوا إِلَى الطَّاغُوتِ﴾</div></div>
+      <div class="card-body"><h3>حِينَ يُصْبِحُ الزَّعْمُ إِيمَاناً</h3><div class="card-ref">◈ الإيمان والتحاكم</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article-hawa-sharia.html" style="--card-a:#4a2a6a;--card-b:#6e3ea8;">
+      <div class="card-top"><div class="card-num">٢</div><div class="card-badge">المائدة ٤٤</div><div class="card-verse">﴿وَمَن لَّمْ يَحْكُم بِمَا أَنزَلَ اللَّهُ﴾</div></div>
+      <div class="card-body"><h3>حِينَ يَتَحَوَّلُ الْهَوَى إِلَى شَرِيعَةٍ</h3><div class="card-ref">◈ الحكم والهوى</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+    <a class="card" href="article-alsuljuqi.html" style="--card-a:#8a6d1a;--card-b:#b8901e;">
+      <div class="card-top"><div class="card-num">١</div><div class="card-badge">آل عمران ٢٦</div><div class="card-verse">﴿قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ﴾</div></div>
+      <div class="card-body"><h3>عَلَى أَبْوَابِ الْعُرُوشِ الْمُهَدَّمَةِ</h3><div class="card-ref">◈ التداول والملك</div><div class="card-cta"><span class="read">اقرأ المقال</span><span class="arrow">←</span></div></div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p class="fl">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق ١٩٧٠م</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(h>0?(t/h*100):0)+'vh';
+});
+</script>
+</body>
+</html>

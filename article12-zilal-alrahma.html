@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ظِلَالُ الرَّحْمَةِ — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a1410;--bg:#eef6f4;--bg2:#dcecea;
+  --teal:#0a4a44;--tm:#1a7a70;--tlt:#3aa89a;
+  --td:#04140f;--tt:#d0f0ea;--tg:#80e0c8;
+  --amber:#c89048;--gold:#b8860b;--gold-m:#c9a84c;
+  --div:#7ac4b8;--mist:#1a3a34;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(10,74,68,.07) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(58,168,154,.05) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--tm),var(--amber));z-index:400;transform-origin:top;}
+.hdr{background:var(--td);border-bottom:2px solid var(--tm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--tlt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--tg);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--tt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--teal);color:var(--tg);border:1px solid rgba(58,168,154,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--tm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#021008;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(58,168,154,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--tlt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(58,168,154,.2);}
+.toc-s{color:rgba(58,168,154,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#5aa89c;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--tt);background:rgba(58,168,154,.1);border-right-color:var(--tlt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--tm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--tlt);}
+.hcat{display:inline-block;background:var(--teal);color:var(--tt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.5rem;font-weight:700;color:var(--td);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--tm);border-radius:50%;}
+.vb{background:var(--td);border:1px solid rgba(58,168,154,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(58,168,154,.1),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--tt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.4rem;}
+.vr{color:var(--tg);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#0a1410;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--tm);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--teal);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--tm);background:rgba(10,74,68,.06);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--tm);font-weight:700;text-align:center;margin:9px 0;}
+.scene-list{list-style:none;padding:0;margin:10px 0 20px;}
+.scene-list li{font-family:'Scheherazade New',serif;font-size:1.12rem;color:var(--teal);padding:8px 0;border-bottom:1px dashed var(--div);text-align:center;}
+.scene-list li:last-child{border-bottom:none;}
+.contrast-list{list-style:none;padding:0;margin:14px 0;}
+.contrast-list li{font-family:'Scheherazade New',serif;font-size:1.15rem;color:var(--td);padding:9px 0;border-bottom:1px dashed var(--div);text-align:center;font-weight:600;}
+.contrast-list li:last-child{border-bottom:none;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--td);color:var(--tlt);border:2px solid var(--tm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--td);border-bottom:2px solid var(--tlt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--teal);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.t{border-right:5px solid var(--tm);}
+.card.t2{border-right:5px solid var(--teal);}
+.card.t3{border-right:5px solid var(--amber);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#04140f;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#0a1410;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--tm);color:var(--tt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--td);color:var(--tg);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--tm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(58,168,154,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#04140f;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ex{color:var(--teal);font-style:italic;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#04140f;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#04140f;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--tlt);border-bottom:2px solid var(--tlt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--tlt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#021008,#04180f);border:1px solid rgba(58,168,154,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--tlt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(58,168,154,.25);}
+.ci{color:#80c0b4;padding:9px 0;border-bottom:1px dashed rgba(58,168,154,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--tt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--tg);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#021008,#06180e);border:1px solid rgba(58,168,154,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#80c0b4;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--tt);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--tm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#04140f;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#0a1410;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--tm);font-size:.85em;top:11px;}
+.asec{background:var(--td);border:1px solid rgba(58,168,154,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--tm),var(--teal));border:3px solid var(--tlt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--tt);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--tg);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#80c0b4;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(58,168,154,.1);border:1px solid rgba(58,168,154,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--tg);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--tt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(58,168,154,.16);color:var(--tlt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(58,168,154,.28);}
+.orn{text-align:center;color:var(--tlt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--td);color:#2a5a50;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(58,168,154,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--tlt);}
+footer .fb span{color:var(--tg);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:2.1rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.28rem;}.hero h1{font-size:1.65rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">⌂ الفهرس الرئيسي</a>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">ظِلَالُ الرَّحْمَةِ بَيْنَ حَرَكَةِ الْكَوْنِ وَسُكُونِ الْفَنَاءِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تأمل كوني · الفرقان ٤٥ · مقالة إيمانية</div>
+  <h1>ظِلَالُ الرَّحْمَةِ بَيْنَ حَرَكَةِ الْكَوْنِ وَسُكُونِ الْفَنَاءِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>الفرقان: ٤٥</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿أَلَمْ تَرَ إِلَىٰ رَبِّكَ كَيْفَ مَدَّ الظِّلَّ وَلَوْ شَاءَ لَجَعَلَهُ سَاكِنًا ثُمَّ جَعَلْنَا الشَّمْسَ عَلَيْهِ دَلِيلًا﴾</div>
+    <div class="vr">سورة الفرقان، الآية ٤٥</div>
+  </div>
+  <div class="abody">
+    <p>مَا أَكْثَرَ مَا يَمُرُّ الْإِنْسَانُ تَحْتَ الظِّلَالِ دُونَ أَنْ يُفَكِّرَ فِيهَا، وَمَا أَكْثَرَ مَا يَرَى امْتِدَادَهَا وَانْكِمَاشَهَا فَلَا يَتَوَقَّفُ لَحْظَةً لِيَسْأَلَ: مَنِ الَّذِي يُحَرِّكُ هَذَا السِّتَارَ الْعَظِيمَ فَوْقَ وَجْهِ الْأَرْضِ؟ وَمَنِ الَّذِي يَمُدُّهُ وَيَقْبِضُهُ بِهَذَا النِّظَامِ الْعَجِيبِ الَّذِي لَا يَخْتَلُّ مُنْذُ آلَافِ السِّنِينَ؟</p>
+
+    <p>إِنَّ الْقُرْآنَ لَا يَمُرُّ عَلَى الظِّلِّ مُرُورًا عَابِرًا، بَلْ يَلْفِتُ الْقَلْبَ وَالْعَقْلَ إِلَى آيَةٍ مِنْ آيَاتِ اللهِ الَّتِي تَتَكَرَّرُ كُلَّ يَوْمٍ حَتَّى أَلِفَتْهَا الْعُيُونُ وَغَفَلَتْ عَنْهَا الْقُلُوبُ.</p>
+
+    <div class="vb" style="margin:18px 0;"><div class="vt sm">﴿أَلَمْ تَرَ إِلَىٰ رَبِّكَ كَيْفَ مَدَّ الظِّلَّ﴾</div></div>
+
+    <p>إِنَّهَا دَعْوَةٌ لِلتَّأَمُّلِ... دَعْوَةٌ لِلنَّظَرِ... دَعْوَةٌ لِاكْتِشَافِ مُعْجِزَةٍ نَعِيشُ دَاخِلَهَا كُلَّ صَبَاحٍ. فَالظِّلُّ لَيْسَ مُجَرَّدَ مِسَاحَةٍ غَابَتْ عَنْهَا أَشِعَّةُ الشَّمْسِ، بَلْ هُوَ نِظَامُ حَيَاةٍ كَامِلٍ.</p>
+
+    <ul class="scene-list">
+      <li>يَمْتَدُّ الظِّلُّ مَعَ الْفَجْرِ فَيَغْمُرُ الْأَرْضَ بِالسَّكِينَةِ.</li>
+      <li>تَخْرُجُ الطُّيُورُ مِنْ أَوْكَارِهَا.</li>
+      <li>وَتَتَنَفَّسُ الْأَشْجَارُ أَنْفَاسَ الصَّبَاحِ النَّدِيَّةِ.</li>
+      <li>وَيَبْدَأُ الْإِنْسَانُ يَوْمَهُ فِي جَوٍّ مُعْتَدِلٍ لَمْ تَشْتَدَّ فِيهِ حَرَارَةُ الشَّمْسِ بَعْدُ.</li>
+      <li>وَتَسْتَيْقِظُ الْحَيَاةُ كُلُّهَا عَلَى بِسَاطٍ مِنَ الظِّلَالِ الْمَمْدُودَةِ.</li>
+    </ul>
+
+    <p>وَلَوْ تَأَمَّلْتَ الصَّحَارِيَ الْحَارَّةَ لَرَأَيْتَ كَيْفَ يَصْبَحُ الظِّلُّ رَحْمَةً حَقِيقِيَّةً.</p>
+
+    <div class="hl">شَجَرَةٌ وَاحِدَةٌ قَدْ تُنْقِذُ مُسَافِرًا مِنَ الْهَلَاكِ.</div>
+    <div class="hl">وَجِدَارٌ صَغِيرٌ قَدْ يَحْمِي إِنْسَانًا مِنْ لَفَحَاتِ الشَّمْسِ.</div>
+    <div class="hl">وَسَحَابَةٌ عَابِرَةٌ قَدْ تُدْخِلُ السُّرُورَ إِلَى قُلُوبِ أَهْلِ الْأَرْضِ.</div>
+
+    <p>فَالظِّلُّ فِي حَقِيقَتِهِ صُورَةٌ مِنْ صُوَرِ رَحْمَةِ اللهِ الْمَمْتَدَّةِ فِي الْكَوْنِ. ثُمَّ تَأْتِي اللَّفْتَةُ الْمَهِيبَةُ:</p>
+
+    <div class="vb" style="margin:18px 0;"><div class="vt sm">﴿وَلَوْ شَاءَ لَجَعَلَهُ سَاكِنًا﴾</div></div>
+
+    <p>يَا لَهَا مِنْ كَلِمَةٍ تَهُزُّ الْقَلْبَ! نَحْنُ اعْتَدْنَا حَرَكَةَ الظِّلِّ حَتَّى ظَنَنَّاهَا أَمْرًا طَبِيعِيًّا لَا يَحْتَاجُ إِلَى تَفْكِيرٍ. لَكِنْ مَاذَا لَوْ سَكَنَ الظِّلُّ؟</p>
+
+    <div class="ql">مَاذَا لَوْ تَوَقَّفَ هَذَا الِامْتِدَادُ وَالِانْكِمَاشُ؟</div>
+    <div class="ql">مَاذَا لَوْ تَوَقَّفَتِ الْأَرْضُ عَنْ دَوَرَانِهَا؟</div>
+    <div class="ql">مَاذَا لَوْ ثَبَتَ اللَّيْلُ فِي مَكَانِهِ؟ أَوْ ثَبَتَ النَّهَارُ إِلَى الْأَبَدِ؟</div>
+
+    <p>عِنْدَهَا تَتَجَمَّدُ أَرَاضٍ كَامِلَةٌ تَحْتَ بَرْدٍ لَا يُطَاقُ. وَتَخْتَفِي مَوَاسِمُ الْحَيَاةِ. وَتَتَعَطَّلُ دَوْرَةُ الْمِيَاهِ. وَتَفْسُدُ حَرَكَةُ الرِّيَاحِ. وَتَضْطَرِبُ دَرَجَاتُ الْحَرَارَةِ. وَيَخْتَلُّ التَّوَازُنُ الَّذِي تَقُومُ عَلَيْهِ الْحَيَاةُ كُلُّهَا.</p>
+
+    <p>وَفِي الْجِهَةِ الْأُخْرَى تَحْتَرِقُ الْأَرْضُ بِحَرَارَةٍ لَا تَنْقَطِعُ. وَتَيْبَسُ التُّرْبَةُ. وَتَذْبُلُ النَّبَاتَاتُ. وَتَخْتَنِقُ الْكَائِنَاتُ الْحَيَّةُ. وَتَتَحَوَّلُ النِّعْمَةُ إِلَى عَذَابٍ.</p>
+
+    <p>فَحَرَكَةُ الظِّلِّ لَيْسَتْ مُجَرَّدَ مَنْظَرٍ جَمِيلٍ، بَلْ هِيَ جُزْءٌ مِنْ مَنْظُومَةِ الْحَيَاةِ الَّتِي أَرَادَهَا اللهُ لِعِبَادِهِ. ثُمَّ تَأْتِي اللَّمْسَةُ الْبَيَانِيَّةُ الْعَجِيبَةُ:</p>
+
+    <div class="vb" style="margin:18px 0;"><div class="vt sm">﴿ثُمَّ جَعَلْنَا الشَّمْسَ عَلَيْهِ دَلِيلًا﴾</div></div>
+
+    <p>فَالظِّلُّ لَا يُعْرَفُ إِلَّا بِالنُّورِ. كَمَا أَنَّ الْحَقَّ لَا يُعْرَفُ إِلَّا حِينَ يَظْهَرُ الْبَاطِلُ.</p>
+
+    <ul class="contrast-list">
+      <li>وَكَمَا تُعْرَفُ الصِّحَّةُ بِالْمَرَضِ.</li>
+      <li>وَالرَّاحَةُ بِالتَّعَبِ.</li>
+      <li>وَالْأَمْنُ بِالْخَوْفِ.</li>
+      <li>وَالْجَنَّةُ بِالنَّارِ.</li>
+    </ul>
+
+    <p>فَالْأَشْيَاءُ تَتَجَلَّى بِأَضْدَادِهَا. وَالشَّمْسُ هِيَ الَّتِي تَكْشِفُ لِلْإِنْسَانِ حَرَكَةَ الظِّلِّ وَمَقَادِيرَهُ وَاتِّجَاهَاتِهِ. وَمِنْ خِلَالِهَا عَرَفَ النَّاسُ السَّاعَاتِ. وَقَاسُوا الْأَوْقَاتِ. وَضَبَطُوا أَعْمَالَهُمْ وَأَسْفَارَهُمْ. فَكَانَتِ الشَّمْسُ دَلِيلًا عَلَى الظِّلِّ، وَكَانَ الظِّلُّ شَاهِدًا عَلَى الشَّمْسِ.</p>
+
+    <p>وَهَكَذَا يَرْبِطُ الْقُرْآنُ بَيْنَ مَشْهَدٍ كَوْنِيٍّ بَسِيطٍ وَبَيْنَ أَعْظَمِ حَقَائِقِ الْإِيمَانِ.</p>
+
+    <div class="hl">فَالَّذِي يَمُدُّ الظِّلَّ هُوَ الَّذِي يَمُدُّ الْأَعْمَارَ.</div>
+    <div class="hl">وَالَّذِي يَقْبِضُ الظِّلَّ هُوَ الَّذِي يَقْبِضُ الْأَرْوَاحَ.</div>
+    <div class="hl">وَالَّذِي يُحَرِّكُ الشَّمْسَ هُوَ الَّذِي يُدَبِّرُ شُؤُونَ الْكَوْنِ.</div>
+
+    <p>وَالَّذِي أَجْرَى هَذِهِ السُّنَنَ الْمُحْكَمَةَ قَادِرٌ عَلَى أَنْ يَبْعَثَ الْخَلَائِقَ بَعْدَ مَوْتِهَا كَمَا يَبْعَثُ النَّهَارَ بَعْدَ اللَّيْلِ كُلَّ يَوْمٍ.</p>
+
+    <p>إِنَّ الظِّلَّ الْمَمْدُودَ رِسَالَةٌ يَوْمِيَّةٌ مِنَ اللهِ إِلَى عِبَادِهِ. رِسَالَةٌ تَقُولُ:</p>
+
+    <div class="hl">كَمَا أَنَّ الظِّلَّ لَا يَبْقَى عَلَى حَالٍ، فَكَذَلِكَ الدُّنْيَا.</div>
+    <div class="hl">وَكَمَا يَنْتَقِلُ مِنِ امْتِدَادٍ إِلَى انْقِبَاضٍ، فَكَذَلِكَ الْأَعْمَارُ.</div>
+    <div class="hl">وَكَمَا يَخْتَفِي عِنْدَ الْغُرُوبِ، فَكَذَلِكَ مَتَاعُ الْحَيَاةِ الزَّائِلُ.</div>
+
+    <ul class="contrast-list">
+      <li>أَمَّا الْبَاقِي فَهُوَ وَجْهُ اللهِ.</li>
+      <li>أَمَّا الْخَالِدُ فَهُوَ الْعَمَلُ الصَّالِحُ.</li>
+      <li>أَمَّا الظِّلُّ الْحَقِيقِيُّ الَّذِي لَا يَزُولُ فَهُوَ ظِلُّ عَرْشِ الرَّحْمَنِ يَوْمَ لَا ظِلَّ إِلَّا ظِلُّهُ.</li>
+    </ul>
+
+    <div class="vb" style="margin-top:24px;"><div class="vt sm">فَسُبْحَانَ مَنْ مَدَّ الظِّلَّ رَحْمَةً... وَجَعَلَ الشَّمْسَ عَلَيْهِ دَلِيلًا... وَجَعَلَ فِي حَرَكَةِ الْكَوْنِ دَرْسًا لِلْإِيمَانِ... وَآيَةً لِلْعَقْلِ... وَمَوْعِظَةً لِلْقَلْبِ الْحَيِّ.</div></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="sub"><h3>بلاغة الآية الكريمة — الفرقان ٤٥</h3>
+    <div class="card t"><div class="ct">أولاً: الاستفهام ﴿أَلَمْ تَرَ﴾ — التشويق والتنبيه</div><p>«أَلَمْ تَرَ» استفهام تقريري يُفيد التنبيه والتشويق — يدعو المخاطب إلى النظر والتأمل في آية كونية غفل عنها. والرؤية هنا قلبية عقلية لا بصرية فقط: ألم ينظر قلبك وعقلك إلى صنع ربك؟ وإضافة «رَبِّكَ» (لا «الله») تُفيد التذكير بالربوبية والرعاية والتدبير.</p></div>
+    <div class="card t2"><div class="ct">ثانياً: ﴿كَيْفَ مَدَّ الظِّلَّ﴾ — الاستفهام عن الكيفية لا الوجود</div><p>لم يقل «هل مدّ الظل» بل «كَيْفَ مَدَّ» — والاستفهام بـ«كيف» يُوجّه النظر إلى كيفية الصنع وإحكامه وعجيب نظامه، لا إلى مجرد وقوعه. وهذا يدعو إلى التأمل في دقة النظام لا مجرد الإقرار بوجوده.</p></div>
+    <div class="card t"><div class="ct">ثالثاً: ﴿وَلَوْ شَاءَ لَجَعَلَهُ سَاكِنًا﴾ — افتراض الضد لإبراز النعمة</div><p>طرحت الآية افتراضاً مضاداً: لو شاء الله لجعل الظل ساكناً ثابتاً لا يتحرك — وفي هذا الافتراض إبرازٌ للنعمة بتصور زوالها. فحركة الظل التي نألفها نعمة لا نُدركها إلا حين نتصور سكونه وما يترتب عليه من خلل. والمقال فصّل هذا الافتراض تفصيلاً علمياً بديعاً.</p></div>
+    <div class="card t2"><div class="ct">رابعاً: الالتفات من الغيبة ﴿مَدَّ﴾ إلى التكلم ﴿جَعَلْنَا﴾</div><p>انتقلت الآية من ضمير الغيبة «مَدَّ الظِّلَّ» (الحديث عن الرب) إلى ضمير التكلم «جَعَلْنَا الشَّمْسَ» — وهذا الالتفات البلاغي يُحدث حركةً في النص ويُضفي مهابةً على فعل جعل الشمس دليلاً، إذ يُسنده الله إلى ذاته بضمير العظمة.</p></div>
+    <div class="card t"><div class="ct">خامساً: ﴿الشَّمْسَ عَلَيْهِ دَلِيلًا﴾ — العلاقة العكسية البديعة</div><p>جعل الله الشمس «دَلِيلًا» على الظل — والعلاقة عكسية عجيبة: الظل يُعرَف بضده (النور)، والشمس تكشف حركته ومقاديره. فلولا الشمس ما عُرف الظل ولا قِيس. وهذا من أدق اللطائف البيانية: الشيء يُعرف بضده، والمقال طوّر هذا المعنى إلى قاعدة كونية: «الْأَشْيَاءُ تَتَجَلَّى بِأَضْدَادِهَا».</p></div>
+  </div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <table class="tbl">
+      <tr><th>الصورة</th><th>النص</th><th>التحليل</th></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«السِّتَارُ الْعَظِيمُ فَوْقَ وَجْهِ الْأَرْضِ»</td><td class="def">شبّه الظل بستار ضخم يُمدّ ويُقبض فوق الأرض — صورة بصرية تُجسّد امتداد الظل وانكماشه.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«تَتَنَفَّسُ الْأَشْجَارُ أَنْفَاسَ الصَّبَاحِ»</td><td class="def">شخّص الأشجار فجعلها تتنفس — توحي بالحياة والانتعاش في ظل الصباح.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«بِسَاطٌ مِنَ الظِّلَالِ الْمَمْدُودَةِ»</td><td class="def">شبّه الظل ببساط مفروش على الأرض — توحي بالسعة والامتداد والراحة.</td></tr>
+      <tr><td class="term">تشبيه تمثيلي</td><td class="ex">«الظِّلُّ رِسَالَةٌ يَوْمِيَّةٌ مِنَ اللهِ»</td><td class="def">جعل الظل رسالة تحمل معنى — تذكّر بزوال الدنيا كما يزول الظل.</td></tr>
+      <tr><td class="term">مقابلة كونية</td><td class="ex">«الظِّلُّ كَالدُّنْيَا / الِانْتِقَالُ كَالأَعْمَارِ / الغُرُوبُ كَزَوَالِ المَتَاعِ»</td><td class="def">ثلاث مقابلات تربط حركة الظل بحقائق الحياة — منهج التأمل القرآني في ربط الكوني بالإيماني.</td></tr>
+      <tr><td class="term">تدريج تصاعدي</td><td class="ex">«يَمُدُّ الظِّلَّ ← يَمُدُّ الأَعْمَارَ / يَقْبِضُ الظِّلَّ ← يَقْبِضُ الأَرْوَاحَ»</td><td class="def">انتقال من الظاهرة الكونية إلى الحقيقة الوجودية — الذي يدبّر الظل يدبّر الأرواح والأعمار.</td></tr>
+    </table>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">الطباق المتكرر</span><div class="mv">مدّ / قبض — نور / ظل</div><div class="md">طباق بين المدّ والقبض، والنور والظل، والحركة والسكون — جوهر الفكرة قائم على التضاد الكوني.</div></div>
+      <div class="mc"><span class="ml">الجناس الاشتقاقي</span><div class="mv">مادة ظ.ل.ل</div><div class="md">«الظِّلَّ، الظِّلَالِ، ظِلُّ، ظِلَّ» — المادة الواحدة تتكرر في صور متعددة تُغني النص دلالياً.</div></div>
+      <div class="mc"><span class="ml">التوازي التركيبي</span><div class="mv">«الذي يمدّ... الذي يقبض... الذي يحرّك»</div><div class="md">ثلاث جمل متوازية البنية تربط أفعال الله الكونية بعضها ببعض — إيقاع متناغم يرسّخ التوحيد.</div></div>
+      <div class="mc"><span class="ml">التذييل بالأضداد</span><div class="mv">الصحة/المرض — الأمن/الخوف</div><div class="md">سلسلة من الأضداد تُرسّخ قاعدة «الأشياء تتجلى بأضدادها» — بناء بديعي محكم.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LINGUISTIC -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card t"><div class="ct">التحليل الصرفي لكلمات الآية</div></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>الدلالة الصرفية</th></tr>
+      <tr><td class="term">مَدَّ</td><td>فَعَلَ</td><td class="def">من «مدّ» — البسط والإطالة. مضعّف يُفيد الامتداد المستمر لا الحركة المنقطعة.</td></tr>
+      <tr><td class="term">الظِّلَّ</td><td>الفِعْل</td><td class="def">الظل: ما ستر من الشمس — وقيل ظل الصباح قبل طلوع الشمس، وقيل ظل الجنة.</td></tr>
+      <tr><td class="term">سَاكِنًا</td><td>فَاعِلًا</td><td class="def">اسم فاعل من «سكن» — الثابت الذي لا يتحرك. حال أو مفعول ثانٍ لـ«جعل».</td></tr>
+      <tr><td class="term">دَلِيلًا</td><td>فَعِيلًا</td><td class="def">من «دلّ» — ما يُرشد ويهدي. صيغة فعيل تُفيد الثبوت في الدلالة.</td></tr>
+    </table>
+    <div class="card t2"><div class="ct">معاني «الظِّلّ» عند المفسرين</div><p>اختلف المفسرون في «الظل» الممدود على أقوال: (أ) الظل الممتد من الفجر إلى طلوع الشمس — وهو أطيب الأوقات. (ب) الظل عموماً من طلوع الشمس إلى غروبها. (ج) ظل الجنة الممدود ﴿وَظِلٍّ مَّمْدُودٍ﴾. والأرجح الأول لأنه السياق الكوني المتناسب مع «جعلنا الشمس عليه دليلاً».</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card t"><div class="ct"><span class="bdg">مشترك</span> كلمة «الظِّلُّ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">ما ستر من الشمس</td><td class="def">﴿كَيْفَ مَدَّ الظِّلَّ﴾ — الظل الكوني المعروف.</td></tr>
+        <tr><td class="term">ظل الجنة الدائم</td><td class="def">﴿وَظِلٍّ مَّمْدُودٍ﴾ — الواقعة: ٣٠ — نعيم أهل الجنة.</td></tr>
+        <tr><td class="term">الحماية والكنف</td><td class="def">«في ظل فلان» أي في حمايته وكنفه.</td></tr>
+        <tr><td class="term">العزّ والمنعة</td><td class="def">«ظليل» الوارف الدائم — ﴿وَنُدْخِلُهُمْ ظِلًّا ظَلِيلًا﴾.</td></tr>
+        <tr><td class="term">ظل العرش يوم القيامة</td><td class="def">«يوم لا ظل إلا ظله» — في الحديث الشريف.</td></tr>
+      </table>
+    </div>
+    <div class="card t2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الدَّلِيلُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">المرشد الكاشف</td><td class="def">﴿جَعَلْنَا الشَّمْسَ عَلَيْهِ دَلِيلًا﴾ — الشمس تكشف حركة الظل.</td></tr>
+        <tr><td class="term">الحجة والبرهان</td><td class="def">«الدليل العقلي» في المناظرة — ما يُثبت الدعوى.</td></tr>
+        <tr><td class="term">الهادي في الطريق</td><td class="def">«دليل القافلة» الذي يرشدها في الصحراء.</td></tr>
+        <tr><td class="term">العلامة والأمارة</td><td class="def">«هذا دليل على كذا» أي علامة عليه.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card t"><div class="ct">الفرق بين: الظِّلُّ / الفَيءُ / الظِّلالُ / السُّترةُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الظِّلُّ</td><td class="def">ما كان من أول النهار إلى الزوال — ظل الغداة قبل أن تشتد الشمس.</td></tr>
+        <tr><td class="term">الفَيءُ</td><td class="def">ما كان بعد الزوال — سُمّي فيئاً لأنه فاء أي رجع من جهة إلى أخرى.</td></tr>
+        <tr><td class="term">الظِّلالُ</td><td class="def">جمع ظل — يُفيد الكثرة والامتداد.</td></tr>
+        <tr><td class="term">السُّترةُ</td><td class="def">ما يستر مطلقاً — أعم من الظل.</td></tr>
+      </table>
+      <div class="vrd"><strong>لطيفة:</strong> الفرق بين الظل والفيء دقيق — الظل قبل الزوال (أصيل لم تنله الشمس بعد)، والفيء بعد الزوال (رجع بعد أن أزالته الشمس). والآية في «الظل» الممدود قبل طلوع الشمس.</div>
+    </div>
+    <div class="card t2"><div class="ct">الفرق بين: المَدُّ / البَسْطُ / النَّشْرُ / الإطالةُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">المَدُّ</td><td class="def">الإطالة في امتداد مستقيم — يُفيد التدرج والاستمرار.</td></tr>
+        <tr><td class="term">البَسْطُ</td><td class="def">النشر في مساحة واسعة — أوسع من المدّ.</td></tr>
+        <tr><td class="term">النَّشْرُ</td><td class="def">الفرد والتوزيع في الجهات.</td></tr>
+        <tr><td class="term">الإطالةُ</td><td class="def">الزيادة في الطول فقط دون قيد الاتجاه.</td></tr>
+      </table>
+    </div>
+    <div class="card t"><div class="ct">الفرق بين: السُّكونُ / الثَّباتُ / الجُمودُ / الرُّكودُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">السُّكونُ</td><td class="def">عدم الحركة — ﴿لَجَعَلَهُ سَاكِنًا﴾ أي ثابتاً لا يتحرك.</td></tr>
+        <tr><td class="term">الثَّباتُ</td><td class="def">الاستقرار في المكان مع إمكان الحركة.</td></tr>
+        <tr><td class="term">الجُمودُ</td><td class="def">التصلب وعدم التغير — أشد من السكون.</td></tr>
+        <tr><td class="term">الرُّكودُ</td><td class="def">سكون مع توقف النفع — كركود الماء.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card t"><div class="ct">سرّ «ثُمَّ» في ﴿ثُمَّ جَعَلْنَا الشَّمْسَ﴾</div><p>«ثُمَّ» للترتيب مع التراخي الرتبي لا الزمني — فالشمس ليست متأخرة زمنياً عن الظل بل هي سببه. والمراد بـ«ثُمَّ» هنا التراخي في الرتبة والتعظيم: جعل الشمس دليلاً على الظل أمرٌ عظيم يستحق التنبيه عليه بعد ذكر مدّ الظل. وقيل: «ثُمَّ» لترتيب الإخبار لا ترتيب الوقوع.</p></div>
+    <div class="card t2"><div class="ct">قاعدة «الأشياء تُعرف بأضدادها» — تأصيلها</div><p>طوّر المقال من الآية قاعدة فلسفية: «الأشياء تتجلى بأضدادها» — فالظل يُعرف بالنور، والصحة بالمرض، والأمن بالخوف. وهذه قاعدة معرفية عميقة لها أصل في الحكمة الإلهية من خلق المتضادات: لولا الظلمة ما عُرف فضل النور، ولولا الشر ما عُرف قدر الخير.</p></div>
+    <div class="card t"><div class="ct">من الظاهرة الكونية إلى الاستدلال على البعث</div><p>ختم المقال بربط حركة الظل بقدرة الله على البعث: «الَّذِي أَجْرَى هَذِهِ السُّنَنَ قَادِرٌ عَلَى أَنْ يَبْعَثَ». وهذا استدلال قرآني أصيل: من قدر على إحياء النهار بعد الليل كل يوم قادر على إحياء الموتى — قياس الغائب على المشاهد.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السباق: ما قبل الآية (٤٣–٤٤)</div>
+    <div class="ci"><span class="vi">﴿أَرَأَيْتَ مَنِ اتَّخَذَ إِلَٰهَهُ هَوَاهُ أَفَأَنتَ تَكُونُ عَلَيْهِ وَكِيلًا﴾</span><span class="vs">الفرقان: ٤٣ — قبل آيات التأمل الكوني: ذم من اتبع هواه — ثم تأتي آيات الكون لتدعو للتأمل بدل اتباع الهوى.</span></div>
+    <div class="ci"><span class="vi">﴿أَمْ تَحْسَبُ أَنَّ أَكْثَرَهُمْ يَسْمَعُونَ أَوْ يَعْقِلُونَ ۚ إِنْ هُمْ إِلَّا كَالْأَنْعَامِ﴾</span><span class="vs">الفرقان: ٤٤ — الغافلون عن آيات الله كالأنعام — تمهيد لدعوة التأمل في الظل.</span></div>
+  </div>
+  <div class="cb"><div class="bt">اللحاق: ما بعد الآية (٤٦–٤٩)</div>
+    <div class="ci"><span class="vi">﴿ثُمَّ قَبَضْنَاهُ إِلَيْنَا قَبْضًا يَسِيرًا﴾</span><span class="vs">الفرقان: ٤٦ — قبض الظل تدريجياً مع طلوع الشمس — تكملة مشهد مدّ الظل.</span></div>
+    <div class="ci"><span class="vi">﴿وَهُوَ الَّذِي جَعَلَ لَكُمُ اللَّيْلَ لِبَاسًا وَالنَّوْمَ سُبَاتًا وَجَعَلَ النَّهَارَ نُشُورًا﴾</span><span class="vs">الفرقان: ٤٧ — استمرار التأمل الكوني: الليل والنوم والنهار — منظومة الرحمة الكونية.</span></div>
+    <div class="ci"><span class="vi">﴿وَهُوَ الَّذِي أَرْسَلَ الرِّيَاحَ بُشْرًا بَيْنَ يَدَيْ رَحْمَتِهِ وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا﴾</span><span class="vs">الفرقان: ٤٨ — آية كونية أخرى: الرياح والمطر — سلسلة آيات الرحمة المتصلة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات المتعلقة في القرآن الكريم</div>
+    <div class="ci"><span class="vi">﴿أَوَلَمْ يَرَوْا إِلَىٰ مَا خَلَقَ اللَّهُ مِن شَيْءٍ يَتَفَيَّأُ ظِلَالُهُ عَنِ الْيَمِينِ وَالشَّمَائِلِ سُجَّدًا لِّلَّهِ﴾</span><span class="vs">النحل: ٤٨ — ظلال الأشياء تسجد لله — التأمل في الظل عبادة.</span></div>
+    <div class="ci"><span class="vi">﴿وَاللَّهُ جَعَلَ لَكُم مِّمَّا خَلَقَ ظِلَالًا﴾</span><span class="vs">النحل: ٨١ — الظلال نعمة من نعم الله على عباده.</span></div>
+    <div class="ci"><span class="vi">﴿وَظِلٍّ مَّمْدُودٍ ۝ وَمَاءٍ مَّسْكُوبٍ﴾</span><span class="vs">الواقعة: ٣٠–٣١ — ظل الجنة الممدود الدائم الذي لا تنسخه شمس.</span></div>
+    <div class="ci"><span class="vi">﴿وَمِنْ آيَاتِهِ اللَّيْلُ وَالنَّهَارُ وَالشَّمْسُ وَالْقَمَرُ﴾</span><span class="vs">فصلت: ٣٧ — منظومة الآيات الكونية الدالة على الخالق.</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية كونية ✅</div><div class="md">تدعو إلى التأمل في ظاهرة الظل وحركته كآية على عظمة الله وقدرته.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عقدية ✅</div><div class="md">تُثبت توحيد الربوبية والقدرة على البعث — من خلق نظام الظل قادر على إحياء الموتى.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تأمل وتفكر ✅</div><div class="md">تُربّي العقل على النظر في آيات الله الكونية المألوفة المغفول عنها.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> الآية ٤٥ من الفرقان منظومة كونية-عقدية-تأملية: تعرض آية كونية، وتُثبت الربوبية والبعث، وتدعو إلى التفكر.</div>
+  <div class="sub"><h3>الأحكام والقيم المستنبطة</h3>
+    <div class="card t"><div class="ct">الحكم الأول: وجوب التفكر في آيات الله الكونية</div><p>دلّت الآية على فريضة التأمل في الكون — فالنظر في الظل والشمس والليل والنهار عبادةٌ تورث الإيمان واليقين. والغفلة عن هذه الآيات من صفات من شُبّهوا بالأنعام في السياق.</p></div>
+    <div class="card t2"><div class="ct">الحكم الثاني: الاستدلال بالنعم الكونية على المنعم</div><p>الظل نعمة تستوجب الشكر — ومعرفة أن الله هو المتصرف في حركته تورث حمده وشكره. وهذا أصل في ربط النعم بالمنعم سبحانه.</p></div>
+    <div class="card t"><div class="ct">الحكم الثالث: إثبات البعث بالقياس على الإحياء اليومي</div><p>دلّت الآية على صحة الاستدلال على البعث بالظواهر الكونية المتجددة — من أحيا النهار بعد الليل كل يوم قادر على إحياء الموتى. وهو دليل عقلي على عقيدة البعث.</p></div>
+    <div class="card t2"><div class="ct">الحكم الرابع: استحضار زوال الدنيا كزوال الظل</div><p>تشبيه الدنيا بالظل الزائل يُربّي على الزهد فيها وعدم الاغترار بها — قيمة تربوية تُعين على التعلق بالباقي لا الفاني.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.4rem;">﴿أَلَمْ تَرَ إِلَىٰ رَبِّكَ كَيْفَ مَدَّ الظِّلَّ وَلَوْ شَاءَ لَجَعَلَهُ سَاكِنًا ثُمَّ جَعَلْنَا الشَّمْسَ عَلَيْهِ دَلِيلًا﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">أَلَمْ تَرَ</div><div class="id">الهمزة: استفهام تقريري. «لم»: نفي وجزم. «تَرَ»: مضارع مجزوم بحذف حرف العلة، الفاعل مستتر «أنت».</div></div>
+    <div class="ir"><div class="iw">إِلَىٰ رَبِّكَ</div><div class="id">جار ومجرور متعلقان بـ«تر». «ربّ»: مضاف، و«الكاف»: مضاف إليه.</div></div>
+    <div class="ir"><div class="iw">كَيْفَ مَدَّ الظِّلَّ</div><div class="id">«كيف»: اسم استفهام في محل نصب حال. «مَدَّ»: فعل ماضٍ والفاعل مستتر «هو». «الظِّلَّ»: مفعول به منصوب. والجملة في محل نصب بدل اشتمال من «ربك».</div></div>
+    <div class="ir"><div class="iw">وَلَوْ شَاءَ</div><div class="id">الواو: حالية. «لو»: حرف شرط غير جازم. «شاء»: فعل ماضٍ والفاعل مستتر «هو». ومفعول المشيئة محذوف تقديره «لو شاء جعله ساكناً».</div></div>
+    <div class="ir"><div class="iw">لَجَعَلَهُ سَاكِنًا</div><div class="id">اللام: واقعة في جواب «لو». «جعل»: فعل ماضٍ والفاعل مستتر. «الهاء»: مفعول أول. «ساكناً»: مفعول ثانٍ منصوب.</div></div>
+    <div class="ir"><div class="iw">ثُمَّ جَعَلْنَا الشَّمْسَ</div><div class="id">«ثُمَّ»: عاطفة للترتيب الرتبي. «جَعَلْنَا»: فعل ماضٍ و«نا» فاعل. «الشَّمْسَ»: مفعول أول منصوب.</div></div>
+    <div class="ir"><div class="iw">عَلَيْهِ دَلِيلًا</div><div class="id">«عليه»: جار ومجرور متعلقان بـ«دليلاً» أو بمحذوف حال. «دَلِيلًا»: مفعول ثانٍ لـ«جعل» منصوب.</div></div>
+  </div>
+  <div class="card t" style="margin-top:14px;"><div class="ct">ملاحظة: حذف مفعول ﴿شَاءَ﴾ — بلاغة الإيجاز</div><p>حُذف مفعول «شاء» في «وَلَوْ شَاءَ» لدلالة الجواب عليه — والتقدير: لو شاء جعله ساكناً. وهذا الحذف من بلاغة القرآن في الإيجاز، إذ يُكتفى بدلالة الجواب «لجعله ساكناً» على المحذوف. وحذف مفعول المشيئة أسلوب قرآني متكرر يُفيد التعميم والتفخيم.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«إِنَّ الظِّلَّ الْمَمْدُودَ رِسَالَةٌ يَوْمِيَّةٌ مِنَ اللهِ إِلَى عِبَادِهِ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card t"><div class="ct">أولاً: إيقاظ الحس من الألفة والغفلة</div><p>«أَلِفَتْهَا الْعُيُونُ وَغَفَلَتْ عَنْهَا الْقُلُوبُ» — الألفة عدو التأمل. أكثر آيات الله غفلةً هي الأكثر تكراراً لأننا ألفناها. <strong>التطبيق:</strong> تخصيص لحظة يومية للنظر في ظاهرة مألوفة (الظل، الفجر، التنفس) كأنك تراها أول مرة — هذا يُحيي القلب.</p></div>
+  <div class="card t2"><div class="ct">ثانياً: تصوّر زوال النعمة لإدراك قيمتها</div><p>«وَلَوْ شَاءَ لَجَعَلَهُ سَاكِنًا» — تخيّل غياب النعمة وسيلة لإدراك عظمتها. <strong>التطبيق:</strong> عند الشكوى من شيء — تخيّل الحياة بلا النعم التي تملكها (الظل، الماء، الهواء، الصحة) — هذا يُولّد الشكر ويطرد التذمر.</p></div>
+  <div class="card t"><div class="ct">ثالثاً: قراءة الكون كرسائل لا كمشاهد</div><p>«رِسَالَةٌ يَوْمِيَّةٌ» — الكون ليس مشهداً صامتاً بل رسائل تحمل معاني. <strong>التطبيق:</strong> تعويد النفس على قراءة المعنى خلف الظاهرة: الظل يقول إن الدنيا زائلة، الفجر يقول إن بعد الظلمة نوراً، الغروب يقول إن لكل شيء نهاية.</p></div>
+  <div class="card t2"><div class="ct">رابعاً: الاستدلال على البعث من الحياة اليومية</div><p>«يَبْعَثُ النَّهَارَ بَعْدَ اللَّيْلِ كُلَّ يَوْمٍ» — البعث ليس أمراً غريباً بل نراه يومياً في إحياء النهار. <strong>التطبيق:</strong> كل صباح حين يشرق النور بعد ظلمة الليل — تذكّر أنه دليل يومي على قدرة الله على إحيائك بعد الموت.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>البدء بالمألوف المغفول عنه:</strong> اختار الظل — أكثر الظواهر ألفةً وأقلها تأملاً — ليُثبت أن أعظم الآيات أمام أعيننا.</li>
+      <li><strong>التفصيل العلمي للافتراض القرآني:</strong> «لو سكن الظل» — فصّله علمياً (تجمد الأرض، فساد الرياح، اختلال التوازن) — ربط التدبر بالعلم.</li>
+      <li><strong>الانتقال من الكوني إلى الوجودي:</strong> الذي يمدّ الظل يمدّ الأعمار — رفع التأمل من الظاهرة إلى حقائق الحياة والموت.</li>
+      <li><strong>الختام بالتسبيح:</strong> «فَسُبْحَانَ مَنْ مَدَّ الظِّلَّ» — انتهى بالتسبيح لا بالتقرير، لأن التأمل الحق يثمر تسبيحاً.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong style="color:var(--tg);">العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضراً أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong style="color:var(--tg);">البُعد الزمني:</strong> الربط الحي بين النص القرآني ومستجدات العصر — يُحيي التأمل في الآيات الكونية بلغة معاصرة.</p>
+      <p><strong style="color:var(--tg);">التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ مما يُضفي على كتاباته دقةً عقدية نادرة.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم، ونفع به الأمة في زمن كثرت فيه الغفلة عن آيات الله.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">الآيات الكونية</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">التفكر</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  const sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+const secs=document.querySelectorAll('.sec[id]');
+const links=document.querySelectorAll('.toc-a');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a) a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>{
+  document.getElementById('sb').classList.add('off');
+  document.getElementById('sb').classList.remove('open');
+}));
+</script>
+</body>
+</html>

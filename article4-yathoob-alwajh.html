@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حِين يَذُوبُ الوَجْهُ فِي اللَّهَبِ — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1a0a00;--bg:#fdf5ee;--bg2:#f5e8d8;
+  --fire:#8b2000;--fire-m:#c03000;--fire-lt:#e85020;
+  --fd:#1a0400;--ft:#ffe0c8;--fg:#ffb870;
+  --amber:#d4720a;--copper:#8b4513;
+  --div:#d4a882;--mist:#4a2a1a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(139,32,0,.07) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(212,114,10,.05) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--fire-m),var(--amber));z-index:400;transform-origin:top;}
+.hdr{background:var(--fd);border-bottom:2px solid var(--fire-m);position:sticky;top:0;z-index:200;box-shadow:0 2px 20px rgba(0,0,0,.7);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--amber);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--fg);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--ft);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--fire);color:var(--fg);border:1px solid rgba(232,80,32,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--fire-m);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#120200;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(200,80,20,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--amber);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(200,80,20,.2);}
+.toc-s{color:rgba(212,114,10,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#c09070;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--ft);background:rgba(200,80,20,.1);border-right-color:var(--fire-lt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--fire-m),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--fire-lt);}
+.hcat{display:inline-block;background:var(--fire);color:var(--ft);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.6rem;font-weight:700;color:var(--fd);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--fire-m);border-radius:50%;}
+.vb{background:var(--fd);border:1px solid rgba(200,80,20,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(200,80,20,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--ft);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.42rem;}
+.vr{color:var(--fg);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#1a0a00;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--fire-m);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--fire);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--fire-m);background:rgba(139,32,0,.06);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--fire);font-weight:700;text-align:center;margin:9px 0;}
+.dua-block{background:var(--fd);border:1px solid rgba(212,114,10,.4);border-radius:8px;padding:28px 36px;margin:28px 0;text-align:center;}
+.dua-line{font-family:'Scheherazade New',serif;font-size:1.28rem;color:var(--ft);line-height:2.2;margin:4px 0;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--fd);color:var(--amber);border:2px solid var(--fire-m);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--fd);border-bottom:2px solid var(--fire-lt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--fire);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--amber);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.f{border-right:5px solid var(--fire-m);}
+.card.f2{border-right:5px solid var(--fire);}
+.card.f3{border-right:5px solid var(--amber);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#1a0400;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#1a0a00;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--fire-m);color:var(--ft);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--fd);color:var(--fg);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--fire-m);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(200,80,20,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#1a0400;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ex{color:var(--fire);font-style:italic;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#1a0400;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#1a0400;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--fire-lt);border-bottom:2px solid var(--fire-lt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--fire-lt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#120200,#200800);border:1px solid rgba(200,80,20,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--amber);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(200,80,20,.25);}
+.ci{color:#e0b890;padding:9px 0;border-bottom:1px dashed rgba(200,80,20,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--ft);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--fg);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#120200,#1e0600);border:1px solid rgba(200,80,20,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#e0b890;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--ft);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--fire-m);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#1a0400;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#1a0a00;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--fire-m);font-size:.85em;top:11px;}
+.asec{background:var(--fd);border:1px solid rgba(200,80,20,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--fire-m),var(--copper));border:3px solid var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--ft);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--fg);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#d0a880;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(200,80,20,.1);border:1px solid rgba(200,80,20,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--fg);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--ft);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(200,80,20,.16);color:var(--amber);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(200,80,20,.28);}
+.orn{text-align:center;color:var(--amber);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--fd);color:#6a3a20;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(200,80,20,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--amber);}
+footer .fb span{color:var(--fg);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:2.1rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.28rem;}.hero h1{font-size:1.7rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">⌂ الفهرس الرئيسي</a>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">حِين يَذُوبُ الوَجْهُ فِي اللَّهَبِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تدبر قرآني · مشهد يوم القيامة · مقالة وعظية</div>
+  <h1>حِين يَذُوبُ الوَجْهُ فِي اللَّهَبِ... وَتَتَكَلَّمُ النَّارُ بِلُغَةِ الخُلُودِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>المؤمنون: ١٠٤</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿تَلْفَحُ وُجُوهَهُمُ النَّارُ وَهُمْ فِيهَا كَالِحُونَ﴾</div>
+    <div class="vr">سورة المؤمنون، الآية ١٠٤</div>
+  </div>
+  <div class="abody">
+    <p>لَيْسَ هَذَا مَشْهَداً عَابِراً مِنْ مَشَاهِدِ الوَعِيدِ... وَلَيْسَ صُورَةً رَمْزِيَّةً تُرْوَى لِلْعِظَةِ المُجَرَّدَةِ... إِنَّهُ مَشْهَدٌ حَيٌّ مُتَحَرِّكٌ، يَنْبِضُ بِالرُّعْبِ، وَيَهُزُّ أَعْمَاقَ القَلْبِ هَزّاً، وَيَقِفُ بِالإِنْسَانِ أَمَامَ المَصِيرِ الَّذِي يَنْتَظِرُهُ إِنْ هُوَ أَعْرَضَ عَنِ اللهِ، وَاسْتَكْبَرَ عَنْ آيَاتِهِ، وَرَكَنَ إِلَى الدُّنْيَا الرُّكُونَ كُلَّهُ.</p>
+    <div class="hl">هُنَا لَا يُحَدِّثُنَا القُرْآنُ عَنْ نَارٍ تُرَى مِنْ بَعِيدٍ...</div>
+    <div class="hl">وَلَا عَنْ عَذَابٍ يُسْمَعُ خَبَرُهُ...</div>
+    <div class="hl">بَلْ يُدْخِلُنَا إِلَى قَلْبِ المَشْهَدِ... إِلَى دَاخِلِ الجَحِيمِ...</div>
+    <p>إِلَى حَيْثُ الوُجُوهُ الَّتِي كَانَتْ تَتَكَبَّرُ فِي الأَرْضِ... وَالعُيُونُ الَّتِي كَانَتْ تَنْظُرُ إِلَى المُؤْمِنِينَ بِاسْتِخْفَافٍ... وَالأَلْسِنَةُ الَّتِي جَادَلَتْ فِي الحَقِّ وَسَخِرَتْ مِنَ الوَحْيِ... كُلُّ ذَلِكَ أَصْبَحَ الآنَ تَحْتَ ضَرَبَاتِ اللَّهَبِ.</p>
+    <div class="vb" style="margin:20px 0;"><div class="vt sm">﴿تَلْفَحُ وُجُوهَهُمُ النَّارُ﴾</div></div>
+    <div class="hl">أَيْ تَضْرِبُهَا النَّارُ ضَرْباً مُتَتَابِعاً...</div>
+    <div class="hl">لَفَحَاتٌ لَا تَنْقَطِعُ...</div>
+    <div class="hl">أَمْوَاجٌ مِنَ اللَّهَبِ تَتَوَالَى...</div>
+    <div class="hl">حَرَارَةٌ لَا تُقَاسُ بِحَرَارَةِ الدُّنْيَا...</div>
+    <p>وَنَارُ الدُّنْيَا كُلُّهَا لَيْسَتْ إِلَّا جُزْءاً يَسِيراً مِنْ حَرِّ جَهَنَّمَ.</p>
+    <p>وَلَمْ يَقُلْ سُبْحَانَهُ: تَلْفَحُ أَجْسَادَهُمْ... بَلْ قَالَ:</p>
+    <div class="vb" style="margin:20px 0;"><div class="vt sm">﴿وُجُوهَهُمُ﴾</div></div>
+    <div class="hl">لِأَنَّ الوَجْهَ عُنْوَانُ الإِنْسَانِ...</div>
+    <div class="hl">وَمَوْضِعُ الكَرَامَةِ...</div>
+    <div class="hl">وَمَجْمَعُ الجَمَالِ...</div>
+    <p>فَإِذَا وَصَلَ العَذَابُ إِلَى الوَجْهِ فَقَدْ بَلَغَ الذُّرْوَةَ فِي الإِهَانَةِ وَالأَلَمِ.</p>
+    <div class="hl">هُنَاكَ تَسْقُطُ الأَقْنِعَةُ كُلُّهَا...</div>
+    <div class="hl">وَتَذُوبُ الأَلْقَابُ كُلُّهَا...</div>
+    <div class="hl">وَتَنْتَهِي المَنَاصِبُ كُلُّهَا...</div>
+    <p>وَيَبْقَى الإِنْسَانُ وَحْدَهُ أَمَامَ عَدْلِ اللهِ.</p>
+    <p>ثُمَّ تَأْتِي الكَلِمَةُ الَّتِي تَرْسُمُ صُورَةً لَا يَكَادُ العَقْلُ يَحْتَمِلُهَا:</p>
+    <div class="vb" style="margin:20px 0;"><div class="vt sm">﴿وَهُمْ فِيهَا كَالِحُونَ﴾</div></div>
+    <p>كَلِمَةٌ وَاحِدَةٌ... لَكِنَّهَا تَحْمِلُ مَشْهَداً كَامِلاً مِنَ الرُّعْبِ.</p>
+    <div class="hl">شِفَاهٌ احْتَرَقَتْ...</div>
+    <div class="hl">وَجُلُودٌ انْكَمَشَتْ...</div>
+    <div class="hl">وَأَسْنَانٌ بَرَزَت...</div>
+    <div class="hl">وَوُجُوهٌ تَشَوَّهَتْ...</div>
+    <p>حَتَّى أَصْبَحَتْ هَيْئَةُ أَهْلِ النَّارِ هَيْئَةً تَقْشَعِرُّ مِنْهَا الأَبْدَانُ.</p>
+    <div class="hl">لَيْسَ مَوْتاً يُرِيحُ...</div>
+    <div class="hl">وَلَا إِغْمَاءً يُخَفِّفُ...</div>
+    <div class="hl">وَلَا نِهَايَةً تُنْقِذُ...</div>
+    <div class="hl">بَلْ عَذَابٌ مُتَجَدِّدٌ... وَأَلَمٌ يَتَجَدَّدُ مَعَ كُلِّ لَحْظَةٍ...</div>
+    <p>كَمَا قَالَ سُبْحَانَهُ:</p>
+    <div class="vb" style="margin:20px 0;"><div class="vt sm">﴿كُلَّمَا نَضِجَتْ جُلُودُهُمْ بَدَّلْنَاهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا الْعَذَابَ﴾</div><div class="vr">النساء: ٥٦</div></div>
+    <p>يَا الله... أَيُّ خَسَارَةٍ أَعْظَمُ مِنْ أَنْ يَخْسَرَ الإِنْسَانُ نَفْسَهُ؟ وَأَيُّ نَدَمٍ أَشَدُّ مِنْ نَدَمِ مَنْ يَرَى الجَنَّةَ أَمَامَهُ ثُمَّ يُحْجَبُ عَنْهَا إِلَى الأَبَدِ؟ وَأَيُّ حَسْرَةٍ أَوْجَعُ مِنْ حَسْرَةِ مَنْ يَسْمَعُ نِدَاءَ الرَّحْمَةِ فَلَا يَكُونُ لَهُ مِنْهَا نَصِيبٌ؟</p>
+    <div class="hl">هُنَاكَ يَتَذَكَّرُ كُلَّ صَلَاةٍ ضَيَّعَهَا...</div>
+    <div class="hl">وَكُلَّ مَعْصِيَةٍ اسْتَهَانَ بِهَا...</div>
+    <div class="hl">وَكُلَّ آيَةٍ سَمِعَهَا ثُمَّ أَعْرَضَ عَنْهَا...</div>
+    <div class="hl">وَكُلَّ فُرْصَةِ تَوْبَةٍ أَضَاعَهَا...</div>
+    <p>لَكِنَّ التَّذَكُّرَ يَوْمَئِذٍ لَا يَنْفَعُ.</p>
+    <p>هُنَاكَ يَسْمَعُونَ التَّوْبِيخَ الإِلَهِيَّ:</p>
+    <div class="vb" style="margin:20px 0;"><div class="vt sm">﴿أَلَمْ تَكُنْ آيَاتِي تُتْلَى عَلَيْكُمْ فَكُنْتُمْ بِهَا تُكَذِّبُونَ﴾</div><div class="vr">المؤمنون: ١٠٥</div></div>
+    <div class="hl">فَلَا يَجِدُونَ جَوَاباً...</div>
+    <div class="hl">وَلَا يَمْلِكُونَ حُجَّةً...</div>
+    <div class="hl">وَلَا يَسْتَطِيعُونَ فِرَاراً...</div>
+    <p>لَقَدِ انْتَهَى زَمَنُ العَمَلِ... وَبَدَأَ زَمَنُ الجَزَاءِ.</p>
+    <p>أَيُّهَا الغَافِلُ... مَا دَامَ القَلْبُ يَنْبِضُ... وَمَا دَامَتِ الرُّوحُ فِي الجَسَدِ... فَبَابُ التَّوْبَةِ مَفْتُوحٌ... وَالرَّحْمَةُ وَاسِعَةٌ... وَالفُرْصَةُ قَائِمَةٌ... فَلَا تُؤَجِّلِ الإِنَابَةَ... وَلَا تُؤَخِّرِ الرُّجُوعَ... وَلَا تَغْتَرَّ بِإِمْهَالِ اللهِ لَكَ... فَإِنَّ بَيْنَكَ وَبَيْنَ هَذَا المَشْهَدِ نَفَساً يَخْرُجُ فَلَا يَعُودُ.</p>
+    <div class="dua-block">
+      <div class="dua-line">اللَّهُمَّ أَجِرْنَا مِنَ النَّارِ...</div>
+      <div class="dua-line">اللَّهُمَّ أَجِرْنَا مِنْ لَفْحِ النَّارِ...</div>
+      <div class="dua-line">اللَّهُمَّ أَجِرْنَا مِنَ الكُلُوحِ وَالخِزْيِ يَوْمَ القِيَامَةِ...</div>
+      <div class="dua-line">اللَّهُمَّ اجْعَلْ وُجُوهَنَا يَوْمَ القِيَامَةِ نَاضِرَةً إِلَى رَبِّهَا نَاظِرَةً...</div>
+      <div class="dua-line">اللَّهُمَّ ثَقِّلْ مَوَازِينَنَا بِالحَسَنَاتِ...</div>
+      <div class="dua-line">وَاجْعَلْ آخِرَ كَلَامِنَا مِنَ الدُّنْيَا شَهَادَةَ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَنَّ مُحَمَّداً رَسُولُ اللهِ.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="sub"><h3>بلاغة الآية الكريمة — المؤمنون ١٠٤</h3>
+    <div class="card f"><div class="ct">أولاً: الفعل ﴿تَلْفَحُ﴾ — الضربة المتتابعة</div><p>اختار القرآن «تَلْفَحُ» من اللَّفْح وهو الضرب بالنار أو الريح الحارة ضرباً شديداً متتابعاً. وفي اختيار هذا الفعل دون «تُحرق» أو «تُصيب» دلالة عميقة: اللفح يُفيد الاستمرار والتتابع لا الحدث الواحد المنقطع — لفحة تعقبها لفحة كأمواج البحر لا تنقطع.</p></div>
+    <div class="card f2"><div class="ct">ثانياً: تقديم المفعول ﴿وُجُوهَهُمُ﴾ على الفاعل ﴿النَّارُ﴾ — التشنيع والتحقير</div><p>الترتيب الطبيعي: «تلفح النارُ وجوهَهم» لكن القرآن قدّم «وُجُوهَهُمُ» على «النَّارُ» — وفي هذا التقديم تشنيعٌ بحالهم وتركيز على الوجه قبل أن يُذكر سبب ما به. كأن القارئ يرى الوجه أولاً في حاله المروّع ثم يُخبَر بالسبب.</p></div>
+    <div class="card f"><div class="ct">ثالثاً: كلمة ﴿كَالِحُونَ﴾ — الصورة الكاملة في كلمة</div><p>«كالحون» جمع «كالح» من الكُلُوح وهو تقلّص الشفتين وانكشاف الأسنان من شدة الألم، كما يظهر على وجه الجمجمة. وهذه الكلمة الواحدة تحمل صورة بصرية مريعة كاملة: الشفة محترقة منكمشة، الأسنان بارزة، الوجه مشوّه بلا جلد يستره.</p></div>
+    <div class="card f2"><div class="ct">رابعاً: الجملة الحالية ﴿وَهُمْ فِيهَا كَالِحُونَ﴾ — الحال الدائمة</div><p>جاءت جملة الحال اسمية «وَهُمْ فِيهَا كَالِحُونَ» لا فعلية، والجملة الاسمية تدل على الثبوت والديمومة — أي هذا الكلوح حالٌ ثابتة راسخة لا تنقطع، ليس حدثاً عارضاً.</p></div>
+    <div class="card f"><div class="ct">خامساً: ﴿فِيهَا﴾ — الإحاطة الكاملة</div><p>الظرف «فِيهَا» يُفيد الظرفية المكانية التامة: هم في داخل النار لا على حافتها ولا بالقرب منها. الإحاطة التامة من كل جانب، وهذا ما يجعل الكلوح حالاً شاملة لا جزئية.</p></div>
+    <div class="card f2"><div class="ct">سادساً: التوبيخ الإلهي في الآية التالية ﴿أَلَمْ تَكُنْ آيَاتِي تُتْلَى عَلَيْكُمْ﴾</div><p>جاء التوبيخ باستفهام إنكاري «أَلَمْ» — ويُفيد تقرير الحجة وإثبات الذنب: الآيات كانت تُتلى عليهم، والحجة قد قامت، فلا عذر بعد الإبلاغ. وهذا التوبيخ في جو الكلوح والعذاب يُضاعف من هول المشهد.</p></div>
+  </div>
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <table class="tbl">
+      <tr><th>الصورة</th><th>النص</th><th>التحليل</th></tr>
+      <tr><td class="term">تجسيم وتشخيص</td><td class="ex">«وَتَتَكَلَّمُ النَّارُ بِلُغَةِ الخُلُودِ»</td><td class="def">شخّص النار فجعلها تتكلم — وهي تتكلم فعلاً بلسان اللهب الذي لا ينقطع أبداً.</td></tr>
+      <tr><td class="term">استعارة مكنية</td><td class="ex">«مَشْهَدٌ حَيٌّ يَنْبِضُ بِالرُّعْبِ»</td><td class="ex2">شبّه المشهد القرآني بكائن حي له نبض — النبض يوحي بالحياة الدائمة لا الصورة الجامدة.</td></tr>
+      <tr><td class="term">تدريج تنازلي</td><td class="ex">«تسقط الأقنعة... تذوب الألقاب... تنتهي المناصب»</td><td class="def">تصاعد في الفقدان: من الأقنعة (الظاهر) إلى الألقاب (الاجتماعي) إلى المناصب (السلطة) — يسقط كل شيء طبقةً طبقة.</td></tr>
+      <tr><td class="term">استعارة تصريحية</td><td class="ex">«نَفَساً يَخْرُجُ فَلَا يَعُودُ»</td><td class="def">كنّى عن الموت بأقرب الكنايات وأوجعها — نفَس واحد يفصل بين الدنيا وذلك المشهد.</td></tr>
+      <tr><td class="term">استفهام إنكاري</td><td class="ex">«أَيُّ خَسَارَةٍ أَعْظَمُ... أَيُّ نَدَمٍ أَشَدُّ... أَيُّ حَسْرَةٍ أَوْجَعُ»</td><td class="def">ثلاثة استفهامات تصاعدية تُقرّر أن هذا هو أقصى ما يُتصور من الخسارة والندم والحسرة.</td></tr>
+      <tr><td class="term">مقابلة زمنية</td><td class="ex">«انْتَهَى زَمَنُ العَمَلِ... وَبَدَأَ زَمَنُ الجَزَاءِ»</td><td class="def">مقابلة بين الزمنين في جملتين متوازيتين — حدٌّ فاصل لا عودة بعده.</td></tr>
+    </table>
+  </div>
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">التوازي البنيوي</span><div class="mv">الثلاثيات المتتابعة</div><div class="md">«شفاه احترقت / جلود انكمشت / أسنان برزت» — ثلاثية متوازية في البنية تُبني الصورة الكاملة لـ«كالحون» قطعةً قطعة.</div></div>
+      <div class="mc"><span class="ml">الجناس الاشتقاقي</span><div class="mv">مادة ل.ف.ح</div><div class="md">«تَلْفَحُ، لَفَحَاتٌ، لَفْحِ النَّارِ» — مادة واحدة تتكرر في ثلاثة مواضع تُعمّق دلالة الضربة المتتابعة.</div></div>
+      <div class="mc"><span class="ml">التدريج في الدعاء</span><div class="mv">سبعة أدعية</div><div class="md">ختم المقال بسبعة أدعية مُتصاعدة — من الاستعاذة من النار إلى طلب حسن الخاتمة بالشهادتين.</div></div>
+      <div class="mc"><span class="ml">الاستفهام التقريري</span><div class="mv">«أيّ خسارة... أيّ ندم... أيّ حسرة»</div><div class="md">ثلاثة استفهامات تُقرّر الجواب بدل أن تنتظره — لأن الجواب لا جواب له.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LINGUISTIC -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card f"><div class="ct">قراءة ﴿تَلْفَحُ﴾ — التحليل الصرفي</div><p>«تَلْفَحُ» فعل مضارع مرفوع على وزن «تَفعَل» من الفعل الثلاثي «لَفَحَ يَلفَحُ» — والمضارع يُفيد الاستمرار والتجدد، كأن اللفح فعل حاضر دائم لا ماضٍ انتهى. وهذا يتناسب مع خلود عذاب النار.</p></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن الصرفي</th><th>الدلالة</th></tr>
+      <tr><td class="term">تَلْفَحُ</td><td>تَفعَل</td><td class="def">اللفح: الضرب بالنار أو الريح الحارة — أشد من اللمس وأخف من الإحراق التام.</td></tr>
+      <tr><td class="term">كَالِحُونَ</td><td>فَاعِلون</td><td class="def">اسم فاعل جمع مذكر سالم — يدل على ثبوت صفة الكلوح وديمومتها لا حدوثها.</td></tr>
+      <tr><td class="term">نَضِجَتْ</td><td>فَعِلَت</td><td class="def">النضج: بلوغ الشيء غايته في الإدراك — نضج الجلد: احترق حتى بلغ أقصى الاحتراق.</td></tr>
+      <tr><td class="term">بَدَّلْنَاهُمْ</td><td>فَعَّلنا</td><td class="def">التفعيل يُفيد المبالغة والتكثير — التبديل المتكرر بلا انقطاع.</td></tr>
+    </table>
+  </div>
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card f"><div class="ct"><span class="bdg">مشترك</span> كلمة «الوَجْهُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">عضو الجسد المعروف</td><td class="def">﴿تَلْفَحُ وُجُوهَهُمُ النَّارُ﴾ — الوجه الجسدي الذي يُعذَّب.</td></tr>
+        <tr><td class="term">الكرامة والشرف</td><td class="def">«حفظت وجهه» أي كرامته — ومنه قولهم «ماء الوجه».</td></tr>
+        <tr><td class="term">الجهة والناحية</td><td class="def">«وجه الكعبة» أي جهتها وجانبها.</td></tr>
+        <tr><td class="term">القصد والغرض</td><td class="def">«ابتغاء وجه الله» أي قصده والتقرب إليه.</td></tr>
+        <tr><td class="term">أول الشيء وصدره</td><td class="def">«وجه النهار» أي أوله — ﴿آمِنُوا بِالَّذِي أُنزِلَ وَجْهَ النَّهَارِ﴾</td></tr>
+      </table>
+      <div class="vrd"><strong>ملاحظة بلاغية:</strong> اختار القرآن «الوجوه» لا «الأجساد» لأن الوجه يجمع كل المعاني: كرامة الإنسان وعنوانه وجهته ومقصده — فعذاب الوجه عذابٌ للكيان كله.</div>
+    </div>
+    <div class="card f2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الكُلُوحُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>التوضيح</th></tr>
+        <tr><td class="term">تقلّص الشفة وبروز الأسنان</td><td class="def">من شدة الألم — ومنه «كلح وجهه» إذا عبس وتجهّم.</td></tr>
+        <tr><td class="term">العبوس والتجهّم</td><td class="def">استعمال مجازي — «يكلح في وجهه» أي يعبس.</td></tr>
+        <tr><td class="term">القبح والمنظر المروّع</td><td class="def">«كلوح الوجه» دلالة على قبح الهيئة التي تُقشعر منها الأبدان.</td></tr>
+      </table>
+    </div>
+  </div>
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card f"><div class="ct">الفرق بين: لَفَحَ / أَحْرَقَ / لَسَعَ / حَرَقَ</div>
+      <table class="tbl">
+        <tr><th>الفعل</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">لَفَحَ</td><td class="def">الضرب بالنار ضرباً شديداً متتابعاً — أشد من اللمس وأقوى من اللهيب المنفرد.</td></tr>
+        <tr><td class="term">أَحْرَقَ</td><td class="def">الإحراق التام حتى التفحّم — يُفيد النهاية، بينما اللفح متجدد مستمر.</td></tr>
+        <tr><td class="term">لَسَعَ</td><td class="def">الأذى السريع الخاطف كلسع الحشرات — أخف من اللفح وأقل شمولاً.</td></tr>
+        <tr><td class="term">حَرَقَ</td><td class="def">الإيذاء بالنار بصفة عامة — أعم وأشمل لكنه أقل تصويراً من «لفح».</td></tr>
+      </table>
+      <div class="vrd"><strong>خلاصة:</strong> «لَفَحَ» أبلغ الأفعال في وصف عذاب النار لأنه يجمع: الشدة، والتتابع، والإيصال المباشر — دون إنهاء أو انقطاع.</div>
+    </div>
+    <div class="card f2"><div class="ct">الفرق بين: الجَحِيمُ / النَّارُ / جَهَنَّمُ / السَّعِيرُ / الحُطَمَةُ / لَظَى / الهَاوِيَةُ</div>
+      <table class="tbl">
+        <tr><th>الاسم</th><th>الدلالة الخاصة</th></tr>
+        <tr><td class="term">جَهَنَّمُ</td><td class="def">الاسم الجامع لدار العذاب — يُستخدم في سياقات الوعيد العام.</td></tr>
+        <tr><td class="term">الجَحِيمُ</td><td class="def">النار الشديدة الاتقاد — وردت في سياق إبراهيم ﴿قَالُوا ابْنُوا لَهُ بُنْيَانًا فَأَلْقُوهُ فِي الْجَحِيمِ﴾.</td></tr>
+        <tr><td class="term">السَّعِيرُ</td><td class="def">النار المُسعَرة الموقدة — تُفيد الاشتعال الشديد المتجدد.</td></tr>
+        <tr><td class="term">الحُطَمَةُ</td><td class="def">النار التي تُحطّم كل ما أُلقي فيها — سُمّيت بفعلها.</td></tr>
+        <tr><td class="term">لَظَى</td><td class="def">اللهب الخالص الصافي — تُفيد خلوص العذاب بلا خلط.</td></tr>
+        <tr><td class="term">الهَاوِيَةُ</td><td class="def">دار العذاب التي يهوي إليها الكافر من الأعلى — تُفيد الهبوط المتواصل.</td></tr>
+      </table>
+    </div>
+    <div class="card f"><div class="ct">الفرق بين: الوَجْهُ / الجَبْهَةُ / الطَّلْعَةُ / المُحَيَّا</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الدلالة الدقيقة</th></tr>
+        <tr><td class="term">الوَجْهُ</td><td class="def">الأعم والأشمل — يتضمن الجبهة والخدين والفم والعينين كلها.</td></tr>
+        <tr><td class="term">الجَبْهَةُ</td><td class="def">أعلى الوجه — خُصّ بالذكر في مواضع السجود والعبادة.</td></tr>
+        <tr><td class="term">الطَّلْعَةُ</td><td class="def">المنظر الأول للوجه حين يُقبل الشخص — من «طَلَعَ» أي ظهر.</td></tr>
+        <tr><td class="term">المُحَيَّا</td><td class="def">الوجه من حيث حسنه وجماله — يُستعمل في الشعر والأدب للجمال.</td></tr>
+      </table>
+    </div>
+  </div>
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card f"><div class="ct">لماذا الوجه تحديداً لا الجسد كله؟</div><p>الوجه هو مركز كرامة الإنسان وعنوانه أمام الناس — وفي التقليد العربي «ماء الوجه» هو الكرامة بعينها. فلفح النار للوجه هو أشد الإهانات لأنه يضرب الإنسان في أعز ما يملك. والمتكبرون الذين كانوا يرفعون وجوههم استكباراً في الدنيا يُذلّون بعذاب الوجه في الآخرة.</p></div>
+    <div class="card f2"><div class="ct">الفرق الدقيق بين «كالحون» وغيرها من صفات أهل النار</div><p>«عابسون» تصف التجهّم الإرادي. «كالحون» تصف التشوه القسري غير الإرادي من شدة الألم — وهذا أشد إذلالاً لأنه ليس اختياراً بل نتيجة حتمية للعذاب. والكالح لا يملك أن يُغلق فمه أو يُخفي أسنانه.</p></div>
+    <div class="card f"><div class="ct">دلالة الدعاء الختامي في المقال</div><p>ختم المقال بسبعة أدعية مُتصاعدة في طلبها: من الاستعاذة من النار، إلى الاستعاذة من اللفح تحديداً، إلى الاستعاذة من الكلوح، إلى طلب النظر إلى الله في الجنة (مقابل الكلوح في النار)، إلى تثقيل الميزان، إلى حسن الخاتمة. وهذا التصاعد يُحوّل المقال من وعيد مجرد إلى دعاء عملي.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السباق: ما قبل الآية (٩٩–١٠٣)</div>
+    <div class="ci"><span class="vi">﴿حَتَّى إِذَا جَاءَ أَحَدَهُمُ الْمَوْتُ قَالَ رَبِّ ارْجِعُونِ ۝ لَعَلِّي أَعْمَلُ صَالِحًا فِيمَا تَرَكْتُ ۚ كَلَّا﴾</span><span class="vs">المؤمنون: ٩٩–١٠٠ — طلب العودة عند الموت ورفضه: هذا هو المشهد السابق لمشهد الكلوح.</span></div>
+    <div class="ci"><span class="vi">﴿فَمَن ثَقُلَتْ مَوَازِينُهُ فَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ ۝ وَمَنْ خَفَّتْ مَوَازِينُهُ فَأُولَٰئِكَ الَّذِينَ خَسِرُوا أَنفُسَهُمْ﴾</span><span class="vs">المؤمنون: ١٠٢–١٠٣ — مشهد الميزان يسبق مباشرةً مشهد لفح النار.</span></div>
+  </div>
+  <div class="cb"><div class="bt">اللحاق: ما بعد الآية (١٠٥–١١٥)</div>
+    <div class="ci"><span class="vi">﴿أَلَمْ تَكُنْ آيَاتِي تُتْلَى عَلَيْكُمْ فَكُنتُم بِهَا تُكَذِّبُونَ﴾</span><span class="vs">المؤمنون: ١٠٥ — التوبيخ الإلهي فور مشهد الكلوح.</span></div>
+    <div class="ci"><span class="vi">﴿قَالُوا رَبَّنَا غَلَبَتْ عَلَيْنَا شِقْوَتُنَا وَكُنَّا قَوْمًا ضَالِّينَ﴾</span><span class="vs">المؤمنون: ١٠٦ — اعترافهم بعد فوات الأوان.</span></div>
+    <div class="ci"><span class="vi">﴿قَالَ اخْسَئُوا فِيهَا وَلَا تُكَلِّمُونِ﴾</span><span class="vs">المؤمنون: ١٠٨ — الردّ الإلهي الحاسم: الصمت الأبدي.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات المتعلقة في القرآن الكريم</div>
+    <div class="ci"><span class="vi">﴿كُلَّمَا نَضِجَتْ جُلُودُهُمْ بَدَّلْنَاهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا الْعَذَابَ﴾</span><span class="vs">النساء: ٥٦ — تجدد العذاب المادي يوازي تجدد اللفح.</span></div>
+    <div class="ci"><span class="vi">﴿وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ ۝ إِلَىٰ رَبِّهَا نَاظِرَةٌ ۝ وَوُجُوهٌ يَوْمَئِذٍ بَاسِرَةٌ﴾</span><span class="vs">القيامة: ٢٢–٢٤ — المقابلة بين وجوه أهل الجنة ووجوه أهل النار.</span></div>
+    <div class="ci"><span class="vi">﴿يَوْمَ تَبْيَضُّ وُجُوهٌ وَتَسْوَدُّ وُجُوهٌ﴾</span><span class="vs">آل عمران: ١٠٦ — الوجه مؤشر الفوز والخسران يوم القيامة.</span></div>
+    <div class="ci"><span class="vi">﴿إِنَّهَا سَاءَتْ مُسْتَقَرًّا وَمُقَامًا﴾</span><span class="vs">الفرقان: ٦٦ — وصف جهنم بالإقامة الدائمة كما أفادته «فيها».</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية وعيد ✅</div><div class="md">تُصوّر عذاب أهل النار تصويراً حياً مروّعاً لإخافة الغافلين وتحذير العاصين.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عقدية ✅</div><div class="md">تُقرّر حقائق اليوم الآخر: النار وعذابها وخلوده — من أصول العقيدة الإسلامية.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">إخبار غيبي ✅</div><div class="md">إخبار عن أحوال الآخرة بما لا يُدرك بالحواس — من مجال الغيب الذي أخبر الله به.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة التصنيفية:</strong> الآية ١٠٤ من المؤمنون وعيدٌ مُصوَّر يُقرّر حقيقة عقدية (خلود العذاب) بأسلوب إخباري غيبي مروّع — منظومة وعيدية-عقدية-إخبارية.</div>
+  <div class="sub"><h3>الأحكام الشرعية المستنبطة</h3>
+    <div class="card f"><div class="ct">الحكم الأول: وجوب الخوف من النار والسعي للنجاة منها</div><p>دلّت الآية على وجوب أخذ التحذير من النار محمل الجد، وأن الخوف من العذاب من أعلى مقامات الإيمان. وقد استدل العلماء بآيات الوعيد على استحباب البكاء عند تلاوتها.</p></div>
+    <div class="card f2"><div class="ct">الحكم الثاني: تحريم الاستكبار والتكذيب بآيات الله</div><p>وصف الآية لأهل النار بالاستكبار عن الآيات يُفيد أن التكبر على الحق والتكذيب بالوحي من أسباب دخول النار — وهذا حكم شرعي مستفاد من السياق.</p></div>
+    <div class="card f"><div class="ct">الحكم الثالث: استحباب الدعاء بالنجاة من النار</div><p>روى أبو داود أن النبي ﷺ كان يقول: «اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ النَّارِ» ويكثر من ذلك. وبنى المقال ختامه على هذا السنة بسبعة أدعية مُتدرّجة.</p></div>
+    <div class="card f2"><div class="ct">الحكم الرابع: وجوب المبادرة بالتوبة قبل الموت</div><p>قوله «فَإِنَّ بَيْنَكَ وَبَيْنَ هَذَا المَشْهَدِ نَفَساً يَخْرُجُ فَلَا يَعُودُ» يُفيد وجوب الإسراع بالتوبة لأن بابها ينغلق بخروج الروح، ولا توبة بعد ظهور البأس.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.5rem;">﴿تَلْفَحُ وُجُوهَهُمُ النَّارُ وَهُمْ فِيهَا كَالِحُونَ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">تَلْفَحُ</div><div class="id">فعل مضارع مرفوع بالضمة الظاهرة، وهو فعل الجملة الرئيسية.</div></div>
+    <div class="ir"><div class="iw">وُجُوهَهُمُ</div><div class="id">«وجوه»: مفعول به مقدَّم منصوب بالفتحة وهو مضاف. «هم»: ضمير متصل مبني في محل جر مضاف إليه. وتقديم المفعول على الفاعل للتشنيع والاهتمام.</div></div>
+    <div class="ir"><div class="iw">النَّارُ</div><div class="id">فاعل مرفوع بالضمة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">وَهُمْ</div><div class="id">الواو: حالية. «هم»: ضمير منفصل مبني في محل رفع مبتدأ.</div></div>
+    <div class="ir"><div class="iw">فِيهَا</div><div class="id">جار ومجرور متعلقان بـ«كالحون» أو بمحذوف حال، ويُفيد الظرفية التامة: هم في داخل النار محاطون بها من كل جانب.</div></div>
+    <div class="ir"><div class="iw">كَالِحُونَ</div><div class="id">خبر المبتدأ «هم» مرفوع بالواو لأنه جمع مذكر سالم. والجملة الاسمية «وهم فيها كالحون» في محل نصب حال من ضمير «وجوههم» أو من الفاعل المحذوف.</div></div>
+  </div>
+  <div class="card f" style="margin-top:14px;"><div class="ct">ملاحظة: دلالة الجملة الاسمية في الحال</div><p>جاءت جملة الحال «وَهُمْ فِيهَا كَالِحُونَ» اسميةً لا فعليةً — والجملة الاسمية تدل على الثبوت والديمومة. كأن الكلوح ليس حدثاً عارضاً بل حالٌ ثابتة راسخة مستمرة، تماماً كما أن النار خالدة لا تنقطع.</p></div>
+  <div class="sub"><h3>إعراب الآية المصاحبة ﴿كُلَّمَا نَضِجَتْ جُلُودُهُمْ﴾</h3>
+  <div class="ib">
+    <div class="ir"><div class="iw">كُلَّمَا</div><div class="id">«كلّ»: اسم ظرفي منصوب على الظرفية. «ما»: مصدرية أو كافّة. والتركيب «كلّما» يُفيد التكرار والاستمرار بلا انقطاع.</div></div>
+    <div class="ir"><div class="iw">نَضِجَتْ جُلُودُهُمْ</div><div class="id">«نضجت»: فعل ماضٍ. «جلودهم»: فاعل مرفوع مضاف. الجملة في محل جر بإضافة «كلّ» إليها.</div></div>
+    <div class="ir"><div class="iw">بَدَّلْنَاهُمْ</div><div class="id">«بدّلنا»: فعل ماضٍ ونا فاعل. «هم»: مفعول به أول. الجملة جواب «كلّما» لا محل لها من الإعراب.</div></div>
+    <div class="ir"><div class="iw">جُلُودًا غَيْرَهَا</div><div class="id">«جلوداً»: مفعول به ثانٍ منصوب. «غيرها»: نعت لـ«جلوداً» منصوب — أي جلوداً مختلفة جديدة تستشعر العذاب من جديد.</div></div>
+    <div class="ir"><div class="iw">لِيَذُوقُوا الْعَذَابَ</div><div class="id">اللام: لام التعليل. «يذوقوا»: مضارع منصوب بـ«أن» مضمرة. «العذاب»: مفعول به. والمصدر المؤوّل في محل جر باللام: التعليل — لأجل إذاقتهم العذاب.</div></div>
+  </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«فَإِنَّ بَيْنَكَ وَبَيْنَ هَذَا المَشْهَدِ نَفَساً يَخْرُجُ فَلَا يَعُودُ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card f"><div class="ct">أولاً: التصوير القرآني كأداة تربوية</div><p>لم يكتفِ المقال بذكر العذاب بل استثمر قدرة التصوير القرآني — «تلفح، وجوههم، كالحون» — في استحضار المشهد بصرياً. هذا الأسلوب التصويري هو أعلى درجات التأثير التربوي لأنه يُخاطب الخيال البصري قبل العقل. <strong>التطبيق:</strong> تعليم الناشئة التدبر البصري لآيات الوعيد لا مجرد حفظها.</p></div>
+  <div class="card f2"><div class="ct">ثانياً: الوجه رمز الكرامة — الكبرياء ومصيره</div><p>ربط المقال بين الوجوه التي «كانت تتكبر في الأرض» والوجوه التي «تلفحها النار» — وهذا درس تربوي عميق: الكبرياء التي يُظهرها الإنسان بوجهه في الدنيا ستُجازى بإهانة الوجه ذاته في الآخرة. <strong>التطبيق:</strong> التواضع وخفض الجناح درعٌ من درع النار.</p></div>
+  <div class="card f"><div class="ct">ثالثاً: التذكّر الذي لا ينفع — المراجعة الآن</div><p>«يتذكر كل صلاة ضيّعها... كل فرصة توبة أضاعها» — قائمة التذكّر في الآخرة هي نفسها قائمة الإصلاح الممكن الآن. <strong>التطبيق:</strong> كتابة «قائمة الفرص الضائعة» في الذهن الآن — الصلوات الفائتة، التوبة المؤجلة — والبدء فوراً.</p></div>
+  <div class="card f2"><div class="ct">رابعاً: «نَفَسٌ يَخْرُجُ فَلَا يَعُودُ» — التوبة الآن</div><p>هذه الجملة من أشد الجمل تأثيراً في المقال — لأنها تُحوّل المشهد البعيد إلى لحظة قريبة جداً: نفَسٌ واحد. <strong>التطبيق:</strong> قبل أن تقوم من هذا المجلس — تب وادعُ. هذا هو الدرس العملي الفوري للمقال.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>الاستحضار البصري لا الوصف المجرد:</strong> «يُدْخِلُنَا إِلَى قَلْبِ المَشْهَدِ» — المؤلف يُحوّل القارئ من شاهد إلى مُشارك في المشهد.</li>
+      <li><strong>التدرج من العام إلى الخاص:</strong> بدأ بالنار عموماً ثم انتقل إلى الوجه تحديداً ثم إلى كلمة «كالحون» — تضييق متدرج يصل إلى الصورة الأكثر إيلاماً.</li>
+      <li><strong>المقابلة بين الدنيا والآخرة:</strong> وجوه كانت تتكبر — وجوه تُلفحها النار. الألقاب والمناصب — العدل الإلهي المجرد. تكرار هذه المقابلة يُرسّخ الدرس.</li>
+      <li><strong>الختم بالدعاء لا بالوعظ المجرد:</strong> انتقل من التخويف إلى التضرع — يُحوّل القارئ من الخوف الشلاّل إلى الخوف الدافع للعمل.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong style="color:var(--fg);">العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضراً أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong style="color:var(--fg);">البُعد الزمني:</strong> الربط الحي بين النص القرآني ومستجدات العصر — يُصوّر الغيب بلغة تُلامس قلب الإنسان المعاصر.</p>
+      <p><strong style="color:var(--fg);">التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ مما يُضفي على كتاباته دقةً عقدية نادرة.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم، ونفع به الأمة في زمن كثرت فيه الغفلة وقلّ التدبر.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">أحاديث الفتن</span>
+        <span class="atag">مشاهد القيامة</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const t=document.documentElement.scrollTop;
+  const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  const sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+const secs=document.querySelectorAll('.sec[id]');
+const links=document.querySelectorAll('.toc-a');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a) a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(s=>obs.observe(s));
+links.forEach(l=>l.addEventListener('click',()=>{
+  document.getElementById('sb').classList.add('off');
+  document.getElementById('sb').classList.remove('open');
+}));
+</script>
+</body>
+</html>
