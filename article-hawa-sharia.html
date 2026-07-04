@@ -1149,5 +1149,78 @@ links.forEach(l=>l.addEventListener('click',()=>{
   if(sb.classList.contains('mobile-open'))sb.classList.remove('mobile-open');
 }));
 </script>
+
+<!-- ===== أدوات إضافية (الفئة الأولى) ===== -->
+<style>
+/* أزرار عائمة */
+.fab-col{position:fixed;bottom:22px;left:22px;z-index:500;display:flex;flex-direction:column;gap:10px;align-items:flex-start;}
+.fab{width:46px;height:46px;border-radius:50%;border:1px solid rgba(46,144,104,.5);background:#0d3b2a;color:#d0f0e0;font-size:1.15rem;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .2s,opacity .3s;text-decoration:none;}
+.fab:hover{transform:translateY(-3px);}
+#topBtn{opacity:0;pointer-events:none;}
+#topBtn.show{opacity:1;pointer-events:auto;}
+/* زر PDF أسفل المقال */
+.pdf-bar{text-align:center;margin:40px auto 10px;}
+.pdf-btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#155e42,#0d3b2a);color:#eafff4;border:1px solid rgba(46,144,104,.5);border-radius:40px;padding:12px 30px;font-family:'Scheherazade New',serif;font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .2s;}
+.pdf-btn:hover{transform:translateY(-3px);}
+/* أزرار نسخ الآيات */
+.vb{position:relative;}
+.copy-verse{position:absolute;top:10px;left:10px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,168,56,.4);background:rgba(0,0,0,.25);color:#d8cba0;font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:3;}
+.copy-verse:hover{background:rgba(201,168,56,.25);color:#fff;}
+.copy-verse.done{background:#1a7a50;color:#fff;border-color:#1a7a50;}
+/* الوضع الليلي */
+body.night{background:#0c1512 !important;color:#d6e4dc !important;}
+body.night .card,body.night .mc,body.night .ib{background:#132420 !important;border-color:#24443a !important;}
+body.night .card *,body.night .mc *,body.night .ib *{color:#cfe0d8 !important;}
+body.night .abody,body.night .abody p{color:#d6e4dc !important;}
+body.night .sec h2,body.night .sub h3,body.night .hero h1,body.night .ct,body.night .ct2,body.night .term,body.night .iw{color:#e8d9a8 !important;}
+body.night .tbl td{border-color:#24443a !important;}
+body.night .hl,body.night .pq{background:rgba(255,255,255,.03) !important;}
+body.night .src{background:#1c1a12 !important;}
+body.night .src *{color:#d8c88a !important;}
+/* طباعة PDF نظيفة */
+@media print{
+  .fab-col,#sb,.hdr,.home-link,.pdf-bar,.copy-verse,#prog,.tbtn{display:none !important;}
+  .main{padding:0 !important;}
+  body{background:#fff !important;color:#000 !important;}
+  .card,.vb,.cb{break-inside:avoid;}
+}
+</style>
+
+<!-- أزرار عائمة: صعود + ليلي -->
+<div class="fab-col">
+  <button class="fab" id="topBtn" title="الصعود للأعلى" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <button class="fab" id="nightBtn" title="الوضع الليلي" onclick="toggleNight()">🌙</button>
+</div>
+
+<script>
+// زر الصعود للأعلى
+var _topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){
+  if(document.documentElement.scrollTop>350){_topBtn.classList.add('show');}
+  else{_topBtn.classList.remove('show');}
+});
+// الوضع الليلي
+function toggleNight(){
+  document.body.classList.toggle('night');
+  var b=document.getElementById('nightBtn');
+  b.textContent=document.body.classList.contains('night')?'☀️':'🌙';
+}
+// أزرار نسخ الآيات
+document.querySelectorAll('.vb').forEach(function(box){
+  var vt=box.querySelector('.vt');
+  if(!vt) return;
+  var btn=document.createElement('button');
+  btn.className='copy-verse'; btn.title='نسخ'; btn.textContent='⧉';
+  btn.onclick=function(){
+    var txt=vt.innerText.trim()+'\n\nمن موسوعة السلجوقي التدبرية\nhttps://fbbffv.github.io/al-seljuki-meditative-encyclopedia/';
+    navigator.clipboard.writeText(txt).then(function(){
+      btn.classList.add('done'); btn.textContent='✓';
+      setTimeout(function(){btn.classList.remove('done'); btn.textContent='⧉';},1500);
+    });
+  };
+  box.appendChild(btn);
+});
+</script>
+
 </body>
 </html>

@@ -118,6 +118,31 @@ footer .fb{font-family:'Scheherazade New',serif;font-size:1.2rem;margin-bottom:9
 footer .fb span{color:var(--gg);}
 footer .fl{margin-top:8px;font-size:.77rem;opacity:.6;}
 @media(max-width:640px){.hero h1{font-size:2.1rem;}.grid{grid-template-columns:1fr;}.latest-grid{grid-template-columns:1fr;}.wrap{padding:0 16px 60px;}}
+
+/* شريط البحث */
+.search-wrap{max-width:1300px;margin:0 auto 30px;padding:0 32px;}
+.search-box{position:relative;max-width:600px;margin:0 auto;}
+.search-box input{width:100%;padding:15px 52px 15px 20px;border:2px solid var(--div);border-radius:40px;font-family:'Noto Naskh Arabic',serif;font-size:1.05rem;background:#fff;color:var(--ink);outline:none;transition:border-color .2s;}
+.search-box input:focus{border-color:var(--gm);}
+.search-box .s-icon{position:absolute;top:50%;right:20px;transform:translateY(-50%);color:var(--gm);font-size:1.2rem;pointer-events:none;}
+.search-empty{text-align:center;color:var(--mist);padding:30px;font-size:1.05rem;display:none;}
+/* زر الوضع الليلي والصعود */
+.fab-col{position:fixed;bottom:22px;left:22px;z-index:500;display:flex;flex-direction:column;gap:10px;}
+.fab{width:46px;height:46px;border-radius:50%;border:1px solid rgba(46,144,104,.5);background:var(--gd);color:var(--gt);font-size:1.15rem;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .2s,opacity .3s;}
+.fab:hover{transform:translateY(-3px);}
+#topBtn{opacity:0;pointer-events:none;}
+#topBtn.show{opacity:1;pointer-events:auto;}
+/* الوضع الليلي للفهرس */
+body.night{background:#0c1512 !important;}
+body.night .card{background:#132420 !important;border-color:#24443a !important;}
+body.night .card-body h3{color:#e8d9a8 !important;}
+body.night .card-ref,body.night .card-cta .read{color:#9fc9b4 !important;}
+body.night .sec-label h2,body.night .hero h1{color:#e8d9a8 !important;}
+body.night .hero .desc,body.night .stat .lbl{color:#b8ccc0 !important;}
+body.night .search-box input{background:#132420;color:#d6e4dc;border-color:#24443a;}
+body.night .latest-card .lc-body{background:#132420;}
+body.night .latest-card .lc-body h3{color:#e8d9a8 !important;}
+
 </style>
 </head>
 <body>
@@ -146,6 +171,14 @@ footer .fl{margin-top:8px;font-size:.77rem;opacity:.6;}
 </div>
 
 <div class="divider">✦ ✧ ✦</div>
+
+
+<div class="search-wrap">
+  <div class="search-box">
+    <span class="s-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="ابحث عن مقال، سورة، أو موضوع..." onkeyup="filterCards()">
+  </div>
+</div>
 
 <div class="wrap">
 
@@ -363,5 +396,34 @@ window.addEventListener('scroll',()=>{
   document.getElementById('prog').style.height=(h>0?(t/h*100):0)+'vh';
 });
 </script>
+
+<div class="fab-col">
+  <button class="fab" id="topBtn" title="الصعود للأعلى" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <button class="fab" id="nightBtn" title="الوضع الليلي" onclick="toggleNight()">🌙</button>
+</div>
+
+<script>
+// البحث الفوري في البطاقات
+function filterCards(){
+  var q=document.getElementById('searchInput').value.trim().toLowerCase();
+  var cards=document.querySelectorAll('.grid .card, .latest-card');
+  cards.forEach(function(c){
+    var t=c.innerText.toLowerCase();
+    c.style.display = (q===''||t.indexOf(q)>-1) ? '' : 'none';
+  });
+}
+// الوضع الليلي
+function toggleNight(){
+  document.body.classList.toggle('night');
+  var b=document.getElementById('nightBtn');
+  b.textContent=document.body.classList.contains('night')?'☀️':'🌙';
+}
+// زر الصعود
+var _tb=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){
+  if(document.documentElement.scrollTop>350){_tb.classList.add('show');}else{_tb.classList.remove('show');}
+});
+</script>
+
 </body>
 </html>
