@@ -1777,6 +1777,30 @@ document.querySelectorAll('.vb').forEach(function(box){
 .c-btn svg{width:27px;height:27px;fill:#fff;}
 @media print{.contact-fab{display:none !important;}}
 </style>
+
+<!-- ===== صندوق التعليقات (Disqus) ===== -->
+<div class="comments-sec" style="max-width:820px;margin:50px auto 0;padding:0 22px;">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+    <span style="font-size:1.4rem;color:#b08d34;">✦</span>
+    <h2 style="font-family:'Amiri',serif;font-size:1.6rem;color:#7a2e28;">التَّعْلِيقَاتُ وَالْمُدَاخَلَاتُ</h2>
+  </div>
+  <p style="color:#6a5636;font-size:.95rem;margin-bottom:20px;font-family:'Cairo',sans-serif;">شارِكْنا رأيك ومُداخلتك حول هذا المقال — نرحّب بتعليقك الكريم.</p>
+  <div id="disqus_thread" style="background:rgba(255,255,255,.55);border:1px solid rgba(176,141,52,.28);border-radius:16px;padding:20px;"></div>
+</div>
+<script>
+var disqus_config = function () {
+  this.page.url = window.location.href;
+  this.page.identifier = window.location.pathname;
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://alseljuki.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>يُرجى تفعيل الجافاسكربت لعرض <a href="https://disqus.com/?ref_noscript">التعليقات المدعومة من Disqus.</a></noscript>
+
 <div class="contact-fab">
   <a class="c-btn c-wa" href="https://wa.me/9647700610518" target="_blank" title="واتساب" aria-label="واتساب">
     <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-.9-1.1-1.3-1.7-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1.1-.3 0-.4-.1-.1-.6-1.5-.9-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.2-.6.3-.6.6-.9 1.4-.9 2.2.1 1 .5 2 1.1 2.8 1.1 1.7 2.6 3 4.4 3.8.5.2.9.4 1.4.5.5.2 1 .2 1.6.1.7-.1 1.3-.6 1.7-1.2.2-.4.2-.8.1-1.2l-.4-.2m2.5-9.1C15.2.4 7.7.4 3 5.2c-3.9 3.9-4.6 9.9-1.9 14.6L0 24l4.3-1.1c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4m-2 15.1c-1.6 1-3.5 1.6-5.4 1.6-1.8 0-3.5-.5-5.1-1.4l-.4-.2-2.5.7.7-2.5-.2-.4c-3-5-1.5-11.3 3.4-14.4S16.5 2.9 19.5 7.8s1.5 11.4-3.5 14.5v-.9"/></svg>
