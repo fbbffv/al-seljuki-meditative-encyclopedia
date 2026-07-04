@@ -143,6 +143,31 @@ body.night .search-box input{background:#132420;color:#d6e4dc;border-color:#2444
 body.night .latest-card .lc-body{background:#132420;}
 body.night .latest-card .lc-body h3{color:#e8d9a8 !important;}
 
+
+/* أزرار التواصل العائمة (واتساب + تليجرام) */
+.contact-fab{position:fixed;bottom:22px;right:22px;z-index:500;display:flex;flex-direction:column;gap:12px;}
+.c-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:transform .2s;text-decoration:none;font-size:1.6rem;}
+.c-btn:hover{transform:scale(1.1);}
+.c-wa{background:#25D366;}
+.c-tg{background:#0088cc;}
+.c-btn svg{width:28px;height:28px;fill:#fff;}
+/* قسم نموذج الاتصال */
+.contact-sec{max-width:700px;margin:20px auto 0;padding:0 32px;}
+.contact-card{background:linear-gradient(135deg,var(--gd),#0a2a1e);border:2px solid var(--gold-m);border-radius:18px;padding:34px 30px;box-shadow:0 8px 30px rgba(13,59,42,.2);}
+.contact-card h2{font-family:'Scheherazade New',serif;color:var(--gt);font-size:1.7rem;text-align:center;margin-bottom:8px;}
+.contact-card .c-desc{color:var(--gg);text-align:center;font-size:.95rem;margin-bottom:24px;}
+.contact-form{display:flex;flex-direction:column;gap:14px;}
+.contact-form input,.contact-form textarea{width:100%;padding:13px 18px;border-radius:12px;border:1px solid rgba(46,144,104,.4);background:rgba(255,255,255,.95);font-family:'Noto Naskh Arabic',serif;font-size:1rem;color:var(--ink);outline:none;transition:border-color .2s;}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold-m);}
+.contact-form textarea{min-height:120px;resize:vertical;}
+.contact-form button{background:linear-gradient(135deg,var(--gold),var(--gold-m));color:#04140c;font-family:'Scheherazade New',serif;font-weight:700;font-size:1.2rem;border:none;border-radius:40px;padding:14px;cursor:pointer;transition:transform .2s;}
+.contact-form button:hover{transform:translateY(-3px);}
+/* التذييل - البريد */
+.footer-email{margin-top:14px;}
+.footer-email a{color:var(--gold-l);text-decoration:none;font-size:.95rem;border:1px solid rgba(201,168,56,.35);border-radius:30px;padding:8px 20px;display:inline-flex;align-items:center;gap:8px;transition:background .2s;}
+.footer-email a:hover{background:rgba(201,168,56,.12);}
+body.night .contact-form input,body.night .contact-form textarea{background:#e8f0ea;}
+
 </style>
 </head>
 <body>
@@ -176,7 +201,7 @@ body.night .latest-card .lc-body h3{color:#e8d9a8 !important;}
 <div class="search-wrap">
   <div class="search-box">
     <span class="s-icon">🔍</span>
-    <input type="text" id="searchInput" placeholder="ابحث عن مقال، سورة، أو موضوع..." onkeyup="filterCards()">
+    <input type="text" id="searchInput" placeholder="ابحث عن مقال، سورة، أو موضوع..." onkeyup="filterCards()" autocomplete="off" autocorrect="off" spellcheck="false">
   </div>
 </div>
 
@@ -383,10 +408,28 @@ body.night .latest-card .lc-body h3{color:#e8d9a8 !important;}
   </div>
 </div>
 
+
+<div class="contact-sec">
+  <div class="contact-card">
+    <h2>تَوَاصَلْ مَعَنَا</h2>
+    <p class="c-desc">لِلْمُلَاحَظَاتِ وَالِاقْتِرَاحَاتِ وَالِاسْتِفْسَارَاتِ حَوْلَ الْمَوْسُوعَةِ</p>
+    <form class="contact-form" action="https://formsubmit.co/tahirnajim1987@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="رسالة جديدة من موسوعة السلجوقي التدبرية">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="الاسم" placeholder="الاسم" required>
+      <input type="email" name="البريد الإلكتروني" placeholder="بريدك الإلكتروني" required>
+      <textarea name="الرسالة" placeholder="اكتب رسالتك هنا..." required></textarea>
+      <button type="submit">إرسال الرسالة ✦</button>
+    </form>
+  </div>
+</div>
+
 <footer>
   <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
   <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
   <p class="fl">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق ١٩٧٠م</p>
+  <div class="footer-email"><a href="mailto:tahirnajim1987@gmail.com">✉ tahirnajim1987@gmail.com</a></div>
 </footer>
 
 <script>
@@ -424,6 +467,16 @@ window.addEventListener('scroll',function(){
   if(document.documentElement.scrollTop>350){_tb.classList.add('show');}else{_tb.classList.remove('show');}
 });
 </script>
+
+
+<div class="contact-fab">
+  <a class="c-btn c-wa" href="https://wa.me/9647700610518" target="_blank" title="واتساب" aria-label="واتساب">
+    <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-.9-1.1-1.3-1.7-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1.1-.3 0-.4-.1-.1-.6-1.5-.9-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.2-.6.3-.6.6-.9 1.4-.9 2.2.1 1 .5 2 1.1 2.8 1.1 1.7 2.6 3 4.4 3.8.5.2.9.4 1.4.5.5.2 1 .2 1.6.1.7-.1 1.3-.6 1.7-1.2.2-.4.2-.8.1-1.2l-.4-.2m2.5-9.1C15.2.4 7.7.4 3 5.2c-3.9 3.9-4.6 9.9-1.9 14.6L0 24l4.3-1.1c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4m-2 15.1c-1.6 1-3.5 1.6-5.4 1.6-1.8 0-3.5-.5-5.1-1.4l-.4-.2-2.5.7.7-2.5-.2-.4c-3-5-1.5-11.3 3.4-14.4S16.5 2.9 19.5 7.8s1.5 11.4-3.5 14.5v-.9"/></svg>
+  </a>
+  <a class="c-btn c-tg" href="https://t.me/Mmmdgsaeccb" target="_blank" title="تليجرام" aria-label="تليجرام">
+    <svg viewBox="0 0 24 24"><path d="M23.9 4.5c-.3-.2-.7-.3-1.1-.1L1.6 12.2c-.5.2-.8.6-.8 1.1s.4.9.9 1l5.3 1.7 2 6.3c.1.2.2.4.4.5.2.2.5.3.8.3.3 0 .6-.1.9-.4l2.8-2.7 4.9 3.6c.3.2.6.3.9.3.5 0 1-.3 1.2-.9l4.2-18.4c.1-.5-.1-.9-.5-1.1M9.5 15.4l-.6 4.2-1.4-4.6 9.3-6.1-7.3 6.5"/></svg>
+  </a>
+</div>
 
 </body>
 </html>
