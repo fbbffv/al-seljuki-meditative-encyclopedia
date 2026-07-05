@@ -214,6 +214,38 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
   .tugra{font-size:1rem;letter-spacing:.2em;}
 }
 @media print{.fab-l,.fab-r,.hdr,#prog{display:none!important;}}
+
+/* صورة الشيخ في الهيرو - إطار دائري مزخرف */
+.sheikh-frame{position:relative;width:170px;height:170px;margin:0 auto 26px;}
+.sheikh-frame .ring-out{position:absolute;inset:-14px;border:1px solid rgba(176,141,52,.35);border-radius:50%;}
+.sheikh-frame .ring-mid{position:absolute;inset:-7px;border:2px dashed rgba(176,141,52,.45);border-radius:50%;animation:spin 40s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.sheikh-frame .ring-in{position:absolute;inset:0;border-radius:50%;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 30px rgba(176,141,52,.35),inset 0 0 20px rgba(0,0,0,.2);}
+.sheikh-frame .ring-in img{width:100%;height:100%;object-fit:cover;display:block;}
+.sheikh-frame .corner-star{position:absolute;color:var(--gold);font-size:1.1rem;}
+.sheikh-frame .cs-t{top:-26px;left:50%;transform:translateX(-50%);}
+.sheikh-frame .cs-b{bottom:-26px;left:50%;transform:translateX(-50%);}
+.sheikh-frame .cs-l{right:-26px;top:50%;transform:translateY(-50%);}
+.sheikh-frame .cs-r{left:-26px;top:50%;transform:translateY(-50%);}
+
+/* البطاقة الترحيبية + مشغل النشيد */
+.welcome-card{max-width:760px;margin:40px auto 0;padding:0 22px;}
+.wc-inner{background:linear-gradient(135deg,var(--night),#20180e);border:1.5px solid var(--gold);border-radius:20px;padding:30px 26px;position:relative;overflow:hidden;text-align:center;}
+.wc-inner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(212,178,90,.14),transparent 60%);pointer-events:none;}
+.wc-avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;border:3px solid var(--gold-l);margin:0 auto 16px;box-shadow:0 4px 18px rgba(0,0,0,.4);position:relative;}
+.wc-avatar img{width:100%;height:100%;object-fit:cover;display:block;}
+.wc-inner h3{font-family:'Reem Kufi',sans-serif;color:var(--gold-lt);font-size:1.4rem;margin-bottom:6px;position:relative;}
+.wc-inner .wc-name{font-family:'Amiri',serif;color:var(--gg);font-size:1.15rem;margin-bottom:14px;position:relative;}
+.wc-inner .wc-bio{color:#c8b48a;font-size:.98rem;line-height:2;max-width:600px;margin:0 auto 22px;position:relative;font-family:'Cairo',sans-serif;}
+/* مشغل النشيد */
+.nasheed-player{display:inline-flex;align-items:center;gap:14px;background:rgba(176,141,52,.12);border:1px solid rgba(201,168,56,.4);border-radius:40px;padding:10px 22px;position:relative;}
+.nasheed-player button{width:44px;height:44px;border-radius:50%;border:none;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .2s;flex-shrink:0;}
+.nasheed-player button:hover{transform:scale(1.08);}
+.nasheed-player .np-label{text-align:right;}
+.nasheed-player .np-title{color:var(--gold-lt);font-family:'Amiri',serif;font-size:1.05rem;}
+.nasheed-player .np-sub{color:var(--gg);font-size:.76rem;}
+@media(max-width:520px){.sheikh-frame{width:140px;height:140px;}.wc-inner{padding:24px 18px;}}
+
 </style>
 </head>
 <body>
@@ -234,12 +266,36 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
 <section class="hero">
   <div class="hero-frame"></div>
   <div class="tugra">✦ ✧ ❖ ✧ ✦</div>
+  <div class="sheikh-frame">
+    <span class="corner-star cs-t">✦</span><span class="corner-star cs-b">✦</span>
+    <span class="corner-star cs-l">✧</span><span class="corner-star cs-r">✧</span>
+    <span class="ring-out"></span><span class="ring-mid"></span>
+    <span class="ring-in"><img src="sheikh.png" alt="الشيخ علي خليل السلجوقي"></span>
+  </div>
   <h1>مَوْسُوعَةُ <span class="accent">السَّلْجُوقِي</span></h1>
   <div class="lede">مِنَصَّةٌ عِلْمِيَّةٌ مَوْسُوعِيَّةٌ شَامِلَةٌ</div>
   <p class="desc">مِنَ التَّدَبُّرِ وَشُرُوحِ الْحَدِيثِ، إِلَى الْفِقْهِ وَأُصُولِهِ، وَنَقْدِ الْوَاقِعِ وَالسِّيَاسَةِ الشَّرْعِيَّةِ، وَالرَّقَائِقِ وَالطِّبِّ النَّبَوِيِّ وَتَعْبِيرِ الرُّؤَى.</p>
   <div class="rule"><span>❁</span></div>
   <div class="author-line">بِقَلَمِ الشَّيْخِ الْبَاحِثِ <b>عَلِيّ خَلِيل عَبَّاس السَّلْجُوقِي التُّرْكْمَانِيّ اللِّيلَانِيّ</b></div>
 </section>
+
+<!-- بطاقة الترحيب والتعريف بالشيخ + النشيد -->
+<div class="welcome-card">
+  <div class="wc-inner">
+    <div class="wc-avatar"><img src="sheikh.png" alt="الشيخ علي خليل السلجوقي"></div>
+    <h3>مَرْحَبًا بِكُمْ فِي رِحَابِ المَوْسُوعَةِ</h3>
+    <div class="wc-name">الشَّيْخُ عَلِيّ خَلِيل عَبَّاس السَّلْجُوقِيّ التُّرْكْمَانِيّ اللِّيلَانِيّ</div>
+    <p class="wc-bio">باحِثٌ مَوسوعيٌّ أفنى قَلَمَهُ في خِدمةِ كتابِ اللهِ العزيزِ وسُنّةِ نبيِّهِ ﷺ؛ يَجولُ بينَ التَّدبُّرِ والفِقهِ وأصولِهِ، ونقدِ الواقعِ، والرَّقائقِ والحياةِ، بأسلوبٍ بَديعٍ يَجمَعُ عُمقَ العالِمِ وبَيانَ الأديبِ. فمَرحبًا بكم في رِحابِ فِكرِهِ ومَعارِفِهِ.</p>
+    <div class="nasheed-player">
+      <button id="npBtn" onclick="toggleNasheed()" aria-label="تشغيل النشيد">▶</button>
+      <div class="np-label">
+        <div class="np-title">نَشِيدُ التَّعْرِيفِ بِالشَّيْخِ</div>
+        <div class="np-sub">اضغط للاستماع</div>
+      </div>
+    </div>
+    <audio id="nasheedAudio" src="nasheed.mp3" preload="none"></audio>
+  </div>
+</div>
 
 <!-- البحث -->
 <div class="search-wrap">
@@ -589,5 +645,18 @@ window.addEventListener('scroll',function(){
   if(t>350)tb.classList.add('show');else tb.classList.remove('show');
 });
 </script>
+
+<script>
+function toggleNasheed(){
+  var a=document.getElementById('nasheedAudio');
+  var b=document.getElementById('npBtn');
+  if(a.paused){ a.play(); b.textContent='⏸'; }
+  else{ a.pause(); b.textContent='▶'; }
+}
+document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio').addEventListener('ended',function(){
+  document.getElementById('npBtn').textContent='▶';
+});
+</script>
+
 </body>
 </html>
