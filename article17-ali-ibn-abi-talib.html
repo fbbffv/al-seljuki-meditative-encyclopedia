@@ -141,6 +141,31 @@ footer .fb span{color:var(--sg);}
     <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
   </div>
 </header>
+
+<!-- عدّاد المشاهدات الظاهر -->
+<div class="view-counter" style="text-align:center;margin:18px auto;font-family:'Cairo',sans-serif;font-size:.9rem;color:#7a2e28;">
+  <span style="display:inline-flex;align-items:center;gap:7px;background:rgba(176,141,52,.12);border:1px solid rgba(176,141,52,.28);border-radius:30px;padding:6px 18px;">
+    <span style="font-size:1rem;">👁</span>
+    شوهد <span id="view-count" style="font-weight:700;color:#b08d34;">…</span> مرة
+  </span>
+</div>
+<script>
+(function(){
+  var path = location.pathname;
+  var url = "https://tahirnajim.goatcounter.com/counter/" + encodeURIComponent(path) + ".json";
+  fetch(url).then(function(r){ return r.json(); })
+    .then(function(d){
+      var el = document.getElementById('view-count');
+      if(el && d && d.count){ el.textContent = d.count; }
+      else if(el){ el.textContent = "١"; }
+    })
+    .catch(function(){
+      var el = document.getElementById('view-count');
+      if(el){ el.textContent = "—"; }
+    });
+})();
+</script>
+
 <div class="layout">
 <aside class="sb off" id="sb">
   <div class="toc-h">◈ فهرس المحتوى</div>
@@ -648,6 +673,11 @@ var disqus_config = function () {
     <svg viewBox="0 0 24 24"><path d="M23.9 4.5c-.3-.2-.7-.3-1.1-.1L1.6 12.2c-.5.2-.8.6-.8 1.1s.4.9.9 1l5.3 1.7 2 6.3c.1.2.2.4.4.5.2.2.5.3.8.3.3 0 .6-.1.9-.4l2.8-2.7 4.9 3.6c.3.2.6.3.9.3.5 0 1-.3 1.2-.9l4.2-18.4c.1-.5-.1-.9-.5-1.1M9.5 15.4l-.6 4.2-1.4-4.6 9.3-6.1-7.3 6.5"/></svg>
   </a>
 </div>
+
+
+<!-- ===== عدّاد الزوّار (GoatCounter) ===== -->
+<script data-goatcounter="https://tahirnajim.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 
 </body>
 </html>
