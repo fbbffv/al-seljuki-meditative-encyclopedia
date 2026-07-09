@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نَفَحَاتُ التَّنْزِيلِ… حِينَ يُخَاطِبُ الْوَحْيُ الْقَلْبَ قَبْلَ السَّمْعِ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c1608;--bg:#faf6ec;--bg2:#f1e6c8;
+  --bronze:#5a3d0a;--bm:#8a6018;--blt:#c9a227;
+  --bd:#0d0f1c;--bt:#f5e9c8;--bg-g:#e8c76a;
+  --teal:#101a3a;--gold:#8a6018;--gold-m:#c9a227;
+  --div:#e2d3a0;--mist:#4a3c1e;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(201,162,39,.09) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(90,61,10,.07) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--bm),var(--teal));z-index:400;transform-origin:top;}
+.hdr{background:var(--bd);border-bottom:2px solid var(--bm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:flex-end;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:12px;}
+.hbtns{display:flex;gap:8px;flex-shrink:0;}
+.tbtn{background:var(--bronze);color:var(--bg-g);border:1px solid rgba(201,162,39,.4);padding:7px 14px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.8rem;white-space:nowrap;}
+.tbtn:hover{background:var(--bm);color:#fff;}
+
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#07091600;background:#07070f;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(201,162,39,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(201,162,39,.2);}
+.toc-s{color:rgba(201,162,39,.6);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#a8905a;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--bt);background:rgba(201,162,39,.1);border-right-color:var(--blt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--bm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--blt);}
+.hcat{display:inline-block;background:var(--bronze);color:var(--bt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.35rem;font-weight:700;color:var(--bd);line-height:1.5;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--bm);border-radius:50%;}
+.vb{background:var(--bd);border:1px solid rgba(201,162,39,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(201,162,39,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.72rem;color:var(--bt);line-height:2.15;position:relative;z-index:1;}
+.vt.sm{font-size:1.32rem;}
+.vr{color:var(--bg-g);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#1c1608;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--bm);float:right;line-height:.82;margin-left:8px;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--bronze);font-weight:700;text-align:center;margin:10px 0;}
+.src{background:rgba(138,96,24,.07);border:1px solid rgba(138,96,24,.24);border-radius:7px;padding:12px 16px;margin:10px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;color:var(--bronze);line-height:1.85;}
+.src strong{color:var(--bm);}
+.grade{display:inline-block;font-size:.66rem;padding:2px 8px;border-radius:3px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.sahih{background:#6a4e10;}
+.grade.hasan{background:#7a6010;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--bd);color:var(--blt);border:2px solid var(--bm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--bd);border-bottom:2px solid var(--blt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--bronze);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.b{border-right:5px solid var(--bm);}
+.card.b2{border-right:5px solid var(--bronze);}
+.card.b3{border-right:5px solid var(--teal);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#1c1608;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#1c1608;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--bm);color:var(--bt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--bd);color:var(--bg-g);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--bm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(201,162,39,.05);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#1c1608;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#1c1608;min-width:170px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--bm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#1c1608;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#1c1608;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--bm);font-size:.85em;top:11px;}
+.asec{background:var(--bd);border:1px solid rgba(201,162,39,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--bm),var(--bronze));border:3px solid var(--blt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--bg-g);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#c9b378;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:var(--bg-g);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--bg-g);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--bt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(201,162,39,.16);color:var(--blt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(201,162,39,.28);}
+.orn{text-align:center;color:var(--blt);font-size:1.25rem;margin:48px 0;opacity:.55;letter-spacing:.42em;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#1c1608;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--blt);border-bottom:2px solid var(--blt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--blt);opacity:.22;line-height:1;}
+.vrd{background:linear-gradient(135deg,#07070f,#0d0f1c);border:1px solid rgba(201,162,39,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#c9b378;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--bt);}
+.cb{background:linear-gradient(135deg,#07070f,#0d0f1c);border:1px solid rgba(201,162,39,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(201,162,39,.25);}
+.ci{color:#c9b378;padding:9px 0;border-bottom:1px dashed rgba(201,162,39,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--bg-g);font-size:.78rem;opacity:.8;}
+footer{background:var(--bd);color:#5a4a24;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(201,162,39,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--blt);}
+footer .fb span{color:var(--bg-g);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.85rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.15rem;}.hero h1{font-size:1.5rem;}.pq{font-size:1.1rem;padding:20px 16px;}.hdr-i{padding:0 10px;}.tbtn{font-size:.72rem;padding:6px 9px;}}
+@media print{
+  .hdr,.sb,.orn{display:none!important;}
+  body{background:#fff;}
+  .layout{display:block;}
+  .main{padding:0;max-width:100%;}
+  .vb,.cb,.vrd{background:#fff!important;border:1px solid #999!important;}
+  .vt,.ci,.ci .vi,.cb .bt{color:#111!important;}
+  .ci .vs{color:#444!important;}
+  .sec{page-break-inside:avoid;}
+  .card{box-shadow:none;}
+  .asec{background:#fff!important;border:1px solid #999;}
+  .ai h3,.ai .at,.ai p,.ami .amv,.ami .aml{color:#111!important;}
+}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآيات والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآيات</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تدبر قرآني · الشعراء ١٩٢-١٩٥ · مكية · إعجاز الوحي</div>
+  <h1>نَفَحَاتُ التَّنْزِيلِ…<br>حِينَ يُخَاطِبُ الْوَحْيُ الْقَلْبَ قَبْلَ السَّمْعِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>الشعراء: ١٩٢-١٩٥</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿وَإِنَّهُ لَتَنزِيلُ رَبِّ الْعَالَمِينَ ۝ نَزَلَ بِهِ الرُّوحُ الْأَمِينُ ۝ عَلَىٰ قَلْبِكَ لِتَكُونَ مِنَ الْمُنذِرِينَ ۝ بِلِسَانٍ عَرَبِيٍّ مُّبِينٍ﴾</div>
+    <div class="vr">سورة الشعراء (٢٦)، الآيات ١٩٢-١٩٥، مكية</div>
+  </div>
+
+  <div class="abody">
+    <p>إِنَّهَا كَلِمَاتٌ تَهُزُّ الْوِجْدَانَ قَبْلَ أَنْ تُلاَمِسَ الْأَسْمَاعَ، وَتَمْلأُ الْقَلْبَ يَقِينًا قَبْلَ أَنْ تَسْتَقِرَّ فِي الْعُقُولِ. إِنَّهَا شَهَادَةٌ رَبَّانِيَّةٌ خَالِدَةٌ بِأَنَّ هَذَا الْقُرْآنَ لَيْسَ صِنَاعَةَ بَشَرٍ، وَلَا ثَمَرَةَ عَبْقَرِيَّةِ إِنْسَانٍ، وَإِنَّمَا هُوَ تَنْزِيلُ رَبِّ الْعَالَمِينَ؛ مِنْ رَبٍّ يَمْلِكُ الْخَلْقَ جَمِيعًا، وَيُدَبِّرُ أَمْرَ الْكَوْنِ كُلَّهُ، وَيَعْلَمُ السِّرَّ وَأَخْفَى، وَيُحِيطُ بِكُلِّ شَيْءٍ عِلْمًا وَرَحْمَةً وَقُدْرَةً.</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿وَإِنَّهُ لَتَنزِيلُ رَبِّ الْعَالَمِينَ﴾</div><div class="vr">الشعراء (٢٦)، الآية ١٩٢، مكية</div></div>
+
+    <p>لَمْ يَقُلْ: تَنْزِيلُ رَبِّ الْعَرَبِ، وَلَا رَبِّ قَوْمٍ بِعَيْنِهِمْ، وَإِنَّمَا قَالَ: رَبِّ الْعَالَمِينَ؛ لِيَبْقَى هَذَا الْكِتَابُ رِسَالَةً لِلْإِنْسَانِيَّةِ كُلِّهَا، وَرَحْمَةً لِلْعَالَمِينَ، وَنُورًا لَا تَحُدُّهُ حُدُودٌ، وَلَا تُقَيِّدُهُ أَرْضٌ، وَلَا يَحْتَكِرُهُ شَعْبٌ. فَهُوَ خِطَابُ السَّمَاءِ إِلَى الْأَرْضِ، وَهِدَايَةُ الْخَالِقِ إِلَى خَلْقِهِ.</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿نَزَلَ بِهِ الرُّوحُ الْأَمِينُ﴾</div><div class="vr">الشعراء (٢٦)، الآية ١٩٣، مكية</div></div>
+
+    <p>إِنَّهُ الرُّوحُ الْأَمِينُ؛ أَمِينُ السَّمَاءِ، الَّذِي لَمْ يَزِدْ حَرْفًا وَلَمْ يَنْقُصْ حَرْفًا، وَلَمْ يُبَدِّلْ كَلِمَةً وَلَمْ يُغَيِّرْ مَعْنًى. حَمَلَ الْوَحْيَ كَمَا أُنْزِلَ، وَنَقَلَهُ كَمَا أُرِيدَ لَهُ أَنْ يَصِلَ، فَاجْتَمَعَ شَرَفُ الْمُنْزِلِ، وَشَرَفُ الرَّسُولِ الْمَلَكِيِّ، وَشَرَفُ الرِّسَالَةِ الْخَاتِمَةِ. إِنَّهَا أَمَانَةٌ عَظِيمَةٌ، لَا مَكَانَ فِيهَا لِلْهَوَى وَلَا لِلْخَطَأِ وَلَا لِلتَّحْرِيفٍ.</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿عَلَىٰ قَلْبِكَ﴾</div><div class="vr">الشعراء (٢٦)، الآية ١٩٤، مكية (جزء منها)</div></div>
+
+    <p>وَلَمْ يَقُلْ: عَلَى سَمْعِكَ، وَلَا عَلَى عَقْلِكَ، وَإِنَّمَا قَالَ: عَلَى قَلْبِكَ؛ لِأَنَّ الْقَلْبَ هُوَ مَوْطِنُ الْإِيمَانِ، وَمَنْبَعُ الْيَقِينِ، وَمُسْتَقَرُّ النُّورِ. فَإِذَا امْتَلأَ الْقَلْبُ بِالْوَحْيِ، أَشْرَقَتِ الْجَوَارِحُ بِالطَّاعَةِ، وَاسْتَقَامَتِ الْحَيَاةُ كُلُّهَا عَلَى هَدْيِ اللهِ. فَالْقَلْبُ هُوَ أَوَّلُ مَنْ يَتَلَقَّى، ثُمَّ يَفِيضُ أَثَرُهُ عَلَى الْفِكْرِ وَاللِّسَانِ وَالْعَمَلِ.</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿بِلِسَانٍ عَرَبِيٍّ مُّبِينٍ﴾</div><div class="vr">الشعراء (٢٦)، الآية ١٩٥، مكية</div></div>
+
+    <p>وَهُنَا تَتَجَلَّى دِقَّةُ التَّعْبِيرِ الْقُرْآنِيِّ؛ فَلَمْ يَقُلْ: بِلُغَةٍ عَرَبِيَّةٍ، وَإِنَّمَا قَالَ: بِلِسَانٍ عَرَبِيٍّ مُبِينٍ.
+    فَاللِّسَانُ أَوْسَعُ دَلَالَةً مِنْ مُجَرَّدِ اللُّغَةِ؛ إِذْ يَشْمَلُ الْبَيَانَ، وَالتَّعْبِيرَ، وَالْأُسْلُوبَ، وَطَرَائِقَ الْخِطَابِ، وَخَصَائِصَ الْأَدَاءِ، وَجَمَالَ الْإِيقَاعِ، وَوُضُوحَ الدَّلَالَةِ. إِنَّهُ لِسَانٌ يُخَاطِبُ الْعَقْلَ بِالْحُجَّةِ، وَالْقَلْبَ بِالْمَوْعِظَةِ، وَالْوِجْدَانَ بِالْإِيقَاعِ، وَالْفِطْرَةَ بِالْحَقِيقَةِ.</p>
+
+    <p>وَقَدْ جَاءَ وَصْفُهُ بِـ مُبِينٍ؛ أَيْ وَاضِحٌ فِي أَلْفَاظِهِ، ظَاهِرٌ فِي مَعَانِيهِ، كَاشِفٌ لِلْحَقِّ، مُظْهِرٌ لِلْهِدَايَةِ، لَا غُمُوضَ فِيهِ لِمَنْ أَقْبَلَ عَلَيْهِ بِقَلْبٍ سَلِيمٍ.</p>
+
+    <p class="ql">فَالْقُرْآنُ لَمْ يَنْزِلْ لِيَكُونَ كِتَابَ ثَقَافَةٍ فَحَسْبُ، وَإِنَّمَا نَزَلَ لِيَصْنَعَ الْإِنْسَانَ، وَيُوقِظَ الضَّمِيرَ، وَيَبْنِيَ الْأُمَّةَ، وَيُقِيمَ الْحَيَاةَ عَلَى نُورِ الْوَحْيِ. إِنَّهُ يُخَاطِبُ الْقَلْبَ لِيُحْيِيَهُ، وَالْعَقْلَ لِيَهْدِيَهُ، وَالرُّوحَ لِتَسْمُوَ بِهِ إِلَى رَبِّهَا.</p>
+
+    <p>وَكُلَّمَا ازْدَادَ الْعَبْدُ تَدَبُّرًا لِهَذِهِ الْآيَاتِ، ازْدَادَ يَقِينًا بِأَنَّ هَذَا الْكِتَابَ مَحْفُوظٌ بِحِفْظِ اللهِ، وَأَنَّ مَصْدَرَهُ رَبُّ الْعَالَمِينَ، وَحَامِلَهُ الرُّوحُ الْأَمِينُ، وَمُسْتَقَرَّهُ قَلْبُ النَّبِيِّ ﷺ، وَلِسَانَهُ عَرَبِيٌّ مُبِينٌ، فَاجْتَمَعَتْ فِيهِ عَظَمَةُ الْمَصْدَرِ، وَأَمَانَةُ النَّاقِلِ، وَطَهَارَةُ الْمُتَلَقِّي، وَوُضُوحُ الْبَيَانِ.</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">اللَّهُمَّ اجْعَلِ الْقُرْآنَ الْعَظِيمَ رَبِيعَ قُلُوبِنَا، وَنُورَ صُدُورِنَا، وَجَلَاءَ أَحْزَانِنَا، وَاهْدِنَا بِهِ إِلَى صِرَاطِكَ الْمُسْتَقِيمِ.</div></div>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;color:var(--bronze);font-weight:700;">عَلِي خَلِيل عَبَّاس السَّلْجُوقِي التُّرْكُمَانِي اللَّيْلَانِي</p>
+
+    <!-- تخريج -->
+    <div class="sub"><h3>📚 تخريج الأحاديث الواردة في تحليل المقال</h3>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>«نَزَلَ بِهِ الرُّوحُ الْأَمِينُ»، تفسيرًا: هو جبريل عليه السلام، لا نزاع في ذلك بين السلف</strong><br>ذكره ابن كثير في تفسير القرآن العظيم عند تفسير سورة الشعراء، الآية ١٩٣، ناقلًا الإجماع على ذلك عن ابن عباس، ومحمد بن كعب، وقتادة، وعطية العوفي، والسدي، والضحاك، والزهري، وابن جريج. وأخرج نحوه الطبري في جامع البيان، تفسير الشعراء: ١٩٣.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>«أَحْيَانًا يَأْتِينِي مِثْلَ صَلْصَلَةِ الْجَرَسِ، وَهُوَ أَشَدُّهُ عَلَيَّ، فَيُفْصَمُ عَنِّي وَقَدْ وَعَيْتُ عَنْهُ مَا قَالَ، وَأَحْيَانًا يَتَمَثَّلُ لِيَ الْمَلَكُ رَجُلًا فَيُكَلِّمُنِي فَأَعِي مَا يَقُولُ»</strong><br>أخرجه البخاري في صحيحه، كتاب بدء الوحي، باب كيف كان بدء الوحي، ح٢، عن عائشة رضي الله عنها. وأخرج نحوه مسلم في صحيحه، كتاب الفضائل، ح٢٣٣٣.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>«أَلَا وَإِنَّ فِي الْجَسَدِ مُضْغَةً إِذَا صَلَحَتْ صَلَحَ الْجَسَدُ كُلُّهُ، وَإِذَا فَسَدَتْ فَسَدَ الْجَسَدُ كُلُّهُ، أَلَا وَهِيَ الْقَلْبُ»</strong><br>أخرجه البخاري في صحيحه، كتاب الإيمان، باب فضل من استبرأ لدينه، ح٥٢. ومسلم في صحيحه، كتاب المساقاة، باب أخذ الحلال وترك الشبهات، ح١٥٩٩. عن النعمان بن بشير رضي الله عنهما.</div>
+      <div class="src"><strong>المصدر:</strong> القرطبي، الجامع لأحكام القرآن، تفسير سورة الشعراء، الآية ١٩٣ — في بيان اختلاف القراء بين التخفيف والتشديد في «نزل به الروح الأمين» (ط. دار الكتب المصرية).</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية</h3>
+    <div class="card b"><div class="ct">استعارة النزول: الوحي كالغيث المنسكب من عَلٍ</div><p>الفعل «نزّل/نزَل» مستعار من نزول المطر من السماء إلى الأرض، فشُبِّه الوحي الذي يحيي القلوب بالماء الذي يحيي الأرض الميتة، وهذه استعارة تصريحية أصيلة في القرآن الكريم (كما في «وأنزلنا من السماء ماءً» بجوار «وأنزلنا إليك الذكر»)، ترسم صورة الوحي وهو يهبط من العلوّ الإلهي إلى القلب النبوي هبوط الغيث النافع لا هبوط الحجر الثقيل.</p></div>
+    <div class="card b2"><div class="ct">تجسيد القلب وعاءً للنور: «عَلَىٰ قَلْبِكَ» لا «في قلبك»</div><p>عبَّر المقال عن دلالة حرف «على» بأنها استعلاء وتمكن؛ وهذه قراءة بلاغية دقيقة، إذ صُوِّر القلب في الآية كأنه سطحٌ متلقٍّ استقر عليه الوحي استقرار الشيء الثابت الراسخ، لا كوعاء يُحشى حشوًا عابرًا. فالتصوير البلاغي يُشخِّص القلب بوصفه أرضًا صالحة نزل عليها الغيث فرسخ فيها ولم يجرِ عنها.</p></div>
+    <div class="card b3"><div class="ct">التدرج الحسي من العلوّ إلى الباطن: رب العالمين → الروح الأمين → القلب → اللسان</div><p>ترسم الآيات الأربع مسارًا تصويريًّا متتابعًا: مصدر علوي مطلق (رب العالمين)، فوسيط سماوي أمين (الروح الأمين)، فمستقر إنساني باطن (القلب)، فأداة بيان ظاهرة (اللسان العربي المبين). وهذا التدرج من الغيب المطلق إلى المشاهَد المنطوق صورة بلاغية متكاملة لمسار الوحي من العرش إلى الأرض، ومن السماء إلى الشفتين.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="card b"><div class="ct">التوكيد المزدوج في مطلع الآية ١٩٢: «إنّ» + لام الابتداء</div><p>«وَإِنَّهُ لَتَنزِيلُ رَبِّ الْعَالَمِينَ» جُمعَ فيها بين «إنّ» ولام الابتداء (المزحلقة)، وهو أسلوب توكيدي مركّب يُستعمل في مقام إنكار المخاطَب أو تردده، وسياق سورة الشعراء سياق مواجهة لمكذِّبين زعموا أن القرآن سحر أو شعر أو كهانة أو افتراء — فجاء التوكيد المضاعف ردًّا بلاغيًّا حاسمًا على هذه الدعاوى كلها.</p></div>
+    <div class="card b2"><div class="ct">ازدواج الوصف الختامي: «عربيٍّ مُّبِينٍ» — نعتان متتاليان</div><p>توالي نعتين لـ«لسان» (عربي، مبين) من قبيل الإطناب بالوصف المتدرج: الأول يحدد الهوية اللغوية، والثاني يصف خاصيتها (الوضوح). وهذا التتابع في النعوت — دون عطف بينهما — يفيد شدة الالتصاق بين الوصفين، كأن العربية والبيان صفتان متلازمتان لا تنفك إحداهما عن الأخرى في هذا اللسان.</p></div>
+    <div class="card b3"><div class="ct">التناسب الصوتي بين فواصل الآيات: «الْعَالَمِينَ / الْأَمِينُ / الْمُنذِرِينَ / مُّبِينٍ»</div><p>تنتهي الآيات الأربع بفواصل على وزن «فَاعِلِين/فَعِيل» بروِيّ النون والياء، وهو من سجع الآي القرآني (الفواصل المتناسبة) لا السجع الاصطلاحي المتكلَّف، يمنح المقطع إيقاعًا موسيقيًّا هادئًا يُعين على التلقي القلبي قبل التلقي الذهني، ويُحقق بذلك مقصد الآية نفسها: مخاطبة القلب قبل السمع.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div class="card b"><div class="ct">أسلوب الشهادة الربانية الاستهلالي</div><p>يفتتح المقال تحليله بأسلوب الشهادة الوجدانية القائمة على المقابلة بين «الهزّ الوجداني» و«الملامسة السمعية»، فيُقدِّم الأثر النفسي على الإدراك الحسي — منهج أدبي يوافق ترتيب الآية نفسها التي قدَّمت «على قلبك» ولم تقدِّم «على سمعك»، فبِنية المقال تُحاكي بنية الآية.</p></div>
+  <div class="card b2"><div class="ct">أسلوب التفكيك التحليلي للآية عبارةً عبارة</div><p>ينتقل المقال بمنهج تفسيري تحليلي: يقتطع كل مقطع من الآيات الأربع («لتنزيل رب العالمين»، «نزل به الروح الأمين»، «على قلبك»، «بلسان عربي مبين») ويُفرد له فقرة مستقلة تشرح دلالته، ثم يُجمِلها في خاتمة تركيبية تُعيد ترتيب العناصر الأربعة معًا (المصدر، الناقل، المستقر، اللسان). وهذا أسلوب «التحليل ثم التركيب» المعروف في كتابة التفسير الموضوعي المعاصر.</p></div>
+  <div class="card b3"><div class="ct">الصورة الأدبية الختامية: اجتماع أربع كرامات في وحيٍ واحد</div><p>«فَاجْتَمَعَتْ فِيهِ عَظَمَةُ الْمَصْدَرِ، وَأَمَانَةُ النَّاقِلِ، وَطَهَارَةُ الْمُتَلَقِّي، وَوُضُوحُ الْبَيَانِ» — تعداد رباعي موزون يُلخِّص أركان المقال الأربعة في جملة ختامية واحدة، وهي صياغة أدبية تجمع خلاصة التحليل كله في نسق واحد قبل أن يُختَم المقال بالدعاء، وهو أسلوب ختامي شائع في كتابة التدبر القرآني المعاصر.</p></div>
+
+  <div id="s2a" class="sub"><h3>القراءات والصرف</h3>
+    <div class="card b"><div class="ct">«نَزَلَ بِهِ الرُّوحُ الْأَمِينُ» — الخلاف بين التخفيف والتشديد</div><p>قرأ نافعٌ وابنُ كثير وأبو عمرو «نَزَلَ» بتخفيف الزاي فعلًا لازمًا، و«الرُّوحُ الْأَمِينُ» فاعلًا مرفوعًا؛ أي أن جبريل عليه السلام هو الذي نزل بنفسه. وقرأ الباقون «نَزَّلَ» بتشديد الزاي فعلًا متعديًا، فيكون الفاعل ضميرًا مستترًا يعود على الله تعالى، و«الروحَ الأمينَ» مفعولًا به منصوبًا؛ أي أن الله تعالى أنزل جبريل بالقرآن. والقراءتان متواتِرتان، ومعناهما متقارب متكامل: فعلى التخفيف يُبرَز فعل جبريل الناقل، وعلى التشديد يُبرَز فعل الله المُنزِل — فاجتمع في الآية معنى صدور الوحي عن الله وحمل جبريل له.</p><div class="src"><strong>المصدر:</strong> القرطبي، الجامع لأحكام القرآن، تفسير الشعراء ١٩٣؛ والطبري، جامع البيان، تفسير الشعراء ١٩٣ (نقلًا عن اختلاف القراء في التخفيف والتشديد).</div></div>
+    <div class="card b2"><div class="ct">«تَنْزِيلُ» صرفيًا — الفرق بين وزن «تفعيل» و«إفعال»</div><p>«تنزيل» مصدر الفعل المضعَّف «نزَّل» على وزن «تفعيل»، والتضعيف في الأفعال الثلاثية المزيدة يفيد غالبًا التكثير والتكرير والتدرج، بخلاف «إنزال» مصدر «أنزل» الرباعي الذي يفيد مطلق الإيقاع دفعة. ومن هنا فرَّق العلماء بين «تنزيل القرآن»، الدال على نزوله منجَّمًا مفرَّقًا على مدى ثلاث وعشرين سنة بحسب الوقائع، و«إنزاله»، الذي يشمل نزوله جملة واحدة إلى بيت العزة في السماء الدنيا ليلة القدر.</p></div>
+    <div class="card b3"><div class="ct">«الْمُنذِرِينَ» و«مُّبِينٍ» صرفيًا — اسما فاعل من الرباعي</div><p>«المنذرين» جمع مذكر سالم لاسم الفاعل «مُنذِر» من الفعل الرباعي «أنذر يُنذِر»، على وزن «مُفعِل»، من الجذر (ن ذ ر) الدال على التخويف والتحذير قبل وقوع المكروه. و«مبين» اسم فاعل من «أبان يُبين» الرباعي، وهو من الأفعال التي تأتي لازمة ومتعدية معًا (أبان الشيءُ: اتضح، وأبان الشيءَ: أوضحه)؛ فوصف اللسان بـ«مبين» يحتمل المعنيين معًا: هو بيِّنٌ في ذاته، ومُبيِّنٌ لغيره.</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card b"><div class="ct"><span class="bdg">مشترك</span> كلمة «الرُّوح»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">جبريل عليه السلام، أمين الوحي</td><td class="def">﴿نَزَلَ بِهِ الرُّوحُ الْأَمِينُ﴾ — الشعراء (٢٦): ١٩٣.</td></tr>
+        <tr><td class="term">القرآن نفسه بوصفه وحيًا محييًا</td><td class="def">﴿وَكَذَٰلِكَ أَوْحَيْنَا إِلَيْكَ رُوحًا مِّنْ أَمْرِنَا﴾ — الشورى (٤٢): ٥٢.</td></tr>
+        <tr><td class="term">عيسى عليه السلام</td><td class="def">﴿وَرُوحٌ مِّنْهُ﴾ — النساء (٤): ١٧١.</td></tr>
+        <tr><td class="term">نفخة الحياة في آدم عليه السلام</td><td class="def">﴿وَنَفَخْتُ فِيهِ مِن رُّوحِي﴾ — الحجر (١٥): ٢٩.</td></tr>
+        <tr><td class="term">ملَك عظيم يصطف يوم القيامة</td><td class="def">﴿يَوْمَ يَقُومُ الرُّوحُ وَالْمَلَائِكَةُ صَفًّا﴾ — النبأ (٧٨): ٣٨.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْقَلْب»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">مستقر الوحي واليقين (في مقالنا)</td><td class="def">﴿عَلَىٰ قَلْبِكَ لِتَكُونَ مِنَ الْمُنذِرِينَ﴾ — الشعراء (٢٦): ١٩٤.</td></tr>
+        <tr><td class="term">القلب المختوم عليه بالكفر</td><td class="def">﴿خَتَمَ اللَّهُ عَلَىٰ قُلُوبِهِمْ﴾ — البقرة (٢): ٧.</td></tr>
+        <tr><td class="term">القلب أداة العقل والتدبر</td><td class="def">﴿لِمَن كَانَ لَهُ قَلْبٌ﴾ — ق (٥٠): ٣٧.</td></tr>
+        <tr><td class="term">تقلُّب القلوب بيد الله</td><td class="def">﴿وَاعْلَمُوا أَنَّ اللَّهَ يَحُولُ بَيْنَ الْمَرْءِ وَقَلْبِهِ﴾ — الأنفال (٨): ٢٤.</td></tr>
+      </table>
+    </div>
+    <div class="card b3"><div class="ct"><span class="bdg">مشترك</span> كلمة «اللِّسَان»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">وعاء الأداء البياني للوحي (في مقالنا)</td><td class="def">﴿بِلِسَانٍ عَرَبِيٍّ مُّبِينٍ﴾ — الشعراء (٢٦): ١٩٥.</td></tr>
+        <tr><td class="term">اللسان الجارحة الحسية</td><td class="def">﴿أَلَمْ نَجْعَل لَّهُ عَيْنَيْنِ وَلِسَانًا وَشَفَتَيْنِ﴾ — البلد (٩٠): ٨-٩.</td></tr>
+        <tr><td class="term">الذكر الحسن الباقي (لسان صدق)</td><td class="def">﴿وَاجْعَل لِّي لِسَانَ صِدْقٍ فِي الْآخِرِينَ﴾ — الشعراء (٢٦): ٨٤.</td></tr>
+        <tr><td class="term">لسان القوم = لغتهم في الرسالة</td><td class="def">﴿وَمَا أَرْسَلْنَا مِن رَّسُولٍ إِلَّا بِلِسَانِ قَوْمِهِ﴾ — إبراهيم (١٤): ٤.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card b"><div class="ct">الفرق بين: التَّنْزِيلُ / الْإِنْزَالُ / الْوَحْيُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">التنزيل</td><td class="def">نزول متدرِّج مُفرَّق على دفعات (وزن تفعيل يفيد التكرير)، وهو الغالب في وصف نزول القرآن على النبي ﷺ منجَّمًا حسب الوقائع.</td></tr>
+        <tr><td class="term">الإنزال</td><td class="def">مطلق الإيقاع من عُلوٍّ إلى سُفل، دفعة أو تفريقًا، وهو أعمّ من التنزيل، ويشمل نزول القرآن جملة إلى السماء الدنيا.</td></tr>
+        <tr><td class="term">الوحي</td><td class="def">الإعلام الخفي السريع، وهو أعمّ من وسيلة الإلقاء نفسها؛ فقد يكون بالتنزيل عبر الروح الأمين، أو بالإلهام، أو بالرؤيا الصادقة، أو بالتكليم المباشر كما في ليلة الإسراء.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct">الفرق بين: اللِّسَانُ / اللُّغَةُ / الْكَلَامُ / الْمَنْطِقُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">اللسان</td><td class="def">يُطلق على الجارحة وعلى قوة النطق بها، ويُكنى به عن أسلوب البيان وطريقة الأداء وخصائصه الجمالية — أخصّ وأوسع دلالة من مجرد الألفاظ.</td></tr>
+        <tr><td class="term">اللغة</td><td class="def">نظام الألفاظ والقواعد المشترك الذي يتواضع عليه قوم للتفاهم — أقرب إلى المعجم والنحو دون الأسلوب والبيان.</td></tr>
+        <tr><td class="term">الكلام</td><td class="def">كل لفظ مركب مفيد، أعمّ من اللسان واللغة، ولا يستلزم خصائص أسلوبية معينة.</td></tr>
+        <tr><td class="term">المنطق</td><td class="def">النطق الفعلي الصادر عن المتكلم في لحظة بعينها — فعل الكلام لا نظامه ولا أسلوبه.</td></tr>
+      </table>
+      <div class="src"><strong>المصدر:</strong> الراغب الأصفهاني، المفردات في غريب القرآن، مادة (ل س ن)؛ نقلًا عن الجرجاني: «اللسان: الجارحة وقوتها»، والرازي: «هو الآلة في إعطاء المعارف؛ فوجب أن يكون أشرف الأعضاء».</div>
+    </div>
+    <div class="card b3"><div class="ct">الفرق بين: الْإِنْذَارُ / التَّبْشِيرُ / الْإِعْلَامُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الإنذار</td><td class="def">إخبارٌ بأمرٍ مخوفٍ قبل وقوعه مع تحذير منه، فهو أخصّ من مطلق الإخبار؛ ومنه «المنذرين» في الآية.</td></tr>
+        <tr><td class="term">التبشير</td><td class="def">إخبارٌ بأمرٍ سارّ يظهر أثره على البشرة، وهو نظير الإنذار في الجانب المقابل (الخير مقابل الخوف).</td></tr>
+        <tr><td class="term">الإعلام</td><td class="def">مطلق الإخبار من غير قيد بخوف أو بشرى؛ وهو أعمّ الألفاظ الثلاثة.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card b"><div class="ct">لماذا «رَبِّ الْعَالَمِينَ» لا «رَبِّكَ» أو «رَبِّ الْعَرَبِ»؟</div><p>العدول عن الإضافة الخاصة (ربّك) أو التخصيص القومي (رب العرب) إلى الإضافة الشاملة (رب العالمين) بلاغةٌ في ذاتها تُقرِّر عالمية الرسالة من أول آية تتحدث عن مصدرها، فتُغلق الباب أمام أي فهم يَحصر القرآن في نطاق عرقي أو جغرافي، مع أنه نزل بلسان عربي — فاللسان وسيلة البيان لا حدود الرسالة.</p></div>
+    <div class="card b2"><div class="ct">لماذا «الرُّوحُ الْأَمِينُ» لا «جِبْرِيلُ» بالاسم الصريح هنا؟</div><p>مع أن جبريل عليه السلام سُمِّي باسمه صراحة في مواضع أخرى (كالبقرة: ٩٧)، اختير هنا وصف «الروح الأمين» لمناسبة السياق؛ فسورة الشعراء تردّ على دعاوى المشركين في أن القرآن مِن صنع كاهن أو ساحر أو شاعر، فجاء التعبير بصفة «الأمين» ليُبرز أن حامل الوحي مأمون على النقل لا يزيد فيه ولا ينقص، وهو ما يقطع دابر الشبهة بالتحريف أو الافتراء من أصلها.</p></div>
+    <div class="card b3"><div class="ct">لماذا «بِلِسَانٍ عَرَبِيٍّ» لا «بِلُغَةٍ عَرَبِيَّةٍ»؟</div><p>كما بيَّن المقال، اللسان أوسع من اللغة لأنه يشمل الأسلوب والبيان والإيقاع لا الألفاظ فقط. ويؤيده أن العرب أنفسهم استعملوا «اللسان» للدلالة على البيان والفصاحة («فلان لسِنٌ» أي فصيح بليغ)، بخلاف «اللغة» التي تدل على مجرد المفردات والقواعد المشتركة. فاختيار «لسان» هنا اختيارٌ دقيقٌ يوافق مقصد الآية في وصف القرآن بالبيان لا بمجرد كونه بألفاظ عربية.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السياق المباشر — سورة الشعراء (٢٦): ما قبل الآيات ١٩٢-١٩٥</div>
+    <div class="ci"><span class="vi">﴿وَمَا يَأْتِيهِم مِّن ذِكْرٍ مِّنَ الرَّحْمَٰنِ مُحْدَثٍ إِلَّا كَانُوا عَنْهُ مُعْرِضِينَ﴾</span><span class="vs">الشعراء (٢٦): ٥ — تمهيد مبكر في السورة يصف إعراض المشركين عن كل ذكرٍ جديد، وهو ما تعود الآيات ١٩٢-١٩٥ لتفنيده بإثبات مصدر هذا «الذكر» الإلهي.</span></div>
+    <div class="ci"><span class="vi">قصص الأنبياء المتتالية: موسى، إبراهيم، نوح، هود، صالح، لوط، شعيب، وخاتمة كل قصة: ﴿إِنَّ فِي ذَٰلِكَ لَآيَةً وَمَا كَانَ أَكْثَرُهُم مُّؤْمِنِينَ وَإِنَّ رَبَّكَ لَهُوَ الْعَزِيزُ الرَّحِيمُ﴾</span><span class="vs">الشعراء (٢٦): ٨-١٩١ تقريبًا — سلسلة طويلة من قصص الرسل مع أقوامهم المكذبين، تمهِّد لآيات ١٩٢-١٩٥ بوصفها خاتمة تُبيِّن أن القرآن امتداد لنفس سلسلة الوحي الإلهي، وأن محمدًا ﷺ ليس بدعًا من الرسل.</span></div>
+  </div>
+  <div class="cb"><div class="bt">ما بعد الآيات — استمرار الدفاع عن أصالة الوحي</div>
+    <div class="ci"><span class="vi">﴿وَإِنَّهُ لَفِي زُبُرِ الْأَوَّلِينَ ۝ أَوَلَمْ يَكُن لَّهُمْ آيَةً أَن يَعْلَمَهُ عُلَمَاءُ بَنِي إِسْرَائِيلَ﴾</span><span class="vs">الشعراء (٢٦): ١٩٦-١٩٧ — تأكيد أن ذكر هذا القرآن ورد في الكتب السابقة، وهذا استكمال منطقي لفكرة أصالة الوحي وصدقه التي بدأتها الآيات ١٩٢-١٩٥.</span></div>
+    <div class="ci"><span class="vi">﴿وَلَوْ نَزَّلْنَاهُ عَلَىٰ بَعْضِ الْأَعْجَمِينَ ۝ فَقَرَأَهُ عَلَيْهِم مَّا كَانُوا بِهِ مُؤْمِنِينَ﴾</span><span class="vs">الشعراء (٢٦): ١٩٨-١٩٩ — بيان الحكمة من كون الوحي عربيًا: لو نزل بغير لسانهم لازدادوا إعراضًا وعذرًا، فربط الآية بلاحقتها يُظهر أن «بلسان عربي مبين» مقصدٌ مقصودٌ لقطع الأعذار.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات ذات الصلة في القرآن الكريم</div>
+    <div class="ci"><span class="vi">﴿قُلْ مَن كَانَ عَدُوًّا لِّجِبْرِيلَ فَإِنَّهُ نَزَّلَهُ عَلَىٰ قَلْبِكَ بِإِذْنِ اللَّهِ﴾</span><span class="vs">البقرة (٢): ٩٧ — مدنية — الآية الأقرب مضمونًا لآياتنا؛ فيها ذكر جبريل صراحة، ونزول الوحي على القلب بالذات كما في الشعراء ١٩٤.</span></div>
+    <div class="ci"><span class="vi">﴿قُلْ نَزَّلَهُ رُوحُ الْقُدُسِ مِن رَّبِّكَ بِالْحَقِّ﴾</span><span class="vs">النحل (١٦): ١٠٢ — مكية — تسمية أخرى لجبريل بـ«روح القدس»، وتأكيد أن التنزيل «بالحق» ردًّا على دعوى الافتراء.</span></div>
+    <div class="ci"><span class="vi">﴿إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ﴾</span><span class="vs">يوسف (١٢): ٢ — مكية — تكرار وصف عربية القرآن مقرونًا بغاية التعقل، كما ربط مقالنا اللسان العربي بمخاطبة العقل والقلب معًا.</span></div>
+    <div class="ci"><span class="vi">﴿وَمَا أَرْسَلْنَا مِن رَّسُولٍ إِلَّا بِلِسَانِ قَوْمِهِ لِيُبَيِّنَ لَهُمْ﴾</span><span class="vs">إبراهيم (١٤): ٤ — مكية — تقرير القاعدة العامة التي طبَّقتها آية الشعراء على القرآن: كل رسالة تنزل بلسان قومها ليتحقق البيان والفهم.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط المحوري:</strong> تنتظم آيات الشعراء ١٩٢-١٩٥ في سلسلة قرآنية متكاملة تُقرِّر أركان الوحي الأربعة: مصدره (رب العالمين)، وسيطه (الروح الأمين/جبريل)، مستقره (قلب النبي ﷺ)، وأداته البيانية (اللسان العربي المبين). وهذه الأركان الأربعة تتكرر مجتمعة أو متفرقة في آيات أخرى (البقرة: ٩٧، النحل: ١٠٢، الشورى: ٥١-٥٢)، مما يُبيِّن أن القرآن يُثبت حقيقة واحدة من زوايا متعددة تدعم بعضها بعضًا.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآيات والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية عقدية — إثبات النبوة والوحي ✅</div><div class="md">الآيات الأربع من أصرح آيات القرآن في تقرير حقيقة الوحي: مصدره، وواسطته، ومستقره، ولسانه — فهي ركيزة عقدية في الإيمان بالكتب والملائكة والرسل معًا.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية جدلية دفاعية — رد على شبهات المشركين ✅</div><div class="md">جاءت الآيات في سياق سورة مكية تعرض قصص الأنبياء مع أقوامهم المكذبين، فهي ردٌّ مباشر على دعاوى المشركين بأن القرآن سحر أو شعر أو كهانة أو افتراء.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية إخبار لا أحكام عملية مباشرة ✅</div><div class="md">الآيات من نوع الإخبار الغيبي (نمط نزول الوحي وصفاته) لا من آيات الأحكام العملية المباشرة، لكنها تؤسس الأصل الذي تُبنى عليه حجية سائر الأحكام: كون القرآن كلام الله المنزل.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> آيات الشعراء (١٩٢-١٩٥) منظومة عقدية-جدلية-إخبارية: تُقرِّر حقيقة الوحي الإلهي، وتَرُدّ على شبهات المكذبين، وتُخبر عن سنة الله في إرسال الرسل بلسان أقوامهم؛ وهي بذلك أصلٌ تُبنى عليه حجية القرآن كله.</div>
+  <div class="sub"><h3>الأحكام والأصول المستنبطة</h3>
+    <div class="card b"><div class="ct">الأصل الأول: وجوب الإيمان بأن القرآن كلام الله المنزَّل لا كلام بشر</div>
+      <p>يُستنبط من صريح الآية ١٩٢ («تنزيل رب العالمين») أصلٌ عقديٌّ واجبٌ: أن القرآن منزَّل من عند الله حقيقة، لا مِن تأليف النبي ﷺ ولا مِن وحي شيطاني كما زعم المشركون، وهذا ركنٌ من أركان الإيمان بالكتب السماوية.</p>
+      <div class="src"><strong>المصدر:</strong> ابن كثير، تفسير القرآن العظيم، تفسير سورة الشعراء، الآيات ١٩٢-١٩٥ (ط. دار طيبة) — عند قوله: «يقول تعالى مخبرًا عن الكتاب الذي أنزله على عبده ورسوله محمد صلوات الله وسلامه عليه».</div>
+    </div>
+    <div class="card b2"><div class="ct">الأصل الثاني: وجوب الإيمان بجبريل عليه السلام وأمانته على الوحي</div>
+      <p>وصف جبريل بـ«الروح الأمين» يُقرِّر ركنًا من أركان الإيمان بالملائكة: تصديق وجودهم، والإيمان بخصائصهم كالأمانة المطلقة على ما يُكلَّفون به، وأن الوحي وصل كما أراده الله دون زيادة أو نقصان.</p>
+      <div class="src"><strong>المصدر:</strong> ابن كثير، تفسير القرآن العظيم، تفسير الشعراء ١٩٣ — «وهو جبريل عليه السلام... وهذا ما لا نزاع فيه»؛ ونقل عن مجاهد: «من كلَّمه الروح الأمين لا تأكله الأرض».</div>
+    </div>
+    <div class="card b3"><div class="ct">الأصل الثالث: وجوب الإنذار والبلاغ على النبي ﷺ ومن ورثه من العلماء</div>
+      <p>يُستنبط من «لِتَكُونَ مِنَ الْمُنذِرِينَ» أن غاية الوحي ليست المعرفة المجردة بل الإنذار والتبليغ، وهذا أصلٌ يُبنى عليه وجوب الدعوة إلى الله والتحذير من عاقبة الإعراض عن الحق، وهي مهمة تلي النبي ﷺ فيها ورثته من العلماء والدعاة.</p>
+      <div class="src"><strong>المصدر:</strong> السعدي، تيسير الكريم الرحمن في تفسير كلام المنان، تفسير سورة الشعراء ١٩٢-١٩٥ (ط. مؤسسة الرسالة) — في بيان أن الإنذار هو غاية إنزال القرآن على قلب النبي ﷺ.</div>
+    </div>
+    <div class="card" style="border-right:5px solid var(--gold-m);"><div class="ct">الأصل الرابع: حجية اللغة العربية في فهم القرآن واستنباط الأحكام</div>
+      <p>لأن القرآن نزل «بلسان عربي مبين»، أصَّل علماء أصول الفقه لقاعدة أن فهم القرآن واستنباط أحكامه لا يكون إلا بمقتضى قواعد اللغة العربية وأساليبها، فلا يجوز تفسير آية بما يخالف دلالات العربية الصريحة.</p>
+      <div class="src"><strong>المصدر:</strong> الشافعي، الرسالة، الفصل الأول في وجوب معرفة لسان العرب لفهم القرآن (تحقيق أحمد شاكر) — وهو أول من أصَّل لهذا الأصل تأصيلًا مفصلًا في علم أصول الفقه.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآيات الكريمات تفصيلاً</h2></div>
+
+  <div class="vb" style="margin-bottom:18px;"><div class="vt" style="font-size:1.25rem;">﴿وَإِنَّهُ لَتَنزِيلُ رَبِّ الْعَالَمِينَ﴾</div><div class="vr">الشعراء (٢٦)، الآية ١٩٢، مكية</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَإِنَّهُ</div><div class="id">الواو: استئنافية معطوفة على مضمون ما سبق من قصص الأنبياء. «إنّ»: حرف توكيد ونصب. الهاء: ضمير متصل مبني في محل نصب اسم «إنّ»، يعود على القرآن الكريم المفهوم من سياق السورة.</div></div>
+    <div class="ir"><div class="iw">لَتَنزِيلُ</div><div class="id">اللام: لام الابتداء (المزحلقة) للتوكيد، دخلت على خبر «إنّ» لتوسط الاسم بينها وبين «إنّ». «تنزيل»: خبر «إنّ» مرفوع بالضمة.</div></div>
+    <div class="ir"><div class="iw">رَبِّ الْعَالَمِينَ</div><div class="id">«ربّ»: مضاف إليه مجرور بالكسرة (مضاف إلى «تنزيل» على معنى: تنزيل مِن ربّ العالمين، أو تنزيل هو مصدر مضاف لفاعله المعنوي). «العالمين»: مضاف إليه مجرور بالياء لأنه جمع مذكر سالم.</div></div>
+  </div>
+
+  <div class="vb" style="margin:20px 0 18px;"><div class="vt" style="font-size:1.25rem;">﴿نَزَلَ بِهِ الرُّوحُ الْأَمِينُ﴾</div><div class="vr">الشعراء (٢٦)، الآية ١٩٣، مكية</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">نَزَلَ (أو نَزَّلَ)</div><div class="id">فعل ماضٍ مبني على الفتح. على قراءة التخفيف: فعل لازم. على قراءة التشديد: فعل متعدٍّ، وفاعله ضمير مستتر تقديره «هو» يعود على الله تعالى.</div></div>
+    <div class="ir"><div class="iw">بِهِ</div><div class="id">الباء: حرف جر للمصاحبة. الهاء: ضمير متصل مبني في محل جر بالباء، يعود على القرآن/التنزيل، والجار والمجرور متعلقان بـ«نزل».</div></div>
+    <div class="ir"><div class="iw">الرُّوحُ الْأَمِينُ</div><div class="id">على قراءة التخفيف: «الروح» فاعل مرفوع بالضمة، و«الأمين» نعت له مرفوع تبعًا. على قراءة التشديد: «الروح» مفعول به منصوب بفتحة مقدرة، و«الأمين» نعت منصوب تبعًا.</div></div>
+  </div>
+
+  <div class="vb" style="margin:20px 0 18px;"><div class="vt" style="font-size:1.25rem;">﴿عَلَىٰ قَلْبِكَ لِتَكُونَ مِنَ الْمُنذِرِينَ﴾</div><div class="vr">الشعراء (٢٦)، الآية ١٩٤، مكية</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">عَلَىٰ قَلْبِكَ</div><div class="id">جار ومجرور متعلقان بـ«نزل» في الآية السابقة (أو بمحذوف حال من الروح الأمين، أي: نازلًا على قلبك). «الكاف»: ضمير متصل مبني في محل جر مضاف إليه، يعود على النبي ﷺ.</div></div>
+    <div class="ir"><div class="iw">لِتَكُونَ</div><div class="id">اللام: لام التعليل، حرف جر ونصب. «تكون»: فعل مضارع ناقص منصوب بأن مضمرة وجوبًا بعد لام التعليل، وعلامة نصبه الفتحة الظاهرة، واسمها ضمير مستتر تقديره «أنت» يعود على النبي ﷺ.</div></div>
+    <div class="ir"><div class="iw">مِنَ الْمُنذِرِينَ</div><div class="id">جار ومجرور في محل نصب خبر «تكون»، و«المنذرين» مجرور بالياء لأنه جمع مذكر سالم. والمصدر المؤول من «أن تكون...» في محل جر باللام، والجار والمجرور متعلقان بـ«نزل».</div></div>
+  </div>
+
+  <div class="vb" style="margin:20px 0 18px;"><div class="vt" style="font-size:1.25rem;">﴿بِلِسَانٍ عَرَبِيٍّ مُّبِينٍ﴾</div><div class="vr">الشعراء (٢٦)، الآية ١٩٥، مكية</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">بِلِسَانٍ</div><div class="id">الباء: حرف جر للمصاحبة أو الحال. «لسان»: اسم مجرور بالباء وعلامة جره الكسرة، والجار والمجرور في محل نصب حال من الضمير المستتر في «نزل» أو من «الروح الأمين»، أو متعلقان بـ«نزل» مباشرة.</div></div>
+    <div class="ir"><div class="iw">عَرَبِيٍّ</div><div class="id">نعت أول لـ«لسان» مجرور مثله وعلامة جره الكسرة، منوّن.</div></div>
+    <div class="ir"><div class="iw">مُّبِينٍ</div><div class="id">نعت ثانٍ لـ«لسان» (أو نعت لـ«عربي») مجرور وعلامة جره الكسرة، منوّن، اسم فاعل من الفعل الرباعي «أبان».</div></div>
+  </div>
+
+  <div class="card b" style="margin-top:14px;"><div class="ct">ملاحظة إعرابية: تعلق الجار والمجرور المتكرر بفعل واحد «نزل»</div><p>لاحظ أن أشباه الجمل الثلاثة «بِهِ»، و«عَلَىٰ قَلْبِكَ»، و«بِلِسَانٍ عَرَبِيٍّ مُّبِينٍ» تتعلق جميعها بفعل واحد هو «نزل» في الآية ١٩٣، فيكون تسلسل التعلقات: نزل (بالقرآن) + (على قلبك) + (بلسان عربي مبين)؛ وهذا التتابع النحوي يُجسِّد بلاغيًّا تتابع مراحل الوحي: المصاحبة، فالمستقر، فالأداة البيانية، في نسق نحوي واحد متماسك.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«الْقَلْبُ الَّذِي يَسْتَقْبِلُ الْوَحْيَ بِيَقِينٍ، لَا يَحْتَاجُ أَنْ تُقْنِعَهُ الْأُذُنُ أَوَّلًا»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card b"><div class="ct">أولاً: طمأنينة القلب قبل قناعة العقل</div><p>اختيار الآية «على قلبك» لا «على سمعك» درسٌ نفسي عميق: أن اليقين الحقيقي يبدأ من استقرار القلب لا من مجرد سماع الحجة. <strong>التطبيق:</strong> حين تواجه شكًّا أو اضطرابًا، اسأل نفسك: هل أطلب دليلًا عقليًّا فقط، أم أطلب طمأنينة قلبية تسبق الدليل وتؤازره؟ فالإيمان الراسخ يجمع بين الاثنين ولا يكتفي بأحدهما.</p></div>
+  <div class="card b2"><div class="ct">ثانياً: الأمانة خُلُقٌ يسبق المهمة</div><p>وُصف جبريل بـ«الأمين» قبل أن يُذكر فعله في نقل الوحي، وكأن الأمانة صفة ذاتية سابقة على المهمة لا مكتسبة بها. <strong>التطبيق:</strong> كل من يُبلِّغ علمًا، أو ينقل خبرًا، أو يُؤتمَن على أمانة — عليه أن يسأل نفسه: هل أنا أمين في النقل كما أراد صاحب الأمانة، أم أزيد وأنقص بهواي؟</p></div>
+  <div class="card b"><div class="ct">ثالثاً: الهوية اللغوية وسيلة بيان لا غاية تعصب</div><p>القرآن نزل بلسان عربي، لكنه لرب العالمين لا لقومٍ بعينهم؛ فاللغة هنا أداة توصيل لا مصدر تفاضل. <strong>التطبيق:</strong> حين تُخاطب الناس بدينك أو علمك أو نصيحتك، اختر اللسان الذي يفهمونه هم، لا اللسان الذي يُرضي غرورك أو يُظهر بلاغتك؛ فالبيان وسيلة إيصال لا وسيلة تفاخر.</p></div>
+  <div class="card b2"><div class="ct">رابعاً: الإنذار محبة لا عداوة</div><p>«لِتَكُونَ مِنَ الْمُنذِرِينَ» — الإنذار في القرآن ليس تهديدًا عدائيًّا، بل تحذيرٌ نابعٌ من شفقة المنذِر على المنذَر، كتحذير الأب ابنه من خطر يجهله. <strong>التطبيق:</strong> حين تُحذِّر أحدًا من خطأ أو معصية، تذكَّر أن دافعك يجب أن يكون الشفقة لا التعالي، فالمنذِر الصادق يخاف على من يُنذِره لا يشمت به.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>بنية الفقرة المزدوجة:</strong> اقتباس الآية ثم شرحها فقرةً فقرة — منهج يُحاكي طريقة التفسير التحليلي المعاصر ويجعل القارئ يعيش مع كل كلمة من كلمات الآية على حدة.</li>
+      <li><strong>الأركان الأربعة المتصاعدة:</strong> المصدر (رب العالمين) → الناقل (الروح الأمين) → المستقر (القلب) → الأداة (اللسان) — تدرج منطقي من المطلق الإلهي إلى المشاهَد الإنساني يُشكِّل السياق الحجاجي كله.</li>
+      <li><strong>المقابلة الحسية بين القلب والسمع:</strong> عنوان المقال نفسه («يخاطب القلب قبل السمع») يُلخِّص أطروحة المقال كلها في جملة واحدة، وهي مقابلة تتكرر ضمنيًّا في كل فقرة.</li>
+      <li><strong>الخاتمة الدعائية الجامعة:</strong> يُختم المقال بدعاء يجمع خلاصة موضوعه (ربيع القلوب، نور الصدور، الهداية) بدلًا من خاتمة تحليلية جافة، وهذا أسلوب يربط التدبر العلمي بالعبادة القلبية.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني الليلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر لآياته · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن الكريم والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط الحيّ بمستجدات العصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن وإخبارات النبي ﷺ</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> يقوم بدراسة التفسير والرؤى بالتزامٍ دقيق بضوابط القرآن والسنة النبوية، مستحضِرًا أقوال السلف الصالح في كل مسألة يتناولها.</p>
+      <p><strong>البُعد الزمني:</strong> يتَّسم بحثه بالربط الحيّ بين النص القرآني ومستجدات العصر، مما يمنح التأمل الأدبي روحًا معاصرة تُقرِّب المعنى القرآني من واقع القارئ اليوم.</p>
+      <p><strong>التحصيل العلمي:</strong> شملت دراساته علم الحديث، مركِّزًا على أحاديث الفتن وإخبارات النبي ﷺ؛ وهذا يؤكد عمق النظر وسلامة المنهج التي بُنيت عليها مقالاته.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">إعجاز الوحي</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">اللغة والبلاغة</span>
+        <span class="atag">أصول التفسير</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني الليلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+
+</script>
+</body>
+</html>

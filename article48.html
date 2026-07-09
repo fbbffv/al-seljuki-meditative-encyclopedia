@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>طَرِيقَانِ إِلَى السَّمَاءِ... وَلَيْسَ طَرِيقًا إِلَى الْهَاوِيَةِ — الشيخ علي خليل السلجوقي</title>
+<meta name="description" content="تدبّر قرآني في قوله تعالى ﴿وَهَدَيْنَاهُ النَّجْدَيْنِ﴾، تحليل بلاغي ولغوي وأدبي وإعرابي شامل، مع الفروق اللغوية والقراءات والإيضاح البلاغي والتدبر التربوي.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Scheherazade+New:wght@400;500;600;700&amp;family=Noto+Naskh+Arabic:wght@400;500;600;700&amp;display=swap">
+<style>
+:root{
+  --ink:#0d1b2a;--bg:#f4f1ea;--bg2:#e6e0d0;
+  --prim:#1b3a5b;--pm:#2a5989;--plt:#7fb3e0;
+  --pd:#0a1929;--pt:#e8f0f8;--pg:#a8c8e6;
+  --sky:#3a7dc0;--gold:#d4a94a;--gold-m:#f0c968;
+  --div:#c9d3e0;--mist:#3a4a5a;
+  --cloud:#8ea9c4;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(42,89,137,.08) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(212,169,74,.09) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--sky),var(--gold));z-index:400;transform-origin:top;height:0;}
+.hdr{background:var(--pd);border-bottom:2px solid var(--pm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.5);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 24px;max-width:1400px;margin:0 auto;height:56px;gap:12px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--plt);font-size:1rem;flex-shrink:0;white-space:nowrap;}
+.logo span{color:var(--gold-m);font-weight:700;}
+.hspacer{flex:1;}
+.tbtn{background:var(--prim);color:var(--pt);border:1px solid rgba(127,179,224,.4);padding:7px 14px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;display:inline-block;}
+.tbtn:hover{background:var(--pm);color:#fff;}
+.toc-toggle{position:absolute;opacity:0;width:0;height:0;pointer-events:none;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 56px);}
+.sb{width:285px;flex-shrink:0;background:#08131f;position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;border-left:1px solid rgba(127,179,224,.2);z-index:100;}
+.toc-h{color:var(--plt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(127,179,224,.2);display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.toc-close{display:none;color:#9fbfe0;text-decoration:none;font-size:1.3rem;line-height:1;cursor:pointer;}
+.sb-backdrop{display:none;}
+@media(max-width:1100px){
+  .toc-close{display:inline-block;}
+  #tocToggle:checked ~ .sb-backdrop{display:block;position:fixed;inset:0;top:56px;background:rgba(0,0,0,.45);z-index:140;}
+}
+.toc-s{color:rgba(127,179,224,.6);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#9fbfe0;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--pt);background:rgba(127,179,224,.12);border-right-color:var(--plt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--pm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.7;letter-spacing:.4em;color:var(--sky);}
+.hcat{display:inline-block;background:var(--prim);color:var(--pt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.2rem;font-weight:700;color:var(--pd);line-height:1.55;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--pm);border-radius:50%;}
+.vb{background:var(--pd);border:1px solid rgba(127,179,224,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(212,169,74,.10),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.7rem;color:var(--pt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.35rem;}
+.vr{color:var(--gold-m);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.9;}
+.abody{font-size:1.12rem;line-height:2.05;color:#0d1b2a;}
+.abody p{margin-bottom:1.5em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--pm);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.2rem;color:var(--prim);text-align:center;padding:12px 16px;margin:10px 0;border-right:4px solid var(--pm);background:rgba(42,89,137,.07);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.24rem;color:var(--pm);font-weight:700;text-align:center;margin:12px 0;}
+.chapter-title{font-family:'Scheherazade New',serif;font-size:1.4rem;color:var(--pm);font-weight:700;margin:2.2rem 0 .8rem;border-right:5px solid var(--sky);background:rgba(42,89,137,.06);padding:10px 16px;border-radius:0 6px 6px 0;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:76px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--pd);color:var(--plt);border:2px solid var(--pm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--pd);border-bottom:2px solid var(--sky);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--prim);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.t{border-right:5px solid var(--pm);}
+.card.t2{border-right:5px solid var(--prim);}
+.card.t3{border-right:5px solid var(--gold);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:var(--pd);margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#0d1b2a;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;background:var(--pm);color:var(--pt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--pd);color:var(--gold-m);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--pm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(42,89,137,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:var(--pd);font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--pd);min-width:160px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:var(--pd);text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--sky);border-bottom:2px solid var(--sky);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--sky);opacity:.24;line-height:1;}
+.cb{background:linear-gradient(135deg,#08131f,#122a44);border:1px solid rgba(127,179,224,.3);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--plt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(127,179,224,.22);}
+.ci{color:#a8c0d8;padding:9px 0;border-bottom:1px dashed rgba(127,179,224,.16);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--pt);font-size:1.02rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--gold-m);font-size:.78rem;opacity:.85;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--pm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:var(--pd);font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#0d1b2a;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--pm);font-size:.85em;top:11px;}
+.src{background:#fbf6e8;border:1px solid #d4b870;border-radius:7px;padding:14px 18px;margin:12px 0;font-size:.88rem;color:#5a4410;line-height:1.85;}
+.src strong{color:#3a2c0a;}
+.src .src-label{font-size:.72rem;font-weight:700;color:#a8741e;letter-spacing:.06em;margin-bottom:6px;display:block;}
+.asec{background:var(--pd);border:1px solid rgba(127,179,224,.36);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--pm),var(--prim));border:3px solid var(--sky);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--pt);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--gold-m);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#b0c8dc;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(127,179,224,.1);border:1px solid rgba(127,179,224,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--gold-m);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--pt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(127,179,224,.16);color:var(--plt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(127,179,224,.26);}
+.orn{text-align:center;color:var(--sky);font-size:1.25rem;margin:48px 0;opacity:.55;letter-spacing:.42em;}
+footer{background:var(--pd);color:#7090b0;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(127,179,224,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--plt);}
+footer .fb span{color:var(--gold-m);}
+.reveal{opacity:1;transform:none;}
+@media(max-width:1100px){
+  .sb{display:none;}
+  #tocToggle:checked ~ .layout .sb{display:block;position:fixed;right:0;top:56px;width:275px;height:calc(100vh - 56px);overflow-y:auto;z-index:150;box-shadow:-8px 0 30px rgba(0,0,0,.4);}
+  .main{padding:32px 24px;}
+  .g2,.g3,.amg{grid-template-columns:1fr;}
+  .hero h1{font-size:1.75rem;}
+  .asec{flex-direction:column;}
+}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.2rem;}.hero h1{font-size:1.4rem;}.pq{font-size:1.12rem;padding:20px 16px;}.hdr-i{padding:0 12px;gap:8px;}.logo{font-size:.86rem;}.tbtn{padding:6px 10px;font-size:.78rem;}.vb{padding:22px 16px;}.iw{min-width:120px;font-size:1.08rem;}}
+</style>
+</head>
+<body>
+
+<div id="prog"></div>
+<input type="checkbox" id="tocToggle" class="toc-toggle">
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="hspacer"></div>
+    <label class="tbtn" for="tocToggle">☰ الفهرس</label>
+  </div>
+</header>
+<div class="layout">
+<label for="tocToggle" class="sb-backdrop"></label>
+<aside class="sb" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى <label for="tocToggle" class="toc-close">✕</label></div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s0">٠. توثيق الآية</a>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والصرفي</a>
+  <a class="toc-a sub" href="#s2a">القراءات المتنوعة</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والحكم</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<div class="hero reveal in">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تأمّل قرآني · سورة البلد · مقالة تربوية في مراتب الخير</div>
+  <h1>طَرِيقَانِ إِلَى السَّمَاءِ... وَلَيْسَ طَرِيقًا إِلَى الْهَاوِيَةِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني الليلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>البلد ١٠</span>
+  </div>
+</div>
+
+<div id="article" class="sec reveal" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="abody">
+
+    <div class="vb" style="margin:18px 0 30px;">
+      <div class="vt">﴿وَهَدَيْنَاهُ النَّجْدَيْنِ﴾</div>
+      <div class="vr">سورة البلد، الآية ١٠</div>
+    </div>
+
+    <p>لَيْسَتِ الْحَيَاةُ فِي مِيزَانِ الْقُرْآنِ رِحْلَةً عَمْيَاءَ، وَلَا الْإِنْسَانُ كَائِنًا يَتَخَبَّطُ فِي مَتَاهَاتِ الْمَصِيرِ دُونَ دَلِيلٍ، بَلْ هُوَ مَخْلُوقٌ سَارَ فِي طَرِيقٍ قَدْ أُضِيئَتْ لَهُ مَعَالِمُهُ قَبْلَ أَنْ يَخْطُوَ أَوَّلَ خُطْوَةٍ، وَأُقِيمَتْ لَهُ الْعَلَامَاتُ قَبْلَ أَنْ يَبْدَأَ الْمَسِيرَ، وَأُعْطِيَ الْعَقْلَ، وَالْفِطْرَةَ، وَالْوَحْيَ، وَالضَّمِيرَ، حَتَّى لَا تَكُونَ لَهُ عَلَى اللَّهِ حُجَّةٌ بَعْدَ الرُّسُلِ.</p>
+
+    <p>إِنَّهَا كَلِمَةٌ وَاحِدَةٌ... لَكِنَّهَا تَهُزُّ الْقَلْبَ هَزًّا:</p>
+
+    <div class="ql">﴿وَهَدَيْنَاهُ النَّجْدَيْنِ﴾</div>
+
+    <p>وَكَأَنَّهَا تَقُولُ: لَقَدْ دَلَلْنَاكَ، وَأَرْشَدْنَاكَ، وَفَتَحْنَا لَكَ أَبْوَابَ الصُّعُودِ... فَأَيْنَ تَتَّجِهُ؟</p>
+
+    <p>النَّجْدُ فِي اللُّغَةِ هُوَ الْمَكَانُ الْمُرْتَفِعُ، وَالطَّرِيقُ الْعَالِي الَّذِي يَصْعَدُ بِالْإِنْسَانِ، وَلَيْسَ الْمُنْخَفِضَ الَّذِي يَهْوِي بِهِ.</p>
+
+    <div class="chapter-title">وَمِنْ هُنَا يَبْرُزُ تَأَمُّلٌ يَسْتَحِقُّ الْوُقُوفَ عِنْدَهُ طَوِيلًا...</div>
+
+    <p>لَقَدْ ذَهَبَ جُمْهُورُ الْمُفَسِّرِينَ إِلَى أَنَّ النَّجْدَيْنِ هُمَا طَرِيقُ الْخَيْرِ وَطَرِيقُ الشَّرِّ، بِاعْتِبَارِ أَنَّ اللَّهَ بَيَّنَ لِلْإِنْسَانِ سَبِيلَ الْهُدَى وَسَبِيلَ الضَّلَالِ، كَمَا قَالَ سُبْحَانَهُ:</p>
+
+    <div class="ql">﴿إِنَّا هَدَيْنَاهُ السَّبِيلَ إِمَّا شَاكِرًا وَإِمَّا كَفُورًا﴾</div>
+
+    <p>وَهَذَا تَفْسِيرٌ مُعْتَبَرٌ مَعْرُوفٌ عِنْدَ أَهْلِ الْعِلْمِ.</p>
+
+    <p>غَيْرَ أَنَّ فِي الْآيَةِ لَطِيفَةً تَدَبُّرِيَّةً تَسْتَوْقِفُ الْقَلْبَ...</p>
+
+    <div class="hl">فَهَلْ يُنَاسِبُ لَفْظُ "هَدَيْنَاهُ" أَنْ يُسْنَدَ إِلَى طَرِيقِ الشَّرِّ؟</div>
+
+    <p>إِنَّ الْقُرْآنَ غَالِبًا إِذَا أَطْلَقَ الْهِدَايَةَ أَرَادَ بِهَا الدَّلَالَةَ إِلَى مَا فِيهِ الْخَيْرُ وَالرَّشَادُ، وَلِذَلِكَ قَالَ:</p>
+
+    <div class="ql">﴿يَهْدِي بِهِ اللَّهُ مَنِ اتَّبَعَ رِضْوَانَهُ سُبُلَ السَّلَامِ﴾</div>
+
+    <p>وَقَالَ:</p>
+    <div class="ql">﴿وَاللَّهُ يَهْدِي مَن يَشَاءُ إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ﴾</div>
+
+    <p>وَقَالَ:</p>
+    <div class="ql">﴿إِنَّ هَذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ﴾</div>
+
+    <p>فَالْقُرْآنُ يَجْعَلُ الْهِدَايَةَ ارْتِقَاءً، لَا انْحِدَارًا، وَصُعُودًا، لَا سُقُوطًا.</p>
+
+    <p>ثُمَّ إِنَّ لَفْظَ "النَّجْدِ" نَفْسَهُ يُوحِي بِالْعُلُوِّ وَالِارْتِفَاعِ، وَالشَّرُّ لَا يَرْفَعُ صَاحِبَهُ، وَإِنَّمَا يَهْوِي بِهِ إِلَى أَسْفَلِ السَّافِلِينَ.</p>
+
+    <div class="chapter-title">فَكَأَنَّ الْآيَةَ -فِي هَذَا التَّدَبُّرِ- لَا تَضَعُ الْإِنْسَانَ بَيْنَ قِمَّةٍ وَوَادٍ، وَإِنَّمَا بَيْنَ قِمَّتَيْنِ مِنَ الْخَيْرِ...</div>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--prim);line-height:2.4;">
+      طَرِيقٌ حَسَنٌ... وَطَرِيقٌ أَحْسَنُ...<br>
+      خَيْرٌ... وَأَعْظَمُ خَيْرٍ...<br>
+      فَضْلٌ... وَأَكْمَلُ فَضْلٍ...<br>
+      صَلَاحٌ... وَأَعْلَى مَرَاتِبِ الصَّلَاحِ...
+    </p>
+
+    <p>فَالنَّاسُ جَمِيعًا لَيْسُوا سَوَاءً فِي الْقُرْبِ مِنَ اللَّهِ، كَمَا أَنَّهُمْ لَيْسُوا سَوَاءً فِي مَرَاتِبِ الْإِيمَانِ.</p>
+
+    <p>وَلِهَذَا امْتَلَأَ الْقُرْآنُ بِالْمُقَارَنَةِ بَيْنَ الْحَسَنِ وَالْأَحْسَنِ، لَا بَيْنَ الْخَيْرِ وَالشَّرِّ فَقَطْ.</p>
+
+    <div class="ql">﴿الَّذِينَ يَسْتَمِعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ﴾</div>
+
+    <p>فَلَمْ يَقُلْ: يَتَّبِعُونَ الْحَسَنَ... بَلْ أَحْسَنَهُ.</p>
+
+    <div class="ql">﴿ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ﴾</div>
+
+    <p>وَلَمْ يَقُلْ بِالْحَسَنَةِ فَقَطْ.</p>
+
+    <div class="ql">﴿وَقُولُوا لِلنَّاسِ حُسْنًا﴾</div>
+
+    <p>ثُمَّ قَالَ فِي مَوْضِعٍ آخَرَ:</p>
+
+    <div class="ql">﴿وَقُل لِّعِبَادِي يَقُولُوا الَّتِي هِيَ أَحْسَنُ﴾</div>
+
+    <p>فَالْقَوْلُ دَرَجَاتٌ... مِنْهُ الْحَسَنُ... وَمِنْهُ الْأَحْسَنُ...</p>
+
+    <div class="ql">﴿لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا﴾</div>
+
+    <p>وَلَمْ يَقُلْ: أَكْثَرُ عَمَلًا... وَلَا مُجَرَّدُ صَالِحِ الْعَمَلِ... بَلْ أَحْسَنُ عَمَلًا.</p>
+
+    <div class="hl">إِنَّ الْإِسْلَامَ لَا يُرَبِّي الْإِنْسَانَ عَلَى مُجَرَّدِ النَّجَاةِ، وَإِنَّمَا يُرَبِّيهِ عَلَى الْإِحْسَانِ.</div>
+
+    <p>وَلَا يَكْتَفِي بِأَنْ تَكُونَ صَالِحًا... بَلْ يَدْعُوكَ أَنْ تَكُونَ أَصْلَحَ.</p>
+    <p>وَلَا يَرْضَى أَنْ تَكُونَ كَرِيمًا... بَلْ يُرِيدُكَ أَنْ تَكُونَ أَكْرَمَ.</p>
+    <p>وَلَا يَكْتَفِي بِأَنْ تُؤَدِّيَ الْوَاجِبَ... بَلْ أَنْ تُؤَدِّيَهُ بِإِتْقَانٍ وَإِخْلَاصٍ وَجَمَالٍ.</p>
+
+    <div class="chapter-title">وَهُنَا تَتَجَلَّى رَوْعَةُ التَّرْبِيَةِ الْقُرْآنِيَّةِ...</div>
+
+    <p>فَالْقُرْآنُ لَا يَدْفَعُ الْمُؤْمِنَ إِلَى الْحَدِّ الْأَدْنَى، وَإِنَّمَا يَفْتَحُ أَمَامَهُ أَبْوَابَ التَّرَقِّي بِلَا نِهَايَةٍ.</p>
+
+    <p>وَلِهَذَا كَانَ الْأَنْبِيَاءُ وَالصِّدِّيقُونَ وَالشُّهَدَاءُ وَالصَّالِحُونَ جَمِيعًا فِي طَرِيقِ الْخَيْرِ... لَكِنَّ بَعْضَهُمْ فَوْقَ بَعْضٍ دَرَجَاتٌ.</p>
+
+    <div class="ql">﴿هُمْ دَرَجَاتٌ عِندَ اللَّهِ﴾</div>
+    <div class="ql">﴿وَلِكُلٍّ دَرَجَاتٌ مِّمَّا عَمِلُوا﴾</div>
+
+    <p>فَالنَّاسُ لَا يَنْقَسِمُونَ دَائِمًا إِلَى صَالِحٍ وَطَالِحٍ... بَلْ كَثِيرًا مَا يَكُونُونَ بَيْنَ صَالِحٍ وَأَصْلَحَ... وَبَيْنَ مُحْسِنٍ وَأَحْسَنَ... وَبَيْنَ سَابِقٍ وَمُقْتَصِدٍ...</p>
+
+    <div class="ql">﴿ثُمَّ أَوْرَثْنَا الْكِتَابَ... فَمِنْهُمْ ظَالِمٌ لِّنَفْسِهِ وَمِنْهُم مُّقْتَصِدٌ وَمِنْهُمْ سَابِقٌ بِالْخَيْرَاتِ﴾</div>
+
+    <p>فَالسَّابِقُ لَمْ يَكْتَفِ بِالسَّيْرِ... بَلْ سَابَقَ. وَلَمْ يَرْضَ بِالْخَيْرِ... بَلْ تَسَابَقَ إِلَى أَعْلَاهُ.</p>
+
+    <div class="chapter-title">وَانْظُرْ إِلَى وَاقِعِ الْحَيَاةِ...</div>
+
+    <p>طَالِبَانِ يَنْجَحَانِ... لَكِنَّ أَحَدَهُمَا يَطْلُبُ النَّجَاحَ... وَالْآخَرَ يَطْلُبُ التَّمَيُّزَ.</p>
+    <p>مُوَظَّفَانِ يُؤَدِّيَانِ عَمَلَهُمَا... لَكِنَّ أَحَدَهُمَا يُؤَدِّيهِ لِأَنَّهُ وَظِيفَةٌ... وَالْآخَرَ يُؤَدِّيهِ لِأَنَّهُ عِبَادَةٌ.</p>
+    <p>رَجُلَانِ يُنْفِقَانِ... أَحَدُهُمَا يُعْطِي الْفَاضِلَ مِنْ مَالِهِ... وَالْآخَرُ يُعْطِي أَحَبَّ مَا يَمْلِكُ.</p>
+    <p>مُصَلِّيَانِ يَقِفَانِ فِي الصَّفِّ نَفْسِهِ... لَكِنَّ أَحَدَهُمَا يُؤَدِّي الصَّلَاةَ... وَالْآخَرَ يَعِيشُ الصَّلَاةَ.</p>
+
+    <div class="hl">كِلَاهُمَا فِي طَرِيقِ الْخَيْرِ... لَكِنْ بَيْنَ الطَّرِيقَيْنِ بُونٌ بَعِيدٌ.</div>
+
+    <p>وَلِذَلِكَ فَإِنَّ الْمُؤْمِنَ لَا يَسْأَلُ نَفْسَهُ كُلَّ يَوْمٍ: هَلْ أَنَا عَلَى طَرِيقِ الْخَيْرِ؟ بَلْ يَسْأَلُ:</p>
+
+    <ul class="cl">
+      <li>أَيُّ طَرِيقٍ مِنَ الْخَيْرِ أَسْلُكُ؟</li>
+      <li>أَيُّ الْعَمَلَيْنِ أَحَبُّ إِلَى اللَّهِ؟</li>
+      <li>أَيُّ الْقَوْلَيْنِ أَحْسَنُ؟</li>
+      <li>أَيُّ الْأَخْلَاقِ أَكْمَلُ؟</li>
+      <li>أَيُّ الْقُرُبَاتِ أَزْكَى؟</li>
+    </ul>
+
+    <p>هَذِهِ هِيَ الْمُنَافَسَةُ الَّتِي يُحِبُّهَا الْقُرْآنُ.</p>
+
+    <div class="ql">﴿فَاسْتَبِقُوا الْخَيْرَاتِ﴾</div>
+    <div class="ql">﴿وَفِي ذَٰلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَ﴾</div>
+
+    <p>فَالْمَيْدَانُ لَيْسَ بَيْنَ الْخَيْرِ وَالشَّرِّ فَقَطْ... بَلْ بَيْنَ مَرَاتِبِ الْخَيْرِ.</p>
+
+    <p>وَمَا أَجْمَلَ أَنْ يَعِيشَ الْإِنْسَانُ عُمْرَهُ كُلَّهُ صَاعِدًا... كُلَّمَا بَلَغَ قِمَّةً، لَمَحَ فَوْقَهَا قِمَّةً أُخْرَى.</p>
+
+    <p>فَإِذَا أَحْسَنَ، طَلَبَ الْإِحْسَانَ. وَإِذَا أَخْلَصَ، طَلَبَ أَكْمَلَ الْإِخْلَاصِ. وَإِذَا عَلِمَ، طَلَبَ الْحِكْمَةَ. وَإِذَا عَبَدَ، طَلَبَ مَقَامَ الْإِحْسَانِ.</p>
+
+    <div class="hl">فَلَيْسَ فِي طَرِيقِ اللَّهِ مَحَطَّةٌ أَخِيرَةٌ حَتَّى يَلْقَى الْعَبْدُ رَبَّهُ.</div>
+
+    <p>فَلَعَلَّ قَوْلَهُ تَعَالَى ﴿وَهَدَيْنَاهُ النَّجْدَيْنِ﴾ لَيْسَ مُجَرَّدَ بَيَانٍ لِطَرِيقَيْنِ مُتَقَابِلَيْنِ... بَلْ هُوَ نِدَاءٌ دَائِمٌ:</p>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;font-size:1.2rem;color:var(--prim);line-height:2.3;">
+      لَا تَقْنَعْ بِأَوَّلِ الْخَيْرِ... فَوْقَهُ خَيْرٌ.<br>
+      وَلَا تَرْضَ بِالْحَسَنِ... فَوْقَهُ الْأَحْسَنُ.<br>
+      وَلَا تَكْتَفِ بِالنَّجَاةِ... فَوْقَهَا دَرَجَاتُ الْقُرْبِ.
+    </p>
+
+    <div class="pq">إِنَّهَا رِحْلَةُ صُعُودٍ لَا تَنْتَهِي، وَكُلَّمَا ازْدَادَ الْقَلْبُ قُرْبًا مِنَ اللَّهِ، اكْتَشَفَ أَنَّ أَمَامَهُ أُفُقًا أَوْسَعَ، وَنُورًا أَعْظَمَ، وَخَيْرًا أَرْفَعَ.</div>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;font-size:1.15rem;color:var(--pd);">
+      فَاللَّهُمَّ اهْدِنَا إِلَى الْحَسَنِ، ثُمَّ إِلَى الْأَحْسَنِ، ثُمَّ إِلَى أَكْمَلِ مَا تُحِبُّ وَتَرْضَى، وَاجْعَلْنَا مِنَ السَّابِقِينَ بِالْخَيْرَاتِ، وَمِنْ أَهْلِ الْإِحْسَانِ، وَمِنَ الَّذِينَ إِذَا اسْتَمَعُوا الْقَوْلَ اتَّبَعُوا أَحْسَنَهُ، وَإِذَا عَمِلُوا أَتْقَنُوا، وَإِذَا عَبَدُوا أَخْلَصُوا، وَإِذَا لَقُوكَ كُنْتَ رَاضِيًا عَنْهُمْ.
+    </p>
+
+    <div class="orn">✦ ✧ ✦</div>
+    <p style="text-align:left;color:var(--pm);font-style:italic;">كَتَبَهُ: عَلِيُّ خَلِيلٍ عَبَّاسٍ السَّلْجُوقِيُّ التُّرْكَمَانِيُّ اللَّيْلَانِيُّ.</p>
+  </div>
+</div>
+
+<div class="orn">◈ ❀ ◈ ❀ ◈</div>
+
+<!-- 0. توثيق الآية -->
+<section id="s0" class="sec reveal">
+  <div class="sec-h"><div class="sec-n">٠</div><h2>توثيق الآية ومكانتها</h2></div>
+  <div class="vb"><div class="vt sm">﴿فَلَا اقْتَحَمَ الْعَقَبَةَ ۝ وَمَا أَدْرَاكَ مَا الْعَقَبَةُ ۝ فَكُّ رَقَبَةٍ ۝ أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ ۝ ... وَهَدَيْنَاهُ النَّجْدَيْنِ﴾</div><div class="vr">سياق الآية من سورة البلد ١١–١٦، ١٠</div></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">السورة</span><div class="mv">البلد</div><div class="md">مكية باتفاق، رقمها ٩٠، وعدد آياتها ٢٠.</div></div>
+    <div class="mc"><span class="ml">رقم الآية</span><div class="mv">١٠</div><div class="md">من قِصار السُّور، ذات إيقاع قصير قوي يناسب البيان القاطع.</div></div>
+    <div class="mc"><span class="ml">الجزء والحزب</span><div class="mv">الجزء ٣٠ / الحزب ٦٠</div><div class="md">من قسم "عمّ" الذي يفتتح بمشاهد اليوم الآخر ومسؤولية الإنسان.</div></div>
+  </div>
+  <div class="src"><span class="src-label">مرجع</span>ينظر: ابن عاشور، <strong>التحرير والتنوير</strong>، ج ٣٠ / ص ٣٥٥–٣٦٠، دار سحنون، تونس. والزمخشري، <strong>الكشاف</strong>، ج ٤ / ص ٧٥٥، دار الكتاب العربي.</div>
+</section>
+
+<!-- 1. البلاغة -->
+<section id="s1" class="sec reveal">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div class="sub" id="s1a"><h3>أ) الصور البيانية</h3></div>
+
+  <div class="card t"><div class="ct">١. الاستعارة التصريحية في "النَّجْدَيْنِ"</div>
+    <p>شبّه سبحانه <strong>الطريقَين المعنويَّين</strong> (الخير والشر، أو الحسن والأحسن) بـ<strong>الطريقين الحسيَّين المرتفعَين</strong> (النَّجدين)، ثم صرّح بالمشبّه به وحذف المشبّه، فكانت استعارة تصريحية. وسرّها البلاغي: إيحاء العلوّ والصعوبة معًا، فالطريقان يحتاجان مجاهدةً وارتقاءً لا هبوطًا واسترسالًا.</p>
+    <div class="src"><span class="src-label">مرجع</span>الزمخشري، <strong>الكشاف</strong>، ج ٤ / ص ٧٥٦: «سُمّيا نَجدَينِ لوضوحهما ورَفعتِهما كنَجدَي الأرض».</div>
+  </div>
+
+  <div class="card t2"><div class="ct">٢. الكناية عن كمال البيان والإرشاد</div>
+    <p>قوله ﴿وَهَدَيْنَاهُ﴾ كنايةٌ عن تمام الحجة، أي: أزحنا العذر، وبيّنا الطريق، وأقمنا العلامات؛ فلم يبقَ للعبد أن يحتجّ بجهلٍ أو التباس. وهو من كناية الصفة.</p>
+  </div>
+
+  <div class="card t3"><div class="ct">٣. التشبيه الضِّمني في "النَّجد"</div>
+    <p>لفظ "النَّجد" يحمل تشبيهًا ضِمنيًّا للطاعة والاختيار الصائب بالصعود إلى مرتفعٍ يحتاج جهدًا، وفي المقابل يُلمَح أنّ الغيّ سقوطٌ سهل لا صعود؛ فوضع الاختيارين معًا في صيغة "النَّجدَين" فيه إشارةٌ لطيفة إلى أنّ الحياة كلها ارتقاء، وأنّ حتى الشرّ حين يُقارَن بمقتضى الفطرة يستلزم "قهرَ" الفطرة، وهو نوع مشقّة.</p>
+  </div>
+
+  <div class="sub" id="s1b"><h3>ب) المحسنات البديعية</h3></div>
+  <table class="tbl">
+    <thead><tr><th>المحسّن</th><th>موضعه</th><th>أثره</th></tr></thead>
+    <tbody>
+      <tr><td>التثنية البليغة (النَّجدَين)</td><td>في الاسم المثنى</td><td>حصر الاختيار في طريقين لا ثالث لهما، فيقطع الحيرة.</td></tr>
+      <tr><td>الإيجاز بالحذف</td><td>حذف تفصيل النَّجدين</td><td>يفتح باب التأمّل ويستدعي القارئ للاستنباط.</td></tr>
+      <tr><td>الالتفات في السياق</td><td>من ذكر النِّعم إلى التكليف</td><td>يُنبّه أنّ النعمة تستتبع مسؤولية.</td></tr>
+      <tr><td>الفاصلة القرآنية</td><td>«النجدين» تُواخي «العقبة، مسغبة، مقربة»</td><td>إيقاع صوتي مُحكم يوقّع في الأذن قوة المعنى.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="card t"><div class="ct">٤. الطباق الخفيّ</div>
+    <p>بين "هَدَيناه" و"النَّجدَين" طباقٌ لطيف: الأول يفيد البيان والدلالة، والثاني يفيد الاختيار والمجاهدة؛ فبينهما تقابل بين الفعل الإلهي (البيان) والفعل الإنساني (السلوك).</p>
+  </div>
+</section>
+
+<!-- 2. اللغة والصرف والقراءات -->
+<section id="s2" class="sec reveal">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والصرفي</h2></div>
+
+  <div class="sub" id="s2a"><h3>أ) القراءات المتنوعة</h3></div>
+  <div class="cb">
+    <div class="bt">قراءات الآية</div>
+    <div class="ci"><span class="vi">قراءة الجمهور: ﴿وَهَدَيْنَاهُ النَّجْدَيْنِ﴾</span><span class="vs">بفتح النون وسكون الجيم في "النَّجْدَين"، وهي القراءة المتواترة عن السبعة والعشرة.</span></div>
+    <div class="ci"><span class="vi">قراءة شاذة: «النِّجْدَين» بكسر النون</span><span class="vs">رُويت عن بعض السلف، وهي شاذّة لا يُقرأ بها، ذكرها ابن جني في المحتسب، ج ٢ / ص ٣٦٠، وابن خالويه في مختصر شواذ القراءات، ص ١٧٠.</span></div>
+    <div class="ci"><span class="vi">وقوف القرّاء</span><span class="vs">لا وقف لازمًا على "النَّجدين"، وأكثر أهل الأداء على الوصل بما بعدها لتمام المعنى مع ﴿فَلَا اقْتَحَمَ الْعَقَبَةَ﴾.</span></div>
+  </div>
+
+  <div class="sub"><h3>ب) التصريف اللغوي</h3></div>
+  <table class="tbl">
+    <thead><tr><th>الكلمة</th><th>الوزن</th><th>الجذر</th><th>الاشتقاق والتصريف</th></tr></thead>
+    <tbody>
+      <tr><td>هَدَيْنَاهُ</td><td>فَعَلْنَاهُ</td><td>هـ د ي</td><td>فعل ماضٍ من "هدى يهدي هدايةً"، أُسند إلى ضمير التعظيم "نا"، والهاء مفعول به. أصله: هَدَيْنَا + هُ.</td></tr>
+      <tr><td>النَّجْدَيْنِ</td><td>مثنى نَجْد (فَعْل)</td><td>ن ج د</td><td>جمعه: أَنجُد ونِجاد ونُجود. والنَّجْد: المكان المرتفع، يقابله الغَور والوَهدة.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub" id="s2b"><h3>ج) المشترك اللفظي في "النَّجد" و"الهداية"</h3></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">النَّجْد (١)</div><div class="id">المكان المرتفع من الأرض، ومنه سُميت "نَجد" في جزيرة العرب لعُلوّ أرضها.</div></div>
+    <div class="ir"><div class="iw">النَّجْد (٢)</div><div class="id">الطريق الواضح في الجبل، قال امرؤ القيس: «فريقان منهم قاطعٌ بطن نَخلةٍ * وآخرُ منهم جازعٌ نجدَ كَبكَبِ».</div></div>
+    <div class="ir"><div class="iw">النَّجْد (٣)</div><div class="id">الرجل الشجاع الماضي في الأمور، من "نَجَدَ" إذا شَجُع، ومنه: النَّجدة أي البأس.</div></div>
+    <div class="ir"><div class="iw">النَّجْد (٤)</div><div class="id">العَرَق، يقال: نَجَدَ الرجل: عَرِق من شدة الكرب، ومنه "منجود" أي مكروب.</div></div>
+    <div class="ir"><div class="iw">الهداية (١)</div><div class="id">هداية الدَّلالة والإرشاد (وهي المرادة في الآية).</div></div>
+    <div class="ir"><div class="iw">الهداية (٢)</div><div class="id">هداية التوفيق والإلهام، وهي التي لا يقدر عليها إلا الله ﴿إِنَّكَ لَا تَهْدِي مَنْ أَحْبَبْتَ﴾ [القصص ٥٦].</div></div>
+  </div>
+
+  <div class="sub" id="s2c"><h3>د) الفروق اللغوية والمعجمية</h3></div>
+  <table class="tbl">
+    <thead><tr><th>الكلمتان</th><th>الفرق الدقيق</th></tr></thead>
+    <tbody>
+      <tr><td>النَّجد / الطريق</td><td>الطريق يعمّ المرتفع والمنخفض، أما النَّجد فخاص بالمرتفع الواضح، فاختيار "النَّجدين" أدقّ في إفادة الوضوح والعلوّ.</td></tr>
+      <tr><td>النَّجد / السَّبيل</td><td>السَّبيل ما يوصل إلى المقصد وإن خفي، والنَّجد ظاهر بارز يُرى من بُعد.</td></tr>
+      <tr><td>النَّجد / الصراط</td><td>الصراط الطريق المستقيم الواسع، والنَّجد الطريق العالي الواضح؛ فالصراط يُفيد الاستقامة، والنَّجد يُفيد الرِّفعة.</td></tr>
+      <tr><td>هَدَى / أَرشَدَ</td><td>الهداية أعمّ، وقد تكون بلا مباشرةٍ من المُرشد؛ والإرشاد أخصّ، ولا يكون إلا بمخاطبةٍ ودلالةٍ مباشرة.</td></tr>
+      <tr><td>هَدَى / دَلَّ</td><td>الدلالة مجرد إخبار بالطريق، والهداية دلالة مع تلطّفٍ وعناية.</td></tr>
+      <tr><td>الحَسَن / الأحسَن</td><td>الحسَن ما وافق الشرع، والأحسَن ما جمع بين موافقة الشرع وكمال الإتقان والإخلاص.</td></tr>
+    </tbody>
+  </table>
+  <div class="src"><span class="src-label">مراجع الفروق</span>ينظر: أبو هلال العسكري، <strong>الفروق اللغوية</strong>، تحقيق محمد إبراهيم سليم، دار العلم والثقافة، ص ٧٤، ٢١٧. والراغب الأصفهاني، <strong>المفردات في غريب القرآن</strong>، مادة "هدى" و"نجد"، دار القلم دمشق.</div>
+
+  <div class="sub" id="s2d"><h3>هـ) الإيضاح اللغوي والبلاغي</h3></div>
+  <div class="card t"><p>اختيار لفظ "النَّجْدَين" بصيغة التثنية دون الجمع أو الإفراد فيه سرّان: <strong>الأول</strong>: قطع الاحتمالات وتحديد الاختيار في اثنين لا ثالث لهما، وهو أسلوب قرآني في تصوير المفارقة الحاسمة. <strong>والثاني</strong>: الإيحاء بأنّ كلا الطريقين ظاهر واضح لا يخفى؛ فليس للعبد أن يقول: خفي عليّ المُنتَهى.</p></div>
+  <div class="card t2"><p>وأما تقديم الفعل ﴿هَدَيْنَاهُ﴾ على المفعول الثاني ﴿النَّجْدَيْنِ﴾ فهو الترتيب الطبيعي، لكنّ الإسناد إلى ضمير التعظيم "نا" يُشعر بجلال المُهدي وعِظَم الهداية، فليست هدايةَ نظيرٍ لنظير، بل هدايةَ الخالق للمخلوق.</p></div>
+</section>
+
+<!-- 3. ترابط السياقات -->
+<section id="s3" class="sec reveal">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات والمناسبة</h2></div>
+
+  <div class="sub"><h3>أ) مع الآيات قبلها</h3></div>
+  <div class="card t"><p>سبقتها آيات تعدّد نعم الله على الإنسان: ﴿أَلَمْ نَجْعَل لَّهُ عَيْنَيْنِ ۝ وَلِسَانًا وَشَفَتَيْنِ﴾ [البلد ٨–٩]، فذكر الحواسّ الأداتية (البصر والنطق) ثم ختم بذكر نعمة <strong>الهداية العقلية والوحيية</strong> ﴿وَهَدَيْنَاهُ النَّجْدَيْنِ﴾؛ فتَنَقّل السياق من نعمة الجوارح إلى نعمة العقل والبيان، وهو الترتيب الحكيم: أدواتٌ ظاهرة، ثم مقصدٌ باطن.</p></div>
+
+  <div class="sub"><h3>ب) مع الآيات بعدها</h3></div>
+  <div class="card t2"><p>عقّب سبحانه بقوله: ﴿فَلَا اقْتَحَمَ الْعَقَبَةَ ۝ وَمَا أَدْرَاكَ مَا الْعَقَبَةُ ۝ فَكُّ رَقَبَةٍ ۝ أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ﴾. فبعد بيان النَّجدين (طريقَي الاختيار) ذكر <strong>العَقَبة</strong>، وهي المسلك الأصعب في النَّجد الأعلى؛ فكأنه يقول: قد هديناكم إلى نَجدين، فسلوكُ الأعلى منهما يستلزم اقتحام عَقَبةٍ من العطاء والبذل والرحمة. وبهذا يتبيّن أن الآية ليست تقريرًا نظريًّا بل مقدمةٌ لتكليف عمليّ.</p></div>
+
+  <div class="sub"><h3>ج) مع نظائرها في القرآن</h3></div>
+  <div class="cb">
+    <div class="bt">آيات نظيرة</div>
+    <div class="ci"><span class="vi">﴿إِنَّا هَدَيْنَاهُ السَّبِيلَ إِمَّا شَاكِرًا وَإِمَّا كَفُورًا﴾</span><span class="vs">الإنسان ٣ — وجه المناسبة: قسمة الاختيار بين شكرٍ وكفر، كقسمة النَّجدين.</span></div>
+    <div class="ci"><span class="vi">﴿وَهَدَيْنَاهُ إِلَى صِرَاطٍ مُّسْتَقِيمٍ﴾</span><span class="vs">الصافات ١١٨ — يُبرز أن الهداية القرآنية غالبًا تُوصل إلى الخير، مما يقوّي التأمّل الأدبي للمقال.</span></div>
+    <div class="ci"><span class="vi">﴿وَهَدَيْنَاهُمَا الصِّرَاطَ الْمُسْتَقِيمَ﴾</span><span class="vs">الصافات ١١٨ في حق موسى وهارون، تأكيد أنّ الهداية إلى نجدٍ واحدٍ (المستقيم) هي الغاية.</span></div>
+    <div class="ci"><span class="vi">﴿فَاسْتَبِقُوا الْخَيْرَاتِ﴾</span><span class="vs">البقرة ١٤٨ — يُترجم عمليًا نداءَ "النَّجدَين" حين يُقرأ على معنى مراتب الخير.</span></div>
+  </div>
+</section>
+
+<!-- 4. نوع الآية -->
+<section id="s4" class="sec reveal">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والحكم الشرعي المستنبط</h2></div>
+
+  <div class="g2">
+    <div class="mc"><span class="ml">نوعها الأصلي</span><div class="mv">آية امتنانٍ وتذكيرٍ بالنعم</div><div class="md">وردت في سياق تعداد النعم، فوظيفتها الأولى: امتنان.</div></div>
+    <div class="mc"><span class="ml">نوعها الثانوي</span><div class="mv">آية إخبارٍ ودلالةٍ على قيام الحجة</div><div class="md">تُقيم الحُجّة على المكلَّف بأنّه هُدي إلى النجدين فلا عذر له.</div></div>
+    <div class="mc"><span class="ml">جانب العقيدة</span><div class="mv">إثبات مشيئة العبد واختياره</div><div class="md">إثبات أنّ العبد فاعلٌ مختار، هُدي وأُعطي أدوات التمييز، ردٌّ على الجَبْرية.</div></div>
+    <div class="mc"><span class="ml">جانب التربية</span><div class="mv">تكليفٌ بالسير إلى الأعلى</div><div class="md">يستفاد منها وجوب المجاهدة لسلوك الأنجَد (الأعلى) من الطريقين.</div></div>
+  </div>
+
+  <div class="sub"><h3>الأحكام الشرعية المستنبطة</h3></div>
+  <ul class="cl">
+    <li>ثبوت التكليف بعد قيام الحجّة بالبيان والدلالة، وهو أصل من أصول أهل السنة في المسؤولية.</li>
+    <li>حرمة تعطيل العقل والفكر، إذ هما من أدوات إدراك النَّجدين.</li>
+    <li>وجوب شكر نعمة الهداية العامة، ومن شكرها: سلوك الأنجد الأعلى (الطاعة والإحسان).</li>
+    <li>اعتبار "الأحسن" لا مجرد "الحسن" في العبادات والمعاملات كلما أمكن.</li>
+    <li>مشروعية التنافس في الخيرات؛ فليست العبودية سقفًا محدودًا.</li>
+  </ul>
+
+  <div class="src"><span class="src-label">مرجع الاستنباط</span>ينظر: ابن عاشور، <strong>التحرير والتنوير</strong>، ج ٣٠ / ص ٣٥٨. والقرطبي، <strong>الجامع لأحكام القرآن</strong>، ج ٢٠ / ص ٦٧، دار الكتب المصرية.</div>
+</section>
+
+<!-- 5. الإعراب -->
+<section id="s5" class="sec reveal">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>الإعراب التفصيلي</h2></div>
+  <div class="vb"><div class="vt sm">﴿وَهَدَيْنَاهُ النَّجْدَيْنِ﴾</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">الواو</div><div class="id">حرف عطف، تعطف الجملة على ما قبلها ﴿وَلِسَانًا وَشَفَتَيْنِ﴾ في الاستفهام التقريري السابق، فهي في محل نصب مقول القول أو في سياق تعداد النعم.</div></div>
+    <div class="ir"><div class="iw">هَدَيْـ</div><div class="id">فعل ماضٍ مبني على السكون لاتصاله بضمير الرفع المتحرك.</div></div>
+    <div class="ir"><div class="iw">ـنَا</div><div class="id">ضمير متصل مبني على السكون في محل رفع فاعل، وهو ضمير التعظيم يعود إلى الله سبحانه.</div></div>
+    <div class="ir"><div class="iw">الهاء</div><div class="id">في "هَدَيْنَاهُ" ضمير متصل مبني على الضم في محل نصب مفعول به أول، يعود على الإنسان المذكور في ﴿لَقَدْ خَلَقْنَا الْإِنْسَانَ فِي كَبَدٍ﴾ [البلد ٤].</div></div>
+    <div class="ir"><div class="iw">النَّجْدَيْنِ</div><div class="id">مفعول به ثانٍ لـ"هَدَيْنَا" (لأنه ضُمِّن معنى "عرّفنا" أو "دللنا"، فتعدّى إلى مفعولين)، منصوب وعلامة نصبه الياء لأنه مثنى، والنون عوض عن التنوين في المفرد.</div></div>
+    <div class="ir"><div class="iw">توجيه آخر</div><div class="id">ذهب بعض المعربين إلى أنّ ﴿النَّجْدَيْنِ﴾ منصوب بنزع الخافض، والتقدير: "هديناه إلى النَّجدين"، كما في ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾ [الفاتحة ٦]، وكلا الوجهين صحيح.</div></div>
+    <div class="ir"><div class="iw">محل الجملة</div><div class="id">جملة ﴿هَدَيْنَاهُ النَّجْدَيْنِ﴾ معطوفة على ما قبلها من جمل تعداد النعم، فلا محل لها من الإعراب على الوجه الأظهر.</div></div>
+  </div>
+  <div class="src"><span class="src-label">مرجع الإعراب</span>ينظر: محيي الدين درويش، <strong>إعراب القرآن الكريم وبيانه</strong>، ج ١٠ / ص ٤٧٧، دار ابن كثير، دمشق. والعكبري، <strong>التبيان في إعراب القرآن</strong>، ج ٢ / ص ١٢٨٢، دار الجيل.</div>
+</section>
+
+<!-- 6. التدبر -->
+<section id="s6" class="sec reveal">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+
+  <div class="card t"><div class="ct">١. من ثنائية النجاة إلى معراج الإحسان</div>
+    <p>الآية تُربّي المؤمن على ألّا يعيش بعقلية "الحدّ الأدنى"، بل بعقلية "السَّبق" ﴿سَابِقُوا إِلَىٰ مَغْفِرَةٍ﴾ [الحديد ٢١]. فمن رَضِي بالنَّجد الأدنى من الطاعة، فَاتَه شرفُ النَّجد الأعلى.</p></div>
+
+  <div class="card t2"><div class="ct">٢. الشعور بالمسؤولية بعد قيام الحجّة</div>
+    <p>حين يستقرّ في القلب أنّ الله "هدانا النَّجدين"، تولد في النفس مسؤوليّةٌ عميقة تنفي التبريرات، وتُسقط أعذار "لم أعلم" و"لم أهتد"؛ فالعلم قد بلغ، والدليل قد قام.</p></div>
+
+  <div class="card t3"><div class="ct">٣. مقياس النجاح: أحسنُ عمَلًا لا أكثرُ عمَلًا</div>
+    <p>قال الفضيل بن عياض في تفسير قوله تعالى ﴿لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا﴾ [الملك ٢]: «أخلَصَه وأصوَبَه، فإن العمل إذا كان خالصًا ولم يكن صوابًا لم يُقبَل، وإذا كان صوابًا ولم يكن خالصًا لم يُقبَل، حتى يكون خالصًا صوابًا». (رواه أبو نعيم في <strong>حلية الأولياء</strong>، ج ٨ / ص ٩٥).</p></div>
+
+  <div class="card t"><div class="ct">٤. تربية القلب على المنافسة الشريفة</div>
+    <p>الآية تنقل التنافس من صراعٍ على الدنيا إلى تسابقٍ على الآخرة، ومن هنا صار الصحابةُ يتغايرون على الخير: أبو بكر يُنفق ماله كله، وعمر يأتي بنصفه، فيقول ﷺ للصحابي: «سبقك بها أبو بكر». (رواه أبو داود في السنن، رقم ١٦٧٨، والترمذي رقم ٣٦٧٥، وحسّنه الألباني في صحيح سنن أبي داود، ج ٥ / ص ٤٢٥).</p></div>
+
+  <div class="pq">فلا يقنع القلب المؤمن بأن يكون على «نَجد»، حتى يبلغ «أنجَدَ النَّجدين» و«أعلى العَقَبتين»؛ فَـ«الْمُؤْمِنُ الْقَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللَّهِ مِنَ الْمُؤْمِنِ الضَّعِيفِ، وَفِي كُلٍّ خَيْرٌ». (رواه مسلم، صحيح مسلم، كتاب القدر، رقم ٢٦٦٤، عن أبي هريرة رضي الله عنه).</div>
+</section>
+
+<!-- المؤلف -->
+<section id="author" class="sec reveal">
+  <div class="sec-h"><div class="sec-n">✍</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني الليلاني</h3>
+      <div class="at">باحث في التفسير والتدبر القرآني</div>
+      <p>مؤلّف "موسوعة التدبر المعاصر"، يُعنى بإبراز اللطائف البلاغية واللغوية والتربوية في القرآن الكريم، ويسعى إلى تقديم قراءةٍ معاصرةٍ تربط بين النص القرآني وواقع الإنسان اليومي.</p>
+      <div class="amg">
+        <div class="ami"><span class="aml">التخصص</span><div class="amv">التفسير والتدبر</div></div>
+        <div class="ami"><span class="aml">المدرسة</span><div class="amv">أهل السنة والجماعة</div></div>
+        <div class="ami"><span class="aml">الأسلوب</span><div class="amv">تدبّري بلاغي تربوي</div></div>
+        <div class="ami"><span class="aml">المشروع</span><div class="amv">موسوعة التدبر المعاصر</div></div>
+      </div>
+      <div>
+        <span class="atag">تفسير</span><span class="atag">بلاغة</span><span class="atag">تدبّر</span><span class="atag">لغة</span><span class="atag">تربية إيمانية</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="orn">✦ ✧ ✦</div>
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> · تدبّرٌ في نور القرآن</div>
+  <div>© ٢٠٢٦ — جميع الحقوق محفوظة للمؤلف</div>
+</footer>
+
+<script>
+// شريط التقدم (تحسين اختياري)
+try{
+  const prog=document.getElementById('prog');
+  document.addEventListener('scroll',()=>{
+    const h=document.documentElement;
+    const p=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;
+    prog.style.height=p+'vh';
+  });
+}catch(e){}
+
+// إغلاق الفهرس تلقائياً عند اختيار رابط على الجوال (تحسين اختياري)
+try{
+  const tocToggle=document.getElementById('tocToggle');
+  document.querySelectorAll('.toc-a').forEach(a=>a.addEventListener('click',()=>{
+    if(window.innerWidth<1100) tocToggle.checked=false;
+  }));
+}catch(e){}
+
+// إبراز القسم الحالي أثناء التمرير (تحسين اختياري)
+try{
+  const links=document.querySelectorAll('.toc-a');
+  const secs=document.querySelectorAll('.sec');
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+id));}});},{rootMargin:'-30% 0px -60% 0px'});
+  secs.forEach(s=>io.observe(s));
+}catch(e){}
+</script>
+
+
+</body></html>

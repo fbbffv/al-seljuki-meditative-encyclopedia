@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حِينَ خَافَ يَعْقُوبُ عَلَى الرِّسَالَةِ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a1810;--bg:#f2f8f4;--bg2:#dceee3;
+  --bronze:#14502a;--bm:#1e7a42;--blt:#4eb870;
+  --bd:#060f0a;--bt:#d8f5e2;--bg-g:#8adcaa;
+  --teal:#0a3a20;--gold:#2a7848;--gold-m:#3a9858;
+  --div:#a8d8b8;--mist:#183a28;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(30,122,66,.07) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(78,184,112,.06) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--bm),var(--teal));z-index:400;transform-origin:top;}
+.hdr{background:var(--bd);border-bottom:2px solid var(--bm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:flex-end;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.tbtn{background:var(--bronze);color:var(--bg-g);border:1px solid rgba(78,184,112,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--bm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#030806;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(78,184,112,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(78,184,112,.2);}
+.toc-s{color:rgba(78,184,112,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#5a9870;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--bt);background:rgba(78,184,112,.1);border-right-color:var(--blt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--bm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--blt);}
+.hcat{display:inline-block;background:var(--bronze);color:var(--bt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.5rem;font-weight:700;color:var(--bd);line-height:1.45;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--bm);border-radius:50%;}
+.vb{background:var(--bd);border:1px solid rgba(78,184,112,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(78,184,112,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--bt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.35rem;}
+.vr{color:var(--bg-g);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#0a1810;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--bm);float:right;line-height:.82;margin-left:8px;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--bronze);font-weight:700;text-align:center;margin:10px 0;}
+.zeena-list{list-style:none;padding:0;margin:10px 0 20px;}
+.zeena-list li{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bronze);padding:9px 0;border-bottom:1px dashed var(--div);}
+.zeena-list li:last-child{border-bottom:none;}
+.compare-list{list-style:none;padding:0;margin:14px 0;}
+.compare-list li{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bd);padding:10px 0;border-bottom:1px dashed var(--div);text-align:center;}
+.compare-list li:last-child{border-bottom:none;}
+.fawqahum-list{list-style:none;padding:0;margin:10px 0;}
+.fawqahum-list li{font-family:'Scheherazade New',serif;font-size:1.15rem;color:var(--teal);text-align:center;padding:8px 0;border-bottom:1px dashed var(--div);font-weight:600;}
+.fawqahum-list li:last-child{border-bottom:none;}
+.src{background:rgba(30,122,66,.06);border:1px solid rgba(30,122,66,.22);border-radius:7px;padding:12px 16px;margin:10px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;color:var(--bronze);line-height:1.85;}
+.src strong{color:var(--bm);}
+.grade{display:inline-block;font-size:.66rem;padding:2px 8px;border-radius:3px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.sahih{background:#1e6a38;}
+.grade.hasan{background:#7a6010;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--bd);color:var(--blt);border:2px solid var(--bm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:var(--bd);border-bottom:2px solid var(--blt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;color:var(--bronze);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.b{border-right:5px solid var(--bm);}
+.card.b2{border-right:5px solid var(--bronze);}
+.card.b3{border-right:5px solid var(--teal);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#060f0a;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#0a1810;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--bm);color:var(--bt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--bd);color:var(--bg-g);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--bm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(78,184,112,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#060f0a;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:#060f0a;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.45rem;color:#060f0a;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--blt);border-bottom:2px solid var(--blt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--blt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#030806,#0a1810);border:1px solid rgba(78,184,112,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(78,184,112,.25);}
+.ci{color:#68b888;padding:9px 0;border-bottom:1px dashed rgba(78,184,112,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--bg-g);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#030806,#080e0a);border:1px solid rgba(78,184,112,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#68b888;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--bt);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--bm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#060f0a;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#0a1810;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--bm);font-size:.85em;top:11px;}
+.asec{background:var(--bd);border:1px solid rgba(78,184,112,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--bm),var(--bronze));border:3px solid var(--blt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.38rem;margin-bottom:5px;}
+.ai .at{color:var(--bg-g);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#68b888;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:var(--bg-g);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(78,184,112,.1);border:1px solid rgba(78,184,112,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--bg-g);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--bt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(78,184,112,.16);color:var(--blt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(78,184,112,.28);}
+.orn{text-align:center;color:var(--blt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--bd);color:#2a5838;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(78,184,112,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--blt);}
+footer .fb span{color:var(--bg-g);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:2rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.22rem;}.hero h1{font-size:1.65rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآيات والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآيات</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تدبر قرآني · يوسف ٤-٥ · مكية · قصص الأنبياء</div>
+  <h1>حِينَ خَافَ يَعْقُوبُ عَلَى الرِّسَالَةِ<br>قَبْلَ أَنْ يَخَافَ عَلَى الرُّؤْيَا</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>يوسف: ٤-٥ و١٢</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿إِذْ قَالَ يُوسُفُ لِأَبِيهِ يَا أَبَتِ إِنِّي رَأَيْتُ أَحَدَ عَشَرَ كَوْكَبًا وَالشَّمْسَ وَالْقَمَرَ رَأَيْتُهُمْ لِي سَاجِدِينَ ۝ قَالَ يَا بُنَيَّ لَا تَقْصُصْ رُؤْيَاكَ عَلَىٰ إِخْوَتِكَ فَيَكِيدُوا لَكَ كَيْدًا ۖ إِنَّ الشَّيْطَانَ لِلْإِنسَانِ عَدُوٌّ مُّبِينٌ﴾</div>
+    <div class="vr">سورة يوسف (١٢)، الآيتان ٤-٥، مكية</div>
+  </div>
+
+  <div class="abody">
+    <p>لَيْسَتْ هَذِهِ الْكَلِمَاتُ مُجَرَّدَ وَصِيَّةِ أَبٍ لِابْنِهِ... وَلَيْسَتْ نَصِيحَةً عَابِرَةً خَرَجَتْ فِي لَحْظَةِ خَوْفٍ... بَلْ هِيَ دُسْتُورٌ رَبَّانِيٌّ فِي مَعْرِفَةِ النُّفُوسِ، وَفِقْهِ الْعَلَاقَاتِ، وَحِفْظِ النِّعَمِ، وَإِدْرَاكِ سُنَنِ اللهِ فِي عِبَادِهِ.</p>
+
+    <p>فَالْقُرْآنُ لَا يَرْوِي الْأَحْدَاثَ لِمُجَرَّدِ الْحِكَايَةِ، وَإِنَّمَا يَفْتَحُ لِلْقُلُوبِ أَبْوَابَ الْفَهْمِ، وَيَكْشِفُ مَا يَخْتَبِئُ خَلْفَ الْكَلِمَاتِ مِنْ سُنَنٍ لَا تَتَغَيَّرُ.</p>
+
+    <p>لَقَدْ رَأَى يُوسُفُ عَلَيْهِ السَّلَامُ رُؤْيَا... لَكِنَّ يَعْقُوبَ عَلَيْهِ السَّلَامُ رَأَى مُسْتَقْبَلًا. وَرَأَى فِي تِلْكَ الرُّؤْيَا مَا لَمْ يَرَهُ يُوسُفُ بَعْدُ.</p>
+
+    <ul class="zeena-list">
+      <li>رَأَى طَرِيقًا طَوِيلًا يَبْدَأُ بِبِشَارَةٍ...</li>
+      <li>وَيَمُرُّ بِالِابْتِلَاءِ...</li>
+      <li>وَيَنْتَهِي بِالتَّمْكِينِ.</li>
+    </ul>
+
+    <p>وَمِنْ هُنَا كَانَ الْخَوْفُ... لَمْ يَكُنِ الْخَوْفُ مِنَ الْمَنَامِ ذَاتِهِ... بَلْ مِنْ دَلَالَةِ الْمَنَامِ. وَمِنَ الْمَعْنَى الَّذِي يَحْمِلُهُ. وَمِنَ الْإِشَارَةِ الرَّبَّانِيَّةِ الَّتِي قَدْ يُدْرِكُهَا أَصْحَابُ الْبَصَائِرِ قَبْلَ غَيْرِهِمْ.</p>
+
+    <p>فَالرُّؤَى الصَّادِقَةُ لَهَا مَنْزِلَةٌ عَظِيمَةٌ، وَقَدْ ثَبَتَ فِي السُّنَّةِ أَنَّ الرُّؤْيَا الصَّالِحَةَ كَانَتْ مِنْ مَبَادِئِ الْوَحْيِ إِلَى النَّبِيِّ ﷺ، وَلِذَلِكَ كَانَ يَعْقُوبُ عَلَيْهِ السَّلَامُ يُدْرِكُ أَنَّ هَذِهِ الرُّؤْيَا لَيْسَتْ حَدِيثَ نَفْسٍ، وَلَا خَيَالَ طِفْلٍ، وَإِنَّمَا تَحْمِلُ بِشَارَةً عَظِيمَةً بِمُسْتَقْبَلٍ اخْتَارَهُ اللهُ.</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿وَكَذَٰلِكَ يَجْتَبِيكَ رَبُّكَ وَيُعَلِّمُكَ مِن تَأْوِيلِ الْأَحَادِيثِ وَيُتِمُّ نِعْمَتَهُ عَلَيْكَ وَعَلَىٰ آلِ يَعْقُوبَ﴾</div><div class="vr">يوسف (١٢)، الآية ٦، مكية</div></div>
+
+    <p>فَكَانَ الِاجْتِبَاءُ سَابِقًا عَلَى الْأَحْدَاثِ... وَكَانَ الِاخْتِيَارُ سَابِقًا عَلَى الِامْتِحَانِ... وَكَانَتِ الْبُشْرَى تَسْبِقُ الطَّرِيقَ الطَّوِيلَ.</p>
+
+    <p>إِنَّ اللهَ سُبْحَانَهُ جَعَلَ النُّبُوَّةَ فِي ذُرِّيَّةِ إِبْرَاهِيمَ عَلَيْهِ السَّلَامُ، ثُمَّ فِي ذُرِّيَّةِ إِسْحَاقَ وَيَعْقُوبَ، كَمَا قَالَ سُبْحَانَهُ:</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿وَوَهَبْنَا لَهُ إِسْحَاقَ وَيَعْقُوبَ وَجَعَلْنَا فِي ذُرِّيَّتِهِ النُّبُوَّةَ وَالْكِتَابَ﴾</div><div class="vr">العنكبوت (٢٩)، الآية ٢٧، مكية</div></div>
+
+    <p>فَالْبَيْتُ الَّذِي نَشَأَ فِيهُ يُوسُفُ بَيْتٌ اصْطَفَاهُ اللهُ. لَكِنَّ الِاصْطِفَاءَ لَا يَمْنَعُ الِابْتِلَاءَ... بَلْ كَثِيرًا مَا يَكُونُ الِابْتِلَاءُ طَرِيقَ الِاصْطِفَاءِ.</p>
+
+    <p>وَهُنَا تَتَجَلَّى حِكْمَةُ يَعْقُوبَ. لَقَدْ عَرَفَ أَنَّ النُّفُوسَ لَيْسَتْ سَوَاءً.</p>
+
+    <ul class="fawqahum-list">
+      <li>فَفِيهَا قَلْبٌ يَفْرَحُ لِنِعْمَةِ أَخِيهِ...</li>
+      <li>وَفِيهَا قَلْبٌ يَتَأَلَّمُ مِنْ فَضْلِ غَيْرِهِ.</li>
+      <li>وَفِيهَا قَلْبٌ يَعْبُدُ اللهَ...</li>
+      <li>وَفِيهَا قَلْبٌ يَعْبُدُ نَفْسَهُ.</li>
+    </ul>
+
+    <p>وَلِهَذَا قَالَ: ﴿لَا تَقْصُصْ رُؤْيَاكَ عَلَىٰ إِخْوَتِكَ﴾. لَمْ يَأْمُرْهُ بِالْكَذِبِ. وَلَمْ يَأْمُرْهُ بِالْخِدَاعِ. بَلْ أَمَرَهُ بِالْحِكْمَةِ.</p>
+
+    <ul class="zeena-list">
+      <li>فَالسُّكُوتُ فِي مَوْضِعِهِ عِبَادَةٌ.</li>
+      <li>وَالْكِتْمَانُ فِي مَوْضِعِهِ عِبَادَةٌ.</li>
+      <li>وَالْإِفْصَاحُ فِي مَوْضِعِهِ عِبَادَةٌ.</li>
+    </ul>
+
+    <p class="ql">لَيْسَ كُلُّ خَيْرٍ يُعْلَنُ... وَلَيْسَ كُلُّ نِعْمَةٍ تُنْشَرُ... وَلَيْسَ كُلُّ مَشْرُوعٍ يَخْرُجُ إِلَى النَّاسِ قَبْلَ أَنْ يَقْوَى عُودُهُ.</p>
+
+    <ul class="zeena-list">
+      <li>إِنَّ الْبَذْرَةَ لَا تَخْرُجُ مِنَ الْأَرْضِ فِي يَوْمِهَا الْأَوَّلِ.</li>
+      <li>وَلَوْ كَشَفَهَا صَاحِبُهَا كُلَّ صَبَاحٍ لِيَفْتَخِرَ بِهَا لَمَا أَثْمَرَتْ.</li>
+      <li>وَالْجَنِينُ لَا يَكْتَمِلُ إِلَّا فِي سِتْرِ الرَّحِمِ.</li>
+      <li>وَاللُّؤْلُؤَةُ لَا تَتَكَوَّنُ إِلَّا فِي أَعْمَاقِ الْبَحْرِ.</li>
+    </ul>
+
+    <p>وَكَذَلِكَ الْمَشَارِيعُ الْعَظِيمَةُ... تَبْدَأُ فِي صَمْتٍ... وَتَنْمُو فِي خَفَاءٍ... ثُمَّ يُعْلِنُهَا اللهُ حِينَ يَشَاءُ.</p>
+
+    <p>وَلِذَلِكَ كَانَتْ سُنَّةُ الْأَنْبِيَاءِ قَائِمَةً عَلَى الْأَخْذِ بِالْأَسْبَابِ. خَرَجَ مُوسَى عَلَيْهِ السَّلَامُ خَائِفًا يَتَرَقَّبُ. وَاخْتَبَأَ النَّبِيُّ ﷺ فِي الْغَارِ. وَكَانَتِ الْهِجْرَةُ مَدْرَسَةً فِي السِّرِّيَّةِ، وَحُسْنِ التَّدْبِيرِ، مَعَ كَمَالِ التَّوَكُّلِ عَلَى اللهِ.</p>
+
+    <p class="ql">فَالتَّوَكُّلُ لَيْسَ تَرْكَ الْأَسْبَابِ... بَلِ اسْتِعْمَالُ الْأَسْبَابِ مَعَ الِاعْتِمَادِ عَلَى رَبِّ الْأَسْبَابِ.</p>
+
+    <p>وَتَأَمَّلْ كَيْفَ نَسَبَ يَعْقُوبُ الْخَطَرَ إِلَى الشَّيْطَانِ فَقَالَ: ﴿إِنَّ الشَّيْطَانَ لِلْإِنسَانِ عَدُوٌّ مُّبِينٌ﴾. لَمْ يُرَبِّ يُوسُفَ عَلَى احْتِقَارِ إِخْوَتِهِ. وَلَمْ يَزْرَعْ فِي قَلْبِهِ الْحِقْدَ. بَلْ عَلَّمَهُ أَنَّ الشَّيْطَانَ هُوَ الَّذِي يُفْسِدُ الْقُلُوبَ، وَيُزَيِّنُ الْمُقَارَنَاتِ، وَيُشْعِلُ نَارَ الْحَسَدِ.</p>
+
+    <p>وَلِهَذَا لَمَّا اكْتَمَلَتِ الْقِصَّةُ قَالَ يُوسُفُ:</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿مِن بَعْدِ أَن نَّزَغَ الشَّيْطَانُ بَيْنِي وَبَيْنَ إِخْوَتِي﴾</div><div class="vr">يوسف (١٢)، الآية ١٠٠، مكية</div></div>
+
+    <p>فَأَيُّ قَلْبٍ هَذَا؟ وَأَيُّ صَفَاءٍ هَذَا؟ وَأَيُّ تَرْبِيَةٍ رَبَّانِيَّةٍ هَذِهِ؟</p>
+
+    <p>إِنَّ كَثِيرًا مِنَ النَّاسِ يَظُنُّونَ أَنَّ أَعْدَاءَهُمْ بَعِيدُونَ... ثُمَّ يَكْتَشِفُونَ أَنَّ أَوَّلَ سَهْمٍ خَرَجَ إِلَيْهِمْ كَانَ مِنْ قَرِيبٍ. وَلَيْسَ لِأَنَّ الْقَرَابَةَ شَرٌّ... وَلَكِنْ لِأَنَّ الْقُرْبَ يَكْشِفُ النِّعَمَ أَكْثَرَ مِنَ الْبُعْدِ. وَالنُّفُوسُ إِذَا لَمْ تُزَكَّ بِالْإِيمَانِ رُبَّمَا اسْتَثْقَلَتْ فَضْلَ غَيْرِهَا.</p>
+
+    <p>وَلِهَذَا قَالَ إِخْوَةُ يُوسُفَ: ﴿لَيُوسُفُ وَأَخُوهُ أَحَبُّ إِلَىٰ أَبِينَا مِنَّا﴾.</p>
+
+    <ul class="zeena-list">
+      <li>فَبَدَأَتِ الْمُقَارَنَةُ...</li>
+      <li>ثُمَّ تَحَوَّلَتْ إِلَى غَيْرَةٍ...</li>
+      <li>ثُمَّ أَصْبَحَتْ حَسَدًا...</li>
+      <li>ثُمَّ صَارَتْ مُؤَامَرَةً...</li>
+      <li>ثُمَّ انْتَهَتْ بِجَرِيمَةٍ.</li>
+    </ul>
+
+    <p>وَهَكَذَا يَعْمَلُ الشَّيْطَانُ. لَا يَبْدَأُ بِالْقَتْلِ... بَلْ يَبْدَأُ بِخَاطِرَةٍ. ثُمَّ كَلِمَةٍ. ثُمَّ غَيْرَةٍ. ثُمَّ حَسَدٍ. ثُمَّ كَيْدٍ. ثُمَّ يُصَفِّقُ الشَّيْطَانُ لِانْتِصَارِهِ.</p>
+
+    <p>وَفِي وَاقِعِ الْحَيَاةِ... كَمْ مِنْ تَاجِرٍ أَعْلَنَ مَشْرُوعَهُ قَبْلَ اكْتِمَالِهِ فَضَاعَتْ فِكْرَتُهُ. وَكَمْ مِنْ طَالِبٍ أَكْثَرَ مِنَ الْحَدِيثِ عَنْ أَحْلَامِهِ، ثُمَّ شَغَلَهُ كَلَامُ النَّاسِ عَنِ الْعَمَلِ. وَكَمْ مِنْ نِعْمَةٍ تَحَوَّلَتْ إِلَى نِقْمَةٍ لِأَنَّ صَاحِبَهَا اسْتَعْجَلَ عَرْضَهَا.</p>
+
+    <ul class="compare-list">
+      <li>لَيْسَ كُلُّ النَّاسِ يَفْرَحُونَ لِفَرَحِكَ.</li>
+      <li>وَلَيْسَ كُلُّ مَنِ ابْتَسَمَ لَكَ أَحَبَّ لَكَ الْخَيْرَ.</li>
+      <li>وَلَيْسَ كُلُّ مَنْ قَالَ: «مَا شَاءَ اللهُ» سَلِمَ قَلْبُهُ مِنَ الْمُقَارَنَةِ.</li>
+    </ul>
+
+    <p>وَلِهَذَا كَانَ الْمُؤْمِنُ حَكِيمًا... يَعْرِفُ مَتَى يَتَكَلَّمُ... وَمَتَى يَصْمُتُ... وَمَتَى يَظْهَرُ... وَمَتَى يَكْتُمُ.</p>
+
+    <p>وَلَيْسَ مَعْنَى ذَلِكَ أَنْ يَعِيشَ الْإِنْسَانُ خَائِفًا مِنَ النَّاسِ... بَلْ أَنْ يَعِيشَ فَقِيهًا بِسُنَنِ اللهِ.</p>
+
+    <ul class="zeena-list">
+      <li>فَكَمَا أَنَّ النَّارَ تُحْرِقُ... فَالْحَسَدُ يُؤْذِي.</li>
+      <li>وَكَمَا أَنَّ السَّمَّ يَقْتُلُ... فَالْكَلِمَةُ قَدْ تَهْدِمُ.</li>
+      <li>وَكَمَا أَنَّ الْمَرَضَ يَنْتَقِلُ... فَالْأَحْقَادُ تَنْتَشِرُ إِذَا وَجَدَتْ قُلُوبًا فَارِغَةً مِنَ الْإِيمَانِ.</li>
+    </ul>
+
+    <p>وَمَعَ ذَلِكَ كُلِّهِ... يَبْقَى الْمُؤْمِنُ مُتَعَلِّقًا بِاللهِ وَحْدَهُ. فَلَا يَخَافُ الْحَاسِدَ أَكْثَرَ مِنْ خَوْفِهِ مِنْ ذَنْبِهِ. وَلَا يَعْتَمِدُ عَلَى الْكِتْمَانِ وَحْدَهُ. وَلَا يَنْسَى أَنَّ الْحَافِظَ هُوَ اللهُ.</p>
+
+    <ul class="fawqahum-list">
+      <li>فَالْقُلُوبُ كُلُّهَا بَيْنَ أُصْبُعَيْنِ مِنْ أَصَابِعِ الرَّحْمَنِ.</li>
+      <li>وَالْمَقَادِيرُ كُلُّهَا بِيَدِهِ.</li>
+      <li>وَالْمُلْكُ كُلُّهُ لَهُ.</li>
+      <li>وَمَا شَاءَ كَانَ. وَمَا لَمْ يَشَأْ لَمْ يَكُنْ.</li>
+    </ul>
+
+    <p>لَقَدْ بَدَأَتْ قِصَّةُ يُوسُفَ بِرُؤْيَا... ثُمَّ جُبٍّ... ثُمَّ رِقٍّ... ثُمَّ سِجْنٍ... ثُمَّ خَزَائِنِ الْأَرْضِ... ثُمَّ عَرْشِ التَّمْكِينِ... لِيَتَعَلَّمَ الْمُؤْمِنُ أَنَّ وَعْدَ اللهِ لَا يُولَدُ كَامِلًا، وَإِنَّمَا يَنْمُو وَسَطَ الِابْتِلَاءَاتِ حَتَّى يَبْلُغَ تَمَامَهُ.</p>
+
+    <ul class="compare-list">
+      <li>فَإِذَا رَأَيْتَ فِي حَيَاتِكَ تَأَخُّرًا... فَلَا تَيْأَسْ.</li>
+      <li>وَإِذَا رَأَيْتَ امْتِحَانًا... فَلَا تَظُنَّ أَنَّ اللهَ نَسِيَكَ.</li>
+    </ul>
+
+    <ul class="zeena-list">
+      <li>فَرُبَّمَا كَانَ الْجُبُّ أَوَّلَ الطَّرِيقِ إِلَى الْقَصْرِ.</li>
+      <li>وَرُبَّمَا كَانَ السِّجْنُ أَوَّلَ الطَّرِيقِ إِلَى الْوِزَارَةِ.</li>
+      <li>وَرُبَّمَا كَانَتْ دُمُوعُ اللَّيَالِي أَوَّلَ الطَّرِيقِ إِلَى فَرْحَةِ الْعُمْرِ.</li>
+    </ul>
+
+    <ul class="fawqahum-list">
+      <li>فَاحْفَظْ نِعَمَ اللهِ...</li>
+      <li>وَلَا تَسْتَعْجِلْ إِعْلَانَ بَشَائِرِهِ...</li>
+      <li>وَأَحْسِنِ الظَّنَّ بِرَبِّكَ...</li>
+      <li>وَأَحْسِنْ مُعَامَلَةَ النَّاسِ...</li>
+      <li>وَلَا تَجْعَلِ الْحَسَدَ يَسْكُنُ قَلْبَكَ إِذَا رَأَيْتَ فَضْلَ اللهِ عَلَى غَيْرِكَ.</li>
+    </ul>
+
+    <p>فَإِنَّ الَّذِي أَعْطَى يُوسُفَ قَادِرٌ أَنْ يُعْطِيَكَ. وَالَّذِي اجْتَبَى يُوسُفَ قَادِرٌ أَنْ يَفْتَحَ لَكَ مِنْ أَبْوَابِ فَضْلِهِ مَا لَا يَخْطُرُ لَكَ عَلَى بَالٍ.</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿إِنَّ رَبَّكَ عَلِيمٌ حَكِيمٌ﴾</div><div class="vr">يوسف (١٢)، الآية ٦، مكية</div></div>
+
+    <!-- تخريج -->
+    <div class="sub"><h3>📚 تخريج الأحاديث الواردة في المقال</h3>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>«الرُّؤْيَا الصَّادِقَةُ مِنَ اللهِ وَالرُّؤْيَا الْكَاذِبَةُ مِنَ الشَّيْطَانِ»</strong><br>أخرجه البخاري في صحيحه، كتاب التعبير، باب الرؤيا الصالحة جزء من ستة وأربعين جزءًا من النبوة، ح٦٩٨٤. ومسلم في صحيحه، كتاب الرؤيا، ح٢٢٦١. عن أبي قتادة رضي الله عنه.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>«الرُّؤْيَا الصَّالِحَةُ مِنَ اللهِ... وَكَانَتْ أَوَّلَ مَا بُدِئَ بِهِ رَسُولُ اللهِ ﷺ مِنَ الْوَحْيِ الرُّؤْيَا الصَّالِحَةُ»</strong><br>أخرجه البخاري في صحيحه، كتاب بدء الوحي، باب كيف كان بدء الوحي، ح٣. ومسلم، كتاب الإيمان، ح١٦٠. عن عائشة رضي الله عنها.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>«الْقُلُوبُ بَيْنَ أُصْبُعَيْنِ مِنْ أَصَابِعِ الرَّحْمَنِ يُقَلِّبُهَا كَيْفَ يَشَاءُ»</strong><br>أخرجه مسلم في صحيحه، كتاب القدر، باب تصريف الله القلوب، ح٢٦٥٤. عن عبدالله بن عمرو رضي الله عنهما. والترمذي، كتاب القدر، ح٢١٤٠، وقال: حسن صحيح.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية</h3>
+    <div class="card b"><div class="ct">الاستعارات الثلاث المتوازية: «الْبَذْرَةُ / الْجَنِينُ / اللُّؤْلُؤَةُ»</div><p>يُقابل المقال فكرة حفظ النعمة قبل إعلانها بثلاث استعارات طبيعية متتالية ومتصاعدة: البذرة في التراب، والجنين في الرحم، واللؤلؤة في أعماق البحر. والتصاعد من الأرض إلى باطن الجسد إلى قاع البحر يوحي بأن كلما كانت النعمة أثمن كان حجب ضوء النشر عنها أحكم وأنفع.</p></div>
+    <div class="card b2"><div class="ct">التشخيص الدرامي لمراحل الشيطان</div><p>«لَا يَبْدَأُ بِالْقَتْلِ... بَلْ يَبْدَأُ بِخَاطِرَةٍ. ثُمَّ كَلِمَةٍ. ثُمَّ غَيْرَةٍ. ثُمَّ حَسَدٍ. ثُمَّ كَيْدٍ...» — تشخيص حركي للشيطان في ست مراحل متصاعدة يُجسِّد وسوسته في صورة مسار زمني ملموس، فيجعل القارئ يرى كيف تُولَد الجريمة من خاطرة صغيرة.</p></div>
+    <div class="card b3"><div class="ct">القياس التشبيهي المتوازي: «كَمَا أَنَّ النَّارَ تُحْرِقُ... كَمَا أَنَّ السَّمَّ يَقْتُلُ»</div><p>تشبيهات محكمة ثلاثية (النار/الحسد، السم/الكلمة، المرض/الأحقاد) تُؤسِّس لسنة كونية: الأذى له قوانين تعمل حتى في الأحوال الروحية كما تعمل في المادة — فيُقدِّم الحسد كظاهرة طبيعية لها قوانينها لا كمجرد عيب أخلاقي.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="card b"><div class="ct">التقابل بين رؤية يوسف ورؤية يعقوب</div><p>«رَأَى يُوسُفُ رُؤْيَا... لَكِنَّ يَعْقُوبَ رَأَى مُسْتَقْبَلًا» — طباق دقيق بين الرؤية الحسية (المنام) والرؤية البصيرية (إدراك السنن والمآلات)، يُؤسِّس لعنوان المقال كله ويكشف عن سبب الخوف الحقيقي ليعقوب.</p></div>
+    <div class="card b2"><div class="ct">الطباق في سنة الكتمان: «يَعْرِفُ مَتَى يَتَكَلَّمُ... وَمَتَى يَصْمُتُ / مَتَى يَظْهَرُ... وَمَتَى يَكْتُمُ»</div><p>طباق مزدوج (كلام/صمت، ظهور/كتمان) يُصوِّر الحكمة الإيمانية في إدارة العلاقات لا كخوف بل كفقه بسنن الله — وهذا الفهم يُميِّز المقال عن الخطاب التخويفي المعتاد في الحديث عن الحسد.</p></div>
+    <div class="card b3"><div class="ct">سلسلة التدرج في سقوط إخوة يوسف</div><p>«الْمُقَارَنَةُ... ثُمَّ غَيْرَةٌ... ثُمَّ حَسَدٌ... ثُمَّ مُؤَامَرَةٌ... ثُمَّ جَرِيمَةٌ» — تدرج متصاعد بخمس مراحل يرسم كيف يتحول أبسط شعور إلى كارثة حين يُترك بلا تزكية — وهو نفس التدرج الذي وصفه المقال في عمل الشيطان.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div class="card b"><div class="ct">أسلوب التأمل القصصي المعمَّق</div><p>يُوظِّف المقال قصة يوسف عليه السلام لا كحكاية تاريخية بل كـ«مرآة للسنن» — منهج أدبي يُحوِّل النص القرآني من خبر إلى درس حي قابل للتطبيق في كل زمان. وهذا ما يُميِّز التدبر القرآني عن مجرد التفسير.</p></div>
+  <div class="card b2"><div class="ct">أسلوب الانتقال من الكليّ إلى التطبيقي</div><p>ينتقل المقال بين ثلاثة مستويات: المستوى القصصي (قصة يوسف) → المستوى السُّنني (قانون الكتمان وحفظ النعمة) → المستوى التطبيقي (التاجر، الطالب، النعمة المُستعجَلة) — ثلاثية منهجية تجعل الفكرة مُحسوسة على كل مستوى.</p></div>
+  <div class="card b3"><div class="ct">الصورة الأدبية الختامية: مراحل قصة يوسف كخارطة طريق</div><p>«بَدَأَتْ بِرُؤْيَا... ثُمَّ جُبٍّ... ثُمَّ رِقٍّ... ثُمَّ سِجْنٍ... ثُمَّ خَزَائِنِ الْأَرْضِ... ثُمَّ عَرْشِ التَّمْكِينِ» — تعداد شعري موزون يُلخِّص مسيرة الابتلاء والتمكين في ست محطات، يُقابلها المقال بستة أمثلة مقابلة في حياة القارئ.</p></div>
+
+  <div id="s2a" class="sub"><h3>القراءات والصرف</h3>
+    <div class="card b"><div class="ct">«لَا تَقْصُصْ» صرفيًا</div><p>فعل نهي من «قَصَّ يَقُصُّ قَصَصًا» على وزن «فَعَّ يَفُعُّ» المضعَّف، والنهي مبني على السكون. والجذر (ق ص ص) يدل على تتبع الأثر ورواية الخبر — ومنه: القِصص (الأخبار)، والمِقصّ (الأداة التي تقطع الخيط). وجاء النهي مباشرًا بدون أداة تأكيد للدلالة على الحزم والجزم في الأمر.</p></div>
+    <div class="card b2"><div class="ct">«يَكِيدُوا لَكَ كَيْدًا» — التوكيد بالمصدر</div><p>جاء المصدر «كَيْدًا» مؤكِّدًا للفعل «يكيدوا» من نفس الجذر، وهو ما يُسميه النحويون «المفعول المطلق للتوكيد» — أي يكيدوا لك كيدًا تامًا بالغًا. والكيد في اللغة: التدبير الخفي في الشر. وجذره (ك ي د) يدل على الإرهاق والمشقة والتدبير المخفي.</p></div>
+    <div class="card b3"><div class="ct">«الِاجْتِبَاء» صرفيًا</div><p>مصدر «اجْتَبَى يَجْتَبِي» على وزن «افتعل» من جذر (ج ب ي) أصله جَبَا يَجْبُو بمعنى جمع وانتقى. والاجتباء: الاصطفاء والانتقاء الخاص — فالله اجتبى يوسف أي اختاره وانتقاه لنفسه. ومنه: جَبَى الخراجَ (جمعه)، وجَبَى الماءَ في الحوض.</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card b"><div class="ct"><span class="bdg">مشترك</span> كلمة «الرُّؤْيَا»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الرؤيا النبوية الصادقة</td><td class="def">﴿إِنِّي رَأَيْتُ أَحَدَ عَشَرَ كَوْكَبًا﴾ — رؤيا يوسف ذات الدلالة العظيمة.</td></tr>
+        <tr><td class="term">الرؤيا في سياق الوحي</td><td class="def">﴿لَقَدْ صَدَقَ اللَّهُ رَسُولَهُ الرُّؤْيَا بِالْحَقِّ﴾ — الفتح (٤٨): ٢٧ — رؤيا النبي ﷺ في الحديبية.</td></tr>
+        <tr><td class="term">الرؤيا الابتلائية</td><td class="def">﴿إِنَّا جَعَلْنَا الرُّؤْيَا الَّتِي أَرَيْنَاكَ إِلَّا فِتْنَةً لِّلنَّاسِ﴾ — الإسراء (١٧): ٦٠.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْكَيْد»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">كيد الإخوة — شر بشري</td><td class="def">﴿فَيَكِيدُوا لَكَ كَيْدًا﴾ — يوسف ٥.</td></tr>
+        <tr><td class="term">كيد المرأة — فتنة</td><td class="def">﴿إِنَّ كَيْدَكُنَّ عَظِيمٌ﴾ — يوسف (١٢): ٢٨.</td></tr>
+        <tr><td class="term">كيد الكافرين المردود عليهم</td><td class="def">﴿وَكَذَٰلِكَ مَكَّنَّا لِيُوسُفَ فِي الْأَرْضِ﴾ — رد الله على كيدهم.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card b"><div class="ct">الفرق بين: الْكِتْمَانُ / الصَّمْتُ / التَّقِيَّةُ / التَّوَارِي</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الكتمان</td><td class="def">إخفاء شيء معلوم لدى الكاتم — الذي يعلم ولا يُظهر. قد يكون محمودًا (كتمان النعمة) أو مذمومًا (كتمان الشهادة).</td></tr>
+        <tr><td class="term">الصمت</td><td class="def">الإمساك عن الكلام بشكل عام — أعمّ من الكتمان.</td></tr>
+        <tr><td class="term">التقية</td><td class="def">إخفاء الإيمان أو الرأي دفعًا للأذى — مشروط بالضرورة والإكراه.</td></tr>
+        <tr><td class="term">التواري</td><td class="def">إخفاء الشخص نفسه لا القول — كتوارى موسى عليه السلام.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct">الفرق بين: الْغَيْرَةُ / الْحَسَدُ / الْغِبْطَةُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الغيرة</td><td class="def">ألم يجده الإنسان من مشاركة غيره إياه فيما يختص به — قد تكون محمودة في حماية المحارم.</td></tr>
+        <tr><td class="term">الحسد</td><td class="def">تمني زوال النعمة عن الغير — مذموم مطلقًا. قال ابن القيم: «الحسد داء القلوب وهو أول معصية عُصي الله بها». انظر: إغاثة اللهفان، ج١، ص٩١ (ط. دار المعرفة).</td></tr>
+        <tr><td class="term">الغِبطة</td><td class="def">تمني مثل ما عند الغير مع تمني بقائه له — مباح بل محمود. وهو النظير الإيجابي للحسد.</td></tr>
+      </table>
+    </div>
+    <div class="card b3"><div class="ct">الفرق بين: الِاصْطِفَاءُ / الِاجْتِبَاءُ / الِاخْتِيَارُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الاصطفاء</td><td class="def">الانتقاء من الصفوة (خيار الشيء وأفضله) — غالب في الأنبياء والرسل.</td></tr>
+        <tr><td class="term">الاجتباء</td><td class="def">الجمع والانتقاء الخاص لقرب وتخصيص — أخص من الاصطفاء وأدل على العناية الفردية.</td></tr>
+        <tr><td class="term">الاختيار</td><td class="def">تفضيل شيء على غيره بعد نظر — أعمّ الثلاثة وأقلها خصوصية.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card b"><div class="ct">لماذا قال يعقوب «فَيَكِيدُوا لَكَ كَيْدًا» بالفاء؟</div><p>الفاء في «فَيَكِيدُوا» فاء السببية والترتيب الفوري — أي أن الكيد سيكون نتيجة مباشرة وحتمية لقص الرؤيا. واستخدام المضارع «يكيدوا» لا الماضي يُصوِّر الكيد كأنه حاضر ومتوقع لا افتراضي، مما يُؤكد يقين يعقوب بطبيعة النفوس. وتعليلها في المقال بـ«فقه يعقوب بسنن الله في النفوس» اجتهاد تدبري صحيح.</p></div>
+    <div class="card b2"><div class="ct">نسبة الكيد إلى الشيطان لا إلى الإخوة — تربية يعقوب</div><p>قال يعقوب ﴿إِنَّ الشَّيْطَانَ لِلْإِنسَانِ عَدُوٌّ مُّبِينٌ﴾ لا «إخوتك يكيدون» — وفي هذا تربية نبوية عميقة: لا تزرع العداوة للأشخاص، بل فهِّم ابنك العدو الحقيقي. وقد أكّد القرآن نجاح هذه التربية بقول يوسف في نهاية القصة: ﴿مِن بَعْدِ أَن نَّزَغَ الشَّيْطَانُ بَيْنِي وَبَيْنَ إِخْوَتِي﴾ — ليس «كادوا لي» بل «نزغ الشيطان».</p></div>
+    <div class="card b3"><div class="ct">الاستعمال الفني لكلمة «نَزَغَ» في آية ١٠٠</div><p>«نَزَغَ الشَّيْطَانُ» — النزغ في اللغة: الإفساد والإغراء بالشر، ومنه: نزغ بين القوم أي أفسد بينهم. وهو أدق من «وسوس» لأن النزغ يوحي بالدفع الفعلي والإيغار لا مجرد الهمس — فيصف يوسف ما جرى بكلمة أشد دلالة مما يعرفه غيره من الداخل.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السياق المباشر — سورة يوسف (١٢): ما قبل الآيتين ٤-٥</div>
+    <div class="ci"><span class="vi">﴿الر ۚ تِلْكَ آيَاتُ الْكِتَابِ الْمُبِينِ ۝ إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ﴾</span><span class="vs">يوسف (١٢): ١-٢ — الفاتحة تُعلن أن القصة للتعقل والتدبر لا للحكاية فقط.</span></div>
+    <div class="ci"><span class="vi">﴿نَحْنُ نَقُصُّ عَلَيْكَ أَحْسَنَ الْقَصَصِ﴾</span><span class="vs">يوسف (١٢): ٣ — تُقرِّر أن هذه القصة أحسن القصص — وسبب ذلك ما فيها من السنن والمعاني العميقة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">ما بعد الآيتين — تأكيد الاجتباء والتعليم</div>
+    <div class="ci"><span class="vi">﴿وَكَذَٰلِكَ يَجْتَبِيكَ رَبُّكَ وَيُعَلِّمُكَ مِن تَأْوِيلِ الْأَحَادِيثِ وَيُتِمُّ نِعْمَتَهُ عَلَيْكَ وَعَلَىٰ آلِ يَعْقُوبَ﴾</span><span class="vs">يوسف (١٢): ٦ — تأكيد أن الاجتباء كان قرارًا إلهيًا سابقًا لا مجرد رد فعل على الأحداث.</span></div>
+  </div>
+  <div class="cb"><div class="bt">الآيات ذات الصلة في القرآن الكريم</div>
+    <div class="ci"><span class="vi">﴿وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ﴾</span><span class="vs">إبراهيم (١٤): ٤٢ — مدنية — الله لا يُهمل المظلوم وإن طال الزمن.</span></div>
+    <div class="ci"><span class="vi">﴿وَعَسَىٰ أَن تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَّكُمْ﴾</span><span class="vs">البقرة (٢): ٢١٦ — مدنية — قاعدة قرآنية تُفسِّر سر الابتلاء في طريق الاجتباء.</span></div>
+    <div class="ci"><span class="vi">﴿إِنَّ اللَّهَ بَالِغُ أَمْرِهِ ۚ قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا﴾</span><span class="vs">الطلاق (٦٥): ٣ — مدنية — تقرير أن مآلات الأمور في يد الله وستبلغ غايتها بالضرورة.</span></div>
+    <div class="ci"><span class="vi">﴿إِنَّ الشَّيْطَانَ لَكُمْ عَدُوٌّ فَاتَّخِذُوهُ عَدُوًّا﴾</span><span class="vs">فاطر (٣٥): ٦ — مكية — تصريح قرآني بعداوة الشيطان، يتسق مع تعليم يعقوب ليوسف.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط المحوري:</strong> قصة يوسف كلها في سورة يوسف تُجسِّد القانون القرآني: ﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ (الشرح: ٥) — الرؤيا هي البشارة، والجب والسجن هما العسر، والوزارة هي اليسر. والمقال يستخلص هذا القانون ليُطبِّقه على حياة القارئ اليومية.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآيات والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية قصصية تربوية ✅</div><div class="md">قصة يوسف بأكملها صنّفها العلماء آية تربوية تُكشف سنن الله في البشر — ﴿لَقَدْ كَانَ فِي قَصَصِهِمْ عِبْرَةٌ﴾ (يوسف: ١١١).</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عقدية — القضاء والقدر ✅</div><div class="md">الاجتباء والتمكين يُؤصِّلان عقيدة القضاء والقدر: الاختيار الإلهي سابق على الأحداث ومُحيط بها.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية أخلاق وسلوك ✅</div><div class="md">نهي يعقوب ﴿لَا تَقْصُصْ﴾ تأسيس لآداب العلاقات: حفظ النعمة وعدم إعلانها في غير موضعه.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> الآيتان من يوسف (٤-٥) منظومة قصصية-عقدية-أخلاقية: تَرسم سنة الاصطفاء، وتُقرِّر حقيقة القضاء والقدر، وتُؤسِّس أدبًا إيمانيًا في التعامل مع النعم والعلاقات.</div>
+  <div class="sub"><h3>الأحكام الشرعية المستنبطة</h3>
+    <div class="card b"><div class="ct">الحكم الأول: استحباب كتمان النعمة قبل استقرارها</div>
+      <p>يُستنبط من وصية يعقوب استحباب عدم إذاعة النعم والمشاريع قبل اكتمالها، سدًّا لذريعة إثارة الحسد والكيد.</p>
+      <div class="src"><strong>المصدر:</strong> ابن القيم، إغاثة اللهفان من مصايد الشيطان، ج١، ص٩١-٩٥ (ط. دار المعرفة، بيروت). وقال: «الحسد داء القلوب وهو أول معصية عُصي الله بها في السماء وفي الأرض».</div>
+    </div>
+    <div class="card b2"><div class="ct">الحكم الثاني: حرمة الحسد والسعي في إزالة نعمة الغير</div>
+      <p>الحسد حرام بإجماع العلماء، وقد نص القرآن على ذمّه وأمر بالاستعاذة من الحاسد في سورة الفلق، والحديث الشريف يؤكد ذلك.</p>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>«إِيَّاكُمْ وَالْحَسَدَ فَإِنَّ الْحَسَدَ يَأْكُلُ الْحَسَنَاتِ كَمَا تَأْكُلُ النَّارُ الْحَطَبَ»</strong> — أخرجه أبو داود في سننه، كتاب الأدب، ح٤٩٠٣. وابن ماجه في سننه، ح٤٢١٠. وحسّنه الألباني في صحيح أبي داود.</div>
+    </div>
+    <div class="card b3"><div class="ct">الحكم الثالث: مشروعية الأخذ بالأسباب مع التوكل</div>
+      <p>سنة الأنبياء (يعقوب يُوصي، موسى يتراقب، النبي ﷺ يختبئ في الغار) تُقرِّر أن الأخذ بالأسباب لا ينافي التوكل، بل هو جزء من التوكل الحق.</p>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>«اعْقِلْهَا وَتَوَكَّلْ»</strong> — أخرجه الترمذي في سننه، كتاب صفة القيامة، ح٢٥١٧، وحسّنه. والبزّار في مسنده. انظر: السلسلة الصحيحة، للألباني، ح١١٤.</div>
+    </div>
+    <div class="card" style="border-right:5px solid var(--gold-m);"><div class="ct">الحكم الرابع: استحباب العفو وإسناد الشر إلى الشيطان لا للأشخاص</div>
+      <p>تعليم يعقوب ليوسف — وإسناد يوسف الشر في النهاية إلى الشيطان — يُقرِّر استحباب نسبة الشر إلى سببه الحقيقي (الشيطان) لا إلى الأشخاص، تربيةً على العفو وسلامة الصدر.</p>
+      <div class="src"><strong>المصدر:</strong> ابن كثير، تفسير القرآن العظيم، ج٤، ص٣٦٦-٣٦٨ (ط. دار طيبة، ١٤٢٠هـ) — عند تفسير ﴿مِن بَعْدِ أَن نَّزَغَ الشَّيْطَانُ بَيْنِي وَبَيْنَ إِخْوَتِي﴾.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآيتين الكريمتين تفصيلاً</h2></div>
+
+  <div class="vb" style="margin-bottom:18px;"><div class="vt" style="font-size:1.25rem;">﴿إِذْ قَالَ يُوسُفُ لِأَبِيهِ يَا أَبَتِ إِنِّي رَأَيْتُ أَحَدَ عَشَرَ كَوْكَبًا وَالشَّمْسَ وَالْقَمَرَ رَأَيْتُهُمْ لِي سَاجِدِينَ﴾</div><div class="vr">يوسف (١٢)، الآية ٤، مكية</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">إِذْ</div><div class="id">ظرف زمان مبني على السكون في محل نصب مفعول به لفعل محذوف تقديره «اذكر».</div></div>
+    <div class="ir"><div class="iw">قَالَ يُوسُفُ</div><div class="id">«قال»: فعل ماضٍ مبني على الفتح. «يوسف»: فاعل مرفوع بالضمة، ممنوع من الصرف للعلمية والعجمة.</div></div>
+    <div class="ir"><div class="iw">لِأَبِيهِ</div><div class="id">جار ومجرور متعلق بـ«قال»، و«أبيه» مجرور بالياء لأنه من الأسماء الستة، والهاء ضمير مضاف إليه.</div></div>
+    <div class="ir"><div class="iw">يَا أَبَتِ</div><div class="id">«يا»: حرف نداء. «أبتِ»: منادى مضاف إلى ياء المتكلم المحذوفة وعُوِّضت عنها التاء، مبني على الكسر في محل نصب. وقيل: التاء للتأنيث لأنها تاء مربوطة تدل على الحنو والعطف.</div></div>
+    <div class="ir"><div class="iw">إِنِّي رَأَيْتُ</div><div class="id">«إنّ»: حرف توكيد ونصب، والياء اسمها في محل نصب. «رأيت»: فعل ماضٍ مبني على السكون، والتاء فاعل، وجملة «رأيت...» في محل رفع خبر «إنّ».</div></div>
+    <div class="ir"><div class="iw">أَحَدَ عَشَرَ كَوْكَبًا</div><div class="id">«أحد عشر»: عدد مركب مبني على فتح الجزأين في محل نصب مفعول به. «كوكبًا»: تمييز منصوب بالفتحة والتنوين.</div></div>
+    <div class="ir"><div class="iw">وَالشَّمْسَ وَالْقَمَرَ</div><div class="id">معطوفان على «أحد عشر كوكبًا» منصوبان.</div></div>
+    <div class="ir"><div class="iw">رَأَيْتُهُمْ لِي سَاجِدِينَ</div><div class="id">جملة فعلية تأكيدية لـ«رأيت» السابقة. «رأيت»: فعل وفاعل. «هم»: مفعول به أول. «ساجدين»: مفعول به ثانٍ منصوب بالياء لأنه جمع مذكر سالم. «لي»: جار ومجرور متعلق بـ«ساجدين».</div></div>
+  </div>
+
+  <div class="vb" style="margin:20px 0 18px;"><div class="vt" style="font-size:1.25rem;">﴿قَالَ يَا بُنَيَّ لَا تَقْصُصْ رُؤْيَاكَ عَلَىٰ إِخْوَتِكَ فَيَكِيدُوا لَكَ كَيْدًا ۖ إِنَّ الشَّيْطَانَ لِلْإِنسَانِ عَدُوٌّ مُّبِينٌ﴾</div><div class="vr">يوسف (١٢)، الآية ٥، مكية</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">قَالَ</div><div class="id">فعل ماضٍ مبني على الفتح، والفاعل ضمير مستتر «هو» يعود على يعقوب عليه السلام.</div></div>
+    <div class="ir"><div class="iw">يَا بُنَيَّ</div><div class="id">«يا»: حرف نداء. «بنيّ»: منادى مضاف مبني على الفتح المقدر على ما قبل ياء المتكلم في محل نصب، والياء المشددة مضاف إليه. والتصغير «بنيّ» للتحبب والتلطف.</div></div>
+    <div class="ir"><div class="iw">لَا تَقْصُصْ</div><div class="id">«لا»: ناهية جازمة. «تقصص»: فعل مضارع مجزوم بحذف حرف العلة (السكون ظاهر لأن الفعل صحيح الآخر)، والفاعل مستتر «أنت».</div></div>
+    <div class="ir"><div class="iw">رُؤْيَاكَ</div><div class="id">مفعول به منصوب بفتحة مقدرة على الألف للتعذر، والكاف ضمير مضاف إليه.</div></div>
+    <div class="ir"><div class="iw">عَلَىٰ إِخْوَتِكَ</div><div class="id">جار ومجرور متعلقان بـ«تقصص». «إخوتك»: مضاف إليه مجرور.</div></div>
+    <div class="ir"><div class="iw">فَيَكِيدُوا</div><div class="id">الفاء: سببية. «يكيدوا»: فعل مضارع منصوب بـ«أن» مضمرة وجوبًا بعد الفاء السببية الواقعة في جواب النهي، وعلامة نصبه حذف النون.</div></div>
+    <div class="ir"><div class="iw">لَكَ كَيْدًا</div><div class="id">«لك»: جار ومجرور متعلق بـ«يكيدوا». «كيدًا»: مفعول مطلق منصوب للتوكيد.</div></div>
+    <div class="ir"><div class="iw">إِنَّ الشَّيْطَانَ لِلْإِنسَانِ عَدُوٌّ مُّبِينٌ</div><div class="id">جملة تعليلية مستأنفة. «إنّ»: توكيد ونصب. «الشيطان»: اسمها. «للإنسان»: جار ومجرور متعلق بـ«عدو». «عدو»: خبر إنّ مرفوع. «مبين»: نعت مرفوع.</div></div>
+  </div>
+  <div class="card b" style="margin-top:14px;"><div class="ct">ملاحظة: تكرار «رَأَيْتُ» في الآية ٤ — التوكيد بالتكرار</div><p>قال يوسف «رَأَيْتُ أَحَدَ عَشَرَ كَوْكَبًا» ثم أعاد «رَأَيْتُهُمْ لِي سَاجِدِينَ» — والتكرار ليس عبثًا بل لبيان حالتين: الأولى رؤية الكواكب ذاتها، والثانية رؤية حالها وهيئتها (السجود). وهذا من دقائق الإعراز القرآني في وصف الرؤى.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«وَعْدُ اللهِ لَا يُولَدُ كَامِلًا، وَإِنَّمَا يَنْمُو وَسَطَ الِابْتِلَاءَاتِ حَتَّى يَبْلُغَ تَمَامَهُ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card b"><div class="ct">أولاً: فقه الكتمان — متى يكون الصمت حكمة؟</div><p>الحكمة الإيمانية لا تعني الإخفاء الدائم، بل معرفة توقيت الإعلان والكتمان. <strong>التطبيق:</strong> قبل أن تُشارك حلمك أو مشروعك اسأل: هل اكتمل بما يكفيه دفاعًا عن نفسه؟ هل المحيط الذي ستُعلنه فيه يدعمه أم يستهدفه؟</p></div>
+  <div class="card b2"><div class="ct">ثانياً: تشخيص مراحل الحسد الست — الوقاية خير من العلاج</div><p>المقال يُقدِّم خارطة تشخيصية للحسد: خاطرة → كلمة → غيرة → حسد → كيد → جريمة. <strong>التطبيق:</strong> حين تشعر بألم عند رؤية نعمة الغير، حدِّد أين أنت في هذه المراحل، وتوقف عند الخاطرة نفسها قبل أن تتحرك إلى الكلمة.</p></div>
+  <div class="card b"><div class="ct">ثالثاً: تربية يعقوب — إسناد الشر إلى سببه لا إلى الأشخاص</div><p>نسبة يعقوب الخطر إلى الشيطان لا إلى الإخوة منهج تربوي يصنع نفوسًا أكبر من الحقد. <strong>التطبيق:</strong> حين تؤذيك كلمة أو تصرف، تدرّب على قول: «نزغ الشيطان» — لأن من يُحكمه الشيطان ليس عدوك الحقيقي.</p></div>
+  <div class="card b2"><div class="ct">رابعاً: الجب ليس النهاية — قراءة الابتلاء بعيون يوسفية</div><p>أعظم ما في قصة يوسف: كل محطة بدت نهاية كانت بداية — الجب بداية مصر، والسجن بداية الوزارة. <strong>التطبيق:</strong> في أحلك لحظاتك اسأل: ماذا يريد الله أن يُعلِّمني هنا؟ وما الذي يُهيِّئني له هذا الضيق؟</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>المقابلة بين رؤيتين:</strong> يوسف رأى منامًا، ويعقوب رأى مستقبلًا — ثنائية تُؤسِّس لفكرة البصيرة وهي عنوان المقال الحقيقي.</li>
+      <li><strong>الاستعارات الثلاث المتصاعدة:</strong> البذرة والجنين واللؤلؤة — تدرج من العالم النباتي إلى الإنساني إلى البحري يُوحي بشمولية قانون الكتمان.</li>
+      <li><strong>التطبيق المعاصر المزدوج:</strong> التاجر والطالب — نموذجان من الحياة اليومية يُجسِّدان القانون القرآني في واقع القارئ.</li>
+      <li><strong>الخاتمة التوازنية:</strong> الخوف من الحاسد مقابل التعلق بالله وحده — يُنهي المقال بتوازن يمنع الوقوع في أسر الخوف البشري الذي يُفسد ما أراد المقال بناءه.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح في كل مسألة.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين السنن القرآنية في قصص الأنبياء ومستجدات الحياة المعاصرة — يُحوِّل قصة يوسف إلى منهج حياة.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية نادرة في فهم سنن الله في خلقه.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">قصص الأنبياء</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">فقه السنن</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
