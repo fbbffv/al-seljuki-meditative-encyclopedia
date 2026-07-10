@@ -13,6 +13,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>مَوْسُوعَةُ السَّلْجُوقِي — مِنَصَّةٌ عِلْمِيَّةٌ مَوْسُوعِيَّةٌ شَامِلَةٌ</title>
+
+<!-- ═══ إعدادات التطبيق (PWA) — أندرويد / آيفون / آيباد / ويندوز / ماك ═══ -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#14100a">
+<link rel="icon" type="image/png" href="icon.png">
+<!-- آيفون وآيباد -->
+<link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="السلجوقي">
+<!-- ويندوز -->
+<meta name="msapplication-TileImage" content="icon.png">
+<meta name="msapplication-TileColor" content="#14100a">
 <meta name="description" content="الموسوعة السلجوقية: منصة علمية شاملة للشيخ علي خليل السلجوقي — تدبر القرآن والحديث، الفقه وأصوله، السياسة الشرعية والنقد، الرقائق والطب النبوي وتعبير الرؤى.">
 <meta name="keywords" content="موسوعة السلجوقي, الموسوعة السلجوقية, علي خليل السلجوقي, تدبر القرآن, شرح الحديث, الفقه, أصول الفقه, السياسة الشرعية, تفسير الأحلام, الطب النبوي, أحاديث الفتن">
 <meta name="author" content="الشيخ علي خليل عباس السلجوقي التركماني الليلاني">
@@ -245,6 +258,37 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
 .nasheed-player .np-title{color:var(--gold-lt);font-family:'Amiri',serif;font-size:1.05rem;}
 .nasheed-player .np-sub{color:var(--gg);font-size:.76rem;}
 @media(max-width:520px){.sheikh-frame{width:140px;height:140px;}.wc-inner{padding:24px 18px;}}
+
+/* ═══ بطاقة تثبيت التطبيق (PWA Install Card) ═══ */
+.install-card{
+  position:fixed;bottom:22px;left:50%;
+  transform:translateX(-50%) translateY(160%);
+  z-index:900;display:flex;align-items:center;gap:14px;
+  background:linear-gradient(135deg,var(--night),#20180e);
+  border:1.5px solid var(--gold);border-radius:18px;
+  padding:14px 18px;box-shadow:0 14px 44px rgba(0,0,0,.5);
+  max-width:430px;width:calc(100% - 32px);
+  transition:transform .55s cubic-bezier(.4,0,.2,1);
+}
+.install-card::before{content:'';position:absolute;inset:0;border-radius:18px;background:radial-gradient(ellipse at 20% 0%,rgba(212,178,90,.16),transparent 60%);pointer-events:none;}
+.install-card.show{transform:translateX(-50%) translateY(0);}
+.install-close{position:absolute;top:7px;left:9px;background:none;border:none;color:#8a7550;font-size:.85rem;cursor:pointer;line-height:1;padding:4px;z-index:2;}
+.install-close:hover{color:var(--gold-lt);}
+.install-icon{width:48px;height:48px;border-radius:13px;overflow:hidden;border:2px solid var(--gold-l);flex-shrink:0;box-shadow:0 3px 10px rgba(0,0,0,.35);position:relative;z-index:1;}
+.install-icon img{width:100%;height:100%;object-fit:cover;display:block;}
+.install-txt{flex:1;min-width:0;position:relative;z-index:1;}
+.install-title{font-family:'Reem Kufi',sans-serif;color:var(--gold-lt);font-size:.98rem;font-weight:700;}
+.install-sub{color:#b39a6a;font-size:.76rem;margin-top:3px;line-height:1.55;}
+.install-btn{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);border:none;border-radius:24px;padding:10px 19px;font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:.86rem;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:transform .2s;position:relative;z-index:1;}
+.install-btn:hover{transform:translateY(-2px);}
+body.dark .install-card,body.sepia .install-card{background:linear-gradient(135deg,var(--night),#20180e);}
+@media(max-width:480px){
+  .install-card{padding:12px 14px;gap:10px;bottom:16px;}
+  .install-icon{width:42px;height:42px;}
+  .install-title{font-size:.9rem;}
+  .install-sub{font-size:.71rem;}
+  .install-btn{padding:8px 14px;font-size:.8rem;}
+}
 
 </style>
 </head>
@@ -559,6 +603,17 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
   <a class="cbtn ctg" href="https://t.me/Mmmdgsaeccb" target="_blank" title="تليجرام" aria-label="تليجرام"><svg viewBox="0 0 24 24"><path d="M23.9 4.5c-.3-.2-.7-.3-1.1-.1L1.6 12.2c-.5.2-.8.6-.8 1.1s.4.9.9 1l5.3 1.7 2 6.3c.1.2.2.4.4.5.2.2.5.3.8.3.3 0 .6-.1.9-.4l2.8-2.7 4.9 3.6c.3.2.6.3.9.3.5 0 1-.3 1.2-.9l4.2-18.4c.1-.5-.1-.9-.5-1.1M9.5 15.4l-.6 4.2-1.4-4.6 9.3-6.1-7.3 6.5"/></svg></a>
 </div>
 
+<!-- بطاقة تثبيت الموسوعة كتطبيق (أندرويد / آيفون / آيباد / ويندوز / ماك) -->
+<div class="install-card" id="installCard">
+  <button class="install-close" onclick="dismissInstall()" aria-label="إغلاق">✕</button>
+  <div class="install-icon"><img src="icon.png" alt="أيقونة موسوعة السلجوقي"></div>
+  <div class="install-txt">
+    <div class="install-title">ثبّت الموسوعة على جهازك</div>
+    <div class="install-sub" id="installSub">تصفّح بلا إنترنت، وتحديثٌ تلقائي عند كل مقال جديد</div>
+  </div>
+  <button class="install-btn" id="installBtn" onclick="doInstall()">تثبيت ✦</button>
+</div>
+
 <script>
 // بيانات المقالات القرآنية الحالية (٣٣) — تُبنى منها روابط الفرع القرآني
 var QURAN=[
@@ -656,6 +711,76 @@ function toggleNasheed(){
 document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio').addEventListener('ended',function(){
   document.getElementById('npBtn').textContent='▶';
 });
+</script>
+
+<!-- ═══ تثبيت التطبيق (PWA) + العمل بلا إنترنت + التحديث التلقائي ═══ -->
+<script>
+(function(){
+  var deferredPrompt = null;
+  var card = document.getElementById('installCard');
+  var btn = document.getElementById('installBtn');
+  var sub = document.getElementById('installSub');
+  var DISMISS_KEY = 'suljuki_install_dismissed_v1';
+  var WEEK = 1000*60*60*24*7;
+
+  function isStandalone(){
+    return window.matchMedia('(display-mode: standalone)').matches ||
+           window.matchMedia('(display-mode: window-controls-overlay)').matches ||
+           window.navigator.standalone === true;
+  }
+  function isIOS(){
+    return /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+  }
+  function alreadyDismissedRecently(){
+    var d = localStorage.getItem(DISMISS_KEY);
+    return d && (Date.now() - parseInt(d,10)) < WEEK;
+  }
+  function showCard(){
+    if(isStandalone() || alreadyDismissedRecently()) return;
+    setTimeout(function(){ card.classList.add('show'); }, 2600);
+  }
+  window.dismissInstall = function(){
+    card.classList.remove('show');
+    try{ localStorage.setItem(DISMISS_KEY, Date.now()); }catch(e){}
+  };
+  window.doInstall = function(){
+    if(deferredPrompt){
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function(){
+        deferredPrompt = null;
+        dismissInstall();
+      });
+    } else if(isIOS()){
+      sub.innerHTML = 'اضغط زر المشاركة <b>⬆</b> أسفل الشاشة، ثم اختر "إضافة إلى الشاشة الرئيسية"';
+      btn.style.display = 'none';
+    } else {
+      sub.textContent = 'افتح قائمة المتصفح (⋮ أو ⋯) واختر "تثبيت التطبيق" أو "Install App"';
+      btn.style.display = 'none';
+    }
+  };
+
+  // أندرويد وويندوز وماك (Chrome/Edge) — الحدث القياسي للتثبيت
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    showCard();
+  });
+  window.addEventListener('appinstalled', function(){
+    dismissInstall();
+  });
+
+  // آيفون وآيباد (سفاري لا يدعم beforeinstallprompt)
+  if(isIOS() && !isStandalone() && !alreadyDismissedRecently()){
+    showCard();
+  }
+
+  // تسجيل عامل الخدمة: يفعّل التصفح بلا إنترنت + التحديث التلقائي الصامت
+  if('serviceWorker' in navigator){
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.register('service-worker.js').catch(function(){});
+    });
+  }
+})();
 </script>
 
 </body>
