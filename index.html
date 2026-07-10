@@ -82,6 +82,13 @@ body{
 .modes{display:flex;gap:6px;}
 .mode-btn{width:36px;height:36px;border-radius:9px;border:1px solid var(--line);background:rgba(212,178,90,.08);color:var(--gold-lt);cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
 .mode-btn:hover,.mode-btn.on{background:rgba(212,178,90,.24);}
+.install-hdr-btn{background:linear-gradient(135deg,var(--gold),var(--gold-l));border-color:var(--gold-l);color:var(--night);font-size:1.05rem;box-shadow:0 0 0 rgba(212,178,90,.5);animation:hdrPulse 2.6s ease-in-out infinite;}
+.install-hdr-btn:hover{background:linear-gradient(135deg,var(--gold-l),var(--gold));animation:none;}
+.install-hdr-btn.hidden{display:none;}
+@keyframes hdrPulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(212,178,90,.45);}
+  50%{box-shadow:0 0 0 6px rgba(212,178,90,0);}
+}
 
 /* ===== الهيرو: الشاهد ===== */
 .hero{position:relative;text-align:center;padding:70px 22px 48px;max-width:1000px;margin:0 auto;overflow:hidden;}
@@ -299,6 +306,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   <div class="hdr-i">
     <div class="brand">مَوْسُوعَةُ <b>السَّلْجُوقِي</b></div>
     <div class="modes">
+      <button class="mode-btn install-hdr-btn" id="installHdrBtn" onclick="doInstall()" title="ثبّت الموسوعة على جهازك" aria-label="تثبيت التطبيق">📲</button>
       <button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
       <button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="دافئ">◐</button>
       <button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
@@ -720,6 +728,7 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
   var card = document.getElementById('installCard');
   var btn = document.getElementById('installBtn');
   var sub = document.getElementById('installSub');
+  var hdrBtn = document.getElementById('installHdrBtn');
   var DISMISS_KEY = 'suljuki_install_dismissed_v1';
   var WEEK = 1000*60*60*24*7;
 
@@ -735,6 +744,11 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
     var d = localStorage.getItem(DISMISS_KEY);
     return d && (Date.now() - parseInt(d,10)) < WEEK;
   }
+  function updateHeaderBtn(){
+    if(!hdrBtn) return;
+    if(isStandalone()) hdrBtn.classList.add('hidden');
+    else hdrBtn.classList.remove('hidden');
+  }
   function showCard(){
     if(isStandalone() || alreadyDismissedRecently()) return;
     setTimeout(function(){ card.classList.add('show'); }, 2600);
@@ -742,6 +756,7 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
   window.dismissInstall = function(){
     card.classList.remove('show');
     try{ localStorage.setItem(DISMISS_KEY, Date.now()); }catch(e){}
+    // زر الهيدر يبقى ظاهراً دائماً (لا يتأثر بالإغلاق) إلى أن يُثبَّت التطبيق فعلياً
   };
   window.doInstall = function(){
     if(deferredPrompt){
@@ -749,11 +764,14 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
       deferredPrompt.userChoice.then(function(){
         deferredPrompt = null;
         dismissInstall();
+        updateHeaderBtn();
       });
     } else if(isIOS()){
+      card.classList.add('show');
       sub.innerHTML = 'اضغط زر المشاركة <b>⬆</b> أسفل الشاشة، ثم اختر "إضافة إلى الشاشة الرئيسية"';
       btn.style.display = 'none';
     } else {
+      card.classList.add('show');
       sub.textContent = 'افتح قائمة المتصفح (⋮ أو ⋯) واختر "تثبيت التطبيق" أو "Install App"';
       btn.style.display = 'none';
     }
@@ -767,12 +785,15 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
   });
   window.addEventListener('appinstalled', function(){
     dismissInstall();
+    updateHeaderBtn();
   });
 
   // آيفون وآيباد (سفاري لا يدعم beforeinstallprompt)
   if(isIOS() && !isStandalone() && !alreadyDismissedRecently()){
     showCard();
   }
+
+  updateHeaderBtn();
 
   // تسجيل عامل الخدمة: يفعّل التصفح بلا إنترنت + التحديث التلقائي الصامت
   if('serviceWorker' in navigator){
