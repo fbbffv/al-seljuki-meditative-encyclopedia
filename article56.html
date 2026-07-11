@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y000RD20N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1Y000RD20N');
+</script>
+<meta name="author" content="الشيخ علي خليل عباس السلجوقي التركماني الليلاني">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="كَازَانُوفَا... وَلَكِنْ بِعِمَامَةٍ!">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="موسوعة السلجوقي">
+
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>كَازَانُوفَا... وَلَكِنْ بِعِمَامَةٍ! — الشيخ علي خليل السلجوقي</title>
@@ -130,6 +146,8 @@ footer .fb span{color:var(--tg);}
 </style>
 </head>
 <body>
+<a href="index.html" class="home-link" style="position:fixed;bottom:22px;left:22px;z-index:500;background:#0d3b2a;color:#d0f0e0;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;padding:10px 18px;border-radius:30px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35);border:1px solid rgba(46,144,104,.5);display:flex;align-items:center;gap:7px;">⌂ الفهرس الرئيسي</a>
+
 <div id="prog"></div>
 <header class="hdr">
   <div class="hdr-i">
@@ -138,6 +156,31 @@ footer .fb span{color:var(--tg);}
     <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
   </div>
 </header>
+
+<!-- عدّاد المشاهدات الظاهر -->
+<div class="view-counter" style="text-align:center;margin:18px auto;font-family:'Cairo',sans-serif;font-size:.9rem;color:#7a2e28;">
+  <span style="display:inline-flex;align-items:center;gap:7px;background:rgba(176,141,52,.12);border:1px solid rgba(176,141,52,.28);border-radius:30px;padding:6px 18px;">
+    <span style="font-size:1rem;">👁</span>
+    شوهد <span id="view-count" style="font-weight:700;color:#b08d34;">…</span> مرة
+  </span>
+</div>
+<script>
+(function(){
+  var path = location.pathname;
+  var url = "https://tahirnajim.goatcounter.com/counter/" + encodeURIComponent(path) + ".json";
+  fetch(url).then(function(r){ return r.json(); })
+    .then(function(d){
+      var el = document.getElementById('view-count');
+      if(el && d && d.count){ el.textContent = d.count; }
+      else if(el){ el.textContent = "١"; }
+    })
+    .catch(function(){
+      var el = document.getElementById('view-count');
+      if(el){ el.textContent = "—"; }
+    });
+})();
+</script>
+
 <div class="layout">
 <aside class="sb off" id="sb">
   <div class="toc-h">◈ فهرس المحتوى</div>
@@ -356,8 +399,6 @@ footer .fb span{color:var(--tg);}
 
 </main>
 </div>
-</main>
-</div>
 
 <footer>
   <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
@@ -393,6 +434,191 @@ links.forEach(l=>l.addEventListener('click',()=>{
   document.getElementById('sb').classList.remove('open');
 }));
 </script>
+
+<!-- ===== أدوات إضافية (الفئة الأولى) ===== -->
+<style>
+.fab-col{position:fixed;bottom:22px;left:22px;z-index:500;display:flex;flex-direction:column;gap:10px;align-items:flex-start;}
+.fab{width:46px;height:46px;border-radius:50%;border:1px solid rgba(46,144,104,.5);background:#0d3b2a;color:#d0f0e0;font-size:1.15rem;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .2s,opacity .3s;text-decoration:none;}
+.fab:hover{transform:translateY(-3px);}
+#topBtn{opacity:0;pointer-events:none;}
+#topBtn.show{opacity:1;pointer-events:auto;}
+.pdf-bar{text-align:center;margin:40px auto 10px;}
+.pdf-btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#155e42,#0d3b2a);color:#eafff4;border:1px solid rgba(46,144,104,.5);border-radius:40px;padding:12px 30px;font-family:'Scheherazade New',serif;font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .2s;}
+.pdf-btn:hover{transform:translateY(-3px);}
+.vb{position:relative;}
+.copy-verse{position:absolute;top:10px;left:10px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,168,56,.4);background:rgba(0,0,0,.25);color:#d8cba0;font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:3;}
+.copy-verse:hover{background:rgba(201,168,56,.25);color:#fff;}
+.copy-verse.done{background:#1a7a50;color:#fff;border-color:#1a7a50;}
+body.night{background:#0c1512 !important;color:#d6e4dc !important;}
+body.night .card,body.night .mc,body.night .ib{background:#132420 !important;border-color:#24443a !important;}
+body.night .card *,body.night .mc *,body.night .ib *{color:#cfe0d8 !important;}
+body.night .abody,body.night .abody p{color:#d6e4dc !important;}
+body.night .sec h2,body.night .sub h3,body.night .hero h1,body.night .ct,body.night .term,body.night .iw{color:#e8d9a8 !important;}
+body.night .tbl td{border-color:#24443a !important;}
+body.night .pq{background:rgba(255,255,255,.03) !important;}
+body.night .src{background:#1c1a12 !important;}
+body.night .src *{color:#d8c88a !important;}
+@media print{
+  .fab-col,#sb,.hdr,.home-link,.pdf-bar,.copy-verse,#prog,.tbtn{display:none !important;}
+  .main{padding:0 !important;}
+  body{background:#fff !important;color:#000 !important;}
+  .card,.vb,.cb{break-inside:avoid;}
+}
+</style>
+<div class="pdf-bar">
+  <button class="pdf-btn" onclick="window.print()">🖶 حفظ المقال PDF / طباعة</button>
+</div>
+<div class="fab-col">
+  <button class="fab" id="topBtn" title="الصعود للأعلى" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <button class="fab" id="nightBtn" title="الوضع الليلي" onclick="toggleNight()">🌙</button>
+</div>
+<script>
+var _topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){
+  if(document.documentElement.scrollTop>350){_topBtn.classList.add('show');}
+  else{_topBtn.classList.remove('show');}
+});
+function toggleNight(){
+  document.body.classList.toggle('night');
+  var b=document.getElementById('nightBtn');
+  b.textContent=document.body.classList.contains('night')?'☀️':'🌙';
+}
+document.querySelectorAll('.vb').forEach(function(box){
+  var vt=box.querySelector('.vt');
+  if(!vt) return;
+  var btn=document.createElement('button');
+  btn.className='copy-verse'; btn.title='نسخ'; btn.textContent='⧉';
+  btn.onclick=function(){
+    var txt=vt.innerText.trim()+'\\n\\nمن موسوعة السلجوقي التدبرية\\nhttps://fbbffv.github.io/al-seljuki-meditative-encyclopedia/';
+    navigator.clipboard.writeText(txt).then(function(){
+      btn.classList.add('done'); btn.textContent='✓';
+      setTimeout(function(){btn.classList.remove('done'); btn.textContent='⧉';},1500);
+    });
+  };
+  box.appendChild(btn);
+});
+</script>
+
+
+<style>
+.contact-fab{position:fixed;bottom:22px;right:22px;z-index:500;display:flex;flex-direction:column;gap:12px;}
+.c-btn{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:transform .2s;text-decoration:none;}
+.c-btn:hover{transform:scale(1.1);}
+.c-wa{background:#25D366;}
+.c-tg{background:#0088cc;}
+.c-btn svg{width:27px;height:27px;fill:#fff;}
+@media print{.contact-fab{display:none !important;}}
+</style>
+
+<!-- ===== تعابير القارئ (انطباع بلا أرقام) ===== -->
+<div class="reader-react" style="max-width:820px;margin:46px auto 0;padding:0 22px;">
+  <div style="background:linear-gradient(135deg,rgba(255,255,255,.6),rgba(236,224,200,.4));border:1.5px solid rgba(176,141,52,.35);border-radius:18px;padding:26px 22px;text-align:center;">
+    <h3 style="font-family:'Amiri',serif;font-size:1.5rem;color:#7a2e28;margin-bottom:6px;">بِمَ يَصِفُ قَلْبُكَ هَذَا المَقَالَ؟</h3>
+    <p style="font-family:'Cairo',sans-serif;font-size:.9rem;color:#6a5636;margin-bottom:20px;">اختَرْ ما يُعبِّرُ عن انطِباعِكَ — نُسعَدُ بمشارَكتِكَ</p>
+    <div class="react-btns" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+      <button class="rb" data-msg="نَفَعَكَ اللهُ بِمَا قَرَأْتَ 🌿" data-key="istafadt">✨ اسْتَفَدْتُ</button>
+      <button class="rb" data-msg="الحَمْدُ لِلَّهِ الَّذِي نَفَعَكَ 🌱" data-key="nafaani">🌱 نَفَعَنِي مَا قَرَأْتُ</button>
+      <button class="rb" data-msg="زَادَكَ اللهُ نُورًا وَعِلْمًا 💡" data-key="afadani">💡 أَفَادَنِي وَأَنَارَ لِي</button>
+      <button class="rb" data-msg="زَادَكَ اللهُ وَعْيًا وَبَصِيرَةً 🧠" data-key="wai">🧠 ازْدَادَ وَعْيِي</button>
+      <button class="rb" data-msg="ذَوْقٌ رَفِيعٌ، بَارَكَ اللهُ فِيكَ 🖋" data-key="uslub">🖋 أُسْلُوبٌ بَدِيعٌ</button>
+      <button class="rb" data-msg="نِعْمَ التَّقْدِيرُ لِلْبَيَانِ 📖" data-key="fasaha">📖 فَصَاحَةٌ وَبَيَانٌ</button>
+      <button class="rb" data-msg="أَحْسَنْتَ الِالْتِفَاتَ إِلَى العُمْقِ 🎯" data-key="umq">🎯 عُمْقٌ وَذَكَاءٌ</button>
+      <button class="rb" data-msg="حِسٌّ مُرْهَفٌ وَتَقْدِيرٌ رَاقٍ 🌟" data-key="tabir">🌟 تَعْبِيرٌ رَاقٍ</button>
+      <button class="rb" data-msg="وَجَزَاكَ خَيْرًا عَلَى دُعَائِكَ 🤲" data-key="jazah">🤲 جَزَى اللهُ الكَاتِبَ خَيْرًا</button>
+    </div>
+    <div class="react-thanks" style="display:none;margin-top:18px;font-family:'Amiri',serif;font-size:1.25rem;color:#3f5c48;"></div>
+  </div>
+</div>
+<style>
+.reader-react .rb{background:rgba(255,255,255,.7);border:1px solid rgba(176,141,52,.3);border-radius:30px;padding:9px 18px;font-family:'Cairo',sans-serif;font-size:.92rem;color:#1a1410;cursor:pointer;transition:all .2s;}
+.reader-react .rb:hover{background:#b08d34;color:#fff;transform:translateY(-2px);}
+.reader-react .rb.chosen{background:#3f5c48;color:#fff;border-color:#3f5c48;}
+</style>
+<script>
+(function(){
+  document.querySelectorAll('.reader-react .rb').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var wrap=btn.closest('.reader-react');
+      var thanks=wrap.querySelector('.react-thanks');
+      var already=btn.classList.contains('chosen');
+      btn.classList.toggle('chosen');
+      if(!already){
+        thanks.textContent=btn.getAttribute('data-msg');
+        thanks.style.display='block';
+        try{
+          var label=btn.getAttribute('data-key')||btn.textContent.trim();
+          if(window.goatcounter && window.goatcounter.count){
+            window.goatcounter.count({ path: 'reaction/'+label, title: 'تفاعل: '+label, event: true });
+          }
+        }catch(e){}
+      }
+    });
+  });
+})();
+</script>
+
+
+<!-- ===== اقرأ أيضاً (وسوم متقاطعة حسب القسم) ===== -->
+<div class="related-sec" style="max-width:900px;margin:50px auto 0;padding:0 22px;">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+    <span style="font-size:1.3rem;color:#b08d34;">❁</span>
+    <h2 style="font-family:'Amiri',serif;font-size:1.5rem;color:#3f5c48;">اقْرَأْ أَيْضًا</h2>
+    <span style="margin-right:auto;font-size:.8rem;color:#6a5636;background:rgba(176,141,52,.14);padding:3px 12px;border-radius:14px;font-family:'Cairo',sans-serif;">المقالات التهكمية والساخرة</span>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:14px;">
+    <a href="article47.html" style="flex:1;min-width:200px;background:rgba(255,255,255,.6);border:1px solid rgba(176,141,52,.28);border-radius:12px;padding:14px 16px;text-decoration:none;transition:transform .2s,box-shadow .2s;display:block;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 20px rgba(26,20,16,.12)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+      <div style="font-size:.72rem;color:#b08d34;margin-bottom:5px;font-family:'Cairo',sans-serif;">◈ التوبة ١٠١</div>
+      <div style="font-family:'Amiri',serif;font-size:1.08rem;color:#1a1410;line-height:1.5;">عذاب الستر المنكشف</div>
+      <div style="color:#7a2e28;font-size:.8rem;margin-top:8px;font-family:'Cairo',sans-serif;">اقرأ المقال ←</div>
+    </a>
+    <a href="article13-tasheea-alfahisha.html" style="flex:1;min-width:200px;background:rgba(255,255,255,.6);border:1px solid rgba(176,141,52,.28);border-radius:12px;padding:14px 16px;text-decoration:none;transition:transform .2s,box-shadow .2s;display:block;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 20px rgba(26,20,16,.12)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+      <div style="font-size:.72rem;color:#b08d34;margin-bottom:5px;font-family:'Cairo',sans-serif;">◈ النور ١٩</div>
+      <div style="font-family:'Amiri',serif;font-size:1.08rem;color:#1a1410;line-height:1.5;">حين تتحول الفضيحة إلى تجارة</div>
+      <div style="color:#7a2e28;font-size:.8rem;margin-top:8px;font-family:'Cairo',sans-serif;">اقرأ المقال ←</div>
+    </a>
+    <a href="article-hawa-sharia.html" style="flex:1;min-width:200px;background:rgba(255,255,255,.6);border:1px solid rgba(176,141,52,.28);border-radius:12px;padding:14px 16px;text-decoration:none;transition:transform .2s,box-shadow .2s;display:block;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 20px rgba(26,20,16,.12)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+      <div style="font-size:.72rem;color:#b08d34;margin-bottom:5px;font-family:'Cairo',sans-serif;">◈ المائدة ٤٤</div>
+      <div style="font-family:'Amiri',serif;font-size:1.08rem;color:#1a1410;line-height:1.5;">حين يتحول الهوى إلى شريعة</div>
+      <div style="color:#7a2e28;font-size:.8rem;margin-top:8px;font-family:'Cairo',sans-serif;">اقرأ المقال ←</div>
+    </a>
+  </div>
+</div>
+
+<!-- ===== صندوق التعليقات (Disqus) ===== -->
+<div class="comments-sec" style="max-width:820px;margin:50px auto 0;padding:0 22px;">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+    <span style="font-size:1.4rem;color:#b08d34;">✦</span>
+    <h2 style="font-family:'Amiri',serif;font-size:1.6rem;color:#7a2e28;">التَّعْلِيقَاتُ وَالْمُدَاخَلَاتُ</h2>
+  </div>
+  <p style="color:#6a5636;font-size:.95rem;margin-bottom:20px;font-family:'Cairo',sans-serif;">شارِكْنا رأيك ومُداخلتك حول هذا المقال — نرحّب بتعليقك الكريم.</p>
+  <div id="disqus_thread" style="background:rgba(255,255,255,.55);border:1px solid rgba(176,141,52,.28);border-radius:16px;padding:20px;"></div>
+</div>
+<script>
+var disqus_config = function () {
+  this.page.url = window.location.href;
+  this.page.identifier = window.location.pathname;
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://alseljuki.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>يُرجى تفعيل الجافاسكربت لعرض <a href="https://disqus.com/?ref_noscript">التعليقات المدعومة من Disqus.</a></noscript>
+
+<div class="contact-fab">
+  <a class="c-btn c-wa" href="https://wa.me/9647700610518" target="_blank" title="واتساب" aria-label="واتساب">
+    <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-.9-1.1-1.3-1.7-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1.1-.3 0-.4-.1-.1-.6-1.5-.9-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.2-.6.3-.6.6-.9 1.4-.9 2.2.1 1 .5 2 1.1 2.8 1.1 1.7 2.6 3 4.4 3.8.5.2.9.4 1.4.5.5.2 1 .2 1.6.1.7-.1 1.3-.6 1.7-1.2.2-.4.2-.8.1-1.2l-.4-.2m2.5-9.1C15.2.4 7.7.4 3 5.2c-3.9 3.9-4.6 9.9-1.9 14.6L0 24l4.3-1.1c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4m-2 15.1c-1.6 1-3.5 1.6-5.4 1.6-1.8 0-3.5-.5-5.1-1.4l-.4-.2-2.5.7.7-2.5-.2-.4c-3-5-1.5-11.3 3.4-14.4S16.5 2.9 19.5 7.8s1.5 11.4-3.5 14.5v-.9"/></svg>
+  </a>
+  <a class="c-btn c-tg" href="https://t.me/Mmmdgsaeccb" target="_blank" title="تليجرام" aria-label="تليجرام">
+    <svg viewBox="0 0 24 24"><path d="M23.9 4.5c-.3-.2-.7-.3-1.1-.1L1.6 12.2c-.5.2-.8.6-.8 1.1s.4.9.9 1l5.3 1.7 2 6.3c.1.2.2.4.4.5.2.2.5.3.8.3.3 0 .6-.1.9-.4l2.8-2.7 4.9 3.6c.3.2.6.3.9.3.5 0 1-.3 1.2-.9l4.2-18.4c.1-.5-.1-.9-.5-1.1M9.5 15.4l-.6 4.2-1.4-4.6 9.3-6.1-7.3 6.5"/></svg>
+  </a>
+</div>
+
+<!-- ===== عدّاد الزوّار (GoatCounter) ===== -->
+<script data-goatcounter="https://tahirnajim.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 
 </body>
 </html>

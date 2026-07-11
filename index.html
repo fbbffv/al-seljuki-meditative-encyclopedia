@@ -151,7 +151,7 @@ body{
 .gate-arrow{font-size:1.3rem;color:var(--gate-c);transition:transform .3s;}
 .gate.open .gate-arrow{transform:rotate(90deg);}
 .gate-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1);}
-.gate.open .gate-body{max-height:1400px;}
+.gate.open .gate-body{max-height:20000px;}
 .branches{padding:4px 26px 26px;}
 .branch{border-top:1px dashed var(--line);padding:18px 0 4px;}
 .branch:first-child{border-top:0;}
@@ -164,6 +164,8 @@ body{
 .branch-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
 .b-link{background:rgba(255,255,255,.6);border:1px solid var(--line);border-radius:20px;padding:6px 14px;font-size:.86rem;color:var(--ink);text-decoration:none;transition:background .2s;font-family:'Amiri',serif;}
 .b-link:hover{background:var(--gate-c);color:#fff;}
+.b-num{display:inline-block;font-weight:700;color:var(--gate-c);margin-left:3px;font-size:.82em;opacity:.75;}
+.b-link:hover .b-num{color:#fff;opacity:.95;}
 .branch-empty{color:#9a8865;font-size:.85rem;font-style:italic;padding:4px 26px;}
 
 /* ===== نموذج الاتصال ===== */
@@ -367,15 +369,15 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
       <span class="tag">جديد</span>
     </div>
     <div class="latest-grid">
-      <a class="lc" href="article54.html" style="--lc-a:#7a2e28;--lc-b:#a34840;">
+      <a class="lc" href="article61.html" style="--lc-a:#a83200;--lc-b:#d45300;">
         <div class="lc-rib">جديد ✦</div>
-        <div class="lc-top"><div class="lc-cat">بوابة نقد الواقع · المناظرات والردود</div><div class="lc-verse">﴿قَالُوا آمَنَّا وَاشْهَدْ بِأَنَّنَا مُسْلِمُونَ﴾</div></div>
-        <div class="lc-body"><h3>مِنْ أَوَائِلِ الْإِيمَانِ إِلَى كَمَالِ الْيَقِينِ</h3><div class="lc-cta">اقرأ المقال ←</div></div>
+        <div class="lc-top"><div class="lc-cat">بوابة الوحيين · التدبر القرآني</div><div class="lc-verse">﴿فَاتَّقُوا النَّارَ الَّتِي وَقُودُهَا النَّاسُ وَالْحِجَارَةُ﴾</div></div>
+        <div class="lc-body"><h3>حِينَ يَتَكَلَّمُ اللَّهِيبُ... وَتَصْمُتُ كُلُّ الْأَعْذَارِ</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article53.html" style="--lc-a:#1f4e6b;--lc-b:#2f6d92;">
+      <a class="lc" href="article56.html" style="--lc-a:#5b4a7a;--lc-b:#8d78ad;">
         <div class="lc-rib">جديد ✦</div>
-        <div class="lc-top"><div class="lc-cat">بوابة الوحيين · التدبر القرآني</div><div class="lc-verse">﴿وَالسَّمَاءِ ذَاتِ الْحُبُكِ ۝ إِنَّكُمْ لَفِي قَوْلٍ مُّخْتَلِفٍ﴾</div></div>
-        <div class="lc-body"><h3>بَيْنَ نَسِيجِ السَّمَاءِ وَاضْطِرَابِ القُلُوبِ</h3><div class="lc-cta">اقرأ المقال ←</div></div>
+        <div class="lc-top"><div class="lc-cat">بوابة نقد الواقع · المقالات التهكمية</div><div class="lc-verse">مقالة نقدية ساخرة عن نفاق الدين</div></div>
+        <div class="lc-body"><h3>كَازَانُوفَا... وَلَكِنْ بِعِمَامَةٍ!</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
     </div>
   </div>
@@ -400,74 +402,80 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h">فرعُ التفسير والتدبر القرآني <span class="branch-count">٣٨</span></div>
+          <div class="branch-h">فرعُ التفسير والتدبر القرآني <span class="branch-count">٤٤</span></div>
           <ul class="branch-sub">
             <li>التحليل اللغوي والبياني والنظم</li>
             <li>الملاحظات البلاغية واللطائف الأدبية</li>
           </ul>
           <div class="branch-links" id="links-quran">
-            <a class="b-link" href="article53.html">بين نسيج السماء واضطراب القلوب</a>
-            <a class="b-link" href="article52.html">بين العرض والنجاة</a>
-            <a class="b-link" href="article51.html">حين يسعى النور ويتخلف الظلام</a>
-            <a class="b-link" href="article50.html">حين يعُدّ الله الأنفاس</a>
-            <a class="b-link" href="article49.html">رؤوس انحنت... بعد أن أُغلق باب الرجعة</a>
-            <a class="b-link" href="article48.html">طريقان إلى السماء</a>
-            <a class="b-link" href="article47.html">عذاب الستر المنكشف</a>
-            <a class="b-link" href="article46.html">نفحات التنزيل</a>
-            <a class="b-link" href="article43.html">بين محكمة الأرض ومحكمة السماء</a>
-            <a class="b-link" href="article41.html">صوت يسبق السقوط</a>
-            <a class="b-link" href="article38.html">بين هباء الرماد وخلود الأثر</a>
-            <a class="b-link" href="article37.html">حين يكون الله رابع النجوى</a>
-            <a class="b-link" href="article35-mithaq-bala.html">ميثاق «بلى»</a>
-            <a class="b-link" href="article34-tuhsi-alniam.html">حين تُحصي النعم يزهر القلب</a>
-            <a class="b-link" href="article33-tuqallabu-wujuhuhum.html">حين تُقلَّب وجوههم في النار</a>
-            <a class="b-link" href="article32-yaiduka-alshaytan.html">حين يعدك الشيطان بالفقر</a>
-            <a class="b-link" href="article31-ibtila-tamhis.html">حين يبتلي الله وحين يمحص</a>
-            <a class="b-link" href="article28-kayfa-jamaanahum.html">كيف إذا جمعناهم؟!</a>
-            <a class="b-link" href="article27-tashri-lighayrillah.html">حين يصبح التشريع لغير الله</a>
-            <a class="b-link" href="article26-sabbih-alaala.html">سبح اسم ربك الأعلى</a>
-            <a class="b-link" href="article24-alqab-mamlaka.html">ألقاب مملكة ليست في مواضعها</a>
-            <a class="b-link" href="article23-sayaalam.html">وسيعلم حين ينكشف الغطاء</a>
-            <a class="b-link" href="article22-qa-aljubb.html">من قاع الجب تبدأ الحكاية</a>
-            <a class="b-link" href="article21-suqut-alashkhas.html">حين يسقط الأشخاص فلا تسقط المبادئ</a>
-            <a class="b-link" href="article19-dhun-nun.html">من أعماق الظلمات يولد فجر النجاة</a>
-            <a class="b-link" href="article18-insalakha.html">حين يُسلخ القلب من النور</a>
-            <a class="b-link" href="article14-allama-alquran.html">قبل أن يُخلق الإنسان كان القرآن</a>
-            <a class="b-link" href="article12-zilal-alrahma.html">ظلال الرحمة</a>
-            <a class="b-link" href="article11-sarab-aldunya.html">بين سراب الدنيا وعلو الآخرة</a>
-            <a class="b-link" href="article9-hina-tustanzaf.html">حين تُستنزف المليارات</a>
-            <a class="b-link" href="article8-ma-asbarahum.html">فما أصبرهم على النار</a>
-            <a class="b-link" href="article7-alkhunnas.html">الخنس الجوار الكنس</a>
-            <a class="b-link" href="article6-surat-alfalaq.html">سورة الفلق</a>
-            <a class="b-link" href="article5-yawm-albatsha.html">يوم البطشة الكبرى</a>
-            <a class="b-link" href="article4-yathoob-alwajh.html">حين يذوب الوجه في اللهب</a>
-            <a class="b-link" href="article3-zagm-iman.html">حين يصبح الزعم إيماناً</a>
-            <a class="b-link" href="article-alsuljuqi.html">على أبواب العروش المهدمة</a>
-            <a class="b-link" href="article-hawa-sharia.html">حين يتحول الهوى إلى شريعة</a>
+            <a class="b-link" href="article61.html"><span class="b-num">١.</span> حين يتكلم اللهيب</a>
+            <a class="b-link" href="article60.html"><span class="b-num">٢.</span> حين يشتدّ الظلام... لماذا تنتظر البشرية المخلّص؟</a>
+            <a class="b-link" href="article59.html"><span class="b-num">٣.</span> حين تُغلق نوافذ الروح</a>
+            <a class="b-link" href="article58.html"><span class="b-num">٤.</span> من صرخة المهد إلى لقاء الرب</a>
+            <a class="b-link" href="article57.html"><span class="b-num">٥.</span> تجارة الروح</a>
+            <a class="b-link" href="article55.html"><span class="b-num">٦.</span> خلف السور</a>
+            <a class="b-link" href="article53.html"><span class="b-num">٧.</span> بين نسيج السماء واضطراب القلوب</a>
+            <a class="b-link" href="article52.html"><span class="b-num">٨.</span> بين العرض والنجاة</a>
+            <a class="b-link" href="article51.html"><span class="b-num">٩.</span> حين يسعى النور ويتخلف الظلام</a>
+            <a class="b-link" href="article50.html"><span class="b-num">١٠.</span> حين يعُدّ الله الأنفاس</a>
+            <a class="b-link" href="article49.html"><span class="b-num">١١.</span> رؤوس انحنت... بعد أن أُغلق باب الرجعة</a>
+            <a class="b-link" href="article48.html"><span class="b-num">١٢.</span> طريقان إلى السماء</a>
+            <a class="b-link" href="article47.html"><span class="b-num">١٣.</span> عذاب الستر المنكشف</a>
+            <a class="b-link" href="article46.html"><span class="b-num">١٤.</span> نفحات التنزيل</a>
+            <a class="b-link" href="article43.html"><span class="b-num">١٥.</span> بين محكمة الأرض ومحكمة السماء</a>
+            <a class="b-link" href="article41.html"><span class="b-num">١٦.</span> صوت يسبق السقوط</a>
+            <a class="b-link" href="article38.html"><span class="b-num">١٧.</span> بين هباء الرماد وخلود الأثر</a>
+            <a class="b-link" href="article37.html"><span class="b-num">١٨.</span> حين يكون الله رابع النجوى</a>
+            <a class="b-link" href="article35-mithaq-bala.html"><span class="b-num">١٩.</span> ميثاق «بلى»</a>
+            <a class="b-link" href="article34-tuhsi-alniam.html"><span class="b-num">٢٠.</span> حين تُحصي النعم يزهر القلب</a>
+            <a class="b-link" href="article33-tuqallabu-wujuhuhum.html"><span class="b-num">٢١.</span> حين تُقلَّب وجوههم في النار</a>
+            <a class="b-link" href="article32-yaiduka-alshaytan.html"><span class="b-num">٢٢.</span> حين يعدك الشيطان بالفقر</a>
+            <a class="b-link" href="article31-ibtila-tamhis.html"><span class="b-num">٢٣.</span> حين يبتلي الله وحين يمحص</a>
+            <a class="b-link" href="article28-kayfa-jamaanahum.html"><span class="b-num">٢٤.</span> كيف إذا جمعناهم؟!</a>
+            <a class="b-link" href="article27-tashri-lighayrillah.html"><span class="b-num">٢٥.</span> حين يصبح التشريع لغير الله</a>
+            <a class="b-link" href="article26-sabbih-alaala.html"><span class="b-num">٢٦.</span> سبح اسم ربك الأعلى</a>
+            <a class="b-link" href="article24-alqab-mamlaka.html"><span class="b-num">٢٧.</span> ألقاب مملكة ليست في مواضعها</a>
+            <a class="b-link" href="article23-sayaalam.html"><span class="b-num">٢٨.</span> وسيعلم حين ينكشف الغطاء</a>
+            <a class="b-link" href="article22-qa-aljubb.html"><span class="b-num">٢٩.</span> من قاع الجب تبدأ الحكاية</a>
+            <a class="b-link" href="article21-suqut-alashkhas.html"><span class="b-num">٣٠.</span> حين يسقط الأشخاص فلا تسقط المبادئ</a>
+            <a class="b-link" href="article19-dhun-nun.html"><span class="b-num">٣١.</span> من أعماق الظلمات يولد فجر النجاة</a>
+            <a class="b-link" href="article18-insalakha.html"><span class="b-num">٣٢.</span> حين يُسلخ القلب من النور</a>
+            <a class="b-link" href="article14-allama-alquran.html"><span class="b-num">٣٣.</span> قبل أن يُخلق الإنسان كان القرآن</a>
+            <a class="b-link" href="article12-zilal-alrahma.html"><span class="b-num">٣٤.</span> ظلال الرحمة</a>
+            <a class="b-link" href="article11-sarab-aldunya.html"><span class="b-num">٣٥.</span> بين سراب الدنيا وعلو الآخرة</a>
+            <a class="b-link" href="article9-hina-tustanzaf.html"><span class="b-num">٣٦.</span> حين تُستنزف المليارات</a>
+            <a class="b-link" href="article8-ma-asbarahum.html"><span class="b-num">٣٧.</span> فما أصبرهم على النار</a>
+            <a class="b-link" href="article7-alkhunnas.html"><span class="b-num">٣٨.</span> الخنس الجوار الكنس</a>
+            <a class="b-link" href="article6-surat-alfalaq.html"><span class="b-num">٣٩.</span> سورة الفلق</a>
+            <a class="b-link" href="article5-yawm-albatsha.html"><span class="b-num">٤٠.</span> يوم البطشة الكبرى</a>
+            <a class="b-link" href="article4-yathoob-alwajh.html"><span class="b-num">٤١.</span> حين يذوب الوجه في اللهب</a>
+            <a class="b-link" href="article3-zagm-iman.html"><span class="b-num">٤٢.</span> حين يصبح الزعم إيماناً</a>
+            <a class="b-link" href="article-alsuljuqi.html"><span class="b-num">٤٣.</span> على أبواب العروش المهدمة</a>
+            <a class="b-link" href="article-hawa-sharia.html"><span class="b-num">٤٤.</span> حين يتحول الهوى إلى شريعة</a>
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ السنة النبوية وشروح الحديث</div>
+          <div class="branch-h">فرعُ السنة النبوية وشروح الحديث <span class="branch-count">٣</span></div>
           <ul class="branch-sub">
             <li>شروح المتون وأحاديث الأحكام</li>
             <li>أحاديث الفتن والملاحم وأشراط الساعة</li>
           </ul>
           <div class="branch-links" id="links-hadith">
-            <a class="b-link" href="article45.html">أربع مهالك خفية</a>
-            <a class="b-link" href="article39.html">حين يتكلم الغيب (النفس الطيبة)</a>
-            <a class="b-link" href="article29-hilf-alfudul.html">حلف الفضول</a>
+            <a class="b-link" href="article45.html"><span class="b-num">١.</span> أربع مهالك خفية</a>
+            <a class="b-link" href="article39.html"><span class="b-num">٢.</span> حين يتكلم الغيب (النفس الطيبة)</a>
+            <a class="b-link" href="article29-hilf-alfudul.html"><span class="b-num">٣.</span> حلف الفضول</a>
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ القصص القرآني والنبوي</div>
+          <div class="branch-h">فرعُ القصص القرآني والنبوي <span class="branch-count">٦</span></div>
           <ul class="branch-sub"><li>العبر والدروس المستفادة بأسلوب تفكري</li></ul>
           <div class="branch-links" id="links-qisas">
-            <a class="b-link" href="article42.html">من غيابة الجب إلى عرش البر</a>
-            <a class="b-link" href="article40.html">حين خاف يعقوب على الرسالة</a>
-            <a class="b-link" href="article30-firawn-qarun.html">بين فرعون وقارون</a>
-            <a class="b-link" href="article17-ali-ibn-abi-talib.html">أمير المؤمنين علي المبتلى المظلوم</a>
-            <a class="b-link" href="article16-yusuf-raf-aldhulm.html">يوسف بين رفع الظلم والتحاكم</a>
-            <a class="b-link" href="article15-bara-aisha.html">حين تمتد الألسنة إلى الطهر</a>
+            <a class="b-link" href="article42.html"><span class="b-num">١.</span> من غيابة الجب إلى عرش البر</a>
+            <a class="b-link" href="article40.html"><span class="b-num">٢.</span> حين خاف يعقوب على الرسالة</a>
+            <a class="b-link" href="article30-firawn-qarun.html"><span class="b-num">٣.</span> بين فرعون وقارون</a>
+            <a class="b-link" href="article17-ali-ibn-abi-talib.html"><span class="b-num">٤.</span> أمير المؤمنين علي المبتلى المظلوم</a>
+            <a class="b-link" href="article16-yusuf-raf-aldhulm.html"><span class="b-num">٥.</span> يوسف بين رفع الظلم والتحاكم</a>
+            <a class="b-link" href="article15-bara-aisha.html"><span class="b-num">٦.</span> حين تمتد الألسنة إلى الطهر</a>
           </div>
         </div>
       </div>
@@ -488,14 +496,14 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h">فرعُ الأحكام الفقهية والفتاوى</div>
+          <div class="branch-h">فرعُ الأحكام الفقهية والفتاوى <span class="branch-count">٢</span></div>
           <ul class="branch-sub">
             <li>فقه العبادات وفقه المعاملات</li>
             <li>فقه النوازل (المسائل المعاصرة المستجدة)</li>
           </ul>
           <div class="branch-links" id="links-fiqh">
-            <a class="b-link" href="article16-yusuf-raf-aldhulm.html">يوسف بين رفع الظلم والتحاكم</a>
-            <a class="b-link" href="article13-tasheea-alfahisha.html">حين تتحول الفضيحة إلى تجارة</a>
+            <a class="b-link" href="article16-yusuf-raf-aldhulm.html"><span class="b-num">١.</span> يوسف بين رفع الظلم والتحاكم</a>
+            <a class="b-link" href="article13-tasheea-alfahisha.html"><span class="b-num">٢.</span> حين تتحول الفضيحة إلى تجارة</a>
           </div>
         </div>
         <div class="branch">
@@ -524,37 +532,39 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h">فرعُ السياسة الشرعية والاقتصاد</div>
+          <div class="branch-h">فرعُ السياسة الشرعية والاقتصاد <span class="branch-count">٦</span></div>
           <ul class="branch-sub">
             <li>قراءات في المنظومات الاقتصادية والسياسية المعاصرة</li>
             <li>التنزيل على الواقع (ربط النصوص بحدث الساعة)</li>
           </ul>
           <div class="branch-links" id="links-siyasa">
-            <a class="b-link" href="article36.html">الأكراد في سجلّ العزّة</a>
-            <a class="b-link" href="article30-firawn-qarun.html">بين فرعون وقارون</a>
-            <a class="b-link" href="article29-hilf-alfudul.html">حلف الفضول</a>
-            <a class="b-link" href="article24-alqab-mamlaka.html">ألقاب مملكة ليست في مواضعها</a>
-            <a class="b-link" href="article17-ali-ibn-abi-talib.html">أمير المؤمنين علي المبتلى المظلوم</a>
-            <a class="b-link" href="article9-hina-tustanzaf.html">حين تُستنزف المليارات</a>
+            <a class="b-link" href="article36.html"><span class="b-num">١.</span> الأكراد في سجلّ العزّة</a>
+            <a class="b-link" href="article30-firawn-qarun.html"><span class="b-num">٢.</span> بين فرعون وقارون</a>
+            <a class="b-link" href="article29-hilf-alfudul.html"><span class="b-num">٣.</span> حلف الفضول</a>
+            <a class="b-link" href="article24-alqab-mamlaka.html"><span class="b-num">٤.</span> ألقاب مملكة ليست في مواضعها</a>
+            <a class="b-link" href="article17-ali-ibn-abi-talib.html"><span class="b-num">٥.</span> أمير المؤمنين علي المبتلى المظلوم</a>
+            <a class="b-link" href="article9-hina-tustanzaf.html"><span class="b-num">٦.</span> حين تُستنزف المليارات</a>
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ المقالات التهكمية والساخرة</div>
+          <div class="branch-h">فرعُ المقالات التهكمية والساخرة <span class="branch-count">١</span></div>
           <ul class="branch-sub">
             <li>النقد الأسلوبي التهكمي للطبقات السياسية</li>
             <li>تعرية أطروحات «علماء البلاط» ومروّجي الخطاب المدجَّن</li>
           </ul>
-          <div class="branch-links" id="links-tahakum"><span class="branch-empty">قريباً بإذن الله</span></div>
+          <div class="branch-links" id="links-tahakum">
+            <a class="b-link" href="article56.html"><span class="b-num">١.</span> كازانوفا... ولكن بعمامة!</a>
+          </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ المناظرات والردود</div>
+          <div class="branch-h">فرعُ المناظرات والردود <span class="branch-count">٢</span></div>
           <ul class="branch-sub">
             <li>الرد على الشبهات والملحدين والعلمانيين</li>
             <li>أرشيف المناظرات الفكرية (المكتوبة والمرئية)</li>
           </ul>
           <div class="branch-links" id="links-radd">
-            <a class="b-link" href="article54.html">من أوائل الإيمان إلى كمال اليقين</a>
-            <a class="b-link" href="article44.html">الجهل عذر أم تقصير؟</a>
+            <a class="b-link" href="article54.html"><span class="b-num">١.</span> من أوائل الإيمان إلى كمال اليقين</a>
+            <a class="b-link" href="article44.html"><span class="b-num">٢.</span> الجهل عذر أم تقصير؟</a>
           </div>
         </div>
       </div>
@@ -575,12 +585,12 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h">فرعُ الرقائق والسلوك</div>
+          <div class="branch-h">فرعُ الرقائق والسلوك <span class="branch-count">٣</span></div>
           <ul class="branch-sub"><li>أعمال القلوب، والتزكية، ومداواة النفوس</li></ul>
           <div class="branch-links" id="links-raqaiq">
-            <a class="b-link" href="article23-sayaalam.html">وسيعلم حين ينكشف الغطاء</a>
-            <a class="b-link" href="article20-sakrat-almawt.html">حين تنطفئ الأصوات ولا يبقى إلا العمل</a>
-            <a class="b-link" href="article10-saraqathu-alrahma.html">جاء ليسرق الدنيا فسرقته الرحمة</a>
+            <a class="b-link" href="article23-sayaalam.html"><span class="b-num">١.</span> وسيعلم حين ينكشف الغطاء</a>
+            <a class="b-link" href="article20-sakrat-almawt.html"><span class="b-num">٢.</span> حين تنطفئ الأصوات ولا يبقى إلا العمل</a>
+            <a class="b-link" href="article10-saraqathu-alrahma.html"><span class="b-num">٣.</span> جاء ليسرق الدنيا فسرقته الرحمة</a>
           </div>
         </div>
         <div class="branch">
