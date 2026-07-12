@@ -901,6 +901,7 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
 (function(){
   var MANIFEST_URL = 'articles-manifest.json';
   var SEEN_KEY = 'suljuki_downloaded_articles_v1';
+  var CACHE_NAME = 'suljuki-v2';
   var dlCard = document.getElementById('dlCard');
   var dlTitle = document.getElementById('dlTitle');
   var dlSub = document.getElementById('dlSub');
@@ -916,26 +917,40 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
   function showDlCard(){ dlCard.classList.add('show'); }
   window.dismissDlCard = function(){ dlCard.classList.remove('show'); };
 
+  // يحفظ الملفات مباشرة في نظام التخزين (Cache Storage) دون انتظار عامل الخدمة،
+  // لضمان توفّرها فوراً بلا إنترنت بغض النظر عن توقيت تفعيل عامل الخدمة
   async function downloadList(urls, silent){
-    if(!urls.length) return;
-    if(!silent){ dlTitle.textContent = 'جاري تحميل الموسوعة...'; showDlCard(); }
+    if(!urls.length){
+      if(!silent){
+        dlTitle.textContent = 'الموسوعة محدَّثة بالفعل ✅';
+        dlSub.textContent = 'كل المقالات محمَّلة مسبقاً على جهازك';
+        showDlCard();
+        setTimeout(function(){ dlCard.classList.remove('show'); }, 3000);
+      }
+      return;
+    }
+    if(!silent){ dlTitle.textContent = 'جاري تحميل المقالات الجديدة...'; showDlCard(); }
+    var cache = await caches.open(CACHE_NAME);
     var seen = getSeen();
-    var done = 0;
+    var okCount = 0;
     for(var i=0; i<urls.length; i++){
       var u = urls[i];
       if(!silent){
-        dlSub.textContent = (done+1) + ' من ' + urls.length + ' مقالاً — ' + u;
+        dlSub.textContent = (i+1) + ' من ' + urls.length + ' — ' + u;
       }
       try{
-        await fetch(u, {cache:'no-store'});
-        if(seen.indexOf(u) === -1) seen.push(u);
+        var res = await fetch(u, {cache:'no-store'});
+        if(res && res.ok){
+          await cache.put(u, res.clone());
+          if(seen.indexOf(u) === -1) seen.push(u);
+          okCount++;
+        }
       }catch(e){}
-      done++;
     }
     saveSeen(seen);
     if(!silent){
       dlTitle.textContent = 'اكتمل التحميل ✅';
-      dlSub.textContent = 'أصبحت كل المقالات متاحة بلا إنترنت';
+      dlSub.textContent = okCount + ' مقالاً أصبح متاحاً بلا إنترنت';
       setTimeout(function(){ dlCard.classList.remove('show'); }, 3500);
     }
   }
@@ -947,7 +962,9 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
     try{
       var res = await fetch(MANIFEST_URL, {cache:'no-store'});
       var data = await res.json();
-      await downloadList(data.articles || [], false);
+      var seen = getSeen();
+      var toDownload = (data.articles || []).filter(function(a){ return seen.indexOf(a) === -1; });
+      await downloadList(toDownload, false);
     }catch(e){
       dlTitle.textContent = 'تعذّر التحميل';
       dlSub.textContent = 'تحقّق من اتصال الإنترنت وحاول مجدداً';
