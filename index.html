@@ -336,6 +336,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="brand">مَوْسُوعَةُ <b>السَّلْجُوقِي</b></div>
     <div class="modes">
       <button class="mode-btn install-hdr-btn" id="installHdrBtn" onclick="doInstall()" title="ثبّت الموسوعة على جهازك" aria-label="تثبيت التطبيق">📲</button>
+      <button class="mode-btn" id="downloadAllBtn" onclick="downloadAllArticles()" title="تحميل كل المقالات للقراءة بلا إنترنت" aria-label="تحميل الموسوعة كاملة">⬇</button>
       <button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
       <button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="دافئ">◐</button>
       <button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
@@ -703,6 +704,16 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   <button class="install-btn" id="installBtn" onclick="doInstall()">تثبيت ✦</button>
 </div>
 
+<!-- بطاقة تحميل كل المقالات -->
+<div class="install-card" id="dlCard">
+  <button class="install-close" onclick="dismissDlCard()" aria-label="إغلاق">✕</button>
+  <div class="install-icon" style="display:flex;align-items:center;justify-content:center;font-size:1.4rem;">⬇</div>
+  <div class="install-txt">
+    <div class="install-title" id="dlTitle">جاري تحميل الموسوعة...</div>
+    <div class="install-sub" id="dlSub">٠ من ٠ مقالاً</div>
+  </div>
+</div>
+
 <script>
 // بيانات المقالات القرآنية الحالية (٣٣) — تُبنى منها روابط الفرع القرآني
 var QURAN=[
@@ -881,6 +892,81 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
     window.addEventListener('load', function(){
       navigator.serviceWorker.register('service-worker.js').catch(function(){});
     });
+  }
+})();
+</script>
+
+<!-- ═══ تحميل كل المقالات للقراءة بلا إنترنت + تحديث تلقائي للجديد ═══ -->
+<script>
+(function(){
+  var MANIFEST_URL = 'articles-manifest.json';
+  var SEEN_KEY = 'suljuki_downloaded_articles_v1';
+  var dlCard = document.getElementById('dlCard');
+  var dlTitle = document.getElementById('dlTitle');
+  var dlSub = document.getElementById('dlSub');
+  var dlBtn = document.getElementById('downloadAllBtn');
+  var downloading = false;
+
+  function getSeen(){
+    try{ return JSON.parse(localStorage.getItem(SEEN_KEY) || '[]'); }catch(e){ return []; }
+  }
+  function saveSeen(list){
+    try{ localStorage.setItem(SEEN_KEY, JSON.stringify(list)); }catch(e){}
+  }
+  function showDlCard(){ dlCard.classList.add('show'); }
+  window.dismissDlCard = function(){ dlCard.classList.remove('show'); };
+
+  async function downloadList(urls, silent){
+    if(!urls.length) return;
+    if(!silent){ dlTitle.textContent = 'جاري تحميل الموسوعة...'; showDlCard(); }
+    var seen = getSeen();
+    var done = 0;
+    for(var i=0; i<urls.length; i++){
+      var u = urls[i];
+      if(!silent){
+        dlSub.textContent = (done+1) + ' من ' + urls.length + ' مقالاً — ' + u;
+      }
+      try{
+        await fetch(u, {cache:'no-store'});
+        if(seen.indexOf(u) === -1) seen.push(u);
+      }catch(e){}
+      done++;
+    }
+    saveSeen(seen);
+    if(!silent){
+      dlTitle.textContent = 'اكتمل التحميل ✅';
+      dlSub.textContent = 'أصبحت كل المقالات متاحة بلا إنترنت';
+      setTimeout(function(){ dlCard.classList.remove('show'); }, 3500);
+    }
+  }
+
+  window.downloadAllArticles = async function(){
+    if(downloading) return;
+    downloading = true;
+    dlBtn.style.opacity = '.5';
+    try{
+      var res = await fetch(MANIFEST_URL, {cache:'no-store'});
+      var data = await res.json();
+      await downloadList(data.articles || [], false);
+    }catch(e){
+      dlTitle.textContent = 'تعذّر التحميل';
+      dlSub.textContent = 'تحقّق من اتصال الإنترنت وحاول مجدداً';
+      showDlCard();
+      setTimeout(function(){ dlCard.classList.remove('show'); }, 4000);
+    }
+    downloading = false;
+    dlBtn.style.opacity = '1';
+  };
+
+  // تحديث تلقائي صامت: عند فتح الموسوعة وبوجود إنترنت، يُنزَّل فقط ما هو جديد لم يُحمَّل من قبل
+  if(navigator.onLine){
+    fetch(MANIFEST_URL, {cache:'no-store'}).then(function(r){ return r.json(); }).then(function(data){
+      var seen = getSeen();
+      var newOnes = (data.articles || []).filter(function(a){ return seen.indexOf(a) === -1; });
+      if(newOnes.length && newOnes.length <= 15){
+        downloadList(newOnes, true);
+      }
+    }).catch(function(){});
   }
 })();
 </script>
