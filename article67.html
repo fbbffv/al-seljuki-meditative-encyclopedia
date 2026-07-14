@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدُّنْيَا... مَسْرَحٌ يَنْطَفِئُ ضَوْؤُهُ، وَتَبْدَأُ الْحَقِيقَةُ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c1610;--bg:#f7f2ec;--bg2:#ece0d0;
+  --bronze:#5a4030;--bm:#8a5a3a;--blt:#c0925c;
+  --bd:#100c08;--bt:#f0dcc0;--bg-g:#d4a468;
+  --teal:#3a2c1c;--gold:#8a6428;--gold-m:#b0864a;
+  --div:#d0b088;--mist:#3a2c1e;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(138,90,58,.08) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(192,146,92,.06) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--bm),var(--teal));z-index:400;transform-origin:top;}
+.hdr{background:var(--bd);border-bottom:2px solid var(--bm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--blt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--bg-g);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--bronze);color:var(--bg-g);border:1px solid rgba(192,146,92,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--bm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#0c0906;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(192,146,92,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(192,146,92,.2);}
+.toc-s{color:rgba(192,146,92,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#b08858;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--bt);background:rgba(192,146,92,.1);border-right-color:var(--blt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--bm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--blt);}
+.hcat{display:inline-block;background:var(--bronze);color:var(--bt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.2rem;font-weight:700;color:var(--bd);line-height:1.5;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--bm);border-radius:50%;}
+.vb{background:var(--bd);border:1px solid rgba(192,146,92,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(192,146,92,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.62rem;color:var(--bt);line-height:2.15;position:relative;z-index:1;}
+.vt.sm{font-size:1.32rem;}
+.vr{color:var(--bg-g);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#1c1610;}
+.abody p{margin-bottom:1.55em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--bm);float:right;line-height:.82;margin-left:8px;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.16rem;color:var(--bronze);font-weight:700;text-align:center;margin:10px 0;}
+.zeena-list{list-style:none;padding:0;margin:10px 0 20px;}
+.zeena-list li{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bronze);padding:8px 0;border-bottom:1px dashed var(--div);}
+.zeena-list li:last-child{border-bottom:none;}
+.compare-list{list-style:none;padding:0;margin:14px 0;}
+.compare-list li{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bd);padding:9px 0;border-bottom:1px dashed var(--div);text-align:center;}
+.compare-list li:last-child{border-bottom:none;}
+.fawqahum-list{list-style:none;padding:0;margin:10px 0;}
+.fawqahum-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--teal);text-align:center;padding:8px 0;border-bottom:1px dashed var(--div);font-weight:600;}
+.fawqahum-list li:last-child{border-bottom:none;}
+.src{background:rgba(138,90,58,.06);border:1px solid rgba(138,90,58,.22);border-radius:7px;padding:12px 16px;margin:10px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;color:var(--bronze);line-height:1.85;}
+.src strong{color:var(--bm);}
+.grade{display:inline-block;font-size:.66rem;padding:2px 8px;border-radius:3px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.sahih{background:#1e5a3a;}
+.grade.hasan{background:#7a5a10;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--bd);color:var(--blt);border:2px solid var(--bm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.76rem;color:var(--bd);border-bottom:2px solid var(--blt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;color:var(--bronze);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.b{border-right:5px solid var(--bm);}
+.card.b2{border-right:5px solid var(--bronze);}
+.card.b3{border-right:5px solid var(--teal);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.14rem;color:#100c08;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#1c1610;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--bm);color:var(--bt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--bd);color:var(--bg-g);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--bm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(138,90,58,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#100c08;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.2rem;color:#100c08;min-width:150px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#100c08;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--blt);border-bottom:2px solid var(--blt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--blt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#0c0906,#181008);border:1px solid rgba(192,146,92,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1.16rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(192,146,92,.25);}
+.ci{color:#b08858;padding:9px 0;border-bottom:1px dashed rgba(192,146,92,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--bg-g);font-size:.78rem;opacity:.75;}
+.vrd{background:linear-gradient(135deg,#0c0906,#181008);border:1px solid rgba(192,146,92,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#b08858;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--bt);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--bm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#100c08;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#1c1610;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--bm);font-size:.85em;top:11px;}
+.asec{background:var(--bd);border:1px solid rgba(192,146,92,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--bm),var(--bronze));border:3px solid var(--blt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.36rem;margin-bottom:5px;}
+.ai .at{color:var(--bg-g);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#b08858;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:var(--bg-g);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(192,146,92,.1);border:1px solid rgba(192,146,92,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--bg-g);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--bt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(192,146,92,.16);color:var(--blt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(192,146,92,.28);}
+.orn{text-align:center;color:var(--blt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--bd);color:#6a4c30;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(192,146,92,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--blt);}
+footer .fb span{color:var(--bg-g);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.75rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.15rem;}.hero h1{font-size:1.4rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">الدُّنْيَا... مَسْرَحٌ يَنْطَفِئُ ضَوْؤُهُ، وَتَبْدَأُ الْحَقِيقَةُ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تأمل قرآني · سورة العنكبوت ٦٤ · مقالة إيمانية</div>
+  <h1>الدُّنْيَا... مَسْرَحٌ يَنْطَفِئُ ضَوْؤُهُ،<br>وَتَبْدَأُ الْحَقِيقَةُ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>العنكبوت: ٦٤</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿وَمَا هَٰذِهِ الْحَيَاةُ الدُّنْيَا إِلَّا لَهْوٌ وَلَعِبٌ ۚ وَإِنَّ الدَّارَ الْآخِرَةَ لَهِيَ الْحَيَوَانُ ۚ لَوْ كَانُوا يَعْلَمُونَ﴾</div>
+    <div class="vr">سورة العنكبوت (٢٩)، الآية ٦٤، مكية</div>
+  </div>
+
+  <div class="abody">
+    <p>صَدَقَ اللهُ الْعَظِيمُ.</p>
+
+    <p>مَا أَعْمَقَ هَذِهِ الْآيَةَ، وَمَا أَشَدَّ وَقْعَهَا عَلَى قَلْبٍ أَيْقَظَتْهُ الْحَقِيقَةُ قَبْلَ أَنْ يُوقِظَهُ الْمَوْتُ. إِنَّهَا لَا تُحَقِّرُ الْعَمَلَ فِي الدُّنْيَا، وَإِنَّمَا تُحَقِّرُ التَّعَلُّقَ بِهَا حَتَّى تُنْسِيَ الْإِنْسَانَ غَايَتَهُ. إِنَّهَا تَكْشِفُ السِّتَارَ عَنْ حَقِيقَةٍ يَغْفُلُ عَنْهَا أَكْثَرُ النَّاسِ؛ أَنَّ هَذِهِ الْحَيَاةَ لَيْسَتْ إِلَّا مَشْهَدًا عَابِرًا، وَاخْتِبَارًا قَصِيرًا، وَتَمْثِيلِيَّةً مَحْدُودَةَ الْوَقْتِ، ثُمَّ يُطْوَى السِّتَارُ، وَيَقِفُ الْجَمِيعُ أَمَامَ الْمَلِكِ الدَّيَّانِ.</p>
+
+    <p>الدُّنْيَا أَشْبَهُ بِلُعْبَةٍ عَظِيمَةٍ... يَدْخُلُ إِلَيْهَا النَّاسُ فِي أَدْوَارٍ مُخْتَلِفَةٍ، لَا لِأَنَّهُمُ اخْتَارُوا تِلْكَ الْأَدْوَارَ، بَلْ لِأَنَّ اللهَ سُبْحَانَهُ وَزَّعَهَا بِحِكْمَتِهِ وَعَدْلِهِ.</p>
+
+    <ul class="zeena-list">
+      <li>فَهَذَا يَلْعَبُ دَوْرَ الْمَلِكِ وَصَاحِبِ السُّلْطَانِ. وَذَاكَ يَلْعَبُ دَوْرَ الْغَنِيِّ الَّذِي تُفْتَحُ لَهُ خَزَائِنُ الْأَرْضِ.</li>
+      <li>وَآخَرُ يُؤَدِّي دَوْرَ الْفَقِيرِ الَّذِي لَا يَمْلِكُ إِلَّا قُوتَ يَوْمِهِ. وَهَذَا مُدِيرٌ أَوْ وَزِيرٌ أَوْ قَائِدٌ أَوْ صَاحِبُ مَنْصِبٍ.</li>
+      <li>وَآخَرُ عَامِلٌ بَسِيطٌ، أَوْ أَجِيرٌ مَجْهُولٌ لَا يَعْرِفُهُ أَحَدٌ. وَهَذَا صَحِيحٌ مُعَافًى. وَذَاكَ مَرِيضٌ يُصَارِعُ الْأَلَمَ كُلَّ يَوْمٍ.</li>
+      <li>وَهَذَا يَبْدُو سَعِيدًا بَيْنَ النَّاسِ. وَذَاكَ يَبِيتُ كُلَّ لَيْلَةٍ حَزِينًا مَكْسُورَ الْقَلْبِ.</li>
+      <li>وَهَذَا يَرَاهُ النَّاسُ مَحْظُوظًا. وَذَاكَ يُلَاحِقُهُ الْبَلَاءُ أَيْنَمَا ذَهَبَ.</li>
+    </ul>
+
+    <p>لَكِنْ... هَلْ يَبْقَى أَحَدٌ فِي دَوْرِهِ؟</p>
+
+    <p class="ql">كَلَّا...</p>
+
+    <p>يَنْتَهِي الْوَقْتُ... تُعْلَنُ نِهَايَةُ اللُّعْبَةِ... يُغْلَقُ الْمَسْرَحُ... وَيَخْرُجُ الْجَمِيعُ...</p>
+
+    <ul class="zeena-list">
+      <li>لَا يَحْمِلُ الْمَلِكُ تَاجَهُ...</li>
+      <li>وَلَا الْغَنِيُّ أَمْوَالَهُ...</li>
+      <li>وَلَا صَاحِبُ النُّفُوذِ حُرَّاسَهُ...</li>
+      <li>وَلَا الْمَشْهُورُ شُهْرَتَهُ...</li>
+      <li>وَلَا الْجَمِيلُ جَمَالَهُ...</li>
+      <li>وَلَا الْقَوِيُّ قُوَّتَهُ...</li>
+    </ul>
+
+    <p>الْجَمِيعُ يَخْرُجُونَ بِالْهَيْئَةِ نَفْسِهَا...</p>
+
+    <div class="compare-list" style="margin-top:8px;">
+      <p style="text-align:center;font-family:'Scheherazade New',serif;color:var(--bd);font-size:1.1rem;margin:0;">قِطْعَةُ قُمَاشٍ بَيْضَاءَ... كَفَنٌ لَا جُيُوبَ فِيهِ... وَأَجْسَادٌ تُوَارَى تَحْتَ التُّرَابِ...</p>
+    </div>
+
+    <p>ثُمَّ يَبْدَأُ مَا لَمْ يَكُنْ يَتَوَقَّعُهُ الْغَافِلُونَ...</p>
+
+    <p>هُنَاكَ...</p>
+
+    <ul class="zeena-list">
+      <li>لَا يَسْأَلُ اللهُ كَمْ كَانَ رَصِيدُكَ فِي الْبَنْكِ...</li>
+      <li>وَلَا كَمْ تَابَعَكَ النَّاسُ...</li>
+      <li>وَلَا كَمْ صَفَّقُوا لَكَ...</li>
+      <li>وَلَا كَمْ خَافَ مِنْكَ الْخَلْقُ...</li>
+    </ul>
+
+    <p>بَلِ السُّؤَالُ كُلُّهُ يَدُورُ حَوْلَ شَيْءٍ وَاحِدٍ...</p>
+
+    <p class="ql">مَاذَا قَدَّمْتَ؟</p>
+
+    <p>كَمْ رَكْعَةً صَلَّيْتَ؟ كَمْ دَمْعَةً ذَرَفْتَهَا خَشْيَةً لِلهِ؟ كَمْ يَتِيمًا مَسَحْتَ عَلَى رَأْسِهِ؟ كَمْ جَائِعًا أَطْعَمْتَهُ؟ كَمْ مَظْلُومًا نَصَرْتَهُ؟ كَمْ قَلْبًا جَبَرْتَهُ؟ وَكَمْ مَرَّةً قُلْتَ: سُبْحَانَ اللهِ... وَالْحَمْدُ لِلهِ... وَلَا إِلَهَ إِلَّا اللهُ... وَاللهُ أَكْبَرُ؟</p>
+
+    <p>إِنَّ الَّذِي فَهِمَ حَقِيقَةَ الدُّنْيَا، لَمْ يَجْعَلْهَا وَطَنًا، وَإِنَّمَا جَعَلَهَا طَرِيقًا.</p>
+
+    <ul class="zeena-list">
+      <li>يَسِيرُ فِيهَا... وَلَا يَسْكُنُ إِلَيْهَا...</li>
+      <li>يَمْلِكُ الْمَالَ... وَلَا يَمْلِكُهُ الْمَالُ...</li>
+      <li>يَبْنِي الْبَيْتَ... وَلَا يَجْعَلُ الْبَيْتَ يَبْنِي قَلْبَهُ...</li>
+      <li>يُحِبُّ أَهْلَهُ... لَكِنْ لَا يُقَدِّمُ مَحَبَّتَهُمْ عَلَى مَحَبَّةِ اللهِ...</li>
+    </ul>
+
+    <p>يَعْلَمُ أَنَّ كُلَّ شَيْءٍ هُنَا مُؤَقَّتٌ...</p>
+
+    <p class="ql">صَبَاحٌ يَعْقُبُهُ مَسَاءٌ... مَوْلُودٌ يَعْقُبُهُ شَيْخٌ... رَبِيعٌ يَعْقُبُهُ خَرِيفٌ... لِقَاءٌ يَعْقُبُهُ فِرَاقٌ... وَحَيَاةٌ يَعْقُبُهَا قَبْرٌ...</p>
+
+    <p>ثُمَّ...</p>
+
+    <p class="ql">حَيَاةٌ لَا مَوْتَ بَعْدَهَا... إِمَّا نَعِيمٌ لَا يَنْقَطِعُ... وَإِمَّا حَسْرَةٌ لَا تَنْتَهِي...</p>
+
+    <p>وَهُنَا يَتَجَلَّى مَعْنَى قَوْلِهِ تَعَالَى:</p>
+
+    <div class="vb" style="margin:18px 0;"><div class="vt sm">﴿وَإِنَّ الدَّارَ الْآخِرَةَ لَهِيَ الْحَيَوَانُ﴾</div></div>
+
+    <p>أَيْ هِيَ الْحَيَاةُ الْحَقِيقِيَّةُ الْكَامِلَةُ، الْحَيَاةُ الَّتِي لَا يَعْتَرِيهَا مَرَضٌ، وَلَا هَرَمٌ، وَلَا ظُلْمٌ، وَلَا فِرَاقٌ، وَلَا نِهَايَةٌ.</p>
+
+    <p>أَمَّا الدُّنْيَا... فَكُلُّ مَا فِيهَا يَذُوبُ كَمَا يَذُوبُ الثَّلْجُ تَحْتَ الشَّمْسِ... وَتَتَسَاقَطُ زِينَتُهَا كَمَا تَتَسَاقَطُ أَوْرَاقُ الْخَرِيفِ... وَيُصْبِحُ مَا تَنَازَعَ النَّاسُ عَلَيْهِ خَبَرًا بَعْدَ عَيْنٍ، وَذِكْرَيَاتٍ دَفَنَهَا التُّرَابُ.</p>
+
+    <p>فَطُوبَى لِمَنْ لَعِبَ دَوْرَهُ فِي الدُّنْيَا بِإِخْلَاصٍ، وَلَمْ يَنْسَ أَنَّهُ مُمَثِّلٌ فِي اخْتِبَارٍ، وَأَنَّ الْمُخْرِجَ هُوَ اللهُ، وَأَنَّ نِهَايَةَ الْمَشْهَدِ لَيْسَتْ نِهَايَةَ الْقِصَّةِ، بَلْ بِدَايَتُهَا.</p>
+
+    <ul class="compare-list">
+      <li>فَلَا تَغْتَرَّ بِمَنْ عَلَا، فَسَيَهْبِطُ.</li>
+      <li>وَلَا تَحْسُدْ مَنِ اغْتَنَى، فَسَيَتْرُكُ كُلَّ شَيْءٍ.</li>
+      <li>وَلَا تَيْأَسْ إِنِ افْتَقَرْتَ، فَرُبَّ فَقِيرٍ سَبَقَ الْمُلُوكَ إِلَى جَنَّاتِ النَّعِيمِ.</li>
+      <li>وَلَا تَحْزَنْ إِنْ ظَلَمَكَ النَّاسُ، فَإِنَّ مَحْكَمَةَ الْأَرْضِ قَدْ تُخْطِئُ، أَمَّا مَحْكَمَةُ السَّمَاءِ فَلَا تَظْلِمُ أَحَدًا.</li>
+    </ul>
+
+    <p>اعْمَلْ لِلدُّنْيَا بِقَدْرِ بَقَائِكَ فِيهَا... وَاعْمَلْ لِلْآخِرَةِ بِقَدْرِ بَقَائِكَ فِيهَا...</p>
+
+    <p class="ql">فَالْأُولَى أَيَّامٌ مَعْدُودَةٌ... أَمَّا الثَّانِيَةُ... فَهِيَ الْخُلُودُ الَّذِي لَا يَنْقَضِي.</p>
+
+    <div class="vb"><div class="vt sm">اللَّهُمَّ لَا تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا، وَلَا مَبْلَغَ عِلْمِنَا، وَاجْعَلْ خَيْرَ أَعْمَالِنَا خَوَاتِيمَهَا، وَخَيْرَ أَيَّامِنَا يَوْمَ نَلْقَاكَ، وَاجْعَلْنَا مِمَّنْ إِذَا انْطَفَأَتْ أَنْوَارُ الدُّنْيَا أَمَامَ أَعْيُنِهِمْ، أَشْرَقَتْ لَهُمْ أَنْوَارُ الْجَنَّةِ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.</div></div>
+
+    <!-- تخريج -->
+    <div class="sub"><h3>📚 تخريج الآية والأحاديث الواردة في المقال</h3>
+      <div class="src"><strong>﴿وَمَا هَٰذِهِ الْحَيَاةُ الدُّنْيَا إِلَّا لَهْوٌ وَلَعِبٌ...﴾</strong><br>سورة العنكبوت (٢٩)، الآية ٦٤، مكية، الجزء الحادي والعشرون، الصفحة ٤٠٤. قال ابن كثير: «يخبر تعالى عن حقارة الدنيا وزوالها وانقضائها، وأنها لا دوام لها، وغاية ما فيها لهو ولعب... أي الحياة الدائمة الحق التي لا زوال لها ولا انقضاء، بل هي مستمرة أبد الآباد» — (تفسير القرآن العظيم، تفسير الآية ٦٤ من سورة العنكبوت). وقال القرطبي: «الحيوان بمعنى الحياة الباقية التي لا تزول ولا موت فيها» — (الجامع لأحكام القرآن، ج١٣).</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «إن الدنيا حلوة خضرة»</strong><br>عن أبي سعيد الخدري رضي الله عنه، قال رسول الله ﷺ: «إِنَّ الدُّنْيَا حُلْوَةٌ خَضِرَةٌ، وَإِنَّ اللَّهَ مُسْتَخْلِفُكُمْ فِيهَا، فَيَنْظُرُ كَيْفَ تَعْمَلُونَ» — أخرجه مسلم في صحيحه، كتاب الذكر والدعاء، ح٢٧٤٢.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «كن في الدنيا كأنك غريب»</strong><br>عن عبدالله بن عمر رضي الله عنهما، قال: أخذ رسول الله ﷺ بمنكبي فقال: «كُنْ فِي الدُّنْيَا كَأَنَّكَ غَرِيبٌ أَوْ عَابِرُ سَبِيلٍ» — أخرجه البخاري في صحيحه، كتاب الرقاق، ح٦٤١٦.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث الكفن بلا جيوب</strong><br>عن أنس بن مالك رضي الله عنه أن النبي ﷺ كُفِّن في ثلاثة أثواب بيض سحولية من كرسف ليس فيها قميص ولا عمامة — أخرجه البخاري في صحيحه، كتاب الجنائز، ح١٢٦٤. ومسلم في صحيحه، ح٩٤١.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في الآية والمقال</h3>
+    <div class="card b"><div class="ct">أولاً: اسم الإشارة «هَٰذِهِ» للتحقير</div><p>ذكر الطاهر بن عاشور أن الإشارة بـ«هَٰذِهِ» إلى الحياة الدنيا «إشارة تحقير وقلة اكتراث»، بخلاف نظيرها في سورة الأنعام التي خلت من اسم الإشارة، فالتصريح بـ«هذه» هنا يُصغّر شأن الدنيا في نفس السامع منذ بداية الآية.</p></div>
+    <div class="card b2"><div class="ct">ثانياً: القصر بـ«إِلَّا» في ﴿إِلَّا لَهْوٌ وَلَعِبٌ﴾</div><p>أسلوب القصر هنا قصر ادعائي كما ذكر ابن عاشور، لا قصر حقيقي مطلق، إذ في الدنيا أعمال جليلة، لكن القرآن يقصرها على اللهو واللعب مبالغةً في التحقير لِمَا يشغل القلوب عن الآخرة منها.</p></div>
+    <div class="card b3"><div class="ct">ثالثاً: صيغة «الْحَيَوَان» بدل «الْحَيَاة» — سرّ الاختيار الصرفي</div><p>لاحظ ابن عاشور دقة بالغة: اختيار وزن «فَعَلَان» (حيوان) الذي يُنبئ عن معنى الحركة والاضطراب (كالغليان واللهبان) بدل «الحياة» العادية، ليُصوّر حياة الآخرة بأنها الحياة في أوج قوتها وحركتها وكمالها، لا الحياة الساكنة الباهتة.</p></div>
+    <div class="card b"><div class="ct">رابعاً: استعارة المسرح المركزية في المقال</div><p>بنى المؤلف المقال كله على استعارة ممتدة (extended metaphor): الدنيا مسرح، الناس ممثلون، الأدوار موزعة، الستار يُطوى، المخرج هو الله. هذه الاستعارة الكبرى تُترجم المعنى المجرد للآية (لهو ولعب) إلى صورة معاصرة حية يفهمها القارئ فوراً.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="card b"><div class="ct">الطباق المتكرر: يَحْمِلُ/لَا يَحْمِلُ — تَاجَهُ/أَمْوَالَهُ/حُرَّاسَهُ/شُهْرَتَهُ/جَمَالَهُ/قُوَّتَهُ</div><p>ستة نفي متتالية بنفس البنية («لا... ولا... ولا...») تُفرغ كل مظاهر الدنيا من قيمتها الواحدة تلو الأخرى، في تصعيد بلاغي يُحاكي تجريد الإنسان من كل ما اكتسبه عند الموت.</p></div>
+    <div class="card b2"><div class="ct">التشبيه المزدوج: «يَذُوبُ كَمَا يَذُوبُ الثَّلْجُ تَحْتَ الشَّمْسِ» و«تَتَسَاقَطُ كَمَا تَتَسَاقَطُ أَوْرَاقُ الْخَرِيفِ»</div><p>صورتان طبيعيتان متتاليتان (الذوبان والتساقط) تُجسّدان فناء الدنيا بمنظرين محسوسين يعرفهما كل قارئ، فتتحول الفكرة المجردة (زوال الدنيا) إلى مشهد بصري ملموس.</p></div>
+    <div class="card b3"><div class="ct">التقابل الرباعي الختامي: العلو/الهبوط، الغنى/الترك، الفقر/السبق، الظلم/العدل</div><p>أربع وصايا متوازية البنية («فلا تغتر... ولا تحسد... ولا تيأس... ولا تحزن») تختم المقال بمنظومة أخلاقية متكاملة تُعالج أربع حالات نفسية شائعة (الغرور، الحسد، اليأس، الحزن) بعلاج واحد: استحضار حقيقة الآخرة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card b"><div class="ct">ملاحظة حول القراءات</div><p>اتفق القراء العشرة على هذه الآية دون خلاف معتبر في أصل الكلمات، وهو استقرار نصي يعكس وضوح المعنى المراد منها عبر طبقات القراء المتعاقبة.</p></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>التحليل الصرفي</th></tr>
+      <tr><td class="term">لَهْوٌ</td><td>فَعْل</td><td class="def">مصدر من «لَهَا يَلْهُو» يفيد الاشتغال بما يُلذّ النفس عمّا يعنيها من أمر جدّي.</td></tr>
+      <tr><td class="term">لَعِبٌ</td><td>فَعِل</td><td class="def">مصدر من «لَعِبَ يَلْعَبُ» يفيد العبث الذي لا غاية جدية من ورائه — أعرق في التحقير من اللهو كما ذكر ابن عاشور.</td></tr>
+      <tr><td class="term">الْحَيَوَان</td><td>فَعَلَان</td><td class="def">مصدر على وزن نادر يفيد الحركة والاضطراب واستمرار الحياة الفعّالة، مرادف لـ«الحياة» لكن بدلالة أقوى.</td></tr>
+      <tr><td class="term">لَهِيَ</td><td>اللام + ضمير</td><td class="def">اللام المزحلقة للتوكيد داخلة على ضمير الفصل «هي» الذي يفيد قصر الخبر على المبتدأ (قصر الحياة الحقيقية على الدار الآخرة).</td></tr>
+    </table>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card b"><div class="ct"><span class="bdg">مشترك</span> كلمة «الدَّار»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">المسكن أو المنزل</td><td class="def">الاستعمال الحرفي الشائع للكلمة.</td></tr>
+        <tr><td class="term">العالم أو النشأة (كما في الآية)</td><td class="def">«الدار الآخرة» أي النشأة الأخرى والعالم الآخر بأكمله، لا مجرد مسكن.</td></tr>
+        <tr><td class="term">القبيلة أو الجماعة</td><td class="def">استعمال عربي قديم بمعنى أهل الدار أو القوم المقيمين فيها.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْحَيَوَان»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الحياة الكاملة الدائمة (كما في الآية)</td><td class="def">المعنى القرآني المخصوص هنا، مرادف للحياة الحقيقية الباقية.</td></tr>
+        <tr><td class="term">الحيوان بالمعنى الاصطلاحي المعاصر</td><td class="def">الاستعمال الشائع اليوم للدلالة على المخلوقات غير الناطقة — معنى متأخر عن الاستعمال القرآني.</td></tr>
+        <tr><td class="term">عين في الجنة</td><td class="def">ذكر بعض المفسرين أن «حيوان» اسم لعين في الجنة، كما نقل القرطبي.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card b"><div class="ct">الفرق بين: اللَّهْوُ / اللَّعِبُ / الْعَبَثُ / الْغَفْلَةُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">اللَّهْو</td><td class="def">الانشغال بما يُلذّ النفس ويُنسي الجدّ — أخف درجات الانصراف عن الحق.</td></tr>
+        <tr><td class="term">اللَّعِب</td><td class="def">العمل الذي لا يقصد به غاية جدية أصلاً — أعرق في قلة الجدوى من اللهو.</td></tr>
+        <tr><td class="term">الْعَبَث</td><td class="def">الفعل بلا حكمة ولا غاية معقولة — أقرب معنى للعشوائية.</td></tr>
+        <tr><td class="term">الْغَفْلَة</td><td class="def">ذهول القلب عن الحقيقة مع القدرة على إدراكها — نتيجة نفسية للهو واللعب لا مرادف لهما.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct">الفرق بين: الْفَنَاءُ / الزَّوَالُ / الِانْقِضَاءُ / الِانْقِطَاعُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْفَنَاء</td><td class="def">العدم التام بعد الوجود — أشد الألفاظ في الدلالة على انتهاء الشيء.</td></tr>
+        <tr><td class="term">الزَّوَال</td><td class="def">الانتقال والذهاب عن المكان أو الحال دون الدلالة على العدم التام.</td></tr>
+        <tr><td class="term">الِانْقِضَاء</td><td class="def">انتهاء المدة المحددة للشيء — يخص الأمور ذات الأجل المعلوم.</td></tr>
+        <tr><td class="term">الِانْقِطَاع</td><td class="def">توقف الاستمرارية بعد اتصال — يخص الأشياء المتصلة كالنعيم أو النعمة.</td></tr>
+      </table>
+      <div class="vrd"><strong>لطيفة:</strong> استعمل المقال «لَا نَعِيمٌ يَنْقَطِعُ» و«حَسْرَةٌ لَا تَنْتَهِي» بدقة تناسب كل سياق: الانقطاع للنعيم المتصل، والانتهاء للحسرة المستمرة، فكل لفظ يخدم دلالته الخاصة.</div>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card b"><div class="ct">لماذا قُدّم «لَهْوٌ» على «لَعِبٌ» هنا بخلاف سورة الأنعام؟</div><p>ذكر ابن عاشور علة بديعة: آية الأنعام (٣٢) خلت من اسم الإشارة، فبدأت بـ«لعب» مباشرة لتحقير الدنيا من أول كلمة، أما آية العنكبوت فبدأت بالإشارة المحقِّرة «هذه» ففضّلت تقديم «لهو» ثم «لعب» تدرجاً في التحقير يتناسب مع السياق الذي سبقه ذكر إحياء الأرض بالمطر (آية ٦٣) فناسب الانتقال التدريجي.</p></div>
+    <div class="card b2"><div class="ct">دلالة جواب الشرط المحذوف في ﴿لَوْ كَانُوا يَعْلَمُونَ﴾</div><p>حُذف جواب «لو» هنا لدلالة السياق عليه، وتقديره كما ذكر المفسرون: «لآثروا الباقي على الفاني» أو «لما آثروا دار الفناء على دار البقاء». وهذا الحذف البلاغي يترك للقارئ مساحة لاستحضار الجواب بنفسه، فيكون أعمق أثراً من التصريح به.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السياق المباشر — إحياء الأرض بالمطر (٦٣) قبل الآية</div>
+    <div class="ci"><span class="vi">﴿وَلَئِن سَأَلْتَهُم مَّن نَّزَّلَ مِنَ السَّمَاءِ مَاءً فَأَحْيَا بِهِ الْأَرْضَ مِن بَعْدِ مَوْتِهَا لَيَقُولُنَّ اللَّهُ﴾</span><span class="vs">العنكبوت: ٦٣ — يسبق آية ٦٤ مباشرة، وقد لاحظ ابن عاشور أن ذكر إحياء الأرض هيّأ للانتقال إلى ذكر الحياة الآخرة الحقيقية، فربط بين إحياء الأرض المادي وإحياء النفوس بمعرفة حقيقة الآخرة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">اللحاق — تناقض المشركين بين الشدة والرخاء (٦٥-٦٦)</div>
+    <div class="ci"><span class="vi">﴿فَإِذَا رَكِبُوا فِي الْفُلْكِ دَعَوُا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ فَلَمَّا نَجَّاهُمْ إِلَى الْبَرِّ إِذَا هُمْ يُشْرِكُونَ﴾</span><span class="vs">العنكبوت: ٦٥ — يُبيّن تطبيقاً عملياً لغفلة من لا يعلم حقيقة الدنيا واللهو: يتذكر الله عند الشدة وينساه عند الرخاء، وهذا هو عين الجهل بموازين الحياة الحقيقية الذي حذّرت منه آية ٦٤.</span></div>
+  </div>
+  <div class="cb"><div class="bt">نظير الآية في سورة الأنعام</div>
+    <div class="ci"><span class="vi">﴿وَمَا الْحَيَاةُ الدُّنْيَا إِلَّا لَعِبٌ وَلَهْوٌ ۖ وَلَلدَّارُ الْآخِرَةُ خَيْرٌ لِّلَّذِينَ يَتَّقُونَ ۗ أَفَلَا تَعْقِلُونَ﴾</span><span class="vs">الأنعام: ٣٢ — نظير مباشر لكن بترتيب مختلف (لعب قبل لهو) وخاتمة مختلفة (خير للمتقين، أفلا تعقلون) بدل (لهي الحيوان، لو كانوا يعلمون) — وهو ما فسّره ابن عاشور بالسياقين المختلفين.</span></div>
+    <div class="ci"><span class="vi">﴿اعْلَمُوا أَنَّمَا الْحَيَاةُ الدُّنْيَا لَعِبٌ وَلَهْوٌ وَزِينَةٌ وَتَفَاخُرٌ بَيْنَكُمْ وَتَكَاثُرٌ فِي الْأَمْوَالِ وَالْأَوْلَادِ﴾</span><span class="vs">الحديد: ٢٠ — تفصيل أوسع لمكونات الحياة الدنيا (لعب، لهو، زينة، تفاخر، تكاثر)، ويُكمّل الصورة التي رسمها المقال عن أدوار الناس المختلفة في مسرح الحياة.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط الكلي:</strong> آية العنكبوت ٦٤ ليست معزولة، بل جزء من منظومة قرآنية متكاملة تتكرر في خمس سور على الأقل (الأنعام، العنكبوت، محمد، الحديد، الحياة الدنيا) لتؤصل حقيقة واحدة: زوال الدنيا وبقاء الآخرة، وهذا التكرار القرآني يُبرز مركزية هذا المفهوم في بناء العقيدة الإسلامية.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية عقدية ✅</div><div class="md">تُقرر ركناً عقدياً جوهرياً: حقيقة الدنيا الفانية مقابل حقيقة الآخرة الباقية.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية تربوية زهدية ✅</div><div class="md">تبني منهجاً في التعامل مع الدنيا يقوم على الاستخدام دون التعلق.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تحذير من الغفلة ✅</div><div class="md">﴿لَوْ كَانُوا يَعْلَمُونَ﴾ تحذير ضمني من جهل حقيقة الدنيا والآخرة.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> الآية من الآيات التأسيسية للتصور الإسلامي عن الدنيا والآخرة، وهي ليست من آيات الأحكام الفقهية التفصيلية، لكنها تُؤصّل مفهوم الزهد الشرعي الذي يقوم على أساسه فقه كثير من الأحكام العملية.</div>
+  <div class="sub"><h3>الأحكام والقيم المستنبطة</h3>
+    <div class="card b"><div class="ct">الحكم الأول: مشروعية الزهد الشرعي دون ترك العمل الدنيوي</div><p>يُستفاد من الآية أن الزهد المطلوب شرعاً هو زهد القلب لا ترك العمل والسعي، فالنبي ﷺ وأصحابه عملوا في الدنيا وكسبوا المال دون أن يتعلق قلبهم بها، وهذا هو معنى «جعلها طريقاً لا وطناً» الذي ذكره المقال.</p></div>
+    <div class="card b2"><div class="ct">الحكم الثاني: وجوب محاسبة النفس على العمل الصالح لا المكاسب الدنيوية</div><p>من الأسئلة الواردة في المقال («كم ركعة صليت؟ كم يتيماً مسحت على رأسه؟») يُستفاد مشروعية محاسبة النفس يومياً على الأعمال الصالحة، وهذا أصل تربوي معروف عند السلف في «محاسبة النفس».</p></div>
+    <div class="card b"><div class="ct">الحكم الثالث: تحريم الاغترار بالنعم الدنيوية والاطمئنان إليها</div><p>يُستفاد من التحذير القرآني المتكرر من اللهو واللعب تحريم الركون التام إلى الدنيا واتخاذها غاية، وهذا أصل عقدي يُحصّن المسلم من عبادة المال أو الجاه أو الشهرة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.25rem;">﴿وَمَا هَٰذِهِ الْحَيَاةُ الدُّنْيَا إِلَّا لَهْوٌ وَلَعِبٌ ۚ وَإِنَّ الدَّارَ الْآخِرَةَ لَهِيَ الْحَيَوَانُ ۚ لَوْ كَانُوا يَعْلَمُونَ﴾
+    </div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَمَا</div><div class="id">الواو استئنافية. «مَا»: نافية مهملة لا عمل لها.</div></div>
+    <div class="ir"><div class="iw">هَٰذِهِ</div><div class="id">اسم إشارة مبني على الكسر في محل رفع مبتدأ — إشارة تحقير وتصغير لشأن الدنيا.</div></div>
+    <div class="ir"><div class="iw">الْحَيَاةُ</div><div class="id">بدل من اسم الإشارة مرفوع (أو عطف بيان) وعلامة رفعه الضمة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">الدُّنْيَا</div><div class="id">نعت لـ«الحياة» مرفوع وعلامة رفعه الضمة المقدرة على الألف للتعذر.</div></div>
+    <div class="ir"><div class="iw">إِلَّا</div><div class="id">أداة حصر لا محل لها من الإعراب.</div></div>
+    <div class="ir"><div class="iw">لَهْوٌ</div><div class="id">خبر المبتدأ «هذه» مرفوع وعلامة رفعه تنوين الضم.</div></div>
+    <div class="ir"><div class="iw">وَلَعِبٌ</div><div class="id">الواو عاطفة. «لَعِبٌ»: معطوف على «لَهْوٌ» مرفوع مثله.</div></div>
+    <div class="ir"><div class="iw">وَإِنَّ الدَّارَ</div><div class="id">الواو عاطفة أو حالية. «إِنَّ»: حرف توكيد ونصب. «الدَّارَ»: اسمها منصوب.</div></div>
+    <div class="ir"><div class="iw">الْآخِرَةَ</div><div class="id">نعت لـ«الدار» منصوب وعلامة نصبه الفتحة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">لَهِيَ الْحَيَوَانُ</div><div class="id">اللام لام التوكيد (المزحلقة). «هِيَ»: ضمير منفصل مبني في محل رفع مبتدأ. «الْحَيَوَانُ»: خبر مرفوع. والجملة الاسمية «هي الحيوان» في محل رفع خبر «إنّ».</div></div>
+    <div class="ir"><div class="iw">لَوْ كَانُوا يَعْلَمُونَ</div><div class="id">«لَوْ»: حرف شرط غير جازم. «كَانُوا»: فعل ماضٍ ناقص والواو اسمها. «يَعْلَمُونَ»: فعل مضارع مرفوع بثبوت النون والواو فاعله، والجملة الفعلية خبر «كان». وجواب الشرط محذوف تقديره «لآثروا ما يبقى على ما يفنى».</div></div>
+  </div>
+  <div class="card b" style="margin-top:14px;"><div class="ct">لطيفة إعرابية: القصر المزدوج في الآية</div><p>تجتمع في هذه الآية أداتا قصر: «إِلَّا» في الجملة الأولى (قصر الحياة الدنيا على اللهو واللعب)، و«اللام المزحلقة + ضمير الفصل» في الجملة الثانية (قصر الحياة الحقيقية على الدار الآخرة). هذا القصر المزدوج المتقابل يُحكم البناء البلاغي للآية بحيث لا يبقى مجال لأي تصور وسط بين حقارة الدنيا وعظمة الآخرة.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«إِنَّ الَّذِي فَهِمَ حَقِيقَةَ الدُّنْيَا، لَمْ يَجْعَلْهَا وَطَنًا، وَإِنَّمَا جَعَلَهَا طَرِيقًا»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card b"><div class="ct">أولاً: علاج القلق من تفاوت الأدوار الاجتماعية</div><p>استعارة «توزيع الأدوار» تُقدّم علاجاً نفسياً عميقاً لمشاعر الحسد والمقارنة الاجتماعية؛ فمن يفهم أن دوره (فقيراً كان أو غنياً) مُوزَّع بحكمة إلهية عادلة، يتحرر من سخط المقارنة الدائمة مع الآخرين. <strong>التطبيق:</strong> عند مقارنة النفس بالآخرين، استحضار أن الأدوار مؤقتة وموزعة بعدل، فالمعيار الحقيقي هو الأداء لا الدور.</p></div>
+  <div class="card b2"><div class="ct">ثانياً: تحرير القلب من عبء الاستحواذ</div><p>«يَمْلِكُ الْمَالَ... وَلَا يَمْلِكُهُ الْمَالُ» صياغة نفسية دقيقة تُميّز بين الاستخدام النافع والتعلق المُهلك. <strong>التطبيق:</strong> اختبار دوري للنفس: هل أنا من يتحكم في ممتلكاتي أم هي من تتحكم فيّ وفي قراراتي ومشاعري؟</p></div>
+  <div class="card b"><div class="ct">ثالثاً: بناء معيار داخلي بديل عن معايير المجتمع المادية</div><p>الأسئلة البديلة التي يطرحها المقال («ماذا قدمت؟» بدل «كم رصيدك؟») تُعيد بناء منظومة القيم الداخلية للفرد بعيداً عن ضغط المقاييس الاجتماعية السائدة (المتابعون، الإعجابات، الثروة). <strong>التطبيق:</strong> تبني معيار شخصي للنجاح مبني على القيم الأخروية لا على مقارنة اجتماعية متجددة لا تنتهي.</p></div>
+  <div class="card b2"><div class="ct">رابعاً: تحويل الخسارة الدنيوية إلى سكينة بمحكمة العدل الأخروي</div><p>«فَإِنَّ مَحْكَمَةَ الْأَرْضِ قَدْ تُخْطِئُ، أَمَّا مَحْكَمَةُ السَّمَاءِ فَلَا تَظْلِمُ أَحَدًا» — علاج نفسي بالغ الأثر لمن ظُلم ولم يجد إنصافاً في الدنيا. <strong>التطبيق:</strong> عند الشعور بالظلم وعدم وجود منفذ للإنصاف الدنيوي، استحضار يقين العدالة الأخروية المطلقة كمصدر سكينة لا وهم تعزية.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>الاستعارة الممتدة كإطار كلي:</strong> بناء المقال بأكمله حول استعارة المسرح (أدوار، ستار، مخرج، نهاية العرض) يُحوّل مفهوماً عقدياً مجرداً إلى تجربة سردية يعيشها القارئ ذهنياً.</li>
+      <li><strong>التوازي الاستفهامي التراكمي:</strong> تكرار «كَمْ...؟» ست مرات متتالية في فقرة الأسئلة الأخروية يبني إيقاعاً محاسبياً يضغط على الضمير تدريجياً حتى يبلغ ذروته.</li>
+      <li><strong>البنية الدائرية للمقال:</strong> يبدأ بالمسرح المضيء وينتهي بانطفاء أنواره في الدعاء الختامي («إِذَا انْطَفَأَتْ أَنْوَارُ الدُّنْيَا... أَشْرَقَتْ أَنْوَارُ الْجَنَّةِ»)، فتكتمل الاستعارة المسرحية بصورة ضوئية متسقة من أول المقال إلى آخره.</li>
+      <li><strong>الوصايا الرباعية الختامية:</strong> أربع نصائح متوازية («لا تغتر... لا تحسد... لا تيأس... لا تحزن») تُلخص كل الرسائل النفسية للمقال في وصفة عملية سهلة التذكر والتطبيق.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح وأئمة التفسير في كل مسألة.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين مفهوم الزهد القرآني وواقع الاستهلاك المادي المعاصر — يُحوّل الموعظة القديمة إلى وعي عملي بأولويات الحياة.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية نادرة في تناول قضايا الدنيا والآخرة.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">الزهد والدنيا</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">اليوم الآخر</span>
+        <span class="atag">التزكية النفسية</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>

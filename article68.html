@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رِجَالٌ يَصْنَعُهُمُ الْقُرْآنُ... لَا تُنْبِتُهُمُ الْمُصَادَفَةُ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1a1f16;--bg:#f3f0e2;--bg2:#e5dfc2;
+  --bronze:#5c4423;--bm:#3d5c3a;--blt:#6b8f5e;
+  --bd:#0d130c;--bt:#e8e6ce;--bg-g:#a3c98f;
+  --teal:#14201a;--gold:#5c4423;--gold-m:#8a6a30;
+  --div:#dcd2a8;--mist:#4a4530;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(61,92,58,.09) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(107,143,94,.07) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--bm),var(--teal));z-index:400;transform-origin:top;}
+.hdr{background:var(--bd);border-bottom:2px solid var(--bm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--blt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--bg-g);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--bronze);color:var(--bg-g);border:1px solid rgba(107,143,94,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--bm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#080b06;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(107,143,94,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(107,143,94,.2);}
+.toc-s{color:rgba(107,143,94,.6);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#9aa87e;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--bt);background:rgba(107,143,94,.1);border-right-color:var(--blt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--bm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--blt);}
+.hcat{display:inline-block;background:var(--bronze);color:var(--bt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.35rem;font-weight:700;color:var(--bd);line-height:1.5;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--bm);border-radius:50%;}
+.vb{background:var(--bd);border:1px solid rgba(107,143,94,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(107,143,94,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.72rem;color:var(--bt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.32rem;}
+.vr{color:var(--bg-g);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#1a1f16;}
+.abody p{margin-bottom:1.55em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--bm);float:right;line-height:.82;margin-left:8px;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.16rem;color:var(--bronze);font-weight:700;text-align:center;margin:10px 0;}
+.src{background:rgba(61,92,58,.06);border:1px solid rgba(61,92,58,.22);border-radius:7px;padding:12px 16px;margin:10px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;color:var(--bronze);line-height:1.85;}
+.src strong{color:var(--bm);}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--bd);color:var(--blt);border:2px solid var(--bm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.76rem;color:var(--bd);border-bottom:2px solid var(--blt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;color:var(--bronze);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.b{border-right:5px solid var(--bm);}
+.card.b2{border-right:5px solid var(--bronze);}
+.card.b3{border-right:5px solid var(--teal);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.14rem;color:#0d130c;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#1a1f16;line-height:1.9;margin-top:6px;}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--bd);color:var(--bg-g);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--bm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(107,143,94,.05);}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#0d130c;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.2rem;color:#0d130c;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#0d130c;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--blt);border-bottom:2px solid var(--blt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--blt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#080b06,#1a1f16);border:1px solid rgba(107,143,94,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1.16rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(107,143,94,.25);}
+.ci{color:#a3a074;padding:9px 0;border-bottom:1px dashed rgba(107,143,94,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--bg-g);font-size:.78rem;opacity:.78;}
+.vrd{background:linear-gradient(135deg,#080b06,#12160e);border:1px solid rgba(107,143,94,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#a3a074;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--bt);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--bm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#0d130c;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#1a1f16;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--bm);font-size:.85em;top:11px;}
+.asec{background:var(--bd);border:1px solid rgba(107,143,94,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--bm),var(--bronze));border:3px solid var(--blt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.36rem;margin-bottom:5px;}
+.ai .at{color:var(--bg-g);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#a3a074;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:var(--bg-g);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(107,143,94,.1);border:1px solid rgba(107,143,94,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--bg-g);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--bt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(107,143,94,.16);color:var(--blt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(107,143,94,.28);}
+.orn{text-align:center;color:var(--blt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--bd);color:#5a6b4e;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(107,143,94,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--blt);}
+footer .fb span{color:var(--bg-g);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.85rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.15rem;}.hero h1{font-size:1.5rem;}.pq{font-size:1.1rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">رِجَالٌ يَصْنَعُهُمُ الْقُرْآنُ... لَا تُنْبِتُهُمُ الْمُصَادَفَةُ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي والأدبي</a>
+  <a class="toc-a sub" href="#s1a">أسلوب التصنيف والتعداد</a>
+  <a class="toc-a sub" href="#s1b">المقابلة بين النماذج</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والصرفي والمشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2a">اشتقاق «رجال»</a>
+  <a class="toc-a sub" href="#s2b">مشترك «رجل» في القرآن</a>
+  <a class="toc-a" href="#s3">٣. الفروق اللغوية والمعجمية</a>
+  <a class="toc-a" href="#s4">٤. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s5">٥. نوع الآيات والحكم المستنبط</a>
+  <a class="toc-a" href="#s6">٦. إعراب الآية الرئيسية</a>
+  <a class="toc-a" href="#s7">٧. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">🌳 ✦ 🌳</span>
+  <div class="hcat">تدبر قرآني · نماذج الرجولة · النور: ٣٧</div>
+  <h1>رِجَالٌ يَصْنَعُهُمُ الْقُرْآنُ...<br>لَا تُنْبِتُهُمُ الْمُصَادَفَةُ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>نماذج قرآنية متعددة السور</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿رِّجَالٌ لَا تُلْهِيهِمْ تِجَارَةٌ وَلَا بَيْعٌ عَنْ ذِكْرِ اللَّهِ وَإِقَامِ الصَّلَاةِ وَإِيتَاءِ الزَّكَاةِ ۙ يَخَافُونَ يَوْمًا تَتَقَلَّبُ فِيهِ الْقُلُوبُ وَالْأَبْصَارُ﴾</div>
+    <div class="vr">سورة النور (٢٤)، الآية ٣٧، مدنية</div>
+  </div>
+
+  <div class="abody">
+    <p>لَيْسَتِ الرُّجُولَةُ فِي مِيزَانِ الْقُرْآنِ جَسَدًا قَوِيًّا، وَلَا صَوْتًا مُرْتَفِعًا، وَلَا مَالًا وَفِيرًا، وَلَا سُلْطَانًا يَهَابُ النَّاسُ بَطْشَهُ. إِنَّمَا الرُّجُولَةُ فِي الْقُرْآنِ صِفَةٌ إِيمَانِيَّةٌ وَأَخْلَاقِيَّةٌ، لَا يَنَالُهَا كُلُّ ذَكَرٍ، وَلَا يَحْمِلُهَا كُلُّ مَنِ اشْتَدَّ عُودُهُ. فَالْقُرْآنُ لَمْ يَصِفْ كُلَّ الذُّكُورِ بِأَنَّهُمْ رِجَالٌ، بَلِ اخْتَارَ هَذِهِ الْكَلِمَةَ فِي مَوَاضِعَ مَخْصُوصَةٍ؛ لِأَنَّ الرُّجُولَةَ مَقَامٌ قَبْلَ أَنْ تَكُونَ وَصْفًا، وَتَكْلِيفٌ قَبْلَ أَنْ تَكُونَ تَشْرِيفًا.</p>
+
+    <p>قَدْ يُولَدُ الْإِنْسَانُ ذَكَرًا، أَمَّا الرَّجُلُ فَيَصْنَعُهُ الْإِيمَانُ، وَتَصْقُلُهُ الْمِحَنُ، وَتُزَكِّيهِ التَّقْوَى، وَتُثَبِّتُهُ الْمَبَادِئُ.</p>
+
+    <p>وَلِهَذَا قَسَّمَ الْقُرْآنُ الرِّجَالَ إِلَى نَمَاذِجَ، لِيَكُونَ بَعْضُهَا مَنَارَاتِ هُدًى، وَبَعْضُهَا لَافِتَاتِ تَحْذِيرٍ.</p>
+
+    <p class="ql">أَوَّلًا: رِجَالُ الصِّدْقِ وَالْوَفَاءِ</p>
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿مِنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ فَمِنْهُمْ مَنْ قَضَىٰ نَحْبَهُ وَمِنْهُمْ مَنْ يَنْتَظِرُ وَمَا بَدَّلُوا تَبْدِيلًا﴾</div><div class="vr">الأحزاب (٣٣): ٢٣، مدنية</div></div>
+    <p>هَؤُلَاءِ رِجَالٌ لَا تَتَغَيَّرُ وُجُوهُهُمْ مَعَ تَغَيُّرِ الرِّيَاحِ، وَلَا يَبِيعُونَ مَبَادِئَهُمْ عِنْدَ أَوَّلِ فِتْنَةٍ، وَلَا يَفِرُّونَ حِينَ تَشْتَدُّ الْخُطُوبُ. إِذَا عَاهَدُوا اللهَ صَدَقُوا، وَإِذَا ابْتُلُوا صَبَرُوا، وَإِذَا انْتَصَرُوا شَكَرُوا. إِنَّهُمْ يَعْلَمُونَ أَنَّ الطَّرِيقَ إِلَى الْجَنَّةِ مَفْرُوشٌ بِالصَّبْرِ لَا بِالتَّرَفِ، وَبِالثَّبَاتِ لَا بِالتَّقَلُّبِ.</p>
+
+    <p class="ql">ثَانِيًا: رِجَالُ الْمَسَاجِدِ وَالطَّهَارَةِ</p>
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿فِيهِ رِجَالٌ يُحِبُّونَ أَنْ يَتَطَهَّرُوا وَاللَّهُ يُحِبُّ الْمُطَّهِّرِينَ﴾</div><div class="vr">التوبة (٩): ١٠٨، مدنية</div></div>
+    <p>إِنَّهَا رُجُولَةُ الطَّهَارَةِ... طَهَارَةُ الْقَلْبِ قَبْلَ الْجَسَدِ، وَطَهَارَةُ السَّرِيرَةِ قَبْلَ الثِّيَابِ. الرَّجُلُ الَّذِي يَعْمُرُ الْمَسْجِدَ، وَيَعْمُرُ قَلْبَهُ بِذِكْرِ اللهِ، هُوَ الَّذِي يَبْنِي الْأُمَّةَ قَبْلَ أَنْ يَبْنِيَ الْجُدْرَانَ. فَالْقُرْآنُ يَرْبِطُ الرُّجُولَةَ بِالطُّهْرِ؛ لِأَنَّ الْقَلْبَ النَّجِسَ لَا يَحْمِلُ رِسَالَةَ السَّمَاءِ.</p>
+
+    <p class="ql">ثَالِثًا: رِجَالُ الدَّعْوَةِ وَالْمُبَادَرَةِ</p>
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿وَجَاءَ مِنْ أَقْصَى الْمَدِينَةِ رَجُلٌ يَسْعَىٰ قَالَ يَا قَوْمِ اتَّبِعُوا الْمُرْسَلِينَ﴾</div><div class="vr">يس (٣٦): ٢٠، مكية</div></div>
+    <p>لَمْ يَكُنْ نَبِيًّا، وَلَا مَلِكًا، وَلَا صَاحِبَ جَيْشٍ. لَكِنَّهُ كَانَ رَجُلًا... رَجُلٌ تَحَرَّكَ حِينَ سَكَتَ الْآخَرُونَ، وَنَصَحَ حِينَ خَافَ النَّاسُ، وَدَافَعَ عَنِ الْحَقِّ حَتَّى دَفَعَ حَيَاتَهُ ثَمَنًا لِكَلِمَتِهِ. فَالرُّجُولَةُ لَيْسَتْ أَنْ تَتَفَرَّجَ عَلَى الْبَاطِلِ، بَلْ أَنْ تَمْشِيَ نَحْوَ الْحَقِّ وَلَوْ كُنْتَ وَحْدَكَ.</p>
+
+    <p class="ql">رَابِعًا: رِجَالُ التِّجَارَةِ وَالذِّكْرِ</p>
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿رِجَالٌ لَا تُلْهِيهِمْ تِجَارَةٌ وَلَا بَيْعٌ عَنْ ذِكْرِ اللَّهِ﴾</div><div class="vr">النور (٢٤): ٣٧، مدنية</div></div>
+    <p>إِنَّهُمْ يَعْمَلُونَ فِي الْأَسْوَاقِ، لَكِنَّ قُلُوبَهُمْ مُعَلَّقَةٌ بِالسَّمَاءِ. يَجْمَعُونَ الْمَالَ بِالْحَلَالِ، لَكِنَّهُمْ لَا يَجْعَلُونَهُ إِلَهًا يُعْبَدُ. يَعْرِفُونَ أَنَّ الرِّزْقَ مِنَ اللهِ، وَأَنَّ الْبَرَكَةَ فِي الطَّاعَةِ، وَأَنَّ خَسَارَةَ الدِّينِ أَعْظَمُ مِنْ خَسَارَةِ التِّجَارَةِ.</p>
+
+    <p class="ql">خَامِسًا: رِجَالُ الْحِكْمَةِ وَالْبَصِيرَةِ</p>
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿وَقَالَ رَجُلٌ مُؤْمِنٌ مِنْ آلِ فِرْعَوْنَ يَكْتُمُ إِيمَانَهُ...﴾</div><div class="vr">غافر (٤٠): ٢٨، مكية</div></div>
+    <p>وَقَفَ وَحْدَهُ فِي قَصْرِ الطُّغْيَانِ، يُخَاطِبُ فِرْعَوْنَ وَقَوْمَهُ بِالْحُجَّةِ وَالْعَقْلِ وَالْإِيمَانِ. لَمْ تَمْنَعْهُ هَيْبَةُ السُّلْطَانِ مِنْ كَلِمَةِ الْحَقِّ، وَلَمْ يَمْنَعْهُ خَوْفُ الْبَطْشِ مِنْ نُصْرَةِ مُوسَى عَلَيْهِ السَّلَامُ. إِنَّهَا رُجُولَةُ الْعَقْلِ حِينَ يَقْتَرِنُ بِالْإِيمَانِ.</p>
+
+    <p class="ql">وَفِي الْمُقَابِلِ...</p>
+    <p>يَعْرِضُ الْقُرْآنُ نَمَاذِجَ أُخْرَى، لَا لِيَقْتَدِيَ بِهَا النَّاسُ، بَلْ لِيَحْذَرُوهَا. فِرْعَوْنُ... امْتَلَكَ الْمُلْكَ وَخَسِرَ نَفْسَهُ. صَاحِبُ الْجَنَّتَيْنِ... أَغْرَاهُ الْمَالُ فَأَنْكَرَ فَضْلَ اللهِ، فَقَالَ: ﴿أَنَا أَكْثَرُ مِنكَ مَالًا وَأَعَزُّ نَفَرًا﴾، فَكَانَتْ نِهَايَةُ الْكِبْرِ الْحَسْرَةَ. الْمُنَافِقُونَ... بَنَوْا مَسْجِدَ الضِّرَارِ لِيَهْدِمُوا وَحْدَةَ الْمُؤْمِنِينَ، فَفَضَحَهُمُ الْقُرْآنُ، لِأَنَّ الرُّجُولَةَ لَا تَجْتَمِعُ مَعَ الْخِدَاعِ وَالْخِيَانَةِ.</p>
+
+    <p>إِنَّ الْقُرْآنَ يُعَلِّمُنَا أَنَّ الذُّكُورَةَ خِلْقَةٌ، أَمَّا الرُّجُولَةُ فَمَوْقِفٌ. قَدْ يَكُونُ الرَّجُلُ فَقِيرًا لَكِنَّهُ عَظِيمٌ عِنْدَ اللهِ. وَقَدْ يَكُونُ غَنِيًّا مَشْهُورًا لَكِنَّهُ سَاقِطٌ فِي مِيزَانِ السَّمَاءِ.</p>
+
+    <p class="ql">الرُّجُولَةُ لَيْسَتْ صَخَبًا، بَلْ سَكِينَةٌ. لَيْسَتْ بَطْشًا، بَلْ عَدْلٌ. لَيْسَتِ اسْتِعْلَاءً، بَلْ رَحْمَةٌ. لَيْسَتِ ادِّعَاءً، بَلْ وَفَاءٌ. لَيْسَتْ مَظْهَرًا، بَلْ مَخْبَرٌ. لَيْسَتْ لَقَبًا يَمْنَحُهُ النَّاسُ، بَلْ شَهَادَةٌ يَمْنَحُهَا اللهُ.</p>
+
+    <p>وَلِهَذَا كَانَ الْقُرْآنُ دَقِيقًا فِي أَلْفَاظِهِ، فَلَمْ يَمْنَحْ هَذَا الْوَصْفَ إِلَّا لِمَنِ اسْتَحَقَّهُ.</p>
+
+    <p>فَاسْأَلْ نَفْسَكَ كُلَّ يَوْمٍ: هَلْ أَنَا مِنْ رِجَالِ الصِّدْقِ؟ أَمْ مِنْ رِجَالِ الْمَسَاجِدِ؟ أَمْ مِنْ رِجَالِ الدَّعْوَةِ؟ أَمْ مِنْ رِجَالِ الذِّكْرِ؟ أَمْ أَنَّ الدُّنْيَا سَرَقَتْ مِنِّي مَعْنَى الرُّجُولَةِ، فَلَمْ يَبْقَ مِنْهَا إِلَّا الِاسْمُ؟</p>
+
+    <p>إِنَّ الْأُمَّةَ لَا تَحْتَاجُ إِلَى كَثْرَةِ الرِّجَالِ فِي بِطَاقَاتِ الْهُوِيَّةِ، بَلْ إِلَى كَثْرَةِ الرِّجَالِ فِي الْمَوَاقِفِ. فَالرِّجَالُ الْحَقِيقِيُّونَ هُمُ الَّذِينَ إِذَا غَابُوا اشْتَاقَتْ إِلَيْهِمُ الْمَسَاجِدُ، وَإِذَا حَضَرُوا اطْمَأَنَّ الْمَظْلُومُ، وَإِذَا تَكَلَّمُوا صَدَقُوا، وَإِذَا وَعَدُوا وَفَوْا، وَإِذَا ابْتُلُوا صَبَرُوا، وَإِذَا انْتَصَرُوا تَوَاضَعُوا، وَإِذَا مَاتُوا بَقِيَ أَثَرُهُمْ حَيًّا فِي الْقُلُوبِ.</p>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;color:var(--bronze);font-weight:700;">✍️ عَلِيّ خَلِيل عَبَّاس السُّلْجُوقِيّ التُّرْكُمَانِيّ اللَّيْلَانِيّ</p>
+
+    <div class="sub"><h3>📚 توثيق مصادر الآيات الواردة في المقال</h3>
+      <div class="src"><strong>مصادر الآيات:</strong> النور ٢٤: ٣٧ (رجال التجارة والذكر) · الأحزاب ٣٣: ٢٣ (رجال الصدق والوفاء) · التوبة ٩: ١٠٨ (رجال المساجد والطهارة) · يس ٣٦: ٢٠ (الرجل الساعي من أقصى المدينة) · غافر ٤٠: ٢٨ (الرجل المؤمن من آل فرعون) · الكهف ١٨: ٣٤ (قول صاحب الجنتين) — جميعها آيات محكمة متفق على نصها بين المصاحف.</div>
+      <div class="src"><strong>المصدر التفسيري:</strong> ابن كثير، تفسير القرآن العظيم، تفسير سورة النور، الآية ٣٧ — في بيان أن هؤلاء الرجال «لا تشغلهم مكاسبهم ومتاجرهم عن طاعة الله»، مستشهداً بأثر عن السلف: «كانوا تجاراً، ولكن كانت التجارة لا تلهيهم إذا سمعوا داعي الله عزّ وجلّ».</div>
+      <div class="src"><strong>ملاحظة توثيقية:</strong> قول صاحب الجنتين ﴿أَنَا أَكْثَرُ مِنكَ مَالًا وَأَعَزُّ نَفَرًا﴾ ورد في سورة الكهف (١٨): ٣٤ في سياق قصة صاحب الجنتين مع صاحبه المؤمن، وليس في سياق فرعون كما قد يُتوهَّم من ترتيب الفقرات في المقال؛ وقد أوضحنا هذا الفرق في قسم «ترابط السياقات» أدناه لدقة الفهم.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH ADABI -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي والأدبي</h2></div>
+
+  <div id="s1a" class="sub"><h3>أسلوب التصنيف والتعداد كبنية بلاغية</h3>
+    <div class="card b"><div class="ct">التصنيف الخماسي كهيكل حجاجي</div><p>يعتمد المقال بنية بلاغية واضحة: خمسة نماذج إيجابية («أولاً... ثانياً... ثالثاً... رابعاً... خامساً»)، تليها ثلاثة نماذج سلبية دون ترقيم صريح (فرعون، صاحب الجنتين، المنافقون). هذا التصنيف المتدرج أسلوب بلاغي يُعرف بـ«التقسيم» (استقصاء أقسام الشيء)، وهو من أبلغ وسائل الإقناع لأنه يمنح القارئ خريطة ذهنية واضحة يقيس بها نفسه على كل نموذج تباعاً.</p></div>
+    <div class="card b2"><div class="ct">من التصنيف إلى الاستفهام التقريري الختامي</div><p>بعد سرد النماذج، ينتقل المقال إلى صيغة استفهامية متتالية («هل أنا من رجال الصدق؟ أم من رجال المساجد؟...») — وهذا استفهام إنكاري-تقريري بلاغي الغرض منه ليس طلب الجواب، بل دفع القارئ للمساءلة الذاتية؛ فالتصنيف الذي بدا نظرياً في السرد يتحول فجأة إلى مرآة شخصية مباشرة.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المقابلة بين النماذج الإيجابية والسلبية</h3>
+    <div class="card b"><div class="ct">المقابلة البنيوية: «وفي المقابل...»</div><p>العبارة الفاصلة «وفي المقابل...» تُقسم المقال بنيوياً إلى قسمين متقابلين تماماً: نماذج يُقتدى بها، ونماذج يُحذر منها. وهذا التوازي البنائي (خمسة نماذج إيجابية مقابل ثلاثة سلبية) يُبقي الكفة راجحة للهدى، فلا يترك المقال القارئ في جو من التحذير المجرد، بل يُذكِّره أولاً بالنموذج الذي يُحتذى.</p></div>
+    <div class="card b2"><div class="ct">الطباق اللفظي المتكرر: «امتلك... وخسر»</div><p>«امتلك الملك وخسر نفسه» — طباق دقيق بين الامتلاك والخسارة في جملة واحدة، يتكرر بصيغ مختلفة في خاتمة المقال («ليست صخباً بل سكينة؛ ليست بطشاً بل عدل...»)، وهذه السلسلة من المقابلات الثنائية المتوالية (سبع مقابلات متتالية في الفقرة الأخيرة) من أقوى أدوات البلاغة الحجاجية لأنها تُعيد تعريف المفهوم (الرجولة) بالنفي والإثبات معاً في كل شطر.</p></div>
+    <div class="card b3"><div class="ct">الاستعارة الافتتاحية: «لا تُنبتهم المصادفة»</div><p>عنوان المقال نفسه يقوم على استعارة زراعية: تشبيه صناعة الرجال بالإنبات (نمو النبات من بذرة بعناية ورعاية)، ونفي أن يكون ذلك «مصادفة» (نمواً عشوائياً بلا سبب). هذه الاستعارة الجذرية تحكم المقال بأكمله: فكل نموذج مذكور لاحقاً هو تفصيل لكيفية «الإنبات» (الإيمان، المحن، التقوى، المبادئ) التي ذكرها المقال صراحة: «فيصنعه الإيمان، وتصقله المحن، وتزكيه التقوى، وتثبته المبادئ» — أربعة أفعال زراعية-تربوية متتالية (يصنع، يصقل، يزكي، يثبت).</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI SARFI MUSHTARAK -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والصرفي والمشترك اللفظي</h2></div>
+
+  <div id="s2a" class="sub"><h3>اشتقاق «رِجَال» ودلالته الصرفية</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">صرفياً</span><div class="mv">رِجَال</div><div class="md">جمع تكسير لـ«رَجُل» على وزن «فِعَال»، والجذر (ر ج ل) في أصله اللغوي يدل على المشي على الرِّجْلِ (القدم)، ثم توسّع المعنى للدلالة على الذَّكَر البالغ القوي القادر على السعي والكسب، ثم ارتقى في الاستعمال القرآني ليدل على مقام معنوي لا على مجرد الذكورة الجسدية.</div></div>
+      <div class="mc"><span class="ml">صرفياً</span><div class="mv">ذَكَر</div><div class="md">اسم على وزن «فَعَل»، من الجذر (ذ ك ر) بمعنى الصنف المقابل للأنثى بيولوجياً فحسب، دون أي شحنة قيمية أو أخلاقية إضافية — وهذا يُفسِّر لماذا فرّق المقال بوضوح بين «الذكورة» (خِلقة بيولوجية) و«الرجولة» (مقام مكتسب).</div></div>
+    </div>
+    <div class="card b"><div class="ct">الفرق الدلالي بين «الذكورة» و«الرجولة» في العربية والقرآن</div><p>«الذكورة» وصف تكويني ثابت من لحظة الخلقة لا يتغير ولا يُكتسب، بينما «الرجولة» في الاستعمال القرآني وصف مكتسب مشروط بالإيمان والعمل، ولهذا يصح أن يُقال عن الذكر البالغ إنه لم يبلغ بعد مقام «الرجولة» القرآنية إن لم تتوفر فيه صفاتها، وهذا بالضبط ما بناه المقال حين قال: «فالقرآن لم يصف كل الذكور بأنهم رجال».</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي: كلمة «رَجُل» في القرآن الكريم</h3>
+    <table class="tbl">
+      <tr><th>المعنى/السياق</th><th>الشاهد</th></tr>
+      <tr><td class="term">وصف تشريفي لأهل الإيمان والذكر (كما في المقال)</td><td class="def">﴿رِجَالٌ لَا تُلْهِيهِمْ تِجَارَةٌ وَلَا بَيْعٌ عَنْ ذِكْرِ اللَّهِ﴾ — النور: ٣٧.</td></tr>
+      <tr><td class="term">مجرد الذَّكَر البالغ دون وصف قيمي (حيادي)</td><td class="def">﴿لِّلرِّجَالِ نَصِيبٌ مِّمَّا تَرَكَ الْوَالِدَانِ وَالْأَقْرَبُونَ﴾ — النساء: ٧ (سياق الميراث، استعمال حيادي فقهي).</td></tr>
+      <tr><td class="term">وصف لرجل مؤمن مجهول الاسم يحمل موقفاً بطولياً</td><td class="def">﴿وَجَاءَ مِنْ أَقْصَى الْمَدِينَةِ رَجُلٌ يَسْعَىٰ﴾ — يس: ٢٠؛ و﴿وَقَالَ رَجُلٌ مُّؤْمِنٌ مِّنْ آلِ فِرْعَوْنَ﴾ — غافر: ٢٨.</td></tr>
+      <tr><td class="term">وصف نظير في قصة موازية</td><td class="def">﴿وَجَاءَ رَجُلٌ مِّنْ أَقْصَى الْمَدِينَةِ يَسْعَىٰ قَالَ يَا مُوسَىٰ إِنَّ الْمَلَأَ يَأْتَمِرُونَ بِكَ﴾ — القصص: ٢٠ (رجل ناصح لموسى، تكرار بنائي مشابه لقصة يس).</td></tr>
+    </table>
+    <p style="margin-top:10px;font-size:.92rem;color:var(--mist);">يُلاحظ أن لفظ «رجل/رجال» في القرآن يحمل شحنة تكريمية غالباً حين يُذكر مقروناً بموقف إيماني أو أخلاقي، ويبقى حيادياً في السياقات الفقهية المحضة (كالميراث والشهادة)، وهذا يؤكد ما بناه المقال من أن «الرجولة» القرآنية اصطلاح مخصوص لا مجرد إشارة جندرية.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 DIFFERENCES -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>الفروق اللغوية والمعجمية</h2></div>
+  <div class="card b"><div class="ct">الفرق بين: الرُّجُولَة / الذُّكُورَة / الفُتُوَّة</div>
+    <table class="tbl">
+      <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+      <tr><td class="term">الذكورة</td><td class="def">وصف بيولوجي تكويني ثابت من الخلقة، لا علاقة له بالسلوك أو الأخلاق.</td></tr>
+      <tr><td class="term">الرجولة (بالمعنى القرآني)</td><td class="def">مقام إيماني أخلاقي مكتسب، مشروط بالصدق والثبات والطهارة والمبادرة والحكمة — كما فصّل المقال في نماذجه الخمسة.</td></tr>
+      <tr><td class="term">الفُتُوَّة</td><td class="def">مرتبة أخص من الرجولة في التراث الأخلاقي الإسلامي، تجمع الكرم والشجاعة والإيثار، وتُطلق أحياناً على الشاب قبل اكتمال رجولته إن اتصف بمكارم الأخلاق مبكراً (كما وُصف بها إبراهيم عليه السلام في الأنبياء: ٦٠).</td></tr>
+    </table>
+  </div>
+  <div class="card b2"><div class="ct">الفرق بين: الصِّدْق / الوَفَاء (في سياق آية الأحزاب)</div>
+    <table class="tbl">
+      <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+      <tr><td class="term">الصدق</td><td class="def">مطابقة القول أو النية للواقع، وهو أصل داخلي (نية العهد وقت العقد).</td></tr>
+      <tr><td class="term">الوفاء</td><td class="def">الاستمرار على مقتضى الصدق عملياً حتى النهاية، وهو الثمرة الظاهرة للصدق الباطن — ولهذا وصفت الآية الرجال بأنهم «صدقوا ما عاهدوا الله عليه» ثم أكدت الوفاء بقولها «وما بدّلوا تبديلاً»، فجمعت بين أصل الصدق وثمرة الوفاء في آية واحدة.</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CONTEXT LINKING -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">سياق آية النور (٣٧) — الآية المحورية للمقال</div>
+    <div class="ci"><span class="vi">﴿فِي بُيُوتٍ أَذِنَ اللَّهُ أَن تُرْفَعَ وَيُذْكَرَ فِيهَا اسْمُهُ يُسَبِّحُ لَهُ فِيهَا بِالْغُدُوِّ وَالْآصَالِ﴾</span><span class="vs">النور (٢٤): ٣٦ — الآية التي قبل آية «رجال»، تصف المساجد وأهلها الذاكرين، فتأتي آية ٣٧ لتُفصِّل صفة هؤلاء الذاكرين بأنهم «رجال لا تلهيهم تجارة ولا بيع».</span></div>
+    <div class="ci"><span class="vi">﴿لِيَجْزِيَهُمُ اللَّهُ أَحْسَنَ مَا عَمِلُوا وَيَزِيدَهُم مِّن فَضْلِهِ ۗ وَاللَّهُ يَرْزُقُ مَن يَشَاءُ بِغَيْرِ حِسَابٍ﴾</span><span class="vs">النور (٢٤): ٣٨ — الآية التي بعدها، تُبيّن ثمرة عدم انشغالهم بالتجارة عن الذكر: جزاء إلهي مضاعف بلا حساب، وهذا يفسر لماذا اختار المقال هذه الآية عنواناً محورياً: فهي تجمع الابتلاء (وجود التجارة المُلهية) والنجاة (تجاوزها) والجزاء (الفضل بلا حساب) في ثلاث آيات متتالية.</span></div>
+  </div>
+  <div class="cb"><div class="bt">سياق آية الأحزاب (٢٣) — رجال الوفاء بعد غزوة الأحزاب</div>
+    <div class="ci"><span class="vi">السياق التاريخي</span><span class="vs">نزلت الآية عقب غزوة الخندق (الأحزاب)، تكريماً لصحابة ثبتوا على عهدهم رغم اشتداد الحصار والخوف، وأشهرهم من استشهد كأنس بن النضر رضي الله عنه الذي طلب الشهادة بعد غياب عن بدر ووفى بعهده يوم أُحد.</span></div>
+  </div>
+  <div class="cb"><div class="bt">سياق آية يس (٢٠) — رجل قرية أنطاكية الناصح للمرسلين</div>
+    <div class="ci"><span class="vi">﴿قَالَ يَا قَوْمِ اتَّبِعُوا الْمُرْسَلِينَ ۝ اتَّبِعُوا مَن لَّا يَسْأَلُكُمْ أَجْرًا وَهُم مُّهْتَدُونَ﴾</span><span class="vs">يس (٣٦): ٢٠-٢١ — يُكمل الآية المذكورة في المقال، ويُبيّن حجته العقلية (عدم طلب المرسلين أجراً دليل صدقهم)، وقد قتله قومه فأدخله الله الجنة فوراً كما في الآية ٢٦: ﴿قِيلَ ادْخُلِ الْجَنَّةَ﴾، وهذا يربط نموذج «رجال الدعوة» بثمرة فورية عند الله.</span></div>
+  </div>
+  <div class="cb"><div class="bt">سياق آية غافر (٢٨) وآية الكهف (٣٤) — تصحيح دقيق للترتيب</div>
+    <div class="ci"><span class="vi">توضيح مهم</span><span class="vs">الرجل المؤمن في غافر (٢٨) هو من قرابة فرعون نفسه، آمن سراً بموسى عليه السلام وجادل قومه بالحجة. أما قول ﴿أَنَا أَكْثَرُ مِنكَ مَالًا وَأَعَزُّ نَفَرًا﴾ فهو من سورة الكهف (٣٤) في قصة صاحب الجنتين مع صاحبه المؤمن، ولا علاقة له بفرعون مباشرة — والمقال يذكر النموذجين (فرعون، وصاحب الجنتين) متتاليين كنموذجين سلبيين مستقلين لا كقصة واحدة، وقد نبّهنا لهذا الفرق في قسم التوثيق أعلاه حرصاً على الدقة العلمية.</span></div>
+  </div>
+  <div class="vrd"><strong>خلاصة الترابط:</strong> تتوزع نماذج الرجولة الخمسة على أربع سور مختلفة (النور، الأحزاب، التوبة، يس، غافر)، ونماذج التحذير على ثلاث قصص (فرعون في القصص/غافر، صاحب الجنتين في الكهف، المنافقون في التوبة)، مما يُظهر أن القرآن يبني مفهوم الرجولة عبر السورة كلها لا في موضع واحد، وهذا يمنح المقال شرعية جمعها في نسق تصنيفي واحد رغم تعدد مصادرها.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 TYPE + AHKAM -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>نوع الآيات والحكم الشرعي المستنبط</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية وصفية-مدحية (ثناء رباني) ✅</div><div class="md">آية النور والأحزاب والتوبة من نوع الثناء الإلهي على صنف من عباده المؤمنين، وهو أسلوب تكريمي لا حكم تكليفي مباشر، لكنه يتضمن الحث الضمني على الاقتداء.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية قصصية (نموذج تطبيقي) ✅</div><div class="md">آيتا يس وغافر من نوع القصص القرآني الذي يُجسِّد المعنى المجرد (الرجولة) في موقف بشري واقعي، ليكون أقرب للتطبيق من التنظير.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تحذيرية (نماذج مضادة) ✅</div><div class="md">قصة صاحب الجنتين ومسجد الضرار من نوع الإخبار التحذيري، تُقدَّم لا للاقتداء بل للاتعاظ والحذر من مآلات الكبر والنفاق.</div></div>
+  </div>
+  <div class="sub"><h3>الأحكام والفوائد المستنبطة</h3>
+    <div class="card b"><div class="ct">الحكم الأول: عدم انشغال التجارة عن الفرائض أصل شرعي واجب</div><p>يُستنبط من آية النور ٣٧ أصل فقهي: أن طلب الرزق مشروع، لكن لا يجوز أن يكون سبباً في تفويت الصلاة المفروضة أو ترك الزكاة الواجبة؛ فالآية مدحت من يجمع بين الأمرين لا من يترك التجارة بالكلية.</p>
+      <div class="src"><strong>المصدر:</strong> ابن كثير، تفسير القرآن العظيم، تفسير النور: ٣٧ — نقلاً عن السلف: «كانوا تجاراً، ولكن كانت التجارة لا تلهيهم إذا سمعوا داعي الله».</div>
+    </div>
+    <div class="card b2"><div class="ct">الحكم الثاني: وجوب الوفاء بالعهد مع الله وتحريم نقضه</div><p>يُستنبط من آية الأحزاب وجوب الوفاء بكل عهد يُقطع لله تعالى (كالنذر والبيعة على الطاعة)، وتحريم التبديل والنكوص عنه، وهو أصل عام يشمل كل التزام ديني يُقطع على النفس.</p></div>
+    <div class="card b3"><div class="ct">الحكم الثالث: مشروعية كتمان الإيمان عند الإكراه مع بقاء العمل به سراً</div><p>يُستنبط من قصة مؤمن آل فرعون جواز إخفاء العقيدة وقت الخوف الشديد من القتل، مع استمرار العمل بمقتضياتها سراً والدفاع عن الحق بالحكمة، وهذا أصل في «التقية» المشروعة عند الضرورة القصوى، دون أن يعني ذلك ترك نصرة الحق كلياً كما فعل هذا الرجل حين جادل بالحجة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 IRAB -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>إعراب الآية الرئيسية</h2></div>
+  <div class="vb" style="margin-bottom:18px;"><div class="vt" style="font-size:1.2rem;">﴿رِّجَالٌ لَا تُلْهِيهِمْ تِجَارَةٌ وَلَا بَيْعٌ عَنْ ذِكْرِ اللَّهِ وَإِقَامِ الصَّلَاةِ وَإِيتَاءِ الزَّكَاةِ﴾</div><div class="vr">النور (٢٤)، الآية ٣٧ (جزء منها)، مدنية</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">رِجَالٌ</div><div class="id">خبر لمبتدأ محذوف تقديره «هم»، أي: يُسبِّح له رجالٌ؛ أو بدل من الضمير «فيها» في قوله «يسبح له فيها»، أو نعت مقطوع على المدح. مرفوع وعلامة رفعه الضمة الظاهرة، منوّن.</div></div>
+    <div class="ir"><div class="iw">لَا تُلْهِيهِمْ</div><div class="id">«لا»: نافية غير عاملة. «تُلهيهم»: فعل مضارع مرفوع وعلامة رفعه الضمة الظاهرة، والهاء والميم ضمير متصل مبني في محل نصب مفعول به أول، والجملة الفعلية في محل رفع نعت لـ«رجال».</div></div>
+    <div class="ir"><div class="iw">تِجَارَةٌ</div><div class="id">فاعل مرفوع وعلامة رفعه الضمة الظاهرة، منوّن.</div></div>
+    <div class="ir"><div class="iw">وَلَا بَيْعٌ</div><div class="id">الواو: عاطفة. «لا»: زائدة لتوكيد النفي (نافية غير عاملة). «بيعٌ»: معطوف على «تجارة» مرفوع مثله، منوّن.</div></div>
+    <div class="ir"><div class="iw">عَن ذِكْرِ اللَّهِ</div><div class="id">جار ومجرور متعلقان بـ«تُلهيهم»، و«ذكر» مضاف، و«الله» لفظ الجلالة مضاف إليه مجرور وعلامة جره الكسرة.</div></div>
+    <div class="ir"><div class="iw">وَإِقَامِ الصَّلَاةِ</div><div class="id">الواو: عاطفة. «إقامِ»: معطوف على «ذكر» مجرور مثله بالكسرة، وهو مضاف، و«الصلاة» مضاف إليه مجرور بالكسرة. (وأصله: إقامة، حُذفت التاء لإضافته إلى ما بعده، وهي إحدى صور الحذف الصرفي المعروفة في المصادر المؤنثة بالتاء عند الإضافة).</div></div>
+    <div class="ir"><div class="iw">وَإِيتَاءِ الزَّكَاةِ</div><div class="id">الواو: عاطفة. «إيتاءِ»: معطوف على «ذكر» مجرور مثله بالكسرة، وهو مضاف، و«الزكاة» مضاف إليه مجرور بالكسرة.</div></div>
+  </div>
+  <div class="card b" style="margin-top:14px;"><div class="ct">ملاحظة إعرابية: تقديم الفاعل «تجارة» بعد الفعل مع تخصيصه بالنفي</div><p>لاحظ أن الآية نفت الإلهاء عن ثلاثة أمور معاً (ذكر الله، إقامة الصلاة، إيتاء الزكاة) بفعل واحد «تُلهيهم» وفاعلين معطوفين (تجارة، بيع)، فجاء التركيب النحوي مُكثَّفاً يجمع في جملة واحدة طرفي المعادلة: مصدر الإغراء الدنيوي (التجارة والبيع) ومقصد الإيمان الثلاثي (الذكر والصلاة والزكاة)، وهذا التكثيف النحوي يعكس بلاغياً معنى «عدم الانشغال» ذاته: فكل هذه المعاني الكثيرة اجتمعت في جملة واحدة مضغوطة كما اجتمعت في قلب واحد لم تتوزع همومه.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S7 TADABBUR -->
+<div id="s7" class="sec">
+  <div class="sec-h"><div class="sec-n">٧</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«الذُّكُورَةُ خِلْقَةٌ لَا اخْتِيَارَ لِلْإِنْسَانِ فِيهَا، وَالرُّجُولَةُ مَوْقِفٌ يُصْنَعُ كُلَّ يَوْمٍ بِاخْتِيَارٍ حُرٍّ»<br><small style="font-size:.65em;color:var(--mist);">— قراءة تحليلية لمضمون المقال</small></div>
+  <div class="card b"><div class="ct">أولاً: تحرير الهوية من مجرد التصنيف البيولوجي</div><p>حين يفصل المقال بين «الذكورة» و«الرجولة»، فهو يمنح القارئ أداة نفسية مهمة: أن قيمته لا تُقاس بما وُلد عليه (جنسه)، بل بما يختار أن يصنعه من نفسه (موقفه). هذا يرفع عبء «الهوية الجاهزة» ويستبدله بمسؤولية «الهوية المُكتسَبة»، وهو تحول نفسي محرِّر لمن كان يظن أن مجرد بلوغه سناً معينة يمنحه مقام الرجولة تلقائياً.</p></div>
+  <div class="card b2"><div class="ct">ثانياً: النماذج الخمسة كخارطة للتقييم الذاتي اليومي</div><p>تنتهي كل فقرة في المقال بمعيار عملي قابل للتطبيق فوراً: هل أنا صادق في عهودي؟ هل قلبي معلَّق بالمسجد؟ هل أبادر بالنصح أم أصمت خوفاً؟ هل تلهيني تجارتي عن ذكري؟ هل أملك شجاعة الحكمة كمؤمن آل فرعون؟ <strong>التطبيق:</strong> اجعل من هذه الأسئلة الخمسة محاسبة أسبوعية لنفسك لا قراءة عابرة، فالمقال صمم ليكون أداة تزكية لا مجرد نص وعظي.</p></div>
+  <div class="card b"><div class="ct">ثالثاً: التحذير من فخ «الرجولة الظاهرية»</div><p>يُحذِّر المقال ضمنياً من خداع المظهر: فرعون امتلك كل مظاهر القوة (الملك، الجيش، الهيبة) وسقط في ميزان الرجولة الحقيقي؛ وهذا تذكير نفسي أن الإنسان قد يخدع نفسه بمظاهر النجاح الخارجي (المال، المنصب، الشهرة) بينما يكون جوهره فارغاً من القيم التي بها توزن الرجولة عند الله. <strong>التطبيق:</strong> افحص دوافعك الداخلية لا إنجازاتك الظاهرة عند تقييم نفسك.</p></div>
+  <div class="card b2"><div class="ct">رابعاً: الرجولة كأثر باقٍ لا كحضور آني</div><p>يختم المقال بمعيار تربوي عميق: «وإذا ماتوا بقي أثرهم حياً في القلوب» — فالمقياس النهائي للرجولة القرآنية ليس التأثير اللحظي، بل الأثر الممتد بعد الغياب. <strong>التطبيق:</strong> اسأل نفسك ليس فقط «ما أثري اليوم؟» بل «ما الذي سيبقى من أثري بعد أن أرحل؟» — فهذا يُعيد توجيه البوصلة من الإنجاز العاجل إلى القيمة الباقية.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني الليلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر لآياته · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن الكريم والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط الحيّ بمستجدات العصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن وإخبارات النبي ﷺ</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> يقوم بدراسة التفسير والرؤى بالتزامٍ دقيق بضوابط القرآن والسنة النبوية، مستحضِرًا أقوال السلف الصالح في كل مسألة يتناولها.</p>
+      <p><strong>البُعد الزمني:</strong> يتَّسم بحثه بالربط الحيّ بين النص القرآني ومستجدات العصر، مما يمنح التأمل الأدبي روحًا معاصرة تُقرِّب المعنى القرآني من واقع القارئ اليوم.</p>
+      <p><strong>التحصيل العلمي:</strong> شملت دراساته علم الحديث، مركِّزًا على أحاديث الفتن وإخبارات النبي ﷺ؛ وهذا يؤكد عمق النظر وسلامة المنهج التي بُنيت عليها مقالاته.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">القصص القرآني</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">اللغة والبلاغة</span>
+        <span class="atag">التزكية والتربية</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني الليلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
