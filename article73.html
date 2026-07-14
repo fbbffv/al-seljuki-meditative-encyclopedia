@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حِينَ يُقسِمُ اللهُ بِالمُختَفِي وَالرَّاحِلِ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&amp;family=Scheherazade+New:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141827;--bg:#f4f1ea;--bg2:#e8e0d0;
+  --bronze:#2a3554;--bm:#4a5a86;--blt:#c9a86a;
+  --bd:#0a0e1c;--bt:#f1e6c8;--bg-g:#d4b98a;
+  --teal:#1a2340;--gold:#8a6820;--gold-m:#b08840;
+  --div:#d8cdb4;--mist:#2e3860;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(74,90,134,.10) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(201,168,106,.10) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--blt),var(--teal));z-index:400;transform-origin:top;}
+.hdr{background:var(--bd);border-bottom:2px solid var(--blt);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--blt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--bg-g);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.9rem;text-align:center;flex:1;opacity:.9;}
+.tbtn{background:var(--bronze);color:var(--bg-g);border:1px solid rgba(201,168,106,.5);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--bm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#050814;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(201,168,106,.22);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(201,168,106,.22);}
+.toc-s{color:rgba(201,168,106,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#94a0bd;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--bt);background:rgba(201,168,106,.10);border-right-color:var(--blt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--blt),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.7;letter-spacing:.4em;color:var(--gold-m);}
+.hcat{display:inline-block;background:var(--bronze);color:var(--bt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.4rem;font-weight:700;color:var(--bd);line-height:1.5;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--gold-m);border-radius:50%;}
+.vb{background:var(--bd);border:1px solid rgba(201,168,106,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(201,168,106,.14),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.72rem;color:var(--bt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.35rem;}
+.vr{color:var(--bg-g);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.9;}
+.abody{font-size:1.12rem;line-height:2.05;color:#141827;}
+.abody p{margin-bottom:1.55em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--bronze);float:right;line-height:.82;margin-left:8px;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.16rem;color:var(--bronze);font-weight:700;text-align:center;margin:10px 0;}
+.zeena-list{list-style:none;padding:0;margin:10px 0 20px;}
+.zeena-list li{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bronze);padding:8px 0;border-bottom:1px dashed var(--div);}
+.zeena-list li:last-child{border-bottom:none;}
+.src{background:rgba(74,90,134,.08);border:1px solid rgba(74,90,134,.24);border-radius:7px;padding:12px 16px;margin:10px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;color:var(--bronze);line-height:1.85;}
+.src strong{color:var(--bm);}
+.grade{display:inline-block;font-size:.66rem;padding:2px 8px;border-radius:3px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.sahih{background:#1e5a3a;}
+.grade.hasan{background:#7a5a10;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--bd);color:var(--blt);border:2px solid var(--gold-m);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.76rem;color:var(--bd);border-bottom:2px solid var(--blt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;color:var(--bronze);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.05);}
+.card.b{border-right:5px solid var(--bm);}
+.card.b2{border-right:5px solid var(--gold-m);}
+.card.b3{border-right:5px solid var(--teal);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.14rem;color:#05070f;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#141827;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--bm);color:var(--bt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--bd);color:var(--bg-g);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--blt);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(201,168,106,.06);}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#05070f;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.2rem;color:#05070f;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#05070f;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--blt);border-bottom:2px solid var(--blt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--blt);opacity:.3;line-height:1;}
+.cb{background:linear-gradient(135deg,#05070f,#141827);border:1px solid rgba(201,168,106,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1.16rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(201,168,106,.25);}
+.ci{color:#a4b0cc;padding:9px 0;border-bottom:1px dashed rgba(201,168,106,.18);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--bg-g);font-size:.78rem;opacity:.8;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--gold);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#05070f;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#141827;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--gold-m);font-size:.85em;top:11px;}
+.asec{background:var(--bd);border:1px solid rgba(201,168,106,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--gold-m),var(--bronze));border:3px solid var(--blt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.36rem;margin-bottom:5px;}
+.ai .at{color:var(--bg-g);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#a4b0cc;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:var(--bg-g);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(201,168,106,.10);border:1px solid rgba(201,168,106,.22);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--bg-g);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--bt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(201,168,106,.18);color:var(--blt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(201,168,106,.3);}
+.orn{text-align:center;color:var(--gold-m);font-size:1.25rem;margin:48px 0;opacity:.55;letter-spacing:.42em;}
+footer{background:var(--bd);color:#4a5680;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(201,168,106,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--blt);}
+footer .fb span{color:var(--bg-g);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.95rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.22rem;}.hero h1{font-size:1.6rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;gap:8px;}.logo{display:none;}.htitle{font-size:.78rem;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">حِينَ يُقسِمُ اللهُ بِالمُختَفِي وَالرَّاحِلِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآيات</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<div class="hero">
+  <span class="horn">✦ ☾ ✦</span>
+  <div class="hcat">تدبر قرآني · التكوير ١٥–١٩ · مكية · صدق الوحي</div>
+  <h1>حِينَ يُقسِمُ اللهُ بِالمُختَفِي وَالرَّاحِلِ<br><span style="font-size:.7em;color:var(--bronze);">لِتَطْمَئِنَّ القُلُوبُ إِلَى يَقِينِ الوَحيِ</span></h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>التكوير: ١٥–١٩</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿فَلَا أُقْسِمُ بِالْخُنَّسِ ۝ الْجَوَارِ الْكُنَّسِ ۝ وَاللَّيْلِ إِذَا عَسْعَسَ ۝ وَالصُّبْحِ إِذَا تَنَفَّسَ ۝ إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾</div>
+    <div class="vr">سورة التكوير (٨١)، الآيات ١٥–١٩، مكية</div>
+  </div>
+
+  <div class="abody">
+    <p>لَيسَت هَذِهِ الآيَاتُ مُجَرَّدَ قَسَمٍ بِمَخلُوقَاتٍ فِي الكَونِ، وَإِنَّمَا هِيَ لَوحَةٌ كَونِيَّةٌ هَائِلَةٌ، تَتَحَرَّكُ فِيهَا السَّمَاءُ وَالأَرضُ، وَاللَّيلُ وَالصُّبحُ، وَالحَرَكَةُ وَالسُّكُونُ، لِتَشهَدَ جَمِيعُهَا عَلَى حَقِيقَةٍ وَاحِدَةٍ: أَنَّ هَذَا القُرآنَ وَحيٌ مِن عِندِ اللهِ، حَمَلَهُ جِبرِيلُ الأَمِينُ إِلَى قَلبِ مُحَمَّدٍ صَلَّى اللهُ عَلَيهِ وَسَلَّمَ.</p>
+
+    <p>فَالخُنَّسُ... كُلُّ مَا يَختَفِي بَعدَ ظُهُورِهِ، وَيَخنَسُ بَعدَ بُرُوزِهِ. إِنَّهَا النُّجُومُ وَالكَوَاكِبُ الَّتِي تَرَاهَا الأَبصَارُ ثُمَّ تَغِيبُ عَنِ الأَنظَارِ، فَتَخنَسُ فِي أَفلَاكِهَا. وَهِيَ فِي الوَقتِ نَفسِهِ رَمزٌ لِكُلِّ شَيءٍ فِي الحَيَاةِ يَلُوحُ ثُمَّ يَتَوَارَى، وَيَقتَرِبُ ثُمَّ يَبتَعِدُ، وَيَظهَرُ ثُمَّ يَختَفِي.</p>
+
+    <p>وَفِي حَيَاةِ الإِنسَانِ أَشيَاءُ كَثِيرَةٌ تَخنَسُ...</p>
+    <p>يَخنَسُ الشَّبَابُ فَيَأتِي الشَّيبُ.<br>وَتَخنَسُ القُوَّةُ فَيَأتِي الضَّعفُ.<br>وَيَخنَسُ المَالُ حِينَ تَزُولُ الدُّنيَا.<br>وَتَخنَسُ المَنَاصِبُ إِذَا تَبَدَّلَتِ الأَيَّامُ.<br>وَيَخنَسُ الظَّالِمُ حِينَ يَظُنُّ أَنَّهُ لَا يُغلَبُ، فَإِذَا هُوَ خَبَرٌ بَعدَ عَينٍ.<br>وَيَخنَسُ البَاطِلُ مَهمَا انتَفَخَ، لِأَنَّهُ لَا يَملِكُ البَقَاءَ.</p>
+
+    <p>ثُمَّ يَقُولُ سُبحَانَهُ: ﴿الْجَوَارِ الْكُنَّسِ﴾.</p>
+
+    <p>هِيَ الجَارِيَةُ فِي أَفلَاكِهَا، السَّابِحَةُ فِي مَلَكُوتِ اللهِ، ثُمَّ تَكنِسُ؛ أَي تَدخُلُ فِي مُستَقَرِّهَا فَتَغِيبُ عَنِ الأَبصَارِ، كَمَا تَكنِسُ الظِّبَاءُ فِي كِنَاسِهَا، وَكَأَنَّ اللهَ يَرسُمُ مَشهَدًا لِلحَرَكَةِ يَعقُبُهُ الاختِفَاءُ.</p>
+
+    <p>وَهَذَا قَانُونُ الحَيَاةِ كَذَلِكَ...</p>
+    <p>كَم مِن أُمَّةٍ جَرَت فِي الأَرضِ بِقُوَّةٍ ثُمَّ كَنَسَتهَا السُّنُونُ.<br>وَكَم مِن حَضَارَةٍ مَلأَتِ الدُّنيَا ضَجِيجًا ثُمَّ أَصبَحَت أَطلَالًا يَروِيهَا المُؤَرِّخُونَ.<br>وَكَم مِن إِنسَانٍ مَلأَ المَجَالِسَ صَخَبًا، ثُمَّ مَضَى فَلَم يَبقَ مِنهُ إِلَّا عَمَلُهُ.<br>وَكَم مِن فِتنَةٍ جَرَت بَينَ النَّاسِ ثُمَّ اختَفَت، وَبَقِيَ الحَقُّ ثَابِتًا لَا يَزُولُ.</p>
+
+    <p class="ql">خَنَسٌ... ثُمَّ كَنَسٌ...</p>
+
+    <p>إِنَّهَا دَورَةُ الكَونِ... وَدَورَةُ الدُّنيَا... وَدَورَةُ الأَعمَارِ... وَكُلُّهَا تَقُولُ لِلإِنسَانِ: لَا تَتَعَلَّق بِمَا يَرحَلُ، وَتَعَلَّق بِمَن لَا يَزُولُ.</p>
+
+    <p>ثُمَّ يَنتَقِلُ المَشهَدُ إِلَى الأَرضِ...</p>
+
+    <p>﴿وَاللَّيْلِ إِذَا عَسْعَسَ﴾.</p>
+
+    <p>لَفظَةٌ عَجِيبَةٌ تَحمِلُ المَعنَيَينِ مَعًا؛ أَقبَلَ اللَّيلُ أَو أَدبَرَ، وَكِلَاهُمَا حَقٌّ فِي لُغَةِ العَرَبِ. فَكَأَنَّ اللَّيلَ فِي حَرَكَتِهِ كُلِّهَا دَاخِلٌ فِي هَذَا القَسَمِ؛ حِينَ يَزحَفُ بِظَلَامِهِ عَلَى الدُّنيَا، وَحِينَ يَجمَعُ أَستَارَهُ رَاحِلًا عَنهَا.</p>
+
+    <p>اللَّيلُ يَأتِي مَهمَا طَالَ النَّهَارُ...<br>ثُمَّ يَرحَلُ مَهمَا اشتَدَّ سَوَادُهُ...</p>
+
+    <p>وَهَكَذَا الأَحزَانُ...</p>
+
+    <p>تُقبِلُ عَلَى القُلُوبِ حَتَّى يَظُنَّ صَاحِبُهَا أَنَّهَا لَن تَنقَضِيَ، ثُمَّ تُدبِرُ فِي لَحظَةٍ مِن لُطفِ اللهِ.</p>
+
+    <p>وَتَأتِي الشَّدَائِدُ، ثُمَّ تَمضِي.<br>وَتُقبِلُ المِحَنُ، ثُمَّ تَنكَشِفُ.<br>وَيَأتِي الخَوفُ، ثُمَّ يَعقُبُهُ الأَمنُ.<br>وَيَأتِي الضِّيقُ، ثُمَّ يَفتَحُهُ اللهُ بِالفَرَجِ.</p>
+
+    <p>ثُمَّ...</p>
+    <p>﴿وَالصُّبْحِ إِذَا تَنَفَّسَ﴾.</p>
+
+    <p>يَا لَهَا مِن صُورَةٍ تَهُزُّ القَلبَ...</p>
+
+    <p>كَأَنَّ الصُّبحَ كَائِنٌ حَيٌّ، كَانَ مَحبُوسَ الأَنفَاسِ تَحتَ ظُلمَةِ اللَّيلِ، فَلَمَّا أَذِنَ اللهُ لَهُ، أَخَذَ أَوَّلَ نَفَسٍ، فَانطَلَقَتِ الحَيَاةُ كُلُّهَا مَعَهُ.</p>
+
+    <p>تَتَنَفَّسُ السَّمَاءُ بِالنُّورِ.<br>وَتَتَنَفَّسُ الأَرضُ بِالحَرَكَةِ.<br>وَتَتَنَفَّسُ الطُّيُورُ بِالتَّسبِيحِ.<br>وَيَتَنَفَّسُ الإِنسَانُ بِالأَمَلِ.</p>
+
+    <p>وَكُلُّ فَجرٍ يَقُولُ لِلمُؤمِنِ:</p>
+    <p class="ql">مَهمَا طَالَ اللَّيلُ... فَلَا بُدَّ أَن يَتَنَفَّسَ الصُّبحُ.</p>
+
+    <p>وَمَهمَا اشتَدَّتِ الفِتَنُ... فَلَا بُدَّ أَن يُشرِقَ الحَقُّ.<br>وَمَهمَا كَثُرَتِ الغُيُومُ... فَإِنَّ الشَّمسَ لَا تَمُوتُ، وَإِنَّمَا تَحجُبُهَا السُّحُبُ قَلِيلًا.</p>
+
+    <p>ثُمَّ تَأتِي الحَقِيقَةُ الكُبرَى الَّتِي مِن أَجلِهَا جَاءَت هَذِهِ الأَقسَامُ كُلُّهَا...</p>
+
+    <p>﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾.</p>
+
+    <p>إِنَّهُ جِبرِيلُ عَلَيهِ السَّلَامُ...<br>الرَّسُولُ الكَرِيمُ عِندَ رَبِّهِ...</p>
+
+    <p>يَحمِلُ الوَحيَ مِنَ السَّمَاءِ إِلَى الأَرضِ.</p>
+
+    <p>يَنزِلُ بِأَمرِ اللهِ عَلَى قَلبِ مُحَمَّدٍ صَلَّى اللهُ عَلَيهِ وَسَلَّمَ، لَا يَزِيدُ فِيهِ حَرفًا، وَلَا يَنقُصُ مِنهُ حَرفًا، لِأَنَّهُ أَمِينُ الوَحيِ.</p>
+
+    <p>ثُمَّ يَصعَدُ إِلَى السَّمَاءِ بَعدَ أَدَاءِ الأَمَانَةِ، كَمَا نَزَلَ بِهَا أَوَّلَ مَرَّةٍ.</p>
+
+    <p>إِنَّهَا رِحلَةُ النُّورِ بَينَ السَّمَاءِ وَالأَرضِ...</p>
+
+    <p>مِن عِندِ اللهِ... إِلَى جِبرِيلَ... إِلَى مُحَمَّدٍ صَلَّى اللهُ عَلَيهِ وَسَلَّمَ... إِلَى البَشَرِيَّةِ كُلِّهَا.</p>
+
+    <p>فَهَذَا القُرآنُ لَيسَ كَلِمَاتِ بَشَرٍ، وَلَا فَلسَفَةَ مُفَكِّرٍ، وَلَا شِعرَ شَاعِرٍ، بَل هُوَ كَلَامُ رَبِّ العَالَمِينَ، حَمَلَهُ رَسُولٌ كَرِيمٌ، وَنَزَلَ بِهِ عَلَى رَسُولٍ كَرِيمٍ، لِيُخرِجَ النَّاسَ مِن ظُلُمَاتِ الجَهلِ إِلَى نُورِ الإِيمَانِ.</p>
+
+    <p>وَمَن تَأَمَّلَ هَذِهِ الأَقسَامَ أَدرَكَ أَنَّ الكَونَ كُلَّهُ يَتَحَرَّكُ لِيَشهَدَ لِلقُرآنِ.</p>
+
+    <p>فَالنُّجُومُ تَشهَدُ.<br>وَاللَّيلُ يَشهَدُ.<br>وَالصُّبحُ يَشهَدُ.<br>وَالسَّمَاءُ تَشهَدُ.<br>وَالأَرضُ تَشهَدُ.</p>
+
+    <p>وَكُلُّ شَيءٍ فِي هَذَا الوُجُودِ يَهمِسُ لِلقُلُوبِ:</p>
+
+    <p class="ql">اثبُتُوا مَعَ الوَحيِ... فَإِنَّ كُلَّ مَا سِوَاهُ يَخنَسُ... وَيَكنِسُ... وَيَذهَبُ... أَمَّا كَلَامُ اللهِ فَهُوَ البَاقِي، وَهُوَ النُّورُ الَّذِي لَا يَخبُو، وَالهُدَى الَّذِي لَا يَنطَفِئُ، وَالحَقُّ الَّذِي لَا يَزُولُ.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHA -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <p style="font-size:1.05rem;line-height:2;color:var(--mist);margin-bottom:20px;">هذه الآيات الخمس من سورة التكوير تُشكِّل قسمًا إلهيًّا محكمًا يتدرَّج من السماء إلى الأرض، ومن الليل إلى الصبح، ليُختَم بجواب القسم: تقرير مصدر الوحي. ولا يمكن الوقوف على أسرارها إلا بتفصيل بلاغي دقيق:</p>
+
+  <div id="s1a" class="sub"><h3>أ. الصور البيانية (بيان)</h3></div>
+
+  <div class="card b"><div class="ct">١. الاستعارة المكنية في «تَنَفَّسَ»</div>
+    <p>شبَّه اللهُ الصبحَ بكائنٍ حيٍّ يتنفَّس، فحذف المشبَّه به (الكائن الحيّ) ورمز إليه بلازمٍ من لوازمه وهو التنفُّس. وهذه استعارة مكنية تصريحية بلغت الغاية في التصوير؛ إذ جعلت للنور حياةً، وللضياء حركةً، ولانبثاق الفجر لحظةَ ميلادٍ.</p>
+    <div class="src"><strong>الزمخشري في «الكشاف»</strong> (ج٤/ص٧١٤، تحقيق: عادل عبد الموجود، دار الكتب العلمية): «استُعيرَ التنفُّسُ للصبح، وذلك أنه إذا أقبل أقبل بإقبال روح ونسيم، فجعل ذلك نَفَسًا له على المجاز».</div>
+  </div>
+
+  <div class="card b2"><div class="ct">٢. الاستعارة في «الْكُنَّسِ»</div>
+    <p>شُبِّهت النجومُ حين تختفي في مطالعها بالظبيَة التي تدخل كِنَاسها (بيتها الذي تأوي إليه بين الشجر). فالجامعُ بينهما: الاختفاءُ بعد الظهور والاستكنان بعد البروز. وهذه استعارة تمثيلية بديعة ترسم للكواكب مأوى كمأوى الحيوان الوحشيّ.</p>
+    <div class="src"><strong>الفخر الرازي في «مفاتيح الغيب»</strong> (ج٣١/ص٦٢، دار إحياء التراث العربي): «الكُنَّس جمع كانس، من كَنَس الظبيُ إذا دخل كِنَاسَه، والكِنَاس بيتُ الظبي، فشُبِّه غياب النجوم في المغرب بدخول الظبي كنَاسه».</div>
+  </div>
+
+  <div class="card b"><div class="ct">٣. الاستعارة في «عَسْعَسَ»</div>
+    <p>الفعل «عسعس» يحمل في نفسه معنى الحركة الخفيفة الخافتة كالحركة السرِّية للماشي في الظلام؛ فكأنَّ الليلَ يمشي إقبالاً وإدبارًا مشيًا خفيًّا. وهي استعارة تبعية في الفعل تُوحي بلطف الحركة وخفائها.</p>
+  </div>
+
+  <div class="card b3"><div class="ct">٤. الكناية في «رَسُولٍ كَرِيمٍ»</div>
+    <p>عبَّر عن جبريل عليه السلام بـ«رسول كريم» كنايةً عن جلالة قدره، وعِظَم أمانته، وطهارة مصدره، ورفعة منزلته عند ربِّه. وهذه كنايةٌ عن موصوف، إذ يُلمَح إليه من غير تصريح باسمه، وفي ذلك تعظيمٌ للمُبلِّغ يعقبه تعظيمٌ للمُبلَّغ (القرآن).</p>
+    <div class="src"><strong>القرطبي في «الجامع لأحكام القرآن»</strong> (ج١٩/ص٢٣٩، تحقيق: أحمد البردوني، دار الكتب المصرية): «الرسول الكريم هو جبريل عليه السلام، وصفه الله بالكريم لكرامته عليه، ولأنه أمين على وحيه».</div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>ب. المحسنات البديعية</h3></div>
+
+  <div class="g2">
+    <div class="mc"><span class="ml">الطباق</span><span class="mv">الليل / الصبح</span><span class="md">طباق إيجابي جلي بين الظلام والنور، مع طباق ثانٍ خفيّ في «عسعس» نفسها بين معنى الإقبال والإدبار (طباق مضمن).</span></div>
+    <div class="mc"><span class="ml">الطباق</span><span class="mv">الخُنَّس / الجَوَارِ</span><span class="md">بين الاختفاء (الخنوس) والجريان (الجريان)، وهو تضاد بديع يوحي بأن الحركة والسكون دورة واحدة لا انفصال بينهما.</span></div>
+    <div class="mc"><span class="ml">السجع المتوازي</span><span class="mv">الخنَّس / الكنَّس</span><span class="md">اتفاق في الروي والوزن (فُعَّل)، وهو من أعذب السجع لأنه بين لفظتين مترادفتين في البنية متضادَّتين في الحركة.</span></div>
+    <div class="mc"><span class="ml">الجناس الناقص</span><span class="mv">خَنَسَ / كَنَسَ</span><span class="md">اختلافٌ في حرف واحد فقط (الخاء/الكاف) مع اتحاد سائر الحروف والوزن، فأنتج موسيقى داخلية تجذب الأذن قبل العقل.</span></div>
+    <div class="mc"><span class="ml">رد العجز على الصدر</span><span class="mv">القسم على الوحي / رسول كريم</span><span class="md">افتُتحت الآيات بالقسم الكوني وخُتمت بالمُقسَم عليه، فبين البداية والنهاية ترابط محكم يُعيد الذهن إلى المقصود.</span></div>
+    <div class="mc"><span class="ml">حسن الابتداء</span><span class="mv">فَلَا أُقْسِمُ</span><span class="md">افتتاح مفاجئ بلفظ نفيٍ ظاهر ومعناه توكيد القسم، وهو من غرائب افتتاحات العرب في تقوية القسم لا نفيه.</span></div>
+  </div>
+
+  <div class="sub"><h3>ج. أسرار «فَلَا أُقْسِمُ»</h3></div>
+  <div class="card b2"><div class="ct">اختلاف العلماء في «لا» هنا</div>
+    <p>ذهب أكثر المفسرين إلى أن «لا» زائدة للتوكيد، والمعنى: «أُقسِمُ»؛ فذكرها زيادةَ اعتناء بأمر القسم، إذ إن نفيَ القسم عن أمرٍ ثم إثباتَه يفيد أن هذا المُقسَم عليه أعظمُ من أن يُحتاج فيه إلى قسم أصلاً. وذهب فريقٌ إلى أن «لا» ردٌّ لكلام سابق أنكره المشركون (وهو نسبةُ القرآن إلى الشعر والسحر)، ثم استؤنف القسم بعده، والقولان صحيحان يتكاملان.</p>
+    <div class="src"><strong>ابن عاشور في «التحرير والتنوير»</strong> (ج٣٠/ص١٥٤، الدار التونسية للنشر): «حرف "لا" مزيد لقصد الاهتمام بالمقسَم عليه بحيث يُشعِر بأنه غنيٌّ عن التأكيد بالقسم، فيكون القسم زيادةَ اعتناء».</div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHA -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>أ. القراءات القرآنية والصرف</h3></div>
+
+  <table class="tbl">
+    <thead><tr><th>الكلمة</th><th>القراءة المتواترة</th><th>القارئ / التوجيه</th></tr></thead>
+    <tbody>
+      <tr><td class="term">﴿عَسْعَسَ﴾</td><td>بالسين المهملة في الموضعين</td><td>قراءة الجمهور. وهي رباعي مضاعف من (عسّ) بمعنى الطواف بالليل، فكأن الليل يعسّ الأرض إقبالاً وإدباراً.</td></tr>
+      <tr><td class="term">﴿تَنَفَّسَ﴾</td><td>﴿تَنَفَّسَ﴾ بفتح النون والفاء</td><td>الجمهور. وزنه (تَفَعَّلَ) الدال على المطاوعة والتكلف — فيه معنى أن الصبح استقبل نَفَسَه بجُهد بعد حبس.</td></tr>
+      <tr><td class="term">﴿الْجَوَارِ﴾</td><td>﴿الْجَوَارِ﴾ بحذف الياء وقفًا ووصلًا</td><td>الجمهور، وهي الأصل في المنقوص المعرَّف بأل إذا كان مكسورًا. وقرأ بعضهم بإثبات الياء وصلاً وحذفها وقفًا.</td></tr>
+    </tbody>
+  </table>
+  <div class="src"><strong>ابن الجزري في «النشر في القراءات العشر»</strong> (ج٢/ص٣٩٧، دار الكتب العلمية): تحرير قراءات موضع «الْجَوَارِ» في القرآن ومنه هذا الموضع.</div>
+
+  <div class="sub"><h3>الأوزان الصرفية</h3></div>
+  <table class="tbl">
+    <thead><tr><th>الكلمة</th><th>الوزن</th><th>الدلالة الصرفية</th></tr></thead>
+    <tbody>
+      <tr><td class="term">الْخُنَّسِ</td><td>فُعَّل (جمع كثرة لكانس/خانس)</td><td>مفردها «خانس» على وزن فاعل. جمعُ فُعَّل يدلّ في العربية على الكثرة والاستمرار، فتكرار الاختفاء دأبٌ لها.</td></tr>
+      <tr><td class="term">الْكُنَّسِ</td><td>فُعَّل (جمع كثرة لكانس)</td><td>من كَنَسَ الظبي: دخل كناسه. الجمع على فُعَّل يفيد الاستمرار في هذه الحركة اليومية.</td></tr>
+      <tr><td class="term">الْجَوَارِ</td><td>جمع (جَارِيَة) على فَوَاعِل</td><td>اسم فاعل من جرى، والجمع يُشعِر بأنها أفلاك متعددة كلها في حالة جريان مستمر.</td></tr>
+      <tr><td class="term">عَسْعَسَ</td><td>فَعْلَلَ (رباعي مضاعف)</td><td>التضعيف في الرباعي يفيد التكثير أو التقليل الخفيف؛ ولذا حمل معنى الحركة الخفيَّة سواء إقبالاً أو إدباراً.</td></tr>
+      <tr><td class="term">تَنَفَّسَ</td><td>تَفَعَّلَ</td><td>وزن المطاوعة والتكلُّف؛ يشعر بأن الصبح استخرج نَفَسَه من ظُلمة مُطبقة، لا أنه انبثق دفعة واحدة، بل انبثاقاً متدرجاً حياً.</td></tr>
+    </tbody>
+  </table>
+
+  <div id="s2b" class="sub"><h3>ب. المشترك اللفظي</h3></div>
+
+  <div class="ib">
+    <div class="ir"><div class="iw">عَسْعَسَ</div><div class="id">من أشهر المشترك اللفظي في القرآن: تُطلَق على إقبال الليل (بداية ظلامه)، وعلى إدباره (رحيله عند الفجر). كلا المعنيين ثابت في لسان العرب، وقد أفاد القرآن من هذا الاشتراك ليجمع بين الحالين في لفظة واحدة، فيكون الليلُ في حركاته كلها داخلاً تحت القسم.</div></div>
+    <div class="ir"><div class="iw">كَنَسَ</div><div class="id">يُطلَق على دخول الظبي كِنَاسه، وعلى كنس المكان بالمِكنسة (إزالة الغبار)، وعلى استتار الشيء عمومًا. والمراد هنا الأول أو ما يقاربه من الاستكنان في المطلع الفلكيّ.</div></div>
+    <div class="ir"><div class="iw">الْخُنَّسِ</div><div class="id">قال ابن مسعود وابن عباس: هي «بقر الوحش والظِّباء». وقال عليٌّ رضي الله عنه وآخرون: هي «النجوم الخمسة السيَّارة: زُحل والمُشتري والمرِّيخ والزُّهرة وعُطارد». والقولان صحيحان، والقرآن يحتمل المعنيين معًا لأن كليهما فيه الخنوس والكنوس.</div></div>
+    <div class="ir"><div class="iw">تَنَفَّسَ</div><div class="id">يُطلَق على إخراج النَّفَس من الرئة، وعلى بروز الشيء تدريجاً كأنه يستنشق، وعلى امتداد الشيء ذاته (كقولهم: تنفَّس النهار: طال).</div></div>
+    <div class="ir"><div class="iw">رَسُولٍ كَرِيمٍ</div><div class="id">مشتركة في القرآن بين ثلاث دلالات: جبريل عليه السلام (وهو المراد هنا)، ومحمد ﷺ (كما في سورة الحاقة: ﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾ فقيل جبريل وقيل محمد، والصحيح ما فصَّله السياق)، والرسول من الملائكة في مقامات الوحي عمومًا.</div></div>
+  </div>
+  <div class="src"><strong>الطبري في «جامع البيان»</strong> (ج٢٤/ص٢٦١، تحقيق: أحمد شاكر، مؤسسة الرسالة): جمع أقوال السلف في «الخنس الكنس» على أنها النجوم عند علي وابن عمر، والوحش عند ابن مسعود. <strong>وابن كثير في «تفسير القرآن العظيم»</strong> (ج٨/ص٣٣٧، دار طيبة): رجّح أن الآية تعمّ الوجهين لتناسب المعنيين لصورة الخنوس والكنوس.</div>
+
+  <div id="s2c" class="sub"><h3>ج. الفروق اللغوية والمعجمية</h3></div>
+
+  <div class="g2">
+    <div class="mc"><span class="ml">فرق دقيق</span><span class="mv">خَنَسَ ≠ اختفى</span><span class="md">الخنوس: تأخُّرٌ بعد بروز، فيه معنى الرجوع والانكماش. أما الاختفاء فمطلقٌ لا يُشعِر بسبق ظهور. فالخُنَّس: كانت ظاهرة ثم استترت.</span></div>
+    <div class="mc"><span class="ml">فرق دقيق</span><span class="mv">كَنَسَ ≠ غاب</span><span class="md">الكنوس: دخولٌ في مأوى محدَّد يعود إليه صاحبه بانتظام. أما الغياب فرحيلٌ قد لا يعود بعده. فكواكب السماء تكنس ثم تخرج، لا تغيب غيابًا مطلقًا.</span></div>
+    <div class="mc"><span class="ml">فرق دقيق</span><span class="mv">عَسْعَسَ ≠ أظلم</span><span class="md">الإظلام حدث فجائي، أما «عسعس» ففيها معنى الحركة اللطيفة الخفيَّة في الإقبال أو الإدبار. لذا وصفت العرب بها الحارس الذي يمشي ليلًا بخفاء (العَسَس).</span></div>
+    <div class="mc"><span class="ml">فرق دقيق</span><span class="mv">تَنَفَّسَ ≠ طَلَعَ</span><span class="md">الطلوع بروزٌ دفعيّ، أما التنفُّس فامتدادٌ حيويٌّ تدريجيّ فيه معنى الحياة والنسيم واستقبال أول شعاع. فالصبح لا «يطلع» فقط، بل «يتنفَّس».</span></div>
+    <div class="mc"><span class="ml">فرق دقيق</span><span class="mv">جَرَى ≠ سار</span><span class="md">الجري حركة سريعة متتابعة، والسير أعمّ. فالكواكب «تجري» في أفلاكها لأنها في حركة سرعة عظيمة لا مجرد سير عابر، وقد جاء العلم الحديث يؤيد هذا الجري.</span></div>
+    <div class="mc"><span class="ml">فرق دقيق</span><span class="mv">قول ≠ كلام</span><span class="md">«القول» يشمل الحرف الواحد والمعنى الواحد، و«الكلام» ما تركَّب منه فائدة. اختار الله «قول» ليشمل كلَّ حرفٍ نطق به جبريل، حتى لا يشذَّ عن الوحي حرفٌ واحد.</span></div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>د. الإيضاح اللغوي والبلاغي المفصَّل</h3></div>
+
+  <div class="card b"><div class="ct">تدرُّج القسم من الأعلى إلى الأدنى</div>
+    <p>ابتدأ القسم بأشرف المخلوقات (النجوم في السماء) ثم نزل إلى الليل، ثم إلى الصبح، ثم إلى الرسول الكريم (جبريل). وهذا التدرُّج البلاغي المعروف بـ«التدلِّي» يقود العقل من المشاهد المرئية إلى الحقيقة الغيبيَّة (نزول الوحي) بحيث يألف المستمعُ الحقَّ من طريق الحسِّ قبل أن يصل إلى الغيب.</p>
+  </div>
+
+  <div class="card b2"><div class="ct">التقابل بين الحركة والسكون</div>
+    <p>«الْخُنَّس» (اختفاء) في مقابل «الْجَوَار» (حركة)، و«اللَّيْل» (سكون) في مقابل «الصُّبْح» (يقظة). ولا يجتمع الطرفان إلا بقدرة الله. وهذا التقابل يمهِّد بأنَّ الذي يُصرِّف السماوات والأرض قادرٌ على إرسال الوحي، وأنَّ اختلاف الأحوال في الكون شاهدٌ على وحدانية المُصرِّف.</p>
+  </div>
+
+  <div class="card b3"><div class="ct">فصاحة «تَنَفَّسَ» وسرُّ اختيارها</div>
+    <p>لم يقل «طلع» ولا «انبثق» ولا «أضاء»، بل قال «تنفَّس». وفي هذه اللفظة سرٌّ لغوي عجيب: الصبح تصحبه ريح لطيفة (نسيم الفجر) تسمى عند العرب «نَفَس الصبح»، وهذا حسٌّ حقيقيٌّ يشعر به من يقظ للفجر. فالتعبير يجمع بين الحقيقة الحسِّية (النسيم) والاستعارة (الحياة).</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 SIYAQ -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات القرآنية</h2></div>
+
+  <div class="sub"><h3>أولاً: علاقة الآيات بما قبلها في السورة (التكوير ١–١٤)</h3></div>
+  <div class="card b"><div class="ct">المقدمة الرهيبة: مشاهد القيامة الاثنا عشر</div>
+    <p>افتُتحت السورة بأشدِّ المشاهد الكونيَّة: تكوير الشمس، وانكدار النجوم، وتسيير الجبال، وتعطيل العشار، وحشر الوحوش، وتفجير البحار، وتزويج النفوس، ووأد الموءودة، ونشر الصحف، وكشط السماء، وتسعير الجحيم، وإزلاف الجنة. اثنا عشر مشهدًا كلها انقلابات كونية. ثم جاءت الآيات (١٥–١٩) بقسم يستحضر النجوم والليل والصبح — وكأنها تقول: هذا الكون الذي رأيتموه ينقلب في الآخرة، هو نفسه اليوم يشهد لكم على صدق الوحي المنذِر بذلك الانقلاب.</p>
+  </div>
+
+  <div class="sub"><h3>ثانياً: علاقة الآيات بما بعدها (التكوير ٢٠–٢٩)</h3></div>
+  <div class="card b2"><div class="ct">تكامل السياق: من جبريل إلى محمد ﷺ إلى القرآن</div>
+    <p>بعد قوله ﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾، جاء وصفُ جبريل عليه السلام بخمس صفات جليلة: ﴿ذِي قُوَّةٍ عِندَ ذِي الْعَرْشِ مَكِينٍ ۝ مُّطَاعٍ ثَمَّ أَمِينٍ﴾ (٢٠–٢١). ثم انتقل السياق إلى تبرئة النبي ﷺ من الجنون ﴿وَمَا صَاحِبُكُم بِمَجْنُونٍ﴾ (٢٢)، وإثبات رؤيته لجبريل ﴿وَلَقَدْ رَآهُ بِالْأُفُقِ الْمُبِينِ﴾ (٢٣)، وأنه ليس شحيحًا بالوحي ﴿وَمَا هُوَ عَلَى الْغَيْبِ بِضَنِينٍ﴾ (٢٤)، ونفي الشيطنة عن القرآن ﴿وَمَا هُوَ بِقَوْلِ شَيْطَانٍ رَّجِيمٍ﴾ (٢٥). فالسياق كلُّه يبني حصنًا رباعيًا: {مصدر إلهيّ + مبلِّغ سماويّ (جبريل) + متلقٍّ أرضي (محمد ﷺ) + وحي محفوظ}. وقسم النجوم والليل والصبح هو حجر الأساس في هذا البناء.</p>
+  </div>
+
+  <div class="sub"><h3>ثالثاً: تناظر الآيات مع سورة الحاقة</h3></div>
+  <div class="cb"><div class="bt">التقابل البلاغي بين موضعَين قرآنيَّين</div>
+    <div class="ci"><span class="vi">﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾ [التكوير: ١٩]</span><span class="vs">المراد: جبريل. القرينة: السياق يصف حامل الوحي، ثم يقول ﴿مُّطَاعٍ ثَمَّ أَمِينٍ﴾، وطاعة الملائكة إنما هي لجبريل رئيسِهم.</span></div>
+    <div class="ci"><span class="vi">﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ ۝ وَمَا هُوَ بِقَوْلِ شَاعِرٍ﴾ [الحاقة: ٤٠–٤١]</span><span class="vs">المراد: محمد ﷺ. القرينة: ذكرُ الشعر بعده، والشعر يُنسَب إلى البشر لا إلى الملائكة.</span></div>
+    <div class="ci"><span class="vi">الحكمة</span><span class="vs">أن كليهما — جبريل ومحمد ﷺ — «رسول كريم»؛ فالقرآن ينسبه إلى المبلِّغ السماوي وإلى المبلِّغ الأرضي معًا، لأن الوحي نزل بواسطتيهما جميعًا. فمن جحده جحد رسولَين كريمَين.</span></div>
+  </div>
+  <div class="src"><strong>ابن كثير في «تفسير القرآن العظيم»</strong> (ج٨/ص٣٣٩، دار طيبة): «قوله ﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾ يعني جبريل عليه السلام، قاله ابن عباس والشعبي وميمون بن مهران وقتادة وغيرهم».</div>
+
+  <div class="sub"><h3>رابعاً: آيات تُكمِّل معنى القسم الكوني</h3></div>
+  <ul class="cl">
+    <li><strong>﴿وَالنَّجْمِ إِذَا هَوَىٰ ۝ مَا ضَلَّ صَاحِبُكُمْ وَمَا غَوَىٰ﴾ [النجم: ١–٢]</strong>: نظير قوله في التكوير، قسمٌ بالنجم لصدق النبيّ ﷺ. فالنجم شاهدٌ متكرِّر في القرآن على صدق الرسالة.</li>
+    <li><strong>﴿وَالشَّمْسِ وَضُحَاهَا ۝ وَالْقَمَرِ إِذَا تَلَاهَا ۝ وَالنَّهَارِ إِذَا جَلَّاهَا ۝ وَاللَّيْلِ إِذَا يَغْشَاهَا﴾ [الشمس: ١–٤]</strong>: تكرار لأسلوب القسم الكوني المتتابع، ودلالة على أن آيات الله في الليل والصبح وسائر مظاهر الكون أدلَّة متكاملة على قدرته وتوحيده.</li>
+    <li><strong>﴿فَلَا أُقْسِمُ بِمَوَاقِعِ النُّجُومِ ۝ وَإِنَّهُ لَقَسَمٌ لَّوْ تَعْلَمُونَ عَظِيمٌ ۝ إِنَّهُ لَقُرْآنٌ كَرِيمٌ﴾ [الواقعة: ٧٥–٧٧]</strong>: نظير مباشر لموضعنا في افتتاح القسم بـ«فلا أقسم» وفي كون المقسم عليه هو القرآن.</li>
+    <li><strong>﴿وَالضُّحَىٰ ۝ وَاللَّيْلِ إِذَا سَجَىٰ ۝ مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ﴾ [الضحى: ١–٣]</strong>: قسمٌ آخر بالليل والضحى لتثبيت النبيّ ﷺ. فالليل والصبح شاهدان دائمان على رعاية الله لعبده.</li>
+  </ul>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 NAWE -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+
+  <div class="sub"><h3>أولاً: نوع الآية</h3></div>
+  <div class="g2">
+    <div class="mc"><span class="ml">النوع الأول</span><span class="mv">آية عقيدة</span><span class="md">مصدرها إثبات مصدر الوحي الإلهيّ ومسؤولية جبريل عن نقله؛ فهي من أصول الإيمان بالكتب والملائكة.</span></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><span class="mv">آية إخبار</span><span class="md">تخبر عن حقيقة نزول القرآن على قلب النبي ﷺ بواسطة جبريل، وعن حركة الكون كشواهد.</span></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><span class="mv">آية توحيد</span><span class="md">القسم بالمخلوقات يدلّ على أن مُصرِّفها واحد؛ فالنجوم والليل والصبح كلها بأمر الله لا بأمر غيره.</span></div>
+    <div class="mc"><span class="ml">النوع الرابع</span><span class="mv">آية ردٍّ على المكذِّبين</span><span class="md">جواب مباشر لمن زعم أن القرآن شعر أو سحر أو قول كاهن، بإثبات مصدره السماوي.</span></div>
+  </div>
+
+  <div class="sub"><h3>ثانياً: الأحكام الشرعية المستنبطة</h3></div>
+
+  <div class="card b"><div class="ct">١. وجوب الإيمان بجبريل عليه السلام تفصيلاً</div>
+    <p>الآية دليل صريح على وجوب الإيمان بجبريل عليه السلام باسمه ووظيفته (حمل الوحي)، وهو ركنٌ من أركان الإيمان بالملائكة، ومن جحده أو أنكر توسُّطه في الوحي فقد كفر بإجماع أهل السنة.</p>
+    <div class="src"><strong>ابن حجر في «فتح الباري شرح صحيح البخاري»</strong> (ج١/ص١١٤، دار المعرفة): «الإيمان بالملائكة أصل، والإيمان بجبريل بخصوصه أخصّ، لأنه واسطة الوحي، فمن ردَّ الوحيَ من طريقه فقد ردَّ الوحيَ نفسه».</div>
+  </div>
+
+  <div class="card b2"><div class="ct">٢. تحريم نسبة القرآن إلى غير الله</div>
+    <p>يستنبط من الآية أنَّ نسبة القرآن إلى محمد ﷺ إنشاءً، أو إلى الشعر، أو إلى السحر، أو إلى الجن، أو إلى «اللاوعي» كما يفعل بعض الحداثيين — كلّها كفرٌ صريح مخرجٌ من الملة، لأنَّ الآيات نصَّت على مصدره: «قول رسول كريم» يحمله من الله.</p>
+    <div class="src"><strong>القاضي عياض في «الشفا بتعريف حقوق المصطفى»</strong> (ج٢/ص٢٧٩، دار الفيحاء، عمان): «من قال في القرآن: إنه ليس من عند الله، أو إنه نظمُ محمدٍ ﷺ، أو إنه شعر — كفر إجماعًا».</div>
+  </div>
+
+  <div class="card b3"><div class="ct">٣. جواز القسم بالمخلوقات لله وحده</div>
+    <p>الآيات فيها قسمٌ من الله بمخلوقاته (النجوم، الليل، الصبح). ومن أحكامها أنَّ هذا حقٌّ لله سبحانه وحده؛ إذ يُقسِم بما شاء من خلقه لعظمته وشأنه، أمَّا العبد فلا يجوز له أن يُقسِم إلا بالله أو باسم من أسمائه أو صفة من صفاته، لحديث النبي ﷺ.</p>
+    <div class="src"><strong>الحديث</strong>: عن ابن عمر رضي الله عنهما أن النبي ﷺ قال: «من كان حالفًا فليحلف بالله أو ليصمت». <strong>البخاري</strong> في الصحيح، كتاب الأيمان والنذور (رقم ٦٦٤٦، ج٨/ص١٦٠، طبعة السلطانية). <strong>ومسلم</strong> في الصحيح، كتاب الأيمان (رقم ١٦٤٦، ج٣/ص١٢٦٦، تحقيق: محمد فؤاد عبد الباقي، دار إحياء التراث). <span class="grade sahih">صحيح متفق عليه</span></div>
+    <div class="src"><strong>وقال ابن القيم في «تحفة المودود»</strong> (ص٧٥، دار البيان دمشق): «قَسَمُ الله بمخلوقاته دليلٌ على شرفها وعظيم آيتها، ولا يقتضي جوازَ قَسَم العبد بها».</div>
+  </div>
+
+  <div class="card b"><div class="ct">٤. مشروعية النظر في الآيات الكونية استدلالاً</div>
+    <p>القسمُ بالنجوم واختفائها وجريانها وبالليل والصبح تنبيهٌ إلى وجوب التأمل في هذه الآيات، والاستدلال بها على وحدانية خالقها. وقد أفاد العلماء أنَّ التفكر في الآيات الكونية عبادة، ومن أعظم أبواب اليقين.</p>
+    <div class="src"><strong>ابن القيم في «مفتاح دار السعادة»</strong> (ج١/ص٢٠٤، دار الكتب العلمية): «التفكُّر في آيات الله المخلوقة سبيلٌ إلى معرفة الله الأكبر، وقد فتح القرآن هذا الباب مرارًا بالقسم بالمخلوقات لإلفات الأنظار إليها».</div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>الإعراب التفصيلي للآيات</h2></div>
+
+  <div class="vb"><div class="vt sm">﴿فَلَا أُقْسِمُ بِالْخُنَّسِ﴾</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">الفاء</div><div class="id">حرف استئنافيّ، وقيل: عاطفة على ما تقدَّم من الكلام مما دلَّ عليه سياق السورة.</div></div>
+    <div class="ir"><div class="iw">لَا</div><div class="id">حرفٌ زائد للتوكيد على قول الجمهور (لتقوية القسم لا لنفيه)، وقيل: نافية لنفي كلام سابق للمشركين ثم استُؤنف القسم بعده.</div></div>
+    <div class="ir"><div class="iw">أُقْسِمُ</div><div class="id">فعل مضارع مرفوع بالضمة الظاهرة، وفاعله ضمير مستتر وجوبًا تقديره «أنا» يعود على الله عزَّ وجلَّ.</div></div>
+    <div class="ir"><div class="iw">بِالْخُنَّسِ</div><div class="id">الباء: حرف جرّ للقسم. «الخنَّس»: اسم مجرور بالباء وعلامة جرِّه الكسرة الظاهرة. والجارُّ والمجرور متعلِّق بـ«أقسم».</div></div>
+  </div>
+
+  <div class="vb"><div class="vt sm">﴿الْجَوَارِ الْكُنَّسِ﴾</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">الْجَوَارِ</div><div class="id">نعتٌ لـ«الخنَّس» مجرور بالكسرة المقدَّرة على الياء المحذوفة (لأنَّه اسم منقوص معرَّف بأل، والأصل: الجواري). أو بدلٌ منها.</div></div>
+    <div class="ir"><div class="iw">الْكُنَّسِ</div><div class="id">نعتٌ ثانٍ لـ«الخنَّس» مجرور بالكسرة الظاهرة، أو نعت لـ«الجواري» على الوجه الثاني.</div></div>
+  </div>
+
+  <div class="vb"><div class="vt sm">﴿وَاللَّيْلِ إِذَا عَسْعَسَ﴾</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">الواو</div><div class="id">حرف عطف على «بالخنس»، أو حرف جرٍّ للقسم، والوجهان جائزان في هذا الموضع.</div></div>
+    <div class="ir"><div class="iw">اللَّيْلِ</div><div class="id">معطوف على «الخنَّس» مجرور بالكسرة، أو مُقسَم به مجرور بواو القسم.</div></div>
+    <div class="ir"><div class="iw">إِذَا</div><div class="id">ظرف زمان مبنيٌّ على السكون في محل نصب، متضمِّن معنى الشرط، مضاف. وهو متعلِّق بـ«أقسم» أو بمحذوف حال من «الليل».</div></div>
+    <div class="ir"><div class="iw">عَسْعَسَ</div><div class="id">فعل ماضٍ مبنيّ على الفتح الظاهر، فاعله ضمير مستتر تقديره «هو» يعود على الليل. والجملة الفعليَّة في محلّ جرٍّ بإضافة «إذا» إليها.</div></div>
+  </div>
+
+  <div class="vb"><div class="vt sm">﴿وَالصُّبْحِ إِذَا تَنَفَّسَ﴾</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَالصُّبْحِ</div><div class="id">الواو: حرف عطف. «الصبح»: معطوف على «الليل» مجرور بالكسرة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">إِذَا</div><div class="id">ظرف زمان مبنيّ على السكون في محل نصب، مضاف.</div></div>
+    <div class="ir"><div class="iw">تَنَفَّسَ</div><div class="id">فعل ماضٍ مبنيّ على الفتح، فاعله ضمير مستتر تقديره «هو» يعود على الصبح. والجملة في محلّ جرٍّ بإضافة «إذا» إليها.</div></div>
+  </div>
+
+  <div class="vb"><div class="vt sm">﴿إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ﴾</div><div class="vr">هذا جواب القسم</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">إِنَّ</div><div class="id">حرف توكيد ونصب.</div></div>
+    <div class="ir"><div class="iw">الهاء</div><div class="id">ضمير متصل مبنيّ على الضمّ في محل نصب اسم «إنَّ»، يعود على القرآن الكريم (المفهوم من السياق).</div></div>
+    <div class="ir"><div class="iw">اللام</div><div class="id">لام التوكيد المزحلقة، دخلت على خبر «إنَّ» لتقويته.</div></div>
+    <div class="ir"><div class="iw">قَوْلُ</div><div class="id">خبر «إنَّ» مرفوع بالضمة الظاهرة، وهو مضاف.</div></div>
+    <div class="ir"><div class="iw">رَسُولٍ</div><div class="id">مضاف إليه مجرور بالكسرة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">كَرِيمٍ</div><div class="id">نعت لـ«رسول» مجرور بالكسرة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">الجملة</div><div class="id">جملة «إنَّه لقول رسول كريم» جواب القسم، لا محلّ لها من الإعراب.</div></div>
+  </div>
+
+  <div class="card b" style="margin-top:14px;"><div class="ct">فائدة: لماذا جاء جواب القسم بـ«إنَّ» واللام معًا؟</div>
+    <p>اجتماع «إنَّ» + اللام المزحلقة + جملة اسمية = ثلاثة مؤكِّدات في جواب واحد، وهذا يسمَّى في البلاغة «الطلب الثلاثي». دلَّ هذا التكثيف على أنَّ المخاطبين (المشركين) كانوا في أعلى درجات الإنكار للوحي، فناسب ذلك أعلى درجات التوكيد. ولو كان المخاطب خاليَ الذهن لجاء القسم بلا مؤكِّدات كثيرة.</p>
+    <div class="src"><strong>عبد القاهر الجرجاني في «دلائل الإعجاز»</strong> (ص٣٢٨، تحقيق: محمود شاكر، مطبعة المدني): «إذا اشتدَّ الإنكار قوَّي القسمُ والتوكيدُ حتى تنتزع الحقيقة انتزاعًا من عقل المكذِّب».</div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+
+  <div class="pq">«اثبُتُوا مَعَ الوَحيِ... فَإِنَّ كُلَّ مَا سِوَاهُ يَخنَسُ... وَيَكنِسُ... وَيَذهَبُ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+
+  <div class="card b"><div class="ct">أولاً: قانون الخنوس والكنوس بلسمًا للحزين</div>
+    <p>المقال يستنبط من «الخنَّس الكنَّس» أعمق قانون نفسيّ: كلُّ ما يبرز في حياتك — من نعمة أو محنة — سيخنس ويكنس. فلا يغرَّنك ظهور الحزن ولا زوال النعمة؛ كلاهما ماضٍ إلى مستقرِّه. <strong>التطبيق:</strong> في أوجّ اللحظة الأليمة، ذكِّر نفسك بأنَّها ككوكب يجري وسيدخل كِناسه، فالبقاء لله وحده.</p>
+  </div>
+
+  <div class="card b2"><div class="ct">ثانياً: علاج القلق بـ«تَنَفَّسَ الصبحُ»</div>
+    <p>هذا المشهد يُدرَّب عليه الإنسان القلق: مهما ثقل الظلامُ في نفسك، فالصبح لا بدَّ آتٍ؛ ليس بقرارٍ منك، بل بأمر مَن يُخرج الحيَّ من الميت. <strong>التطبيق:</strong> عند شدَّة الليل النفسيّ، تذكَّر أن الله هو الذي يأذن للصبح بالتنفُّس، وهو نفسه سيأذن لأحوالك بالانفراج في اللحظة التي يعلمها هو.</p>
+  </div>
+
+  <div class="card b3"><div class="ct">ثالثاً: تربية اليقين بأن الوحي محفوظ</div>
+    <p>حين يُبتلى المؤمن بشُبَه العصر (طعن في القرآن، تشكيك في نقله، مقالات المستشرقين)، فليعُد إلى هذه الآيات: القسم الكوني الرباعي يجعل السماوات كلها شاهدةً على أنَّ ما بين يديه كتابُ ربِّه. <strong>التطبيق:</strong> اجعل هذه الآيات وِردًا يوميًّا في تلاوتك حين تشعر بضعف اليقين.</p>
+  </div>
+
+  <div class="card b"><div class="ct">رابعاً: الأدب مع القرآن باعتباره «قول رسول كريم»</div>
+    <p>إذا كان القرآن قولَ رسولٍ كريم (جبريل) عن ربٍّ أكرم، فحقُّه علينا الأدب في تلاوته، والإكرام في حمله، والتعظيم في تدبُّره، والامتثال لأحكامه. <strong>التطبيق:</strong> اسأل نفسك قبل فتح المصحف: هل أنا الآن مستعدٌّ نفسيًّا لاستقبال «قول رسول كريم» — أم أنَّ قلبي مشغول بغيره؟</p>
+  </div>
+
+  <div class="card b2"><div class="ct">خامساً: تربية النظر الكوني الإيمانيّ</div>
+    <p>يُربِّي القسمُ في الآية عادةَ التأمل في السماء والنجوم والليل والصبح، لا بعين الفلكيّ فحسب، بل بعين المتدبِّر الذي يرى في كلِّ حركة كونيَّة توقيعًا إلهيًّا. <strong>التطبيق:</strong> خصِّص كلَّ فجرٍ دقيقةَ نظرٍ إلى الأفق، تستحضر فيها آية «والصبح إذا تنفَّس»، وتربط بين ما ترى وبين مصدر الوحي.</p>
+  </div>
+
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>البناء الدائري (الخنوس والكنوس):</strong> يُوظِّف المقال ثنائية الظهور والاختفاء كإطار فكريّ يعيد الإنسان إلى الثوابت وسط المتغيرات.</li>
+      <li><strong>الاستدلال الحسِّي:</strong> يبدأ من المرئيّ (النجوم، الليل، الصبح) ليصل إلى الغيبيّ (نزول الوحي)، وهو منهجٌ قرآنيٌّ في الإقناع.</li>
+      <li><strong>التطبيق الوجداني:</strong> لا يقف عند التحليل، بل يُحيل كلَّ صورة قرآنيَّة إلى تجربة نفسيَّة قابلة للاستحضار في اللحظة الشخصية.</li>
+      <li><strong>الخاتمة الشاهدة:</strong> يختم بأن الكون كلَّه شاهدٌ للقرآن، فيتحوَّل المقال من قراءة نظريَّة إلى قناعة راسخة يعيش الإنسان بها.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح وأئمة التفسير.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحيّ بين آيات القرآن ومسيرة الإنسان المعاصر، فيُحوِّل التدبر من نظر مجرد إلى ممارسة عملية للحياة اليومية.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية في تناول قضايا العصر.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">صدق الوحي</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">التزكية</span>
+        <span class="atag">الأدب الإسلامي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+
+
+</body></html>
