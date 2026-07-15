@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حِينَ يَقُومُ الْكَوْنُ عَلَى مِيزَانٍ... وَيَسْقُطُ الْإِنْسَانُ بِالطُّغْيَانِ — سورة الرحمن</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#161826;--bg:#eef0f5;--bg2:#dde1ea;
+  --bronze:#242a4a;--bm:#3a3e72;--blt:#6a6ea8;
+  --bd:#0c0e1a;--bt:#e2ddf0;--bg-g:#a8a8d8;
+  --teal:#8a7a2e;--gold:#8a8ec4;--gold-m:#b6b8dc;
+  --div:#cdd0e0;--mist:#38405a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(58,62,114,.09) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(106,110,168,.08) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--bm),var(--gold));z-index:400;transform-origin:top;}
+.hdr{background:var(--bd);border-bottom:2px solid var(--bm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:flex-end;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.tbtn{background:var(--bronze);color:var(--bg-g);border:1px solid rgba(106,110,168,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--bm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#0a0c16;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(106,110,168,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(106,110,168,.2);}
+.toc-s{color:rgba(106,110,168,.65);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#9296c8;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--bt);background:rgba(106,110,168,.12);border-right-color:var(--blt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--bm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--blt);}
+.hcat{display:inline-block;background:var(--bronze);color:var(--bt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2rem;font-weight:700;color:var(--bd);line-height:1.55;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--bm);border-radius:50%;}
+.vb{background:var(--bd);border:1px solid rgba(106,110,168,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(182,184,220,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.5rem;color:var(--bt);line-height:2.05;position:relative;z-index:1;}
+.vt.sm{font-size:1.24rem;}
+.vr{color:var(--bg-g);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#161826;}
+.abody p{margin-bottom:1.5em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--bm);float:right;line-height:.82;margin-left:8px;}
+.mzlist{list-style:none;padding:0;margin:14px 0;column-count:2;column-gap:24px;}
+.mzlist li{font-family:'Scheherazade New',serif;font-size:1.06rem;color:var(--bronze);padding:6px 0;border-bottom:1px dashed var(--div);break-inside:avoid;}
+.tglist{list-style:none;padding:0;margin:14px 0;}
+.tglist li{font-family:'Scheherazade New',serif;font-size:1.08rem;color:var(--bd);padding:8px 0;border-bottom:1px dashed var(--div);}
+.tglist li:last-child{border-bottom:none;}
+.src{background:rgba(58,62,114,.06);border:1px solid rgba(58,62,114,.24);border-radius:7px;padding:12px 16px;margin:10px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;color:var(--bronze);line-height:1.85;}
+.src strong{color:var(--bm);}
+.grade{display:inline-block;font-size:.66rem;padding:2px 8px;border-radius:3px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;margin-left:6px;}
+.grade.sahih{background:#1e5a3a;}
+.grade.hasan{background:#7a5a10;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--bd);color:var(--blt);border:2px solid var(--bm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.76rem;color:var(--bd);border-bottom:2px solid var(--blt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;color:var(--bronze);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.b{border-right:5px solid var(--bm);}
+.card.b2{border-right:5px solid var(--bronze);}
+.card.b3{border-right:5px solid var(--teal);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.14rem;color:#0c0e1a;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#161826;line-height:1.9;margin-top:6px;}
+.bdg{font-size:.68rem;padding:2px 8px;border-radius:3px;font-family:'Noto Naskh Arabic',sans-serif;background:var(--bm);color:var(--bt);}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--bd);color:var(--bg-g);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--bm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(106,110,168,.05);}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#0c0e1a;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--bm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#0c0e1a;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#161826;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--bm);font-size:.85em;top:11px;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.2rem;color:#0c0e1a;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#0c0e1a;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--blt);border-bottom:2px solid var(--blt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--blt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#0c0e1a,#161826);border:1px solid rgba(106,110,168,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1.16rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(106,110,168,.25);}
+.ci{color:#9498c8;padding:9px 0;border-bottom:1px dashed rgba(106,110,168,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--bg-g);font-size:.78rem;opacity:.8;}
+.vrd{background:linear-gradient(135deg,#0c0e1a,#12141f);border:1px solid rgba(106,110,168,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#9498c8;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--bt);}
+.asec{background:var(--bd);border:1px solid rgba(106,110,168,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--bm),var(--bronze));border:3px solid var(--blt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.36rem;margin-bottom:5px;}
+.ai .at{color:var(--bg-g);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#9498c8;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:var(--bg-g);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(106,110,168,.1);border:1px solid rgba(106,110,168,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--bg-g);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--bt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(106,110,168,.16);color:var(--blt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(106,110,168,.28);}
+.orn{text-align:center;color:var(--blt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--bd);color:#4a4e68;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(106,110,168,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--blt);}
+footer .fb span{color:var(--bg-g);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.6rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}.mzlist{column-count:1;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.15rem;}.hero h1{font-size:1.3rem;}.pq{font-size:1.1rem;padding:20px 16px;}.hdr-i{padding:0 13px;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآيات</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">⚖️ ✦ ⚖️</span>
+  <div class="hcat">تدبر قرآني · الميزان الكوني والشرعي · سورة الرحمن</div>
+  <h1>حِينَ يَقُومُ الْكَوْنُ عَلَى مِيزَانٍ... وَيَسْقُطُ الْإِنْسَانُ بِالطُّغْيَانِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني الليلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة السلجوقي التدبرية</span>
+    <span class="dot"></span>
+    <span>سورة الرحمن — الآيات ٧-٩</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb"><div class="vt">﴿وَالسَّمَاءَ رَفَعَهَا وَوَضَعَ الْمِيزَانَ﴾</div><div class="vr">سورة الرحمن (٥٥)، الآية ٧</div></div>
+  <div class="vb"><div class="vt">﴿أَلَّا تَطْغَوْا فِي الْمِيزَانِ﴾</div><div class="vr">سورة الرحمن (٥٥)، الآية ٨</div></div>
+  <div class="vb"><div class="vt">﴿وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيزَانَ﴾</div><div class="vr">سورة الرحمن (٥٥)، الآية ٩</div></div>
+
+  <div class="abody">
+    <p>لَيْسَتِ السَّمَاءُ مُجَرَّدَ سَقْفٍ مَرْفُوعٍ فَوْقَ الرُّؤُوسِ، وَإِنَّمَا هِيَ إِعْلَانٌ عَظِيمٌ عَنْ نِظَامٍ مُحْكَمٍ، وَدُسْتُورٍ كَوْنِيٍّ لَا يَعْرِفُ الْفَوْضَى. رَفَعَهَا اللَّهُ بِلَا عَمَدٍ، ثُمَّ أَخْبَرَنَا بِالْحَقِيقَةِ الَّتِي تَقُومُ عَلَيْهَا السَّمَاوَاتُ وَالْأَرْضُ: أَنَّهُ وَضَعَ الْمِيزَانَ.</p>
+
+    <p>إِنَّهَا كَلِمَةٌ صَغِيرَةٌ فِي حُرُوفِهَا، عَظِيمَةٌ فِي مَعْنَاهَا. فَالْمِيزَانُ لَيْسَ كَفَّةً وَحَدِيدًا فَحَسْبُ، بَلْ هُوَ قَانُونُ الْوُجُودِ كُلِّهِ، وَسِرُّ بَقَاءِ الْحَيَاةِ، وَنِظَامُ الْكَوْنِ الَّذِي لَوِ اخْتَلَّ لَحْظَةً وَاحِدَةً لَتَحَوَّلَ الْجَمَالُ إِلَى خَرَابٍ.</p>
+
+    <p>فَالسَّمَاءُ لَهَا مِيزَانٌ...<br>وَالْأَرْضُ لَهَا مِيزَانٌ...<br>وَالْقَمَرُ لَهُ مِيزَانٌ...<br>وَالشَّمْسُ لَهَا مِيزَانٌ...<br>وَالنُّجُومُ لَهَا مِيزَانٌ...</p>
+
+    <ul class="mzlist">
+      <li>وَالْمَطَرُ يَنْزِلُ بِمِيزَانٍ...</li>
+      <li>وَالرِّيَاحُ تَهُبُّ بِمِيزَانٍ...</li>
+      <li>وَالْبِحَارُ تَقِفُ عِنْدَ حُدُودِهَا بِمِيزَانٍ...</li>
+      <li>وَالنَّبَاتُ يَنْبُتُ بِمِيزَانٍ...</li>
+      <li>وَالدَّمُ يَجْرِي فِي الْعُرُوقِ بِمِيزَانٍ...</li>
+      <li>وَنَبْضُ الْقَلْبِ بِمِيزَانٍ...</li>
+      <li>وَأَنْفَاسُ الْإِنْسَانِ بِمِيزَانٍ...</li>
+      <li>وَخَلَايَا الْجَسَدِ بِمِيزَانٍ...</li>
+      <li>وَالذَّرَّةُ بِمِيزَانٍ...</li>
+      <li>وَالزَّمَانُ بِمِيزَانٍ...</li>
+    </ul>
+
+    <p>وَلَوِ اخْتَلَّ مِيزَانٌ وَاحِدٌ مِنْ هَذِهِ الْمَوَازِينِ، لَتَحَوَّلَتِ الْحَيَاةُ إِلَى كَارِثَةٍ.</p>
+
+    <p>لَوْ زَادَ الْمَطَرُ قَلِيلًا... كَانَ فَيَضَانًا يَهْدِمُ الْمُدُنَ.<br>وَلَوْ نَقَصَ قَلِيلًا... صَارَتِ الْأَرْضُ قَفْرًا، وَهَلَكَ الزَّرْعُ وَالضَّرْعُ.<br>وَلَوِ اشْتَدَّتِ الرِّيَاحُ بِلَا مِيزَانٍ... لَاقْتُلِعَتِ الْأَشْجَارُ، وَانْهَارَتِ الْبُيُوتُ.<br>وَلَوْ سَكَنَتْ دَائِمًا... لَاخْتَنَقَ الْهَوَاءُ، وَفَسَدَتِ الْحَيَاةُ.<br>وَلَوِ اقْتَرَبَتِ الشَّمْسُ قَلِيلًا... لَاحْتَرَقَتِ الْأَرْضُ.<br>وَلَوِ ابْتَعَدَتْ قَلِيلًا... لَتَجَمَّدَ كُلُّ شَيْءٍ.</p>
+
+    <p>كُلُّ شَيْءٍ مَحْسُوبٌ... وَكُلُّ شَيْءٍ مَوْزُونٌ... وَكُلُّ شَيْءٍ يَسِيرُ بِأَمْرِ اللَّهِ فِي مِيزَانٍ لَا يَخْتَلُّ.</p>
+
+    <p>ثُمَّ يَلْتَفِتُ الْقُرْآنُ إِلَى الْإِنْسَانِ...</p>
+
+    <p>ذَلِكَ الْمَخْلُوقُ الَّذِي يَعِيشُ دَاخِلَ هَذَا الْكَوْنِ الْمُنْضَبِطِ، لَكِنَّهُ كَثِيرًا مَا يَخْتَارُ الطُّغْيَانَ.</p>
+
+    <p>لِذَلِكَ جَاءَ التَّحْذِيرُ مُبَاشَرَةً: ﴿أَلَّا تَطْغَوْا فِي الْمِيزَانِ﴾</p>
+
+    <p>أَيْ لَا تُفْسِدُوا النِّظَامَ الَّذِي أَرَادَهُ اللَّهُ.</p>
+
+    <ul class="tglist">
+      <li>لَا تَطْغَوْا فِي مِيزَانِ الْقَضَاءِ...</li>
+      <li>لَا تَطْغَوْا فِي مِيزَانِ التِّجَارَةِ...</li>
+      <li>لَا تَطْغَوْا فِي مِيزَانِ الْحُكْمِ...</li>
+      <li>لَا تَطْغَوْا فِي مِيزَانِ الْكَلِمَةِ...</li>
+      <li>لَا تَطْغَوْا فِي مِيزَانِ الْحُبِّ وَالْبُغْضِ...</li>
+      <li>لَا تَطْغَوْا فِي مِيزَانِ الْقُوَّةِ...</li>
+      <li>لَا تَطْغَوْا فِي مِيزَانِ الْأُسْرَةِ...</li>
+      <li>لَا تَطْغَوْا فِي مِيزَانِ الْحُقُوقِ...</li>
+    </ul>
+
+    <p>لِأَنَّ الطُّغْيَانَ يَبْدَأُ بِانْحِرَافٍ صَغِيرٍ، ثُمَّ يُصْبِحُ ظُلْمًا، ثُمَّ يَتَحَوَّلُ إِلَى فَسَادٍ، ثُمَّ يَنْتَهِي بِانْهِيَارِ الْأُمَمِ.</p>
+
+    <p>مَا سَقَطَتْ حَضَارَةٌ إِلَّا عِنْدَمَا اخْتَلَّ مِيزَانُ الْعَدْلِ.<br>وَمَا انْتَشَرَ الْفَقْرُ إِلَّا عِنْدَمَا اخْتَلَّ مِيزَانُ تَوْزِيعِ الْحُقُوقِ.<br>وَمَا اشْتَعَلَتِ الْحُرُوبُ إِلَّا عِنْدَمَا طَغَى الْأَقْوِيَاءُ فِي الْمِيزَانِ.<br>وَمَا تَفَكَّكَتِ الْأُسَرُ إِلَّا عِنْدَمَا ضَاعَ مِيزَانُ الرَّحْمَةِ.<br>وَمَا ضَلَّتِ الْقُلُوبُ إِلَّا عِنْدَمَا فَقَدَتْ مِيزَانَ الْإِيمَانِ.</p>
+
+    <p>حَتَّى الْعِبَادَةُ لَهَا مِيزَانٌ.</p>
+
+    <p>فَالتَّسْبِيحُ مِيزَانٌ... كُلُّ سُبْحَانَ اللَّهِ تُعِيدُ الْقَلْبَ إِلَى اتِّزَانِهِ. كُلُّ الْحَمْدُ لِلَّهِ تَزِنُ النِّعْمَةَ فَلَا يَتَحَوَّلُ الْغِنَى إِلَى كِبْرٍ. كُلُّ لَا إِلَهَ إِلَّا اللَّهُ تَزِنُ الْعَقِيدَةَ فَلَا يَمِيلُ الْقَلْبُ لِغَيْرِ اللَّهِ. كُلُّ اللَّهُ أَكْبَرُ تَزِنُ الدُّنْيَا كُلَّهَا، فَلَا تَكْبُرُ الدُّنْيَا فِي عَيْنِ الْمُؤْمِنِ، وَيَبْقَى اللَّهُ أَكْبَرُ مِنْ كُلِّ هَمٍّ، وَأَكْبَرُ مِنْ كُلِّ سُلْطَانٍ، وَأَكْبَرُ مِنْ كُلِّ فِتْنَةٍ.</p>
+
+    <p>وَفِي الْآخِرَةِ... لَنْ تَكُونَ الْمَوَازِينُ رَمْزِيَّةً، بَلْ حَقِيقِيَّةً.</p>
+
+    <p>تُوزَنُ الْأَعْمَالُ... وَتُوزَنُ الْأَقْوَالُ... وَتُوزَنُ النِّيَّاتُ... وَتُوزَنُ الصَّحَائِفُ...</p>
+
+    <p>هُنَاكَ لَا يَنْفَعُ مَالٌ، وَلَا جَاهٌ، وَلَا مَنْصِبٌ، وَإِنَّمَا يَثْقُلُ الْمِيزَانُ بِالْإِيمَانِ، وَالْإِخْلَاصِ، وَالْعَدْلِ، وَالرَّحْمَةِ، وَالْعَمَلِ الصَّالِحِ.</p>
+
+    <p>فَيَا مَنْ تَعِيشُ تَحْتَ سَمَاءٍ قَامَتْ عَلَى مِيزَانٍ... اجْعَلْ قَلْبَكَ عَلَى مِيزَانٍ. وَاجْعَلْ لِسَانَكَ عَلَى مِيزَانٍ. وَاجْعَلْ مَالَكَ عَلَى مِيزَانٍ. وَاجْعَلْ غَضَبَكَ عَلَى مِيزَانٍ. وَاجْعَلْ حُبَّكَ وَبُغْضَكَ عَلَى مِيزَانٍ. وَاجْعَلْ حَيَاتَكَ كُلَّهَا مَوْزُونَةً بِشَرْعِ اللَّهِ، فَإِنَّ اللَّهَ الَّذِي رَفَعَ السَّمَاءَ بِالْمِيزَانِ، لَا يُحِبُّ أَنْ يَرَى الْإِنْسَانَ يَهْدِمُ بِالظُّلْمِ مَا أَقَامَهُ اللَّهُ بِالْعَدْلِ.</p>
+
+    <p>مَا أَجْمَلَ الْحَيَاةَ حِينَ تَسْتَقِيمُ عَلَى مِيزَانِ اللَّهِ... وَمَا أَقْبَحَهَا حِينَ يَحْكُمُهَا الْهَوَى وَالطُّغْيَانُ.</p>
+
+    <p>فَالْكَوْنُ كُلُّهُ يُسَبِّحُ فِي نِظَامٍ، وَيَشْهَدُ أَنَّ خَالِقَهُ وَاحِدٌ، وَأَنَّ شَرِيعَتَهُ هِيَ الْمِيزَانُ الَّذِي تُحْفَظُ بِهِ الدُّنْيَا، وَتَنْجُو بِهِ الْآخِرَةُ.</p>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;color:var(--bronze);font-size:1.1rem;">عَلِيّ خَلِيل عَبَّاس السَّلْجُوقِيّ التُّرْكُمَانِيّ اللَّيْلَانِيّ</p>
+
+    <!-- تخريج -->
+    <div class="sub"><h3>📚 تخريج الآيات والأحاديث الواردة في المقال</h3>
+      <div class="src"><strong>﴿وَالسَّمَاءَ رَفَعَهَا وَوَضَعَ الْمِيزَانَ﴾</strong><br>سورة الرحمن (٥٥)، الآية ٧، مكية. انظر: ابن كثير، تفسير القرآن العظيم، ج٧، ص٤٩٤-٤٩٥ (ط. دار طيبة).</div>
+      <div class="src"><strong>﴿أَلَّا تَطْغَوْا فِي الْمِيزَانِ﴾</strong><br>سورة الرحمن (٥٥)، الآية ٨، مكية.</div>
+      <div class="src"><strong>﴿وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيزَانَ﴾</strong><br>سورة الرحمن (٥٥)، الآية ٩، مكية.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «كَلِمَتَانِ خَفِيفَتَانِ عَلَى اللِّسَانِ، ثَقِيلَتَانِ فِي الْمِيزَانِ»</strong><br>عن أبي هريرة رضي الله عنه، أن رسول الله ﷺ قال: «كَلِمَتَانِ خَفِيفَتَانِ عَلَى اللِّسَانِ، ثَقِيلَتَانِ فِي الْمِيزَانِ، حَبِيبَتَانِ إِلَى الرَّحْمَٰنِ: سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ» — متفق عليه: أخرجه البخاري في صحيحه، كتاب الدعوات، ح٦٤٠٦ (وفي رواية أخرى ح٦٦٨٢)، ومسلم في صحيحه، كتاب الذكر والدعاء والتوبة والاستغفار، ح٢٦٩٤.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «الطُّهُورُ شَطْرُ الْإِيمَانِ، وَالْحَمْدُ لِلَّهِ تَمْلَأُ الْمِيزَانَ»</strong><br>عن أبي مالك الأشعري رضي الله عنه قال: قال رسول الله ﷺ: «الطُّهُورُ شَطْرُ الْإِيمَانِ، وَالْحَمْدُ لِلَّهِ تَمْلَأُ الْمِيزَانَ، وَسُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ تَمْلَآنِ -أَوْ تَمْلَأُ- مَا بَيْنَ السَّمَاوَاتِ وَالْأَرْضِ...» — أخرجه مسلم في صحيحه، كتاب الطهارة، ح٢٢٣.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية</h3>
+    <div class="card b"><div class="ct">الاستعارة المكنية: «وَضَعَ الْمِيزَانَ»</div><p>استعارت الآية للكون صفة الموزون بميزان حسي، مع أن الميزان هنا معنوي (نظام الدقة والتناسب الكوني)، وهذا تجسيد لمعنى مجرد (الدقة الكونية) في صورة أداة محسوسة (الميزان)، ليقرّب المعنى العقلي المجرد إلى الذهن البشري المحدود.</p></div>
+    <div class="card b2"><div class="ct">الاستعارة التصريحية في «تَحَوَّلَ الْجَمَالُ إِلَى خَرَابٍ»</div><p>تصوير اختلال الميزان الكوني بأنه يحوّل الجمال (وهو معنى جمالي) إلى خراب (وهو معنى بنائي مادي)، تشبيه ضمني للكون بلوحة فنية متقنة يهددها الخلل بالتشوه الكامل لا الجزئي فقط.</p></div>
+    <div class="card b3"><div class="ct">الاستعارة في «الطُّغْيَانُ يَبْدَأُ بِانْحِرَافٍ صَغِيرٍ»</div><p>تصوير الفساد الأخلاقي والاجتماعي على هيئة مسار منحدر تدريجي («انحراف... ظلم... فساد... انهيار»)، وهي استعارة حركية (مسار/طريق) تُصوّر الفعل الأخلاقي كخط سير له بداية ونهاية حتمية إذا لم يُوقَف عند أول خطوة.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="card b"><div class="ct">التكرار الاستقرائي: «بِمِيزَانٍ» (عشر مرات متتالية)</div><p>تكرار كلمة «بميزان» عشر مرات في تعداد متتابع (المطر، الرياح، البحار، النبات، الدم، النبض، الأنفاس، الخلايا، الذرة، الزمان) أسلوب استقرائي بلاغي يبني القناعة تراكميًّا لا دفعة واحدة، فكل تكرار يضيف شاهدًا جديدًا حتى تكتمل الصورة الشمولية لدقة الكون كله.</p></div>
+    <div class="card b2"><div class="ct">الطباق المتقابل: «زَادَ/نَقَصَ»، «اقْتَرَبَتْ/ابْتَعَدَتْ»، «سَقَطَتْ/انْتَشَرَتْ»</div><p>سلسلة من التقابلات الثنائية المتتالية (الزيادة والنقصان، القرب والبعد) تُبرز حساسية النظام الكوني الدقيق: أن أي انحراف عن نقطة التوازن -في أي اتجاه- يؤدي للكارثة، لا في اتجاه واحد فقط.</p></div>
+    <div class="card b3"><div class="ct">أسلوب القصر بالنفي والاستثناء: «مَا سَقَطَتْ حَضَارَةٌ إِلَّا عِنْدَمَا...»</div><p>تكرار صيغة «ما... إلا» خمس مرات متتالية أسلوب حصر بلاغي قوي، يقرر أن سبب كل انهيار محدد وواحد (اختلال الميزان بصوره المختلفة)، لا أسباب متعددة متفرقة، وهذا يعزز الفكرة المركزية للمقال: أن كل فساد يعود لأصل واحد.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div class="card b"><div class="ct">أسلوب التوسع الدلالي التدريجي من الكوني إلى الأخلاقي إلى التعبدي</div><p>ينتقل المقال بمهارة بين ثلاث طبقات دلالية لكلمة «ميزان»: الميزان الكوني الفيزيائي (المطر، الرياح، الشمس) ← الميزان الأخلاقي-الاجتماعي (القضاء، التجارة، الحقوق) ← الميزان التعبدي (التسبيح، التهليل) ← ميزان الآخرة الحقيقي. هذا التدرج الدلالي أسلوب أدبي محكم يوسّع أفق الكلمة الواحدة عبر طبقات المعنى كلها دون تفكك.</p></div>
+  <div class="card b2"><div class="ct">الجملة الختامية الموازنة: «مَا أَجْمَلَ الْحَيَاةَ حِينَ تَسْتَقِيمُ... وَمَا أَقْبَحَهَا حِينَ يَحْكُمُهَا الْهَوَى»</div><p>صيغتا تعجب متقابلتان (ما أجمل/ما أقبح) تختمان المقال بموازنة أخيرة تلخص الثنائية التي بُني عليها من البداية: استقامة/طغيان، جمال/قبح، وهي خاتمة تُعيد صياغة عنوان المقال بأسلوب مختلف.</p></div>
+
+  <div id="s2a" class="sub"><h3>القراءات والصرف</h3>
+    <div class="card b"><div class="ct">«الْمِيزَانُ» صرفيًا</div><p>اسم آلة على وزن «مِفْعَال» من مادة «وَزَنَ»، والأصل «مِوزان» فقُلبت الواو ياءً لكسر ما قبلها (إعلال بالقلب)، وصيغة «مِفعال» تدل على الأداة التي يُفعل بها الفعل، فالميزان أداة الوزن، وقد اتسع استخدامه في الآيات من الأداة الحسية إلى النظام المعنوي الكلي.</p></div>
+    <div class="card b2"><div class="ct">«تَطْغَوْا» صرفيًا</div><p>فعل مضارع مجزوم من «طَغَى يَطْغَى» على وزن «فَعَلَ»، وأصل «الطغيان» في اللغة: مجاوزة الحد في كل شيء، وهو من الأفعال المعتلة (ناقص يائي) حُذفت لامه (الألف) للجزم.</p></div>
+    <div class="card b3"><div class="ct">«تُخْسِرُوا» صرفيًا</div><p>فعل مضارع من «أَخْسَرَ» على وزن «أَفْعَلَ» (وليس من «خَسِرَ» الثلاثي المجرد)، وصيغة الإفعال هنا للتعدية: أي لا تجعلوا الميزان خاسرًا (ناقصًا)، بخلاف «خسرتم» التي كانت ستدل على خسارة ذاتية للفاعل لا فعل متعدٍّ يقع على الميزان.</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card b"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْمِيزَانُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الأداة الحسية لوزن الأشياء (تجارة)</td><td class="def">﴿وَزِنُوا بِالْقِسْطَاسِ الْمُسْتَقِيمِ﴾ — الإسراء: ٣٥، ومثله معنى آية الرحمن ٩ في سياق العدل التجاري.</td></tr>
+        <tr><td class="term">النظام الكوني الدقيق (المعنى المراد في آية ٧)</td><td class="def">﴿وَالسَّمَاءَ رَفَعَهَا وَوَضَعَ الْمِيزَانَ﴾ — لا يُقصد به ميزان حسي، بل نظام الدقة والتناسب الكوني كله.</td></tr>
+        <tr><td class="term">أداة الحساب يوم القيامة (ميزان حقيقي غيبي)</td><td class="def">﴿وَنَضَعُ الْمَوَازِينَ الْقِسْطَ لِيَوْمِ الْقِيَامَةِ﴾ — الأنبياء: ٤٧.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْوَزْنُ»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الفعل المادي (وزن الأشياء بالميزان)</td><td class="def">﴿وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ﴾ — الرحمن: ٩، في سياق التجارة والمعاملات.</td></tr>
+        <tr><td class="term">القيمة والثقل المعنوي (كناية عن الأهمية)</td><td class="def">كقولهم: «لا وزن لكلامه»، أي لا قيمة له ولا اعتبار.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="g2">
+      <div class="card b"><div class="ct">الفرق بين «الطُّغْيَان» و«الظُّلْم»</div><p>«الطغيان» تجاوز الحد مطلقًا ولو لم يقع على طرف آخر (كطغيان الماء وارتفاعه)، أما «الظلم» فوضع الشيء في غير موضعه بالضرورة على حساب طرف آخر، فالطغيان أعمّ من الظلم، ولذلك بدأت الآية بالنهي عن الطغيان (الأعم) في الميزان قبل أن يتحول إلى ظلم فعلي واقع على الغير.</p></div>
+      <div class="card b2"><div class="ct">الفرق بين «الْقِسْط» و«الْعَدْل»</div><p>«العدل» المساواة ووضع الشيء في موضعه المستحق عمومًا، أما «القسط» فأخص: هو العدل الظاهر المُدرَك حسًّا الذي يمكن قياسه وتوزيعه بدقة (كقسط الميزان الفعلي)، ولهذا اقترن بالوزن تحديدًا في الآية «أقيموا الوزن بالقسط» لأنه العدل القابل للقياس الدقيق لا العدل المعنوي المجرد فقط.</p></div>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card b"><div class="ct">لماذا جاءت الآيات الثلاث متدرجة: إخبار (٧) ← نهي (٨) ← أمر (٩)؟</div><p>تدرجت الآيات من صيغة الإخبار المحض عن الحقيقة الكونية (رفعها ووضع الميزان)، إلى صيغة النهي عن الاعتداء على هذا النظام (ألا تطغوا)، إلى صيغة الأمر الإيجابي بإقامته فعليًّا (أقيموا الوزن بالقسط)، وهذا تدرج بلاغي محكم من الخبر إلى الإنشاء بنوعيه (النهي ثم الأمر)، يناسب الانتقال من التقرير الكوني إلى التكليف الشرعي العملي.</p></div>
+    <div class="card b2"><div class="ct">لماذا تكرر لفظ «الميزان» ثلاث مرات في آيات متتالية قصيرة؟</div><p>التكرار اللفظي المكثف في مساحة نصية قصيرة جدًّا (ثلاث آيات) يرسّخ المفهوم المحوري للسورة في هذا المقطع بقوة استثنائية، ويجعل القارئ/السامع لا ينسى أن «الميزان» هو الكلمة المفتاحية التي يدور حولها كل هذا المقطع من سورة الرحمن.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السياق المباشر — ما قبل الآيات (الرحمن ٥-٦)</div>
+    <div class="ci"><span class="vi">﴿الشَّمْسُ وَالْقَمَرُ بِحُسْبَانٍ ۝ وَالنَّجْمُ وَالشَّجَرُ يَسْجُدَانِ﴾</span><span class="vs">الرحمن: ٥-٦ — تمهيد مباشر بذكر انضباط الشمس والقمر (بحسبان أي بحساب دقيق منظم) وسجود النجم والشجر، وهو تمهيد كوني يمهّد لذكر «الميزان» في الآية التالية مباشرة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">السياق فيما بعد الآيات (الرحمن ١٠)</div>
+    <div class="ci"><span class="vi">﴿وَالْأَرْضَ وَضَعَهَا لِلْأَنَامِ﴾</span><span class="vs">الرحمن: ١٠ — انتقال من ذكر السماء والميزان إلى ذكر الأرض ومنفعتها للخلق، فتكتمل الصورة الكونية: سماء مرفوعة بميزان، وأرض موضوعة لمنفعة الخلق.</span></div>
+  </div>
+  <div class="cb"><div class="bt">آيات أخرى في معنى الميزان (كوني وشرعي وأخروي)</div>
+    <div class="ci"><span class="vi">﴿وَنَضَعُ الْمَوَازِينَ الْقِسْطَ لِيَوْمِ الْقِيَامَةِ فَلَا تُظْلَمُ نَفْسٌ شَيْئًا﴾</span><span class="vs">الأنبياء: ٤٧ — تفصيل الميزان الأخروي الحقيقي الذي أشار إليه المقال في خاتمته، وهو امتداد طبيعي لمعنى الميزان من الدنيا إلى الآخرة.</span></div>
+    <div class="ci"><span class="vi">﴿وَيْلٌ لِّلْمُطَفِّفِينَ ۝ الَّذِينَ إِذَا اكْتَالُوا عَلَى النَّاسِ يَسْتَوْفُونَ ۝ وَإِذَا كَالُوهُمْ أَوْ وَزَنُوهُمْ يُخْسِرُونَ﴾</span><span class="vs">المطففين: ١-٣ — تفصيل تشريعي دقيق لمعنى «لا تُخسروا الميزان» في السياق التجاري تحديدًا، بذكر وعيد شديد (ويل) لمن يطفف في الكيل والوزن.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط الكلي:</strong> يمتد معنى «الميزان» في القرآن عبر مسار متكامل: تقرير كوني (الرحمن ٧) ← تحذير أخلاقي عام (الرحمن ٨) ← أمر تشريعي عملي (الرحمن ٩) ← تفصيل فقهي تجاري (المطففين ١-٣) ← تحقق أخروي نهائي (الأنبياء ٤٧). وهذا يوضح أن آيات المقال ليست مقطعًا معزولًا، بل نقطة مركزية يتفرع منها معنى الميزان في القرآن كله بدءًا من الكون وانتهاءً بيوم الحساب.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية كونية-إخبارية ✅</div><div class="md">تُخبر عن حقيقة خلقية ثابتة: أن الكون كله قائم على نظام دقيق محكم لا فوضى فيه.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية أحكام تشريعية عملية ✅</div><div class="md">تأمر بإقامة العدل في الوزن فعليًّا، وهي أصل تشريعي في المعاملات التجارية.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية عقدية-أخلاقية عامة ✅</div><div class="md">تؤصّل مبدأ عدم الطغيان في كل ميزان (لا التجاري فقط)، فهي أصل خلقي شامل.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> آيات الرحمن ٧-٩ منظومة كونية-تشريعية-أخلاقية: تقرر حقيقة كونية، وتؤسس حكمًا شرعيًّا عمليًّا، وتؤصّل مبدأً أخلاقيًّا عامًّا يتجاوز التجارة إلى كل ميدان.</div>
+  <div class="sub"><h3>الأحكام والعبر المستنبطة</h3>
+    <div class="card b"><div class="ct">الحكم الأول: تحريم التطفيف في الكيل والميزان</div>
+      <p>استنبط الفقهاء من آية ٩ وآيات المطففين تحريم كل نقص متعمَّد في الكيل أو الوزن عند البيع والشراء، وهو من كبائر الذنوب المتوعَّد عليها بالويل صراحة.</p>
+      <div class="src"><strong>المصدر:</strong> ابن كثير، تفسير القرآن العظيم، ج٨، ص٣٤٩-٣٥٠ (ط. دار طيبة) — عند تفسير سورة المطففين.</div>
+    </div>
+    <div class="card b2"><div class="ct">الحكم الثاني: وجوب العدل في كل الموازين لا الوزن التجاري فقط</div>
+      <p>وسّع المفسرون معنى «الميزان» في هذا السياق ليشمل ميزان القضاء والشهادة والحكم، فالعدل واجب في كل مقام يستدعي وزنًا أو تقييمًا، لا الأسواق حصرًا.</p>
+      <div class="src"><strong>المصدر:</strong> القرطبي، الجامع لأحكام القرآن، ج١٧، ص١٥٩-١٦١ (ط. مؤسسة الرسالة) — عند تفسير آية الرحمن ٩.</div>
+    </div>
+    <div class="card b3"><div class="ct">الحكم الثالث: مشروعية الإكثار من الذكر لثقله في الميزان الأخروي</div>
+      <p>يُستنبط من الأحاديث الصحيحة (كلمتان خفيفتان... والحمد لله تملأ الميزان) استحباب المداومة على أذكار بعينها لثقلها الخاص في ميزان الأعمال يوم القيامة، وهو أصل معتبر في فضائل الأعمال.</p>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>المصدر:</strong> النووي، شرح صحيح مسلم، ج١٧، ص٢١-٢٢ (ط. دار إحياء التراث العربي) — عند شرح حديث «كلمتان خفيفتان».</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآيات تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.3rem;">﴿وَالسَّمَاءَ رَفَعَهَا وَوَضَعَ الْمِيزَانَ ۝ أَلَّا تَطْغَوْا فِي الْمِيزَانِ ۝ وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيزَانَ﴾</div>
+    <div class="vr">سورة الرحمن (٥٥)، الآيات ٧-٩</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَالسَّمَاءَ</div><div class="id">الواو استئنافية أو عاطفة، «السماء» مفعول به منصوب لفعل محذوف يفسره ما بعده تقديره (رفع)، وجاء التقديم للاهتمام والعناية، وهذا من باب الاشتغال النحوي.</div></div>
+    <div class="ir"><div class="iw">رَفَعَهَا</div><div class="id">فعل ماضٍ والفاعل ضمير مستتر تقديره «هو» يعود على الله، والهاء ضمير متصل مفعول به، والجملة الفعلية مفسِّرة للفعل المحذوف (فسّرت عامل الاشتغال).</div></div>
+    <div class="ir"><div class="iw">وَوَضَعَ الْمِيزَانَ</div><div class="id">الواو عاطفة، «وضع» فعل ماضٍ معطوف على «رفعها»، والفاعل ضمير مستتر «هو»، «الميزان» مفعول به منصوب.</div></div>
+    <div class="ir"><div class="iw">أَلَّا تَطْغَوْا</div><div class="id">«أن» حرف مصدري ونصب، «لا» نافية، «تطغوا» فعل مضارع منصوب بحذف النون لأنه من الأفعال الخمسة، والواو فاعل، والمصدر المؤول (أن لا تطغوا) في محل نصب مفعول لأجله أو بدل اشتمال من «الميزان» في الآية السابقة، أي: وضع الميزان لئلا تطغوا فيه.</div></div>
+    <div class="ir"><div class="iw">فِي الْمِيزَانِ</div><div class="id">جار ومجرور متعلق بـ«تطغوا».</div></div>
+    <div class="ir"><div class="iw">وَأَقِيمُوا</div><div class="id">الواو عاطفة أو استئنافية، «أقيموا» فعل أمر مبني على حذف النون لأنه من الأفعال الخمسة، والواو فاعل.</div></div>
+    <div class="ir"><div class="iw">الْوَزْنَ</div><div class="id">مفعول به منصوب.</div></div>
+    <div class="ir"><div class="iw">بِالْقِسْطِ</div><div class="id">جار ومجرور متعلق بـ«أقيموا»، في محل نصب حال، أي: أقيموا الوزن متلبسين بالقسط.</div></div>
+    <div class="ir"><div class="iw">وَلَا تُخْسِرُوا الْمِيزَانَ</div><div class="id">الواو عاطفة، «لا» ناهية جازمة، «تخسروا» فعل مضارع مجزوم بحذف النون، والواو فاعل، «الميزان» مفعول به منصوب.</div></div>
+  </div>
+  <div class="card b" style="margin-top:14px;"><div class="ct">ملاحظة: العدول من الغيبة إلى الخطاب المباشر بين الآيات</div><p>جاءت آية ٧ بصيغة الغيبة («رفعها... وضع») تقريرًا لفعل الله الخالق، ثم انتقلت آية ٨-٩ فجأة إلى صيغة الخطاب المباشر («تطغوا... أقيموا... تخسروا») لمخاطبة الإنسان مباشرة بالتكليف، وهذا الالتفات الأسلوبي (من الغيبة إلى الخطاب) ينقل السامع فجأة من موقع المتلقي المُخبَر إلى موقع المخاطَب المكلَّف، فيشد انتباهه ويوجه الخطاب إليه شخصيًّا بعد التمهيد الكوني العام.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«اجْعَلْ قَلْبَكَ عَلَى مِيزَانٍ. وَاجْعَلْ لِسَانَكَ عَلَى مِيزَانٍ. وَاجْعَلْ مَالَكَ عَلَى مِيزَانٍ»<br><small style="font-size:.65em;color:var(--mist);">— من المقال</small></div>
+  <div class="card b"><div class="ct">أولاً: علاج الإفراط والتفريط بمفهوم "الاتزان" الشامل</div><p>يعالج المقال نفسيًّا ميلًا بشريًّا شائعًا للتطرف في اتجاه واحد (الإفراط أو التفريط) في مختلف جوانب الحياة (الغضب، الحب، الكرم)، مقدّمًا مفهوم "الميزان" كأداة نفسية للاعتدال في كل شيء. <strong>التطبيق:</strong> عند أي انفعال قوي (غضب، إعجاب، حماس)، اسأل نفسك: هل أنا في نقطة التوازن أم انزلقت لأحد طرفي الإفراط أو التفريط؟</p></div>
+  <div class="card b2"><div class="ct">ثانياً: ربط الذكر بإعادة التوازن النفسي الداخلي</div><p>تفسير المقال لكل ذكر بأنه "ميزان" (التسبيح يعيد اتزان القلب، الحمد يزن النعمة فيمنع الكبر، التكبير يزن الدنيا) تقنية نفسية-تعبدية عميقة: ربط العبادة اللفظية اليومية بوظيفة نفسية محددة (استعادة التوازن الداخلي)، لا مجرد ترديد لفظي. <strong>التطبيق:</strong> عند الشعور بالتوهان أو فقدان الاتزان النفسي، استحضر أحد هذه الأذكار بوعي بوظيفته المحددة (سبحان الله لإعادة الاتزان، الحمد لله لمنع الكبر عند النعمة).</p></div>
+  <div class="card b"><div class="ct">ثالثاً: بناء الوعي بالمسؤولية عبر ربط الفردي بالجماعي</div><p>ينتقل المقال من الميزان الفردي (قلبك، لسانك، مالك) إلى الميزان الجماعي (سقوط الحضارات، الحروب، تفكك الأسر)، مما يبني وعيًا نفسيًّا بأن الاختلال الفردي الصغير له أثر تراكمي جماعي كبير. <strong>التطبيق التربوي:</strong> لا تستهن بأي اختلال شخصي صغير في ميزانك الأخلاقي، فتراكم الاختلالات الفردية هو ما يصنع انهيار الأمم كما وصف المقال.</p></div>
+  <div class="card b2"><div class="ct">رابعاً: الاستعداد النفسي لميزان الآخرة الحقيقي</div><p>يهيّئ المقال القارئ نفسيًّا لحقيقة أن كل ما يُخفى في الدنيا (النيات، الأقوال الخفية) سيُوزن علنًا يوم القيامة، وهذا يبني رقابة ذاتية دائمة لا تعتمد على أعين الناس، بل على استحضار الميزان الحقيقي الآتي. <strong>التطبيق:</strong> اسأل نفسك عند كل قول أو فعل خفي: كيف سيبدو هذا موزونًا أمام الله يوم القيامة؟</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>التوسع الدائري من الكوني إلى الفردي وعودًا:</strong> يبدأ المقال بالكون (السماء، الميزان الفلكي)، وينزل تدريجيًّا إلى الإنسان (الميزان الأخلاقي)، ثم إلى القلب الفردي (اجعل قلبك على ميزان)، ثم يعود للكون في الختام (فالكون كله يسبح في نظام)، في بنية دائرية محكمة.</li>
+      <li><strong>التكرار كأداة إقناع تراكمية:</strong> الاعتماد الكثيف على تكرار كلمة "ميزان" وصيغة "لا تطغوا في ميزان..." يبني إقناعًا تراكميًّا لا حجاجيًّا مجردًا، فكل تكرار يضيف بعدًا جديدًا للمعنى الواحد.</li>
+      <li><strong>الخاتمة التأملية الجامعة:</strong> ختم المقال بربط الميزان الكوني بالشريعة («شريعته هي الميزان الذي تُحفظ به الدنيا وتنجو به الآخرة») يحوّل كل المقال من وصف علمي-كوني إلى دعوة عملية للانضباط بالشرع.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح وأئمة التفسير.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين دقة النظام الكوني ومسؤولية الإنسان الأخلاقية في عصر تتزايد فيه صور الطغيان في كل ميدان.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية في تناول موازين العدل والقسط.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">العدل والقسط</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">الإعجاز الكوني</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>

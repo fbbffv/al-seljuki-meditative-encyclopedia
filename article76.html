@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سُورَةٌ تَهْدِمُ كُلَّ الأَصْنَامِ فِي القَلْبِ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1a1625;--bg:#f5f2f8;--bg2:#e8e0f0;
+  --bronze:#3d2f5c;--bm:#5b4a8a;--blt:#9483c4;
+  --bd:#0d0a16;--bt:#e8e2f5;--bg-g:#c4b8e8;
+  --teal:#161228;--gold:#4a3d6b;--gold-m:#6b5a99;
+  --div:#d8cce8;--mist:#4a3d5c;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(91,74,138,.09) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(148,131,196,.07) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--bm),var(--teal));z-index:400;transform-origin:top;}
+.hdr{background:var(--bd);border-bottom:2px solid var(--bm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--blt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--bg-g);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--bronze);color:var(--bg-g);border:1px solid rgba(148,131,196,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--bm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#0a0712;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(148,131,196,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(148,131,196,.2);}
+.toc-s{color:rgba(148,131,196,.6);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#a89ac4;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--bt);background:rgba(148,131,196,.1);border-right-color:var(--blt);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--bm),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--blt);}
+.hcat{display:inline-block;background:var(--bronze);color:var(--bt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.3rem;font-weight:700;color:var(--bd);line-height:1.5;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--bm);border-radius:50%;}
+.vb{background:var(--bd);border:1px solid rgba(148,131,196,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(148,131,196,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.72rem;color:var(--bt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.32rem;}
+.vr{color:var(--bg-g);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#1a1625;}
+.abody p{margin-bottom:1.55em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--bm);float:right;line-height:.82;margin-left:8px;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.16rem;color:var(--bronze);font-weight:700;text-align:center;margin:10px 0;}
+.src{background:rgba(91,74,138,.06);border:1px solid rgba(91,74,138,.22);border-radius:7px;padding:12px 16px;margin:10px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;color:var(--bronze);line-height:1.85;}
+.src strong{color:var(--bm);}
+.grade{display:inline-block;font-size:.66rem;padding:2px 8px;border-radius:3px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.sahih{background:#2e5c3a;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--bd);color:var(--blt);border:2px solid var(--bm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.76rem;color:var(--bd);border-bottom:2px solid var(--blt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;color:var(--bronze);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.b{border-right:5px solid var(--bm);}
+.card.b2{border-right:5px solid var(--bronze);}
+.card.b3{border-right:5px solid var(--teal);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.14rem;color:#0d0a16;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#1a1625;line-height:1.9;margin-top:6px;}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--bd);color:var(--bg-g);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--bm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(148,131,196,.05);}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#0d0a16;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.2rem;color:#0d0a16;min-width:140px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#0d0a16;text-align:center;padding:28px 38px;margin:38px 0;border-top:2px solid var(--blt);border-bottom:2px solid var(--blt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;color:var(--blt);opacity:.22;line-height:1;}
+.cb{background:linear-gradient(135deg,#0a0712,#1a1625);border:1px solid rgba(148,131,196,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--blt);font-family:'Scheherazade New',serif;font-size:1.16rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(148,131,196,.25);}
+.ci{color:#b0a0c8;padding:9px 0;border-bottom:1px dashed rgba(148,131,196,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--bg-g);font-size:.78rem;opacity:.78;}
+.vrd{background:linear-gradient(135deg,#0a0712,#140f1e);border:1px solid rgba(148,131,196,.22);border-radius:6px;padding:16px 20px;margin:12px 0;color:#b0a0c8;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:var(--bt);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--bm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#0d0a16;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#1a1625;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--bm);font-size:.85em;top:11px;}
+.asec{background:var(--bd);border:1px solid rgba(148,131,196,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--bm),var(--bronze));border:3px solid var(--blt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.36rem;margin-bottom:5px;}
+.ai .at{color:var(--bg-g);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#b0a0c8;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:var(--bg-g);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(148,131,196,.1);border:1px solid rgba(148,131,196,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--bg-g);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--bt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(148,131,196,.16);color:var(--blt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(148,131,196,.28);}
+.orn{text-align:center;color:var(--blt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+footer{background:var(--bd);color:#6b5a80;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(148,131,196,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--blt);}
+footer .fb span{color:var(--bg-g);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.8rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.2rem;}.hero h1{font-size:1.45rem;}.pq{font-size:1.1rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">سُورَةٌ تَهْدِمُ كُلَّ الأَصْنَامِ فِي القَلْبِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي والبلاغة الدقيقة</a>
+  <a class="toc-a sub" href="#s1a">أحدٌ لا واحدٌ</a>
+  <a class="toc-a sub" href="#s1b">أسلوب النفي المتدرج</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والصرفي والمشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2a">اشتقاق أحد والصمد</a>
+  <a class="toc-a sub" href="#s2b">مشترك «أحد» في القرآن</a>
+  <a class="toc-a" href="#s3">٣. الفروق اللغوية والمعجمية</a>
+  <a class="toc-a" href="#s4">٤. ترابط السياقات وسبب النزول</a>
+  <a class="toc-a" href="#s5">٥. نوع السورة والأحكام المستنبطة</a>
+  <a class="toc-a" href="#s6">٦. إعراب السورة كاملة</a>
+  <a class="toc-a" href="#s7">٧. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ☾ ✦</span>
+  <div class="hcat">تدبر قرآني · سورة الإخلاص · التوحيد الخالص</div>
+  <h1>سُورَةٌ تَهْدِمُ كُلَّ الأَصْنَامِ فِي القَلْبِ<br>حِينَ يُعْلِنُ الكَوْنُ كُلُّهُ: لَيْسَ كَمِثْلِهِ أَحَدٌ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>سورة الإخلاص: ١-٤</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾</div>
+    <div class="vr">سورة الإخلاص (١١٢)، الآيات ١-٤، مكية</div>
+  </div>
+
+  <div class="abody">
+    <p>هَذِهِ السُّورَةُ القَصِيرَةُ فِي أَلْفَاظِهَا، العَظِيمَةُ فِي مَعَانِيهَا، لَيْسَتْ مُجَرَّدَ آيَاتٍ تُتْلَى، بَلْ هِيَ إِعْلَانٌ خَالِدٌ لِتَحْرِيرِ الإِنْسَانِ مِنْ عُبُودِيَّةِ كُلِّ شَيْءٍ سِوَى اللَّهِ. إِنَّهَا تَهْدِمُ أَوْثَانَ الأَرْضِ، وَأَوْثَانَ النَّفْسِ، وَأَوْثَانَ الهَوَى، لِتُقِيمَ فِي القَلْبِ رَايَةَ التَّوْحِيدِ الخَالِصِ.</p>
+
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾</div><div class="vr">الإخلاص (١١٢): ١</div></div>
+
+    <p>لَمْ يَقُلِ القُرْآنُ: وَاحِدٌ، وَإِنَّمَا قَالَ: أَحَدٌ. فَالوَاحِدُ قَدْ يَكُونُ وَاحِدًا بَيْنَ اثْنَيْنِ أَوْ ثَلَاثَةٍ، وَيَحْتَمِلُ التَّعَدُّدَ بَعْدَهُ، أَمَّا الأَحَدُ فَهُوَ المُتَفَرِّدُ الَّذِي لَا شَبِيهَ لَهُ، وَلَا نَظِيرَ، وَلَا مَثِيلَ، وَلَا يَتَجَزَّأُ، وَلَا يُشَارِكُهُ أَحَدٌ فِي ذَاتِهِ، وَلَا فِي أَسْمَائِهِ، وَلَا فِي صِفَاتِهِ، وَلَا فِي أَفْعَالِهِ.</p>
+
+    <p>قَدْ تَرَى فِي الدُّنْيَا مُلُوكًا، وَأَغْنِيَاءَ، وَأَقْوِيَاءَ، لَكِنَّ كُلَّ وَاحِدٍ مِنْهُمْ يُشْبِهُهُ غَيْرُهُ، وَيُزَاحِمُهُ غَيْرُهُ، وَيَخْلُفُهُ غَيْرُهُ. أَمَّا اللَّهُ... فَهُوَ الأَحَدُ... لَا ثَانِيَ لَهُ، وَلَا نِدَّ لَهُ، وَلَا شَرِيكَ لَهُ. وَلِهَذَا كَانَتْ كَلِمَةُ أَحَدٍ أَبْلَغَ مِنْ كَلِمَةِ وَاحِدٍ، لِأَنَّهَا تَنْفِي كُلَّ صُوَرِ المُشَارَكَةِ وَالمُمَاثَلَةِ نَفْيًا كَامِلًا.</p>
+
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿اللَّهُ الصَّمَدُ﴾</div><div class="vr">الإخلاص (١١٢): ٢</div></div>
+
+    <p>الصَّمَدُ هُوَ السَّيِّدُ الكَامِلُ الَّذِي انْتَهَى إِلَيْهِ السُّؤْدَدُ وَالكَمَالُ. وَهُوَ الَّذِي تَصْمُدُ إِلَيْهِ الخَلَائِقُ جَمِيعًا فِي حَوَائِجِهَا. إِذَا ضَاقَتِ الصُّدُورُ... صَمَدَتْ إِلَيْهِ. إِذَا انْقَطَعَتِ الأَسْبَابُ... صَمَدَتْ إِلَيْهِ. إِذَا اشْتَدَّ المَرَضُ... صَمَدَتْ إِلَيْهِ. إِذَا ضَاقَتِ الأَرْزَاقُ... صَمَدَتْ إِلَيْهِ. إِذَا خَانَكَ النَّاسُ... صَمَدَتْ إِلَيْهِ. وَإِذَا أُغْلِقَتِ الدُّنْيَا أَبْوَابَهَا... بَقِيَ بَابُهُ مَفْتُوحًا لَا يُغْلَقُ.</p>
+
+    <p>كُلُّ البَشَرِ فُقَرَاءُ... أَمَّا هُوَ سُبْحَانَهُ فَهُوَ الغَنِيُّ المُطْلَقُ. وَلِهَذَا كَانَ النَّاسُ يَحْتَاجُونَ إِلَيْهِ فِي كُلِّ نَفَسٍ، بَيْنَمَا هُوَ لَا يَحْتَاجُ إِلَى أَحَدٍ.</p>
+
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿لَمْ يَلِدْ وَلَمْ يُولَدْ﴾</div><div class="vr">الإخلاص (١١٢): ٣</div></div>
+
+    <p>جَاءَ النَّفْيُ بِهَذَا التَّرْتِيبِ البَلِيغِ. فَقَدَّمَ قَوْلَهُ: لَمْ يَلِدْ. لِأَنَّ أَعْظَمَ البَاطِلِ الَّذِي نَسَبَهُ البَشَرُ إِلَى اللَّهِ هُوَ نِسْبَةُ الوَلَدِ إِلَيْهِ. فَقَالَتْ طَوَائِفُ: لِلَّهِ وَلَدٌ. فَجَاءَ الرَّدُّ أَوَّلًا بِإِبْطَالِ هَذِهِ الفِرْيَةِ العَظِيمَةِ. فَاللَّهُ سُبْحَانَهُ لَا يَحْتَاجُ إِلَى وَلَدٍ، لِأَنَّهُ الحَيُّ القَيُّومُ، البَاقِي الَّذِي لَا يَمُوتُ، وَالغَنِيُّ الَّذِي لَا يَفْتَقِرُ، وَالمَالِكُ الَّذِي لَا يُورَثُ مُلْكُهُ.</p>
+
+    <p>ثُمَّ قَالَ: وَلَمْ يُولَدْ. لِأَنَّ كُلَّ مَوْلُودٍ مَسْبُوقٌ بِعَدَمٍ، مُحْتَاجٌ إِلَى وَالِدٍ، وَاللَّهُ هُوَ الأَوَّلُ بِلَا ابْتِدَاءٍ، القَدِيمُ بِلَا بِدَايَةٍ، المَوْجُودُ قَبْلَ كُلِّ مَوْجُودٍ. لَيْسَ قَبْلَهُ شَيْءٌ... وَلَيْسَ بَعْدَهُ فَنَاءٌ.</p>
+
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾</div><div class="vr">الإخلاص (١١٢): ٤</div></div>
+
+    <p>الكُفْءُ هُوَ المُمَاثِلُ وَالنَّظِيرُ وَالمُسَاوِي. أَيْ لَيْسَ لِلَّهِ سُبْحَانَهُ أَحَدٌ يُمَاثِلُهُ فِي ذَاتِهِ. وَلَا فِي قُدْرَتِهِ. وَلَا فِي عِلْمِهِ. وَلَا فِي رَحْمَتِهِ. وَلَا فِي مُلْكِهِ. وَلَا فِي حِكْمَتِهِ. وَلَا فِي جَلَالِهِ.</p>
+
+    <p>كُلُّ مَا يَخْطُرُ بِبَالِكَ... فَاللَّهُ أَعْظَمُ مِنْهُ. وَكُلُّ قُوَّةٍ تَرَاهَا... فَهِيَ مِنْ خَلْقِهِ. وَكُلُّ جَمَالٍ تَشْهَدُهُ... فَهُوَ أَثَرٌ مِنْ آثَارِهِ. أَمَّا ذَاتُهُ سُبْحَانَهُ فَلَا تُدْرِكُهَا الأَبْصَارُ، وَلَا تُحِيطُ بِهَا العُقُولُ.</p>
+
+    <p>لِذَلِكَ يَسْقُطُ كُلُّ مُتَكَبِّرٍ أَمَامَ هَذِهِ الحَقِيقَةِ. فَالمَلِكُ يَفْنَى. وَالغَنِيُّ يَفْتَقِرُ. وَالقَوِيُّ يَضْعُفُ. وَالعَظِيمُ يَمُوتُ.</p>
+
+    <p class="ql">وَيَبْقَى اللَّهُ وَحْدَهُ... الأَحَدُ... الصَّمَدُ... الَّذِي لَا يَلِدُ... وَلَا يُولَدُ... وَلَا يُكَافِئُهُ أَحَدٌ.</p>
+
+    <p>مَنْ فَهِمَ هَذِهِ السُّورَةَ حَقَّ الفَهْمِ، تَحَرَّرَ قَلْبُهُ مِنَ الخَوْفِ إِلَّا مِنَ اللَّهِ، وَمِنَ الرَّجَاءِ إِلَّا فِيهِ، وَمِنَ التَّعَلُّقِ إِلَّا بِهِ. فَلَا يَذِلُّ لِمَخْلُوقٍ، وَلَا يَبِيعُ دِينَهُ لِدُنْيَا، وَلَا يُطَأْطِئُ رَأْسَهُ إِلَّا لِرَبِّ العَالَمِينَ. إِنَّهَا لَيْسَتْ كَلِمَاتٍ تُقْرَأُ بِاللِّسَانِ فَحَسْبُ، بَلْ عَقِيدَةٌ تُبْنَى عَلَيْهَا الحَيَاةُ، وَيَسْتَقِيمُ بِهَا القَلْبُ، وَيَطْمَئِنُّ بِهَا المُؤْمِنُ وَسَطَ تَقَلُّبَاتِ الدُّنْيَا، لِأَنَّهُ يَعْلَمُ أَنَّ لَهُ رَبًّا أَحَدًا، صَمَدًا، لَا يُعْجِزُهُ شَيْءٌ فِي الأَرْضِ وَلَا فِي السَّمَاءِ.</p>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;color:var(--bronze);font-weight:700;">عَلِيّ خَلِيل عَبَّاس السَّلْجُوقِي التُّرْكُمَانِي اللَّيْلَانِيّ</p>
+
+    <div class="sub"><h3>📚 تخريج الأحاديث وسبب النزول</h3>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>سبب النزول: قال المشركون للنبي ﷺ: «يا محمد، انسب لنا ربك» فأنزل الله السورة</strong><br>أخرجه الإمام أحمد في مسنده، والترمذي في سننه (وحسّنه)، وابن جرير الطبري في تفسيره، عن أُبَيّ بن كعب رضي الله عنه. ذكره ابن كثير في تفسير القرآن العظيم، تفسير سورة الإخلاص، «ذكر سبب نزولها وفضيلتها». وقد رُوي أيضاً بأسانيد أخرى مرسلة عن ابن مسعود رضي الله عنه بمعناه.</div>
+      <div class="src"><span class="grade sahih">حسن</span><strong>«الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ، لِأَنَّهُ لَيْسَ شَيْءٌ يُولَدُ إِلَّا سَيَمُوتُ، وَلَيْسَ شَيْءٌ يَمُوتُ إِلَّا سَيُورَثُ، وَإِنَّ اللَّهَ لَا يَمُوتُ وَلَا يُورَثُ»</strong><br>رواه الترمذي وابن جرير الطبري، عن أبي العالية مرسلاً، وقال الترمذي: «هذا أصح» من الرواية المسندة. ذكره ابن كثير في تفسيره لسورة الإخلاص.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث: «وَالَّذِي نَفْسِي بِيَدِهِ إِنَّهَا لَتَعْدِلُ ثُلُثَ القُرْآنِ» (عن سورة الإخلاص)</strong><br>أخرجه البخاري في صحيحه، كتاب فضائل القرآن، ومسلم في صحيحه، ح٨١١، عن أبي سعيد الخدري رضي الله عنه.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث الرجل الذي كان يختم كل ركعة بـ«قل هو الله أحد» في مسجد قباء، فسأله النبي ﷺ عن السبب فقال: «إنها صفة الرحمن، وأنا أحب أن أقرأ بها»، فقال ﷺ: «أخبروه أن الله يحبه»</strong><br>أخرجه البخاري في صحيحه، كتاب الصلاة، عن أنس بن مالك رضي الله عنه.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي والبلاغة الدقيقة</h2></div>
+
+  <div id="s1a" class="sub"><h3>«أَحَدٌ» لا «وَاحِدٌ»: أدق اختيار لفظي في القرآن</h3>
+    <div class="card b"><div class="ct">الفرق البلاغي الدقيق بين أحد وواحد</div><p>كما بيّن المقال بدقة: «واحد» يدخل في العدد ويحتمل أن يُضاف إليه ثانٍ وثالث (فيُقال: جاء واحدٌ من الرجال)، أما «أحد» في مقام النفي أو في وصف الذات الإلهية فهو نفيٌ مطلق لكل مشارك من أصله، لا يدخل في باب العدّ إطلاقاً. هذا الفارق ليس اجتهاداً بلاغياً حديثاً بل هو ما قرره جمهور المفسرين: أن «أحد» أبلغ من «واحد» في مقام نفي المثيل، ولذلك اختير في وصف الله الذي لا يقبل معه أي تصور تعددي مهما كان ضئيلاً.</p></div>
+    <div class="card b2"><div class="ct">القصر بأسلوب «هو الله أحد»</div><p>التركيب «قُلْ هُوَ اللَّهُ أَحَدٌ» يحمل أسلوب قصر بلاغياً: تقديم الضمير «هو» ثم اسم الجلالة ثم الخبر «أحد» يُفيد قصر الألوهية الحقة على الله وحده دون سواه، وكأن الجملة تقول: «لا إله إلا هو، وهو أحد لا شريك له» في تركيب مكثف من ثلاث كلمات فقط.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>أسلوب النفي المتدرج وترتيبه البلاغي المقصود</h3>
+    <div class="card b"><div class="ct">لماذا قُدِّم «لم يلد» على «لم يولد»؟</div><p>كما أوضح المقال، الترتيب هنا مقصود بلاغياً لا عشوائياً: بدأ بنفي الولادة («لم يلد») لأنها الفرية الأعظم التي وقع فيها أكثر الطوائف (نصارى قالوا المسيح ابن الله، ويهود قالوا عزير ابن الله، ومشركو العرب قالوا الملائكة بنات الله)، فكان الأولى بالرد أن يبدأ بإبطال الأخطر والأشيع، ثم يُتبعه بنفي كونه مولوداً («ولم يولد») ليُغلق الباب من الجهتين معاً: لا هو وَلَدَ أحداً، ولا هو وُلِدَ من أحد.</p></div>
+    <div class="card b2"><div class="ct">من النفي المزدوج إلى النفي الثلاثي المتصاعد</div><p>تتصاعد السورة في نفيها: نفي المِثل («لم يلد ولم يولد» ينفي الأقارب)، ثم نفي الكفء والنظير («ولم يكن له كفواً أحد» ينفي حتى الغريب المشابه). فالسورة تنفي التعدد من كل الجهات الممكنة: لا نسل منه، ولا أصل له، ولا نظير يوازيه — وهذا تدرج بلاغي محكم يستوعب كل صور الشرك الممكنة في أربع آيات فقط.</p></div>
+    <div class="card b3"><div class="ct">التكرار الإيقاعي لحرف الميم في فواصل الآيات</div><p>تنتهي آيات السورة بروي موحّد تقريباً (أحدٌ، الصمدُ، يولدْ، أحدٌ) يمنحها إيقاعاً صوتياً متماسكاً قصير النَفَس يُحاكي معناها: فكما أن الله واحد لا يتجزأ، جاءت السورة نفسها وحدة صوتية متماسكة لا تنفصم فواصلها عن بعضها.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI SARFI MUSHTARAK -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والصرفي والمشترك اللفظي</h2></div>
+
+  <div id="s2a" class="sub"><h3>اشتقاق «أَحَد» و«الصَّمَد»</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">صرفياً</span><div class="mv">أَحَد</div><div class="md">اسم على وزن «فَعَل»، وأصله «وَحَد» (من الجذر و ح د)، قُلبت الواو همزة في أوله كما في «إشاح» من «وشاح»؛ ويفترق عن «واحد» (اسم فاعل من وحَد) في أن «أحداً» صيغة جامدة اختصت بمقام النفي العام والوصف الإلهي المطلق.</div></div>
+      <div class="mc"><span class="ml">صرفياً</span><div class="mv">الصَّمَد</div><div class="md">صفة مشبهة على وزن «فَعَل» من الجذر (ص م د)، وأصله اللغوي القصد والاعتماد (صَمَدَ إليه: قصده واعتمد عليه)، ثم خُصّ في أسماء الله بالسيد الذي تُقصَد إليه الخلائق في حوائجها لكمال سؤدده وغناه.</div></div>
+    </div>
+    <div class="card b"><div class="ct">دلالة صيغة «فَعَل» في الاسمين معاً</div><p>يُلاحظ أن كلا الاسمين («أحد» و«الصمد») على وزن صرفي واحد تقريباً (فَعَل)، وهذا التناظر الصرفي بين اسمي الافتتاح («أحد») والوصف الثاني («الصمد») يمنح مطلع السورة توازناً بنائياً محكماً، رغم اختلاف الجذرين اللغويين تماماً.</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي: كلمة «أَحَد» في القرآن الكريم</h3>
+    <table class="tbl">
+      <tr><th>المعنى/السياق</th><th>الشاهد</th></tr>
+      <tr><td class="term">اسم من أسماء الله الحسنى، نفي مطلق للمثيل (كما في المقال)</td><td class="def">﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾ — الإخلاص: ١.</td></tr>
+      <tr><td class="term">بمعنى «أحد الناس» (أي واحد لا بعينه) في سياق النفي العام</td><td class="def">﴿لَّسْتُنَّ كَأَحَدٍ مِّنَ النِّسَاءِ إِنِ اتَّقَيْتُنَّ﴾ — الأحزاب: ٣٢ (خطاب لأمهات المؤمنين).</td></tr>
+      <tr><td class="term">بمعنى شخص واحد في سياق قسمة أو مساواة</td><td class="def">﴿لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّنْهُمْ﴾ — البقرة: ١٣٦ (عدم التفريق بين الأنبياء في الإيمان بهم).</td></tr>
+      <tr><td class="term">في نفي وجود أحد يوازي النبي ﷺ في النسب الأبوي</td><td class="def">﴿مَّا كَانَ مُحَمَّدٌ أَبَا أَحَدٍ مِّن رِّجَالِكُمْ﴾ — الأحزاب: ٤٠.</td></tr>
+    </table>
+    <p style="margin-top:10px;font-size:.92rem;color:var(--mist);">يُلاحظ أن «أحد» في غير سياق التوحيد تُستعمل بمعنى «واحد من الناس» في سياق النفي العام غالباً، بينما تختص في مقام الحديث عن الذات الإلهية (كما في الإخلاص) بمعنى المتفرد المطلق الذي لا نظير له بتاتاً — وهذا فرق سياقي دقيق يوضح براعة القرآن في توظيف اللفظ الواحد بدلالات متدرجة حسب المقام.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 DIFFERENCES -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>الفروق اللغوية والمعجمية</h2></div>
+  <div class="card b"><div class="ct">الفرق بين: أَحَد / وَاحِد</div>
+    <table class="tbl">
+      <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+      <tr><td class="term">أحد</td><td class="def">نفي مطلق لكل مشاركة من أصلها، لا يدخل في باب العدّ، ولا يُضاف إليه ثانٍ في أي سياق تفرّد.</td></tr>
+      <tr><td class="term">واحد</td><td class="def">اسم فاعل يدل على أول العدد، ويحتمل معه تصور الاثنين والثلاثة فيما بعده، وإن كان يوصف به الله أيضاً (﴿وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ﴾ — البقرة: ١٦٣) لكنه أقل مبالغة في نفي المشاركة من «أحد».</td></tr>
+      <tr><td class="term">أحدي (اصطلاحاً)</td><td class="def">لفظ لم يرد في القرآن، لكنه استُعمل عند بعض المتكلمين للدلالة على استحالة التجزؤ في الذات الإلهية، وهو معنى مستمَد من هذه الآية.</td></tr>
+    </table>
+  </div>
+  <div class="card b2"><div class="ct">الفرق بين: الصَّمَد / الغَنِيّ / القَيُّوم</div>
+    <table class="tbl">
+      <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+      <tr><td class="term">الصمد</td><td class="def">من يُقصَد إليه في الحوائج لكمال سؤدده، يجمع معنى الغنى المطلق مع كونه مقصوداً من الخلق (علاقة ثنائية: غناه من جهة، وحاجتهم إليه من جهة أخرى).</td></tr>
+      <tr><td class="term">الغني</td><td class="def">وصف لعدم الحاجة إلى الغير، بدون تضمن معنى «القصد إليه» الذي يحمله الصمد.</td></tr>
+      <tr><td class="term">القيوم</td><td class="def">القائم بنفسه، المُقيم لغيره؛ يتضمن معنى الاستمرار والقيام على تدبير الخلق، وهو أقرب إلى معنى «التدبير» بينما الصمد أقرب إلى معنى «المقصدية والسؤدد».</td></tr>
+    </table>
+  </div>
+  <div class="card b3"><div class="ct">الفرق بين: الكُفْء / الشَّبِيه / النَّظِير / المِثْل</div>
+    <table class="tbl">
+      <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+      <tr><td class="term">الكُفْء</td><td class="def">المُساوي في المرتبة والقدر بحيث يصلح أن يكون نداً في مقام معين (كما في كفاءة النكاح)، وهو اللفظ المختار في ختام السورة.</td></tr>
+      <tr><td class="term">الشبيه</td><td class="def">المشارك في بعض الصفات الظاهرة دون تساوٍ كامل في المرتبة.</td></tr>
+      <tr><td class="term">النظير</td><td class="def">المماثل في الجنس والنوع، أعم من الكفء قليلاً.</td></tr>
+      <tr><td class="term">المِثْل</td><td class="def">الأعم من الجميع، يشمل أي وجه من وجوه المشابهة ولو جزئياً (وهو اللفظ الوارد في آية الشورى: ﴿لَيْسَ كَمِثْلِهِ شَيْءٌ﴾، الأشمل نفياً من الجميع).</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CONTEXT -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>ترابط السياقات وسبب النزول</h2></div>
+  <div class="cb"><div class="bt">سبب النزول وسياق المواجهة العقدية</div>
+    <div class="ci"><span class="vi">سؤال المشركين: «انسب لنا ربك»</span><span class="vs">نزلت السورة رداً مباشراً على طلب المشركين وصف الله بمقاييس مادية (أمِن ذهب هو أم من نحاس؟ كما رُوي عند بعض المفسرين)، فجاء الجواب الإلهي بنفي كل تصور جسماني أو نسبي عن الذات الإلهية دفعة واحدة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">السورتان المجاورتان: الكافرون قبلها، والمعوذتان بعدها</div>
+    <div class="ci"><span class="vi">﴿قُلْ يَا أَيُّهَا الْكَافِرُونَ ۝ لَا أَعْبُدُ مَا تَعْبُدُونَ﴾</span><span class="vs">الكافرون (١٠٩) — تسبق الإخلاص في المصحف، وتُقرر البراءة العملية من عبادة غير الله؛ فتأتي الإخلاص لتُقرر البراءة العقدية النظرية (نفي الشريك أصلاً)، فتكتمل المعادلة: كافرون=البراءة السلوكية، إخلاص=البراءة الاعتقادية.</span></div>
+    <div class="ci"><span class="vi">﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾ و﴿قُلْ أَعُوذُ بِرَبِّ النَّاسِ﴾</span><span class="vs">الفلق (١١٣) والناس (١١٤) — تأتيان بعد الإخلاص مباشرة في ترتيب المصحف، وقد جاءت السنة بقراءة السور الثلاث معاً (المعوذتين مع الإخلاص) عند النوم كما في حديث عائشة في صحيح البخاري، فتشكل الثلاث معاً وحدة عقدية-وقائية متكاملة: توحيد (الإخلاص) ثم استعاذة من شر المخلوق والوسواس (الفلق والناس).</span></div>
+  </div>
+  <div class="cb"><div class="bt">آيات أخرى تنفي الولد عن الله</div>
+    <div class="ci"><span class="vi">﴿وَقَالُوا اتَّخَذَ الرَّحْمَٰنُ وَلَدًا ۗ سُبْحَانَهُ ۚ بَل عِبَادٌ مُّكْرَمُونَ﴾</span><span class="vs">الأنبياء (٢١): ٢٦ — نفي مماثل لدعوى اتخاذ الولد، لكن بصيغة التسبيح والتنزيه بدل صيغة النفي الصريح المباشر كما في الإخلاص.</span></div>
+    <div class="ci"><span class="vi">﴿وَقَالُوا اتَّخَذَ الرَّحْمَٰنُ وَلَدًا ۝ لَّقَدْ جِئْتُمْ شَيْئًا إِدًّا﴾</span><span class="vs">مريم (١٩): ٨٨-٨٩ — سياق أشد تغليظاً في الإنكار، يصف دعوى الولد بأنها «شيء إدّاً» (أمر منكر عظيم)، وتتوعد السماوات والأرض بأن تتشقق وتخرّ الجبال هدّاً من عظم هذه الفرية (مريم: ٩٠-٩١).</span></div>
+    <div class="ci"><span class="vi">﴿لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ﴾</span><span class="vs">الشورى (٤٢): ١١ — الآية الأشمل في نفي المثيل في القرآن كله، وهي أوسع دلالة من «كفواً أحد» في الإخلاص لأنها تنفي المِثل بأي وجه، لا الكفء والنظير فحسب.</span></div>
+  </div>
+  <div class="vrd"><strong>خلاصة الترابط:</strong> تتوزع فكرة السورة (نفي الشريك والولد والمثيل) عبر القرآن كله في مواضع متعددة (الأنبياء، مريم، الشورى)، لكن سورة الإخلاص تبقى الموضع الوحيد الذي يجمع كل هذه المعاني الأربعة (الأحدية، الصمدية، نفي الولادة من الطرفين، نفي الكفء) في أربع آيات مكثفة، وهذا ما جعلها — كما ثبت في الحديث الصحيح — تعدل ثلث القرآن.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 TYPE + AHKAM -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>نوع السورة والأحكام المستنبطة</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع</span><div class="mv">سورة عقدية خالصة ✅</div><div class="md">السورة بأكملها من نوع العقيدة الخالصة (توحيد الأسماء والصفات وتوحيد الربوبية)، ولا يوجد فيها حكم عملي تكليفي مباشر، بل هي تقرير جوهري لأصل الإيمان الذي تُبنى عليه كل الأحكام اللاحقة.</div></div>
+    <div class="mc"><span class="ml">الموضوع</span><div class="mv">توحيد الأسماء والصفات تحديداً</div><div class="md">بخلاف سور أخرى تتناول توحيد الألوهية (كالكافرون) أو توحيد الربوبية (كالأنعام)، تختص الإخلاص بتوحيد الأسماء والصفات: أن ذات الله وصفاته لا تُشبه ذوات المخلوقين وصفاتهم.</div></div>
+    <div class="mc"><span class="ml">السياق</span><div class="mv">جدلي دفاعي (رد على شبهة) ✅</div><div class="md">نزلت جواباً مباشراً على سؤال محدد، فهي من نوع الآيات الجدلية التي تُفنّد شبهة عقدية بعينها (طلب وصف الله بمقاييس مادية أو نسبية).</div></div>
+  </div>
+  <div class="sub"><h3>الأحكام والفضائل المستنبطة</h3>
+    <div class="card b"><div class="ct">الحكم الأول: كفر من ينسب الولد لله تعالى</div><p>يُستنبط من الآيتين ٣-٤ تحريم قطعي ونسبة الكفر لمن يعتقد أن لله ولداً أو نظيراً، وهذا أصل عقدي إجماعي لا خلاف فيه بين المسلمين، وبه يُرد على النصارى في عقيدة البنوة والتثليث، وعلى مشركي العرب في زعمهم الملائكة بنات الله.</p></div>
+    <div class="card b2"><div class="ct">الحكم الثاني: استحباب قراءتها بكثرة لفضلها العظيم</div><p>يُستنبط من حديث «تعدل ثلث القرآن» استحباب الإكثار من قراءتها، وقد ثبتت السنة بقراءتها في ركعتي الفجر مع الكافرون، وفي الوتر، وعند النوم مع المعوذتين، وهذا كله من هدي النبي ﷺ الثابت.</p>
+      <div class="src"><strong>المصدر:</strong> البخاري، صحيح البخاري، كتاب فضائل القرآن؛ ومسلم، صحيح مسلم، ح٨١١، عن أبي سعيد الخدري رضي الله عنه.</div>
+    </div>
+    <div class="card b3"><div class="ct">الحكم الثالث: مشروعية الرقية والتحصن بها</div><p>يُستنبط من حديث عائشة رضي الله عنها في نفث النبي ﷺ بالمعوذات الثلاث (ومنها الإخلاص) على نفسه عند النوم ومسح جسده بهما، مشروعية التحصن بقراءتها والنفث بها كرقية شرعية، وهذا هدي نبوي ثابت.</p>
+      <div class="src"><strong>المصدر:</strong> البخاري، صحيح البخاري، كتاب الطب/فضائل القرآن، عن عروة عن عائشة رضي الله عنها.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 IRAB -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>إعراب السورة كاملة</h2></div>
+
+  <div class="vb" style="margin-bottom:18px;"><div class="vt" style="font-size:1.25rem;">﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾</div><div class="vr">الإخلاص (١١٢): ١</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">قُلْ</div><div class="id">فعل أمر مبني على السكون، والفاعل ضمير مستتر وجوباً تقديره «أنت» يعود على النبي ﷺ.</div></div>
+    <div class="ir"><div class="iw">هُوَ</div><div class="id">ضمير منفصل مبني في محل رفع مبتدأ.</div></div>
+    <div class="ir"><div class="iw">اللَّهُ</div><div class="id">لفظ الجلالة، خبر أول مرفوع وعلامة رفعه الضمة الظاهرة، أو بدل من «هو»، والأرجح عند جمهور النحاة أنه خبر أول.</div></div>
+    <div class="ir"><div class="iw">أَحَدٌ</div><div class="id">خبر ثانٍ للمبتدأ «هو» مرفوع وعلامة رفعه الضمة الظاهرة، منوّن. والجملة الاسمية «هو الله أحد» في محل نصب مقول القول لفعل «قُلْ».</div></div>
+  </div>
+
+  <div class="vb" style="margin:20px 0 18px;"><div class="vt" style="font-size:1.25rem;">﴿اللَّهُ الصَّمَدُ﴾</div><div class="vr">الإخلاص (١١٢): ٢</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">اللَّهُ</div><div class="id">مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة (بدل من لفظ الجلالة السابق، أو مبتدأ جملة استئنافية جديدة).</div></div>
+    <div class="ir"><div class="iw">الصَّمَدُ</div><div class="id">خبر مرفوع وعلامة رفعه الضمة الظاهرة.</div></div>
+  </div>
+
+  <div class="vb" style="margin:20px 0 18px;"><div class="vt" style="font-size:1.25rem;">﴿لَمْ يَلِدْ وَلَمْ يُولَدْ﴾</div><div class="vr">الإخلاص (١١٢): ٣</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">لَمْ يَلِدْ</div><div class="id">«لم»: حرف نفي وجزم وقلب. «يلِدْ»: فعل مضارع مجزوم بـ«لم» وعلامة جزمه السكون، والفاعل ضمير مستتر جوازاً تقديره «هو» يعود على الله تعالى.</div></div>
+    <div class="ir"><div class="iw">وَلَمْ يُولَدْ</div><div class="id">الواو: عاطفة. «لم»: حرف نفي وجزم وقلب. «يُولَدْ»: فعل مضارع مبني للمجهول مجزوم بـ«لم» وعلامة جزمه السكون، ونائب الفاعل ضمير مستتر تقديره «هو» يعود على الله تعالى.</div></div>
+  </div>
+
+  <div class="vb" style="margin:20px 0 18px;"><div class="vt" style="font-size:1.25rem;">﴿وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾</div><div class="vr">الإخلاص (١١٢): ٤</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَلَمْ يَكُنْ</div><div class="id">الواو: عاطفة. «لم»: حرف نفي وجزم وقلب. «يكنْ»: فعل مضارع ناقص مجزوم بـ«لم» وعلامة جزمه السكون.</div></div>
+    <div class="ir"><div class="iw">لَهُ</div><div class="id">جار ومجرور متعلقان بخبر «يكن» المحذوف تقديره «كائناً»، أو متعلقان بـ«كفواً» نفسها.</div></div>
+    <div class="ir"><div class="iw">كُفُوًا</div><div class="id">خبر «يكن» منصوب وعلامة نصبه الفتحة الظاهرة، منوّن (تقدَّم على اسمها).</div></div>
+    <div class="ir"><div class="iw">أَحَدٌ</div><div class="id">اسم «يكن» مؤخر مرفوع وعلامة رفعه الضمة الظاهرة، منوّن.</div></div>
+  </div>
+
+  <div class="card b" style="margin-top:14px;"><div class="ct">ملاحظة إعرابية: تقديم الخبر «كفواً» على الاسم «أحد»</div><p>لاحظ التقديم النحوي البلاغي: قدَّم القرآن الخبر المنصوب «كفواً» على الاسم المرفوع «أحد» في آخر السورة، وهذا التقديم يخدم معنى الحصر: كأن المعنى «ما كان له أحدٌ كفواً» لكن بتقديم «كفواً» يتأكد نفي الكفاءة تحديداً قبل ذكر عموم «أحد»، فيكون آخر ما يُسمع في السورة كلها هو لفظ «أحدٌ» نفسه — ختام السورة بنفس الكلمة التي افتُتحت بها («أحد» في الآية الأولى، و«أحد» في الآية الأخيرة)، وهو تناسق بنائي محكم بين المطلع والختام.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S7 TADABBUR -->
+<div id="s7" class="sec">
+  <div class="sec-h"><div class="sec-n">٧</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«حِينَ يَمْتَلِئُ القَلْبُ بِـ«أَحَدٌ صَمَدٌ»، يَفْرَغُ مِنْ كُلِّ خَوْفٍ لَا مَحَلَّ لَهُ، وَمِنْ كُلِّ تَعَلُّقٍ لَا يَسْتَحِقُّهُ»<br><small style="font-size:.65em;color:var(--mist);">— قراءة تحليلية لمضمون المقال</small></div>
+  <div class="card b"><div class="ct">أولاً: التحرر النفسي من تعدد مصادر الخوف والرجاء</div><p>حين يستقر معنى «الأحد» في القلب، تتوحد بوصلة الخوف والرجاء في اتجاه واحد بدل تشتتها بين مصادر متعددة (خوف من الناس، رجاء في المال، خوف من فوات فرصة). كما ختم المقال: «تحرر قلبه من الخوف إلا من الله، ومن الرجاء إلا فيه» — وهذا تحرر نفسي عميق من إرهاق القلب المشتت بين آلهة كثيرة غير معلنة (المنصب، رأي الناس، المال).</p></div>
+  <div class="card b2"><div class="ct">ثانياً: معنى «الصمد» كعلاج للشعور بالوحدة عند انسداد الأسباب</div><p>تعداد المقال لحالات «صمدت إليه» (ضيق الصدر، انقطاع الأسباب، شدة المرض، ضيق الرزق، خيانة الناس) يُشكِّل خارطة نفسية دقيقة للحظات الأزمة الإنسانية الشائعة، ويقدم لكل حالة منها نفس الحل: الصمود إلى الصمد. <strong>التطبيق:</strong> في كل لحظة انسداد، تذكر أن باباً واحداً لا يُغلق أبداً مهما أُغلقت الأبواب الأخرى.</p></div>
+  <div class="card b"><div class="ct">ثالثاً: أثر التوحيد على إباء الذل والعزة أمام المخلوقين</div><p>يربط المقال بشكل مباشر بين الفهم الصحيح للتوحيد وبين رفض الذل: «فلا يذل لمخلوق، ولا يبيع دينه لدنيا». هذه رابطة تربوية مهمة: ضعف العزة أمام الناس غالباً ما يعكس ضعفاً في استحضار معنى «الصمد» — فمن استشعر أن كل قوة في الأرض من خلق الله وأثر من آثاره، لن يهابها هيبة من يظنها مصدراً مستقلاً للقوة.</p></div>
+  <div class="card b2"><div class="ct">رابعاً: من التنظير العقدي إلى الأثر السلوكي اليومي</div><p>يُظهر المقال في خاتمته نموذجاً تربوياً مهماً: العقيدة الصحيحة ليست معلومة ذهنية مجردة، بل «تُبنى عليها الحياة، ويستقيم بها القلب». <strong>التطبيق:</strong> اجعل من تكرار تدبر معاني «أحد صمد» ممارسة يومية (كما فعل صحابي مسجد قباء)، فتُترجم العقيدة النظرية إلى طمأنينة سلوكية ملموسة وسط تقلبات الحياة.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني الليلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر لآياته · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن الكريم والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط الحيّ بمستجدات العصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن وإخبارات النبي ﷺ</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> يقوم بدراسة التفسير والرؤى بالتزامٍ دقيق بضوابط القرآن والسنة النبوية، مستحضِرًا أقوال السلف الصالح في كل مسألة يتناولها.</p>
+      <p><strong>البُعد الزمني:</strong> يتَّسم بحثه بالربط الحيّ بين النص القرآني ومستجدات العصر، مما يمنح التأمل الأدبي روحًا معاصرة تُقرِّب المعنى القرآني من واقع القارئ اليوم.</p>
+      <p><strong>التحصيل العلمي:</strong> شملت دراساته علم الحديث، مركِّزًا على أحاديث الفتن وإخبارات النبي ﷺ؛ وهذا يؤكد عمق النظر وسلامة المنهج التي بُنيت عليها مقالاته.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">العقيدة والتوحيد</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">اللغة والبلاغة</span>
+        <span class="atag">أصول التفسير</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني الليلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>

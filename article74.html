@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الطريق الذي لا يضل سالكه — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2a1810;--bg:#faf3ea;--bg2:#ecdfc9;
+  --vio:#7a3b2e;--vm:#a85a42;--vlt:#d69a7c;
+  --td:#1a0f0a;--tt:#f5e9dd;--tg:#d4b596;
+  --amber:#1f6b5c;--gold:#1f6b5c;--gold-m:#2f8a72;
+  --div:#d9c4a8;--mist:#4a3226;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(168,90,66,.09) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(47,138,114,.08) 0%,transparent 55%);}
+#prog{position:fixed;top:0;right:0;width:3px;background:linear-gradient(to bottom,var(--vm),var(--gold-m));z-index:400;transform-origin:top;}
+.hdr{background:var(--td);border-bottom:2px solid var(--vm);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;color:var(--vlt);font-size:1rem;flex-shrink:0;}
+.logo span{color:var(--gold-m);font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--tt);font-size:.9rem;text-align:center;flex:1;opacity:.85;}
+.tbtn{background:var(--vio);color:var(--tg);border:1px solid rgba(214,154,124,.4);padding:7px 16px;border-radius:4px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;}
+.tbtn:hover{background:var(--vm);color:#fff;}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:285px;flex-shrink:0;background:#150c08;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(214,154,124,.2);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--vlt);font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(214,154,124,.2);}
+.toc-s{color:rgba(214,154,124,.55);font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#cf9d7f;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:var(--tt);background:rgba(214,154,124,.1);border-right-color:var(--gold-m);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:3px;background:linear-gradient(90deg,transparent,var(--gold-m),transparent);}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.6;letter-spacing:.4em;color:var(--vlt);}
+.hcat{display:inline-block;background:var(--vio);color:var(--tt);font-size:.74rem;padding:3px 15px;border-radius:20px;margin-bottom:18px;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.15rem;font-weight:700;color:var(--td);line-height:1.5;margin-bottom:12px;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:4px;height:4px;background:var(--vm);border-radius:50%;}
+.vb{background:var(--td);border:1px solid rgba(214,154,124,.4);border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(47,138,114,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.7rem;color:var(--tt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.35rem;}
+.vr{color:var(--tg);font-size:.86rem;margin-top:12px;position:relative;z-index:1;opacity:.85;}
+.abody{font-size:1.12rem;line-height:2.05;color:#2a1810;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--vm);float:right;line-height:.82;margin-left:8px;}
+.hl{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--vio);text-align:center;padding:12px 16px;margin:5px 0;border-right:4px solid var(--vm);background:rgba(168,90,66,.06);}
+.scene-list{list-style:none;padding:0;margin:10px 0 20px;}
+.scene-list li{font-family:'Scheherazade New',serif;font-size:1.12rem;color:var(--vio);padding:8px 0;border-bottom:1px dashed var(--div);text-align:center;}
+.scene-list li:last-child{border-bottom:none;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;background:var(--td);color:var(--vlt);border:2px solid var(--vm);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.76rem;color:var(--td);border-bottom:2px solid var(--vlt);padding-bottom:7px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;color:var(--vio);margin-bottom:12px;padding-right:14px;border-right:3px solid var(--gold-m);}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+.card.t{border-right:5px solid var(--vm);}
+.card.t2{border-right:5px solid var(--vio);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#1a0f0a;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#2a1810;line-height:1.9;margin-top:6px;}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;}
+.tbl th{background:var(--td);color:var(--tg);padding:10px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;border-bottom:2px solid var(--vm);}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;}
+.tbl tr:hover td{background:rgba(168,90,66,.04);}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#1a0f0a;font-weight:600;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:var(--bg2);border-radius:7px;padding:14px 18px;margin:11px 0;}
+.ir{display:flex;gap:13px;padding:8px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.2rem;color:#1a0f0a;min-width:160px;font-weight:700;flex-shrink:0;}
+.id{color:var(--mist);font-size:.92rem;flex:1;line-height:1.85;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:7px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.mc .ml{color:var(--vm);font-size:.73rem;margin-bottom:4px;display:block;font-weight:600;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#1a0f0a;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#2a1810;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--vm);font-size:.85em;top:11px;}
+.src{background:#fdf6ea;border:1px solid #d4b870;border-radius:7px;padding:14px 18px;margin:12px 0;font-size:.88rem;color:#5a4410;line-height:1.85;}
+.src strong{color:#3a2c0a;}
+.src .src-label{font-family:'Noto Naskh Arabic',sans-serif;font-size:.72rem;font-weight:700;color:#a8741e;letter-spacing:.06em;margin-bottom:6px;display:block;}
+.grade{display:inline-block;font-size:.68rem;padding:2px 9px;border-radius:3px;font-weight:700;margin-left:6px;}
+.grade.sahih{background:#dff0e2;color:#1b6e2e;border:1px solid #9bcaa6;}
+.cb{background:linear-gradient(135deg,#150c08,#1f130d);border:1px solid rgba(214,154,124,.32);border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{color:var(--vlt);font-family:'Scheherazade New',serif;font-size:1.16rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(214,154,124,.25);}
+.ci{color:#cf9d7f;padding:9px 0;border-bottom:1px dashed rgba(214,154,124,.15);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--tt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:var(--tg);font-size:.78rem;opacity:.8;}
+.asec{background:var(--td);border:1px solid rgba(214,154,124,.4);border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--vm),var(--vio));border:3px solid var(--vlt);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:var(--tt);font-size:1.36rem;margin-bottom:5px;}
+.ai .at{color:var(--tg);font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#cf9d7f;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(214,154,124,.1);border:1px solid rgba(214,154,124,.2);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:var(--tg);font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:var(--tt);font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;background:rgba(214,154,124,.16);color:var(--vlt);font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;border:1px solid rgba(214,154,124,.28);}
+.orn{text-align:center;color:var(--vlt);font-size:1.25rem;margin:48px 0;opacity:.5;letter-spacing:.42em;}
+.sig{text-align:left;color:var(--mist);font-size:.92rem;margin-top:8px;font-family:'Scheherazade New',serif;}
+footer{background:var(--td);color:#332018;text-align:center;padding:30px 20px;font-size:.85rem;border-top:1px solid rgba(214,154,124,.22);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:var(--vlt);}
+footer .fb span{color:var(--tg);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:275px;height:calc(100vh - 58px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.8rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.25rem;}.hero h1{font-size:1.45rem;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">الطَّرِيقُ الَّذِي لَا يَضِلُّ سَالِكُهُ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s0">٠. توثيق الآيات وتخريج الأحاديث</a>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">الصرف والاشتقاق</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام المستنبطة</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تأمل إيماني قرآني · سورة محمد ٦ · مقالة في وصف الجنة</div>
+  <h1>الطَّرِيقُ الَّذِي لَا يَضِلُّ سَالِكُهُ<br>حِينَ يَعْرِفُكَ اللَّهُ طَرِيقَ الْجَنَّةِ... فَلَا تَحْتَاجُ إِلَى دَلِيلٍ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>محمد: ٦</span>
+  </div>
+</div>
+
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿ وَيُدْخِلُهُمُ الْجَنَّةَ عَرَّفَهَا لَهُمْ ﴾</div>
+    <div class="vr">سورة محمد، الآية ٦</div>
+  </div>
+  <div class="abody">
+    <p>مَا أَرَقَّ هَذَا التَّعْبِيرَ... وَمَا أَعْظَمَهُ!</p>
+    <p>لَمْ يَقُلْ سُبْحَانَهُ: "وَيُدْخِلُهُمُ الْجَنَّةَ" ثُمَّ سَكَتَ، بَلْ أَضَافَ كَلِمَةً تَفِيضُ بِالْأُنْسِ وَالطُّمَأْنِينَةِ وَالْحَنَانِ: ﴿عَرَّفَهَا لَهُمْ﴾.</p>
+    <p>وَكَأَنَّ اللَّهَ سُبْحَانَهُ يُخَاطِبُ عِبَادَهُ الْمُؤْمِنِينَ: لَنْ تَكُونُوا غُرَبَاءَ هُنَاكَ... وَلَنْ تَحْتَارُوا فِي أَوَّلِ خُطْوَةٍ... وَلَنْ تَبْحَثُوا عَنْ بُيُوتِكُمْ وَقُصُورِكُمْ... فَقَدْ عَرَّفَهَا لَهُمْ قَبْلَ أَنْ يَدْخُلُوهَا.</p>
+    <p>إِنَّهَا لَيْسَتْ دَارًا يَطْرُقُهَا الْإِنْسَانُ لِأَوَّلِ مَرَّةٍ، بَلْ هِيَ الْوَطَنُ الَّذِي اشْتَاقَتْ إِلَيْهِ الْأَرْوَاحُ مُنْذُ أَنْ عَرَفَتْ رَبَّهَا.</p>
+    <p>قَالَ بَعْضُ السَّلَفِ: إِنَّ الْمُؤْمِنَ إِذَا دَخَلَ الْجَنَّةَ كَانَ أَعْرَفَ بِمَنْزِلِهِ فِيهَا مِنْ مَعْرِفَتِهِ بِمَنْزِلِهِ فِي الدُّنْيَا.</p>
+    <p>أَيُّ كَرَامَةٍ هَذِهِ؟!</p>
+    <p>فِي الدُّنْيَا نَضِيعُ فِي الْمُدُنِ، وَنَحْتَاجُ إِلَى الْخَرَائِطِ وَالْعَنَاوِينِ، وَنَسْأَلُ النَّاسَ عَنِ الطَّرِيقِ... أَمَّا فِي الْجَنَّةِ فَلَا سُؤَالَ، وَلَا ضَيَاعَ، وَلَا حَيْرَةَ.</p>
+    <p>يَمْشِي الْمُؤْمِنُ بِقَلْبٍ مُطْمَئِنٍّ، وَخُطًى وَاثِقَةٍ، حَتَّى يَقِفَ أَمَامَ قَصْرِهِ، وَكَأَنَّهُ عَاشَ فِيهِ آلَافَ السِّنِينَ.</p>
+    <p>لِأَنَّ الَّذِي هَدَاهُ إِلَى الْإِيمَانِ فِي الدُّنْيَا... هُوَ نَفْسُهُ الَّذِي يَهْدِيهِ إِلَى مَنْزِلِهِ فِي الْآخِرَةِ.</p>
+    <p>وَهُنَا يَتَجَلَّى سِرٌّ عَظِيمٌ...</p>
+    <p>لَقَدْ عَرَفُوا طَرِيقَ الْجَنَّةِ فِي الدُّنْيَا قَبْلَ أَنْ يَعْرِفُوا أَبْوَابَهَا فِي الْآخِرَةِ.</p>
+
+    <ul class="scene-list">
+      <li>عَرَفُوهَا بِالسُّجُودِ الطَّوِيلِ...</li>
+      <li>عَرَفُوهَا بِالدُّمُوعِ فِي جَوْفِ اللَّيْلِ...</li>
+      <li>عَرَفُوهَا بِالصَّبْرِ عَلَى الْبَلَاءِ...</li>
+      <li>عَرَفُوهَا بِغَضِّ الْأَبْصَارِ...</li>
+      <li>عَرَفُوهَا بِحِفْظِ اللِّسَانِ...</li>
+      <li>عَرَفُوهَا بِبِرِّ الْوَالِدَيْنِ...</li>
+      <li>عَرَفُوهَا بِالصِّدْقِ وَالْأَمَانَةِ وَالْعَفَافِ وَالْإِحْسَانِ...</li>
+    </ul>
+
+    <ul class="scene-list">
+      <li>كُلُّ خُطْوَةٍ إِلَى الْمَسْجِدِ كَانَتْ خُطْوَةً نَحْوَ الْجَنَّةِ...</li>
+      <li>وَكُلُّ آيَةٍ تُلِيَتْ كَانَتْ تُعَرِّفُ الْقَلْبَ بِطَرِيقِهَا...</li>
+      <li>وَكُلُّ مَعْصِيَةٍ تُرِكَتْ خَوْفًا مِنَ اللَّهِ كَانَتْ لَوْحَةً جَدِيدَةً مِنْ لَوْحَاتِ الطَّرِيقِ إِلَيْهَا.</li>
+    </ul>
+
+    <p>فَلَمَّا جَاءَ يَوْمُ اللِّقَاءِ...</p>
+    <ul class="scene-list">
+      <li>لَمْ يَكُونُوا غُرَبَاءَ...</li>
+      <li>بَلْ كَانُوا أَهْلَ الدَّارِ.</li>
+    </ul>
+
+    <div class="hl">جَزَاءً وِفَاقًا... عَرَفُوا اللَّهَ فِي الرَّخَاءِ... فَعَرَّفَهُمُ اللَّهُ يَوْمَ الْجَزَاءِ.</div>
+
+    <ul class="scene-list">
+      <li>عَرَفُوا أَوَامِرَهُ فَلَمْ يَتَجَاوَزُوهَا...</li>
+      <li>وَعَرَفُوا حُدُودَهُ فَلَمْ يَنْتَهِكُوهَا...</li>
+      <li>وَعَرَفُوا طَرِيقَ الْحَقِّ وَسَطَ طُرُقِ الْفِتَنِ الْمُظْلِمَةِ...</li>
+    </ul>
+
+    <p>فَكَانَ الْجَزَاءُ مِنْ جِنْسِ الْعَمَلِ...</p>
+
+    <div class="vb" style="margin:18px 0;"><div class="vt sm">﴿ وَيُدْخِلُهُمُ الْجَنَّةَ عَرَّفَهَا لَهُمْ ﴾</div></div>
+
+    <p>يَا لَهَا مِنْ كَلِمَةٍ تَمْلَأُ الْقَلْبَ شَوْقًا...</p>
+
+    <ul class="scene-list">
+      <li>الْجَنَّةُ لَيْسَتْ مَكَانًا مَجْهُولًا نَخْشَاهُ...</li>
+      <li>وَلَيْسَتْ أَرْضًا غَرِيبَةً نَقْلَقُ فِيهَا...</li>
+      <li>إِنَّهَا دَارُ الْأَمْنِ بَعْدَ الْخَوْفِ...</li>
+      <li>وَدَارُ الرَّاحَةِ بَعْدَ التَّعَبِ...</li>
+      <li>وَدَارُ اللِّقَاءِ بَعْدَ الْفِرَاقِ...</li>
+      <li>وَدَارُ الْبَقَاءِ بَعْدَ الْفَنَاءِ...</li>
+    </ul>
+
+    <ul class="scene-list">
+      <li>هُنَاكَ لَا وَجَعَ...</li>
+      <li>وَلَا شَيْخُوخَةَ...</li>
+      <li>وَلَا مَرَضَ...</li>
+      <li>وَلَا قَبْرَ...</li>
+      <li>وَلَا وَدَاعَ...</li>
+      <li>وَلَا دُمُوعَ إِلَّا دُمُوعَ الْفَرَحِ.</li>
+    </ul>
+
+    <ul class="scene-list">
+      <li>هُنَاكَ الْوُجُوهُ مُشْرِقَةٌ...</li>
+      <li>وَالْقُلُوبُ مُطْمَئِنَّةٌ...</li>
+      <li>وَالْأَرْوَاحُ سَاكِنَةٌ...</li>
+      <li>وَالرِّضَا يَمْلَأُ كُلَّ شَيْءٍ.</li>
+    </ul>
+
+    <p>فَيَا رَبُّ...</p>
+    <div class="vb"><div class="vt sm">اجْعَلْنَا مِمَّنْ عَرَفُوا طَرِيقَ الْجَنَّةِ فِي الدُّنْيَا، فَسَلَكُوهُ وَإِنْ طَالَ، وَثَبَتُوا عَلَيْهِ وَإِنْ كَثُرَتِ الْفِتَنُ، حَتَّى إِذَا وَقَفُوا عَلَى أَبْوَابِهَا، فُتِحَتْ لَهُمْ أَبْوَابُ الرَّحْمَةِ، وَعَرَفُوا مَنَازِلَهُمْ فِيهَا كَمَا يَعْرِفُ أَحَدُنَا بَيْتَهُ، بَلْ أَعْظَمَ، ثُمَّ قِيلَ لَهُمْ:<br><br>﴿ ادْخُلُوهَا بِسَلَامٍ آمِنِينَ ﴾</div></div>
+
+    <div class="vb"><div class="vt sm">اللَّهُمَّ لَا تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا، وَلَا مَبْلَغَ عِلْمِنَا، وَاجْعَلْ قُلُوبَنَا مُعَلَّقَةً بِالْفِرْدَوْسِ الْأَعْلَى، وَاجْعَلِ اشْتِيَاقَنَا إِلَيْهَا دَافِعًا لِكُلِّ طَاعَةٍ، وَحَاجِزًا عَنْ كُلِّ مَعْصِيَةٍ، حَتَّى نَلْقَاكَ وَأَنْتَ رَاضٍ عَنَّا.</div></div>
+
+    <div class="sig">عَلِيّ خَلِيل عَبَّاس السَّلْجُوقِيّ التُّرْكُمَانِيّ اللَّيْلَانِيّ</div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S0 -->
+<div id="s0" class="sec">
+  <div class="sec-h"><div class="sec-n">٠</div><h2>توثيق الآيات وتخريج الأحاديث الواردة في المقال</h2></div>
+  <div class="src">
+    <span class="src-label">سياق الآية الكريمة</span>
+    الآية جزء من قوله تعالى: ﴿وَالَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ فَلَنْ يُضِلَّ أَعْمَالَهُمْ * سَيَهْدِيهِمْ وَيُصْلِحُ بَالَهُمْ * وَيُدْخِلُهُمُ الْجَنَّةَ عَرَّفَهَا لَهُمْ﴾ — سورة محمد، الآيات ٤-٦ (الصفحة ٥٠٧، الجزء السادس والعشرون).
+  </div>
+  <div class="src">
+    <span class="src-label">تفسير ابن كثير</span>
+    قال ابن كثير: «(ويدخلهم الجنة عرفها لهم) أي: عرفهم بها وهداهم إليها». ونقل عن مجاهد قوله: «يهتدي أهلها إلى بيوتهم ومساكنهم، وحيث قسم الله لهم منها، لا يخطئون، كأنهم ساكنوها منذ خُلقوا، لا يستدلون عليها أحداً». ونقل عن محمد بن كعب القرظي: «يعرفون بيوتهم إذا دخلوا الجنة، كما تعرفون بيوتكم إذا انصرفتم من الجمعة» — (تفسير القرآن العظيم، تفسير الآية ٦ من سورة محمد).
+  </div>
+  <div class="src">
+    <span class="src-label">الحديث الصحيح الذي استشهد به ابن كثير</span>
+    <span class="grade sahih">صحيح</span>
+    عن أبي سعيد الخدري رضي الله عنه أن رسول الله ﷺ قال: «إِذَا خَلَصَ الْمُؤْمِنُونَ مِنَ النَّارِ حُبِسُوا بِقَنْطَرَةٍ بَيْنَ الْجَنَّةِ وَالنَّارِ، يَتَقَاصُّونَ مَظَالِمَ كَانَتْ بَيْنَهُمْ فِي الدُّنْيَا، حَتَّى إِذَا هُذِّبُوا وَنُقُّوا أُذِنَ لَهُمْ فِي دُخُولِ الْجَنَّةِ، وَالَّذِي نَفْسِي بِيَدِهِ إِنَّ أَحَدَهُمْ بِمَنْزِلِهِ فِي الْجَنَّةِ أَهْدَى مِنْهُ بِمَنْزِلِهِ الَّذِي كَانَ فِي الدُّنْيَا» — أخرجه <strong>البخاري</strong> في صحيحه من حديث قتادة عن أبي المتوكل الناجي عن أبي سعيد الخدري رضي الله عنه.
+  </div>
+  <div class="src">
+    <span class="src-label">تفسير الطبري وأقوال السلف في معنى «عرَّفها»</span>
+    روى الطبري بسنده عن ابن زيد قوله: «يدخل أهل الجنة الجنة، ولهم أعرف بمنازلهم فيها من منازلهم في الدنيا التي يختلفون إليها في عمر الدنيا». وروى عن قتادة قوله في الآية: «أي منازلهم فيها» — (جامع البيان، تفسير الآية ٦ من سورة محمد).
+  </div>
+  <div class="src">
+    <span class="src-label">قول القرطبي في أوجه معنى «عرَّفها»</span>
+    ذكر القرطبي عدة أوجه في معنى «عرَّفها لهم»، منها قول ابن عباس: «طيّبها لهم بأنواع الملاذّ، مأخوذ من العَرْف وهو الرائحة الطيبة»، وقول الحسن البصري: «وصف الله تعالى لهم الجنة في الدنيا، فلما دخلوها عرفوها بصفتها»، وقول آخرين: إن التعريف بدليل وهو الملَك الموكَّل بحفظ عمل العبد يمشي بين يديه حتى يبلغ منزله — (الجامع لأحكام القرآن، تفسير الآية ٦ من سورة محمد).
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="card t"><div class="ct">أولاً: الإيجاز البليغ في لفظة واحدة ﴿عَرَّفَهَا﴾</div><p>اكتفى القرآن بكلمة واحدة «عرَّفها» لتحمل معاني الهداية والتيسير وزوال الغربة والاطمئنان مجتمعة، وهذا من أبلغ صور الإيجاز القرآني، إذ لو أراد المتكلم البشري تفصيل هذا المعنى لاحتاج فقرات طويلة، بينما أدته الآية بلفظة واحدة جامعة، وهو ما نبّه إليه المؤلف بقوله: «ما أرق هذا التعبير».</p></div>
+  <div class="card t2"><div class="ct">ثانياً: العدول عن السكوت المتوقع إلى الزيادة البيانية</div><p>الأسلوب المتوقع بعد ﴿وَيُدْخِلُهُمُ الْجَنَّةَ﴾ أن يُكتفى بذكر الدخول، لكن الآية عدلت عن هذا الإيجاز المتوقع إلى زيادة بيانية «عرَّفها لهم»، وهذا العدول (خلاف مقتضى الظاهر بالزيادة لا النقصان) يفيد عناية خاصة بمعنى الأُنس ونفي الغربة، وهو ما استثمره المؤلف ببراعة حين قال: «لم يقل: ويدخلهم الجنة ثم سكت».</p></div>
+  <div class="card t"><div class="ct">ثالثاً: صيغة التفعيل المبالغة في ﴿عَرَّفَهَا﴾</div><p>جاء الفعل على وزن «فعّل» (عرّف) لا «عرَف» المجرد، وصيغة التفعيل هنا تفيد المبالغة والتكثير في التعريف، أي: عرّفهم بها تعريفاً تاماً شاملاً لا يبقي فيه لبساً أو حيرة، بخلاف «عرَف» الذي قد يفيد معرفة جزئية.</p></div>
+  <div class="card t2"><div class="ct">رابعاً: بلاغة التقابل في المقال بين معرفة الدنيا وضياعها</div><p>وظّف المؤلف تقابلاً بلاغياً متكرراً بين حال الإنسان في الدنيا (يضيع، يحتاج خرائط، يسأل الناس) وحاله في الجنة (لا سؤال، لا ضياع، لا حيرة)، وهذا التقابل يُجسّد المعنى القرآني المجرد في صورة حسية يعيشها القارئ يومياً، فيزداد استشعاره لعظمة النعمة.</p></div>
+  <div class="card t"><div class="ct">خامساً: جناس الاشتقاق في «عرفوا... فعرَّفهم»</div><p>كرر المؤلف مادة «ع ر ف» في صيغتين متقابلتين: «عرفوا الله في الرخاء» (معرفتهم هم) و«فعرَّفهم الله يوم الجزاء» (تعريف الله لهم)، وهذا الجناس الاشتقاقي يُبرز مبدأ «الجزاء من جنس العمل» الذي هو محور المقال، بربط لفظي مباشر بين السبب والنتيجة.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>الصرف والاشتقاق</h3>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>التحليل الصرفي</th></tr>
+      <tr><td class="term">عَرَّفَهَا</td><td>فَعَّلَ (مضعّف العين)</td><td class="def">فعل ماضٍ من الجذر «ع ر ف»، على وزن «فعّل» المضاعَف الدال على المبالغة والتعدية، أصله الثلاثي «عرَف يعرِف»، فلما ضُعِّفت عينه صار متعدياً لمفعول ثانٍ ويفيد التكثير.</td></tr>
+      <tr><td class="term">يُدْخِلُهُمُ</td><td>يُفْعِلُ (من أدخل)</td><td class="def">فعل مضارع من الرباعي «أدخل» بابِ «أفعل»، من الجذر «د خ ل»، أصله الثلاثي «دخل» فتعدّى بالهمزة إلى مفعول ثانٍ.</td></tr>
+      <tr><td class="term">سَالِكُهُ</td><td>فَاعِل (اسم فاعل)</td><td class="def">من الجذر «س ل ك»، اسم فاعل من الثلاثي «سلَك يسلُك»، يدل على الحدث والحدوث لا الثبوت، بخلاف الصفة المشبهة.</td></tr>
+    </table>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card t"><div class="ct">لفظ «العرف» بين المعرفة والرائحة الطيبة</div><p>يشترك لفظ «عرَّفها» بين معنيين ذكرهما المفسرون: الأول من «المعرفة» أي الهداية والدلالة، والثاني من «العَرْف» بمعنى الرائحة الطيبة كما قال ابن عباس: «طيّبها لهم»، وهذا من لطائف الاشتراك اللفظي الذي يُثري المعنى دون تناقض، إذ يجتمع في الجنة كمال المعرفة بها وكمال طيبها معاً.</p></div>
+    <div class="card t2"><div class="ct">لفظ «الدار» بين المسكن المؤقت والوطن الدائم</div><p>استعمل المؤلف لفظ «الوطن» و«الدار» للجنة تمييزاً عن الدنيا التي وصفها ضمناً بأنها مكان عابر يُطرق لأول مرة، وهذا يوافق الاستعمال القرآني للفظ «الدار» في وصف الآخرة بأنها «دار القرار» (غافر: ٣٩) في مقابل الدنيا التي هي دار عبور وامتحان.</p></div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="g2">
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">عَرَفَ</td><td class="def">أدرك الشيء بعد تفكر أو مقدمات، وهو الأصل الثلاثي المجرد.</td></tr>
+        <tr><td class="term">عَرَّفَ</td><td class="def">جعل غيره يعرف بمبالغة وتكثير، فعل متعدٍّ لمفعولين بصيغة المبالغة، وهو المستعمل في الآية.</td></tr>
+        <tr><td class="term">عَلِمَ</td><td class="def">أعمّ من «عرف»؛ فالعلم يكون بالكليات والجزئيات، والمعرفة غالباً بالجزئيات والأعيان المشخصة كالمنازل والديار.</td></tr>
+      </table>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الطَّرِيقُ</td><td class="def">المسلك الموصل إلى الغاية، ويُستعمل حسياً ومعنوياً كما في عنوان المقال.</td></tr>
+        <tr><td class="term">السَّبِيلُ</td><td class="def">قريب من الطريق لكنه أكثر ورودا في القرآن بمعنى المنهج الديني («سبيل الله»)، بخلاف الطريق الذي يشيع في المحسوس.</td></tr>
+        <tr><td class="term">الضَّلَالُ</td><td class="def">الحيدة عن الطريق الصحيح مع عدم القصد، وهو أخص من «الضياع» الذي قد يكون مع أو بدون سلوك طريق أصلاً.</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السباق: الآيتان اللتان قبلها (محمد ٤-٥)</div>
+    <div class="ci"><span class="vi">﴿وَالَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ فَلَنْ يُضِلَّ أَعْمَالَهُمْ * سَيَهْدِيهِمْ وَيُصْلِحُ بَالَهُمْ﴾</span><span class="vs">محمد: ٤-٥ — تُمهّد هاتان الآيتان لآية الدراسة ببيان أن أعمال الشهداء لن تضيع، ثم تتصاعد النعم من عدم إضلال العمل، إلى الهداية وإصلاح البال، إلى ذروتها في تعريف الجنة، فهو تدرج بلاغي في مراتب الإكرام.</span></div>
+  </div>
+  <div class="cb"><div class="bt">آيات مشابهة في وصف يُسر أهل الجنة وعدم غربتهم</div>
+    <div class="ci"><span class="vi">﴿ادْخُلُوهَا بِسَلَامٍ آمِنِينَ﴾</span><span class="vs">الحجر: ٤٦ — نظير مباشر في وصف دخول أهل الجنة بلا خوف ولا قلق، وقد استشهد به المؤلف في ختام مقاله ليؤكد أن الأمن التام هو السمة الجامعة لكل مشاهد الدخول إلى الجنة.</span></div>
+    <div class="ci"><span class="vi">﴿لَا يَمَسُّهُمْ فِيهَا نَصَبٌ وَمَا هُم مِّنْهَا بِمُخْرَجِينَ﴾</span><span class="vs">الحجر: ٤٨ — تؤكد ذات المعنى الذي بناه المقال في نفي التعب والقلق عن أهل الجنة، فلا نصب في الوصول إليها ولا خشية من الخروج منها.</span></div>
+    <div class="ci"><span class="vi">﴿لَا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا تَأْثِيمًا * إِلَّا قِيلًا سَلَامًا سَلَامًا﴾</span><span class="vs">الواقعة: ٢٥-٢٦ — تصف سلامة أجواء الجنة من كل نَصَب نفسي، وهي مكمّلة لمعنى «عرّفها لهم» بوصف حال الطمأنينة الدائمة داخل الجنة بعد دخولها.</span></div>
+    <div class="ci"><span class="vi">﴿وَنَزَعْنَا مَا فِي صُدُورِهِم مِّنْ غِلٍّ إِخْوَانًا عَلَىٰ سُرُرٍ مُّتَقَابِلِينَ﴾</span><span class="vs">الحجر: ٤٧ — تصف نزع الأحقاد من قلوب أهل الجنة، وهي تكمّل صورة «عدم الغربة» التي بناها المقال، فلا غربة مكانية (عرّفها لهم) ولا غربة نفسية بين الإخوان هناك.</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام المستنبطة</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية إخبار غيبي ✅</div><div class="md">تُخبر عن غيب الآخرة وتفاصيل نعيم الجنة، مما لا سبيل لمعرفته إلا بالوحي.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية بشارة وترغيب ✅</div><div class="md">وردت في سياق الحديث عن الشهداء، فهي بشارة خاصة تحمل ترغيباً عاماً لكل عامل صالح.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تقرر مبدأ الجزاء من جنس العمل ✅</div><div class="md">تُرسّخ أصلاً عقدياً في العدل الإلهي: أن جزاء الآخرة مرتبط بعمل الدنيا نوعاً وجنساً.</div></div>
+  </div>
+  <div class="sub"><h3>الأحكام والأصول المستنبطة</h3>
+    <div class="card t"><div class="ct">الأصل الأول: إثبات نعيم الجنة الحسي المعنوي معاً</div><p>تُقرر الآية أصلاً عقدياً في باب اليوم الآخر: أن نعيم الجنة يجمع بين اللذة الحسية (المنازل والمساكن) واللذة المعنوية (زوال الحيرة والغربة)، وهذا يوافق مذهب أهل السنة في إثبات النعيم الحسي للجنة خلافاً لمن أوّله بمجرد المعاني الروحية.</p></div>
+    <div class="card t2"><div class="ct">الأصل الثاني: مبدأ الجزاء من جنس العمل</div><p>يُستنبط من الآية وربطها بسياق المقال («عرفوا الله في الرخاء فعرّفهم الله يوم الجزاء») أصل شرعي عام: أن جزاء الله لعباده يكون غالباً من جنس عملهم، وهو أصل مستقرئ من نصوص كثيرة كقوله ﷺ فيما رواه الشيخان: «كما تدين تُدان» بمعناه.</p></div>
+    <div class="card t"><div class="ct">الأصل الثالث: فضل الأعمال الصالحة المذكورة طريقاً موصلاً إلى الجنة</div><p>عدّد المقال أعمالاً بعينها (السجود الطويل، الدموع في الليل، الصبر على البلاء، غض الأبصار، حفظ اللسان، بر الوالدين، الصدق والأمانة والعفاف والإحسان) بوصفها طرقاً موصلة إلى معرفة الجنة، وكل هذه الأعمال ثابتة الفضل بنصوص شرعية مستقلة صحيحة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.35rem;">﴿ وَيُدْخِلُهُمُ الْجَنَّةَ عَرَّفَهَا لَهُمْ ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَيُدْخِلُهُمُ</div><div class="id">الواو عاطفة معطوفة على ما قبلها. «يُدْخِلُ» فعل مضارع مرفوع وعلامة رفعه الضمة الظاهرة، والفاعل ضمير مستتر تقديره «هو» يعود على الله تعالى، والهاء والميم ضمير متصل مبني في محل نصب مفعول به أول.</div></div>
+    <div class="ir"><div class="iw">الْجَنَّةَ</div><div class="id">مفعول به ثانٍ منصوب وعلامة نصبه الفتحة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">عَرَّفَهَا</div><div class="id">فعل ماضٍ مبني على الفتح، والفاعل ضمير مستتر تقديره «هو» يعود على الله تعالى، والهاء ضمير متصل مبني في محل نصب مفعول به أول، والجملة الفعلية في محل نصب حال من «الجنة»، أو استئنافية لا محل لها من الإعراب.</div></div>
+    <div class="ir"><div class="iw">لَهُمْ</div><div class="id">جار ومجرور متعلقان بـ«عرَّفها»، واللام هنا للتقوية أو لتضمين الفعل معنى «بيَّن»، والهاء والميم ضمير متصل مبني في محل جر باللام.</div></div>
+  </div>
+  <div class="card t" style="margin-top:14px;"><div class="ct">لطيفة إعرابية: الجملة الفعلية «عرَّفها لهم» بعد النكرة «الجنة»</div><p>مجيء الجملة الفعلية «عرَّفها لهم» بعد اسم معرفة «الجنة» يجعلها في موضع الحال المؤكِّدة أو الاستئناف البياني الذي يُفسّر كيفية الإدخال، وهذا الموقع الإعرابي يخدم المعنى البلاغي؛ إذ الحال تصف هيئة صاحبها وقت وقوع الفعل، فتكون التعريف مصاحباً لحظة الدخول ذاتها لا سابقاً عليها فقط، وهو ما يتوافق مع أقوال المفسرين الذين جمعوا بين تعريف مسبق (بالوصف في الدنيا) وتعريف مقارن (عند الدخول الفعلي).</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="card t"><div class="ct">أولاً: علاج الخوف من المجهول عبر استحضار «التعريف الإلهي»</div><p>يخاطب المقال قلقاً نفسياً إنسانياً عاماً: الخوف من المجهول والانتقال إلى ما لا نعرفه، ويقدّم علاجاً إيمانياً مباشراً بأن الآخرة -رغم غيبيتها- ليست مجهولة عند من عرف الله في الدنيا. <strong>التطبيق:</strong> عند القلق من المستقبل أو الموت، استحضار أن معرفة الله في الرخاء تُورث أُنساً باللقاء لا خوفاً منه.</p></div>
+  <div class="card t2"><div class="ct">ثانياً: ربط الطاعات اليومية الصغيرة بغاية كبرى ملموسة</div><p>يُحوّل المقال الطاعات المتفرقة (خطوة إلى المسجد، آية تُتلى، معصية تُركت) من أفعال معزولة إلى «لوحات طريق» متراكمة نحو غاية واضحة، وهذا تحويل نفسي مهم يمنح الطاعة الصغيرة معنى تراكمياً بدل أن تبدو بلا أثر. <strong>التطبيق:</strong> النظر إلى كل عمل صالح يومي بوصفه خطوة موثّقة في طريق معروف، لا فعلاً عابراً منفصلاً.</p></div>
+  <div class="card t"><div class="ct">ثالثاً: بناء الأمان النفسي على مبدأ «الجزاء من جنس العمل»</div><p>يمنح مبدأ «عرفوا الله في الرخاء فعرّفهم الله يوم الجزاء» طمأنينة نفسية عميقة: أن كل جهد إيماني في الخفاء له انعكاس مباشر ومتناسب في المصير، وهذا يعالج شعور العبثية الذي قد يصيب من يتعب في الطاعة دون أن يرى أثرها العاجل.</p></div>
+  <div class="card t2"><div class="ct">رابعاً: التربية على جعل الشوق للآخرة دافعاً سلوكياً لا مجرد شعور عابر</div><p>ختم المقال بدعاء يطلب أن يكون الاشتياق للفردوس «دافعاً لكل طاعة، وحاجزاً عن كل معصية»، وهذا نموذج تربوي دقيق يحوّل العاطفة الإيمانية (الشوق) إلى طاقة سلوكية فعّالة بدل أن تبقى وجداناً مجرداً بلا أثر عملي.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر لآياته</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، سنة ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">التزام دقيق بضوابط القرآن والسنة النبوية</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن وإخبارات النبي ﷺ</span></div>
+      </div>
+      <p><strong style="color:var(--tg);">العمق التفسيري:</strong> يقوم بدراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة النبوية، مستحضراً أقوال أهل العلم في كل مسألة يعرض لها.</p>
+      <p><strong style="color:var(--tg);">البُعد الزمني:</strong> يتّسم بحثه بالربط الحي بين النص القرآني ومستجدات العصر، مما يمنح التأمل الأدبي روحاً معاصرة تخاطب واقع الإنسان اليوم.</p>
+      <p><strong style="color:var(--tg);">التحصيل العلمي:</strong> شملت دراساته علم الحديث، مركّزاً على أحاديث الفتن وإخبارات النبي ﷺ، وهذا يؤكد عمق النظر وسلامة المنهج التي بُنيت عليها مقالاته.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">العقيدة والتوحيد</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">اليوم الآخر ووصف الجنة</span>
+        <span class="atag">البلاغة القرآنية</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَالسُّنَّةِ النَّبَوِيَّةِ وَأَهْلِهِمَا</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.5;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
