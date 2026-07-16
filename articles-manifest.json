@@ -1,6 +1,6 @@
 {
-  "version": 77,
-  "updated": "2026-07-15",
+  "version": 80,
+  "updated": "2026-07-16",
   "articles": [
     "article-alsuljuqi.html",
     "article-hawa-sharia.html",
@@ -76,7 +76,10 @@
     "article75.html",
     "article76.html",
     "article77.html",
+    "article78.html",
+    "article79.html",
     "article8-ma-asbarahum.html",
+    "article80.html",
     "article9-hina-tustanzaf.html"
   ]
 }
