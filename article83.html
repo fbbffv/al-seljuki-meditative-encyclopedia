@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مِنْ عَبَثِ التُّرَابِ إِلَى حِكْمَةِ الْمَصِيرِ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#131820;--bg:#f9fbfd;--bg2:#eaf2f6;
+  --c1:#0d9488;--c2:#0ea5e9;--c3:#6366f1;--c4:#a855f7;--c5:#ec4899;--c6:#f43f5e;--c7:#f59e0b;
+  --rainbow:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4),var(--c5),var(--c6),var(--c7));
+  --bd:#080c14;--bt:#eaf3fb;--div:#dbe7ef;--mist:#44505e;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 8% 0%,rgba(13,148,136,.08) 0%,transparent 45%),radial-gradient(ellipse at 92% 15%,rgba(99,102,241,.07) 0%,transparent 45%),radial-gradient(ellipse at 15% 95%,rgba(236,72,153,.06) 0%,transparent 45%),radial-gradient(ellipse at 90% 100%,rgba(245,158,11,.07) 0%,transparent 45%);}
+#prog{position:fixed;top:0;right:0;width:5px;background:var(--rainbow);z-index:400;transform-origin:top;}
+.hdr{background:var(--bd);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.5);border-bottom:4px solid transparent;border-image:var(--rainbow) 1;}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;font-size:1.05rem;flex-shrink:0;font-weight:700;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.9rem;text-align:center;flex:1;opacity:.9;}
+.tbtn{background:var(--rainbow);color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;font-weight:700;white-space:nowrap;box-shadow:0 3px 10px rgba(0,0,0,.3);}
+.tbtn:hover{filter:brightness(1.12);}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 62px);}
+.sb{width:285px;flex-shrink:0;background:#070a10;position:sticky;top:62px;height:calc(100vh - 62px);overflow-y:auto;border-left:3px solid transparent;border-image:var(--rainbow) 1;transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:62px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.12);background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.toc-s{color:#8fa0b0;font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#a8bcc9;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(255,255,255,.08);border-right-color:var(--c2);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);width:220px;height:4px;background:var(--rainbow);border-radius:4px;}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;letter-spacing:.4em;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hcat{display:inline-block;background:var(--rainbow);color:#fff;font-size:.75rem;font-weight:700;padding:4px 16px;border-radius:20px;margin-bottom:18px;box-shadow:0 3px 10px rgba(0,0,0,.15);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.25rem;font-weight:700;line-height:1.5;margin-bottom:12px;background:linear-gradient(90deg,var(--c1),var(--c3),var(--c6));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:5px;height:5px;background:var(--c2);border-radius:50%;}
+.vb{background:var(--bd);border:2px solid transparent;border-image:var(--rainbow) 1;border-radius:9px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(99,102,241,.14),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.72rem;color:var(--bt);line-height:2.1;position:relative;z-index:1;}
+.vt.sm{font-size:1.32rem;}
+.vr{font-size:.86rem;margin-top:12px;position:relative;z-index:1;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.abody{font-size:1.12rem;line-height:2.05;color:#131820;}
+.abody p{margin-bottom:1.55em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;float:right;line-height:.82;margin-left:8px;font-weight:700;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.16rem;font-weight:700;text-align:center;margin:10px 0;color:var(--c3);}
+.src{background:#fff;border:1px solid var(--div);border-right:5px solid var(--c1);border-radius:7px;padding:12px 16px;margin:10px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;color:#1e2733;line-height:1.85;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+.src strong{color:var(--c1);}
+.grade{display:inline-block;font-size:.66rem;padding:2px 9px;border-radius:10px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.hasan{background:var(--c7);}
+.grade.sahih{background:var(--c1);}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:82px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.1rem;font-weight:700;color:#fff;box-shadow:0 4px 12px rgba(0,0,0,.2);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.78rem;color:#131820;border-bottom:3px solid transparent;border-image:var(--rainbow) 1;padding-bottom:9px;flex:1;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.32rem;margin-bottom:12px;padding-right:14px;border-right:4px solid var(--c2);color:#1e2733;}
+.card{background:#fff;border:1px solid var(--div);border-radius:9px;padding:20px 24px;margin:16px 0;box-shadow:0 3px 14px rgba(10,20,30,.06);}
+.card.c1{border-right:5px solid var(--c1);} .card.c2{border-right:5px solid var(--c2);} .card.c3{border-right:5px solid var(--c3);}
+.card.c4{border-right:5px solid var(--c4);} .card.c5{border-right:5px solid var(--c5);} .card.c6{border-right:5px solid var(--c6);} .card.c7{border-right:5px solid var(--c7);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;color:#131820;margin-bottom:10px;font-weight:700;}
+.card p{font-size:.98rem;color:#1e2733;line-height:1.9;margin-top:6px;}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:.96rem;border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06);}
+.tbl th{background:var(--rainbow);color:#fff;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;font-weight:700;}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.8;background:#fff;}
+.tbl tr:hover td{background:#f0f7fb;}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:#131820;font-weight:700;}
+.def{color:var(--mist);font-size:.92rem;}
+.ib{background:linear-gradient(135deg,#f0f7fb,#eaf2f6);border-radius:8px;padding:14px 18px;margin:11px 0;border:1px solid var(--div);}
+.ir{display:flex;gap:13px;padding:9px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.2rem;color:var(--c3);min-width:150px;font-weight:700;flex-shrink:0;}
+.id{color:#1e2733;font-size:.92rem;flex:1;line-height:1.85;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#131820;text-align:center;padding:30px 38px;margin:38px 0;border-top:3px solid transparent;border-bottom:3px solid transparent;border-image:var(--rainbow) 1;position:relative;}
+.pq::before{content:'❝';position:absolute;top:-2px;right:38px;font-size:2.8rem;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;}
+.cb{background:linear-gradient(135deg,#070a10,#131820);border:2px solid transparent;border-image:var(--rainbow) 1;border-radius:9px;padding:24px 30px;margin:20px 0;}
+.cb .bt{font-family:'Scheherazade New',serif;font-size:1.16rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.15);background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.ci{color:#b8c8d8;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.1);font-size:.92rem;line-height:1.85;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:var(--bt);font-size:1.01rem;display:block;margin-bottom:3px;}
+.ci .vs{color:#8fa0c0;font-size:.78rem;}
+.vrd{background:linear-gradient(135deg,#070a10,#0f1420);border:1px solid rgba(255,255,255,.12);border-right:4px solid var(--c2);border-radius:6px;padding:16px 20px;margin:12px 0;color:#b8c8d8;font-size:.94rem;line-height:1.9;}
+.vrd strong{color:#fff;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+.mc{background:#fff;border:1px solid var(--div);border-radius:8px;padding:16px 18px;box-shadow:0 3px 12px rgba(10,20,30,.06);border-top:4px solid var(--c7);}
+.mc .ml{color:var(--c5);font-size:.73rem;margin-bottom:4px;display:block;font-weight:700;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#131820;font-weight:700;margin-bottom:4px;}
+.mc .md{color:var(--mist);font-size:.84rem;line-height:1.6;}
+.cl{list-style:none;padding:0;margin:10px 0;}
+.cl li{padding:8px 26px 8px 0;position:relative;border-bottom:1px dashed var(--div);color:#1e2733;line-height:1.85;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:.9em;top:11px;}
+.asec{background:var(--bd);border:2px solid transparent;border-image:var(--rainbow) 1;border-radius:10px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:80px;height:80px;border-radius:50%;background:var(--rainbow);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff;font-size:1.38rem;margin-bottom:5px;}
+.ai .at{font-size:.86rem;margin-bottom:13px;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.ai p{color:#b8c8d8;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:#fff;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:5px;padding:10px 13px;}
+.ami .aml{color:#9ab0c0;font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:#fff;font-size:.88rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;color:#fff;font-size:.73rem;padding:4px 12px;border-radius:14px;margin:3px;font-weight:600;}
+.orn{text-align:center;font-size:1.3rem;margin:48px 0;letter-spacing:.42em;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;}
+footer{background:var(--bd);color:#7a8ea0;text-align:center;padding:30px 20px;font-size:.85rem;border-top:3px solid transparent;border-image:var(--rainbow) 1;margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.1rem;margin-bottom:7px;font-weight:700;background:var(--rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:62px;width:275px;height:calc(100vh - 62px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.7rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.2rem;}.hero h1{font-size:1.4rem;}.pq{font-size:1.1rem;padding:22px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ السَّلْجُوقِي</div>
+    <div class="htitle">مِنْ عَبَثِ التُّرَابِ إِلَى حِكْمَةِ الْمَصِيرِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي والبلاغة الدقيقة</a>
+  <a class="toc-a sub" href="#s1a">الاستفهام الإنكاري «أفحسبتم»</a>
+  <a class="toc-a sub" href="#s1b">التصعيد الاستدلالي الكوني</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والصرفي والمشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2a">اشتقاق عبثاً وترجعون</a>
+  <a class="toc-a sub" href="#s2b">مشترك «الرجوع» في القرآن</a>
+  <a class="toc-a" href="#s3">٣. الفروق اللغوية والمعجمية</a>
+  <a class="toc-a" href="#s4">٤. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s5">٥. نوع الآية والحكم المستنبط</a>
+  <a class="toc-a" href="#s6">٦. إعراب الآية كاملة</a>
+  <a class="toc-a" href="#s7">٧. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ 🌈 ✦</span>
+  <div class="hcat">تدبر قرآني · سورة المؤمنون · الإيمان بالبعث</div>
+  <h1>مِنْ عَبَثِ التُّرَابِ إِلَى حِكْمَةِ الْمَصِيرِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>المؤمنون: ١١٥</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c1);">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَاكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ﴾</div>
+    <div class="vr">سورة المؤمنون (٢٣)، الآية ١١٥، مكية</div>
+  </div>
+
+  <div class="abody">
+    <p>مَا أَشَدَّ هَذِهِ الْآيَةَ وَهِيَ تَهُزُّ أَعْمَاقَ الْقَلْبِ هَزًّا، وَمَا أَعْظَمَهَا وَهِيَ تَنْزِعُ مِنَ النَّفْسِ وَهَمًا عَاشَ فِيهِ كَثِيرٌ مِنَ الْبَشَرِ؛ وَهَمَ أَنَّ الْحَيَاةَ رِحْلَةٌ قَصِيرَةٌ تَبْدَأُ بِصَرْخَةِ مَوْلُودٍ وَتَنْتَهِي بِزَفْرَةِ مُحْتَضَرٍ، ثُمَّ يُطْوَى كُلُّ شَيْءٍ تَحْتَ حَفْنَةٍ مِنَ التُّرَابِ.</p>
+
+    <p class="ql">كَلَّا...</p>
+
+    <p>إِنَّ الْقُرْآنَ يَرْفُضُ هَذِهِ الْفِكْرَةَ رَفْضًا قَاطِعًا، لِأَنَّهَا تَهْدِمُ مَعْنَى الْوُجُودِ كُلَّهُ، وَتَجْعَلُ هَذَا الْكَوْنَ الْعَظِيمَ مَسْرَحًا لِلْفَوْضَى، وَتَجْعَلُ الْإِنْسَانَ قِصَّةً بِلَا خَاتِمَةٍ، وَسُؤَالًا بِلَا جَوَابٍ.</p>
+
+    <p>انْظُرْ إِلَى السَّمَاءِ... نُجُومٌ لَا تَتَصَادَمُ، وَكَوَاكِبُ لَا تَضِلُّ طَرِيقَهَا، وَشَمْسٌ تُشْرِقُ فِي مَوْعِدِهَا مُنْذُ آلَافِ السِّنِينَ، وَقَمَرٌ يُقَدَّرُ مَنَازِلَ لَا يَتَخَلَّفُ عَنْهَا لَحْظَةً وَاحِدَةً.</p>
+
+    <p>وَانْظُرْ إِلَى الْأَرْضِ... بَذْرَةٌ صَغِيرَةٌ تَنْشَقُّ، ثُمَّ سَاقٌ، ثُمَّ وَرَقَةٌ، ثُمَّ زَهْرَةٌ، ثُمَّ ثَمَرَةٌ.</p>
+
+    <p>وَانْظُرْ إِلَى قَطْرَةِ الْمَاءِ... تَنْزِلُ مِنَ السَّمَاءِ بِقَدَرٍ، وَتَسْلُكُ طَرِيقَهَا بَيْنَ الصُّخُورِ حَتَّى تُحْيِيَ أَرْضًا كَانَتْ مَيْتَةً.</p>
+
+    <p>وَانْظُرْ إِلَى الطَّيْرِ... يَخْرُجُ مِنْ بَيْضَتِهِ لَا يَعْرِفُ شَيْئًا، ثُمَّ يَهْتَدِي إِلَى رِزْقِهِ، ثُمَّ يَعُودُ إِلَى وَكْرِهِ دُونَ أَنْ يَضِلَّ.</p>
+
+    <p>كُلُّ شَيْءٍ فِي هَذَا الْكَوْنِ يَسِيرُ بِمِيزَانٍ، وَكُلُّ شَيْءٍ يُؤَدِّي رِسَالَةً، وَكُلُّ شَيْءٍ يَخْضَعُ لِقَانُونٍ مُحْكَمٍ. فَكَيْفَ يَكُونُ الْإِنْسَانُ وَحْدَهُ بِلَا غَايَةٍ؟! كَيْفَ يَكُونُ هُوَ الْمَخْلُوقُ الَّذِي كَرَّمَهُ اللَّهُ بِالْعَقْلِ وَالِاخْتِيَارِ، ثُمَّ يَكُونُ وُجُودُهُ عَبَثًا؟!</p>
+
+    <p>إِنَّ الْحَيَاةَ لَيْسَتْ مَسْرَحًا لِلصُّدْفَةِ، وَلَا رِوَايَةً بِلَا نِهَايَةٍ، وَلَا رِحْلَةً بِلَا مَحَطَّةٍ أَخِيرَةٍ. كُلُّ دَمْعَةٍ لَهَا مَعْنًى... وَكُلُّ أَلَمٍ لَهُ حِكْمَةٌ... وَكُلُّ ابْتِلَاءٍ لَهُ غَايَةٌ... وَكُلُّ نِعْمَةٍ عَلَيْهَا حِسَابٌ.</p>
+
+    <p>كَمْ مِنْ مَظْلُومٍ مَاتَ وَهُوَ يَرْفَعُ يَدَيْهِ إِلَى السَّمَاءِ وَلَمْ يَأْخُذْ حَقَّهُ. وَكَمْ مِنْ ظَالِمٍ مَلَأَ الْأَرْضَ فَسَادًا ثُمَّ مَاتَ عَلَى فِرَاشِهِ مُحَاطًا بِالْحُرَّاسِ وَالْخَدَمِ. وَكَمْ مِنْ فَقِيرٍ عَاشَ عُمُرَهُ جَائِعًا صَابِرًا. وَكَمْ مِنْ غَنِيٍّ عَاشَ فِي الْقُصُورِ يَلْهُو وَيَبْطِشُ. وَكَمْ مِنْ مَرِيضٍ قَضَى سَنَوَاتٍ يَتَقَلَّبُ بَيْنَ الْأَلَمِ. وَكَمْ مِنْ صَحِيحٍ عَاشَ فِي عَافِيَةٍ.</p>
+
+    <p>فَهَلْ يَسْتَوِي الْجَمِيعُ فِي النِّهَايَةِ؟ هَلْ يُدْفَنُونَ جَمِيعًا، ثُمَّ تَنْتَهِي الْقِصَّةُ؟ لَوْ كَانَ الْأَمْرُ كَذَلِكَ، لَمَا كَانَ لِلْعَدْلِ مَعْنًى، وَلَمَا كَانَتْ لِلْحِكْمَةِ قِيمَةٌ، وَلَمَا كَانَ لِلْخَيْرِ ثَوَابٌ، وَلَا لِلشَّرِّ عِقَابٌ.</p>
+
+    <p>لَكِنَّ رَبَّ الْعَالَمِينَ هُوَ الْحَكِيمُ قَبْلَ أَنْ يَكُونَ الْقَادِرُ، وَالْعَدْلُ قَبْلَ أَنْ يَكُونَ الْمُنْتَقِمُ. وَلِهَذَا كَانَ لَا بُدَّ مِنْ يَوْمٍ آخَرَ... يَوْمٍ تَظْهَرُ فِيهِ الْحَقَائِقُ، وَتَسْقُطُ الْأَقْنِعَةُ، وَيَقِفُ الْجَمِيعُ أَمَامَ الْمَلِكِ الْحَقِّ.</p>
+
+    <p>هُنَاكَ يَوْمٌ لَا سُلْطَانَ فِيهِ إِلَّا لِلَّهِ. لَا مَالٌ يَنْفَعُ. وَلَا جَاهٌ يَشْفَعُ. وَلَا نَسَبٌ يَرْفَعُ. وَلَا قُوَّةٌ تَحْمِي. هُنَاكَ تُرَدُّ الْحُقُوقُ، وَيُنْصَفُ الْمَظْلُومُ، وَيُقْتَصُّ مِنَ الظَّالِمِ، وَيُكْرَمُ الصَّابِرُ، وَيُجَازَى الْمُحْسِنُ، وَيُفْضَحُ الْمُنَافِقُ، وَيَقِفُ الْجَمِيعُ سَوَاءً أَمَامَ عَدَالَةِ السَّمَاءِ.</p>
+
+    <p>وَلَوْ تَأَمَّلْتَ حَيَاتَكَ لَوَجَدْتَ أَنَّ كُلَّ شَيْءٍ فِيهَا يُشِيرُ إِلَى الْبَعْثِ. الْأَرْضُ تَمُوتُ ثُمَّ تَحْيَا. الْمَطَرُ يَنْزِلُ عَلَى التُّرَابِ الْيَابِسِ فَيَعُودُ أَخْضَرَ. اللَّيْلُ يَمُوتُ فَيُولَدُ الصَّبَاحُ. وَالْخَرِيفُ يَعْقُبُهُ الرَّبِيعُ. فَمَنْ أَحْيَا الْأَرْضَ بَعْدَ مَوْتِهَا قَادِرٌ عَلَى أَنْ يُحْيِيَ الْعِظَامَ وَهِيَ رَمِيمٌ. وَمَنْ بَدَأَ الْخَلْقَ أَوَّلَ مَرَّةٍ لَيْسَ بِعَاجِزٍ عَنْ إِعَادَتِهِ.</p>
+
+    <p>إِنَّ أَكْبَرَ مَأْسَاةٍ يَعِيشُهَا الْإِنْسَانُ أَنْ يَظُنَّ أَنَّ الدُّنْيَا هِيَ كُلُّ شَيْءٍ. فَإِذَا خَسِرَ مَالًا انْهَارَ. وَإِذَا مَرِضَ يَئِسَ. وَإِذَا مَاتَ قَرِيبٌ لَهُ ظَنَّ أَنَّ النِّهَايَةَ قَدْ جَاءَتْ. أَمَّا الْمُؤْمِنُ فَإِنَّهُ يَرَى الدُّنْيَا طَرِيقًا لَا وَطَنًا، وَجِسْرًا لَا دَارًا، وَمَزْرَعَةً لَا حَصَادًا. يَعْمَلُ فِيهَا، لَكِنَّهُ لَا يَتَعَلَّقُ بِهَا. يَبْنِي فِيهَا، لَكِنَّهُ يَعْلَمُ أَنَّ الْبِنَاءَ الْحَقِيقِيَّ هُنَاكَ. يَصْبِرُ فِيهَا، لِأَنَّهُ يَنْتَظِرُ الْجَزَاءَ هُنَاكَ.</p>
+
+    <p>وَمَا أَجْمَلَ أَنْ يَعِيشَ الْإِنْسَانُ وَهُوَ يَعْلَمُ أَنَّ كُلَّ مَعْرُوفٍ لَنْ يَضِيعَ. وَأَنَّ كُلَّ دَمْعَةِ صَبْرٍ مَحْفُوظَةٌ. وَأَنَّ كُلَّ سَجْدَةٍ مَكْتُوبَةٌ. وَأَنَّ كُلَّ كَلِمَةٍ طَيِّبَةٍ مُدَّخَرَةٌ. وَأَنَّ كُلَّ ظُلْمٍ سَيَقِفُ يَوْمًا بَيْنَ يَدَيِ الْعَدْلِ الْإِلَهِيِّ.</p>
+
+    <p class="ql">إِنَّ الْحَيَاةَ لَيْسَتْ عَبَثًا... وَلَيْسَ الْكَوْنُ لُعْبَةً... وَلَيْسَ الْإِنْسَانُ رَقْمًا عَابِرًا... وَلَيْسَ الْمَوْتُ نِهَايَةَ الْمَطَافِ... بَلْ هُوَ بِدَايَةُ الطَّرِيقِ إِلَى الْحَيَاةِ الْحَقِيقِيَّةِ.</p>
+
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿وَإِنَّ الدَّارَ الْآخِرَةَ لَهِيَ الْحَيَوَانُ لَوْ كَانُوا يَعْلَمُونَ﴾</div><div class="vr">العنكبوت (٢٩): ٦٤ (جزء من الآية)</div></div>
+
+    <p>أَيِ الْحَيَاةُ الْكَامِلَةُ الدَّائِمَةُ الَّتِي لَا مَوْتَ بَعْدَهَا. فَطُوبَى لِمَنْ فَهِمَ سِرَّ وُجُودِهِ، وَعَرَفَ أَنَّهُ خُلِقَ لِيَعْبُدَ اللَّهَ، وَيَعْمُرَ الْأَرْضَ بِالْخَيْرِ، ثُمَّ يَرْجِعَ إِلَى رَبِّهِ بِقَلْبٍ سَلِيمٍ. وَوَيْلٌ لِمَنْ عَاشَ لِلدُّنْيَا وَحْدَهَا، وَجَعَلَهَا أَكْبَرَ هَمِّهِ، حَتَّى إِذَا جَاءَهُ الْمَوْتُ اكْتَشَفَ أَنَّ الْعُمُرَ كُلَّهُ كَانَ صَفْحَةً قَصِيرَةً أَمَامَ حَيَاةٍ لَا تَنْتَهِي.</p>
+
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">اللَّهُمَّ اجْعَلِ الدُّنْيَا فِي أَيْدِينَا لَا فِي قُلُوبِنَا، وَاجْعَلْ خَيْرَ أَعْمَالِنَا خَوَاتِيمَهَا، وَخَيْرَ أَيَّامِنَا يَوْمَ نَلْقَاكَ، وَارْزُقْنَا يَقِينًا يَجْعَلُ الْآخِرَةَ أَعْظَمَ هَمِّنَا، وَالْفِرْدَوْسَ الْأَعْلَى دَارَنَا.</div></div>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;font-weight:700;color:var(--c3);">كَتَبَهُ: عَلِيُّ خَلِيلٍ عَبَّاسٍ السَّلْجُوقِيُّ التُّرْكْمَانِيُّ اللَّيْلَانِيُّ</p>
+
+    <div class="sub"><h3>📚 توثيق الآيات والآثار الواردة في التحليل</h3>
+      <div class="src"><strong>تفسير «عبثاً»:</strong> «أَفَظَنَنْتُمْ أَنَّكُمْ مَخْلُوقُونَ عَبَثًا بِلَا قَصْدٍ وَلَا إِرَادَةٍ مِنْكُمْ وَلَا حِكْمَةٍ لَنَا، وَأَنَّكُمْ إِلَيْنَا لَا تَرْجِعُونَ: أَيْ لَا تَعُودُونَ فِي الدَّارِ الْآخِرَةِ»<br>ابن كثير، تفسير القرآن العظيم، تفسير سورة المؤمنون، الآية ١١٥ (ط. دار طيبة)، مستشهداً بنظيرتها: ﴿أَيَحْسَبُ الْإِنسَانُ أَن يُتْرَكَ سُدًى﴾ — القيامة: ٣٦.</div>
+      <div class="src"><strong>تفسير القرطبي:</strong> «أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَاكُمْ عَبَثًا: أَيْ مُهْمَلِينَ كَمَا خُلِقَتِ الْبَهَائِمُ لَا ثَوَابَ لَهَا وَلَا عِقَابَ عَلَيْهَا»<br>القرطبي، الجامع لأحكام القرآن، تفسير سورة المؤمنون، الآية ١١٥.</div>
+      <div class="src"><span class="grade hasan">حسن</span><strong>عن إبراهيم بن الحارث التيمي رضي الله عنه: «وَجَّهَنَا رَسُولُ اللَّهِ ﷺ فِي سَرِيَّةٍ، فَأَمَرَنَا أَنْ نَقُولَ إِذَا نَحْنُ أَمْسَيْنَا وَأَصْبَحْنَا: ﴿أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَاكُمْ عَبَثًا﴾ فَقَرَأْنَاهَا، فَغَنِمْنَا، وَسَلِمْنَا»</strong><br>أخرجه أبو نُعيم في معرفة الصحابة (٧٢٨)، وحسّن إسناده أهل العلم بالحديث. ذكره ابن أبي حاتم في تفسيره أيضاً (٨/٢٥١٣) بسند حسن من طريق آخر.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c2);">١</div><h2>الجانب البلاغي والبلاغة الدقيقة</h2></div>
+
+  <div id="s1a" class="sub"><h3>الاستفهام الإنكاري «أَفَحَسِبْتُمْ»: توبيخ لا استعلام</h3>
+    <div class="card c1"><div class="ct">دلالة الهمزة والفاء معاً في افتتاح الآية</div><p>«أفحسبتم» جمعت همزة الاستفهام الإنكاري وفاء العطف على مقدَّر محذوف (كأن المعنى: أخُلقتم لغير غاية فحسبتم...)، وهذا التركيب المزدوج (همزة + فاء) أسلوب قرآني متكرر (أفلا تعقلون، أفلا تتفكرون) يفيد التوبيخ الشديد على غفلة سبقت، لا طلب معرفة جواب لم يكن معلوماً.</p></div>
+    <div class="card c2"><div class="ct">مجيء «الظن» بصيغة الحسبان لا العلم</div><p>اختيار الفعل «حسبتم» (من الظن) لا «علمتم» أو «اعتقدتم» يحمل دلالة بلاغية دقيقة: فالمخاطَبون لم يبنوا موقفهم من العبث على دليل أو علم، بل على ظن وتوهم غير مؤسَّس، وهذا يُضعف موقفهم الفكري قبل أن يُقيم القرآن الحجة عليهم بالأدلة الكونية اللاحقة.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>التصعيد الاستدلالي عبر الأمثلة الكونية المتوالية</h3>
+    <div class="card c3"><div class="ct">بنية «انظر إلى...» المتكررة: من الأبعد إلى الأقرب</div><p>يبني المقال استدلاله على تكرار الأمر «انظر إلى» أربع مرات متتالية (السماء، الأرض، قطرة الماء، الطير)، بترتيب تنازلي من الأوسع نطاقاً (السماء والنجوم) إلى الأخص تفصيلاً (سلوك طائر واحد)، وهذا التدرج البلاغي من الكوني إلى الجزئي يُراكم الأدلة الحسية قبل الوصول إلى النتيجة المنطقية (فكيف يكون الإنسان وحده بلا غاية؟!).</p></div>
+    <div class="card c4"><div class="ct">التقابل الإحصائي: «كم من... وكم من...»</div><p>يستخدم المقال ست مرات متتالية بنية «كم من» في تعداد متقابل (مظلوم/ظالم، فقير/غني، مريض/صحيح)، وهذا أسلوب إحصائي-بلاغي يُراكم الأمثلة الواقعية المتناقضة لبناء سؤال استنكاري لاحق («فهل يستوي الجميع في النهاية؟»)، فيصل القارئ إلى استحالة التسوية بنفسه قبل أن يُصرِّح المقال بها.</p></div>
+    <div class="card c5"><div class="ct">الاستعارة التصريحية: «الدنيا طريق لا وطن، جسر لا دار»</div><p>سلسلة استعارات متوازية (طريق/وطن، جسر/دار، مزرعة/حصاد) تُعيد تعريف علاقة المؤمن بالدنيا عبر نفي المستقر (وطن، دار، حصاد) وإثبات العابر (طريق، جسر، مزرعة)، وهي من أنجح الصور البلاغية في اختصار فلسفة الزهد الإسلامي في ثلاث كلمات متقابلة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c3);">٢</div><h2>الجانب اللغوي والصرفي والمشترك اللفظي</h2></div>
+
+  <div id="s2a" class="sub"><h3>اشتقاق «عَبَثًا» و«تُرْجَعُونَ»</h3>
+    <div class="g2">
+      <div class="mc"><span class="ml">صرفياً</span><div class="mv">عَبَثًا</div><div class="md">مصدر منصوب على المفعول لأجله أو الحال، من الفعل «عَبِثَ يَعْبَثُ» على وزن «فَعَل»، والجذر (ع ب ث) يدل على الفعل الذي لا غاية له ولا فائدة منه، وهو من الألفاظ التي لم تُستعمل في القرآن إلا في سياق النفي عن الله تعالى.</div></div>
+      <div class="mc"><span class="ml">صرفياً</span><div class="mv">تُرْجَعُونَ</div><div class="md">فعل مضارع مبني للمجهول من «رَجَعَ» على وزن «تُفْعَلون»، والجذر (ر ج ع) يدل على العودة إلى نقطة البداية، والبناء للمجهول هنا يفيد أن الرجوع ليس باختيار العبد بل بقهر إلهي لا يملك معه إباءً.</div></div>
+    </div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي: كلمة «الرُّجُوع» في القرآن الكريم</h3>
+    <table class="tbl">
+      <tr><th>المعنى/السياق</th><th>الشاهد</th></tr>
+      <tr><td class="term">الرجوع إلى الله للحساب يوم القيامة (كما في المقال)</td><td class="def">﴿وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ﴾ — المؤمنون: ١١٥.</td></tr>
+      <tr><td class="term">رجوع الأمور كلها إلى الله في الدنيا والآخرة</td><td class="def">﴿وَإِلَى اللَّهِ تُرْجَعُ الْأُمُورُ﴾ — البقرة: ٢١٠.</td></tr>
+      <tr><td class="term">رجوع النفس المطمئنة إلى ربها راضية</td><td class="def">﴿ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً﴾ — الفجر: ٢٨.</td></tr>
+      <tr><td class="term">رجوع بمعنى العودة الدنيوية (يوسف إلى أبيه)</td><td class="def">﴿فَلَمَّا رَجَعُوا إِلَىٰ أَبِيهِمْ قَالُوا يَا أَبَانَا﴾ — يوسف: ٦٣.</td></tr>
+    </table>
+    <p style="margin-top:10px;font-size:.92rem;color:var(--mist);">يُلاحظ أن «الرجوع» في سياق الآخرة (المؤمنون، البقرة، الفجر) يحمل دلالة حتمية قهرية لا يملك العبد ردَّها، بخلاف الرجوع الدنيوي (كرجوع إخوة يوسف) الذي هو فعل اختياري عادي، وهذا فرق سياقي يخدم فكرة المقال في حتمية البعث ولزومه.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 DIFFERENCES -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c4);">٣</div><h2>الفروق اللغوية والمعجمية</h2></div>
+  <div class="card c1"><div class="ct">الفرق بين: الْعَبَث / اللَّهْو / اللَّعِب / الْبَاطِل</div>
+    <table class="tbl">
+      <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+      <tr><td class="term">العبث</td><td class="def">الفعل الذي لا غاية له أصلاً ولا حكمة وراءه، وهو المنفي مطلقاً عن خلق الله في هذه الآية.</td></tr>
+      <tr><td class="term">اللهو</td><td class="def">الانشغال بما يُلهي عن الجاد من الأمور، مع وجود غرض (ولو تافهاً)، بخلاف العبث الخالي من الغرض بالكلية.</td></tr>
+      <tr><td class="term">اللعب</td><td class="def">فعل يقصد به المتعة دون غاية جادة، أخص من اللهو في الدلالة على المتعة تحديداً.</td></tr>
+      <tr><td class="term">الباطل</td><td class="def">ما لا حقيقة ثابتة له أو ما يزول ولا يبقى، أعم من الثلاثة السابقة، ويُقابل «الحق» في القرآن.</td></tr>
+    </table>
+  </div>
+  <div class="card c5"><div class="ct">الفرق بين: الرُّجُوع / الْمَرْجِع / الْمَآب / الْمَصِير</div>
+    <table class="tbl">
+      <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+      <tr><td class="term">الرجوع</td><td class="def">الفعل نفسه (العودة)، وهو المذكور في آية المقال.</td></tr>
+      <tr><td class="term">المرجع</td><td class="def">اسم مكان أو مصدر ميمي يدل على جهة العودة أو زمانها.</td></tr>
+      <tr><td class="term">المآب</td><td class="def">من «آب يؤوب»، يحمل دلالة العودة بعد غياب طويل، أقرب لمعنى الحنين والاشتياق للأصل.</td></tr>
+      <tr><td class="term">المصير</td><td class="def">من «صار يصير»، يدل على الحال التي ينتهي إليها الشيء، وهو الأعم من حيث الدلالة على النتيجة النهائية لا فعل العودة بذاته.</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CONTEXT -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c5);">٤</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السياق المباشر — الآيات التي بعد المؤمنون ١١٥</div>
+    <div class="ci"><span class="vi">﴿فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ ۖ لَا إِلَٰهَ إِلَّا هُوَ رَبُّ الْعَرْشِ الْكَرِيمِ﴾</span><span class="vs">المؤمنون (٢٣): ١١٦ — تُكمل الآية ١١٥ بإثبات أن الله «الملك الحق» تنزَّه عن العبث، ووصفه بربوبية العرش يربط مباشرة بمقال «من الطين إلى العرش» السابق في نفس السلسلة، فكلا المقالين يلتقيان عند حقيقة واحدة: عظمة المدبِّر تستلزم حكمة التدبير.</span></div>
+    <div class="ci"><span class="vi">﴿وَقُل رَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّاحِمِينَ﴾</span><span class="vs">المؤمنون (٢٣): ١١٨ — ختام السورة بدعاء يجمع الرجاء بعد التذكير بالبعث، يوازي دعاء المقال الختامي («اللهم اجعل الدنيا في أيدينا لا في قلوبنا»)، وكلاهما ينتقل من التذكير العقدي إلى الدعاء العملي.</span></div>
+  </div>
+  <div class="cb"><div class="bt">النظير المباشر في سورة القيامة</div>
+    <div class="ci"><span class="vi">﴿أَيَحْسَبُ الْإِنسَانُ أَن يُتْرَكَ سُدًى﴾</span><span class="vs">القيامة (٧٥): ٣٦ — أشار إليها ابن كثير صراحة كنظير لآية المؤمنون، بنفس معنى الحسبان الخاطئ بترك الإنسان بلا حساب، لكن بلفظ «سُدى» (المُهمَل) بدل «عبثاً»، وهما لفظان متقاربان يؤكدان معاً استحالة إهمال الخلق بلا غاية.</span></div>
+  </div>
+  <div class="cb"><div class="bt">مصدر الاقتباس الختامي في المقال: سورة العنكبوت</div>
+    <div class="ci"><span class="vi">﴿وَمَا هَٰذِهِ الْحَيَاةُ الدُّنْيَا إِلَّا لَهْوٌ وَلَعِبٌ ۚ وَإِنَّ الدَّارَ الْآخِرَةَ لَهِيَ الْحَيَوَانُ ۚ لَوْ كَانُوا يَعْلَمُونَ﴾</span><span class="vs">العنكبوت (٢٩): ٦٤، مكية — الآية الكاملة التي اقتُبس منها الشطر الثاني في ختام المقال؛ ووصف الآخرة بـ«الحيوان» (الحياة الكاملة الدائمة، من المصدر «حيي») تأكيد لغوي إضافي على نفس فكرة المقال: أن الحياة الحقيقية بعد الموت لا قبله.</span></div>
+  </div>
+  <div class="vrd"><strong>خلاصة الترابط:</strong> تنتظم آية المؤمنون ١١٥ ضمن ثلاث دوائر مترابطة: دائرة السورة نفسها (تنتهي بتنزيه الله عن العبث وبدعاء الرحمة)، ودائرة النظير اللفظي في القيامة ٣٦، ودائرة الاستشهاد الختامي في العنكبوت ٦٤ — وكلها تصب في إثبات أصل واحد: أن الخلق لم يكن عبثاً، وأن مصير الإنسان محكوم بحكمة وعدل لا بفوضى وصدفة.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 TYPE + AHKAM -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c6);">٥</div><h2>نوع الآية والحكم المستنبط</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية عقدية في إثبات البعث ✅</div><div class="md">الآية من أصرح آيات إثبات البعث والجزاء، وهي رد مباشر على منكري القيامة الذين ظنوا الخلق عبثاً بلا حساب لاحق.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية جدلية استدلالية (احتجاجية) ✅</div><div class="md">تعتمد على أسلوب الاستفهام الإنكاري الذي يُلزم المخاطَب بالتسليم بفساد موقفه المبني على الظن الخاطئ، وهي من آيات الحجاج العقلي المباشر لا الإخبار المجرد.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تتضمن أصل الحكمة الإلهية ✅</div><div class="md">تُقرر الآية ضمناً أن أفعال الله وخلقه لا تخلو من حكمة، وهذا أصل عقدي يرتبط بصفة الحكمة الإلهية إلى جانب القدرة، ويُبنى عليه رفض فكرة العبثية الكونية بالكلية.</div></div>
+  </div>
+  <div class="sub"><h3>الأحكام والأصول المستنبطة</h3>
+    <div class="card c1"><div class="ct">الأصل الأول: وجوب الإيمان بالبعث كركن من أركان الإيمان</div><p>يُستنبط من الآية وجوب الجزم بأن الموت ليس نهاية الوجود، بل مرحلة انتقالية إلى حياة أخرى فيها الحساب والجزاء، وهذا ركن من أركان الإيمان الستة (الإيمان باليوم الآخر) الذي لا يصح إيمان المرء دونه.</p></div>
+    <div class="card c2"><div class="ct">الأصل الثاني: بطلان القول بعبثية الوجود أو المصادفة الكونية</div><p>يُستنبط تحريم اعتقاد أن الكون نشأ صدفة بلا خالق حكيم مدبِّر، وهذا رد مباشر على الفلسفات المادية التي تُرجع الوجود إلى المصادفة العشوائية، وهو أصل عقدي يمس توحيد الربوبية والحكمة الإلهية معاً.</p></div>
+    <div class="card c3"><div class="ct">الأصل الثالث: مشروعية الاستدلال بمشاهدة الظلم الدنيوي غير المُنصَف على ضرورة يوم آخر للجزاء</div><p>يُستنبط من منهج المقال نفسه (تعداد المظلومين الذين لم يُنصَفوا في الدنيا) وجه استدلالي مشروع: أن عدل الله المطلق يقتضي عقلاً ونقلاً وجود يوم تُرَدُّ فيه الحقوق، وهذا استدلال عقلي مؤيَّد بالنص القرآني لا مجرد وجداني.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 IRAB -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c7);">٦</div><h2>إعراب الآية كاملة</h2></div>
+  <div class="vb" style="margin-bottom:18px;"><div class="vt" style="font-size:1.25rem;">﴿أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَاكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ﴾</div><div class="vr">المؤمنون (٢٣)، الآية ١١٥، مكية</div></div>
+  <div class="ib">
+    <div class="ir"><div class="iw">أَفَحَسِبْتُمْ</div><div class="id">الهمزة: حرف استفهام إنكاري توبيخي. الفاء: حرف عطف على مقدَّر محذوف. «حسبتم»: فعل ماضٍ مبني على السكون لاتصاله بضمير رفع متحرك، والتاء ضمير متصل مبني في محل رفع فاعل.</div></div>
+    <div class="ir"><div class="iw">أَنَّمَا خَلَقْنَاكُمْ</div><div class="id">«أنّما»: أنّ حرف توكيد ونصب، و«ما» كافة تكف «أنّ» عن العمل (أو مصدرية). «خلقناكم»: فعل ماضٍ مبني على السكون، و«نا» ضمير متصل فاعل، و«كم» ضمير متصل مفعول به. والمصدر المؤول «أنما خلقناكم عبثاً» سدَّ مسدَّ مفعولَي «حسبتم».</div></div>
+    <div class="ir"><div class="iw">عَبَثًا</div><div class="id">مفعول لأجله منصوب بالفتحة، منوّن (أو حال بمعنى: عابثين، أو مفعول مطلق نائب عن المصدر).</div></div>
+    <div class="ir"><div class="iw">وَأَنَّكُمْ</div><div class="id">الواو: عاطفة. «أنّ»: حرف توكيد ونصب، و«كم» ضمير متصل في محل نصب اسم «أنّ»، معطوفة على «أنما خلقناكم» فتشارك في سد مسد المفعولين.</div></div>
+    <div class="ir"><div class="iw">إِلَيْنَا</div><div class="id">جار ومجرور متعلقان بـ«تُرجعون»، و«نا» ضمير متصل مبني في محل جر بـ«إلى».</div></div>
+    <div class="ir"><div class="iw">لَا تُرْجَعُونَ</div><div class="id">«لا»: نافية. «تُرجعون»: فعل مضارع مبني للمجهول مرفوع بثبوت النون لأنه من الأفعال الخمسة، والواو نائب فاعل. والجملة الفعلية في محل رفع خبر «أنّ».</div></div>
+  </div>
+  <div class="card c3" style="margin-top:14px;"><div class="ct">ملاحظة إعرابية: اشتراك مصدرين مؤولين في سدّ مسدّ مفعولَي «حسب»</div><p>لاحظ أن الفعل «حسبتم» يحتاج مفعولين، وقد سدَّ مسدَّهما هنا مصدران مؤولان معطوفان («أنما خلقناكم عبثاً» و«أنكم إلينا لا ترجعون») بدل مفعولين مفردين، وهذا أسلوب نحوي بليغ يُتيح للآية أن تُدين موقفين خاطئين معاً في تركيب نحوي واحد: إنكار الحكمة من الخلق (عبثاً)، وإنكار البعث (لا ترجعون)، وكأن النحو نفسه يُصوِّر تلازم الخطأين في عقل من أنكرهما.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S7 TADABBUR -->
+<div id="s7" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c1);">٧</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«مَنِ اسْتَيْقَنَ أَنَّ عُمُرَهُ لَيْسَ صَفْحَةً يَتِيمَةً بَلْ فَصْلًا فِي كِتَابٍ أَطْوَلَ، تَغَيَّرَ مِيزَانُهُ لِكُلِّ لَحْظَةٍ يَعِيشُهَا»<br><small style="font-size:.65em;color:var(--mist);">— قراءة تحليلية لمضمون المقال</small></div>
+  <div class="card c2"><div class="ct">أولاً: علاج الإحساس بعبثية المعاناة غير المنصفة</div><p>يُقدِّم المقال جواباً نفسياً لأحد أكثر الأسئلة إيلاماً: لماذا يُترك الظالم بلا عقاب والمظلوم بلا إنصاف في الدنيا؟ الجواب: لأن الدنيا ليست ساحة الحساب النهائية. <strong>التطبيق:</strong> حين تشعر بغضب من ظلم لم يُنصَف، ذكِّر نفسك أن غياب العدالة العاجلة ليس غياباً للعدالة المطلقة، بل تأجيلاً لها إلى موعدها المحتوم.</p></div>
+  <div class="card c3"><div class="ct">ثانياً: إعادة صياغة العلاقة مع الدنيا: أداة لا غاية</div><p>يُقدِّم المقال ثلاث استعارات متتالية (طريق، جسر، مزرعة) لإعادة تعريف العلاقة الصحية بالدنيا: العمل فيها دون التعلق بها. <strong>التطبيق:</strong> اسأل نفسك عند كل قرار كبير: هل أتعامل مع هذا الأمر كغاية نهائية، أم كوسيلة لغاية أبعد؟</p></div>
+  <div class="card c4"><div class="ct">ثالثاً: من مأساة الفقد إلى معنى الفقد</div><p>يُشخِّص المقال «أكبر مأساة يعيشها الإنسان» بأنها ظن أن الدنيا كل شيء، فينهار عند كل خسارة. الفهم الصحيح لحقيقة المصير يمنح مرونة نفسية أمام الفقد لأنه يضع كل خسارة دنيوية في سياق أكبر من الوجود الكلي. <strong>التطبيق:</strong> عند كل فقد كبير، اسأل: هل أتعامل معه كنهاية مطلقة أم كمرحلة ضمن رحلة أطول؟</p></div>
+  <div class="card c5"><div class="ct">رابعاً: تحويل اليقين العقدي إلى دافع عملي يومي لا مجرد عزاء</div><p>يختم المقال بدعاء عملي («اجعل الدنيا في أيدينا لا في قلوبنا») يُترجم اليقين بالمصير إلى سلوك يومي محدد: التعامل مع الدنيا كأداة في اليد لا كمستقر في القلب. <strong>التطبيق:</strong> اجعل هذا الدعاء تحديداً جزءاً من دعائك المتكرر، فهو معيار عملي دقيق يمكن قياس حالك عليه في كل مرحلة من حياتك.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:var(--c3);">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني الليلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر لآياته · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن الكريم والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط الحيّ بمستجدات العصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن وإخبارات النبي ﷺ</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> يقوم بدراسة التفسير والرؤى بالتزامٍ دقيق بضوابط القرآن والسنة النبوية، مستحضِرًا أقوال السلف الصالح في كل مسألة يتناولها.</p>
+      <p><strong>البُعد الزمني:</strong> يتَّسم بحثه بالربط الحيّ بين النص القرآني ومستجدات العصر، مما يمنح التأمل الأدبي روحًا معاصرة تُقرِّب المعنى القرآني من واقع القارئ اليوم.</p>
+      <p><strong>التحصيل العلمي:</strong> شملت دراساته علم الحديث، مركِّزًا على أحاديث الفتن وإخبارات النبي ﷺ؛ وهذا يؤكد عمق النظر وسلامة المنهج التي بُنيت عليها مقالاته.</p>
+      <div style="margin-top:13px;">
+        <span class="atag" style="background:var(--c1);">علوم القرآن</span>
+        <span class="atag" style="background:var(--c2);">التدبر المعاصر</span>
+        <span class="atag" style="background:var(--c3);">الإيمان بالبعث</span>
+        <span class="atag" style="background:var(--c4);">علم الحديث</span>
+        <span class="atag" style="background:var(--c5);">اللغة والبلاغة</span>
+        <span class="atag" style="background:var(--c6);">أصول التفسير</span>
+        <span class="atag" style="background:var(--c7);">التزكية النفسية</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.6;">الشيخ علي خليل عباس السلجوقي التركماني الليلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-82px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>

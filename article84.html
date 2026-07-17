@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>جُمْهُورِيَّةُ "مَا رَأْيُكَ فِي فُلَانٍ؟!" — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141018;--bg:#fbf7ff;--bg2:#f0e6ff;
+  --bd:#0a0612;--bt:#fff6ea;
+  --red:#e0273d;--orange:#f0821e;--yellow:#e8b400;--green:#1ea86a;--teal:#0e9eaa;--blue:#2266d8;--indigo:#5a3ae0;--violet:#b028c8;
+  --div:#d8c8f0;--mist:#3a2c50;
+  --accent:var(--red);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:
+  radial-gradient(circle at 8% 4%, rgba(224,39,61,.10) 0%, transparent 30%),
+  radial-gradient(circle at 92% 10%, rgba(240,130,30,.10) 0%, transparent 30%),
+  radial-gradient(circle at 15% 45%, rgba(232,180,0,.09) 0%, transparent 30%),
+  radial-gradient(circle at 85% 55%, rgba(30,168,106,.09) 0%, transparent 30%),
+  radial-gradient(circle at 20% 80%, rgba(14,158,170,.09) 0%, transparent 30%),
+  radial-gradient(circle at 88% 92%, rgba(34,102,216,.09) 0%, transparent 30%),
+  radial-gradient(circle at 50% 60%, rgba(90,58,224,.06) 0%, transparent 40%);
+}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--indigo),var(--violet));z-index:400;transform-origin:top;box-shadow:0 0 8px rgba(0,0,0,.3);}
+.hdr{background:var(--bd);border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--indigo),var(--violet)) 1;position:sticky;top:0;z-index:200;box-shadow:0 4px 28px rgba(0,0,0,.5);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:60px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;font-size:1.05rem;flex-shrink:0;font-weight:700;
+  background:linear-gradient(90deg,var(--orange),var(--yellow),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.logo span{background:linear-gradient(90deg,var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.92rem;text-align:center;flex:1;opacity:.95;font-weight:600;}
+.tbtn{background:linear-gradient(90deg,var(--indigo),var(--violet));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.86rem;font-weight:700;white-space:nowrap;box-shadow:0 3px 10px rgba(90,58,224,.4);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 60px);}
+.sb{width:290px;flex-shrink:0;background:linear-gradient(180deg,#0a0612,#150a20);position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;border-left:2px solid var(--violet);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:60px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-size:1.05rem;padding:18px 18px 10px;font-weight:700;
+  background:linear-gradient(90deg,var(--red),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.toc-s{color:var(--teal);font-size:.68rem;letter-spacing:.12em;padding:12px 18px 4px;font-weight:700;}
+.toc-a{display:block;color:#c8b8e8;text-decoration:none;padding:8px 18px 8px 26px;font-size:.85rem;border-right:3px solid transparent;transition:all .2s;font-weight:500;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(255,255,255,.08);border-right-color:var(--yellow);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:40px;border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;position:relative;}
+.horn{font-size:1.6rem;display:block;margin-bottom:16px;letter-spacing:.4em;
+  background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--teal),var(--blue));color:#fff;font-size:.78rem;font-weight:700;padding:5px 18px;border-radius:22px;margin-bottom:20px;box-shadow:0 3px 10px rgba(14,158,170,.3);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.35rem;font-weight:800;line-height:1.5;margin-bottom:14px;
+  background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hmeta{color:var(--mist);font-size:.96rem;font-weight:600;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:14px;}
+.hmeta .dot{width:5px;height:5px;background:var(--violet);border-radius:50%;}
+.vb{background:linear-gradient(135deg,#150a20,#0a0612);border:2px solid transparent;border-image:linear-gradient(120deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;border-radius:14px;padding:36px 42px;margin:38px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(90,58,224,.18);}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(240,130,30,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.55rem;color:#fff8ee;line-height:2.15;position:relative;z-index:1;font-weight:600;text-shadow:0 2px 12px rgba(232,180,0,.25);}
+.vt.sm{font-size:1.32rem;}
+.vr{font-size:.88rem;margin-top:14px;position:relative;z-index:1;font-weight:700;
+  background:linear-gradient(90deg,var(--yellow),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.abody{font-size:1.15rem;line-height:2.1;color:#141018;font-weight:500;}
+.abody p{margin-bottom:1.6em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3.2em;font-family:'Scheherazade New',serif;font-weight:800;float:right;line-height:.8;margin-left:10px;
+  background:linear-gradient(135deg,var(--red),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;font-weight:800;text-align:center;margin:12px 0;
+  background:linear-gradient(90deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.zeena-list{list-style:none;padding:0;margin:12px 0 22px;}
+.zeena-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--red);font-weight:700;padding:9px 0;border-bottom:2px dashed var(--div);}
+.zeena-list li:last-child{border-bottom:none;}
+.compare-list{list-style:none;padding:0;margin:16px 0;}
+.compare-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--indigo);font-weight:700;padding:10px 0;border-bottom:2px dashed var(--div);text-align:center;}
+.compare-list li:last-child{border-bottom:none;}
+.fawqahum-list{list-style:none;padding:0;margin:12px 0;}
+.fawqahum-list li{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--teal);text-align:center;padding:9px 0;border-bottom:2px dashed var(--div);font-weight:800;}
+.fawqahum-list li:last-child{border-bottom:none;}
+.src{background:linear-gradient(135deg,#fff9e8,#fff2d8);border:2px solid var(--yellow);border-radius:10px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.89rem;color:#5a4410;line-height:1.9;font-weight:500;}
+.src strong{color:#a86800;}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:14px;font-weight:800;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.sahih{background:linear-gradient(90deg,var(--green),var(--teal));}
+.grade.hasan{background:linear-gradient(90deg,var(--yellow),var(--orange));}
+.sec{margin-top:74px;padding-top:20px;scroll-margin-top:80px;}
+.sec-h{display:flex;align-items:center;gap:16px;margin-bottom:28px;}
+.sec-n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,var(--accent),color-mix(in srgb, var(--accent) 60%, #fff 0%));color:#fff;box-shadow:0 4px 14px color-mix(in srgb, var(--accent) 50%, transparent);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--bd);border-bottom:4px solid var(--accent);padding-bottom:9px;flex:1;font-weight:800;}
+.sub{margin-top:36px;margin-bottom:20px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.35rem;font-weight:800;margin-bottom:14px;padding-right:16px;border-right:5px solid var(--accent);color:var(--bd);}
+.card{background:#fff;border:2px solid var(--div);border-radius:12px;padding:22px 26px;margin:18px 0;box-shadow:0 3px 14px rgba(90,58,224,.06);}
+.card.b{border-right:6px solid var(--accent);}
+.card.b2{border-right:6px solid var(--accent);filter:hue-rotate(25deg);}
+.card.b3{border-right:6px solid var(--accent);filter:hue-rotate(-25deg);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--bd);margin-bottom:11px;font-weight:800;}
+.card p{font-size:1rem;color:#141018;line-height:1.95;margin-top:6px;font-weight:500;}
+.bdg{font-size:.7rem;padding:3px 10px;border-radius:14px;font-family:'Noto Naskh Arabic',sans-serif;background:linear-gradient(90deg,var(--indigo),var(--violet));color:#fff;font-weight:800;}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.98rem;border-radius:10px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.06);}
+.tbl th{background:linear-gradient(90deg,var(--bd),#1a1028);color:#ffe8b8;padding:11px 15px;text-align:right;font-family:'Scheherazade New',serif;font-size:1rem;font-weight:800;}
+.tbl td{padding:11px 15px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.85;}
+.tbl tr:nth-child(even) td{background:#faf5ff;}
+.term{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--indigo);font-weight:800;}
+.def{color:var(--mist);font-size:.94rem;font-weight:500;}
+.ib{background:linear-gradient(135deg,#f5eeff,#eee4fb);border-radius:10px;padding:16px 20px;margin:12px 0;}
+.ir{display:flex;gap:14px;padding:9px 0;border-bottom:2px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.24rem;color:var(--red);min-width:155px;font-weight:800;flex-shrink:0;}
+.id{color:var(--mist);font-size:.94rem;flex:1;line-height:1.9;font-weight:500;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.5rem;color:var(--bd);text-align:center;padding:30px 40px;margin:40px 0;border-top:4px solid var(--indigo);border-bottom:4px solid var(--violet);position:relative;font-weight:700;background:linear-gradient(135deg,#fff9f0,#f5eeff);border-radius:8px;}
+.pq::before{content:'❝';position:absolute;top:0;right:38px;font-size:3rem;color:var(--orange);opacity:.35;line-height:1;}
+.cb{background:linear-gradient(135deg,#0a0612,#1a1028);border:2px solid var(--indigo);border-radius:12px;padding:26px 32px;margin:22px 0;}
+.cb .bt{color:#ffd86a;font-family:'Scheherazade New',serif;font-size:1.2rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--violet);}
+.ci{color:#d4c4f0;padding:10px 0;border-bottom:1px dashed rgba(180,140,240,.25);font-size:.94rem;line-height:1.9;font-weight:500;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:#ffe8b8;font-size:1.04rem;display:block;margin-bottom:4px;font-weight:700;}
+.ci .vs{color:#8adfd0;font-size:.8rem;}
+.vrd{background:linear-gradient(135deg,#0a0612,#1a1028);border:2px solid var(--teal);border-radius:9px;padding:18px 22px;margin:14px 0;color:#c8ecea;font-size:.96rem;line-height:1.95;font-weight:500;}
+.vrd strong{color:#ffd86a;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:18px 0;}
+.mc{background:#fff;border:2px solid var(--div);border-radius:10px;padding:18px 20px;box-shadow:0 3px 10px rgba(90,58,224,.06);}
+.mc .ml{color:var(--violet);font-size:.75rem;margin-bottom:5px;display:block;font-weight:800;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bd);font-weight:800;margin-bottom:5px;}
+.mc .md{color:var(--mist);font-size:.86rem;line-height:1.65;font-weight:500;}
+.cl{list-style:none;padding:0;margin:12px 0;}
+.cl li{padding:9px 28px 9px 0;position:relative;border-bottom:1px dashed var(--div);color:#141018;line-height:1.9;font-weight:500;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--red);font-size:.9em;top:12px;font-weight:900;}
+.asec{background:linear-gradient(135deg,#0a0612,#1a1028);border:3px solid transparent;border-image:linear-gradient(120deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;border-radius:14px;padding:36px 42px;margin:60px 0 40px;display:flex;gap:26px;align-items:flex-start;}
+.ava{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--orange),var(--yellow));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:2rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 4px 16px rgba(240,130,30,.4);}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff8ee;font-size:1.4rem;margin-bottom:6px;font-weight:800;}
+.ai .at{color:#ffd86a;font-size:.88rem;margin-bottom:14px;font-weight:600;}
+.ai p{color:#d4c4f0;font-size:.94rem;line-height:1.9;margin-bottom:9px;font-weight:500;}
+.ai p strong{color:#8adfd0;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0;}
+.ami{background:rgba(255,255,255,.06);border:1px solid rgba(180,140,240,.3);border-radius:8px;padding:11px 14px;}
+.ami .aml{color:#8adfd0;font-size:.72rem;margin-bottom:4px;display:block;font-weight:700;}
+.ami .amv{color:#fff8ee;font-size:.9rem;font-family:'Scheherazade New',serif;font-weight:600;}
+.atag{display:inline-block;background:linear-gradient(90deg,var(--indigo),var(--violet));color:#fff;font-size:.75rem;padding:4px 13px;border-radius:14px;margin:3px;font-weight:700;}
+.orn{text-align:center;font-size:1.3rem;margin:50px 0;letter-spacing:.42em;font-weight:700;
+  background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+footer{background:var(--bd);text-align:center;padding:32px 20px;font-size:.86rem;border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;margin-top:80px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.08rem;margin-bottom:8px;font-weight:800;
+  background:linear-gradient(90deg,var(--orange),var(--yellow),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;}
+footer .fb span{background:linear-gradient(90deg,var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+footer p{color:#c8b8e8;}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:60px;width:280px;height:calc(100vh - 60px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.85rem;}.asec{flex-direction:column;}.main{padding:32px 22px;}}
+@media(max-width:640px){.main{padding:22px 14px;}.vt{font-size:1.18rem;}.hero h1{font-size:1.45rem;}.pq{font-size:1.18rem;padding:22px 18px;}.hdr-i{padding:0 14px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">جُمْهُورِيَّةُ "مَا رَأْيُكَ فِي فُلَانٍ؟!"</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2b">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالأدلة</a>
+  <a class="toc-a" href="#s4">٤. الجوانب الفقهية والتربوية</a>
+  <a class="toc-a sub" href="#s4a">فقه الأولويات والجرح والتعديل</a>
+  <a class="toc-a sub" href="#s4b">أدب الاختلاف ومنهج السلف</a>
+  <a class="toc-a sub" href="#s4c">خطر التصنيف والولاء المنحرف</a>
+  <a class="toc-a sub" href="#s4d">الغيبة بذريعة التحذير</a>
+  <a class="toc-a sub" href="#s4e">التواضع وهدي النبوة</a>
+  <a class="toc-a sub" href="#s4f">ميزان النقد العلمي</a>
+  <a class="toc-a sub" href="#s4g">البيئة الافتراضية وتضخيم الخلاف</a>
+  <a class="toc-a sub" href="#s4h">التحذير من البدعة لا من الأشخاص والغلو في التبديع</a>
+  <a class="toc-a sub" href="#s4i">الملكة العلمية وهيبة الراسخين</a>
+  <a class="toc-a" href="#s5">٥. إعراب الدليل المحوري</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">مقالة إصلاحية اجتماعية · فقه الأولويات · أدب الاختلاف</div>
+  <h1>جُمْهُورِيَّةُ "مَا رَأْيُكَ فِي فُلَانٍ؟!"<br>عِنْدَمَا يُصْبِحُ الْأَشْخَاصُ عَقِيدَةً!</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>دراسة إصلاحية معاصرة</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;--accent:var(--red);">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt sm">﴿وَلَا تَكُونُوا كَالَّذِينَ تَفَرَّقُوا وَاخْتَلَفُوا مِنْ بَعْدِ مَا جَاءَهُمُ الْبَيِّنَاتُ وَأُولَٰئِكَ لَهُمْ عَذَابٌ عَظِيمٌ﴾</div>
+    <div class="vr">سورة آل عمران، الآية ١٠٥ — الآية المحور في هذا المقال</div>
+  </div>
+
+  <div class="abody">
+    <p>فِي بَعْضِ الْعَوَالِمِ الْغَرِيبَةِ، لَا يَبْدَأُ مَجْلِسُ الْعِلْمِ بِآيَةٍ، وَلَا بِحَدِيثٍ، وَلَا بِمَسْأَلَةٍ فِقْهِيَّةٍ... بَلْ يَبْدَأُ بِالسُّؤَالِ الْأَشْهَرِ:</p>
+
+    <p class="ql">"مَا رَأْيُكَ فِي فُلَانٍ؟"</p>
+
+    <p>فَإِنْ أَجَبْتَ بِمَا يُوَافِقُ هَوَى السَّائِلِ... ابْتَسَمُوا، وَرَبَّتُوا عَلَى كَتِفِكَ، وَأَعْلَنُوا أَنَّكَ مِنَ "السَّلَفِيِّينَ".</p>
+
+    <p>أَمَّا إِنْ قُلْتَ: "لَا أَعْرِفُ" أَوْ "أَحْتَرِمُ الْجَمِيعَ وَأُنَاقِشُ الْأَقْوَالَ بِالدَّلِيلِ"... فَقَدْ دَخَلْتَ فَوْرًا فِي قَائِمَةِ الِانْتِظَارِ الطَّوِيلَةِ... قَائِمَةِ الْمُشْتَبَهِ بِهِمْ!</p>
+
+    <p>وَهَكَذَا تَتَحَوَّلُ الْمَجَالِسُ إِلَى لِجَانِ تَحْقِيقٍ، وَيُصْبِحُ مِيزَانُ النَّاسِ لَيْسَ الْقُرْآنَ وَلَا السُّنَّةَ، وَإِنَّمَا "مَوْقِفَكَ مِنْ فُلَانٍ وَعَلَّانٍ".</p>
+
+    <p>وَالْعَجِيبُ أَنَّ الشَّابَّ قَدْ يَحْفَظُ عَشَرَاتِ أَسْمَاءِ الْمُخْتَلَفِ مَعَهُمْ، لَكِنَّهُ لَا يَحْفَظُ أَبْوَابَ الطَّهَارَةِ، وَلَا يَعْرِفُ فَرَائِضَ الْوُضُوءِ، وَلَا قَرَأَ تَفْسِيرَ سُورَةٍ قَصِيرَةٍ!</p>
+
+    <ul class="zeena-list">
+      <li>فَإِذَا سَأَلْتَهُ عَنْ أَحْكَامِ الزَّكَاةِ... صَمَتَ.</li>
+      <li>وَإِذَا سَأَلْتَهُ عَنْ فِقْهِ الْبُيُوعِ... احْتَارَ.</li>
+      <li>أَمَّا إِذَا ذَكَرْتَ اسْمَ دَاعِيَةٍ أَوْ شَيْخٍ... انْطَلَقَتِ الْمُحَاضَرَةُ لِسَاعَتَيْنِ بِلَا تَوَقُّفٍ!</li>
+    </ul>
+
+    <p>وَكَأَنَّ الْأُمَّةَ لَمْ يَعُدْ يَشْغَلُهَا الْإِلْحَادُ، وَلَا الْمُخَدِّرَاتُ، وَلَا انْهِيَارُ الْأَخْلَاقِ، وَلَا الْفَقْرُ، وَلَا الْجَهْلُ... بَلِ الْقَضِيَّةُ الْمَصِيرِيَّةُ أَصْبَحَتْ:</p>
+
+    <p class="ql">"هَلْ بَدَّعْتَ فُلَانًا أَمْ لَمْ تُبَدِّعْهُ؟!"</p>
+
+    <p>وَلَوْ فَتَّشْتَ فِي كَثِيرٍ مِنَ الْمَجَالِسِ لَوَجَدْتَ أَنَّ مِسَاحَةَ الْكَلَامِ عَنِ الْأَشْخَاصِ أَكْبَرُ مِنْ مِسَاحَةِ الْكَلَامِ عَنِ الْقُرْآنِ نَفْسِهِ.</p>
+
+    <p>وَلَوْ كَانَ الْإِمَامُ أَبُو حَنِيفَةَ أَوْ مَالِكٌ أَوِ الشَّافِعِيُّ أَوْ أَحْمَدُ بَيْنَنَا الْيَوْمَ، لَانْشَغَلُوا بِتَعْلِيمِ النَّاسِ التَّوْحِيدَ وَالْفِقْهَ وَالْأَخْلَاقَ، لَا بِإِقَامَةِ مَحَاكِمَ تَفْتِيشٍ يَوْمِيَّةٍ فِي أَسْمَاءِ الرِّجَالِ.</p>
+
+    <p>إِنَّ الْأُمَّةَ تَحْتَاجُ إِلَى عُلَمَاءَ يَجْمَعُونَ وَلَا يُفَرِّقُونَ، وَيَبْنُونَ وَلَا يَهْدِمُونَ، وَيَرُدُّونَ الْخَطَأَ بِالْعِلْمِ وَالْعَدْلِ، لَا بِالتَّهْوِيلِ وَالتَّصْنِيفِ الدَّائِمِ.</p>
+
+    <p>فَالِاخْتِلَافُ الْعِلْمِيُّ بَاقٍ مَا بَقِيَ الِاجْتِهَادُ، أَمَّا تَحْوِيلُ كُلِّ خِلَافٍ إِلَى مَعْرَكَةِ وُجُودٍ، وَكُلِّ مُخَالِفٍ إِلَى خَصْمٍ دَائِمٍ، فَهُوَ بَابٌ يُوَرِّثُ الْفُرْقَةَ، وَيَسْتَهْلِكُ الطَّاقَاتِ، وَيَصْرِفُ الشَّبَابَ عَنِ الْعِلْمِ النَّافِعِ وَالْعَمَلِ الصَّالِحِ.</p>
+
+    <ul class="fawqahum-list">
+      <li>الْعِلْمُ نُورٌ... وَلَيْسَ قَائِمَةَ حَظْرٍ.</li>
+      <li>وَالْأُخُوَّةُ أَوْسَعُ مِنَ الِانْتِمَاءَاتِ الضَّيِّقَةِ.</li>
+      <li>وَالْعَدْلُ وَاجِبٌ مَعَ الْمُوَافِقِ وَالْمُخَالِفِ.</li>
+      <li>وَالتَّوَاضُعُ زِينَةُ الْعَالِمِ.</li>
+      <li>وَرَحْمَةُ الْخَلْقِ أَقْرَبُ إِلَى هَدْيِ النُّبُوَّةِ مِنْ ثَقَافَةِ الْإِقْصَاءِ وَالتَّشْهِيرِ.</li>
+    </ul>
+
+    <div class="vb"><div class="vt sm">فَلْنَنْشَغِلْ بِمَا يَنْفَعُ الْأُمَّةَ، وَلْنَزِنِ الْأَقْوَالَ بِالدَّلِيلِ، وَلْنَجْعَلِ الْقُرْآنَ وَالسُّنَّةَ مِيزَانًا، لَا الْأَشْخَاصَ، وَلَا الْأَلْقَابَ، وَلَا الْخُصُومَاتِ الْمُمْتَدَّةَ.</div></div>
+
+    <!-- تخريج -->
+    <div class="sub"><h3>📚 تخريج الآيات والأحاديث الواردة والمستشهد بها</h3>
+      <div class="src"><strong>﴿وَلَا تَكُونُوا كَالَّذِينَ تَفَرَّقُوا وَاخْتَلَفُوا...﴾</strong><br>سورة آل عمران (٣)، الآية ١٠٥، مدنية. قال القرطبي: «ولا تكونوا أيها المؤمنون كأولئك اليهود والنصارى وغيرهم من الذين تفرقوا شيعاً وأحزاباً... واختلفوا فيما بينهم اختلافاً شنيعاً، وقد ترتب على ذلك أن كفّر بعضهم بعضاً، وقاتل بعضهم بعضاً» — (الجامع لأحكام القرآن، تفسير الآية ١٠٥ من سورة آل عمران).</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «الدِّينُ النَّصِيحَةُ»</strong><br>عن تميم الداري رضي الله عنه أن النبي ﷺ قال: «الدِّينُ النَّصِيحَةُ» قلنا: لمن؟ قال: «لِلَّهِ، وَلِكِتَابِهِ، وَلِرَسُولِهِ، وَلِأَئِمَّةِ الْمُسْلِمِينَ، وَعَامَّتِهِمْ» — أخرجه مسلم في صحيحه، كتاب الإيمان، ح٥٥. وفيه أصل النصح للمسلمين لا فضحهم.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث تعريف الغيبة</strong><br>عن أبي هريرة رضي الله عنه أن رسول الله ﷺ قال: «أَتَدْرُونَ مَا الْغِيبَةُ؟» قَالُوا: اللَّهُ وَرَسُولُهُ أَعْلَمُ. قَالَ: «ذِكْرُكَ أَخَاكَ بِمَا يَكْرَهُ» — أخرجه مسلم في صحيحه، كتاب البر والصلة والآداب، ح٢٥٨٩.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه»</strong><br>عن أنس بن مالك رضي الله عنه، قال رسول الله ﷺ: «لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ» — أخرجه البخاري في صحيحه، كتاب الإيمان، ح١٣. ومسلم في صحيحه، ح٤٥.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «إنما بعثت معلماً»</strong><br>عن أبي هريرة رضي الله عنه، وحديث عائشة رضي الله عنها في وصف خلق النبي ﷺ: «مَا خُيِّرَ رَسُولُ اللَّهِ ﷺ بَيْنَ أَمْرَيْنِ قَطُّ إِلَّا اخْتَارَ أَيْسَرَهُمَا مَا لَمْ يَكُنْ إِثْمًا... وَمَا انْتَقَمَ رَسُولُ اللَّهِ ﷺ لِنَفْسِهِ قَطُّ» — متفق عليه: البخاري ح٦١٢٦، ومسلم ح٢٣٢٧.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec" style="--accent:var(--orange);">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في المقال</h3>
+    <div class="card b"><div class="ct">أولاً: الاستعارة السياسية «جُمْهُورِيَّةُ مَا رَأْيُكَ فِي فُلَانٍ»</div><p>عنوان المقال بأكمله استعارة ساخرة تُصوّر ثقافة التصنيف كدولة قائمة بذاتها لها «جمهورية» وقوانين وحدود مواطَنة (السلفيون الحقيقيون مقابل المشتبه بهم)، وهذا التوظيف السياسي الساخر يفضح حجم التسلط الفكري لهذه الظاهرة بصورة طريفة لاذعة.</p></div>
+    <div class="card b2"><div class="ct">ثانياً: استعارة «لِجَانُ التَّحْقِيقِ» و«قَائِمَةُ الْمُشْتَبَهِ بِهِمْ»</div><p>تحويل المجالس العلمية إلى «لجان تحقيق» و«قائمة انتظار للمشتبه بهم» استعارة قانونية-أمنية تُصوّر أجواء الترهيب الفكري السائدة في بعض البيئات، وتكشف بسخرية مُرّة كيف تحوّل طلب العلم إلى محاكمة.</p></div>
+    <div class="card b3"><div class="ct">ثالثاً: المفارقة الساخرة في «انْطَلَقَتِ الْمُحَاضَرَةُ لِسَاعَتَيْنِ بِلَا تَوَقُّفٍ»</div><p>التضاد الساخر بين الصمت أمام سؤال فقهي («صمت... احتار») والانطلاق المحاضراتي عند ذكر اسم شخص يُجسّد- بأسلوب كوميدي ناقد- اختلال الأولويات المعرفية بصورة لا تحتاج تعليقاً إضافياً.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="card b"><div class="ct">الطباق المتكرر: يَجْمَعُونَ/يُفَرِّقُونَ، يَبْنُونَ/يَهْدِمُونَ</div><p>مقابلتان متتاليتان تُلخصان صفتي العالم الرباني مقابل صفتي المتعصب المصنِّف، في بنية إيقاعية محكمة تُرسّخ المفارقة بوضوح شديد.</p></div>
+    <div class="card b2"><div class="ct">التكرار الاستنكاري: «وَلَا الْمُخَدِّرَاتُ، وَلَا انْهِيَارُ الْأَخْلَاقِ، وَلَا الْفَقْرُ، وَلَا الْجَهْلُ»</div><p>تعداد أربع قضايا مصيرية حقيقية تليها المفارقة الصادمة («بل القضية المصيرية أصبحت: هل بدّعت فلاناً»)، وهذا التصعيد التراكمي يُبرز سخف إحلال قضية شكلية محل قضايا الأمة الجوهرية.</p></div>
+    <div class="card b3"><div class="ct">السجع الختامي: «الْعِلْمُ نُورٌ... لَيْسَ قَائِمَةَ حَظْرٍ»</div><p>خمس جمل قصيرة متوازنة الوزن تختم بمنظومة قيمية متكاملة (العلم، الأخوة، العدل، التواضع، الرحمة) في إيقاع حكمي يُحاكي الأمثال السائرة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec" style="--accent:var(--yellow);">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card b"><div class="ct">الفرق بين: التَّبْدِيعُ / التَّفْسِيقُ / التَّكْفِيرُ / الْجَرْحُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْجَرْح</td><td class="def">الحكم العلمي المتخصص على راوٍ بضعف ضبطه أو عدالته، مبني على قواعد علم مصطلح الحديث الدقيقة — أضيق الألفاظ وأكثرها انضباطاً.</td></tr>
+        <tr><td class="term">التَّبْدِيع</td><td class="def">الحكم بأن قولاً أو فعلاً بدعة مخالفة للسنة — حكم على المقالة أصلاً، وقد يُطلق على القائل بشروط معتبرة عند أهل العلم.</td></tr>
+        <tr><td class="term">التَّفْسِيق</td><td class="def">الحكم بخروج الشخص عن العدالة بارتكاب كبيرة — أشد من التبديع في أثره الاجتماعي والقضائي.</td></tr>
+        <tr><td class="term">التَّكْفِير</td><td class="def">أخطر الأحكام وأشدها عاقبة — إخراج المرء من الملة، له شروط وموانع دقيقة عند أهل العلم.</td></tr>
+      </table>
+      <div class="vrd"><strong>لطيفة:</strong> يُلاحظ أن المقال ينتقد استسهال الانتقال من مجرد الاختلاف الاجتهادي إلى أعلى درجات هذه الأحكام (التبديع فالتفسيق) دون تحقق شروطها العلمية الدقيقة عند أهل العلم الراسخين.</div>
+    </div>
+    <div class="card b2"><div class="ct">الفرق بين: الْغِيبَةُ / النَّمِيمَةُ / التَّشْهِيرُ / النَّصِيحَةُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْغِيبَة</td><td class="def">ذكر الشخص في غيابه بما يكره وإن كان صادقاً — كما عرّفها النبي ﷺ في الحديث الصحيح.</td></tr>
+        <tr><td class="term">النَّمِيمَة</td><td class="def">نقل الكلام بين الناس بقصد الإفساد بينهم — أخصّ من الغيبة وأشد إفساداً للعلاقات.</td></tr>
+        <tr><td class="term">التَّشْهِير</td><td class="def">إشاعة عيب الشخص على نطاق واسع بقصد الفضح — أوسع أثراً من الغيبة الفردية.</td></tr>
+        <tr><td class="term">النَّصِيحَة</td><td class="def">بيان الحق بقصد الإصلاح لا الفضح، غالباً بطريقة مباشرة أو بضوابط شرعية معتبرة — الأصل المشروع الذي ينبغي أن يحل محل الغيبة والتشهير.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card b"><div class="ct">دلالة وضع «فُلَان» بصيغة النكرة المبهمة في العنوان</div><p>اختيار المؤلف لفظ «فُلَان» المبهم بدل تسمية شخص بعينه له دلالة منهجية مهمة: القصد نقد الظاهرة لا شخص بعينه، وهذا يتوافق مع القاعدة الشرعية في «نقد الأقوال لا الأشخاص» التي دعا إليها المقال نفسه، فطبّق المؤلف منهجه على أسلوب كتابته.</p></div>
+    <div class="card b2"><div class="ct">معنى «الْعَقِيدَة» في عنوان المقال «عِنْدَمَا يُصْبِحُ الْأَشْخَاصُ عَقِيدَةً»</div><p>استعمال لفظ «عقيدة» هنا استعمال مجازي موسّع، إذ العقيدة اصطلاحاً هي ما يُعقد عليه القلب من أصول الإيمان الثابتة، فاستعارة اللفظ لوصف الولاء المفرط للأشخاص تنبيه بليغ إلى خطورة الظاهرة: أنها ترقى في سلوك أصحابها إلى منزلة العقيدة رغم أنها ليست كذلك شرعاً.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec" style="--accent:var(--green);">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالأدلة الشرعية</h2></div>
+  <div class="cb"><div class="bt">السياق المباشر لآية آل عمران ١٠٥ — الأمر بالدعوة قبل النهي عن التفرق (١٠٤)</div>
+    <div class="ci"><span class="vi">﴿وَلْتَكُن مِّنكُمْ أُمَّةٌ يَدْعُونَ إِلَى الْخَيْرِ وَيَأْمُرُونَ بِالْمَعْرُوفِ وَيَنْهَوْنَ عَنِ الْمُنكَرِ﴾</span><span class="vs">آل عمران: ١٠٤ — يسبق آية النهي عن التفرق مباشرة أمرٌ بالدعوة إلى الخير الجامع، فيكون ترتيب الآيتين تعليماً: ابدؤوا بالدعوة الإيجابية الجامعة قبل الانشغال بالتفرق والاختلاف السلبي.</span></div>
+  </div>
+  <div class="cb"><div class="bt">آية الأخوة الإيمانية الجامعة</div>
+    <div class="ci"><span class="vi">﴿إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ﴾</span><span class="vs">الحجرات: ١٠ — أصل قرآني يُقرر أن الأخوة الإيمانية أوسع من كل الانتماءات الفرعية، وهو ما استند إليه المقال في قوله «الأخوة أوسع من الانتماءات الضيقة».</span></div>
+  </div>
+  <div class="cb"><div class="bt">آية النهي عن الغيبة</div>
+    <div class="ci"><span class="vi">﴿وَلَا يَغْتَب بَّعْضُكُم بَعْضًا أَيُحِبُّ أَحَدُكُمْ أَن يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًا فَكَرِهْتُمُوهُ﴾</span><span class="vs">الحجرات: ١٢ — التشبيه القرآني الصارخ للغيبة بأكل لحم الأخ الميت يُؤصّل خطورة الانشغال بأعراض الناس تحت أي مسمى، بما فيه مسمى «التحذير».</span></div>
+  </div>
+  <div class="cb"><div class="bt">موقف عملي من السلف في أدب الاختلاف — الإمام الشافعي والإمام مالك</div>
+    <div class="ci"><span class="vi">قول الإمام الشافعي: «رأيي صواب يحتمل الخطأ، ورأي غيري خطأ يحتمل الصواب»</span><span class="vs">أثر مشهور عند أهل العلم يُبيّن تواضع الأئمة في الاختلاف الاجتهادي، ويُناقض ثقافة الجزم المطلق بخطأ المخالف التي ينتقدها المقال.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط الكلي:</strong> يستند المقال ضمنياً إلى منظومة قرآنية ونبوية متكاملة تُرسّخ الأخوة الجامعة (الحجرات ١٠)، وتُحذّر من التفرق (آل عمران ١٠٤-١٠٥)، وتُحرّم الغيبة (الحجرات ١٢)، وتؤصل النصح البنّاء (حديث الدين النصيحة) — فتتكامل هذه النصوص لتُشكّل الأساس الشرعي لدعوة المقال إلى تجاوز ثقافة التصنيف.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 THEMATIC -->
+<div id="s4" class="sec" style="--accent:var(--teal);">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>الجوانب الفقهية والتربوية للمقال</h2></div>
+
+  <div id="s4a" class="sub"><h3>أولاً: فقه الأولويات وضوابط الجرح والتعديل</h3>
+    <div class="card b"><div class="ct">تقديم العلم الواجب على جدل الأشخاص</div><p>الشريعة رتبت طلب العلم بحسب الحاجة: علم العقيدة والعبادات والمعاملات فرض عين على كل مسلم، بينما علم الجرح والتعديل والرد على المخالفين تخصص دقيق لا يُطلب من عامة الناس ابتداءً. يُظهر المقال هذا الخلل بمثال صارخ: من يحفظ أسماء المختلَف معهم ولا يعرف فرائض الوضوء قد قلب سلّم الأولويات الشرعية رأساً على عقب.</p></div>
+    <div class="card b2"><div class="ct">الجرح والتعديل علم متخصص لا سلاح عام</div><p>علم الجرح والتعديل الذي خدم به الأئمة الحفاظ حديث النبي ﷺ له أصول دقيقة: معرفة أحوال الرواة، والتثبت من الروايات، والعدالة في الحكم، ولا يُمارسه إلا من جمع بين سعة العلم وتقوى القلب وطول الممارسة. تحويله إلى أداة يستعملها كل متحمس لتصفية الحسابات مع المخالفين انحراف عن أصل هذا العلم النبيل.</p></div>
+  </div>
+
+  <div id="s4b" class="sub"><h3>ثانياً: أدب الاختلاف ومنهج السلف</h3>
+    <div class="card b2"><div class="ct">الاختلاف الاجتهادي لا يوجب التبرؤ</div><p>اختلف الأئمة الأربعة في عشرات المسائل الفقهية دون أن يُبدّع أو يُفسّق بعضهم بعضاً، بل كانوا يتناظرون بالحجة ويحترمون اجتهاد المخالف حتى مع بقاء الخلاف قائماً. هذا النموذج هو الأصل الذي انحرف عنه من يجعل الاختلاف معياراً للولاء أو البراء.</p></div>
+    <div class="card b"><div class="ct">قبول الحق ممن خالف — سنة العلماء الراسخين</div><p>من سمات العالم الرباني أنه يرجع للحق إذا تبيّن له ولو كان القائل به مخالفاً له في مسائل أخرى، وهذا خلاف ما يُنتجه التصنيف الحزبي الذي يرفض كل قول لمجرد صدوره عن «المخالف» بصرف النظر عن دليله.</p></div>
+  </div>
+
+  <div id="s4c" class="sub"><h3>ثالثاً: خطر التصنيف والولاء والبراء المنحرف</h3>
+    <div class="card b3"><div class="ct">الولاء والبراء الشرعي لله ورسوله لا لآراء الرجال</div><p>الولاء والبراء أصل عقدي عظيم، لكنه في أصله الشرعي مبني على الإيمان والكفر، والطاعة والمعصية، لا على الانتماء لشخص أو جماعة بعينها. حين يتحول الولاء لموقف من «فلان» إلى معيار قبول أو رفض الشخص، يكون قد وقع تحريف خطير لهذا الأصل العقدي النبيل.</p></div>
+    <div class="card b"><div class="ct">من الأخوة الإيمانية إلى العصبية الحزبية</div><p>يحذر المقال ضمنياً من انزلاق الانتماء الفكري إلى عصبية تُشبه العصبية الجاهلية المذمومة، حيث يُوالى الشخص لأنه من «الجماعة» ويُعادى الآخر لأنه من «الجماعة الأخرى»، بصرف النظر عن ميزان الحق والباطل الحقيقي.</p></div>
+  </div>
+
+  <div id="s4d" class="sub"><h3>رابعاً: النهي عن الغيبة بذريعة التحذير</h3>
+    <div class="card b"><div class="ct">التحذير المشروع له ضوابط صارمة</div><p>التحذير من الخطأ العلمي جائز بل واجب أحياناً، لكن له ضوابط: أن يكون بقصد النصح لا الفضح، وأن يقتصر على قدر الحاجة، وأن يصدر من أهل له، وأن لا يتجاوز إلى تتبع العورات وتضخيم الأخطاء. تجاوز هذه الضوابط يدخل في دائرة الغيبة المحرمة التي شبّهها القرآن بأكل لحم الأخ الميت.</p></div>
+    <div class="card b2"><div class="ct">أثر الغيبة على القلب والحسنات</div><p>حذّر النبي ﷺ من أن الغيبة تأكل الحسنات كما تأكل النار الحطب، وهذا يُنبّه إلى أن من ينشغل بأعراض الناس تحت مسمى «الرد العلمي» قد يخسر من دينه أكثر مما يظن أنه يحفظه.</p></div>
+  </div>
+
+  <div id="s4e" class="sub"><h3>خامساً: التواضع ورحمة الخلق — هدي النبوة</h3>
+    <div class="card b3"><div class="ct">النبي ﷺ معلّم لا حاكم تفتيش</div><p>كان هدي النبي ﷺ في التعامل مع المخطئين هدي المعلم الرحيم لا القاضي الصارم، فكان يُصحح الخطأ بالحكمة، ويرفق بالجاهل، ولم يكن يتخذ من زلات الناس فرصة للتشهير بهم، بل وسيلة للتعليم والإصلاح كما في قصة الأعرابي الذي بال في المسجد.</p></div>
+    <div class="card b"><div class="ct">التواضع زينة العالم الحقيقي</div><p>من علامات العالم الرباني تواضعه أمام الحق ورحمته بالخلق، بخلاف من يتصدر للحكم على الناس بروح الاستعلاء والتصنيف، فذلك أقرب لآفة الكبر منه إلى منهج أهل العلم الراسخين.</p></div>
+  </div>
+
+  <div id="s4f" class="sub"><h3>سادساً: ميزان النقد العلمي — نقد الأقوال لا الأشخاص</h3>
+    <div class="card b"><div class="ct">الاستدلال لا القيل والقال</div><p>المنهج الشرعي الصحيح في تقويم الأقوال هو وزنها بالدليل: «قال الله، قال رسوله»، فإذا أخطأ عالم في مسألة، يُرَدُّ قوله بالحجة العلمية دون المساس بشخصه أو الطعن في نيته أو دينه، وهذا ما دعا إليه المقال صراحة في خاتمته.</p></div>
+    <div class="card b2"><div class="ct">الفرق بين نقد القول ونقد القائل</div><p>يمكن أن يكون القول خطأً والقائل مجتهداً مأجوراً على اجتهاده، فنقد القول لا يستلزم بالضرورة الطعن في عدالة القائل أو دينه، وهذا تمييز فقهي دقيق يُغفل عنه كثيراً في أجواء التصنيف الحاد.</p></div>
+  </div>
+
+  <div id="s4g" class="sub"><h3>سابعاً: أثر البيئة الافتراضية في تضخيم الخلاف</h3>
+    <div class="card b3"><div class="ct">خوارزميات التواصل وصناعة «الفقاعة الفكرية»</div><p>تُسهم خوارزميات منصات التواصل الاجتماعي في عرض المحتوى الذي يوافق ميول المستخدم فقط، فيعيش الشاب في «فقاعة فكرية» يرى فيها من يوافقه دوماً، مما يُعمّق الانقسام ويُضعف قدرته على التفكير النقدي المتوازن.</p></div>
+    <div class="card b"><div class="ct">التحذير كوسيلة لجمع المتابعين — من طلب الحق إلى طلب التأثير</div><p>في بيئة رقمية تُكافئ المحتوى المثير، قد يتحول «التحذير من فلان» إلى أداة سريعة لجذب الانتباه وزيادة المتابعين («ركوب الترند»)، فينقلب العلم من طلب صادق للحق إلى بحث عن الشهرة والتأثير، وهذا انحراف خطير في النية والمقصد.</p></div>
+  </div>
+
+  <div id="s4h" class="sub"><h3>ثامناً: الفرق بين التحذير من البدعة والتشهير بالأشخاص، وخطر الغلو في التبديع</h3>
+    <div class="card b"><div class="ct">التحذير من المقالة لا من القائل إلا بضوابط</div><p>الأصل الشرعي هو الرفق بالمُعيَّن (الشخص) والتحذير من الفكرة الباطلة أو البدعة نفسها، ولا يُنتقل إلى تسمية الشخص وتشهيره إلا إذا استوجبت المصلحة الشرعية المعتبرة ذلك بضوابطها الدقيقة عند أهل العلم الراسخين، لا عند كل متحمس.</p></div>
+    <div class="card b2"><div class="ct">الغلو في التبديع — بدعة جديدة تحت شعار محاربة البدعة</div><p>حين يتوسع البعض في تصنيف الناس وتبديعهم حتى يجعل ذلك شرطاً لصحة الولاء أو الإيمان، فإنه يقع فيما حذّر منه الشرع من الغلو، ويُصبح التشدد في التبديع نفسه انحرافاً جديداً يشق صفوف الأمة، بينما يظن صاحبه أنه يدافع عن السنة.</p></div>
+  </div>
+
+  <div id="s4i" class="sub"><h3>تاسعاً: تحصيل الملكة العلمية وحفظ هيبة الراسخين</h3>
+    <div class="card b3"><div class="ct">الانشغال بالأشخاص هروب من وعورة طلب العلم</div><p>حفظ المتون وضبط قواعد اللغة والأصول والفقه طريق طويل يحتاج صبراً ومجاهدة، بينما السجال حول الأشخاص أسهل وأمتع للنفس لأنه لا يتطلب تحصيلاً علمياً حقيقياً. هذا يُفسّر جزئياً لماذا ينجذب كثير من الشباب لهذا النمط من النقاش السهل بدل طريق العلم الشاق.</p></div>
+    <div class="card b"><div class="ct">تقييم الرجال شأن العلماء الراسخين لا الشباب المبتدئين</div><p>معرفة مآلات الأمور ومقاصد الشريعة والموازنة بين المصالح والمفاسد في الحكم على الأشخاص علمٌ دقيق يحتاج رسوخاً، وتصدي غير المؤهل لهذا الشأن افتئات على أهل العلم وتجاوز لأدب طلب العلم الصحيح، وهو ما يُورّث الفوضى العلمية داخل الأمة.</p></div>
+    <div class="card b2"><div class="ct">التفكير النقدي المبني على الوحي — الحق لا يُعرف بالرجال</div><p>القاعدة الذهبية التي أرساها السلف: «الحق لا يُعرف بالرجال، بل الرجال يُعرفون بالحق»، وتربية الشباب على هذه القاعدة تُنمّي فيهم مهارة فحص المعلومة بالدليل، والتمييز بين الخطأ الاجتهادي والانحراف الأصولي، وتُغنيهم عن الانشغال المرضي بأسماء الأشخاص.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec" style="--accent:var(--blue);">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الدليل القرآني المحوري</h2></div>
+  <div class="vb" style="margin-bottom:24px;">
+    <div class="vt" style="font-size:1.3rem;">﴿وَلَا تَكُونُوا كَالَّذِينَ تَفَرَّقُوا وَاخْتَلَفُوا مِنْ بَعْدِ مَا جَاءَهُمُ الْبَيِّنَاتُ وَأُولَٰئِكَ لَهُمْ عَذَابٌ عَظِيمٌ﴾
+    </div>
+    <div class="vr">سورة آل عمران، الآية ١٠٥</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَلَا تَكُونُوا</div><div class="id">الواو عاطفة. «لَا»: ناهية جازمة. «تَكُونُوا»: فعل مضارع ناقص مجزوم بحذف النون لأنه من الأفعال الخمسة، والواو ضمير متصل في محل رفع اسم «تكونوا».</div></div>
+    <div class="ir"><div class="iw">كَالَّذِينَ</div><div class="id">الكاف اسم بمعنى «مثل» في محل نصب خبر «تكونوا» (أو حرف جر، والذين اسم موصول في محل جر). «الَّذِينَ»: اسم موصول مبني في محل جر بالإضافة أو بحرف الجر.</div></div>
+    <div class="ir"><div class="iw">تَفَرَّقُوا</div><div class="id">فعل ماضٍ مبني على الضم لاتصاله بواو الجماعة، والواو فاعل. والجملة صلة الموصول لا محل لها من الإعراب.</div></div>
+    <div class="ir"><div class="iw">وَاخْتَلَفُوا</div><div class="id">الواو عاطفة. «اخْتَلَفُوا»: فعل ماضٍ معطوف على «تفرّقوا» بنفس الإعراب.</div></div>
+    <div class="ir"><div class="iw">مِنْ بَعْدِ مَا</div><div class="id">«مِنْ بَعْدِ»: جار ومجرور متعلق بـ«اختلفوا»، وهو مضاف. «مَا»: مصدرية مبنية في محل جر بالإضافة.</div></div>
+    <div class="ir"><div class="iw">جَاءَهُمُ الْبَيِّنَاتُ</div><div class="id">«جَاءَ»: فعل ماضٍ. «هُمُ»: ضمير متصل مفعول به. «الْبَيِّنَاتُ»: فاعل مرفوع. والمصدر المؤول من «ما» وما بعدها في محل جر بالإضافة.</div></div>
+    <div class="ir"><div class="iw">وَأُولَٰئِكَ لَهُمْ</div><div class="id">الواو استئنافية. «أُولَٰئِكَ»: اسم إشارة مبني في محل رفع مبتدأ. «لَهُمْ»: جار ومجرور متعلق بخبر محذوف مقدم.</div></div>
+    <div class="ir"><div class="iw">عَذَابٌ عَظِيمٌ</div><div class="id">«عَذَابٌ»: مبتدأ مؤخر مرفوع وعلامة رفعه تنوين الضم. «عَظِيمٌ»: نعت مرفوع مثله. والجملة الاسمية «لهم عذاب عظيم» في محل رفع خبر «أولئك»، وجملة «أولئك لهم عذاب عظيم» استئنافية لا محل لها من الإعراب.</div></div>
+  </div>
+  <div class="card b" style="margin-top:16px;"><div class="ct">لطيفة إعرابية وبلاغية: تقديم «تَفَرَّقُوا» على «اخْتَلَفُوا»</div><p>لاحظ المفسرون تقديم الفعل «تَفَرَّقُوا» على «اخْتَلَفُوا» رغم أن الاختلاف عادة سابق في الوجود للتفرق، وعللوا ذلك بأن التقديم هنا للإيذان بأن الاختلاف هو عِلّة التفرق، وهذا من مقتضيات ترتيب الكلام في العربية: ذكر السبب الظاهر (التفرق) قبل ذكر السبب الباطن (الاختلاف) للتنبيه إلى خطورة النتيجة قبل بيان علتها.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec" style="--accent:var(--violet);">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«الْعِلْمُ نُورٌ... وَلَيْسَ قَائِمَةَ حَظْرٍ»<br><small style="font-size:.62em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card b"><div class="ct">أولاً: علاج الحاجة النفسية للانتماء عبر التصنيف الفكري</div><p>يكشف المقال آلية نفسية عميقة: أن الانشغال بتصنيف الأشخاص قد يُلبّي حاجة نفسية للانتماء والتمييز («نحن» مقابل «هم») أسهل من تحصيل العلم الحقيقي. <strong>التطبيق:</strong> البحث عن الانتماء الحقيقي في الأخوة الإيمانية الجامعة بدل الانتماءات الحزبية الضيقة التي تمنح شعوراً زائفاً بالتفوق.</p></div>
+  <div class="card b2"><div class="ct">ثانياً: تحرير النفس من إدمان الإثارة المعرفية السهلة</div><p>يُشخّص المقال ظاهرة «الهروب إلى السهل» — الانجذاب لسجالات الأشخاص بدل مشقة تحصيل العلم الحقيقي، وهذا يوازي ما يُعرف نفسياً بتفضيل «المكافأة الفورية» (الإثارة، التفاعل، الجدل) على «المكافأة المؤجلة» (بناء الملكة العلمية الرصينة). <strong>التطبيق:</strong> تخصيص وقت يومي ثابت لتحصيل علم نافع (حفظ، فهم، تطبيق) قبل الانخراط في أي نقاش تفاعلي حول الأشخاص.</p></div>
+  <div class="card b"><div class="ct">ثالثاً: بناء وعي نقدي تجاه المحتوى الرقمي المثير</div><p>تنبيه المقال لأثر خوارزميات التواصل يُنمّي وعياً نفسياً مهماً: أن ما يُعرض على الشاشة ليس بالضرورة الأهم أو الأصح، بل قد يكون الأكثر إثارة فحسب. <strong>التطبيق:</strong> سؤال النفس عند كل محتوى مثير للجدل: هل هذا ينفعني في ديني ودنياي، أم يستهلك وقتي في متاهة لا طائل تحتها؟</p></div>
+  <div class="card b2"><div class="ct">رابعاً: تزكية القلب من مرض الاستعلاء الفكري</div><p>يُذكّر المقال بأن التواضع زينة العالم، وهذا علاج نفسي لآفة خطيرة قد تُصيب طالب العلم المبتدئ: الشعور بالتفوق الأخلاقي على من يخالفه في تصنيف الأشخاص. <strong>التطبيق:</strong> مراجعة النفس دورياً: هل أشعر بتفوق على مخالفي في الرأي؟ وإن كان كذلك، فهذا مؤشر خطر يستدعي المجاهدة.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>السخرية البنّاءة كأداة نقد اجتماعي:</strong> يستعمل المقال أسلوباً ساخراً لاذعاً («جمهورية ما رأيك في فلان») لفضح الظاهرة دون أن يقع في نفس عيبها (التجريح الشخصي)، فينتقد الفكرة لا الأشخاص.</li>
+      <li><strong>البناء المقارن بين الغائب والحاضر:</strong> استحضار الأئمة الأربعة (أبو حنيفة، مالك، الشافعي، أحمد) كنموذج مقارن يفضح الانحراف المعاصر عن منهجهم الأصيل في طلب العلم.</li>
+      <li><strong>التصعيد الاستنكاري بالتعداد:</strong> سرد القضايا المصيرية الحقيقية (الإلحاد، المخدرات، انهيار الأخلاق، الفقر، الجهل) قبل المفارقة الصادمة يبني حجة استنكارية قوية على أولويات الأمة المُختلة.</li>
+      <li><strong>الختام بالبديل الإيجابي لا مجرد النقد:</strong> لا يكتفي المقال بذم الظاهرة، بل يختم بمنظومة قيمية بديلة واضحة (العلم، الأخوة، العدل، التواضع، الرحمة)، فيتحول من نقد سلبي إلى دعوة إصلاحية بنّاءة.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec" style="--accent:var(--red);">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة القضايا الإصلاحية المعاصرة بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا منهج السلف في أدب الاختلاف.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين آفات المجتمع الرقمي المعاصر (الاستقطاب، التصنيف، ثقافة الفقاعة الفكرية) وأصول الشريعة في الأخوة والعدل.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته بُعداً استشرافياً في تناول قضايا الفرقة والاجتماع بين المسلمين.</p>
+      <div style="margin-top:14px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">الإصلاح الاجتماعي</span>
+        <span class="atag">فقه الأولويات</span>
+        <span class="atag">أدب الاختلاف</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">التزكية النفسية</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:8px;font-size:.78rem;opacity:.7;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
