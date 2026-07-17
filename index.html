@@ -230,6 +230,12 @@ body{
 .bab-group.c-gold .bab-head{background:#8a6414;} .bab-group.c-gold .bab-link{background:rgba(176,141,52,.1);color:#8a6414;}
 .bab-group.c-plum .bab-head{background:#6b3a6b;} .bab-group.c-plum .bab-link{background:rgba(107,58,107,.07);color:#6b3a6b;}
 .bab-group.c-teal .bab-head{background:#1a6b5c;} .bab-group.c-teal .bab-link{background:rgba(26,107,92,.07);color:#1a6b5c;}
+
+.surah-group .ayah-link{display:none;}
+.surah-group.open .ayah-link{display:flex;}
+.surah-head{cursor:pointer;}
+.surah-arrow{font-size:.85rem;transition:transform .25s;opacity:.85;}
+.surah-group.open .surah-arrow{transform:rotate(-90deg);}
 .branch-empty{color:#9a8865;font-size:.85rem;font-style:italic;padding:4px 26px;}
 
 /* ===== نموذج الاتصال ===== */
@@ -520,77 +526,77 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </ul>
           <div class="branch-links" id="links-quran">
             <div class="surah-group c-lapis">
-              <div class="surah-head">📖 سورة البقرة <span class="surah-c">٢</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة البقرة <span class="surah-arrow">‹</span><span class="surah-c">٢</span></div>
               <a class="ayah-link c-lapis" href="article57.html"><span class="ayah-n">آية ١٦</span> تجارة الروح</a>
               <a class="ayah-link c-lapis" href="article77.html"><span class="ayah-n">آية ٢١٠</span> حين ينشق الغمام</a>
             </div>
             <div class="surah-group c-agate">
-              <div class="surah-head">📖 سورة آل عمران <span class="surah-c">٢</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة آل عمران <span class="surah-arrow">‹</span><span class="surah-c">٢</span></div>
               <a class="ayah-link c-agate" href="article69.html"><span class="ayah-n">آية ١٤٠</span> حين يدور الزمان</a>
               <a class="ayah-link c-agate" href="article60.html"><span class="ayah-n">آية ١٤٠</span> حين يشتدّ الظلام... لماذا تنتظر البشرية المخلّص؟</a>
             </div>
             <div class="surah-group c-sage">
-              <div class="surah-head">📖 سورة الأعراف <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة الأعراف <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-sage" href="article62.html"><span class="ayah-n">آية ٤٤</span> حين ينقلب المشهد</a>
             </div>
             <div class="surah-group c-gold">
-              <div class="surah-head">📖 سورة التوبة <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة التوبة <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-gold" href="article79.html"><span class="ayah-n">آية ١١١</span> الصفقة التي لا تخسر أبداً</a>
             </div>
             <div class="surah-group c-plum">
-              <div class="surah-head">📖 سورة الحجر <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة الحجر <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-plum" href="article78.html"><span class="ayah-n">آية ٤٩-٥٠</span> بين نداء الرحمة وهيبة العذاب</a>
             </div>
             <div class="surah-group c-teal">
-              <div class="surah-head">📖 سورة الإسراء <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة الإسراء <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-teal" href="article65.html"><span class="ayah-n">آية ٤-٧</span> الوعد الذي يتكرر</a>
             </div>
             <div class="surah-group c-lapis">
-              <div class="surah-head">📖 سورة النور <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة النور <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-lapis" href="article68.html"><span class="ayah-n">آية ٣٧</span> رجال يصنعهم القرآن</a>
             </div>
             <div class="surah-group c-agate">
-              <div class="surah-head">📖 سورة العنكبوت <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة العنكبوت <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-agate" href="article67.html"><span class="ayah-n">آية ٦٤</span> الدنيا... مسرح ينطفئ ضوؤه</a>
             </div>
             <div class="surah-group c-sage">
-              <div class="surah-head">📖 سورة فاطر <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة فاطر <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-sage" href="article80.html"><span class="ayah-n">آية ٣٤</span> يوم يموت الحزن إلى الأبد</a>
             </div>
             <div class="surah-group c-gold">
-              <div class="surah-head">📖 سورة الصافات <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة الصافات <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-gold" href="article71.html"><span class="ayah-n">آية ١١</span> بين قبضة الطين وعظمة الكون</a>
             </div>
             <div class="surah-group c-plum">
-              <div class="surah-head">📖 سورة محمد <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة محمد <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-plum" href="article74.html"><span class="ayah-n">آية ٦</span> الطريق الذي لا يضل سالكه</a>
             </div>
             <div class="surah-group c-teal">
-              <div class="surah-head">📖 سورة الحجرات <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة الحجرات <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-teal" href="article70.html"><span class="ayah-n">آية ٢-٣</span> حين يكون الأدب مع رسول الله ﷺ ميزان الإيمان</a>
             </div>
             <div class="surah-group c-lapis">
-              <div class="surah-head">📖 سورة الرحمن <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة الرحمن <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-lapis" href="article75.html"><span class="ayah-n">آية ٧-٩</span> حين يقوم الكون على ميزان</a>
             </div>
             <div class="surah-group c-agate">
-              <div class="surah-head">📖 سورة النبأ <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة النبأ <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-agate" href="article72.html"><span class="ayah-n">آية ١٨-٢٦</span> حين تُطوى الدنيا</a>
             </div>
             <div class="surah-group c-sage">
-              <div class="surah-head">📖 سورة التكوير <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة التكوير <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-sage" href="article73.html"><span class="ayah-n">آية ١٥-١٩</span> حين يقسم الله بالمختفي والراحل</a>
             </div>
             <div class="surah-group c-gold">
-              <div class="surah-head">📖 سورة الانشقاق <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة الانشقاق <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-gold" href="article58.html"><span class="ayah-n">آية ٦</span> من صرخة المهد إلى لقاء الرب</a>
             </div>
             <div class="surah-group c-plum">
-              <div class="surah-head">📖 سورة الإخلاص <span class="surah-c">١</span></div>
+              <div class="surah-head" onclick="toggleGate(this)">📖 سورة الإخلاص <span class="surah-arrow">‹</span><span class="surah-c">١</span></div>
               <a class="ayah-link c-plum" href="article76.html"><span class="ayah-n">آية ١-٤</span> سورة تهدم كل الأصنام في القلب</a>
             </div>
             <div class="surah-group pending">
-              <div class="surah-head pending-head">🕓 مقالات قيد التصنيف حسب السورة (ستُنظَّم تباعاً) <span class="surah-c">٤١</span></div>
+              <div class="surah-head pending-head" onclick="toggleGate(this)">🕓 مقالات قيد التصنيف حسب السورة (ستُنظَّم تباعاً) <span class="surah-arrow">‹</span><span class="surah-c">٤١</span></div>
               <a class="b-link c-plum" href="article61.html"><span class="b-num">١.</span> حين يتكلم اللهيب</a>
               <a class="b-link c-lapis" href="article59.html"><span class="b-num">٢.</span> حين تُغلق نوافذ الروح</a>
               <a class="b-link c-gold" href="article55.html"><span class="b-num">٣.</span> خلف السور</a>
