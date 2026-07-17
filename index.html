@@ -231,6 +231,12 @@ body{
 .bab-group.c-plum .bab-head{background:#6b3a6b;} .bab-group.c-plum .bab-link{background:rgba(107,58,107,.07);color:#6b3a6b;}
 .bab-group.c-teal .bab-head{background:#1a6b5c;} .bab-group.c-teal .bab-link{background:rgba(26,107,92,.07);color:#1a6b5c;}
 
+.bab-group .bab-link{display:none;}
+.bab-group.open .bab-link{display:block;}
+.bab-head{cursor:pointer;}
+.bab-arrow{font-size:.8rem;transition:transform .25s;opacity:.85;}
+.bab-group.open .bab-arrow{transform:rotate(-90deg);}
+
 .surah-group .ayah-link{display:none;}
 .surah-group.open .ayah-link{display:flex;}
 .surah-head{cursor:pointer;}
@@ -261,16 +267,7 @@ footer .f-email a:hover{background:rgba(212,178,90,.14);}
 footer .fl{font-size:.78rem;opacity:.6;margin-top:8px;}
 
 /* ===== أزرار عائمة ===== */
-.fab-l{position:fixed;bottom:20px;left:20px;z-index:500;display:flex;flex-direction:column;gap:10px;}
-.fab{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--night);color:var(--gold-lt);font-size:1.1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:transform .2s,opacity .3s;}
 .fab:hover{transform:translateY(-3px);}
-#topBtn{opacity:0;pointer-events:none;}
-#topBtn.show{opacity:1;pointer-events:auto;}
-.fab-r{position:fixed;bottom:20px;right:20px;z-index:500;display:flex;flex-direction:column;gap:11px;}
-.cbtn{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.28);transition:transform .2s;text-decoration:none;}
-.cbtn:hover{transform:scale(1.1);}
-.cwa{background:#25D366;}.ctg{background:#0088cc;}
-.cbtn svg{width:27px;height:27px;fill:#fff;}
 
 /* ===== أوضاع القراءة ===== */
 body.dark{--ink:#e8dcc4;--parch:#14100a;--parch2:#1d1710;background:#14100a;}
@@ -305,7 +302,14 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
   .hero h1{font-size:1.7rem;}
   .tugra{font-size:1rem;letter-spacing:.2em;}
 }
-@media print{.fab-l,.fab-r,.hdr,#prog{display:none!important;}}
+.edge-tab-home{position:fixed;bottom:20px;z-index:500;transition:transform .3s;}
+.edge-tab-home.right{right:0;}
+.edge-nub-home{width:4px;height:20px;background:var(--night);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:2px 0 8px rgba(0,0,0,.2);border-radius:4px 0 0 4px;border-right:none;}
+.edge-panel-home{position:absolute;bottom:0;right:4px;display:flex;flex-direction:column;gap:3px;background:var(--night);border:1px solid var(--gold);padding:0;max-width:0;opacity:0;overflow:hidden;transition:all .3s;border-radius:6px 0 0 6px;border-left:none;}
+.edge-tab-home.open .edge-panel-home{max-width:32px;padding:4px 3px;opacity:1;}
+.edge-item-home{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;}
+.edge-item-home svg{width:9px;height:9px;fill:#fff;}
+@media print{.edge-tab-home,.hdr,#prog{display:none!important;}}
 
 /* صورة الشيخ في الهيرو - إطار دائري مزخرف */
 .sheikh-frame{position:relative;width:170px;height:170px;margin:0 auto 26px;}
@@ -389,7 +393,6 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 @media(max-width:640px){.book-card{flex-direction:column;align-items:center;text-align:center;}.book-cover{width:150px;height:200px;}.book-info{align-items:center;}}
 
 /* ===== زر فيسبوك العائم ===== */
-.cfb{background:#1877F2;}
 
 </style>
 </head>
@@ -649,19 +652,19 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </ul>
           <div class="branch-links" id="links-hadith">
             <div class="bab-group c-lapis">
-              <div class="bab-head">باب الفتن والثبات على الدين <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب الفتن والثبات على الدين <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-lapis" href="article63.html">القابض على الجمر</a>
             </div>
             <div class="bab-group c-agate">
-              <div class="bab-head">باب الرقائق والمهلكات <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب الرقائق والمهلكات <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-agate" href="article45.html">أربع مهالك خفية</a>
             </div>
             <div class="bab-group c-sage">
-              <div class="bab-head">باب أشراط الساعة والغيبيات <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب أشراط الساعة والغيبيات <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-sage" href="article39.html">حين يتكلم الغيب (النفس الطيبة)</a>
             </div>
             <div class="bab-group c-gold">
-              <div class="bab-head">باب السيرة والأخلاق الاجتماعية <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب السيرة والأخلاق الاجتماعية <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-gold" href="article29-hilf-alfudul.html">حلف الفضول</a>
             </div>
           </div>
@@ -705,11 +708,11 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </ul>
           <div class="branch-links" id="links-fiqh">
             <div class="bab-group c-lapis">
-              <div class="bab-head">باب القضاء والتحاكم <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب القضاء والتحاكم <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-lapis" href="article16-yusuf-raf-aldhulm.html">يوسف بين رفع الظلم والتحاكم</a>
             </div>
             <div class="bab-group c-agate">
-              <div class="bab-head">باب حرمة الأعراض <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب حرمة الأعراض <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-agate" href="article13-tasheea-alfahisha.html">حين تتحول الفضيحة إلى تجارة</a>
             </div>
           </div>
@@ -747,27 +750,27 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </ul>
           <div class="branch-links" id="links-siyasa">
             <div class="bab-group c-lapis">
-              <div class="bab-head">باب العدل بين الشعوب <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب العدل بين الشعوب <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-lapis" href="article36.html">الأكراد في سجلّ العزّة</a>
             </div>
             <div class="bab-group c-agate">
-              <div class="bab-head">باب الطغيان والاستبداد <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب الطغيان والاستبداد <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-agate" href="article30-firawn-qarun.html">بين فرعون وقارون</a>
             </div>
             <div class="bab-group c-sage">
-              <div class="bab-head">باب النصرة والعدل الاجتماعي <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب النصرة والعدل الاجتماعي <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-sage" href="article29-hilf-alfudul.html">حلف الفضول</a>
             </div>
             <div class="bab-group c-gold">
-              <div class="bab-head">باب نقد الواقع السياسي المعاصر <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب نقد الواقع السياسي المعاصر <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-gold" href="article24-alqab-mamlaka.html">ألقاب مملكة ليست في مواضعها</a>
             </div>
             <div class="bab-group c-plum">
-              <div class="bab-head">باب سيرة الخلفاء الراشدين <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب سيرة الخلفاء الراشدين <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-plum" href="article17-ali-ibn-abi-talib.html">أمير المؤمنين علي المبتلى المظلوم</a>
             </div>
             <div class="bab-group c-teal">
-              <div class="bab-head">باب الاقتصاد والفساد <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب الاقتصاد والفساد <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-teal" href="article9-hina-tustanzaf.html">حين تُستنزف المليارات</a>
             </div>
           </div>
@@ -780,7 +783,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </ul>
           <div class="branch-links" id="links-tahakum">
             <div class="bab-group c-lapis">
-              <div class="bab-head">باب نقد النفاق الاجتماعي <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب نقد النفاق الاجتماعي <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-lapis" href="article56.html">كازانوفا... ولكن بعمامة!</a>
             </div>
           </div>
@@ -793,11 +796,11 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </ul>
           <div class="branch-links" id="links-radd">
             <div class="bab-group c-lapis">
-              <div class="bab-head">باب العقيدة واليقين <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب العقيدة واليقين <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-lapis" href="article54.html">من أوائل الإيمان إلى كمال اليقين</a>
             </div>
             <div class="bab-group c-agate">
-              <div class="bab-head">باب أصول الفقه والأعذار الشرعية <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب أصول الفقه والأعذار الشرعية <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-agate" href="article44.html">الجهل عذر أم تقصير؟</a>
             </div>
           </div>
@@ -824,15 +827,15 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           <ul class="branch-sub"><li>أعمال القلوب، والتزكية، ومداواة النفوس</li></ul>
           <div class="branch-links" id="links-raqaiq">
             <div class="bab-group c-lapis">
-              <div class="bab-head">باب أهوال القيامة <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب أهوال القيامة <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-lapis" href="article23-sayaalam.html">وسيعلم حين ينكشف الغطاء</a>
             </div>
             <div class="bab-group c-agate">
-              <div class="bab-head">باب الموت والاستعداد له <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب الموت والاستعداد له <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-agate" href="article20-sakrat-almawt.html">حين تنطفئ الأصوات ولا يبقى إلا العمل</a>
             </div>
             <div class="bab-group c-sage">
-              <div class="bab-head">باب التوبة والرحمة <span class="bab-c">١</span></div>
+              <div class="bab-head" onclick="toggleGate(this)">باب التوبة والرحمة <span class="bab-arrow">‹</span><span class="bab-c">١</span></div>
               <a class="bab-link c-sage" href="article10-saraqathu-alrahma.html">جاء ليسرق الدنيا فسرقته الرحمة</a>
             </div>
           </div>
@@ -878,15 +881,14 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   <p class="fl">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
 </footer>
 
-<!-- أزرار عائمة يسار: صعود + (الوضع في الهيدر) -->
-<div class="fab-l">
-  <button class="fab" id="topBtn" title="الصعود للأعلى" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
-</div>
-<!-- أزرار تواصل يمين -->
-<div class="fab-r">
-  <a class="cbtn cwa" href="https://wa.me/9647700610518" target="_blank" title="واتساب" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-.9-1.1-1.3-1.7-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1.1-.3 0-.4-.1-.1-.6-1.5-.9-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.2-.6.3-.6.6-.9 1.4-.9 2.2.1 1 .5 2 1.1 2.8 1.1 1.7 2.6 3 4.4 3.8.5.2.9.4 1.4.5.5.2 1 .2 1.6.1.7-.1 1.3-.6 1.7-1.2.2-.4.2-.8.1-1.2l-.4-.2m2.5-9.1C15.2.4 7.7.4 3 5.2c-3.9 3.9-4.6 9.9-1.9 14.6L0 24l4.3-1.1c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4m-2 15.1c-1.6 1-3.5 1.6-5.4 1.6-1.8 0-3.5-.5-5.1-1.4l-.4-.2-2.5.7.7-2.5-.2-.4c-3-5-1.5-11.3 3.4-14.4S16.5 2.9 19.5 7.8s1.5 11.4-3.5 14.5v-.9"/></svg></a>
-  <a class="cbtn ctg" href="https://t.me/Mmmdgsaeccb" target="_blank" title="تليجرام" aria-label="تليجرام"><svg viewBox="0 0 24 24"><path d="M23.9 4.5c-.3-.2-.7-.3-1.1-.1L1.6 12.2c-.5.2-.8.6-.8 1.1s.4.9.9 1l5.3 1.7 2 6.3c.1.2.2.4.4.5.2.2.5.3.8.3.3 0 .6-.1.9-.4l2.8-2.7 4.9 3.6c.3.2.6.3.9.3.5 0 1-.3 1.2-.9l4.2-18.4c.1-.5-.1-.9-.5-1.1M9.5 15.4l-.6 4.2-1.4-4.6 9.3-6.1-7.3 6.5"/></svg></a>
-  <a class="cbtn cfb" href="https://www.facebook.com/share/18scvhye7K/" target="_blank" title="صفحة الشيخ على فيسبوك" aria-label="فيسبوك"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12"/></svg></a>
+<!-- نتوء تواصل صغير جداً في الأسفل يمين -->
+<div class="edge-tab-home right" id="edgeHome">
+  <div class="edge-panel-home">
+    <a class="edge-item-home" href="https://wa.me/9647700610518" target="_blank" title="واتساب" aria-label="واتساب" style="background:#25D366;"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-.9-1.1-1.3-1.7-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1.1-.3 0-.4-.1-.1-.6-1.5-.9-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.2-.6.3-.6.6-.9 1.4-.9 2.2.1 1 .5 2 1.1 2.8 1.1 1.7 2.6 3 4.4 3.8.5.2.9.4 1.4.5.5.2 1 .2 1.6.1.7-.1 1.3-.6 1.7-1.2.2-.4.2-.8.1-1.2l-.4-.2m2.5-9.1C15.2.4 7.7.4 3 5.2c-3.9 3.9-4.6 9.9-1.9 14.6L0 24l4.3-1.1c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4m-2 15.1c-1.6 1-3.5 1.6-5.4 1.6-1.8 0-3.5-.5-5.1-1.4l-.4-.2-2.5.7.7-2.5-.2-.4c-3-5-1.5-11.3 3.4-14.4S16.5 2.9 19.5 7.8s1.5 11.4-3.5 14.5v-.9"/></svg></a>
+    <a class="edge-item-home" href="https://t.me/Mmmdgsaeccb" target="_blank" title="تليجرام" aria-label="تليجرام" style="background:#0088cc;"><svg viewBox="0 0 24 24"><path d="M23.9 4.5c-.3-.2-.7-.3-1.1-.1L1.6 12.2c-.5.2-.8.6-.8 1.1s.4.9.9 1l5.3 1.7 2 6.3c.1.2.2.4.4.5.2.2.5.3.8.3.3 0 .6-.1.9-.4l2.8-2.7 4.9 3.6c.3.2.6.3.9.3.5 0 1-.3 1.2-.9l4.2-18.4c.1-.5-.1-.9-.5-1.1M9.5 15.4l-.6 4.2-1.4-4.6 9.3-6.1-7.3 6.5"/></svg></a>
+    <a class="edge-item-home" href="https://www.facebook.com/share/18scvhye7K/" target="_blank" title="صفحة الشيخ على فيسبوك" aria-label="فيسبوك" style="background:#1877F2;"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12"/></svg></a>
+  </div>
+  <div class="edge-nub-home" onclick="document.getElementById('edgeHome').classList.toggle('open')"></div>
 </div>
 
 <!-- بطاقة تثبيت الموسوعة كتطبيق (أندرويد / آيفون / آيباد / ويندوز / ماك) -->
@@ -987,13 +989,11 @@ function filterAll(){
   note.style.display='block';
   note.textContent=count>0?('عُثر على '+count+' مقالاً مطابقاً'):'لا نتائج مطابقة — جرّب كلمة أخرى';
 }
-// زر الصعود + شريط التقدم
-var tb=document.getElementById('topBtn');
+// شريط التقدم العلوي
 window.addEventListener('scroll',function(){
   var t=document.documentElement.scrollTop;
   var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
   document.getElementById('prog').style.width=(h>0?(t/h*100):0)+'%';
-  if(t>350)tb.classList.add('show');else tb.classList.remove('show');
 });
 </script>
 
