@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إِلَى مَنْ يَهُمُّهُ الْأَمْرُ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#211a2e;--bg:#fffaf5;--bg2:#fdf1ee;
+  --p1:#e63946;--p2:#f4845f;--p3:#f9c74f;--p4:#90be6d;--p5:#2a9d8f;--p6:#4d908e;--p7:#577590;--p8:#7209b7;--p9:#f72585;
+  --hdr:#1c1030;--hdr2:#2e1a4d;--card-bg:#ffffff;--div:#f0dfd8;--mist:#5c5270;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 5% 3%,rgba(230,57,70,.09) 0%,transparent 45%),radial-gradient(ellipse at 95% 10%,rgba(114,9,183,.09) 0%,transparent 45%),radial-gradient(ellipse at 8% 90%,rgba(42,157,143,.09) 0%,transparent 45%),radial-gradient(ellipse at 92% 96%,rgba(247,37,133,.09) 0%,transparent 45%);}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--p1),var(--p2),var(--p3),var(--p4),var(--p5),var(--p6),var(--p7),var(--p8),var(--p9));z-index:400;transform-origin:top;box-shadow:0 0 10px rgba(114,9,183,.5);}
+.rband{height:5px;background:linear-gradient(90deg,var(--p1),var(--p2),var(--p3),var(--p4),var(--p5),var(--p6),var(--p7),var(--p8),var(--p9));}
+.hdr{background:var(--hdr);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.5);border-bottom:2px solid transparent;border-image:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9)) 1;}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;font-size:1rem;flex-shrink:0;background:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:#f7ecff;font-size:.9rem;text-align:center;flex:1;opacity:.9;}
+.tbtn{background:linear-gradient(90deg,var(--p7),var(--p9));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.85rem;white-space:nowrap;font-weight:600;}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:290px;flex-shrink:0;background:var(--hdr);position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;border-left:1px solid rgba(114,9,183,.25);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid rgba(114,9,183,.25);background:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.toc-s{color:#b39ddb;font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#d4c3ec;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(247,37,133,.14);border-right-color:var(--p9);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.9;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:160px;height:4px;background:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9));border-radius:4px;}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;letter-spacing:.4em;}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--p7),var(--p9));color:#fff;font-size:.74rem;padding:4px 16px;border-radius:20px;margin-bottom:18px;font-weight:600;}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.35rem;font-weight:700;line-height:1.5;margin-bottom:12px;background:linear-gradient(90deg,var(--p1),var(--p2),var(--p3),var(--p4),var(--p5),var(--p6),var(--p7),var(--p8));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hmeta{color:var(--mist);font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:5px;height:5px;background:var(--p7);border-radius:50%;}
+.vb{background:linear-gradient(135deg,var(--hdr),var(--hdr2));border:2px solid transparent;border-image:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9)) 1;border-radius:12px;padding:30px 38px;margin:32px 0;text-align:center;position:relative;overflow:hidden;}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(114,9,183,.18),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#fdf3ff;line-height:2.05;position:relative;z-index:1;font-weight:600;}
+.abody{font-size:1.12rem;line-height:2.05;color:var(--ink);}
+.abody p{margin-bottom:1.4em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;background:linear-gradient(180deg,var(--p1),var(--p8));-webkit-background-clip:text;background-clip:text;color:transparent;float:right;line-height:.82;margin-left:8px;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;font-weight:700;text-align:center;margin:18px 0;background:linear-gradient(90deg,var(--p5),var(--p8));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50% 16px 50% 16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;color:#fff;}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.75rem;border-bottom:3px solid;border-image:linear-gradient(90deg,var(--p1),var(--p8)) 1;padding-bottom:8px;flex:1;color:var(--ink);}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;margin-bottom:12px;padding-right:14px;border-right:4px solid var(--p9);color:var(--p7);}
+.card{background:var(--card-bg);border:1px solid var(--div);border-radius:10px;padding:20px 24px;margin:16px 0;box-shadow:0 3px 14px rgba(114,9,183,.08);}
+.card.c1{border-right:6px solid var(--p1);}
+.card.c2{border-right:6px solid var(--p2);}
+.card.c3{border-right:6px solid var(--p3);}
+.card.c4{border-right:6px solid var(--p4);}
+.card.c5{border-right:6px solid var(--p5);}
+.card.c6{border-right:6px solid var(--p6);}
+.card.c7{border-right:6px solid var(--p7);}
+.card.c8{border-right:6px solid var(--p8);}
+.card.c9{border-right:6px solid var(--p9);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;margin-bottom:10px;font-weight:700;color:var(--ink);}
+.card p{font-size:.98rem;color:#3a3350;line-height:1.9;margin-top:6px;}
+.card p strong{color:var(--ink);}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.96rem;border-radius:8px;overflow:hidden;}
+.tbl th{background:linear-gradient(90deg,var(--p7),var(--p9));color:#fff;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;}
+.tbl td{padding:11px 14px;border-bottom:1px solid var(--div);vertical-align:top;line-height:1.85;}
+.tbl tr:nth-child(even) td{background:rgba(114,9,183,.05);}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:var(--ink);font-weight:700;}
+.def{color:var(--mist);font-size:.92rem;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.35rem;text-align:center;padding:26px 36px;margin:34px 0;border-top:3px solid;border-bottom:3px solid;border-image:linear-gradient(90deg,var(--p1),var(--p8)) 1;position:relative;color:var(--ink);}
+.pq::before{content:'❝';position:absolute;top:-6px;right:36px;font-size:2.6rem;background:linear-gradient(180deg,var(--p9),var(--p8));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;}
+.src{background:rgba(42,157,143,.08);border:1px solid rgba(42,157,143,.35);border-radius:9px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.88rem;color:#155b52;line-height:1.9;}
+.src strong{color:var(--p5);}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:4px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;margin-right:6px;}
+.grade.sahih{background:linear-gradient(90deg,var(--p4),var(--p5));}
+.rlist{list-style:none;padding:0;margin:12px 0;}
+.rlist li{font-family:'Scheherazade New',serif;font-size:1.06rem;padding:9px 0;border-bottom:1px dashed var(--div);}
+.rlist li:last-child{border-bottom:none;}
+.rlist li:nth-child(9n+1){color:var(--p1);}
+.rlist li:nth-child(9n+2){color:var(--p2);}
+.rlist li:nth-child(9n+3){color:#b8860b;}
+.rlist li:nth-child(9n+4){color:var(--p4);}
+.rlist li:nth-child(9n+5){color:var(--p5);}
+.rlist li:nth-child(9n+6){color:var(--p6);}
+.rlist li:nth-child(9n+7){color:var(--p7);}
+.rlist li:nth-child(9n+8){color:var(--p8);}
+.rlist li:nth-child(9n){color:var(--p9);}
+.atag{display:inline-block;background:rgba(114,9,183,.14);color:var(--p7);font-size:.73rem;padding:4px 12px;border-radius:12px;margin:3px;border:1px solid rgba(114,9,183,.28);font-weight:600;}
+.asec{background:linear-gradient(135deg,var(--hdr),var(--hdr2));border:2px solid transparent;border-image:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9)) 1;border-radius:12px;padding:34px 40px;margin:56px 0 38px;display:flex;gap:24px;align-items:flex-start;}
+.ava{width:80px;height:80px;border-radius:50% 16px 50% 16px;background:linear-gradient(135deg,var(--p1),var(--p8));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff;font-size:1.34rem;margin-bottom:5px;}
+.ai .at{color:#ffc4e6;font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#e2d6f5;font-size:.92rem;line-height:1.85;margin-bottom:8px;}
+.ai p strong{color:#fff;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:10px 13px;}
+.ami .aml{color:#ffd9ec;font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:#fff;font-size:.88rem;font-family:'Scheherazade New',serif;}
+.orn{text-align:center;font-size:1.25rem;margin:48px 0;letter-spacing:.42em;background:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.75;}
+footer{background:var(--hdr);color:#d4c3ec;text-align:center;padding:32px 20px;font-size:.85rem;border-top:3px solid;border-image:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9)) 1;margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.08rem;margin-bottom:7px;background:linear-gradient(90deg,var(--p1),var(--p3),var(--p5),var(--p7),var(--p9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:280px;height:calc(100vh - 58px);overflow-y:auto;}.amg{grid-template-columns:1fr;}.hero h1{font-size:1.85rem;}.asec{flex-direction:column;}.main{padding:32px 24px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.12rem;}.hero h1{font-size:1.48rem;}.pq{font-size:1.05rem;padding:18px 15px;}.hdr-i{padding:0 13px;}.logo{display:none;}}
+</style>
+</head>
+<body>
+<div class="rband"></div>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ السَّلْجُوقِي</div>
+    <div class="htitle">إِلَى مَنْ يَهُمُّهُ الْأَمْرُ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي والأسلوبي الدقيق</a>
+  <a class="toc-a" href="#s2">٢. الجانب اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2b">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2c">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط الأفكار والبناء الداخلي</a>
+  <a class="toc-a" href="#s4">٤. المضامين الشرعية والعقدية</a>
+  <a class="toc-a" href="#s5">٥. التوثيق الشرعي للأدلة</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<div class="hero">
+  <span class="horn">🌈 ✦ 🌈</span>
+  <div class="hcat">رسالة وعظية · حقوق العباد · تزكية النفس · نقد اجتماعي أخلاقي</div>
+  <h1>إِلَى مَنْ يَهُمُّهُ الْأَمْرُ...</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>رسالة في المعاملة والحقوق</span>
+  </div>
+</div>
+
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--p1),var(--p8));">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb"><div class="vt">نَلْتَقِي يَوْمَ الْقِيَامَةِ.</div></div>
+
+  <div class="abody">
+    <p>هُنَاكَ شَخْصٌ... لَا دَاعِيَ لِذِكْرِ الْأَسْمَاءِ. فَالْحَيُّ يَعْرِفُهُ... وَالشَّارِعُ يَعْرِفُهُ... وَرُبَّمَا حَتَّى الْحَدِيدُ يَعْرِفُهُ!</p>
+    <p>مَا شَاءَ اللَّهُ... لَا تَكَادُ تَفُوتُهُ صَلَاةُ جَمَاعَةٍ. وَإِذَا جَاءَتِ الْجُمُعَةُ... فَهُوَ فِي الصُّفُوفِ الْأُولَى. وَإِذَا أَقْبَلَ رَمَضَانُ... شَدَّ الرِّحَالَ إِلَى الْعُمْرَةِ. وَإِذَا اقْتَرَبَتِ الْكَامِيرَاتُ... ازْدَادَ خُشُوعًا!</p>
+    <p>لَكِنْ يَبْدُو أَنَّ هُنَاكَ عِبَادَةً جَدِيدَةً لَمْ نَقْرَأْ عَنْهَا فِي كُتُبِ الْفِقْهِ! يَخْرُجُ مِنَ الْمَسْجِدِ بَعْدَ صَلَاةِ الْجُمُعَةِ مُبَاشَرَةً... ثُمَّ يَمُدُّ عَيْنَهُ إِلَى حَدِيدِ النَّاسِ! سُبْحَانَ اللَّهِ... كَأَنَّ الْخُطْبَةَ كَانَتْ عَنْ فَضَائِلِ حَمْلِ الْحَدِيدِ لَا حِفْظِ الْحُقُوقِ!</p>
+    <p>يَا رَجُلُ... شَعْرُكَ شَابَّ. وَقَارَبْتَ السّتِّينَ مِنَ الْعُمْرِ. أَلَا تَخْشَى أَنْ يَكُونَ أَقْرَبُ مَوْعِدٍ تَكْتُبُهُ لَكَ الْأَيَّامُ هُوَ مَوْعِدُ الْوُقُوفِ بَيْنَ يَدَيِ اللَّهِ؟</p>
+    <p>أَتَذَكَّرُ قَبْلَ سَنَوَاتٍ... عِنْدَمَا أَخَذْتَ مَالِي بِغَيْرِ حَقٍّ؟ وَيَوْمَهَا قُلْتُ لَكَ بِكُلِّ هُدُوءٍ: "نَلْتَقِي يَوْمَ الْقِيَامَةِ." لَمْ أَقُلْ شُرْطَةً. وَلَمْ أَقُلْ مَحْكَمَةً. وَلَمْ أَقُلْ عَشِيرَةً. قُلْتُ: يَوْمَ الْقِيَامَةِ. لِأَنَّ هُنَاكَ لَا مُحَامِيَ يَتَرَافَعُ... وَلَا شَاهِدَ زُورٍ... وَلَا وَاسِطَةَ... وَلَا مُجَامَلَةَ. هُنَاكَ تُؤْخَذُ الْحُقُوقُ بِالْحَسَنَاتِ وَالسَّيِّئَاتِ.</p>
+    <p>وَالْأَعْجَبُ مِنْ ذَلِكَ كُلِّهِ... كَمْ مَرَّةً طَرَقْتَ بَابِي مُحْتَاجًا؟ وَكَمْ مَرَّةً أَعْطَيْتُكَ دَيْنًا لِتَقْضِيَ حَاجَتَكَ؟ لَمْ أَقُلْ لَكَ: أَيْنَ الضَّمَانُ؟ وَلَا سَأَلْتُكَ: مَاذَا سَأَسْتَفِيدُ؟ قُلْتُ: أَخٌ يَحْتَاجُ الْمُسَاعَدَةَ. لَكِنْ يَبْدُو أَنَّ بَعْضَ النَّاسِ إِذَا شَبِعَ... نَسِيَ الْيَدَ الَّتِي امْتَدَّتْ إِلَيْهِ.</p>
+    <p>يَظُنُّ أَنَّ الْعُمْرَةَ تَمْحُو حُقُوقَ الْعِبَادِ. وَيَظُنُّ أَنَّ كَثْرَةَ الصَّلَاةِ تُعْفِيهِ مِنْ رَدِّ الْمَظَالِمِ. وَلَوْ كَانَ الْأَمْرُ كَذَلِكَ... لَكَانَ كُلُّ ظَالِمٍ يَحْجِزُ مَقْعَدًا فِي أَوَّلِ رِحْلَةِ عُمْرَةٍ!</p>
+    <p>يَا هَذَا... اللَّهُ لَا تَخْفَى عَلَيْهِ قِطْعَةُ حَدِيدٍ. وَلَا دِينَارٌ. وَلَا نَظْرَةٌ. وَلَا خِيَانَةُ أَمَانَةٍ. الدِّينُ لَيْسَ ثَوْبًا أَبْيَضَ يَوْمَ الْجُمُعَةِ. وَلَا صُورَةً عِنْدَ الْكَعْبَةِ. وَلَا سُبْحَةً فِي الْيَدِ. الدِّينُ أَنْ تَخَافَ اللَّهَ إِذَا غَابَ النَّاسُ. أَمَّا أَنْ تُصَلِّيَ مَعَ الْجَمَاعَةِ... ثُمَّ تَعُودَ لِتَأْكُلَ حُقُوقَ النَّاسِ... فَهَذِهِ مُعَادَلَةٌ لَا يَقْبَلُهَا عَقْلٌ... وَلَا شَرْعٌ.</p>
+    <p class="ql">لَا يَزَالُ الْبَابُ مَفْتُوحًا. رُدَّ الْحُقُوقَ إِلَى أَهْلِهَا. وَاعْتَذِرْ مِمَّنْ ظَلَمْتَهُمْ. فَإِنَّ أَبْوَابَ التَّوْبَةِ لَا تَزَالُ مَفْتُوحَةً.</p>
+    <p>أَمَّا إِذَا اخْتَرْتَ التَّأْجِيلَ... فَالْمَوْعِدُ لَمْ يَتَغَيَّرْ... يَوْمٌ لَا تُشْتَرَى فِيهِ الذِّمَمُ... وَلَا يُسْرَقُ فِيهِ الْحَدِيدُ... وَلَا تَضِيعُ فِيهِ الْحُقُوقُ... يَوْمَ يَقِفُ الْجَمِيعُ حُفَاةً عُرَاةً أَمَامَ أَحْكَمِ الْحَاكِمِينَ.</p>
+    <p>وَمَا زِلْتُ أَقُولُهَا كَمَا قُلْتُهَا قَبْلَ سَنَوَاتٍ... نَلْتَقِي يَوْمَ الْقِيَامَةِ.</p>
+    <p style="text-align:center;font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--p7);font-weight:700;margin-top:30px;">عَلِيُّ خَلِيلٍ عَبَّاسٍ السَّلْجُوقِيُّ التُّرْكُمَانِيُّ اللَّيْلَانِيُّ</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--p1),var(--p2));">١</div><h2>الجانب البلاغي والأسلوبي الدقيق</h2></div>
+  <div class="card c1"><div class="ct">أسلوب الرسالة المفتوحة (خطاب الغائب المخاطَب)</div><p>يعتمد النص حيلة بلاغية مؤثرة: العنوان "إلى من يهمه الأمر" يوحي بالعمومية، لكن المتن سرعان ما ينتقل إلى خطاب مباشر مفرد ("يا رجل"، "يا هذا")، فيجمع بين شمول الرسالة العامة وحرارة المواجهة الشخصية، مما يجعل كل قارئ يشعر أن الخطاب موجَّه له إن وجد في نفسه شبهاً بالموصوف.</p></div>
+  <div class="card c2"><div class="ct">السخرية المريرة (التهكم البلاغي)</div><p>عبارات مثل "سبحان الله... كأنّ الخطبة كانت عن فضائل حمل الحديد لا حفظ الحقوق!" و"لكان كل ظالم يحجز مقعداً في أول رحلة عمرة!" تستخدم أسلوب التهكم الذي يقلب الظاهر المدحي (مواظبة على الصلاة والعمرة) إلى وسيلة فضح، وهذا من أبلغ أساليب النقد لأنه يُبقي المتلقي يبتسم بمرارة بدل أن يشعر بالخطابية المباشرة.</p></div>
+  <div class="card c3"><div class="ct">التكرار الأسلوبي المُوَقِّع</div><p>تكرار صيغة "لم أقل... ولم أقل... قلت:" ثلاث مرات (شرطة/محكمة/عشيرة مقابل يوم القيامة) يخلق إيقاعاً حجاجياً تصاعدياً ينفي البدائل واحداً واحداً قبل أن يستقر على الجواب الحاسم، وهو أسلوب إقناعي فعّال يُغلق كل مخرج أمام القارئ إلا الخلاصة المقصودة.</p></div>
+  <div class="card c4"><div class="ct">الاستفهام التوبيخي والإنكاري</div><p>سؤال "ألا تخشى أن يكون أقرب موعد تكتبه لك الأيام هو موعد الوقوف بين يدي الله؟" استفهام لا يطلب جواباً بل ينكر الغفلة ويوقظ الخشية، وهو من أساليب القرآن نفسها في مخاطبة الغافلين بالسؤال بدل الأمر المباشر.</p></div>
+  <div class="card c5"><div class="ct">المقابلة الفنية بين طرفين متضادين</div><p>يبني النص تقابلاً مستمراً بين مظهرين: طرف يعطي دون سؤال ("لم أقل لك: أين الضمان؟") وطرف يأخذ دون حياء ("نسي اليد التي امتدت إليه")، وهذه المقابلة تجسّد المعنى الأخلاقي المجرد (الوفاء مقابل الجحود) في صورة حِوارية درامية تمسّ الوجدان مباشرة.</p></div>
+  <div class="card c6"><div class="ct">الجملة القصيرة الخاتمة كقافية معنوية</div><p>تكرار جملة "نلتقي يوم القيامة" في مطلع النص وختامه يصنع بنية دائرية (استهلال وخاتمة متطابقين)، وهو تقنية أدبية تمنح النص تماسكاً موسيقياً وتُبقي الفكرة المحورية عالقة في ذهن القارئ بعد انتهاء القراءة.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--p3),var(--p5));">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>المشترك اللفظي</h3></div>
+  <div class="card c7"><div class="ct">لفظ «الْحَدِيد»</div><p>وظّف النص لفظ «الحديد» بمعناه المادي المحسوس (مالٌ مسروق من معدن)، لكنه يحمل في السياق دلالة رمزية مضافة: القسوة والصلابة، فكأن اختيار هذه السلعة تحديداً (لا مالاً نقدياً مثلاً) يوحي ضمناً بقسوة قلب من يسرقها بعد خروجه من صلاة الجمعة مباشرة.</p></div>
+  <div class="card c8"><div class="ct">لفظ «الْمُفْلِس»</div><p>وإن لم يُذكر صراحة في النص، إلا أن المعنى الذي يبنيه المقال بأكمله (من يُصلي ويعتمر لكنه يأكل حقوق الناس) يستحضر مباشرة المفهوم الشرعي لـ«الإفلاس» الأخروي، وهو مشترك بين إفلاس الدنيا (فقدان المال) وإفلاس الآخرة (فقدان الحسنات لمن ظُلموا)، وهذا الاستدعاء الضمني من أدق الروابط الدلالية في المقال.</p></div>
+
+  <div id="s2b" class="sub"><h3>الفروق اللغوية والمعجمية</h3></div>
+  <table class="tbl">
+    <tr><th>اللفظان</th><th>الفرق الدقيق</th></tr>
+    <tr><td class="term">الْمَظْلَمَة / الذَّنْب</td><td class="def">«المظلمة» ذنبٌ متعلق بحق آدمي معيّن لا يُغتفر إلا بردّه أو عفو صاحبه، أما «الذنب» العام فقد يكون بين العبد وربه وحده فيُرجى غفرانه بالتوبة والاستغفار المجرد؛ والنص يميّز بدقة بين النوعين حين يقول إن كثرة الصلاة «تُعفيه من ردّ المظالم» - أي: تخلط بين الصنفين خطأً.</td></tr>
+    <tr><td class="term">التَّوْبَة / الِاسْتِغْفَار</td><td class="def">«الاستغفار» طلب المغفرة باللسان، وقد يكون دون ندم حقيقي أو تغيير سلوك، أما «التوبة» فتستلزم الإقلاع والندم والعزم، وإذا تعلق الأمر بحق آدمي لزمها ركن رابع هو الردّ؛ والنص يشترط صراحة "ردّ الحقوق" مقروناً بـ"الاعتذار" ليصح وصف الفعل بأنه توبة لا مجرد كلام.</td></tr>
+    <tr><td class="term">الْخُشُوع / الرِّيَاء</td><td class="def">«الخشوع» سكينة قلبية تنعكس على الجوارح بدافع داخلي، أما «الرياء» فهو إظهار العبادة أو تحسينها بدافع خارجي (نظر الناس)؛ وعبارة "إذا اقتربت الكاميرات ازداد خشوعاً" استعملت لفظ الخشوع تهكماً وهي تصف في الحقيقة الرياء، وهذا من دقائق الاستعمال الساخر في النص.</td></tr>
+  </table>
+
+  <div id="s2c" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3></div>
+  <div class="card c9"><div class="ct">لماذا «الحديد» بصيغة التعريف المتكررة لا «مال» أو «حق» عام؟</div><p>تكرار كلمة "الحديد" بعينها بدل استخدام لفظ عام كـ"المال" يمنح النص واقعية قصصية ويمنع القارئ من تحويل الموضوع إلى فكرة مجردة؛ فالتفصيل المحدد (سرقة حديد بعينها) أقوى تأثيراً من التعميم، وهذا مبدأ بلاغي معروف: أن التخصيص يُنتج تصديقاً وجدانياً أعمق من التعميم.</p></div>
+  <div class="card c1"><div class="ct">لماذا صيغة الغائب في العنوان ثم صيغة المخاطَب في المتن؟</div><p>هذا التحول القصدي من الغياب إلى الخطاب (من "شخص" إلى "يا رجل") يُحاكي أسلوباً قرآنياً معروفاً يُسمى الالتفات، وهو ينقل القارئ من موقع المتفرج إلى موقع المخاطَب المعني مباشرة، فيزيد من قوة التأثير ويكسر مسافة الحياد بين النص والقارئ.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--p5),var(--p6));">٣</div><h2>ترابط الأفكار والبناء الداخلي</h2></div>
+  <div class="card c2"><div class="ct">من الوصف إلى المواجهة إلى الرحمة</div><p>يسير النص في ثلاث مراحل مترابطة: مرحلة الوصف الساخر لمظاهر التديّن الشكلي (الفقرات الأولى)، ثم مرحلة المواجهة المباشرة بالحجة والدليل العقلي («لو كان الأمر كذلك لكان كل ظالم يحجز مقعداً...»)، ثم مرحلة ختامية رحيمة تفتح باب التوبة («لا يزال الباب مفتوحاً»). هذا التدرج من السخرية إلى الحجة إلى الرحمة يمنح النص تماسكاً حجاجياً لا يكتفي بالإدانة بل يقترح الحل.</p></div>
+  <div class="card c3"><div class="ct">ربط حادثتين متضادتين (السرقة والقرض)</div><p>يربط الكاتب بين واقعتين شخصيتين: أخذ المال بغير حق، ومقابلها إعطاء الدين بلا شرط ولا امتنان مطلوب. هذا الربط يبني الحجة الأخلاقية للنص بأكمله؛ فليس الكاتب يتحدث عن ظالم مجرد، بل يقدّم شهادة شخصية موثوقة بمقارنة سلوكه بسلوك المخاطَب، مما يقوّي مصداقية الخطاب.</p></div>
+  <div class="card c4"><div class="ct">تكرار فكرة «يوم القيامة» كخيط ناظم</div><p>الجملة الخِتامية والاستهلالية "نلتقي يوم القيامة" ليست تكراراً شكلياً، بل هي الفكرة التي تربط كل فقرات النص: من ذكر الصلاة (عبادة مرتبطة بيوم الحساب)، إلى ذكر الحديد المسروق (حق سيُحاسَب عليه)، إلى التحذير من الاستدراج بطول العمر (اقتراب الموعد)، فكل الخيوط تصبّ في هذه الجملة المحورية الواحدة.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--p6),var(--p7));">٤</div><h2>المضامين الشرعية والعقدية</h2></div>
+  <div class="card c5"><div class="ct">١. انفصام الشخصية الدينية</div><p>يرصد النص بدقة الفجوة بين المظاهر التعبدية (الصفوف الأولى، العمرة) والسلوك الأخلاقي المشين (أكل حقوق الناس)، وهو انفصام خطير لأنه يُنتج تديّناً معزولاً عن وظيفته الأصلية: تهذيب السلوك.</p></div>
+  <div class="card c6"><div class="ct">٢. جوهر العبادات لا شكلها</div><p>يؤكد النص أن العبادات وسيلة لتزكية النفس وترسيخ الأمانة والعدل في المعاملة، لا طقوس منعزلة، وهذا يتفق مع مقصد شرعي أصيل: أن الصلاة تنهى عن الفحشاء والمنكر، فإن لم تُنتج هذا الأثر السلوكي فقد بقيت أداءً منقوصاً عن غايته.</p></div>
+  <div class="card c7"><div class="ct">٣. خطورة حقوق العباد</div><p>يرسّخ النص مفهوماً عقدياً جوهرياً: أن حقوق الخلق لا تسقط بالاستغفار أو النوافل، بل تتطلب رد المظالم أو التحلل من أصحابها، وهذا أصل معروف في الشريعة يفرّق بين حق الله (مبني على المسامحة) وحق العبد (مبني على المشاحّة).</p></div>
+  <div class="card c8"><div class="ct">٤. الرقابة الإلهية الشاملة</div><p>يستحضر النص عظمة الله في اطلاعه على أدق تفاصيل المعاملات، حتى ما قد يظنه الناس تافهاً كـ"قطعة حديد"، وهذا تذكير بإحاطة علم الله بالسر والعلن، وأن لا مهرب من محاسبته مهما صغر الأمر أو خفي.</p></div>
+  <div class="card c9"><div class="ct">٥. «يوم القيامة» كمرجعية عدل مطلقة</div><p>يحوّل النص وجهة الحكم من القوانين الأرضية القابلة للتلاعب (الشرطة، المحاكم، الواسطة العشائرية) إلى المحكمة الإلهية التي لا تقبل رشوة ولا شفاعة ظالم، وهذا ترسيخ لليقين بعدالة مطلقة تتجاوز عجز الأنظمة البشرية أو فسادها.</p></div>
+  <div class="card c1"><div class="ct">٦. الأخلاق في التعامل المالي</div><p>يوضّح النص أن الأمانة في القرض والابتعاد عن استغلال حاجة الآخرين معيار حقيقي للتديّن والمروءة، لا العبادات الظاهرة وحدها؛ فمن يقترض ثم يجحد يد المعروف قد أخلّ بخُلق الوفاء الذي هو من صميم الدين.</p></div>
+  <div class="card c2"><div class="ct">٧. التحذير من الغرور بالصلاح والاستدراج</div><p>يحذّر النص من الاطمئنان الكاذب الذي يمنحه طول العمر أو كثرة الطاعات الظاهرة، معتبراً ذلك استدراجاً إن لم يقترن باستقامة في الحقوق، وهذا معنى معروف: أن الإمهال ليس دليل رضا، بل قد يكون فرصة أخيرة للتصحيح قبل فوات الأوان.</p></div>
+  <div class="card c3"><div class="ct">٨. فلسفة التوبة والرجوع</div><p>يختم النص بتأكيد أن باب التوبة لا يزال مفتوحاً، لكن بشرط اقتران الندم برد الحقوق إلى أهلها والاعتذار منهم، وهذا هو الشرط الشرعي الرابع لصحة التوبة من حقوق العباد الذي لا تكفي بدونه التوبة القلبية وحدها.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--p7),var(--p9));">٥</div><h2>التوثيق الشرعي للأدلة الواردة في مضمون المقال</h2></div>
+  <div class="src"><strong>حديث المفلس:</strong> عن أبي هريرة رضي الله عنه أن رسول الله ﷺ قال: «أَتَدْرُونَ مَا الْمُفْلِسُ؟» قالوا: الْمُفْلِسُ فِينَا مَنْ لَا دِرْهَمَ لَهُ وَلَا مَتَاعَ. فَقَالَ: «إِنَّ الْمُفْلِسَ مِنْ أُمَّتِي مَنْ يَأْتِي يَوْمَ الْقِيَامَةِ بِصَلَاةٍ وَصِيَامٍ وَزَكَاةٍ، وَيَأْتِي قَدْ شَتَمَ هَذَا، وَقَذَفَ هَذَا، وَأَكَلَ مَالَ هَذَا، وَسَفَكَ دَمَ هَذَا، وَضَرَبَ هَذَا، فَيُعْطَى هَذَا مِنْ حَسَنَاتِهِ وَهَذَا مِنْ حَسَنَاتِهِ، فَإِنْ فَنِيَتْ حَسَنَاتُهُ قَبْلَ أَنْ يُقْضَى مَا عَلَيْهِ أُخِذَ مِنْ خَطَايَاهُمْ فَطُرِحَتْ عَلَيْهِ، ثُمَّ طُرِحَ فِي النَّارِ». <span class="grade sahih">صحيح</span> رواه مسلم في صحيحه، كتاب البر والصلة والآداب، حديث رقم (٢٥٨١)، من رواية أبي هريرة رضي الله عنه. وهذا الحديث هو الأصل الشرعي الجامع لمضمون المقال بأكمله: أن العبادات الظاهرة لا تسقط حقوق العباد، بل تؤخذ من حسنات الظالم يوم القيامة.</div>
+  <div class="src" style="margin-top:16px;"><strong>قاعدة فقهية مستقرة:</strong> «التوبة من حقوق العباد لا تصح إلا بردها إلى أهلها أو تحصيل مسامحتهم»، وهي قاعدة مجمع عليها بين الفقهاء مبنية على عموم حديث المفلس وعلى قوله تعالى: ﴿إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا﴾ (سورة النساء، الآية ٥٨)، وهي آية يذكرها أهل العلم عادة عند بيان حكم رد المظالم.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--p9),var(--p1));">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«لَيْسَ الْمِيزَانُ كَثْرَةَ رُكُوعِكَ... بَلِ الْمِيزَانُ مَا يَبْقَى فِي ذِمَّتِكَ مِنْ حَقِّ النَّاسِ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card c4"><div class="ct">أولاً: محاسبة النفس على المعاملة لا المظهر فقط</div><p>يدفعنا النص لمراجعة صادقة: هل أحرص على العبادات بقدر حرصي على أداء حقوق من حولي؟ <strong>التطبيق:</strong> اجعل لنفسك جرداً دورياً لما قد يكون في ذمتك من أمانة أو دَين أو حق لم يُردّ بعد.</p></div>
+  <div class="card c5"><div class="ct">ثانياً: عدم الاغترار بطول العمر أو كثرة الطاعة</div><p>يذكّرنا النص أن الإمهال ليس رضا، وأن كل يوم يمرّ يقرّبنا من الموعد المحتوم. <strong>التطبيق:</strong> لا تجعل تديّنك الظاهر سبباً للشعور بالأمان الزائف؛ اسأل نفسك دورياً: هل قلبي يخشى الله في تعاملي كما يخشاه في صلاتي؟</p></div>
+  <div class="card c6"><div class="ct">ثالثاً: قيمة العطاء دون امتنان أو شرط</div><p>موقف الكاتب في إقراض المحتاج دون سؤال عن الضمان نموذج تربوي في الإحسان الخالص. <strong>التطبيق:</strong> إذا أعنت أحداً، اجعلها لله لا لتذكيره لاحقاً بمعروفك، فذلك أدعى لبقاء الأجر وسلامة القلب.</p></div>
+  <div class="card c7"><div class="ct">رابعاً: المبادرة بالإصلاح قبل فوات الأوان</div><p>يفتح النص باباً عملياً للخروج من الأزمة: الردّ والاعتذار، لا مجرد الشعور بالذنب. <strong>التطبيق:</strong> إن تذكرت حقاً لأحد في ذمتك، لا تؤجل: تواصل معه، وابدأ خطوة الرد ولو كانت صغيرة، فالمبادرة خير من التسويف.</p></div>
+
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="rlist">
+      <li>البناء الدرامي القصصي: اعتماد واقعة شخصية محددة (سرقة حديد) بدل الوعظ المجرد يمنح النص صدقاً وجدانياً وقابلية للتصديق.</li>
+      <li>التصعيد من السخرية إلى المواجهة إلى الرحمة: تدرج أسلوبي يحاكي منهج التذكير القرآني في الجمع بين الإنذار والرجاء.</li>
+      <li>البنية الدائرية: افتتاح النص وختامه بالجملة نفسها ("نلتقي يوم القيامة") يمنحه تماسكاً بنائياً ووقعاً موسيقياً يبقى في ذهن القارئ.</li>
+      <li>الخطاب المزدوج: توجيه الكلام لشخص بعينه مع إبقائه صالحاً لكل قارئ يجد في نفسه شبهاً بالموصوف، وهذا سرّ اتساع أثر النص عن حادثة شخصية ضيقة.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--p1),var(--p8));">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح وأئمة التفسير.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين القيم الشرعية وواقع الناس المعاصر، خصوصاً في قضايا حقوق العباد والمعاملات التي كثر التساهل فيها.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية في تناول قضايا الحساب والجزاء.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">حقوق العباد</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">التزكية</span>
+        <span class="atag">النقد الاجتماعي الأخلاقي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.6;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
