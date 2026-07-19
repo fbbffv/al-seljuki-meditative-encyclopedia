@@ -167,13 +167,18 @@ body{
 .branches{padding:4px 26px 26px;}
 .branch{border-top:1px dashed var(--line);padding:18px 0 4px;}
 .branch:first-child{border-top:0;}
-.branch-h{font-family:'Amiri',serif;font-size:1.22rem;color:var(--gate-c);font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;position:sticky;top:0;z-index:6;background:rgba(253,251,247,.97);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);padding:8px 4px;border-bottom:1px solid var(--line);}
+.branch-h{font-family:'Amiri',serif;font-size:1.22rem;color:var(--gate-c);font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;position:sticky;top:0;z-index:6;background:rgba(253,251,247,.97);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);padding:8px 4px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;}
+.branch-arrow{margin-right:auto;font-size:1.05rem;color:var(--gate-c);transition:transform .25s;opacity:.85;flex-shrink:0;}
+.branch.open .branch-arrow{transform:rotate(-90deg);}
 .branch-h::before{content:'◈';font-size:.85em;opacity:.7;}
-.branch-sub{list-style:none;padding-right:26px;}
+.branch-sub{list-style:none;padding-right:26px;display:none;}
+.branch.open .branch-sub{display:block;}
 .branch-sub li{position:relative;padding:5px 18px 5px 0;color:#4a3c28;font-size:.95rem;}
 .branch-sub li::before{content:'—';position:absolute;right:0;color:var(--gate-c);opacity:.6;}
 .branch-count{display:inline-block;background:rgba(176,141,52,.14);color:var(--gold);font-size:.72rem;padding:1px 9px;border-radius:12px;margin-right:8px;}
-.branch-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin-top:8px;align-items:start;}
+.branch-links{display:none;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin-top:8px;align-items:start;}
+.branch.open .branch-links{display:grid;}
+.branch.open{max-height:72vh;overflow-y:auto;overflow-x:hidden;}
 .b-link{background:rgba(255,255,255,.6);border:1px solid var(--line);border-radius:14px;padding:3px 9px;font-size:.7rem;color:var(--ink);text-decoration:none;transition:background .2s;font-family:'Amiri',serif;}
 .b-link:hover{background:var(--gate-c);color:#fff;}
 .b-num{display:inline-block;font-weight:700;color:var(--gate-c);margin-left:3px;font-size:.82em;opacity:.75;}
@@ -527,7 +532,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h">فرعُ التفسير والتدبر القرآني <span class="branch-count">٦٦</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ التفسير والتدبر القرآني <span class="branch-count">٦٦</span> <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>التحليل اللغوي والبياني والنظم</li>
             <li>الملاحظات البلاغية واللطائف الأدبية</li>
@@ -726,7 +731,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ السنة النبوية وشروح الحديث <span class="branch-count">٤</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ السنة النبوية وشروح الحديث <span class="branch-count">٤</span> <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>شروح المتون وأحاديث الأحكام</li>
             <li>أحاديث الفتن والملاحم وأشراط الساعة</li>
@@ -751,7 +756,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ القصص القرآني والنبوي <span class="branch-count">٨</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ القصص القرآني والنبوي <span class="branch-count">٨</span> <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub"><li>العبر والدروس المستفادة بأسلوب تفكري</li></ul>
           <div class="branch-links" id="links-qisas">
             <a class="b-link c-lapis" href="article66.html"><span class="b-num">١.</span> شعيب عليه السلام... حين يصبح الغِشُّ ديناً</a>
@@ -782,7 +787,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h">فرعُ الأحكام الفقهية والفتاوى <span class="branch-count">٢</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ الأحكام الفقهية والفتاوى <span class="branch-count">٢</span> <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>فقه العبادات وفقه المعاملات</li>
             <li>فقه النوازل (المسائل المعاصرة المستجدة)</li>
@@ -799,7 +804,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ أصول الفقه والقواعد الكلية</div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ أصول الفقه والقواعد الكلية <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>أدلة الأحكام وطرق الاستنباط</li>
             <li>القواعد الفقهية الكبرى وتطبيقاتها الحياتية</li>
@@ -824,7 +829,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h">فرعُ السياسة الشرعية والاقتصاد <span class="branch-count">٦</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ السياسة الشرعية والاقتصاد <span class="branch-count">٦</span> <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>قراءات في المنظومات الاقتصادية والسياسية المعاصرة</li>
             <li>التنزيل على الواقع (ربط النصوص بحدث الساعة)</li>
@@ -857,7 +862,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ المقالات التهكمية والساخرة <span class="branch-count">١</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ المقالات التهكمية والساخرة <span class="branch-count">١</span> <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>النقد الأسلوبي التهكمي للطبقات السياسية</li>
             <li>تعرية أطروحات «علماء البلاط» ومروّجي الخطاب المدجَّن</li>
@@ -870,7 +875,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ المناظرات والردود <span class="branch-count">٢</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ المناظرات والردود <span class="branch-count">٢</span> <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>الرد على الشبهات والملحدين والعلمانيين</li>
             <li>أرشيف المناظرات الفكرية (المكتوبة والمرئية)</li>
@@ -908,7 +913,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h">فرعُ الرقائق والسلوك <span class="branch-count">٣</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ الرقائق والسلوك <span class="branch-count">٣</span> <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub"><li>أعمال القلوب، والتزكية، ومداواة النفوس</li></ul>
           <div class="branch-links" id="links-raqaiq">
             <div class="bab-group c-lapis">
@@ -930,12 +935,12 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ الطب النبوي والتداوي</div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ الطب النبوي والتداوي <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub"><li>العلاجات النبوية والأعشاب والأغذية والمأثور في الصحة</li></ul>
           <div class="branch-links" id="links-tibb"><span class="branch-empty">قريباً بإذن الله</span></div>
         </div>
         <div class="branch">
-          <div class="branch-h">فرعُ تعبير الرؤى وتفسير الأحلام</div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ تعبير الرؤى وتفسير الأحلام <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub"><li>قواعد وضوابط تعبير الرؤى، وتفسيرات منتقاة بأسلوب شرعي رصين</li></ul>
           <div class="branch-links" id="links-ruya">
             <a class="b-link" href="https://www.facebook.com/groups/122501218402462/?ref=share&amp;mibextid=NSMWBT" target="_blank" rel="noopener">↗ مجموعة «تفسير الأحلام بالقرآن والسنة» — طلاب الشيخ</a>
