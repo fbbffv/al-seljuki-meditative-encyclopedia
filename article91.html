@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بين اللقمة والخطوة — الشيخ علي خليل السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f1ec;--bg2:#e5ddd0;--mist:#332a20;--gold-m:#e8c15a;
+  --red:#c81e3a;--redl:#ff8fa3;--redd:#1a0508;
+  --orange:#d2691e;--orangel:#ffb877;--oranged:#1e1005;
+  --yellow:#c9971f;--yellowl:#ffd97a;--yellowd:#1e1704;
+  --green:#1f8a4c;--greenl:#8fe8b0;--greend:#051e0e;
+  --teal:#128a8a;--teall:#7fe8e8;--teald:#041e1e;
+  --blue:#2159c4;--bluel:#8fb4ff;--blued:#050e1e;
+  --violet:#6b30c4;--violetl:#c8a3ff;--violetd:#12051e;
+  --magenta:#a02490;--magental:#f0a3e0;--magentad:#1c0518;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:#1a1512;font-family:'Noto Naskh Arabic',serif;line-height:1.95;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(200,30,58,.06) 0%,transparent 45%),radial-gradient(ellipse at 90% 30%,rgba(33,89,196,.06) 0%,transparent 45%),radial-gradient(ellipse at 50% 100%,rgba(107,48,196,.06) 0%,transparent 45%);}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));z-index:400;transform-origin:top;box-shadow:0 0 8px rgba(0,0,0,.3);}
+.hdr{background:#0a0710;border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:60px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.05rem;flex-shrink:0;background:linear-gradient(90deg,var(--redl),var(--yellowl),var(--teall),var(--bluel));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.htitle{font-family:'Scheherazade New',serif;font-weight:600;color:#fff;font-size:.9rem;text-align:center;flex:1;text-shadow:0 1px 3px rgba(0,0,0,.5);}
+.tbtn{background:linear-gradient(90deg,var(--violet),var(--magenta));color:#fff;border:none;padding:8px 18px;border-radius:5px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-weight:700;font-size:.86rem;white-space:nowrap;box-shadow:0 2px 10px rgba(160,36,144,.4);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 60px);}
+.sb{width:290px;flex-shrink:0;background:#08060c;position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;border-left:2px solid rgba(255,255,255,.08);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:60px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.05rem;padding:18px 18px;border-bottom:1px solid rgba(255,255,255,.1);background:linear-gradient(90deg,var(--redl),var(--orangel),var(--yellowl),var(--greenl),var(--teall),var(--bluel),var(--violetl));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.toc-s{color:#8a8296;font-size:.68rem;letter-spacing:.12em;padding:12px 18px 4px;font-weight:700;}
+.toc-a{display:block;color:#c8c2d4;text-decoration:none;padding:8px 18px 8px 26px;font-size:.85rem;font-weight:600;border-right:4px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(255,255,255,.06);}
+.toc-a.sub{padding-right:32px;font-size:.8rem;opacity:.85;font-weight:400;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding:44px 30px;border-radius:20px;background:linear-gradient(160deg,var(--redd) 0%,color-mix(in srgb, var(--red) 30%, var(--redd)) 100%);box-shadow:0 10px 34px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.08);position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.75;letter-spacing:.4em;color:var(--redl);}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--orange),var(--red));color:#fff;font-weight:700;font-size:.76rem;padding:5px 18px;border-radius:20px;margin-bottom:20px;box-shadow:0 3px 12px rgba(200,30,58,.4);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2rem;font-weight:700;color:#fff;line-height:1.55;margin-bottom:14px;text-shadow:0 2px 10px rgba(0,0,0,.4);}
+.hmeta{color:var(--redl);font-size:.95rem;font-weight:600;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:14px;}
+.hmeta .dot{width:5px;height:5px;background:var(--gold-m);border-radius:50%;}
+.vb{background:#0a0710;border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:36px 42px;margin:36px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.3);}
+.vb::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));}
+.vt{font-family:'Scheherazade New',serif;font-weight:600;font-size:1.55rem;color:#fdf8ee;line-height:2.15;position:relative;z-index:1;text-shadow:0 1px 4px rgba(0,0,0,.4);}
+.vt.sm{font-size:1.28rem;}
+.vr{color:var(--gold-m);font-weight:700;font-size:.88rem;margin-top:14px;position:relative;z-index:1;}
+.abody{font-size:1.14rem;line-height:2.1;color:#f3ecdf;font-weight:500;}
+.abody p{margin-bottom:1.65em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3.2em;font-family:'Scheherazade New',serif;color:var(--gold-m);float:right;line-height:.8;margin-left:9px;text-shadow:0 2px 8px rgba(232,193,90,.5);}
+.hl{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.2rem;color:var(--gold-m);text-align:center;padding:14px 18px;margin:8px 0;border-right:5px solid var(--gold-m);background:rgba(232,193,90,.08);border-radius:0 8px 8px 0;}
+.scene-list{list-style:none;padding:0;margin:12px 0 22px;}
+.scene-list li{font-family:'Scheherazade New',serif;font-weight:600;font-size:1.13rem;color:#e8ddc4;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.15);text-align:center;}
+.scene-list li:last-child{border-bottom:none;}
+.sig{text-align:left;color:var(--redl);font-weight:700;font-size:.94rem;margin-top:10px;font-family:'Scheherazade New',serif;}
+
+.sec{margin-top:58px;padding-top:0;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-weight:800;font-size:1.1rem;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+.sec h2{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.75rem;color:#fff;flex:1;text-shadow:0 2px 8px rgba(0,0,0,.3);}
+.sub{margin-top:36px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.32rem;margin-bottom:14px;padding-right:16px;color:#fff;}
+.card{border-radius:11px;padding:22px 26px;margin:18px 0;box-shadow:0 4px 16px rgba(0,0,0,.15);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.18rem;font-weight:700;margin-bottom:11px;}
+.card p{font-size:1rem;line-height:1.95;margin-top:6px;font-weight:500;}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.97rem;border-radius:9px;overflow:hidden;}
+.tbl th{color:#fff;padding:12px 16px;text-align:right;font-family:'Scheherazade New',serif;font-weight:700;font-size:1rem;}
+.tbl td{padding:12px 16px;vertical-align:top;line-height:1.85;font-weight:500;}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;font-weight:700;}
+.def{font-size:.93rem;font-weight:500;}
+.ib{border-radius:9px;padding:16px 20px;margin:12px 0;}
+.ir{display:flex;gap:14px;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.15);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;font-weight:800;min-width:165px;flex-shrink:0;}
+.id{font-size:.95rem;flex:1;line-height:1.9;font-weight:500;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:18px 0;}
+.mc{border-radius:9px;padding:18px 20px;box-shadow:0 3px 12px rgba(0,0,0,.15);}
+.mc .ml{font-size:.74rem;margin-bottom:5px;display:block;font-weight:800;letter-spacing:.03em;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.09rem;font-weight:800;margin-bottom:5px;}
+.mc .md{font-size:.86rem;line-height:1.65;font-weight:500;}
+.cl{list-style:none;padding:0;margin:12px 0;}
+.cl li{padding:9px 28px 9px 0;position:relative;border-bottom:1px dashed rgba(255,255,255,.15);line-height:1.9;font-weight:500;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;font-size:.9em;top:12px;font-weight:900;}
+.src{background:linear-gradient(135deg,#2a1c05,#3a2708);border:1px solid #d4a83a;border-radius:9px;padding:16px 20px;margin:14px 0;font-size:.9rem;color:#f5e3b0;line-height:1.9;font-weight:500;box-shadow:0 4px 14px rgba(0,0,0,.2);}
+.src strong{color:#fff2cf;}
+.src .src-label{font-family:'Noto Naskh Arabic',sans-serif;font-size:.74rem;font-weight:800;color:#ffd25a;letter-spacing:.07em;margin-bottom:7px;display:block;}
+.grade{display:inline-block;font-size:.7rem;padding:3px 10px;border-radius:4px;font-weight:800;margin-left:6px;}
+.grade.sahih{background:#1e5e33;color:#c8f5d6;}
+.grade.hist{background:#5e4a1e;color:#f5e3b0;}
+.cb{border-radius:11px;padding:26px 32px;margin:22px 0;box-shadow:0 6px 20px rgba(0,0,0,.2);}
+.cb .bt{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.18rem;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.15);}
+.ci{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.12);font-size:.93rem;line-height:1.9;font-weight:500;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.03rem;display:block;margin-bottom:4px;}
+.ci .vs{font-size:.79rem;opacity:.85;}
+.asec{background:linear-gradient(135deg,var(--violetd),color-mix(in srgb, var(--violet) 32%, var(--violetd)));border:1px solid rgba(200,163,255,.35);border-radius:14px;padding:36px 42px;margin:60px 0 38px;display:flex;gap:26px;align-items:flex-start;box-shadow:0 10px 30px rgba(0,0,0,.25);}
+.ava{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--violet),var(--magenta));border:3px solid var(--violetl);display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-weight:800;font-size:1.95rem;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(107,48,196,.5);}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff;font-weight:700;font-size:1.4rem;margin-bottom:6px;}
+.ai .at{color:var(--violetl);font-weight:600;font-size:.87rem;margin-bottom:14px;}
+.ai p{color:#e8dcf5;font-size:.93rem;line-height:1.9;margin-bottom:9px;font-weight:500;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:15px 0;}
+.ami{background:rgba(200,163,255,.1);border:1px solid rgba(200,163,255,.25);border-radius:6px;padding:11px 14px;}
+.ami .aml{color:var(--violetl);font-size:.71rem;margin-bottom:4px;display:block;font-weight:700;}
+.ami .amv{color:#fff;font-size:.89rem;font-family:'Scheherazade New',serif;font-weight:600;}
+.atag{display:inline-block;background:rgba(200,163,255,.16);color:var(--violetl);font-weight:700;font-size:.74rem;padding:4px 12px;border-radius:14px;margin:3px;border:1px solid rgba(200,163,255,.3);}
+.orn{text-align:center;font-size:1.3rem;margin:50px 0;letter-spacing:.42em;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+footer{background:#08060c;color:#8a8296;text-align:center;padding:32px 20px;font-size:.86rem;border-top:2px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;margin-top:80px;}
+footer .fb{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.08rem;margin-bottom:8px;background:linear-gradient(90deg,var(--redl),var(--yellowl),var(--teall),var(--bluel));-webkit-background-clip:text;background-clip:text;color:transparent;}
+
+/* ===== ألوان قوس قزح لكل قسم — بما فيها نص المقال نفسه ===== */
+#article{--sc:var(--red);--scl:var(--redl);--scd:var(--redd);}
+#s0{--sc:var(--orange);--scl:var(--orangel);--scd:var(--oranged);}
+#s1{--sc:var(--yellow);--scl:var(--yellowl);--scd:var(--yellowd);}
+#s2{--sc:var(--green);--scl:var(--greenl);--scd:var(--greend);}
+#s3{--sc:var(--teal);--scl:var(--teall);--scd:var(--teald);}
+#s4{--sc:var(--blue);--scl:var(--bluel);--scd:var(--blued);}
+#s5{--sc:var(--violet);--scl:var(--violetl);--scd:var(--violetd);}
+#s6{--sc:var(--magenta);--scl:var(--magental);--scd:var(--magentad);}
+
+#article,#s0,#s1,#s2,#s3,#s4,#s5,#s6{background:linear-gradient(160deg, var(--scd) 0%, color-mix(in srgb, var(--sc) 32%, var(--scd)) 100%);border-radius:20px;padding:38px 40px 48px;box-shadow:0 10px 34px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.08);position:relative;overflow:hidden;}
+#article::before,#s0::before,#s1::before,#s2::before,#s3::before,#s4::before,#s5::before,#s6::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--scl),var(--sc));}
+#article .sec-n,#s0 .sec-n,#s1 .sec-n,#s2 .sec-n,#s3 .sec-n,#s4 .sec-n,#s5 .sec-n,#s6 .sec-n{background:linear-gradient(135deg,var(--scl),var(--sc));}
+#s0 .sub h3,#s1 .sub h3,#s2 .sub h3,#s3 .sub h3,#s4 .sub h3,#s5 .sub h3,#s6 .sub h3{border-right:4px solid var(--scl);}
+#s0 .card,#s1 .card,#s2 .card,#s3 .card,#s4 .card,#s5 .card,#s6 .card{background:color-mix(in srgb, var(--sc) 20%, var(--scd));border:1px solid color-mix(in srgb, var(--scl) 45%, transparent);}
+#s0 .card.t,#s1 .card.t,#s2 .card.t,#s3 .card.t,#s4 .card.t,#s5 .card.t,#s6 .card.t{border-right:5px solid var(--scl);}
+#s0 .card.t2,#s1 .card.t2,#s2 .card.t2,#s3 .card.t2,#s4 .card.t2,#s5 .card.t2,#s6 .card.t2{border-right:5px solid var(--sc);}
+#s0 .ct,#s1 .ct,#s2 .ct,#s3 .ct,#s4 .ct,#s5 .ct,#s6 .ct{color:var(--scl);}
+#s0 .card p,#s1 .card p,#s2 .card p,#s3 .card p,#s4 .card p,#s5 .card p,#s6 .card p{color:#f2eef6;}
+#s0 .hl,#s1 .hl,#s2 .hl,#s3 .hl,#s4 .hl,#s5 .hl,#s6 .hl{border-right-color:var(--scl);color:var(--scl);background:color-mix(in srgb, var(--sc) 22%, transparent);}
+#s0 .scene-list li,#s1 .scene-list li,#s2 .scene-list li,#s3 .scene-list li,#s4 .scene-list li,#s5 .scene-list li,#s6 .scene-list li{color:var(--scl);}
+#s0 .cb,#s1 .cb,#s2 .cb,#s3 .cb,#s4 .cb,#s5 .cb,#s6 .cb{background:linear-gradient(135deg,var(--scd),color-mix(in srgb, var(--sc) 40%, var(--scd)));border:1px solid color-mix(in srgb, var(--scl) 40%, transparent);}
+#s0 .cb .bt,#s1 .cb .bt,#s2 .cb .bt,#s3 .cb .bt,#s4 .cb .bt,#s5 .cb .bt,#s6 .cb .bt{color:var(--scl);}
+#s0 .ci,#s1 .ci,#s2 .ci,#s3 .ci,#s4 .ci,#s5 .ci,#s6 .ci{color:#e6e2ee;}
+#s0 .ci .vi,#s1 .ci .vi,#s2 .ci .vi,#s3 .ci .vi,#s4 .ci .vi,#s5 .ci .vi,#s6 .ci .vi{color:#fff;}
+#s0 .ci .vs,#s1 .ci .vs,#s2 .ci .vs,#s3 .ci .vs,#s4 .ci .vs,#s5 .ci .vs,#s6 .ci .vs{color:var(--scl);}
+#s0 .ib,#s1 .ib,#s2 .ib,#s3 .ib,#s4 .ib,#s5 .ib,#s6 .ib{background:color-mix(in srgb, var(--sc) 18%, var(--scd));}
+#s0 .iw,#s1 .iw,#s2 .iw,#s3 .iw,#s4 .iw,#s5 .iw,#s6 .iw{color:var(--scl);}
+#s0 .id,#s1 .id,#s2 .id,#s3 .id,#s4 .id,#s5 .id,#s6 .id{color:#e6e2ee;}
+#s0 .tbl,#s1 .tbl,#s2 .tbl,#s3 .tbl,#s4 .tbl,#s5 .tbl,#s6 .tbl{background:color-mix(in srgb, var(--sc) 15%, var(--scd));}
+#s0 .tbl th,#s1 .tbl th,#s2 .tbl th,#s3 .tbl th,#s4 .tbl th,#s5 .tbl th,#s6 .tbl th{background:var(--sc);}
+#s0 .tbl td,#s1 .tbl td,#s2 .tbl td,#s3 .tbl td,#s4 .tbl td,#s5 .tbl td,#s6 .tbl td{color:#f2eef6;border-bottom:1px solid color-mix(in srgb, var(--scl) 25%, transparent);}
+#s0 .term,#s1 .term,#s2 .term,#s3 .term,#s4 .term,#s5 .term,#s6 .term{color:var(--scl);}
+#s0 .def,#s1 .def,#s2 .def,#s3 .def,#s4 .def,#s5 .def,#s6 .def{color:#d6d0e2;}
+#s0 .mc,#s1 .mc,#s2 .mc,#s3 .mc,#s4 .mc,#s5 .mc,#s6 .mc{background:color-mix(in srgb, var(--sc) 20%, var(--scd));border:1px solid color-mix(in srgb, var(--scl) 40%, transparent);}
+#s0 .mc .mv,#s1 .mc .mv,#s2 .mc .mv,#s3 .mc .mv,#s4 .mc .mv,#s5 .mc .mv,#s6 .mc .mv{color:#fff;}
+#s0 .mc .ml,#s1 .mc .ml,#s2 .mc .ml,#s3 .mc .ml,#s4 .mc .ml,#s5 .mc .ml,#s6 .mc .ml{color:var(--scl);}
+#s0 .mc .md,#s1 .mc .md,#s2 .mc .md,#s3 .mc .md,#s4 .mc .md,#s5 .mc .md,#s6 .mc .md{color:#d6d0e2;}
+#s0 .cl li,#s1 .cl li,#s2 .cl li,#s3 .cl li,#s4 .cl li,#s5 .cl li,#s6 .cl li{color:#f2eef6;}
+#s0 .cl li::before,#s1 .cl li::before,#s2 .cl li::before,#s3 .cl li::before,#s4 .cl li::before,#s5 .cl li::before,#s6 .cl li::before{color:var(--scl);}
+
+a.toc-a[href="#article"].active,a.toc-a[href="#article"]:hover{border-right-color:var(--red) !important;}
+a.toc-a[href="#s0"].active,a.toc-a[href="#s0"]:hover{border-right-color:var(--orange) !important;}
+a.toc-a[href="#s1"].active,a.toc-a[href="#s1"]:hover{border-right-color:var(--yellow) !important;}
+a.toc-a[href="#s2"].active,a.toc-a[href="#s2"]:hover,a.toc-a[href="#s2a"].active,a.toc-a[href="#s2a"]:hover,a.toc-a[href="#s2b"].active,a.toc-a[href="#s2b"]:hover,a.toc-a[href="#s2c"].active,a.toc-a[href="#s2c"]:hover{border-right-color:var(--green) !important;}
+a.toc-a[href="#s3"].active,a.toc-a[href="#s3"]:hover{border-right-color:var(--teal) !important;}
+a.toc-a[href="#s4"].active,a.toc-a[href="#s4"]:hover{border-right-color:var(--blue) !important;}
+a.toc-a[href="#s5"].active,a.toc-a[href="#s5"]:hover{border-right-color:var(--violet) !important;}
+a.toc-a[href="#s6"].active,a.toc-a[href="#s6"]:hover{border-right-color:var(--magenta) !important;}
+
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:60px;width:280px;height:calc(100vh - 60px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.6rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:22px 14px;}.vt{font-size:1.2rem;}.hero{padding:30px 18px;}.hero h1{font-size:1.3rem;}.hdr-i{padding:0 13px;}.logo{display:none;}#article,#s0,#s1,#s2,#s3,#s4,#s5,#s6{padding:26px 18px 34px;border-radius:14px;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ السَّلْجُوقِي</div>
+    <div class="htitle">بَيْنَ اللُّقْمَةِ وَالْخُطْوَةِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s0">٠. توثيق الآية وتخريج الأحاديث</a>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">الصرف والاشتقاق</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام المستنبطة</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">تأمل عقدي قرآني · سورة البقرة ١٦٨ · في الحلال والطيب</div>
+  <h1>بَيْنَ اللُّقْمَةِ وَالْخُطْوَةِ... الطَّرِيقُ الَّذِي يَبْدَأُ مِنَ الْمَائِدَةِ وَيَنْتَهِي بِالْمَصِيرِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>البقرة: ١٦٨</span>
+  </div>
+</div>
+
+<div id="article" class="sec">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+  <div class="vb">
+    <div class="vt">﴿ يَا أَيُّهَا النَّاسُ كُلُوا مِمَّا فِي الْأَرْضِ حَلَالًا طَيِّبًا وَلَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ ۚ إِنَّهُ لَكُمْ عَدُوٌّ مُبِينٌ ﴾</div>
+    <div class="vr">سورة البقرة، الآية ١٦٨</div>
+  </div>
+  <div class="abody">
+    <p>مَا أَعْجَبَ هَذَا التَّرْتِيبَ الْقُرْآنِيَّ! وَمَا أَبْلَغَ هَذَا الرَّبْطَ الْعَجِيبَ بَيْنَ الطَّعَامِ وَالشَّيْطَانِ. قَدْ يَظُنُّ الْإِنْسَانُ لِأَوَّلِ وَهْلَةٍ أَنَّ الْآيَةَ تَتَحَدَّثُ عَنِ الطَّعَامِ فَحَسْبُ، ثُمَّ يَنْتَقِلُ فَجْأَةً إِلَى التَّحْذِيرِ مِنَ الشَّيْطَانِ، وَلَكِنَّ الْمُتَدَبِّرَ يُدْرِكُ أَنَّ هَذَا الِانْتِقَالَ لَيْسَ انْتِقَالًا، بَلْ هُوَ كَشْفٌ عَنْ عَلَاقَةٍ عَمِيقَةٍ بَيْنَ مَا يَدْخُلُ الْجَوْفَ وَمَا يَدْخُلُ الْقَلْبَ.</p>
+
+    <p>فَالْقُرْآنُ لَا يَنْظُرُ إِلَى الطَّعَامِ عَلَى أَنَّهُ مُجَرَّدُ لُقَيْمَاتٍ تَسُدُّ الْجُوعَ، بَلْ يَنْظُرُ إِلَيْهِ عَلَى أَنَّهُ وَقُودٌ لِلْجَسَدِ، وَالْجَسَدُ هُوَ مَرْكَبُ الرُّوحِ فِي رِحْلَةِ الْحَيَاةِ. فَإِذَا كَانَ الْوَقُودُ خَبِيثًا، انْعَكَسَ خُبْثُهُ عَلَى السُّلُوكِ، وَإِذَا كَانَ طَيِّبًا مُبَارَكًا، أَشْرَقَ أَثَرُهُ عَلَى الْقَلْبِ وَاللِّسَانِ وَالْجَوَارِحِ.</p>
+
+    <p>إِنَّ أَوَّلَ مَا يَبْدَأُ بِهِ الشَّيْطَانُ إِفْسَادَ الْإِنْسَانِ لَيْسَ دَائِمًا بِإِلْقَائِهِ فِي الْكُفْرِ أَوِ الْجَرِيمَةِ، وَإِنَّمَا يَبْدَأُ بِخُطْوَةٍ صَغِيرَةٍ...</p>
+
+    <ul class="scene-list">
+      <li>لُقْمَةٍ مِنْ حَرَامٍ...</li>
+      <li>رِشْوَةٍ...</li>
+      <li>غِشٍّ...</li>
+      <li>سَرِقَةٍ...</li>
+      <li>مَالٍ مَشْبُوهٍ...</li>
+      <li>رِبًا...</li>
+      <li>أَكْلِ حُقُوقِ النَّاسِ...</li>
+    </ul>
+
+    <p>ثُمَّ يَقُولُ لَهُ: لَا بَأْسَ... الْجَمِيعُ يَفْعَلُ ذَلِكَ.</p>
+
+    <p>وَهُنَا تَبْدَأُ الْخُطْوَةُ الْأُولَى. ثُمَّ تَأْتِي الثَّانِيَةُ... ثُمَّ الثَّالِثَةُ... حَتَّى يَجِدَ الْإِنْسَانُ نَفْسَهُ بَعِيدًا عَنِ اللَّهِ، وَهُوَ يَظُنُّ أَنَّهُ مَا زَالَ فِي مَكَانِهِ.</p>
+
+    <p>وَلِذَلِكَ لَمْ يَقُلْ سُبْحَانَهُ: "وَلَا تَتَّبِعُوا الشَّيْطَانَ"، وَإِنَّمَا قَالَ: ﴿وَلَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ﴾.</p>
+
+    <p>لِأَنَّ الشَّيْطَانَ لَا يَأْتِي غَالِبًا صَارِخًا يَقُولُ: اعْصِ اللَّهَ.</p>
+    <p>بَلْ يَأْتِي هَامِسًا...</p>
+
+    <ul class="scene-list">
+      <li>هَذِهِ مَرَّةٌ وَاحِدَةٌ...</li>
+      <li>هَذَا مَبْلَغٌ بَسِيطٌ...</li>
+      <li>هَذِهِ نَظْرَةٌ عَابِرَةٌ...</li>
+      <li>هَذِهِ كَذِبَةٌ بَيْضَاءُ...</li>
+      <li>هَذِهِ رِشْوَةٌ لِإِنْجَازِ مُعَامَلَةٍ...</li>
+      <li>هَذَا ظُلْمٌ يَسِيرٌ...</li>
+      <li>هَذَا حَرَامٌ لَكِنَّ الْجَمِيعَ يَفْعَلُهُ...</li>
+    </ul>
+
+    <p>وَهَكَذَا... كُلُّ مَعْصِيَةٍ خُطْوَةٌ... وَكُلُّ خُطْوَةٍ تَجُرُّ إِلَى أُخْرَى... حَتَّى تُصْبِحَ الطَّرِيقُ كُلُّهَا طَرِيقَ الشَّيْطَانِ.</p>
+
+    <p>وَمَنْ تَأَمَّلَ الْحَيَاةَ وَجَدَ ذَلِكَ وَاضِحًا.</p>
+
+    <ul class="scene-list">
+      <li>كَمْ مِنْ إِنْسَانٍ كَانَ صَادِقًا أَمِينًا، ثُمَّ قَبِلَ أَوَّلَ رِشْوَةٍ، فَأَصْبَحَ بَعْدَهَا لَا يَسْتَطِيعُ الْعَيْشَ إِلَّا بِهَا.</li>
+      <li>وَكَمْ مِنْ تَاجِرٍ بَدَأَ بِغِشٍّ يَسِيرٍ، ثُمَّ صَارَ الْغِشُّ عِنْدَهُ تِجَارَةً.</li>
+      <li>وَكَمْ مِنْ مُوَظَّفٍ أَخَذَ مَالًا لَيْسَ لَهُ، ثُمَّ تَحَوَّلَ الْمَالُ الْحَرَامُ إِلَى عَادَةٍ.</li>
+      <li>وَكَمْ مِنْ شَابٍّ بَدَأَ بِنَظْرَةٍ، فَانْتَهَى إِلَى الْفَاحِشَةِ.</li>
+    </ul>
+
+    <div class="hl">إِنَّهَا خُطُوَاتٌ... وَلَيْسَتْ قَفَزَاتٍ.</div>
+
+    <p>وَلِذَلِكَ كَانَ الْحَلَالُ حِمَايَةً قَبْلَ أَنْ يَكُونَ حُكْمًا شَرْعِيًّا.</p>
+
+    <ul class="scene-list">
+      <li>فَالْمَالُ الْحَلَالُ يُورِثُ بَرَكَةً.</li>
+      <li>وَالطَّعَامُ الْحَلَالُ يُورِثُ نُورًا فِي الْقَلْبِ.</li>
+      <li>وَالرِّزْقُ الْحَلَالُ يَفْتَحُ أَبْوَابَ الدُّعَاءِ.</li>
+    </ul>
+
+    <p>أَمَّا الْحَرَامُ فَإِنَّهُ يُقَسِّي الْقَلْبَ، وَيُظْلِمُ الرُّوحَ، وَيُغْلِقُ أَبْوَابَ السَّمَاءِ.</p>
+
+    <p>وَقَدْ أَخْبَرَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَنِ الرَّجُلِ يُطِيلُ السَّفَرَ أَشْعَثَ أَغْبَرَ يَرْفَعُ يَدَيْهِ إِلَى السَّمَاءِ يَقُولُ: يَا رَبِّ... يَا رَبِّ...، ثُمَّ قَالَ: «وَمَطْعَمُهُ حَرَامٌ، وَمَشْرَبُهُ حَرَامٌ، وَغُذِّيَ بِالْحَرَامِ، فَأَنَّى يُسْتَجَابُ لِذَلِكَ؟».</p>
+
+    <p>لَيْسَتِ الْمُشْكِلَةُ فِي امْتِلَاءِ الْمَعِدَةِ... بَلْ فِي مَصْدَرِ مَا امْتَلَأَتْ بِهِ.</p>
+
+    <p>فَلُقْمَةُ حَلَالٍ قَلِيلَةٌ خَيْرٌ مِنْ مَائِدَةٍ عَامِرَةٍ بِالْحَرَامِ. وَدِرْهَمُ حَلَالٍ يُبَارِكُهُ اللَّهُ خَيْرٌ مِنْ آلَافٍ مَحْرُومَةِ الْبَرَكَةِ.</p>
+
+    <p>وَتَأَمَّلْ كَيْفَ قَالَ سُبْحَانَهُ: ﴿حَلَالًا طَيِّبًا﴾.</p>
+
+    <p>فَلَيْسَ كُلُّ حَلَالٍ طَيِّبًا مِنْ جِهَةِ الصِّحَّةِ أَوِ الِاعْتِدَالِ، وَلِذَلِكَ جَمَعَ اللَّهُ بَيْنَ الْأَمْرَيْنِ؛ أَنْ يَكُونَ الطَّعَامُ مَشْرُوعًا، وَأَنْ يَكُونَ طَيِّبًا نَافِعًا غَيْرَ خَبِيثٍ وَلَا مُؤْذٍ، لِأَنَّ الْإِسْلَامَ يُرِيدُ لِلْإِنْسَانِ سَلَامَةَ دِينِهِ وَسَلَامَةَ بَدَنِهِ مَعًا.</p>
+
+    <p>وَلَوْ صَلُحَتِ الْمَطَاعِمُ، لَصَلُحَتْ كَثِيرٌ مِنَ الضَّمَائِرِ. وَلَوْ طَابَ الْكَسْبُ، لَطَابَتِ الْبُيُوتُ. وَلَوِ ابْتَعَدَ النَّاسُ عَنِ الْحَرَامِ، لَقَلَّ الظُّلْمُ، وَاخْتَفَتِ الرِّشْوَةُ، وَخَفَّتِ الْخُصُومَاتُ، وَنَامَ الْفَقِيرُ مُطْمَئِنًّا، وَأَكَلَ الْغَنِيُّ قَرِيرَ الْعَيْنِ.</p>
+
+    <ul class="scene-list">
+      <li>فَكَمْ مِنْ بَيْتٍ هَدَمَتْهُ لُقْمَةُ حَرَامٍ!</li>
+      <li>وَكَمْ مِنْ وَلَدٍ تَرَبَّى عَلَى مَالٍ مَشْبُوهٍ، فَكَانَ عَاقًّا لِوَالِدَيْهِ!</li>
+      <li>وَكَمْ مِنْ تِجَارَةٍ عَظُمَتْ أَرْقَامُهَا، وَسَقَطَتْ بَرَكَتُهَا!</li>
+    </ul>
+
+    <p>إِنَّ الشَّيْطَانَ يَعْرِفُ أَنَّ الْقَلْبَ الَّذِي يَعِيشُ عَلَى الْحَلَالِ أَصْعَبُ عَلَيْهِ مَنْعَةً، لِذَلِكَ يُحَاوِلُ أَنْ يَفْتَحَ إِلَيْهِ الْبَابَ مِنَ الْمَائِدَةِ، لِأَنَّ فَسَادَ اللُّقْمَةِ قَدْ يَكُونُ بِدَايَةَ فَسَادِ الطَّرِيقِ كُلِّهِ.</p>
+
+    <div class="hl">فَاحْذَرْ أَوَّلَ خُطْوَةٍ... فَإِنَّ أَوَّلَ الطَّرِيقِ لَا يَبْدُو مُخِيفًا... لَكِنَّ نِهَايَتَهُ قَدْ تَكُونُ هَاوِيَةً.</div>
+
+    <ul class="scene-list">
+      <li>اجْعَلْ لُقْمَتَكَ حَلَالًا...</li>
+      <li>وَاجْعَلْ قَلْبَكَ طَيِّبًا...</li>
+      <li>وَاجْعَلْ رِزْقَكَ نَقِيًّا...</li>
+    </ul>
+
+    <p>فَإِنَّ اللَّهَ طَيِّبٌ لَا يَقْبَلُ إِلَّا طَيِّبًا.</p>
+
+    <p>وَإِذَا رَاوَدَتْكَ نَفْسُكَ إِلَى الْحَرَامِ، فَتَذَكَّرْ أَنَّ الشَّيْطَانَ لَا يُرِيدُ مِنْكَ خُطْوَةً وَاحِدَةً، بَلْ يُرِيدُ أَنْ يَجْعَلَهَا بِدَايَةَ رِحْلَةٍ لَا تَنْتَهِي إِلَّا بِالْخُسْرَانِ.</p>
+
+    <div class="vb"><div class="vt sm">اللَّهُمَّ ارْزُقْنَا رِزْقًا حَلَالًا طَيِّبًا مُبَارَكًا، وَطَهِّرْ قُلُوبَنَا مِنَ الشُّبُهَاتِ، وَأَعْمَالَنَا مِنَ الرِّيَاءِ، وَأَمْوَالَنَا مِنَ الْحَرَامِ، وَاجْعَلْنَا مِمَّنْ يَسْتَمِعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ، وَلَا تَجْعَلْ لِلشَّيْطَانِ عَلَيْنَا سَبِيلًا، إِنَّكَ نِعْمَ الْمَوْلَى وَنِعْمَ النَّصِيرُ.</div></div>
+
+    <div class="sig">عَلِيّ خَلِيل عَبَّاس السُّلُجُوقِيّ التُّرْكَمَانِيّ اللَّيْلَانِيّ</div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S0 -->
+<div id="s0" class="sec">
+  <div class="sec-h"><div class="sec-n">٠</div><h2>توثيق الآية وتخريج الأحاديث الواردة في المقال</h2></div>
+  <div class="src">
+    <span class="src-label">سبب النزول</span>
+    <span class="grade hist">رواية تفسيرية مشهورة</span>
+    ذكر القرطبي أن الآية نزلت في ثقيف وخزاعة وعامر بن صعصعة وبني مدلج، فيما حرّموه على أنفسهم من الحرث والأنعام كالبحيرة والسائبة والوصيلة والحام، وهي أمور كانوا يبتدعونها في جاهليتهم على أنها من الدين، فأنزل الله الآية لتُبيح ما أحلّه ولتنهى عن هذا الابتداع في التحريم — (الجامع لأحكام القرآن، تفسير الآية ١٦٨ من سورة البقرة).
+  </div>
+  <div class="src">
+    <span class="src-label">تفسير ابن كثير</span>
+    قال ابن كثير: «أباح لهم أن يأكلوا مما في الأرض في حال كونه حلالاً من الله طيباً، أي: مستطاباً في نفسه غير ضار للأبدان ولا للعقول، ونهاهم عن اتباع خطوات الشيطان، وهي: طرائقه ومسالكه فيما أضلّ أتباعه فيه من تحريم البحائر والسوائب والوصائل ونحوها مما زيّنه لهم في جاهليتهم» — (تفسير القرآن العظيم، تفسير الآية ١٦٨ من سورة البقرة).
+  </div>
+  <div class="src">
+    <span class="src-label">حديث عياض بن حمار — الاستشهاد النبوي الذي أورده ابن كثير</span>
+    <span class="grade sahih">صحيح</span>
+    عن عياض بن حمار رضي الله عنه أن رسول الله ﷺ قال يوماً في خطبته: «أَلَا إِنَّ رَبِّي أَمَرَنِي أَنْ أُعَلِّمَكُمْ مَا جَهِلْتُمْ مِمَّا عَلَّمَنِي يَوْمِي هَذَا... يَقُولُ اللَّهُ تَعَالَى: إِنَّ كُلَّ مَا نَحَلْتُهُ عِبَادِي حَلَالٌ، وَإِنِّي خَلَقْتُ عِبَادِي حُنَفَاءَ كُلَّهُمْ، وَإِنَّهُمْ أَتَتْهُمُ الشَّيَاطِينُ فَاجْتَالَتْهُمْ عَنْ دِينِهِمْ، وَحَرَّمَتْ عَلَيْهِمْ مَا أَحْلَلْتُ لَهُمْ» — أخرجه <strong>مسلم</strong> في صحيحه، كتاب الجنة وصفة نعيمها.
+  </div>
+  <div class="src">
+    <span class="src-label">حديث الرجل يطيل السفر — «فأنى يُستجاب لذلك؟»</span>
+    <span class="grade sahih">صحيح</span>
+    عن أبي هريرة رضي الله عنه أن رسول الله ﷺ قال: «أَيُّهَا النَّاسُ، إِنَّ اللَّهَ طَيِّبٌ لَا يَقْبَلُ إِلَّا طَيِّبًا... ثُمَّ ذَكَرَ الرَّجُلَ يُطِيلُ السَّفَرَ أَشْعَثَ أَغْبَرَ، يَمُدُّ يَدَيْهِ إِلَى السَّمَاءِ: يَا رَبِّ يَا رَبِّ، وَمَطْعَمُهُ حَرَامٌ، وَمَشْرَبُهُ حَرَامٌ، وَمَلْبَسُهُ حَرَامٌ، وَغُذِّيَ بِالْحَرَامِ، فَأَنَّى يُسْتَجَابُ لَهُ؟» — أخرجه <strong>مسلم</strong> في صحيحه، كتاب الزكاة.
+  </div>
+  <div class="src">
+    <span class="src-label">ملاحظة بلاغية (نقلها صاحب التفسير الوسيط والألوسي)</span>
+    نبّه المفسرون على أن قوله ﴿خُطُوَاتِ الشَّيْطَانِ﴾ استعارة تمثيلية بديعة: شُبّه المُقتدي بالشيطان دون تبصر بالسائر الذي يتبع آثار خطوات من سبقه ظناً منه أنها موصلة إلى المقصود، وهذا ما جعل العرب يقولون «يتبع خُطا فلان» بمعنى يقتدي به دون تفكر — (التفسير الوسيط لطنطاوي، تفسير الآية ١٦٨ من سورة البقرة).
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="card t"><div class="ct">أولاً: الاستعارة التمثيلية في ﴿خُطُوَاتِ الشَّيْطَانِ﴾</div><p>كما نص المفسرون، هذه استعارة تمثيلية دقيقة: فالشيطان لا يُظهر طريقه دفعة واحدة، بل يضع «خطوات» متتالية صغيرة يُغري بها المرء خطوة إثر خطوة، فيتبعها الإنسان كما يتبع السائر آثار من سبقه، ظاناً أنها موصلة إلى غايته. هذا التمثيل يفسر جوهر المقال كله: أن المعصية تبدأ صغيرة ثم تتراكم.</p></div>
+  <div class="card t2"><div class="ct">ثانياً: العدول عن «الشيطان» إلى ﴿خُطُوَاتِ الشَّيْطَانِ﴾</div><p>لم تنهَ الآية عن اتباع «الشيطان» ذاته، بل عن اتباع «خطواته»، وهذا عدول بلاغي دقيق نبّه إليه المقال: فالنهي عن اتباع الشيطان مباشرة قد يبدو سهل الامتثال (فمن يتبع الشيطان علناً؟)، أما التحذير من «الخطوات» فيكشف الخديعة الحقيقية: أن الوقوع فيه يبدأ بأمور صغيرة تبدو بريئة قبل أن تتكشف عن مسارها الحقيقي.</p></div>
+  <div class="card t"><div class="ct">ثالثاً: الجمع بين ﴿حَلَالًا﴾ و﴿طَيِّبًا﴾</div><p>جمعت الآية بين وصفين متكاملين لا مترادفين تماماً: «حلالاً» (من جهة الحكم الشرعي) و«طيباً» (من جهة النفع والاستطابة)، وهذا الجمع يفيد أن الإسلام لا يكتفي بمجرد الإباحة الشرعية، بل يريد أيضاً أن يكون المباح نافعاً غير ضار، وهو ما فصّله المقال بقوله «لأن الإسلام يريد للإنسان سلامة دينه وسلامة بدنه معاً».</p></div>
+  <div class="card t2"><div class="ct">رابعاً: ختم الآية بالتعليل ﴿إِنَّهُ لَكُمْ عَدُوٌّ مُبِينٌ﴾</div><p>ختمت الآية النهي بتعليل صريح («إنه عدو مبين»)، وهذا الختام التعليلي يقوّي الأمر بالحلال الطيب بذكر سببه: أن اتباع خطوات من هذه صفته (عداوة ظاهرة بيّنة) ضرب من التناقض العقلي الذي لا يقبله عاقل، وهذا من أساليب الإقناع القرآني بربط الحكم بعلته الواضحة.</p></div>
+  <div class="card t"><div class="ct">خامساً: بلاغة التكرار الإيقاعي في المقال («هذه... هذا...»)</div><p>وظّف المؤلف تكراراً إيقاعياً متتالياً لصيغ الإغراء الشيطاني («هذه مرة واحدة، هذا مبلغ بسيط، هذه نظرة عابرة...») يُحاكي بصوته المتكرر نفسه صوت الوسوسة المتدرجة التي وصفتها الآية، فيكون شكل النص انعكاساً لمضمونه.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>الصرف والاشتقاق</h3>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>التحليل الصرفي</th></tr>
+      <tr><td class="term">خُطُوَاتٍ</td><td>فُعُلَات (جمع خُطوة)</td><td class="def">جمع مؤنث سالم لـ«خُطوة» من الجذر «خ ط و»، والخطوة ما بين القدمين في المشي، استُعيرت هنا لمراحل الإغراء المتدرج.</td></tr>
+      <tr><td class="term">طَيِّبًا</td><td>فَيْعِل (صفة مشبهة)</td><td class="def">من الجذر «ط ي ب»، صفة مشبهة تدل على ثبوت طيب الشيء ونفعه، لا مجرد حدوثه العارض.</td></tr>
+      <tr><td class="term">مُبِينٌ</td><td>مُفْعِل (اسم فاعل من أبان)</td><td class="def">من الجذر «ب ي ن»، اسم فاعل من الرباعي «أبان» بمعنى أظهر وأوضح، فـ«عدو مبين» أي عداوته ظاهرة واضحة لا تخفى.</td></tr>
+      <tr><td class="term">اجْتَالَتْهُمْ</td><td>افْتَعَلَتْهُمْ (من جال)</td><td class="def">من الجذر «ج و ل»، فعل خماسي من باب «افتعل»، بمعنى استخفّتهم وحرّفتهم عن الطريق، وردت في حديث عياض بن حمار المستشهد به في التوثيق.</td></tr>
+    </table>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card t"><div class="ct">لفظ «الطيب» بين الحلال والمستلذ</div><p>اختلف الفقهاء في دلالة «الطيب» هنا: فقال مالك: الطيب هو الحلال نفسه، فيكون تأكيداً لفظياً لـ«حلالاً». وقال الشافعي: الطيب هو المستلذ النافع، فيكون تنويعاً لا تأكيداً، ولذلك يُمنع أكل الحيوان القذر وإن كان حلالاً من حيث الأصل. وهذا الاختلاف اللفظي يعكس ثراء المعنى القرآني الذي يحتمل الوجهين معاً.</p></div>
+    <div class="card t2"><div class="ct">لفظ «الخطوة» بين الحسي والمعنوي</div><p>يُستعمل لفظ «الخطوة» حقيقة للمسافة بين القدمين في المشي الحسي، ومجازاً (كما هنا) للمرحلة التدريجية في أي مسار معنوي، وهذا الاستعمال المجازي أصبح شائعاً في العربية حتى قبل نزول القرآن، كما يقال «خطا خطوة في مشروعه».</p></div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="g2">
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْحَلَالُ</td><td class="def">المباح شرعاً، وصف يتعلق بالحكم الشرعي المجرد.</td></tr>
+        <tr><td class="term">الطَّيِّبُ</td><td class="def">المستطاب النافع غير الضار، وصف يتعلق بالنفع الذاتي، أخص من الحلال في بعده الصحي.</td></tr>
+        <tr><td class="term">الْمُبَاحُ</td><td class="def">ما استوى فعله وتركه شرعاً، أعم أحياناً من «الحلال» الذي قد يفيد الاستحباب أيضاً في بعض السياقات.</td></tr>
+      </table>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْخُطْوَةُ</td><td class="def">مرحلة صغيرة ضمن مسار متدرج، تفيد التتابع والتراكم.</td></tr>
+        <tr><td class="term">الْقَفْزَةُ</td><td class="def">الانتقال المفاجئ الكبير دون تدرج، وقد نفاها المقال صراحة بقوله «إنها خطوات، وليست قفزات».</td></tr>
+        <tr><td class="term">الشُّبْهَةُ</td><td class="def">ما اختلط فيه الحلال بالحرام والتبس أمره، أخص من مطلق «الحرام» الواضح، وهي أول أبواب «الخطوة الأولى» غالباً.</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">اللحاق: الآية التي بعدها مباشرة (البقرة ١٦٩)</div>
+    <div class="ci"><span class="vi">﴿إِنَّمَا يَأْمُرُكُم بِالسُّوءِ وَالْفَحْشَاءِ وَأَن تَقُولُوا عَلَى اللَّهِ مَا لَا تَعْلَمُونَ﴾</span><span class="vs">البقرة: ١٦٩ — تفصّل هذه الآية طبيعة ما تدعو إليه «خطوات الشيطان» المذكورة في الآية السابقة: السوء، والفحشاء، والقول على الله بلا علم (كتحريم ما لم يحرمه الله)، فتُبيّن الآيتان معاً دائرة كاملة: الأمر بالحلال الطيب، ثم تحذير من مسار الشيطان، ثم تفصيل غايات ذلك المسار.</span></div>
+  </div>
+  <div class="cb"><div class="bt">آيات مشابهة في التحذير من خطوات الشيطان والتدرج في المعصية</div>
+    <div class="ci"><span class="vi">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ ۚ وَمَن يَتَّبِعْ خُطُوَاتِ الشَّيْطَانِ فَإِنَّهُ يَأْمُرُ بِالْفَحْشَاءِ وَالْمُنكَرِ﴾</span><span class="vs">النور: ٢١ — نظير لفظي مباشر لآية الدراسة، لكنه موجَّه للمؤمنين خاصة، مما يدل على أن هذا التحذير عام لكل الناس (كما في البقرة) وخاص بالمؤمنين تحديداً (كما في النور) لكونهم أكثر عرضة للوسوسة الخفية.</span></div>
+    <div class="ci"><span class="vi">﴿فَوَسْوَسَ لَهُمَا الشَّيْطَانُ لِيُبْدِيَ لَهُمَا مَا وُورِيَ عَنْهُمَا مِن سَوْآتِهِمَا﴾</span><span class="vs">الأعراف: ٢٠ — تصوّر قصة آدم وحواء أول نموذج تاريخي لـ«خطوات الشيطان» المتدرجة: وسوسة أولى، ثم قسم كاذب، ثم الأكل من الشجرة، وهي نفس آلية التدرج التي بناها المقال في وصف المعاصي المعاصرة.</span></div>
+    <div class="ci"><span class="vi">﴿يَعِدُهُمُ الشَّيْطَانُ وَيُمَنِّيهِمْ ۖ وَمَا يَعِدُهُمُ الشَّيْطَانُ إِلَّا غُرُورًا﴾</span><span class="vs">النساء: ١٢٠ — تصف أسلوب الشيطان في التزيين والتغرير التدريجي، مكمّلة لصورة «الهمس» التي استعملها المقال في وصف أسلوب الوسوسة الخفية غير الصارخة.</span></div>
+    <div class="ci"><span class="vi">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا كُلُوا مِن طَيِّبَاتِ مَا رَزَقْنَاكُمْ﴾</span><span class="vs">البقرة: ١٧٢ — نظير مباشر يخاطب المؤمنين خاصة بذات الأمر بالطيبات الوارد للناس عامة في آية الدراسة، فيتكامل الخطاب العام (للناس كافة) بخطاب خاص (للمؤمنين) مقروناً بالشكر.</span></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام المستنبطة</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية أحكام في الحلال والحرام ✅</div><div class="md">تُؤصّل لأصل الإباحة في الأطعمة، وتنهى عن تحريم ما لم يحرّمه الله ابتداعاً.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عامة الخطاب لكل الناس ✅</div><div class="md">وردت بنداء ﴿يَا أَيُّهَا النَّاسُ﴾ العام، لا خاصاً بالمؤمنين، فهي أصل يشمل الجميع.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تحذير من مسالك الشيطان ✅</div><div class="md">تُقرر منهجاً وقائياً عاماً في التعامل مع بدايات الانحراف الصغيرة.</div></div>
+  </div>
+  <div class="sub"><h3>الأحكام والأصول المستنبطة</h3>
+    <div class="card t"><div class="ct">الأصل الأول: الأصل في الأطعمة والمنافع الإباحة ما لم يرد نص بالتحريم</div><p>تُؤصّل الآية لقاعدة فقهية كبرى: أن الأصل في الأشياء الإباحة، وأن التحريم يحتاج دليلاً شرعياً، وهذا رد مباشر على من يبتدع تحريم ما أحلّ الله كما فعلت بعض قبائل الجاهلية بالبحيرة والسائبة.</p></div>
+    <div class="card t2"><div class="ct">الأصل الثاني: اشتراط الحلال والطيب معاً في المطعم والمشرب</div><p>يُستنبط من الجمع بين الوصفين وجوب مراعاة كلا الجانبين: الحكم الشرعي (الحلال) والنفع الصحي (الطيب)، فلا يكفي مجرد الإباحة الشرعية إذا كان الشيء ضاراً بالبدن أو العقل.</p></div>
+    <div class="card t"><div class="ct">الأصل الثالث: تحريم أكل الحرام وأثره في رد الدعاء</div><p>يُستنبط من حديث «فأنى يستجاب له» الثابت في صحيح مسلم أن أكل الحرام سبب مباشر لرد الدعاء وعدم إجابته، وهذا أصل عظيم في الحث على تحري الحلال، خاصة في المطعم والمشرب والملبس.</p></div>
+    <div class="card t2"><div class="ct">الأصل الرابع: سد الذرائع بالحذر من مقدمات المعصية الصغيرة</div><p>يُستنبط من التحذير من «خطوات» الشيطان لا الشيطان نفسه أصلاً فقهياً معروفاً هو «سد الذرائع»: الحذر من المقدمات الصغيرة التي تفضي إلى الوقوع في الحرام الكبير، وهو أصل معتبر عند جمهور الفقهاء في مسائل كثيرة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.28rem;">﴿ يَا أَيُّهَا النَّاسُ كُلُوا مِمَّا فِي الْأَرْضِ حَلَالًا طَيِّبًا وَلَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ إِنَّهُ لَكُمْ عَدُوٌّ مُبِينٌ ﴾</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">يَا أَيُّهَا النَّاسُ</div><div class="id">«يا» أداة نداء، «أيُّ» منادى نكرة مقصودة مبني على الضم في محل نصب، «ها» حرف تنبيه زائد، «النَّاسُ» بدل من «أيّ» أو عطف بيان مرفوع.</div></div>
+    <div class="ir"><div class="iw">كُلُوا</div><div class="id">فعل أمر مبني على حذف النون لأنه من الأفعال الخمسة، وواو الجماعة ضمير متصل مبني في محل رفع فاعل.</div></div>
+    <div class="ir"><div class="iw">مِمَّا فِي الْأَرْضِ</div><div class="id">«مِمَّا» جار ومجرور (من + ما) متعلقان بـ«كلوا»، «ما» اسم موصول. «فِي الْأَرْضِ» جار ومجرور متعلقان بمحذوف صلة الموصول.</div></div>
+    <div class="ir"><div class="iw">حَلَالًا طَيِّبًا</div><div class="id">«حَلَالًا» حال منصوبة من الضمير المستتر في «كلوا» أو من العائد المحذوف في صلة «ما»، وعلامة نصبها الفتحة الظاهرة. «طَيِّبًا» نعت لـ«حلالاً» منصوب مثله.</div></div>
+    <div class="ir"><div class="iw">وَلَا تَتَّبِعُوا</div><div class="id">الواو عاطفة، «لا» ناهية جازمة، «تَتَّبِعُوا» فعل مضارع مجزوم بحذف النون لأنه من الأفعال الخمسة، وواو الجماعة فاعل.</div></div>
+    <div class="ir"><div class="iw">خُطُوَاتِ الشَّيْطَانِ</div><div class="id">مفعول به منصوب وعلامة نصبه الكسرة نيابة عن الفتحة لأنه جمع مؤنث سالم، وهو مضاف. «الشَّيْطَانِ» مضاف إليه مجرور وعلامة جره الكسرة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">إِنَّهُ لَكُمْ عَدُوٌّ مُبِينٌ</div><div class="id">«إنّ» حرف توكيد ونصب، والهاء ضمير متصل مبني في محل نصب اسم «إنّ» يعود على الشيطان. «لَكُمْ» جار ومجرور متعلقان بمحذوف حال أو متعلقان بـ«عدوّ». «عَدُوٌّ» خبر «إنّ» مرفوع. «مُبِينٌ» نعت لـ«عدوّ» مرفوع مثله، والجملة تعليلية لا محل لها من الإعراب.</div></div>
+  </div>
+  <div class="card t" style="margin-top:14px;"><div class="ct">لطيفة إعرابية: نصب «حلالاً طيباً» على الحال لا المفعولية</div><p>أعرب جمهور النحاة «حلالاً» حالاً من العائد المحذوف في صلة الموصول «ما» (أي: مما هو كائن في الأرض حالة كونه حلالاً)، لا مفعولاً به لـ«كلوا»؛ لأن المفعول به لـ«كلوا» هو الموصول «ما» نفسه، وهذا التحليل الإعرابي الدقيق يوضح أن «حلالاً طيباً» قيد لنوعية المأكول لا لذاته، وهو ما يخدم دلالة الآية في اشتراط صفة الحل والطيب فيما يُؤكل لا في مطلق الأكل.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="card t"><div class="ct">أولاً: الوعي بآلية الانحراف التدريجي</div><p>يقدّم المقال نموذجاً نفسياً بالغ الأهمية لفهم كيفية وقوع الإنسان في الانحرافات الكبيرة: ليست بقرار مفاجئ، بل بتراكم خطوات صغيرة يُبرَّر كل واحدة منها على حدة. <strong>التطبيق:</strong> عند مواجهة أي تبرير من نوع «هذه مرة واحدة فقط»، التوقف والتساؤل: هل هذه بداية خطوة أولى في طريق أطول؟</p></div>
+  <div class="card t2"><div class="ct">ثانياً: ربط سلامة القلب بمصدر الرزق</div><p>يعالج المقال مفهوماً نفسياً وروحياً مهماً وهو أثر مصدر الكسب على حالة القلب والسلوك، لا على مجرد الالتزام الشكلي بالأحكام. <strong>التطبيق:</strong> عند الشعور بقسوة القلب أو ضعف الخشوع، مراجعة مصادر الدخل والمطعم كأحد الأسباب المحتملة المهملة غالباً.</p></div>
+  <div class="card t"><div class="ct">ثالثاً: تفكيك مبرر «الجميع يفعل ذلك»</div><p>يكشف المقال حيلة نفسية شائعة يستخدمها المرء لتبرير تنازله عن مبادئه: تطبيع السلوك الخاطئ بحجة انتشاره الاجتماعي. <strong>التطبيق:</strong> الفصل الواعي بين «الانتشار الاجتماعي لسلوك ما» و«صحته الشرعية أو الأخلاقية»، فكثرة الفاعلين لا تُغيّر حكم الفعل.</p></div>
+  <div class="card t2"><div class="ct">رابعاً: بناء يقظة استباقية بدل الندم اللاحق</div><p>يدعو المقال إلى الحذر من «أول خطوة» بدل انتظار الوصول إلى نهاية الطريق المظلم للندم، وهذا نموذج تربوي وقائي يُفضّل الاستباق على العلاج، ويتوافق مع مبدأ «الوقاية خير من العلاج» في مجال تزكية النفس.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر لآياته</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، سنة ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">التزام دقيق بضوابط القرآن والسنة النبوية</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن وإخبارات النبي ﷺ</span></div>
+      </div>
+      <p><strong style="color:var(--violetl);">العمق التفسيري:</strong> يقوم بدراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة النبوية، مستحضراً أقوال أهل العلم في كل مسألة يعرض لها.</p>
+      <p><strong style="color:var(--violetl);">البُعد الزمني:</strong> يتّسم بحثه بالربط الحي بين النص القرآني ومستجدات العصر، مما يمنح التأمل الأدبي روحاً معاصرة تخاطب واقع الإنسان اليوم.</p>
+      <p><strong style="color:var(--violetl);">التحصيل العلمي:</strong> شملت دراساته علم الحديث، مركّزاً على أحاديث الفتن وإخبارات النبي ﷺ، وهذا يؤكد عمق النظر وسلامة المنهج التي بُنيت عليها مقالاته.</p>
+      <p>وفّقه الله تعالى فيما قدّم لخدمة كتابه الكريم.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">العقيدة والتوحيد</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">الحلال والحرام</span>
+        <span class="atag">البلاغة القرآنية</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَالسُّنَّةِ النَّبَوِيَّةِ وَأَهْلِهِمَا</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.6;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
