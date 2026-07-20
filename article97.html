@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حِين تُغَرْبَلُ القُلُوبُ قَبْلَ الوُجُوهِ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#150e08;--bg:#fbf7ff;--bg2:#f0e6ff;
+  --bd:#0a0612;--bt:#fff6ea;
+  --red:#d81b3d;--orange:#e8760e;--yellow:#d4a300;--green:#0f9a5a;--teal:#0a8f9c;--blue:#1c5cc8;--indigo:#4e2fd0;--violet:#a01fb8;
+  --div:#b090e0;--mist:#2e2044;
+  --accent:var(--indigo);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;font-weight:500;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+  overflow-x:hidden;max-width:100%;
+  background-image:
+    radial-gradient(circle at 8% 4%, rgba(216,27,61,.10) 0%, transparent 30%),
+    radial-gradient(circle at 92% 10%, rgba(232,118,14,.10) 0%, transparent 30%),
+    radial-gradient(circle at 15% 45%, rgba(212,163,0,.09) 0%, transparent 30%),
+    radial-gradient(circle at 85% 55%, rgba(15,154,90,.09) 0%, transparent 30%),
+    radial-gradient(circle at 20% 80%, rgba(10,143,156,.09) 0%, transparent 30%),
+    radial-gradient(circle at 88% 92%, rgba(28,92,200,.09) 0%, transparent 30%),
+    radial-gradient(circle at 50% 60%, rgba(78,47,208,.06) 0%, transparent 40%);
+}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--indigo),var(--violet));z-index:400;transform-origin:top;box-shadow:0 0 8px rgba(0,0,0,.3);}
+.hdr{background:var(--bd);border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--indigo),var(--violet)) 1;position:sticky;top:0;z-index:200;box-shadow:0 4px 28px rgba(0,0,0,.5);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:60px;gap:16px;flex-wrap:wrap;}
+.logo{font-family:'Scheherazade New',serif;font-size:1.05rem;flex-shrink:0;font-weight:700;
+  background:linear-gradient(90deg,var(--orange),var(--yellow),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.logo span{background:linear-gradient(90deg,var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.92rem;text-align:center;flex:1;opacity:.98;font-weight:600;}
+.tbtn{background:linear-gradient(90deg,var(--indigo),var(--violet));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.86rem;font-weight:700;white-space:nowrap;box-shadow:0 3px 10px rgba(90,58,224,.4);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 60px);}
+.sb{width:290px;flex-shrink:0;background:linear-gradient(180deg,#0a0612,#150a20);position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;border-left:2px solid var(--violet);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:60px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-size:1.05rem;padding:18px 18px 10px;font-weight:700;
+  background:linear-gradient(90deg,var(--red),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.toc-s{color:var(--teal);font-size:.68rem;letter-spacing:.12em;padding:12px 18px 4px;font-weight:700;}
+.toc-a{display:block;color:#d0c0f0;text-decoration:none;padding:8px 18px 8px 26px;font-size:.85rem;border-right:3px solid transparent;transition:all .2s;font-weight:500;overflow-wrap:break-word;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(255,255,255,.1);border-right-color:var(--yellow);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.92;}
+.main{flex:1;min-width:0;padding:52px 64px;max-width:100%;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:40px;border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;position:relative;}
+.horn{font-size:1.6rem;display:block;margin-bottom:16px;letter-spacing:.4em;
+  background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--teal),var(--blue));color:#fff;font-size:.78rem;font-weight:700;padding:5px 18px;border-radius:22px;margin-bottom:20px;box-shadow:0 3px 10px rgba(14,158,170,.35);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.2rem;font-weight:800;line-height:1.5;margin-bottom:14px;
+  background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hmeta{color:var(--mist);font-size:.96rem;font-weight:700;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:14px;}
+.hmeta .dot{width:5px;height:5px;background:var(--violet);border-radius:50%;flex-shrink:0;}
+.vb{background:linear-gradient(135deg,#150a20,#0a0612);border:2px solid transparent;border-image:linear-gradient(120deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;border-radius:14px;padding:32px 36px;margin:32px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(90,58,224,.2);}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(240,130,30,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.35rem;color:#fff8ee;line-height:2.15;position:relative;z-index:1;font-weight:600;text-shadow:0 2px 12px rgba(232,180,0,.25);}
+.vt.sm{font-size:1.2rem;}
+.vr{font-size:.88rem;margin-top:14px;position:relative;z-index:1;font-weight:700;
+  background:linear-gradient(90deg,var(--yellow),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.abody{font-size:1.13rem;line-height:2.1;color:#150e08;font-weight:500;}
+.abody p{margin-bottom:1.6em;text-align:justify;overflow-wrap:break-word;}
+.abody p:first-child::first-letter{font-size:3.2em;font-family:'Scheherazade New',serif;font-weight:800;float:right;line-height:.8;margin-left:10px;
+  background:linear-gradient(135deg,var(--red),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.2rem;font-weight:800;text-align:center;margin:12px 0;
+  background:linear-gradient(90deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.zeena-list{list-style:none;padding:0;margin:12px 0 22px;}
+.zeena-list li{font-family:'Scheherazade New',serif;font-size:1.12rem;color:var(--red);font-weight:700;padding:9px 0;border-bottom:2px dashed var(--div);overflow-wrap:break-word;}
+.zeena-list li:last-child{border-bottom:none;}
+.compare-list{list-style:none;padding:0;margin:16px 0;}
+.compare-list li{font-family:'Scheherazade New',serif;font-size:1.12rem;color:var(--indigo);font-weight:700;padding:10px 0;border-bottom:2px dashed var(--div);text-align:center;overflow-wrap:break-word;}
+.compare-list li:last-child{border-bottom:none;}
+.fawqahum-list{list-style:none;padding:0;margin:12px 0;}
+.fawqahum-list li{font-family:'Scheherazade New',serif;font-size:1.16rem;color:#0b6e78;text-align:center;padding:9px 0;border-bottom:2px dashed var(--div);font-weight:800;overflow-wrap:break-word;}
+.fawqahum-list li:last-child{border-bottom:none;}
+.src{background:linear-gradient(135deg,#fff9e8,#fff2d8);border:2px solid var(--yellow);border-radius:10px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.89rem;color:#4a3810;line-height:1.9;font-weight:500;overflow-wrap:break-word;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+.src strong{color:#8a5c00;}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:14px;font-weight:800;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.sahih{background:linear-gradient(90deg,var(--green),var(--teal));}
+.grade.hasan{background:linear-gradient(90deg,var(--yellow),var(--orange));}
+.sec{margin-top:70px;padding-top:20px;scroll-margin-top:80px;}
+.sec-h{display:flex;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap;}
+.sec-n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:800;background:linear-gradient(135deg,var(--accent),#8a6ae8);color:#fff;box-shadow:0 4px 14px rgba(90,58,224,.4);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.7rem;color:var(--bd);border-bottom:4px solid var(--accent);padding-bottom:9px;flex:1;font-weight:800;min-width:0;overflow-wrap:break-word;}
+.sub{margin-top:36px;margin-bottom:20px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;font-weight:800;margin-bottom:14px;padding-right:16px;border-right:5px solid var(--accent);color:var(--bd);overflow-wrap:break-word;}
+.card{background:#fff;border:2px solid var(--div);border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 4px rgba(0,0,0,.1),0 8px 26px rgba(0,0,0,.06);}
+.card.b{border-right:6px solid var(--accent);}
+.card.b2{border-right:6px solid var(--teal);}
+.card.b3{border-right:6px solid var(--orange);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--bd);margin-bottom:11px;font-weight:800;overflow-wrap:break-word;}
+.card p{font-size:1rem;color:#150e08;line-height:1.95;margin-top:6px;font-weight:500;overflow-wrap:break-word;}
+.bdg{font-size:.7rem;padding:3px 10px;border-radius:14px;font-family:'Noto Naskh Arabic',sans-serif;background:linear-gradient(90deg,var(--indigo),var(--violet));color:#fff;font-weight:800;}
+.tbl{width:100%;table-layout:fixed;border-collapse:collapse;margin:14px 0;font-size:.95rem;border-radius:10px;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.08);}
+.tbl th{background:linear-gradient(90deg,var(--bd),#1a1028);color:#ffe8b8;padding:11px 12px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;font-weight:800;word-break:break-word;}
+.tbl td{padding:11px 12px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.85;word-break:break-word;overflow-wrap:break-word;}
+.tbl tr:nth-child(even) td{background:#faf5ff;}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:var(--indigo);font-weight:800;}
+.def{color:var(--mist);font-size:.93rem;font-weight:500;}
+.ib{background:linear-gradient(135deg,#f5eeff,#eee4fb);border-radius:10px;padding:16px 18px;margin:12px 0;}
+.ir{display:flex;gap:12px;padding:9px 0;border-bottom:2px dashed var(--div);align-items:flex-start;flex-wrap:wrap;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--red);min-width:140px;max-width:100%;font-weight:800;flex-shrink:0;overflow-wrap:break-word;}
+.id{color:var(--mist);font-size:.94rem;flex:1;min-width:200px;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.35rem;color:var(--bd);text-align:center;padding:28px 30px;margin:38px 0;border-top:4px solid var(--indigo);border-bottom:4px solid var(--violet);position:relative;font-weight:700;background:linear-gradient(135deg,#fff9f0,#f5eeff);border-radius:8px;overflow-wrap:break-word;}
+.pq::before{content:'❝';position:absolute;top:0;right:28px;font-size:2.6rem;color:var(--orange);opacity:.35;line-height:1;}
+.cb{background:linear-gradient(135deg,#0a0612,#1a1028);border:2px solid var(--indigo);border-radius:12px;padding:24px 26px;margin:22px 0;}
+.cb .bt{color:#ffd86a;font-family:'Scheherazade New',serif;font-size:1.16rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--violet);overflow-wrap:break-word;}
+.ci{color:#e6d8fa;padding:10px 0;border-bottom:1px dashed rgba(180,140,240,.3);font-size:.94rem;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:#ffe8b8;font-size:1.02rem;display:block;margin-bottom:4px;font-weight:700;}
+.ci .vs{color:#9ee8dc;font-size:.8rem;}
+.vrd{background:linear-gradient(135deg,#0a0612,#1a1028);border:2px solid var(--teal);border-radius:9px;padding:18px 20px;margin:14px 0;color:#d4f0ec;font-size:.96rem;line-height:1.95;font-weight:500;overflow-wrap:break-word;}
+.vrd strong{color:#ffd86a;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:18px 0;}
+.mc{background:#fff;border:2px solid var(--div);border-radius:10px;padding:18px 18px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+.mc .ml{color:var(--violet);font-size:.75rem;margin-bottom:5px;display:block;font-weight:800;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.06rem;color:var(--bd);font-weight:800;margin-bottom:5px;overflow-wrap:break-word;}
+.mc .md{color:var(--mist);font-size:.86rem;line-height:1.65;font-weight:500;overflow-wrap:break-word;}
+.cl{list-style:none;padding:0;margin:12px 0;}
+.cl li{padding:9px 26px 9px 0;position:relative;border-bottom:1px dashed var(--div);color:#150e08;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--red);font-size:.9em;top:12px;font-weight:900;}
+.asec{background:linear-gradient(135deg,#0a0612,#1a1028);border:3px solid transparent;border-image:linear-gradient(120deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;border-radius:14px;padding:32px 34px;margin:60px 0 40px;display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;}
+.ava{width:76px;height:76px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--orange),var(--yellow));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 4px 16px rgba(240,130,30,.4);}
+.ai{flex:1;min-width:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff8ee;font-size:1.35rem;margin-bottom:6px;font-weight:800;overflow-wrap:break-word;}
+.ai .at{color:#ffd86a;font-size:.88rem;margin-bottom:14px;font-weight:600;overflow-wrap:break-word;}
+.ai p{color:#e6d8fa;font-size:.94rem;line-height:1.9;margin-bottom:9px;font-weight:500;overflow-wrap:break-word;}
+.ai p strong{color:#9ee8dc;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0;}
+.ami{background:rgba(255,255,255,.08);border:1px solid rgba(180,140,240,.35);border-radius:8px;padding:11px 12px;min-width:0;}
+.ami .aml{color:#9ee8dc;font-size:.72rem;margin-bottom:4px;display:block;font-weight:700;}
+.ami .amv{color:#fff8ee;font-size:.9rem;font-family:'Scheherazade New',serif;font-weight:600;overflow-wrap:break-word;}
+.atag{display:inline-block;background:linear-gradient(90deg,var(--indigo),var(--violet));color:#fff;font-size:.75rem;padding:4px 13px;border-radius:14px;margin:3px;font-weight:700;}
+.orn{text-align:center;font-size:1.3rem;margin:50px 0;letter-spacing:.42em;font-weight:700;
+  background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+footer{background:var(--bd);text-align:center;padding:32px 20px;font-size:.86rem;border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;margin-top:80px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.08rem;margin-bottom:8px;font-weight:800;
+  background:linear-gradient(90deg,var(--orange),var(--yellow),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;}
+footer .fb span{background:linear-gradient(90deg,var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+footer p{color:#d0c0f0;overflow-wrap:break-word;}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:60px;width:280px;height:calc(100vh - 60px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.75rem;}.asec{flex-direction:column;}.main{padding:32px 18px;}}
+@media(max-width:640px){.main{padding:20px 12px;}.vt{font-size:1.05rem;}.hero h1{font-size:1.35rem;}.pq{font-size:1.05rem;padding:20px 16px;}.hdr-i{padding:0 12px;}.logo{display:none;}.iw{min-width:100%;}.tbl{font-size:.85rem;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">حِين تُغَرْبَلُ القُلُوبُ قَبْلَ الوُجُوهِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص الأحاديث كاملة</a>
+  <div class="toc-s">علوم الحديث</div>
+  <a class="toc-a" href="#h1">١. التخريج ودرجة الصحة</a>
+  <a class="toc-a" href="#h2">٢. التصنيف والتبويب الحديثي</a>
+  <a class="toc-a" href="#h3">٣. دفع التعارض (مختلف الحديث)</a>
+  <div class="toc-s">البلاغة واللغة</div>
+  <a class="toc-a" href="#s1">٤. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٥. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <div class="toc-s">الأصول والفقه</div>
+  <a class="toc-a" href="#u1">٦. الجانب الأصولي والقواعد الفقهية</a>
+  <a class="toc-a" href="#u2">٧. فقه التنزيل على الواقع المعاصر</a>
+  <a class="toc-a" href="#u3">٨. الجانب القرآني ودفع توهم النسخ</a>
+  <a class="toc-a" href="#u4">٩. الأحكام الفقهية المستنبطة</a>
+  <a class="toc-a" href="#u5">١٠. الأبعاد الفلسفية والنفسية والتربوية</a>
+  <div class="toc-s">السياقات والإعراب</div>
+  <a class="toc-a" href="#s3">١١. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">١٢. نوع النص والأحكام الشرعية</a>
+  <a class="toc-a" href="#s5">١٣. إعراب المقاطع المحورية</a>
+  <a class="toc-a" href="#s6">١٤. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">دراسة حديثية أصولية موسّعة · أحاديث الفتن والغربلة · شهادة النبوة</div>
+  <h1>حِين تُغَرْبَلُ القُلُوبُ قَبْلَ الوُجُوهِ<br>شَهَادَةُ النُّبُوَّةِ عَلَى آخِرِ الزَّمَانِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>أحاديث أبي هريرة، حذيفة، ابن عمرو</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;--accent:var(--red);">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص الأحاديث الثلاثة كاملة</h2></div>
+
+  <div class="vb">
+    <div class="vt sm">«سَيَأْتِي عَلَى النَّاسِ سَنَوَاتٌ خَدَّاعَاتٌ: يُصَدَّقُ فِيهَا الْكَاذِبُ، وَيُكَذَّبُ فِيهَا الصَّادِقُ، وَيُؤْتَمَنُ فِيهَا الْخَائِنُ، وَيُخَوَّنُ فِيهَا الْأَمِينُ، وَيَنْطِقُ فِيهَا الرُّوَيْبِضَةُ» قِيلَ: يَا رَسُولَ اللَّهِ، وَمَا الرُّوَيْبِضَةُ؟ قَالَ: «الرَّجُلُ التَّافِهُ يَنْطِقُ فِي أَمْرِ الْعَامَّةِ»</div>
+    <div class="vr">عن أبي هريرة رضي الله عنه — أخرجه ابن ماجه وأحمد</div>
+  </div>
+
+  <div class="abody">
+    <p>لَيْسَتْ هَذِهِ الْأَحَادِيثُ مُجَرَّدَ إِخْبَارٍ عَنْ مُسْتَقْبَلٍ بَعِيدٍ، وَإِنَّمَا هِيَ كَشْفٌ رَبَّانِيٌّ لِسُنَنٍ تَتَكَرَّرُ كُلَّمَا ابْتَعَدَ النَّاسُ عَنْ نُورِ الْوَحْيِ، وَكُلَّمَا أَصْبَحَ مِيزَانُ الدُّنْيَا أَثْقَلَ مِنْ مِيزَانِ الْآخِرَةِ. إِنَّهَا تَصِفُ انْقِلَابًا لَا يَبْدَأُ فِي الْأَسْوَاقِ، وَلَا فِي السِّيَاسَةِ، وَلَا فِي الْإِعْلَامِ، بَلْ يَبْدَأُ فِي الْقَلْبِ؛ لِأَنَّ الْقَلْبَ إِذَا فَسَدَ فَسَدَ كُلُّ شَيْءٍ، وَإِذَا مَاتَ الضَّمِيرُ صَارَ الْبَاطِلُ حَقًّا، وَالْحَقُّ بَاطِلًا.</p>
+
+    <p>فِي السَّنَوَاتِ الْخَدَّاعَاتِ لَا يَكُونُ الْكَذِبُ حَادِثَةً عَابِرَةً، بَلْ يُصْبِحُ ثَقَافَةً. وَيَغْدُو الصِّدْقُ غَرِيبًا يَحْتَاجُ صَاحِبُهُ إِلَى أَنْ يُدَافِعَ عَنْ نَفْسِهِ، بَيْنَمَا الْكَاذِبُ يُسْتَقْبَلُ بِالتَّصْفِيقِ، وَيُرْفَعُ عَلَى الْأَكْتَافِ، وَيُقَدَّمُ بِوَصْفِهِ خَبِيرًا وَمُفَكِّرًا وَصَاحِبَ رُؤْيَةٍ.</p>
+
+    <p>تَرَى مَنْ يَمْلِكُ الْبَلَاغَةَ لَا الْحَقِيقَةَ، وَمَنْ يُجِيدُ التَّمْثِيلَ لَا الْأَمَانَةَ، وَمَنْ يَرْفَعُ صَوْتَهُ أَكْثَرَ مِنْ غَيْرِهِ فَيَظُنُّهُ النَّاسُ أَعْلَمَهُمْ. وَهُنَا يَظْهَرُ الرُّوَيْبِضَةُ؛ ذَلِكَ التَّافِهُ الَّذِي لَمْ يَحْمِلْ عِلْمًا، وَلَمْ يَعْرِفْ تَقْوَى، وَلَمْ يُرَبِّ نَفْسَهُ عَلَى الصِّدْقِ، لَكِنَّهُ يَتَصَدَّرُ الْحَدِيثَ فِي قَضَايَا الْأُمَّةِ، فَيُفْتِي بِلَا عِلْمٍ، وَيُحَلِّلُ بِلَا بَصِيرَةٍ، وَيُوَجِّهُ النَّاسَ وَهُوَ لَا يُحْسِنُ تَوْجِيهَ نَفْسِهِ.</p>
+
+    <p class="ql">إِنَّ أَخْطَرَ مَا يُصِيبُ الْمُجْتَمَعَاتِ لَيْسَ قِلَّةَ الْعُلَمَاءِ، بَلْ كَثْرَةَ الْمُتَصَدِّرِينَ بِغَيْرِ عِلْمٍ.</p>
+
+    <div class="vb" style="margin:24px 0;">
+      <div class="vt sm">«يَنَامُ الرَّجُلُ النَّوْمَةَ فَتُقْبَضُ الْأَمَانَةُ مِنْ قَلْبِهِ... فَيُصْبِحُ النَّاسُ يَتَبَايَعُونَ فَلَا يَكَادُ أَحَدٌ يُؤَدِّي الْأَمَانَةَ، حَتَّى يُقَالَ: إِنَّ فِي بَنِي فُلَانٍ رَجُلًا أَمِينًا، وَحَتَّى يُقَالَ لِلرَّجُلِ: مَا أَجْلَدَهُ، مَا أَظْرَفَهُ، مَا أَعْقَلَهُ! وَمَا فِي قَلْبِهِ مِثْقَالُ حَبَّةٍ مِنْ خَرْدَلٍ مِنْ إِيمَانٍ...»</div>
+      <div class="vr">عن حذيفة بن اليمان رضي الله عنه — متفق عليه</div>
+    </div>
+
+    <p>ثُمَّ يَنْتَقِلُ الْمَرَضُ إِلَى مَرْحَلَةٍ أَشَدَّ؛ تُقْبَضُ الْأَمَانَةُ مِنَ الْقُلُوبِ. وَمَا أَعْجَبَ هَذَا التَّصْوِيرَ! لَمْ يَقُلِ النَّبِيُّ ﷺ إِنَّ الْأَمْوَالَ سَتَذْهَبُ، أَوْ إِنَّ الْمَبَانِيَ سَتَنْهَدِمُ، وَإِنَّمَا أَخْبَرَ أَنَّ الْأَمَانَةَ تُنْزَعُ مِنَ الْقَلْبِ، فَإِذَا نُزِعَتْ أَصْبَحَ الْإِنْسَانُ يَبْدُو مُحْتَرَمًا مِنَ الْخَارِجِ، بَيْنَمَا دَاخِلُهُ خَوَاءٌ.</p>
+
+    <ul class="zeena-list">
+      <li>قَدْ يَكُونُ أَنِيقَ الْمَلْبَسِ... يَحْمِلُ أَعْلَى الشَّهَادَاتِ...</li>
+      <li>يَشْغَلُ أَرْفَعَ الْمَنَاصِبِ... يَتَحَدَّثُ بِأَفْصَحِ الْعِبَارَاتِ...</li>
+      <li>وَلَكِنَّهُ إِذَا اؤْتُمِنَ خَانَ، وَإِذَا وَعَدَ أَخْلَفَ، وَإِذَا خَاصَمَ فَجَرَ، وَإِذَا قَدَرَ ظَلَمَ.</li>
+    </ul>
+
+    <p>وَهُنَا يَبْلُغُ الِانْحِرَافُ ذُرْوَتَهُ، حِينَ يُصْبِحُ مِعْيَارُ النَّاسِ هُوَ الذَّكَاءَ الدُّنْيَوِيَّ لَا التَّقْوَى، فَيُقَالُ عَنِ الرَّجُلِ: مَا أَعْقَلَهُ! مَا أَظْرَفَهُ! مَا أَجْلَدَهُ! بَيْنَمَا مِيزَانُ السَّمَاءِ يَقُولُ: «وَمَا فِي قَلْبِهِ مِثْقَالُ حَبَّةٍ مِنْ خَرْدَلٍ مِنْ إِيمَانٍ». إِنَّهَا مَأْسَاةُ الْحَضَارَاتِ حِينَ تَقِيسُ الْإِنْسَانَ بِمَا يَمْلِكُ، لَا بِمَا يَحْمِلُ فِي قَلْبِهِ مِنْ إِيمَانٍ وَأَمَانَةً.</p>
+
+    <div class="vb" style="margin:24px 0;">
+      <div class="vt sm">«كَيْفَ بِكُمْ وَبِزَمَانٍ يُوشِكُ أَنْ يَأْتِيَ يُغَرْبَلُ النَّاسُ فِيهِ غَرْبَلَةً، ثُمَّ تَبْقَى حُثَالَةٌ مِنَ النَّاسِ قَدْ مَرِجَتْ عُهُودُهُمْ وَأَمَانَاتُهُمْ، وَاخْتَلَفُوا هَكَذَا» وَشَبَّكَ بَيْنَ أَصَابِعِهِ. قَالُوا: كَيْفَ بِنَا يَا رَسُولَ اللَّهِ إِذَا كَانَ ذَلِكَ؟ قَالَ: «تَأْخُذُونَ بِمَا تَعْرِفُونَ، وَتَدَعُونَ مَا تُنْكِرُونَ، وَتُقْبِلُونَ عَلَى خَاصَّتِكُمْ، وَتَذَرُونَ أَمْرَ عَوَامِّكُمْ»</div>
+      <div class="vr">عن عبدالله بن عمرو بن العاص رضي الله عنهما — أخرجه ابن ماجه وأبو داود</div>
+    </div>
+
+    <p>ثُمَّ تَأْتِي مَرْحَلَةُ الْغَرْبَلَةِ؛ غَرْبَلَةٌ تَهُزُّ الصُّفُوفَ، وَتُمَيِّزُ الصَّادِقَ مِنَ الْمُدَّعِي، وَالْمُخْلِصَ مِنَ الْمُتَلَوِّنِ، وَصَاحِبَ الْعَقِيدَةِ مِنْ صَاحِبِ الْمَصْلَحَةِ. كَمَا يُنَقَّى الْحَبُّ مِنَ التِّبْنِ، وَكَمَا يُفْصَلُ الذَّهَبُ عَنِ التُّرَابِ، فَإِنَّ اللَّهَ يَبْتَلِي النَّاسَ حَتَّى لَا يَبْقَى إِلَّا مَنْ ثَبَتَ قَلْبُهُ عَلَى الْحَقِّ.</p>
+
+    <ul class="compare-list">
+      <li>وَلَيْسَ كُلُّ مَنْ رَفَعَ شِعَارَ الدِّينِ يَثْبُتُ...</li>
+      <li>وَلَيْسَ كُلُّ مَنْ أَكْثَرَ الْكَلَامَ يَصْمُدُ...</li>
+      <li>وَلَيْسَ كُلُّ مَنْ أَظْهَرَ الصَّلَاحَ يَنْجَحُ فِي الِامْتِحَانِ...</li>
+    </ul>
+
+    <p>وَلِهَذَا جَاءَتِ الْوَصِيَّةُ النَّبَوِيَّةُ الْجَامِعَةُ: «تَأْخُذُونَ بِمَا تَعْرِفُونَ، وَتَدَعُونَ مَا تُنْكِرُونَ، وَتُقْبِلُونَ عَلَى خَاصَّتِكُمْ، وَتَذَرُونَ أَمْرَ عَوَامِّكُمْ». أَيِ الْزَمِ الْحَقَّ الَّذِي تَعْرِفُهُ مِنْ كِتَابِ اللَّهِ وَسُنَّةِ رَسُولِهِ ﷺ، وَلَا تَجْعَلْ كُلَّ ضَجِيجٍ يَسْرِقُ قَلْبَكَ، وَاعْتَنِ بِإِصْلَاحِ نَفْسِكَ وَأَهْلِكَ وَمَنْ حَوْلَكَ، فَإِنَّ الْإِنْسَانَ مَسْؤُولٌ عَمَّا يَسْتَطِيعُ، لَا عَمَّا يَعْجِزُ عَنْهُ.</p>
+
+    <p>وَمَا أَحْوَجَ الْمُسْلِمِينَ الْيَوْمَ إِلَى إِحْيَاءِ الْأَمَانَةِ فِي الْبُيُوتِ قَبْلَ الْمُؤَسَّسَاتِ، وَفِي التِّجَارَةِ قَبْلَ الشِّعَارَاتِ، وَفِي الْكَلِمَةِ قَبْلَ الْمَنَابِرِ. إِنَّ الْأُمَّةَ لَا تَنْهَضُ بِكَثْرَةِ الْأَبْنِيَةِ، وَإِنَّمَا تَنْهَضُ حِينَ يَعُودُ الصِّدْقُ قِيمَةً، وَالْأَمَانَةُ عِبَادَةً، وَالْوَفَاءُ خُلُقًا.</p>
+
+    <div class="vb">
+      <div class="vt sm">سَيَظَلُّ الْحَقُّ قَائِمًا وَإِنْ قَلَّ أَهْلُهُ، وَسَيَبْقَى وَعْدُ اللَّهِ قَائِمًا بِأَنَّ الْعَاقِبَةَ لِلْمُتَّقِينَ، وَأَنَّ الْغَرْبَلَةَ مَهْمَا اشْتَدَّتْ فَإِنَّهَا لَا تَضُرُّ الْمُؤْمِنَ الصَّادِقَ، بَلْ تَرْفَعُهُ وَتُطَهِّرُ صَفَّهُ، كَمَا يُنَقَّى الذَّهَبُ فِي أَتُونِ النَّارِ.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- H1 TAKHRIJ -->
+<div id="h1" class="sec" style="--accent:var(--red);">
+  <div class="sec-h"><div class="sec-n">١</div><h2>التخريج التفصيلي ودرجة الصحة</h2></div>
+
+  <div class="card b">
+    <div class="ct">أولاً: حديث «سَيَأْتِي عَلَى النَّاسِ سَنَوَاتٌ خَدَّاعَاتٌ» — الرويبضة</div>
+    <p><strong>التخريج:</strong> أخرجه ابن ماجه في سننه (كتاب الفتن، باب شدة الزمان، رقم ٤٠٣٦) من طريق عبد الملك بن قدامة الجُمَحي، عن إسحاق بن أبي الفرات، عن سعيد المقبري، عن أبيه، عن أبي هريرة رضي الله عنه. وأخرجه أحمد في المسند (رقم ٧٩١٢). وأخرجه الحاكم في المستدرك (٤/٤٦٥-٤٦٦ و٤/٥١٢) من طريقين عن عبد الملك بن قدامة.</p>
+    <p><strong>درجة الصحة:</strong> السند الأصلي فيه ضعف؛ قال محققو المسند (شعيب الأرنؤوط وجماعته): «حديث حسن، وهذا إسناد ضعيف لضعف عبد الملك بن قدامة الجُمَحي، وجهالة إسحاق بن بكر بن أبي الفرات، وقد رُوي الحديث من طريق آخر بسند حسن» — فالحديث يرتقي بمجموع طرقه إلى درجة الحُسن. وقد صحّحه الشيخ الألباني رحمه الله في «صحيح ابن ماجه» (رقم ٣٢٧٧) وفي «السلسلة الصحيحة»، حيث اعتمد على الطرق المتعددة التي تقوّي بعضها بعضاً.</p>
+  </div>
+
+  <div class="card b2">
+    <div class="ct">ثانياً: حديث حذيفة «يَنَامُ الرَّجُلُ النَّوْمَةَ فَتُقْبَضُ الْأَمَانَةُ»</div>
+    <p><strong>التخريج:</strong> أخرجه البخاري في صحيحه (كتاب الرقاق، باب رفع الأمانة، رقم ٦٤٩٧، وكتاب الفتن رقم ٧٠٨٦) ومسلم في صحيحه (كتاب الإيمان، باب رفع الأمانة والإيمان من قلوب بعض الناس، رقم ١٤٣) من طريق الأعمش، عن زيد بن وهب، عن حذيفة بن اليمان رضي الله عنه.</p>
+    <p><strong>درجة الصحة:</strong> <span class="grade sahih">صحيح متفق عليه</span> — من أعلى درجات الصحة، فهو مما اتفق عليه الشيخان، ولم يتكلم فيه أحد من أئمة العلل بجرح، بل عدّه الحفاظ من أعلام النبوة الظاهرة لتحقق مضمونه في الواقع كما نبّه إليه الحافظ ابن حجر في «فتح الباري» والإمام ابن بطال في شرحه على البخاري.</p>
+  </div>
+
+  <div class="card b3">
+    <div class="ct">ثالثاً: حديث ابن عمرو «يُغَرْبَلُ النَّاسُ فِيهِ غَرْبَلَةً»</div>
+    <p><strong>التخريج:</strong> أخرجه ابن ماجه في سننه (كتاب الفتن، رقم ٣٩٥٧) من طريق عمارة بن عمرو بن حزم، عن أبي حازم سلمة بن دينار، عن عبدالله بن عمرو بن العاص رضي الله عنهما. وأخرجه أبو داود في سننه (رقم ٤٣٤٢، ٤٣٤٣) من طريقين. وأخرجه الحاكم في المستدرك وصححه ووافقه الذهبي. كما أخرج البخاري بعضاً منه معلقاً موصولاً في صحيحه (رقم ٤٧٨-٤٨٠) دون تمامه.</p>
+    <p><strong>درجة الصحة:</strong> <span class="grade sahih">صحيح</span> — قال محققو سنن أبي داود (شعيب الأرنؤوط وآخرون): «إسناده صحيح»، وصححه الألباني في «صحيح ابن ماجه» (رقم ٣٢١١)، وقال الحافظ ابن حجر في «فتح الباري» (١٣/٤٢) إن الحديث «جاء من طرق بعضها صحيح الإسناد».</p>
+  </div>
+
+  <div class="vrd"><strong>خلاصة التصحيح الإجمالية:</strong> الأحاديث الثلاثة تتفاوت في أصل درجتها (حسن لغيره، صحيح متفق عليه، صحيح)، لكنها تتضافر معاً وتتقوى بشواهدها المتعددة لتُشكّل منظومة نبوية متماسكة عن نفس السنة الكونية (فساد الأمانة وظهور التافهين)، وهذا التضافر بين الأحاديث من أدلة "علوم الحديث" على أن المتن الجامع (تفشي الخيانة وظهور الرويبضة) ثابت بمجموع طرقه ولو ضَعُف بعضها منفرداً.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- H2 CLASSIFICATION -->
+<div id="h2" class="sec" style="--accent:var(--orange);">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>التصنيف من حيث الشهرة والورود والتبويب</h2></div>
+
+  <div class="g3">
+    <div class="mc"><span class="ml">حديث الرويبضة</span><div class="mv">من قبيل الغريب النسبي</div><div class="md">فرد به سعيد المقبري عن أبيه في أصل الطريق، لكنه ارتقى بشواهده عند نعيم بن حماد وغيره إلى مرتبة المشهور بالمعنى.</div></div>
+    <div class="mc"><span class="ml">حديث حذيفة</span><div class="mv">مشهور متواتر المعنى</div><div class="md">أخرجه الشيخان بأسانيد متعددة عن الأعمش، وهو من أشهر أحاديث الفتن التي تداولها العلماء في كتبهم قاطبة.</div></div>
+    <div class="mc"><span class="ml">حديث ابن عمرو</span><div class="mv">مشهور بطرق متعددة</div><div class="md">رواه أبو داود وابن ماجه وأحمد والحاكم من طرق متعددة عن عبدالله بن عمرو، وله شاهد عند أبي هريرة أخرجه ابن حبان بإسناد صحيح على شرط مسلم.</div></div>
+  </div>
+
+  <div class="card b" style="margin-top:18px;">
+    <div class="ct">موضع الأحاديث في كتب الجوامع والسنن</div>
+    <table class="tbl">
+      <tr><th>الحديث</th><th>الكتاب</th><th>الباب</th></tr>
+      <tr><td class="term">الرويبضة</td><td class="def">سنن ابن ماجه، مسند أحمد</td><td class="def">كتاب الفتن، باب شدة الزمان</td></tr>
+      <tr><td class="term">قبض الأمانة</td><td class="def">صحيح البخاري، صحيح مسلم</td><td class="def">كتاب الرقاق / كتاب الإيمان، باب رفع الأمانة</td></tr>
+      <tr><td class="term">الغربلة</td><td class="def">سنن ابن ماجه، سنن أبي داود</td><td class="def">كتاب الفتن، باب النهي عن السعي في الفتنة</td></tr>
+    </table>
+    <p>يُلاحظ أن الأحاديث الثلاثة وُضعت جميعاً في "كتاب الفتن" عند ابن ماجه وأبي داود، وفي "كتاب الإيمان" و"كتاب الرقاق" عند الشيخين، وهذا التبويب المزدوج (الفتن + الإيمان) يكشف عن فقه المحدثين في ربط هذه الأحاديث بموضوعين مترابطين: علامات الساعة من جهة، وحقيقة الإيمان وأثره على السلوك من جهة أخرى، فقبض الأمانة عندهم قرين قبض الإيمان لا مجرد ظاهرة اجتماعية معزولة.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- H3 CONTRADICTION -->
+<div id="h3" class="sec" style="--accent:var(--yellow);">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>دفع التعارض (مختلف الحديث ومشكلة الآثار)</h2></div>
+
+  <div class="card b3">
+    <div class="ct">أولاً: التوفيق مع أحاديث بقاء الطائفة الظاهرة على الحق</div>
+    <p>استدل بعضهم بظاهر حديث الغربلة على انقراض أهل الحق كلياً، وهذا يتعارض ظاهرياً مع الحديث المتفق عليه: «لَا تَزَالُ طَائِفَةٌ مِنْ أُمَّتِي ظَاهِرِينَ عَلَى الْحَقِّ، لَا يَضُرُّهُمْ مَنْ خَذَلَهُمْ، حَتَّى يَأْتِيَ أَمْرُ اللَّهِ» (متفق عليه)، وحديث: «لَيَبْلُغَنَّ هَذَا الْأَمْرُ مَا بَلَغَ اللَّيْلُ وَالنَّهَارُ» (أخرجه أحمد وصححه الألباني).</p>
+    <p><strong>وجه الجمع المعتمد عند العلماء:</strong> ليس في أحاديث الغربلة نفي مطلق لبقاء أهل الحق، وإنما هي وصف لـ«حُثَالَة» تبقى من عموم الناس (أي رداءة الأغلبية العددية)، بينما حديث الطائفة الظاهرة يُثبت بقاء أقلية متميزة صامدة على الحق مهما قلّ عددها. فالجمع يكون بأن الغربلة تُنقّص الكثرة الكاثرة الفاسدة، بينما تبقى الطائفة المنصورة – وإن قلّت – ثابتة إلى قيام الساعة. وهذا ما نبّه إليه العلماء في شروح الحديث: أن «الحُثالة» و«الطائفة الظاهرة» ليستا متناقضتين بل متكاملتان: الأولى وصف للغالب الفاسد، والثانية استثناء للباقي الصالح.</p>
+  </div>
+
+  <div class="card b">
+    <div class="ct">ثانياً: التوفيق مع حديث «أمتي كالمطر»</div>
+    <p>حديث: «مَثَلُ أُمَّتِي مَثَلُ الْمَطَرِ، لَا يُدْرَى أَوَّلُهُ خَيْرٌ أَمْ آخِرُهُ» (أخرجه الترمذي وحسّنه، وصححه الألباني في بعض طرقه) يُفهم منه أن الخيرية قد تكون في آخر الأمة كأولها، وهذا يبدو للوهلة الأولى مناقضاً لأحاديث فساد آخر الزمان.</p>
+    <p><strong>وجه الجمع:</strong> ذكر العلماء أن حديث «المطر» يصف إمكانية وجود خير متجدد في أي جيل من أجيال الأمة على مر الزمان (أي لا يُقطع برداءة كل جيل لاحق مطلقاً)، بينما أحاديث الفتن تصف حالاً غالبة تعرض في أزمنة معينة (السنوات الخداعات) دون أن تنفي وجود أفراد صالحين متميزين حتى في تلك الأزمنة، بل الأحاديث نفسها تُثبت وجود هذا الصنف الصالح ضمناً في التوجيه النبوي («تأخذون بما تعرفون»)، أي أن هناك من يبقى قادراً على التمييز بين المعروف والمنكر، وهذا بذاته دليل بقاء بقية من الخير.</p>
+  </div>
+
+  <div class="card b2">
+    <div class="ct">ثالثاً: شواهد وعواضد من السياق النبوي العام</div>
+    <ul class="cl">
+      <li><strong>حديث تقارب الزمان:</strong> «لَا تَقُومُ السَّاعَةُ حَتَّى يَتَقَارَبَ الزَّمَانُ» (متفق عليه) — يُصوّر تسارع الأحداث وانتشار الفتن كأمارة مصاحبة لأحاديث الغربلة.</li>
+      <li><strong>حديث قبض العلم:</strong> «إِنَّ اللَّهَ لَا يَقْبِضُ الْعِلْمَ انْتِزَاعًا يَنْتَزِعُهُ مِنَ الْعِبَادِ، وَلَكِنْ يَقْبِضُ الْعِلْمَ بِقَبْضِ الْعُلَمَاءِ، حَتَّى إِذَا لَمْ يُبْقِ عَالِمًا اتَّخَذَ النَّاسُ رُءُوسًا جُهَّالًا، فَسُئِلُوا فَأَفْتَوْا بِغَيْرِ عِلْمٍ، فَضَلُّوا وَأَضَلُّوا» (متفق عليه) — هذا الحديث شاهد مباشر ومكمّل لحديث الرويبضة، فتصدُّر الجُهّال هو الأثر العملي لقبض العلماء.</li>
+      <li><strong>حديث شرب الخمر بغير اسمها:</strong> «لَيَشْرَبَنَّ نَاسٌ مِنْ أُمَّتِي الْخَمْرَ يُسَمُّونَهَا بِغَيْرِ اسْمِهَا» (أخرجه أبو داود وأحمد وصححه الألباني) — يُصوّر نفس ظاهرة انقلاب الأسماء والمفاهيم التي تتحدث عنها أحاديث الغربلة (تسمية المنكر بغير اسمه).</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec" style="--accent:var(--green);">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في الأحاديث والمقال</h3>
+    <div class="card b"><div class="ct">أولاً: الاستعارة الزراعية «الْغَرْبَلَة»</div><p>استعار النبي ﷺ لفظ «الغربلة» (فصل الحَبّ الجيد عن التبن والشوائب بالمِنخل) لوصف عملية اجتماعية تمييزية كبرى، وهذه استعارة تصريحية بديعة تُجسّد المجرد (تمييز الصادقين من الكاذبين) في صورة حسية زراعية مألوفة لكل عربي، مما يجعل المعنى راسخاً في الذهن بصورة لا تُنسى.</p></div>
+    <div class="card b2"><div class="ct">ثانياً: كناية «مِثْقَالُ حَبَّةٍ مِنْ خَرْدَلٍ» عن أقل القليل</div><p>حبة الخردل أصغر ما يُتصوّر حسياً عند العرب، واستعمالها كناية عن أقل درجات الإيمان الممكنة صورة بلاغية فائقة الدقة، إذ تنفي حتى أضأل مقدار متصوَّر من الإيمان عمّن نزعت الأمانة من قلبه، وهذا أبلغ من النفي المطلق المجرد لأنه يستحضر صورة حسية للمقارنة.</p></div>
+    <div class="card b3"><div class="ct">ثالثاً: التشبيه التمثيلي «الْوَكْت... الْمَجْل» في رواية حذيفة الكاملة</div><p>شبّه النبي ﷺ تدرج ذهاب الأمانة بأثر الجمرة إذا دُحرجت على القدم (الوكت ثم المجل)، وهو تشبيه تمثيلي حسي دقيق يُصوّر التآكل التدريجي غير المحسوس للإيمان، بخلاف الزوال المفاجئ، مما يُنبّه السامع لخطورة الغفلة عن المراقبة الذاتية المستمرة.</p></div>
+    <div class="card b"><div class="ct">رابعاً: الصورة البصرية في المقال «تُقَاسُ الْحَضَارَاتُ بِمَا تَمْلِكُ لَا بِمَا تَحْمِلُ»</div><p>صاغ المؤلف مقابلة بصرية دقيقة بين فعلي «تملك» (الخارج المادي) و«تحمل» (الباطن القلبي)، وهذا التقابل اللفظي يُلخص أطروحة المقال كلها في جملة واحدة مكثفة.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="card b"><div class="ct">الطباق المزدوج المتكرر: يُصَدَّقُ الْكَاذِبُ/يُكَذَّبُ الصَّادِقُ — يُؤْتَمَنُ الْخَائِنُ/يُخَوَّنُ الْأَمِينُ</div><p>طباقان متوازيان في بنية واحدة (مبني للمجهول + انقلاب الصفات)، وهذا التكرار البنيوي يُصوّر انقلاب الموازين الأخلاقية بدقة متناهية: ليس فقط تصديق الكاذب بل تكذيب الصادق في آن واحد، فالفساد مزدوج الاتجاه لا أحادي.</p></div>
+    <div class="card b2"><div class="ct">صيغ المبالغة المتكررة: أَعْقَلَهُ، أَظْرَفَهُ، أَجْلَدَهُ (صيغة التعجب أفعل)</div><p>ثلاث صيغ تعجب متتالية بنفس الوزن تُصوّر إعجاب المجتمع الفاسد بالمنافق المخادع، والتكرار هنا يُبالغ في تصوير حجم الانبهار الجمعي الخاطئ بالمظاهر دون الجواهر.</p></div>
+    <div class="card b3"><div class="ct">السجع النبوي في «تَأْخُذُونَ بِمَا تَعْرِفُونَ وَتَدَعُونَ مَا تُنْكِرُونَ، وَتُقْبِلُونَ عَلَى خَاصَّتِكُمْ وَتَذَرُونَ أَمْرَ عَوَامِّكُمْ»</div><p>أربع جمل متوازنة الوزن والقافية (تعرفون/تنكرون، خاصتكم/عوامكم) في نسق نبوي بليغ يسهل حفظه واستظهاره، وهذا من بلاغة الحديث النبوي التي تخدم غرض الحفظ والتناقل الشفهي عبر الأجيال.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec" style="--accent:var(--teal);">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card b"><div class="ct">ملاحظة حول الروايات المتعددة (بدل القراءات القرآنية)</div><p>بما أن النص الأساسي أحاديث نبوية لا آيات قرآنية، فالحديث هنا عن «الروايات» لا «القراءات» بالمعنى الاصطلاحي الخاص بالقرآن. وقد وردت الأحاديث بألفاظ متقاربة عند رواة مختلفين: فحديث الرويبضة ورد عند نعيم بن حماد بلفظ «الوضيع من الناس» بدل «الرجل التافه»، وحديث الغربلة ورد بلفظ «تبقى حثالة من الناس» عند ابن ماجه، وبلفظ مقارب عند أبي داود، وهذا من اختلاف الرواة في الألفاظ مع اتفاق المعنى، وهو شائع في كتب الحديث ولا يُعدّ تعارضاً.</p></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>التحليل الصرفي</th></tr>
+      <tr><td class="term">الرُّوَيْبِضَة</td><td>فُعَيْلِضَة (تصغير)</td><td class="def">تصغير تحقير من «الرابضة»، والتاء للمبالغة في التحقير، يفيد صِغر شأن هذا الشخص رغم كبر صوته.</td></tr>
+      <tr><td class="term">خَدَّاعَات</td><td>فَعَّالَة (صيغة مبالغة)</td><td class="def">جمع «خَدَّاعة» صيغة مبالغة تفيد كثرة الخداع واستمراره لا مجرد وقوعه عرضاً.</td></tr>
+      <tr><td class="term">مَرِجَتْ</td><td>فَعِلَتْ</td><td class="def">فعل ماضٍ من «مَرِجَ» بمعنى اضطرب واختلط، يفيد فساد العهود وانحلال ضبطها.</td></tr>
+      <tr><td class="term">حُثَالَة</td><td>فُعَالَة</td><td class="def">اسم على وزن يفيد المتبقي الرديء من الشيء بعد انتقاء الجيد منه، كحثالة الشعير والتمر.</td></tr>
+      <tr><td class="term">تُقْبَضُ</td><td>تُفْعَلُ</td><td class="def">فعل مضارع مبني للمجهول من «قَبَضَ»، يفيد الأخذ والانتزاع دون تحديد الفاعل تصريحاً وإن كان معلوماً (الله سبحانه).</td></tr>
+    </table>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card b"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْأَمَانَة»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">أداء الحقوق المالية والودائع</td><td class="def">المعنى الأشيع في المعاملات، وهو ما ذكره حديث حذيفة «فيصبح الناس يتبايعون».</td></tr>
+        <tr><td class="term">التكليف الشرعي العام (كما في الآية ﴿إِنَّا عَرَضْنَا الْأَمَانَةَ﴾)</td><td class="def">معنى أوسع يشمل التكاليف الشرعية كلها.</td></tr>
+        <tr><td class="term">الإيمان القلبي</td><td class="def">فسّر بعض السلف الأمانة في حديث حذيفة بأنها الإيمان ذاته، مستدلين بربط الحديث نزعها بنقص «مثقال حبة من خردل من إيمان».</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْغَرْبَلَة»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">التمييز والتصفية (كما في الحديث)</td><td class="def">المعنى المجازي المراد — فصل الصادقين عن غيرهم بالابتلاء.</td></tr>
+        <tr><td class="term">التنقية الحسية للحبوب</td><td class="def">الأصل اللغوي: نخل الحَبّ بالغربال لفصل التبن عنه.</td></tr>
+        <tr><td class="term">التقليل والإنقاص العددي (استعمال معاصر)</td><td class="def">استعمال حديث موسّع للدلالة على تقليص أعداد جماعة ما بالانتقاء.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card b"><div class="ct">الفرق بين: الرُّوَيْبِضَة / التَّافِه / الْجَاهِل / السَّفِيه</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الرُّوَيْبِضَة</td><td class="def">مصطلح نبوي مخصوص يجمع بين التفاهة (خفة القدر) والتصدر لأمر العامة تحديداً — أخص الألفاظ.</td></tr>
+        <tr><td class="term">التَّافِه</td><td class="def">قليل القيمة والقدر عموماً، دون تخصيص بمجال التصدر للعامة.</td></tr>
+        <tr><td class="term">الْجَاهِل</td><td class="def">من يفتقر إلى العلم، وقد يكون خفيّاً متواضعاً لا متصدراً.</td></tr>
+        <tr><td class="term">السَّفِيه</td><td class="def">ناقص الرأي والتصرف، يخصّ ضعف الحكمة في التصرف المالي أو العام غالباً.</td></tr>
+      </table>
+      <div class="vrd"><strong>لطيفة معجمية:</strong> اختيار النبي ﷺ لفظ «الرويبضة» بصيغة التصغير دون «التافه» وحده يجمع بين الوصفين: تصغير الشأن (رويبضة) وتفسير هذا التصغير بالتفاهة («الرجل التافه»)، فيكون التفسير النبوي نفسه شرحاً دقيقاً لدلالة الصيغة الصرفية.</div>
+    </div>
+    <div class="card b2"><div class="ct">الفرق بين: الْأَمِينُ / الثِّقَةُ / الصَّادِقُ / الْعَدْل</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْأَمِين</td><td class="def">من يُؤتمن على الحقوق والودائع فيؤديها كاملة — يخص جانب حفظ حقوق الغير.</td></tr>
+        <tr><td class="term">الثِّقَة</td><td class="def">من اجتمع فيه العدالة والضبط عند المحدثين — مصطلح حديثي متخصص.</td></tr>
+        <tr><td class="term">الصَّادِق</td><td class="def">من يطابق قوله الواقع — يخص جانب الكلام لا الفعل والمعاملة.</td></tr>
+        <tr><td class="term">الْعَدْل</td><td class="def">المستقيم في دينه وسلوكه عموماً — أشمل من الأمين والصادق معاً.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card b"><div class="ct">دلالة «فِي أَمْرِ الْعَامَّةِ» في تفسير الرويبضة</div><p>لم يقل النبي ﷺ «ينطق في كل شيء» بل خصّص «أمر العامة» أي الشأن العام الذي يخص جموع الناس (كالفتوى، والسياسة، والقضايا المصيرية)، وهذا التخصيص يُبيّن أن خطورة الرويبضة ليست في كلامه الشخصي العادي، بل في تصدره لما يمس مصالح الأمة الكبرى وهو غير أهل لذلك.</p></div>
+    <div class="card b2"><div class="ct">معنى «الْخَاصَّة» و«الْعَامَّة» في التوجيه النبوي الختامي</div><p>«الخاصة» تعني هنا نفس الشخص وأهله ومن تحت ولايته المباشرة، و«العامة» تعني الشأن الجماعي الأوسع الذي لا يملك الفرد وحده تغييره في زمن الفتنة. وهذا التمييز اللغوي الدقيق هو مفتاح فهم الحديث فقهياً: أنه ليس دعوة للانعزال الكلي، بل لضبط دائرة المسؤولية بحسب الاستطاعة.</p></div>
+    <div class="card b3"><div class="ct">دلالة تكرار صيغة «مَا أَفْعَلَهُ» ثلاث مرات</div><p>التعجب المتكرر (ما أعقله، ما أظرفه، ما أجلده) بنفس الصيغة الصرفية يُصوّر تدرج الانبهار المجتمعي بصفات دنيوية ثلاث مختلفة (العقل الدنيوي، الظرف الاجتماعي، القوة/الجلادة)، وهذا التنويع يُغطي أكثر من زاوية للإعجاب الزائف بالشخص المنافق.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- U1 USUL -->
+<div id="u1" class="sec" style="--accent:var(--blue);">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>الجانب الأصولي والقواعد الفقهية الكبرى</h2></div>
+
+  <div class="card b">
+    <div class="ct">أولاً: قاعدة «لَا ضَرَرَ وَلَا ضِرَارَ» في ضبط حدود الاعتزال</div>
+    <p>هذه القاعدة الفقهية الكبرى (المستمدة من الحديث النبوي الصحيح المتفق على معناه) تُوجّه فهم التوجيه النبوي «تُقبلون على خاصتكم وتذرون أمر عوامكم» توجيهاً دقيقاً: فالاعتزال المطلوب هو دفع ضرر الانخراط في فتنة الرويبضة (الذي قد يُوقع في الإثم أو يُشتت الجهد)، لا اعتزال يُلحق ضرراً بالأمة بترك واجب الأمر بالمعروف كلياً. فتُطبَّق القاعدة بموازنة: يُدفع الضرر الأعظم (الانجراف في فتنة عامة لا طاقة للفرد بإصلاحها) دون التسبب في ضرر آخر (ترك النصح والبيان في حدود الاستطاعة).</p>
+  </div>
+
+  <div class="card b2">
+    <div class="ct">ثانياً: قاعدة «الضَّرَرُ الْأَشَدُّ يُزَالُ بِالضَّرَرِ الْأَخَفِّ»</div>
+    <p>في الموازنة بين ضرر مخالطة العوام الفاسدين (فتنة القلب، ضياع الوقت في جدل عقيم مع الرويبضة) وضرر العزلة التامة (ضياع فرصة النصح، انقطاع التواصل الاجتماعي المفيد)، يُرجّح الفقهاء تبعاً لهذه القاعدة أن الضرر الأخف (تقليل المخالطة والاقتصار على «الخاصة») يُزال به الضرر الأشد (الانجراف في فتنة عامة لا يملك الفرد ضبطها)، وهذا هو عين ما أرشد إليه الحديث النبوي دون تصريح بلفظ القاعدة.</p>
+  </div>
+
+  <div class="card b3">
+    <div class="ct">ثالثاً: قاعدة «دَرْءُ الْمَفَاسِدِ مُقَدَّمٌ عَلَى جَلْبِ الْمَصَالِحِ»</div>
+    <p>حين يتزاحم احتمال تحقيق مصلحة (كالتأثير الاجتماعي أو تصدر المجالس العامة) مع احتمال وقوع مفسدة أعظم (فتنة القلب، الرياء، الانجرار لمجاراة الرويبضة)، يُقدَّم درء المفسدة، وهذا يُفسّر سبب توجيه النبي ﷺ الصحابةَ نحو سلامة الدين الشخصي بدل السعي وراء مغانم التصدر في زمن الفتنة، فالسلامة في الدين أولى من كل مكسب دنيوي محتمل.</p>
+  </div>
+
+  <div class="card b" style="margin-top:18px;">
+    <div class="ct">رابعاً: فقه المآلات وسدّ الذرائع</div>
+    <p>يُعدّ تحذير النبي ﷺ من الرويبضة تأصيلاً أصولياً مبكراً لمبدأ «سد الذرائع»: فمنع تصدر غير المؤهلين للشأن العام ذريعة لحفظ مقاصد الشريعة الكلية الخمس (الدين، النفس، العقل، النسل، المال)؛ إذ إن فتوى الجاهل تُهدد حفظ الدين، وقراره الأرعن قد يُهدد النفوس والأموال، وتوجيهه الفاسد قد يُفسد عقول العامة ويُضلّهم. وهذا ما نبّه إليه حديث «اتخذ الناس رؤوساً جهالاً فسُئلوا فأفتوا بغير علم فضلّوا وأضلّوا» (متفق عليه) الذي يُبيّن مآل ترك الذريعة مفتوحة.</p>
+  </div>
+
+  <div class="card b2" style="margin-top:14px;">
+    <div class="ct">خامساً: تغيّر الفتوى بتغيّر الأزمان في باب التوثيق والمعاملات</div>
+    <p>قرر الأصوليون والفقهاء (كابن القيم في «إعلام الموقعين») أن الأحكام قد تتغير بحسب الأزمنة والأحوال والنيات لا في أصل التشريع بل في تطبيقاته الإجرائية، فحين تصف الأحاديث زمناً «تفشو فيه الخيانة»، فإن هذا يقتضي عند الفقهاء المعاصرين مشروعية بل استحباب التشدد في وسائل التوثيق (كالكتابة، والإشهاد، والتوثيق الرسمي) في المعاملات المالية أكثر مما كان معهوداً في الأزمنة التي كانت الأمانة فيها أغلب، عملاً بقاعدة «تغير الفتوى بتغير الزمان» وتحقيقاً لقوله تعالى ﴿فَاكْتُبُوهُ﴾ في آية الدَّيْن.</p>
+  </div>
+
+  <div class="card b3" style="margin-top:14px;">
+    <div class="ct">سادساً: دلالة الأمر والنهي في «تَأْخُذُونَ... وَتَدَعُونَ»</div>
+    <p>صيغة الحديث جاءت بالفعل المضارع الخبري («تأخذون، تدعون») لا بصيغة الأمر الصريحة («خذوا، دعوا»)، وهذا من دلالات الأصوليين المعروفة: الخبر الذي يُراد به الطلب (الإنشاء بصيغة الخبر) يُفيد تأكيداً أبلغ من الأمر الصريح، كأن الفعل المطلوب حتمي الوقوع لا مجرد مطلوب. أما درجة هذا الطلب فقرائن السياق (توجيه إرشادي عند سؤال الصحابة عن مخرج من الفتنة) تجعله عند جمهور الأصوليين من قبيل الإرشاد الواجب وجوباً كفائياً بالنسبة لأصل الأخذ بالمعروف وترك المنكر (لأنه امتداد لفريضة الأمر بالمعروف والنهي عن المنكر)، بينما تفصيله في «الإقبال على الخاصة» أقرب إلى الاستحباب أو الوجوب العيني بحسب حال كل مكلف وقدرته.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- U2 CONTEMPORARY -->
+<div id="u2" class="sec" style="--accent:var(--indigo);">
+  <div class="sec-h"><div class="sec-n">٧</div><h2>فقه التنزيل على الواقع المعاصر</h2></div>
+
+  <div class="card b">
+    <div class="ct">أولاً: ضوابط فقه التنزيل العلمية</div>
+    <p>وضع العلماء ضوابط صارمة لتنزيل أحاديث الفتن وأشراط الساعة على الواقع، أهمها: (١) عدم الجزم بتعيين شخص أو حدث بعينه على أنه المقصود بالحديث إلا بنص صريح آخر يُعيّنه، (٢) الاكتفاء بذكر أوجه الشبه العامة بين الوصف النبوي والواقع المُعاش دون ادعاء اليقين، (٣) عدم استعمال هذه الأحاديث لتبرير اليأس أو القعود عن الإصلاح، بل لتحفيز الثبات والعمل. وقد التزم المقال هذا الضابط بدقة حين تحدث عن «الرويبضة المعاصر» كظاهرة عامة لا شخص بعينه.</p>
+  </div>
+
+  <div class="card b2">
+    <div class="ct">ثانياً: «السنوات الخداعات» في مرآة الإعلام الرقمي المعاصر</div>
+    <p>ينطبق وصف «يُصَدَّقُ فِيهَا الْكَاذِبُ» انطباقاً لافتاً على ظواهر معاصرة: انتشار الأخبار الزائفة (Fake News) بسرعة أكبر من تصحيحها، وخوارزميات منصات التواصل التي تُكافئ المحتوى المثير بصرف النظر عن صحته، وصناعة المحتوى الموجَّه (البروباغندا) التي تُقدّم الكذب بغلاف احترافي مقنع، بينما يُهمَّش الخبر الصادق غير المثير إعلامياً. هذا التطبيق المعاصر لا يُغيّر معنى الحديث الأصلي بل يكشف مصداقيته المتجددة عبر العصور.</p>
+  </div>
+
+  <div class="card b3">
+    <div class="ct">ثالثاً: ظاهرة الرويبضة المؤسسية — من الفرد إلى المنصة</div>
+    <p>تحوّلت ظاهرة «الرجل التافه ينطق في أمر العامة» من حالة فردية عارضة في المجتمعات القديمة إلى ظاهرة مؤسسية مدعومة تقنياً في العصر الرقمي؛ فمنصات التواصل الاجتماعي أتاحت لكل شخص – بصرف النظر عن تأهيله العلمي – منبراً يصل إلى ملايين المتابعين، وصار «صانع المحتوى» أو «المؤثر» (Influencer) يتصدر للفتوى في الدين، والاقتصاد، والسياسة دون أدنى تأهيل، مستفيداً من خوارزميات تُكافئ الجرأة والإثارة لا العلم والتثبت. وهذا تجسيد مؤسسي معاصر لنبوءة النبي ﷺ.</p>
+  </div>
+
+  <div class="card b">
+    <div class="ct">رابعاً: أزمة «مَا أَعْقَلَهُ وَمَا أَظْرَفَهُ» في الحداثة المادية</div>
+    <p>تُعظّم الحضارة المادية المعاصرة معايير الذكاء التقني (IQ)، والكاريزما الشخصية، والنجاح المالي، وتجعلها مقياساً للتقدير الاجتماعي، بينما تُغيَّب معايير الأمانة والصدق والتقوى عن ميزان التقييم العام. هذا الانقلاب القيمي هو عين ما وصفه حديث حذيفة بدقة معجزة قبل أربعة عشر قرناً، حين ربط الثناء الدنيوي («ما أعقله، ما أظرفه، ما أجلده») بخُلُوّ القلب من الإيمان، فكأن الحديث يصف بالضبط أزمة القيم في عصر «تقييمات النجاح» المادية المعاصرة.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- U3 QURANIC -->
+<div id="u3" class="sec" style="--accent:var(--violet);">
+  <div class="sec-h"><div class="sec-n">٨</div><h2>الجانب القرآني ودفع توهم النسخ</h2></div>
+
+  <div class="cb"><div class="bt">الآيات القرآنية الموافقة لمعنى الأحاديث</div>
+    <div class="ci"><span class="vi">﴿الم ۝ أَحَسِبَ النَّاسُ أَن يُتْرَكُوا أَن يَقُولُوا آمَنَّا وَهُمْ لَا يُفْتَنُونَ ۝ وَلَقَدْ فَتَنَّا الَّذِينَ مِن قَبْلِهِمْ فَلَيَعْلَمَنَّ اللَّهُ الَّذِينَ صَدَقُوا وَلَيَعْلَمَنَّ الْكَاذِبِينَ﴾</span><span class="vs">العنكبوت: ١-٣ — أصل قرآني محكم لمعنى «الغربلة» النبوية، إذ يُقرر أن الفتنة سنة إلهية ثابتة الغرض منها تمييز الصادق من الكاذب، وهو نفس معنى حديث «يغربل الناس فيه غربلة».</span></div>
+    <div class="ci"><span class="vi">﴿وَلِيُمَحِّصَ اللَّهُ الَّذِينَ آمَنُوا وَيَمْحَقَ الْكَافِرِينَ﴾</span><span class="vs">آل عمران: ١٤١ — تُؤصّل معنى التمحيص (التنقية من الشوائب) الذي يوازي معنى الغربلة الحديثية، نزلت في سياق أحد بعد اختلاط الصفوف وظهور المنافقين.</span></div>
+    <div class="ci"><span class="vi">﴿وَمَا كَانَ اللَّهُ لِيَذَرَ الْمُؤْمِنِينَ عَلَىٰ مَا أَنتُمْ عَلَيْهِ حَتَّىٰ يَمِيزَ الْخَبِيثَ مِنَ الطَّيِّبِ﴾</span><span class="vs">آل عمران: ١٧٩ — نظير مباشر لمعنى الأحاديث: تمييز الخبيث من الطيب سنة إلهية لا تتخلف، وهي ذات المعنى الذي عبّرت عنه الأحاديث بـ«الغربلة» و«التمحيص».</span></div>
+    <div class="ci"><span class="vi">﴿وَلَنَبْلُوَنَّكُمْ حَتَّىٰ نَعْلَمَ الْمُجَاهِدِينَ مِنكُمْ وَالصَّابِرِينَ وَنَبْلُوَ أَخْبَارَكُمْ﴾</span><span class="vs">محمد: ٣١ — تُؤكد أن الابتلاء وسيلة إلهية لإظهار حقائق القلوب في الواقع الشهادي، وهو ما تصفه أحاديث الفتن بأسلوب الإخبار عن المستقبل.</span></div>
+  </div>
+
+  <div class="card b">
+    <div class="ct">دفع توهم النسخ — الإخبار لا يدخله النسخ شرعاً وعقلاً</div>
+    <p>يظن بعض من لا فقه له عند الأحاديث الإخبارية عن الفتن أنها قد تُنسخ أو تُبطَل مع تغير الأحوال، وهذا وهم يدفعه أصل مقرر عند علماء الأصول: أن «النسخ» في الاصطلاح الشرعي يخص الأحكام التكليفية (الأوامر والنواهي) لا الأخبار المحضة عن أمور واقعة أو ستقع، لأن الخبر إما صادق أو كاذب، ولا معنى لنسخ الصدق. فأحاديث «سيأتي على الناس سنوات خداعات» و«يُغربل الناس» إخبار عن سنة كونية ستقع أو وقعت بالفعل، ولا يتصور فيها النسخ عقلاً ولا نقلاً، بخلاف لو كانت أحكاماً تكليفية (كأمر أو نهي) فقد يرد فيها النسخ إذا ثبت ناسخ صحيح متأخر، وهو ما لم يرد في هذا الباب.</p>
+  </div>
+
+  <div class="card b2">
+    <div class="ct">التوفيق العملي بين الأمر القرآني بالأمر بالمعروف وتوجيه «تَذَرُونَ أَمْرَ عَوَامِّكُمْ»</div>
+    <p>الأمر القرآني بالأمر بالمعروف والنهي عن المنكر (كما في آل عمران: ١٠٤، ١١٠) فرض ثابت لا يسقط بحال، لكن الفقهاء يُفرّقون بين "فرضية الأصل" و"كيفية التطبيق بحسب الاستطاعة"، فقوله تعالى ﴿لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا﴾ (البقرة: ٢٨٦) وحديث «مَنْ رَأَى مِنْكُمْ مُنْكَرًا فَلْيُغَيِّرْهُ بِيَدِهِ فَإِنْ لَمْ يَسْتَطِعْ فَبِلِسَانِهِ فَإِنْ لَمْ يَسْتَطِعْ فَبِقَلْبِهِ» (رواه مسلم) يُقيّدان وجوب الأمر بالمعروف بحدود الاستطاعة الفعلية. فتوجيه «تذرون أمر عوامكم» ليس إسقاطاً لفريضة الأمر بالمعروف، بل تحديداً واقعياً لحدود القدرة حين يبلغ الفساد مبلغاً لا يملك الفرد فيه تغيير الحال العام، فينتقل الواجب من "التغيير الفعلي للمجتمع" إلى "الإنكار القلبي مع حفظ الخاصة"، وهذا أدنى درجات الإيمان لا سقوط الفريضة كلياً.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- U4 FIQH RULINGS -->
+<div id="u4" class="sec" style="--accent:var(--red);">
+  <div class="sec-h"><div class="sec-n">٩</div><h2>الأحكام الفقهية والعملية المستنبطة (فقه الفتن)</h2></div>
+
+  <div class="card b">
+    <div class="ct">أولاً: فقه الاعتزال — متى تجب ومتى تحرم؟</div>
+    <table class="tbl">
+      <tr><th>الحال</th><th>الحكم</th><th>الدليل والتوجيه</th></tr>
+      <tr><td class="term">عزلة تامة عن كل مجتمع</td><td class="def">محرمة أو مكروهة</td><td class="def">تُسقط فرائض كفائية (الأمر بالمعروف، صلة الرحم، الجهاد بالكلمة) دون مبرر شرعي معتبر.</td></tr>
+      <tr><td class="term">تقليل مخالطة أهل الفتنة مع بقاء النصح بالاستطاعة</td><td class="def">مستحبة بل قد تجب</td><td class="def">هو المعنى المقصود في الحديث النبوي «تقبلون على خاصتكم».</td></tr>
+      <tr><td class="term">اعتزال كامل عند العجز التام عن التأثير أو خشية الفتنة على الدين</td><td class="def">قد تجب</td><td class="def">إذا تحقق أن البقاء وسط الفتنة يُهدد ثبات الدين نفسه، فحفظ الأصل (الدين) مقدّم على الفرع (التأثير الاجتماعي).</td></tr>
+    </table>
+  </div>
+
+  <div class="card b2">
+    <div class="ct">ثانياً: فقه المعاملات في زمن قلة الأمانة</div>
+    <p>يُستنبط من حديث حذيفة (فساد الأمانة) استحباب بل وجوب التشدد في وسائل التوثيق: الكتابة، الإشهاد، طلب الضمانات، التحري في اختيار الشركاء والوكلاء والأمناء على الأموال. وهذا امتداد فقهي لقوله تعالى ﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰ أَجَلٍ مُّسَمًّى فَاكْتُبُوهُ﴾ (البقرة: ٢٨٢)، فالأمر بالكتابة في القرآن كان موجهاً حتى في زمن الصحابة الأمناء، فكيف بزمن وصفه النبي ﷺ بأنه زمن خداع وخيانة؟ فالفتوى المعاصرة تقتضي مزيداً من الحيطة الإجرائية دون أن يكون ذلك سوء ظن محرَّم، بل هو من باب الأخذ بالأسباب المشروعة.</p>
+  </div>
+
+  <div class="card b3">
+    <div class="ct">ثالثاً: حكم القول على الله بغير علم — عقوبة الرويبضة الفقهية</div>
+    <p>القول على الله بغير علم من كبائر الذنوب، بل رتّبه القرآن في أعلى درجات المحرمات: ﴿قُلْ إِنَّمَا حَرَّمَ رَبِّيَ الْفَوَاحِشَ مَا ظَهَرَ مِنْهَا وَمَا بَطَنَ وَالْإِثْمَ وَالْبَغْيَ بِغَيْرِ الْحَقِّ وَأَن تُشْرِكُوا بِاللَّهِ مَا لَمْ يُنَزِّلْ بِهِ سُلْطَانًا وَأَن تَقُولُوا عَلَى اللَّهِ مَا لَا تَعْلَمُونَ﴾ (الأعراف: ٣٣). ويترتب على تصدر الرويبضة للإفتاء بغير علم آثار فقهية خطيرة: إثم الفتوى الخاطئة على المفتي نفسه، وإثم إضلال من اتبعه دون تثبت، وقد يترتب على ذلك أحكام باطلة في العبادات والمعاملات يتحمل الرويبضة وزرها ووزر من عمل بها ما لم يتب.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- U5 PHILOSOPHICAL -->
+<div id="u5" class="sec" style="--accent:var(--orange);">
+  <div class="sec-h"><div class="sec-n">١٠</div><h2>الأبعاد الفلسفية، النفسية، والتربوية</h2></div>
+
+  <div class="card b">
+    <div class="ct">أولاً: فلسفة القيم وانقلاب المفاهيم</div>
+    <p>يصف المقال والأحاديث ظاهرة فلسفية عميقة: أن موت الأمانة في القلوب الفردية يُنتج بالتراكم انقلاباً جماعياً في منظومة القيم الاجتماعية، فيُصبح «المعروف منكراً والمنكر معروفاً» بحكم الاستئناس الجمعي لا بحكم الدليل الشرعي. هذا يُفسّر فلسفياً لماذا يتحول الكذب إلى «ذكاء» والخيانة إلى «فطنة» في مجتمع فقد ميزانه الأخلاقي المرجعي (الوحي)، إذ يستبدل المجتمع مرجعيته الثابتة بمرجعية متحولة هي "ما يتوافق عليه الأكثرون" مهما انحرف.</p>
+  </div>
+
+  <div class="card b2">
+    <div class="ct">ثانياً: سيكولوجية الثبات ومقاومة "العقل الجمعي"</div>
+    <p>يُستخلص من التوجيه النبوي («تأخذون بما تعرفون») منهج تربوي نفسي في حماية الفرد من ظاهرة نفسية معروفة تُسمى "الانصياع الجمعي" (Conformity)، حيث يميل الفرد لتبني آراء الأغلبية حتى لو خالفت قناعته الداخلية خوفاً من العزلة الاجتماعية. النبي ﷺ يُرسّخ مبدأ مضاداً: أن معيار الحق هو المعرفة الشخصية المؤسسة على الوحي («ما تعرفون») لا الاستئناس بسلوك الأكثرية («ما يفعله الناس»)، وهذا يُبني حصانة نفسية ذاتية تُغني الفرد عن الاعتماد المرضي على تصديق الرويبضة أو الانسياق خلف صوته المرتفع.</p>
+  </div>
+
+  <div class="card b3">
+    <div class="ct">ثالثاً: صناعة الحصانة النفسية الذاتية — من "الخارج" إلى "الداخل"</div>
+    <p>يُقدّم الحديث النبوي نموذجاً تربوياً بديلاً لمصدر الأمان النفسي: بدل أن يستمد الفرد أمانه من تصديق الجماعة له أو رفضها، يستمده من يقين داخلي راسخ («ما تعرفون بقلبك ومعرفتك لا بأصوات الناس حولك»). هذا التحول من الاعتماد على «التصديق الخارجي» إلى «اليقين الداخلي» هو جوهر العلاج النفسي التربوي الذي تُقدّمه هذه الأحاديث لأزمة القلق الاجتماعي في زمن الفتن، فيتحرر المؤمن من حاجته لموافقة الرويبضة أو رضا الحشد.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec" style="--accent:var(--teal);">
+  <div class="sec-h"><div class="sec-n">١١</div><h2>ترابط السياقات بالآيات والأحاديث الأخرى</h2></div>
+  <div class="cb"><div class="bt">السياق العام لأحاديث الفتن في السنة النبوية</div>
+    <div class="ci"><span class="vi">حديث حذيفة الكامل عن الخير والشر المتعاقبين</span><span class="vs">أخرجه البخاري (٣٦٠٦) ومسلم (١٨٤٧) — يسبق هذا الحديث في سياقه العام سؤال حذيفة النبي ﷺ عن الشر خشية إدراكه، فتُقرر السلسلة النبوية الكاملة أن الخير والشر يتعاقبان دورياً في تاريخ الأمة، وأن مرحلة فساد الأمانة إحدى حلقات هذا التعاقب لا نهاية مطلقة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">آيات قرآنية أخرى في وصف انقلاب الموازين آخر الزمان</div>
+    <div class="ci"><span class="vi">﴿وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِي الْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ ۝ أَلَا إِنَّهُمْ هُمُ الْمُفْسِدُونَ وَلَٰكِن لَّا يَشْعُرُونَ﴾</span><span class="vs">البقرة: ١١-١٢ — نظير قرآني مبكر لانقلاب المفاهيم الذي تصفه الأحاديث، حين يعتقد المفسد أنه مصلح، وهو عين ما يحدث حين «ينطق الرويبضة» فيُقدَّم فساده على أنه إصلاح.</span></div>
+    <div class="ci"><span class="vi">﴿وَقَالَ الَّذِينَ لَا يَرْجُونَ لِقَاءَنَا لَوْلَا أُنزِلَ عَلَيْنَا الْمَلَائِكَةُ أَوْ نَرَىٰ رَبَّنَا ۗ لَقَدِ اسْتَكْبَرُوا فِي أَنفُسِهِمْ﴾</span><span class="vs">الفرقان: ٢١ — تُصوّر استكبار من لا علم له بتصدره لأمور تفوق قدره، مما يوازي معنى تصدر الرويبضة لأمر العامة دون أهلية.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط الكلي:</strong> أحاديث الغربلة والرويبضة وقبض الأمانة ليست معزولة، بل حلقة في منظومة نبوية وقرآنية متكاملة تُصوّر سنة التمحيص الإلهي عبر التاريخ، من آيات العنكبوت وآل عمران إلى أحاديث الفتن المتناثرة في كتب السنة، وكلها تخدم غرضاً واحداً: تحصين المؤمن بيقين ثابت لا يتزعزع أمام تقلب الأحوال وانقلاب الموازين الاجتماعية.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec" style="--accent:var(--blue);">
+  <div class="sec-h"><div class="sec-n">١٢</div><h2>نوع النص والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">حديث إخباري غيبي ✅</div><div class="md">إخبار بأشراط الساعة وسنن آخر الزمان، من أعلام النبوة الصادقة التي تحقق مضمونها.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">حديث تحذيري إرشادي ✅</div><div class="md">يحمل توجيهاً عملياً واضحاً («تأخذون بما تعرفون») للتعامل مع الفتنة الموصوفة.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">حديث في باب الإيمان والقلوب ✅</div><div class="md">يرتبط مباشرة بحقيقة الإيمان وعلاقته بالأمانة، لا مجرد وصف اجتماعي معزول.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:18px;"><strong>الخلاصة:</strong> الأحاديث الثلاثة تجمع بين الإخبار الغيبي (أشراط الساعة) والإرشاد العملي (فقه التعامل مع الفتن)، وهي ليست من أحاديث الأحكام الفقهية التفصيلية المباشرة، لكنها تُؤسّس لأحكام مستنبطة مهمة في التوثيق والاعتزال والفتوى كما فُصّل آنفاً.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec" style="--accent:var(--violet);">
+  <div class="sec-h"><div class="sec-n">١٣</div><h2>إعراب المقاطع النبوية المحورية</h2></div>
+
+  <div class="vb" style="margin-bottom:24px;">
+    <div class="vt sm">«يُصَدَّقُ فِيهَا الْكَاذِبُ، وَيُكَذَّبُ فِيهَا الصَّادِقُ»</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">يُصَدَّقُ</div><div class="id">فعل مضارع مبني للمجهول مرفوع وعلامة رفعه الضمة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">فِيهَا</div><div class="id">جار ومجرور متعلق بـ«يُصَدَّقُ»، والضمير يعود على «السنوات».</div></div>
+    <div class="ir"><div class="iw">الْكَاذِبُ</div><div class="id">نائب فاعل مرفوع وعلامة رفعه الضمة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">وَيُكَذَّبُ</div><div class="id">الواو عاطفة. «يُكَذَّبُ» فعل مضارع مبني للمجهول معطوف على «يُصَدَّقُ» بنفس إعرابه.</div></div>
+    <div class="ir"><div class="iw">فِيهَا الصَّادِقُ</div><div class="id">جار ومجرور، ثم «الصَّادِقُ» نائب فاعل مرفوع.</div></div>
+  </div>
+
+  <div class="vb" style="margin:22px 0;">
+    <div class="vt sm">«الرَّجُلُ التَّافِهُ يَنْطِقُ فِي أَمْرِ الْعَامَّةِ»</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">الرَّجُلُ</div><div class="id">خبر لمبتدأ محذوف تقديره «هو» مرفوع، أو مبتدأ والجملة بعده خبره.</div></div>
+    <div class="ir"><div class="iw">التَّافِهُ</div><div class="id">نعت لـ«الرجل» مرفوع وعلامة رفعه الضمة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">يَنْطِقُ</div><div class="id">فعل مضارع مرفوع، والفاعل ضمير مستتر تقديره «هو» يعود على «الرجل». والجملة الفعلية في محل رفع خبر «الرجل» (على اعتباره مبتدأ).</div></div>
+    <div class="ir"><div class="iw">فِي أَمْرِ الْعَامَّةِ</div><div class="id">جار ومجرور متعلق بـ«يَنْطِقُ»، وهو مضاف. «الْعَامَّةِ» مضاف إليه مجرور.</div></div>
+  </div>
+
+  <div class="vb" style="margin:22px 0;">
+    <div class="vt sm">«يُغَرْبَلُ النَّاسُ فِيهِ غَرْبَلَةً»</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">يُغَرْبَلُ</div><div class="id">فعل مضارع مبني للمجهول مرفوع وعلامة رفعه الضمة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">النَّاسُ</div><div class="id">نائب فاعل مرفوع وعلامة رفعه الضمة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">فِيهِ</div><div class="id">جار ومجرور متعلق بـ«يُغَرْبَلُ»، والضمير يعود على «الزمان».</div></div>
+    <div class="ir"><div class="iw">غَرْبَلَةً</div><div class="id">مفعول مطلق منصوب وعلامة نصبه تنوين الفتح، مؤكِّد لعامله («يُغَرْبَلُ») ويفيد توكيد وقوع الغربلة وشدتها.</div></div>
+  </div>
+
+  <div class="vb" style="margin:22px 0;">
+    <div class="vt sm">«تَأْخُذُونَ بِمَا تَعْرِفُونَ، وَتَدَعُونَ مَا تُنْكِرُونَ»</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">تَأْخُذُونَ</div><div class="id">فعل مضارع مرفوع بثبوت النون، والواو ضمير متصل في محل رفع فاعل.</div></div>
+    <div class="ir"><div class="iw">بِمَا</div><div class="id">جار ومجرور متعلق بـ«تَأْخُذُونَ»، «مَا» اسم موصول في محل جر.</div></div>
+    <div class="ir"><div class="iw">تَعْرِفُونَ</div><div class="id">فعل مضارع مرفوع بثبوت النون، والواو فاعل. والجملة صلة الموصول لا محل لها.</div></div>
+    <div class="ir"><div class="iw">وَتَدَعُونَ مَا تُنْكِرُونَ</div><div class="id">معطوفة على الجملة السابقة بنفس الإعراب: «تَدَعُونَ» فعل مضارع مرفوع، «مَا» مفعول به موصول، «تُنْكِرُونَ» صلة الموصول.</div></div>
+  </div>
+  <div class="card b" style="margin-top:16px;"><div class="ct">لطيفة إعرابية: التوازي التام بين الجمل الأربع الختامية</div><p>الجمل الأربع في التوجيه النبوي الختامي («تأخذون بما تعرفون، وتدعون ما تنكرون، وتقبلون على خاصتكم، وتذرون أمر عوامكم») متطابقة تماماً في البناء النحوي (فعل مضارع مرفوع + مفعول به)، وهذا التطابق الإعرابي الدقيق يخدم غرضاً بلاغياً: تسهيل الحفظ والاستظهار، وهو من إعجاز الأسلوب النبوي في صياغة التوجيهات الجامعة بقالب لغوي محكم البناء.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec" style="--accent:var(--green);">
+  <div class="sec-h"><div class="sec-n">١٤</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«لَيْسَ الْمُهِمُّ مَتَى تَمُوتُ... بَلْ كَيْفَ تَلْقَى اللَّهَ»<br><small style="font-size:.6em;color:var(--mist);">— مستفاد من روح الأحاديث ومقال الشيخ علي خليل السلجوقي</small></div>
+  <div class="card b"><div class="ct">أولاً: علاج القلق من "غربة الحق" في المجتمع الفاسد</div><p>يُخاطب الحديث والمقال شريحة واسعة من المؤمنين الذين قد يشعرون بالوحدة والغربة حين يرون الصدق مُهاناً والكذب مُكرَّماً. تذكيرهم بأن هذه سنة نبوية موصوفة مسبقاً علاج نفسي عميق لهذا الإحساس. <strong>التطبيق:</strong> عند الشعور بالغربة على الحق، استحضار أن النبي ﷺ وصف هذه الحال بدقة قبل وقوعها، فليست مفاجأة تُقلق بل علامة تُثبّت اليقين.</p></div>
+  <div class="card b2"><div class="ct">ثانياً: تحصين القلب من عدوى "التطبيع مع الفساد"</div><p>خطورة العيش في بيئة فاسدة أن يألف القلب المنكر تدريجياً حتى يراه معروفاً (كما صوّر حديث حذيفة بمثل الوكت والمجل). <strong>التطبيق:</strong> المراجعة الدورية للقلب: هل ما كان يُزعجني بالأمس أصبح عادياً اليوم؟ فإن كان كذلك، فهذا مؤشر خطر يستدعي تجديد الإيمان.</p></div>
+  <div class="card b"><div class="ct">ثالثاً: بناء معيار داخلي مستقل عن تصفيق الجمهور</div><p>حديث «تأخذون بما تعرفون» يبني حصانة نفسية ضد الحاجة المَرضية لموافقة الجماعة، فمعيار الحق داخلي (المعرفة الشخصية المؤسسة على الوحي) لا خارجي (رضا الناس أو تصديقهم). <strong>التطبيق:</strong> عدم قياس صواب الموقف بعدد المؤيدين له، بل بموافقته للدليل الشرعي بصرف النظر عن رأي الأكثرية.</p></div>
+  <div class="card b2"><div class="ct">رابعاً: الأمل رغم الغربلة — أن التمحيص رحمة لا نقمة</div><p>يختم المقال بتذكير جوهري: الغربلة لا تضر المؤمن الصادق بل «ترفعه وتطهر صفه». <strong>التطبيق:</strong> النظر إلى صعوبات الثبات على الحق في زمن الفتنة كفرصة تنقية وارتقاء لا كعقوبة أو ابتلاء عبثي، فما يُصفّي الذهب من الشوائب هو ذاته ما يُصفّي القلب من النفاق.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>الجمع بين ثلاثة أحاديث متكاملة:</strong> يبني المقال تصاعداً درامياً عبر الأحاديث الثلاثة (السنوات الخداعات ← قبض الأمانة ← الغربلة)، فكل حديث يُضيف طبقة جديدة لفهم السنة الكونية الواحدة.</li>
+      <li><strong>الربط المعاصر الكثيف:</strong> يُترجم المؤلف كل وصف نبوي قديم إلى تطبيق معاصر محدد (الإعلام، صناعة المحتوى، معايير النجاح المادي)، فيُحيي النص القديم بلغة العصر.</li>
+      <li><strong>التوازن بين التحذير والأمل:</strong> رغم هيمنة طابع التحذير، يختم المقال بأمل راسخ («سيظل الحق قائماً») فلا يترك القارئ في يأس، بل يُحوّل الوصف النبوي إلى دافع للثبات.</li>
+      <li><strong>الختام بالوصية العملية:</strong> ينتهي المقال بتطبيق مباشر (إحياء الأمانة في البيوت قبل المؤسسات)، فيربط التنظير الغيبي بالممارسة اليومية الملموسة.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec" style="--accent:var(--red);">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة الحديث النبوي بالتزام دقيق بضوابط علوم الحديث والأصول، مستحضرًا أقوال المحدثين والأصوليين الراسخين.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين أحاديث الفتن وأشراط الساعة وواقع الإعلام الرقمي المعاصر — يُحوّل النبوءة النبوية إلى وعي عملي بالثبات.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص دقيق في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً حديثية وأصولية نادرة في تناول قضايا آخر الزمان.</p>
+      <div style="margin-top:14px;">
+        <span class="atag">علوم الحديث</span>
+        <span class="atag">أصول الفقه</span>
+        <span class="atag">أحاديث الفتن</span>
+        <span class="atag">فقه التنزيل المعاصر</span>
+        <span class="atag">التدبر القرآني</span>
+        <span class="atag">التزكية النفسية</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَالسُّنَّةِ النَّبَوِيَّةِ</p>
+  <p style="margin-top:8px;font-size:.78rem;opacity:.85;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>

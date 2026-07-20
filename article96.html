@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حِينَ تَنْهَزِمُ الْقُلُوبُ قَبْلَ الْجُيُوشِ — آل عمران ١٥١</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f130c;--bg:#f3f2ea;--bg2:#e6e4d6;
+  --army:#38452a;--am:#4e6234;--alt:#7a9450;
+  --bd:#0c0e08;--bt:#eef0dc;--gold:#b8862e;--gold-m:#dcac5a;
+  --div:#dcdcc2;--mist:#3a4030;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;font-weight:500;line-height:1.95;max-width:100%;overflow-wrap:break-word;word-break:break-word;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(78,98,52,.09) 0%,transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(184,134,46,.07) 0%,transparent 50%);}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--am),var(--gold-m));z-index:400;transform-origin:top;box-shadow:0 0 8px rgba(0,0,0,.25);}
+.hdr{background:var(--bd);border-bottom:3px solid var(--am);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;align-items:center;justify-content:flex-end;padding:0 32px;max-width:1400px;margin:0 auto;height:58px;gap:16px;}
+.tbtn{background:linear-gradient(120deg,var(--am),var(--army));color:#fff;border:none;padding:8px 18px;border-radius:5px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-weight:700;font-size:.85rem;white-space:nowrap;box-shadow:0 3px 10px rgba(78,98,52,.4);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:288px;flex-shrink:0;background:#0a0c06;position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;overflow-x:hidden;border-left:1px solid rgba(122,148,80,.70);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{color:var(--alt);font-family:'Scheherazade New',serif;font-size:1.05rem;padding:16px 18px;background:linear-gradient(120deg,var(--army),var(--am));font-weight:700;}
+.toc-s{color:#9ab070;font-size:.68rem;letter-spacing:.12em;padding:12px 18px 4px;font-weight:700;}
+.toc-a{display:block;color:#c8d0a8;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;border-right:3px solid transparent;transition:all .2s;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(122,148,80,.12);border-right-color:var(--gold-m);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.85;}
+.main{flex:1;min-width:0;padding:52px 64px;}
+.hero{text-align:center;margin-bottom:52px;padding:38px 30px;position:relative;border-radius:16px;background:linear-gradient(135deg,#0e1008,#181e0e);overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--army),var(--am),var(--alt),var(--gold-m));}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;opacity:.85;letter-spacing:.4em;}
+.hcat{display:inline-block;background:linear-gradient(120deg,var(--am),var(--army));color:#fff;font-size:.76rem;font-weight:700;padding:5px 18px;border-radius:20px;margin-bottom:20px;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.05rem;font-weight:700;color:#fff;line-height:1.55;margin-bottom:14px;text-shadow:0 2px 12px rgba(0,0,0,.4);}
+.hmeta{color:#d0d0b0;font-size:.94rem;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.hmeta .dot{width:5px;height:5px;background:var(--alt);border-radius:50%;}
+.vb{background:linear-gradient(135deg,#0e1008,#161c0c);border:2px solid rgba(122,148,80,.70);border-radius:12px;padding:30px 36px;margin:20px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.25);}
+.vt{font-family:'Scheherazade New',serif;font-size:1.35rem;color:#eef0dc;line-height:2;position:relative;z-index:1;}
+.vt.sm{font-size:1.15rem;}
+.vr{color:var(--gold-m);font-size:.85rem;margin-top:12px;font-weight:600;}
+.abody{font-size:1.13rem;line-height:2.08;color:#0f130c;}
+.abody p{margin-bottom:1.4em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3.2em;font-family:'Scheherazade New',serif;color:var(--am);float:right;line-height:.8;margin-left:8px;font-weight:700;}
+.wlist{list-style:none;padding:0;margin:10px 0;}
+.wlist li{font-family:'Scheherazade New',serif;font-size:1.06rem;color:var(--army);padding:5px 0;font-weight:600;}
+.src{background:linear-gradient(120deg,#f5f2e0,#eef0da);border:2px solid #b8c290;border-radius:9px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.88rem;color:#2a3020;line-height:1.85;}
+.src strong{color:var(--army);}
+.src .src-label{font-family:'Noto Naskh Arabic',sans-serif;font-size:.72rem;font-weight:800;color:var(--am);letter-spacing:.06em;margin-bottom:6px;display:block;}
+.grade{display:inline-block;font-size:.66rem;padding:3px 9px;border-radius:4px;font-weight:800;font-family:'Noto Naskh Arabic',serif;color:#fff;margin-left:6px;}
+.grade.sahih{background:linear-gradient(120deg,#1e6e4a,#0e3a28);}
+.grade.hasan{background:linear-gradient(120deg,var(--gold),#8a6018);}
+.sec{margin-top:76px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;align-items:center;gap:16px;margin-bottom:28px;}
+.sec-n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.1rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--am),var(--army));box-shadow:0 6px 18px rgba(78,98,52,.35);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.85rem;color:#0f130c;padding-bottom:9px;flex:1;min-width:0;border-bottom:3px solid var(--alt);}
+.sub{margin-top:36px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.34rem;color:var(--army);margin-bottom:12px;padding-right:16px;border-right:4px solid var(--gold-m);}
+.card{background:#fff;border-radius:11px;padding:21px 25px;margin:16px 0;box-shadow:0 3px 16px rgba(20,30,10,.08);border:2px solid var(--div);}
+.card.c1{border-right:6px solid var(--am);}
+.card.c2{border-right:6px solid var(--gold);}
+.card.c3{border-right:6px solid var(--army);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.17rem;color:#0f130c;margin-bottom:11px;font-weight:800;}
+.card p{font-size:1rem;color:#0f130c;line-height:1.92;margin-top:6px;}
+.bdg{font-size:.7rem;padding:3px 10px;border-radius:5px;font-family:'Noto Naskh Arabic',sans-serif;background:linear-gradient(120deg,var(--am),var(--army));color:#fff;font-weight:700;}
+.tbl{width:100%;table-layout:fixed;border-collapse:collapse;margin:14px 0;font-size:.97rem;border-radius:9px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.08);}
+.tbl th{background:var(--bd);color:var(--gold-m);padding:11px 15px;text-align:right;font-family:'Scheherazade New',serif;font-size:1rem;font-weight:700;}
+.tbl td{padding:11px 15px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.85;background:#fff;word-break:break-word;overflow-wrap:break-word;}
+.tbl tr:nth-child(even) td{background:#f7f6ea;}
+.term{font-family:'Scheherazade New',serif;font-size:1.08rem;color:var(--am);font-weight:700;}
+.def{color:var(--mist);font-size:.93rem;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;margin:18px 0;}
+.mc{background:#fff;border-radius:9px;padding:17px 19px;box-shadow:0 3px 14px rgba(20,30,10,.08);border-top:4px solid var(--am);}
+.mc .ml{color:var(--am);font-size:.74rem;margin-bottom:5px;display:block;font-weight:800;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.08rem;color:#0f130c;font-weight:800;margin-bottom:5px;}
+.mc .md{color:var(--mist);font-size:.86rem;line-height:1.65;}
+.cl{list-style:none;padding:0;margin:11px 0;}
+.cl li{padding:9px 30px 9px 0;position:relative;border-bottom:1px dashed var(--div);color:#0f130c;line-height:1.88;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◆';position:absolute;right:0;color:var(--am);font-size:.85em;top:12px;}
+.ib{background:#f0efdc;border-radius:9px;padding:16px 20px;margin:12px 0;overflow-x:hidden;}
+.ir{display:flex;flex-wrap:wrap;gap:6px 14px;padding:9px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.22rem;color:var(--army);width:145px;max-width:100%;font-weight:800;word-break:break-word;overflow-wrap:break-word;}
+.id{color:var(--mist);font-size:.93rem;flex:1 1 220px;min-width:0;line-height:1.88;word-break:break-word;overflow-wrap:break-word;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.48rem;color:#0f130c;text-align:center;padding:32px 40px;margin:42px 0;border-top:3px solid var(--alt);border-bottom:3px solid var(--alt);position:relative;}
+.pq::before{content:'❝';position:absolute;top:2px;right:30px;font-size:3rem;color:var(--gold-m);line-height:1;}
+.cb{background:linear-gradient(135deg,#0e1008,#161c0c);border-radius:12px;padding:26px 32px;margin:20px 0;box-shadow:0 8px 26px rgba(0,0,0,.22);}
+.cb .bt{color:var(--gold-m);font-family:'Scheherazade New',serif;font-size:1.18rem;margin-bottom:13px;padding-bottom:10px;border-bottom:2px solid rgba(122,148,80,.70);font-weight:700;}
+.ci{color:#c0c8a0;padding:10px 0;border-bottom:1px dashed rgba(122,148,80,.70);font-size:.93rem;line-height:1.88;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:#eef0dc;font-size:1.02rem;display:block;margin-bottom:4px;}
+.ci .vs{color:var(--alt);font-size:.79rem;}
+.vrd{background:linear-gradient(120deg,#0e1008,#161c0c);border-radius:9px;padding:18px 22px;margin:14px 0;color:#c0c8a0;font-size:.95rem;line-height:1.92;box-shadow:0 6px 20px rgba(0,0,0,.18);}
+.vrd strong{color:var(--gold-m);}
+.asec{background:linear-gradient(135deg,#0e1008,#1e2410,#181c0c);border-radius:14px;padding:36px 42px;margin:58px 0 40px;display:flex;gap:26px;align-items:flex-start;box-shadow:0 10px 34px rgba(0,0,0,.28);}
+.ava{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--am),var(--gold));display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.95rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 6px 20px rgba(0,0,0,.3);}
+.ai{min-width:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff;font-size:1.4rem;margin-bottom:6px;}
+.ai .at{color:var(--gold-m);font-size:.87rem;margin-bottom:14px;font-weight:600;}
+.ai p{color:#c8d0a8;font-size:.93rem;line-height:1.88;margin-bottom:9px;}
+.ai p strong{color:var(--gold-m);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:15px 0;}
+.ami{background:rgba(122,148,80,.18);border:1px solid rgba(122,148,80,.70);border-radius:6px;padding:11px 14px;box-shadow:0 1px 4px rgba(0,0,0,.15);}
+.ami .aml{color:var(--gold-m);font-size:.71rem;margin-bottom:3px;display:block;}
+.ami .amv{color:#fff;font-size:.89rem;font-family:'Scheherazade New',serif;}
+.atag{display:inline-block;font-size:.74rem;padding:4px 12px;border-radius:14px;margin:3px;font-weight:700;color:#fff;background:linear-gradient(120deg,var(--am),var(--army));}
+.orn{text-align:center;color:var(--alt);font-size:1.3rem;margin:52px 0;opacity:.6;letter-spacing:.42em;font-weight:700;}
+footer{background:var(--bd);color:#7a8860;text-align:center;padding:34px 20px;font-size:.86rem;margin-top:80px;border-top:4px solid var(--am);}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.08rem;margin-bottom:8px;color:var(--gold-m);font-weight:800;}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:280px;height:calc(100vh - 58px);overflow-y:auto;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.6rem;}.asec{flex-direction:column;}.main{padding:32px 22px;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.12rem;}.hero h1{font-size:1.3rem;}.pq{font-size:1.1rem;padding:22px 18px;}.hdr-i{padding:0 13px;}.hero{padding:28px 18px;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">🛡 ⚔ 🛡</span>
+  <div class="hcat">تدبر قرآني · الرعب والسكينة في قلوب المؤمنين وأعدائهم · آل عمران ١٥١</div>
+  <h1>حِينَ تَنْهَزِمُ الْقُلُوبُ قَبْلَ الْجُيُوشِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني الليلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة السلجوقي التدبرية</span>
+    <span class="dot"></span>
+    <span>سورة آل عمران — الآية ١٥١</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb"><div class="vt">﴿سَنُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ بِمَا أَشْرَكُوا بِاللَّهِ مَا لَمْ يُنَزِّلْ بِهِ سُلْطَانًا ۖ وَمَأْوَاهُمُ النَّارُ ۖ وَبِئْسَ مَثْوَى الظَّالِمِينَ﴾</div><div class="vr">سورة آل عمران (٣)، الآية ١٥١، مدنية</div></div>
+
+  <div class="abody">
+    <p>لَيْسَتْ كُلُّ مَعْرَكَةٍ تُحْسَمُ بِالسُّيُوفِ، وَلَا كُلُّ انْتِصَارٍ تَصْنَعُهُ الدَّبَّابَاتُ وَالطَّائِرَاتُ، وَلَا كُلُّ هَزِيمَةٍ تَبْدَأُ بِانْهِيَارِ الْأَسْوَارِ. إِنَّ أَعْظَمَ الْمَعَارِكِ تَبْدَأُ فِي مَكَانٍ لَا تَرَاهُ الْأَبْصَارُ، وَلَكِنَّهُ يُوَجِّهُ الْأَبْصَارَ وَالْأَيْدِيَ وَالْخُطَوَاتِ... إِنَّهَا مَعْرَكَةُ الْقُلُوبِ.</p>
+
+    <p>وَهُنَا يَكْشِفُ الْقُرْآنُ سِرًّا مِنْ أَسْرَارِ التَّدْبِيرِ الْإِلَهِيِّ، وَسُنَّةً ثَابِتَةً لَا تَتَبَدَّلُ، حِينَ يَقُولُ سُبْحَانَهُ: ﴿سَنُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ﴾.</p>
+
+    <p>إِنَّهَا لَيْسَتْ كَلِمَاتٍ عَابِرَةً، بَلْ إِعْلَانٌ رَبَّانِيٌّ عَنْ سِلَاحٍ لَا تَمْلِكُهُ مَصَانِعُ الْأَرْضِ، وَلَا تَتَحَكَّمُ فِيهِ غُرَفُ الْعَمَلِيَّاتِ، وَلَا تَسْتَطِيعُ أَجْهِزَةُ الِاسْتِخْبَارَاتِ تَوَقُّعَهُ أَوْ مَنْعَهُ. إِنَّهُ سِلَاحُ اللَّهِ... سِلَاحُ الرُّعْبِ الَّذِي إِذَا نَزَلَ عَلَى قَلْبِ الْإِنْسَانِ، انْهَارَتْ مَعَهُ الْحِسَابَاتُ، وَاضْطَرَبَتِ الْأَعْصَابُ، وَتَفَرَّقَتِ الصُّفُوفُ، وَسَقَطَتِ الْقُوَّةُ قَبْلَ أَنْ تَسْقُطَ الرَّايَاتُ.</p>
+
+    <p>إِنَّ الْقَلْبَ هُوَ قَائِدُ الْجَسَدِ، فَإِذَا ثَبَتَ الْقَلْبُ ثَبَتَتِ الْأَقْدَامُ، وَإِذَا ارْتَجَفَ الْقَلْبُ تَزَلْزَلَتِ الْجُمُوعُ، وَلَوْ كَانَتْ تَحْمِلُ أَحْدَثَ الْأَسْلِحَةِ وَأَقْوَى الْعَتَادِ.</p>
+
+    <p>كَمْ مِنْ جَيْشٍ كَانَ أَكْثَرَ عَدَدًا وَعُدَّةً، لَكِنَّهُ دَخَلَ الْمَعْرَكَةَ وَهُوَ يَحْمِلُ الْخَوْفَ فِي دَاخِلِهِ، فَخَرَجَ مِنْهَا مَهْزُومًا. وَكَمْ مِنْ فِئَةٍ قَلِيلَةٍ ثَبَتَتْ لِأَنَّهَا كَانَتْ تَسْتَنِدُ إِلَى يَقِينٍ لَا يَتَزَعْزَعُ، فَغَيَّرَتْ مَجْرَى التَّارِيخِ بِإِذْنِ اللَّهِ.</p>
+
+    <p>لَيْسَ السِّرُّ فِي كَثْرَةِ الْحَدِيدِ، وَإِنَّمَا فِي صَلَابَةِ الْعَقِيدَةِ.</p>
+
+    <p>وَلِذَلِكَ كَانَ الْقُرْآنُ يُرَبِّي الْمُؤْمِنِينَ قَبْلَ أَنْ يُسَلِّحَهُمْ، وَيَبْنِي النُّفُوسَ قَبْلَ أَنْ يَبْنِيَ الصُّفُوفَ، لِأَنَّ اللَّهَ يَعْلَمُ أَنَّ الْمَعْرَكَةَ الْحَقِيقِيَّةَ تَبْدَأُ مِنْ دَاخِلِ الْإِنْسَانِ.</p>
+
+    <p>إِنَّ الرُّعْبَ عُقُوبَةٌ قَبْلَ أَنْ يَكُونَ شُعُورًا. هُوَ اضْطِرَابٌ يَسْكُنُ الْقَلْبَ، فَلَا يَرَى صَاحِبُهُ الْأَشْيَاءَ عَلَى حَقِيقَتِهَا، وَيَجْعَلُهُ يَتَوَقَّعُ الْهَزِيمَةَ فِي كُلِّ حَرَكَةٍ، وَيَرَى الْخَطَرَ فِي كُلِّ صَوْتٍ، وَيَعِيشُ قَلَقًا دَائِمًا مَهْمَا أَحَاطَ نَفْسَهُ بِالْحُرَّاسِ وَالْأَسْوَارِ.</p>
+
+    <p>أَمَّا الْمُؤْمِنُ... فَإِنَّ اللَّهَ يَمْنَحُهُ نِعْمَةَ السَّكِينَةِ.</p>
+
+    <p>السَّكِينَةُ لَيْسَتْ غِيَابَ الْخَطَرِ، وَإِنَّمَا حُضُورُ اللَّهِ فِي الْقَلْبِ. لَيْسَتْ أَنْ تَخْتَفِيَ الْمِحَنُ، وَإِنَّمَا أَنْ يَبْقَى الْقَلْبُ ثَابِتًا وَسَطَ الْعَوَاصِفِ.</p>
+
+    <p>كَمْ مِنْ مُؤْمِنٍ عَاشَ فَقِيرًا وَلَكِنَّهُ كَانَ أَغْنَى النَّاسِ طُمَأْنِينَةً. وَكَمْ مِنْ جَبَّارٍ مَلَكَ الْأَمْوَالَ وَالْجُيُوشَ، لَكِنَّهُ كَانَ يَنَامُ قَلِقًا، وَيَسْتَيْقِظُ مَذْعُورًا، وَيُحِيطُ نَفْسَهُ بِالْحُرَّاسِ لِأَنَّهُ فَقَدَ الْأَمْنَ الَّذِي لَا يُشْتَرَى بِالْمَالِ.</p>
+
+    <p>وَهَكَذَا تَتَكَرَّرُ سُنَّةُ اللَّهِ عَبْرَ التَّارِيخِ. رَأَيْنَا حَضَارَاتٍ بَلَغَتْ قِمَّةَ الْقُوَّةِ، ثُمَّ بَدَأَتْ تَنْهَارُ مِنْ دَاخِلِهَا قَبْلَ أَنْ يَهْدِمَهَا أَحَدٌ. وَرَأَيْنَا طُغَاةً مَلَأَتْ صُوَرُهُمُ الدُّنْيَا، وَكَانَتِ الْجَمَاهِيرُ تَرْتَعِدُ مِنْ أَسْمَائِهِمْ، ثُمَّ جَاءَتْ سَاعَةٌ مِنْ سَاعَاتِ اللَّهِ، فَإِذَا بِهِمْ يَفِرُّونَ، أَوْ يَخْتَبِئُونَ، أَوْ يَسْقُطُونَ سُقُوطًا لَمْ يَكُنْ أَحَدٌ يَتَوَقَّعُهُ.</p>
+
+    <p>ذَلِكَ لِأَنَّ الْقُلُوبَ بَيْنَ إِصْبَعَيْنِ مِنْ أَصَابِعِ الرَّحْمَنِ، يُقَلِّبُهَا كَيْفَ يَشَاءُ. وَمَنْ ظَنَّ أَنَّ الْقُوَّةَ وَحْدَهَا تَحْمِيهِ، فَقَدْ جَهِلَ أَعْظَمَ قَوَانِينِ الْكَوْنِ.</p>
+
+    <p>إِنَّ الْمُؤْمِنَ لَا يُطَالَبُ بِالِاتِّكَالِ، بَلْ بِالتَّوَكُّلِ. فَالْقُرْآنُ جَمَعَ بَيْنَ الْأَمْرَيْنِ: أَنْ يَعُدَّ الْمُسْلِمُ مَا اسْتَطَاعَ مِنْ قُوَّةٍ، وَأَنْ يَعْلَمَ فِي الْوَقْتِ نَفْسِهِ أَنَّ النَّصْرَ لَيْسَ رَهِينَةَ الْأَسْبَابِ وَحْدَهَا، وَإِنَّمَا هُوَ فَضْلٌ مِنَ اللَّهِ يُؤْتِيهِ مَنْ يَشَاءُ.</p>
+
+    <p>فَالْعَمَلُ وَاجِبٌ، وَالْأَخْذُ بِالْأَسْبَابِ عِبَادَةٌ، وَلَكِنَّ تَعْلِيقَ الْقَلْبِ بِالْأَسْبَابِ وَحْدَهَا ضَعْفٌ فِي التَّوْحِيدِ.</p>
+
+    <p>وَإِذَا امْتَلَأَ الْقَلْبُ يَقِينًا بِاللَّهِ، صَارَ صَاحِبُهُ يَرَى أَنَّ خَزَائِنَ الْقُوَّةِ كُلَّهَا بِيَدِ اللَّهِ، وَأَنَّ مَقَالِيدَ النَّصْرِ وَالْهَزِيمَةِ لَيْسَتْ فِي أَيْدِي الْبَشَرِ، وَإِنَّمَا عِنْدَ رَبِّ الْبَشَرِ.</p>
+
+    <p>وَمَنْ تَأَمَّلَ وَاقِعَ الْحَيَاةِ وَجَدَ هَذِهِ السُّنَّةَ حَاضِرَةً فِي كُلِّ مَيْدَانٍ.</p>
+
+    <ul class="wlist">
+      <li>فِي مَيَادِينِ الدَّعْوَةِ...</li>
+      <li>وَفِي سَاحَاتِ الْإِصْلَاحِ...</li>
+      <li>وَفِي مُوَاجَهَةِ الظُّلْمِ...</li>
+      <li>وَفِي كُلِّ مَعْرَكَةٍ يَخُوضُهَا الْإِنْسَانُ مَعَ الْبَاطِلِ.</li>
+    </ul>
+
+    <p>كَمْ مِنْ صَاحِبِ حَقٍّ كَانَ ثَابِتًا، فَاضْطَرَبَ خُصُومُهُ رَغْمَ كَثْرَتِهِمْ. وَكَمْ مِنْ صَاحِبِ بَاطِلٍ بَدَا قَوِيًّا، لَكِنَّهُ كَانَ يَعِيشُ خَوْفًا دَائِمًا مِنْ كَلِمَةٍ صَادِقَةٍ، أَوْ مَوْقِفٍ شُجَاعٍ، أَوْ ضَمِيرٍ حَيٍّ.</p>
+
+    <p>فَالْحَقُّ يَمْنَحُ صَاحِبَهُ طُمَأْنِينَةً، وَالْبَاطِلُ يُورِثُ صَاحِبَهُ قَلَقًا لَا يُفَارِقُهُ.</p>
+
+    <p>إِنَّ أَعْظَمَ مَا يَحْتَاجُهُ الْمُسْلِمُ الْيَوْمَ لَيْسَ فَقَطْ قُوَّةَ الْبَدَنِ، وَإِنَّمَا قُوَّةَ الْقَلْبِ.</p>
+
+    <ul class="wlist">
+      <li>قَلْبٌ لَا تُزَعْزِعُهُ الشَّائِعَاتُ.</li>
+      <li>وَلَا تَهُزُّهُ التَّهْدِيدَاتُ.</li>
+      <li>وَلَا يَبِيعُهُ الْخَوْفُ.</li>
+      <li>وَلَا تُغْرِيهِ الدُّنْيَا.</li>
+      <li>وَلَا تَكْسِرُهُ الْمِحَنُ.</li>
+      <li>وَلَا تُغَيِّرُهُ الْفِتَنُ.</li>
+    </ul>
+
+    <p>قَلْبٌ يَعْلَمُ أَنَّ اللَّهَ مَعَهُ، وَأَنَّ مَنْ كَانَ اللَّهُ مَعَهُ فَلَنْ يُضَيِّعَهُ.</p>
+
+    <p>فَإِذَا أَرَدْتَ أَنْ تَكُونَ قَوِيًّا، فَابْدَأْ بِإِصْلَاحِ قَلْبِكَ. وَإِذَا أَرَدْتَ أَنْ يَنْتَصِرَ الْحَقُّ فِي حَيَاتِكَ، فَلْيَكُنْ يَقِينُكَ أَعْظَمَ مِنْ خَوْفِكَ. وَاجْعَلْ تَوَكُّلَكَ أَكْبَرَ مِنْ حِسَابَاتِكَ.</p>
+
+    <p>وَاعْلَمْ أَنَّ اللَّهَ إِذَا أَنْزَلَ السَّكِينَةَ عَلَى قَلْبِ عَبْدٍ، فَلَنْ تَضُرَّهُ عَوَاصِفُ الْأَرْضِ كُلُّهَا. وَإِذَا أَلْقَى الرُّعْبَ فِي قَلْبِ ظَالِمٍ، فَلَنْ تَنْفَعَهُ حُصُونُهُ، وَلَا جُنْدُهُ، وَلَا أَمْوَالُهُ، وَلَا سُلْطَانُهُ.</p>
+
+    <p>فَالْقُلُوبُ هِيَ مَيْدَانُ النَّصْرِ الْأَوَّلُ... وَمَنِ انْتَصَرَ قَلْبُهُ بِاللَّهِ، فَلَنْ تَهْزِمَهُ الدُّنْيَا مَهْمَا اشْتَدَّتِ الْخُطُوبُ.</p>
+
+    <div class="vb"><div class="vt sm">﴿وَمَا النَّصْرُ إِلَّا مِنْ عِندِ اللَّهِ الْعَزِيزِ الْحَكِيمِ﴾</div><div class="vr">سورة آل عمران: ١٢٦</div></div>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;color:var(--army);font-size:1.1rem;">عَلِيّ خَلِيل عَبَّاس السُّلُجُوقِيّ التُّرْكَمَانِيّ اللَّيْلَانِيّ</p>
+
+    <!-- تخريج -->
+    <div class="sub"><h3>📚 تخريج الآيات والأحاديث الواردة في المقال</h3>
+      <div class="src"><span class="src-label">الآية المحورية</span><strong>﴿سَنُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ...﴾</strong><br>سورة آل عمران (٣)، الآية ١٥١، مدنية. انظر: ابن كثير، تفسير القرآن العظيم، ج٢، ص١٤٠-١٤١ (ط. دار طيبة).</div>
+      <div class="src"><span class="src-label">آية داعمة</span><strong>﴿وَمَا النَّصْرُ إِلَّا مِنْ عِندِ اللَّهِ الْعَزِيزِ الْحَكِيمِ﴾</strong><br>سورة آل عمران (٣)، الآية ١٢٦، مدنية (وردت بنفس اللفظ أيضًا في الأنفال: ١٠).</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «نُصِرْتُ بِالرُّعْبِ مَسِيرَةَ شَهْرٍ»</strong><br>عن أبي هريرة رضي الله عنه، أن رسول الله ﷺ قال: «بُعِثْتُ بِجَوَامِعِ الْكَلِمِ، وَنُصِرْتُ بِالرُّعْبِ، فَبَيْنَا أَنَا نَائِمٌ أُتِيتُ بِمَفَاتِيحِ خَزَائِنِ الْأَرْضِ فَوُضِعَتْ فِي يَدِي» — أخرجه البخاري في صحيحه، كتاب الجهاد والسير، باب قول النبي ﷺ «نصرت بالرعب مسيرة شهر»، ح٢٨١٥، وقد بوّب الإمام البخاري لهذا الحديث بعينه بجوار قوله تعالى ﴿سَنُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ﴾ [آل عمران: ١٥١] إشارة إلى ارتباطهما، وأخرجه مسلم أيضًا في صحيحه، كتاب المساجد ومواضع الصلاة، ح٥٢٣.</div>
+      <div class="src"><span class="src-label">أصل قرآني آخر</span><strong>﴿إِذْ يُوحِي رَبُّكَ إِلَى الْمَلَائِكَةِ أَنِّي مَعَكُمْ فَثَبِّتُوا الَّذِينَ آمَنُوا سَأُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ﴾</strong><br>سورة الأنفال (٨)، الآية ١٢، مدنية — تكرار نفس المعنى بلفظ قريب في سياق غزوة بدر.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية</h3>
+    <div class="card c1"><div class="ct">الاستعارة المكنية: «سَنُلْقِي فِي قُلُوبِ... الرُّعْبَ»</div><p>استعارت الآية للرعب صفة الجسم المادي الذي يمكن "إلقاؤه" في مكان (كالقلب)، فحوّلت شعورًا نفسيًّا مجردًا إلى كائن ذي وجود يُقذف ويستقر، وهذا التجسيد يمنح القارئ إحساسًا بضخامة هذا التدبير الإلهي وحتمية وقوعه، كما لو كان جسمًا صلبًا مقذوفًا بقوة لا شعورًا عابرًا.</p></div>
+    <div class="card c2"><div class="ct">الاستعارة في «مَأْوَاهُمُ النَّارُ»</div><p>«المأوى» هو المكان الذي يُلجأ إليه للسكن والراحة، فاستعارة هذا اللفظ للنار (وهي مصدر عذاب لا راحة) تصنع مفارقة ساخرة: أن ما كان يُفترض أن يكون ملجأ الاستقرار صار مصدر العذاب الدائم، وهي نفس الصورة البلاغية المستخدمة في مواضع أخرى من القرآن للتهكم بمصير الظالمين.</p></div>
+    <div class="card c3"><div class="ct">الصورة الحسية في المقال: «سِلَاحُ اللَّهِ»</div><p>يستعير الكاتب المعاصر مصطلحات عسكرية حديثة (مصانع الأرض، غرف العمليات، أجهزة الاستخبارات) لوصف الرعب الإلهي بأنه سلاح يفوق كل هذه الأدوات، وهذا إسقاط أدبي معاصر يجعل السلاح الغيبي أكثر واقعية وملموسية لدى قارئ يعيش في عصر التقنية العسكرية.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="card c1"><div class="ct">الطباق: «الرُّعْبُ» (آل عمران ١٥١) مقابل «السَّكِينَةُ» (في المقال)</div><p>يبني المقال هيكله كله على التقابل بين مصير الكافرين (الرعب) ومصير المؤمنين (السكينة)، وهذا التضاد الثنائي المستمر عبر المقال بأكمله يرسّخ في ذهن القارئ الفارق الجوهري بين الفريقين رغم تشابه الظروف الخارجية أحيانًا (فقر المؤمن مقابل غنى الظالم مثلًا).</p></div>
+    <div class="card c2"><div class="ct">الجناس الاشتقاقي: «قُلُوبِ»... «الْقَلْبَ»... «قَلْبٍ» (تكرار الجذر عبر المقال)</div><p>تكرار جذر (ق ل ب) بصيغ مختلفة عشرات المرات في المقال يرسّخ الفكرة المركزية: أن ميدان المعركة الحقيقي هو القلب لا الجسد، وهذا التكرار الجذري المكثف تقنية بلاغية تُبقي القارئ داخل نفس الحقل الدلالي طوال القراءة.</p></div>
+    <div class="card c3"><div class="ct">أسلوب الذم: «وَبِئْسَ مَثْوَى الظَّالِمِينَ»</div><p>«بئس» فعل جامد لإنشاء الذم، وتذييل الآية به بعد ذكر النار مباشرة تصعيد بلاغي في التنفير: فلم يكتفِ بذكر العقوبة (النار) بل أضاف حكمًا إنشائيًّا صريحًا بالذم يُثبّت الحكم في ذهن السامع بقوة إضافية.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div class="card c1"><div class="ct">أسلوب المقارنة التاريخية المتكررة: «كم من...»</div><p>يكرر المقال أسلوب «كم من جيش... وكم من فئة... وكم من مؤمن... وكم من جبار...» في بنية متوازية طوال النص، وهو أسلوب استقرائي يستحضر أمثلة تاريخية متعددة (دون تسميتها) ليبني قناعة تراكمية بصحة السنة الإلهية المطروحة، بدل الاكتفاء بذكرها نظريًّا.</p></div>
+  <div class="card c2"><div class="ct">الجملة الفارقة المكثفة: «لَيْسَ السِّرُّ فِي كَثْرَةِ الْحَدِيدِ، وَإِنَّمَا فِي صَلَابَةِ الْعَقِيدَةِ»</div><p>جملة معيارية (Aphorism) تختصر مقصد المقال في تقابل لفظي دقيق (الحديد/العقيدة)، وتصلح شعارًا مستقلًّا يسهل حفظه وتداوله، وهي تقنية أدبية شائعة في الكتابة الدعوية لترسيخ الخلاصة في ذهن القارئ.</p></div>
+
+  <div id="s2a" class="sub"><h3>القراءات والصرف</h3>
+    <div class="card c1"><div class="ct">«سَنُلْقِي» صرفيًا</div><p>فعل مضارع مسبوق بسين الاستقبال من «أَلْقَى» على وزن «أَفْعَلَ»، وصيغة الإفعال هنا للتعدية (جعله يلقى)، والسين تفيد التوكيد على وقوع الفعل قريبًا لا محالة، وهي من أدوات التوكيد الزمني في اللغة الدالة على قرب الحدث وتحققه.</p></div>
+    <div class="card c2"><div class="ct">«الرُّعْبَ» صرفيًا</div><p>اسم على وزن «فُعْل» من «رَعَبَ»، وهذا الوزن يفيد المصدرية الدالة على الحالة الشديدة القاهرة، وهو أشد من «الخوف» في الوزن والدلالة معًا، إذ يتضمن معنى الامتلاء والغلبة على النفس بالكامل.</p></div>
+    <div class="card c3"><div class="ct">«السَّكِينَةُ» صرفيًا</div><p>اسم على وزن «فَعِيلة» من «سَكَنَ»، وهذا الوزن الدال على الصفة الثابتة اللازمة (لا العارضة) يناسب المعنى المراد: أن السكينة حالة قلبية مستقرة راسخة، لا شعورًا عابرًا سريع الزوال كالفرح أو الأمل.</p></div>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card c1"><div class="ct"><span class="bdg">مشترك</span> كلمة «السُّلْطَان»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الحجة والبرهان (المعنى المراد في الآية)</td><td class="def">﴿مَا لَمْ يُنَزِّلْ بِهِ سُلْطَانًا﴾ — آل عمران: ١٥١، أي حجة أو دليلًا على صحة شركهم.</td></tr>
+        <tr><td class="term">السلطة والحكم والنفوذ</td><td class="def">المعنى الشائع في الاستخدام المعاصر (كالسلطان الحاكم أو صاحب السلطة).</td></tr>
+      </table>
+    </div>
+    <div class="card c2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الْمَثْوَى»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">مكان الإقامة المؤقتة (كمثوى الضيف)</td><td class="def">الاستخدام العام في اللغة خارج هذا السياق.</td></tr>
+        <tr><td class="term">المصير والمآل النهائي (المعنى المراد هنا)</td><td class="def">﴿وَبِئْسَ مَثْوَى الظَّالِمِينَ﴾ — آل عمران: ١٥١، أي المصير الدائم لا الإقامة المؤقتة.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="g2">
+      <div class="card c1"><div class="ct">الفرق بين «الرُّعْب» و«الْخَوْف»</div><p>«الخوف» توقع مكروه قد يكون خفيفًا أو شديدًا، أما «الرُّعب» فهو أشد درجات الخوف وأكثرها شمولًا للقلب، حتى يُشلّ معه التفكير السليم ويضطرب معه الحكم على الأمور، ولهذا اختير لفظ «الرعب» في الآية لوصف عقوبة الكافرين، لا مجرد «الخوف».</p></div>
+      <div class="card c2"><div class="ct">الفرق بين «التَّوَكُّل» و«الِاتِّكَال»</div><p>ميّز المقال بدقة بين اللفظين المتقاربين صوتيًّا: «التوكل» اعتماد قلبي على الله مع الأخذ الكامل بالأسباب المتاحة، أما «الاتكال» فترك الأسباب كليًّا اعتمادًا على الغيب فقط، وهذا فرق عقدي دقيق بين عبادة مأمور بها (التوكل) وخلل مذموم (الاتكال).</p></div>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card c1"><div class="ct">لماذا عُلِّل إلقاء الرعب بالشرك تحديدًا «بِمَا أَشْرَكُوا»؟</div><p>ربطت الآية عقوبة الرعب بسبب محدد (الشرك) لا بالكفر مطلقًا، وهذا يوضح أن جريمة الشرك تحديدًا (عبادة غير الله بلا دليل) هي الجريمة العقدية الكبرى التي استحقت هذا الجزاء النفسي الخاص، فالعلة مذكورة صراحة لتقرير عدالة الحكم لا اعتباطيته.</p></div>
+    <div class="card c2"><div class="ct">لماذا «مَا لَمْ يُنَزِّلْ بِهِ سُلْطَانًا» ولم يُقل مباشرة «بلا حجة»؟</div><p>التعبير بـ«ما لم يُنزّل» (بصيغة الفعل المضارع المنفي مع «لم») يؤكد استمرار انعدام الحجة عبر الزمن كله لا لحظة معينة فقط، وهو أبلغ من مجرد نفي اسمي «بلا حجة» لأنه يصوّر الانعدام كحالة ممتدة راسخة لا طارئة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">السياق المباشر — ما قبل الآية (آل عمران ١٤٩-١٥٠)</div>
+    <div class="ci"><span class="vi">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِن تُطِيعُوا الَّذِينَ كَفَرُوا يَرُدُّوكُمْ عَلَىٰ أَعْقَابِكُمْ فَتَنقَلِبُوا خَاسِرِينَ﴾</span><span class="vs">آل عمران: ١٤٩ — تحذير من طاعة الكافرين عقب هزيمة أحد، تمهيدًا لبيان أن الله وحده يتولى نصر المؤمنين، فلا حاجة للركون لغيره.</span></div>
+    <div class="ci"><span class="vi">﴿بَلِ اللَّهُ مَوْلَاكُمْ ۖ وَهُوَ خَيْرُ النَّاصِرِينَ﴾</span><span class="vs">آل عمران: ١٥٠ — تقرير مباشر أن الله هو الناصر الحقيقي، وهذا تمهيد منطقي لآية ١٥١ التي تفصّل إحدى وسائل هذا النصر الإلهي (إلقاء الرعب).</span></div>
+  </div>
+  <div class="cb"><div class="bt">آيات أخرى بنفس المعنى (سياق بدر)</div>
+    <div class="ci"><span class="vi">﴿إِذْ يُوحِي رَبُّكَ إِلَى الْمَلَائِكَةِ أَنِّي مَعَكُمْ فَثَبِّتُوا الَّذِينَ آمَنُوا سَأُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ﴾</span><span class="vs">الأنفال: ١٢ — نفس المعنى بلفظ قريب جدًّا، لكن في سياق غزوة بدر لا أحد، وهذا يؤكد أن إلقاء الرعب سنة إلهية متكررة في أكثر من معركة لا حادثة واحدة.</span></div>
+    <div class="ci"><span class="vi">﴿لَأَنتُمْ أَشَدُّ رَهْبَةً فِي صُدُورِهِم مِّنَ اللَّهِ﴾</span><span class="vs">الحشر: ١٣ — تأكيد إضافي على أن رهبة المنافقين وأهل الكتاب من المؤمنين تفوق أحيانًا خشيتهم من الله ذاته، وهو تفصيل آخر لظاهرة الرعب النفسي المصاحب لضعف الإيمان.</span></div>
+  </div>
+  <div class="cb"><div class="bt">آيات في معنى السكينة (مقابل الرعب)</div>
+    <div class="ci"><span class="vi">﴿هُوَ الَّذِي أَنزَلَ السَّكِينَةَ فِي قُلُوبِ الْمُؤْمِنِينَ لِيَزْدَادُوا إِيمَانًا مَّعَ إِيمَانِهِمْ﴾</span><span class="vs">الفتح: ٤ — تفصيل قرآني مباشر لمفهوم "السكينة" الذي بنى عليه المقال نصفه الثاني، وهي المقابل الإيماني المباشر لما تعانيه قلوب الكافرين من الرعب.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط الكلي:</strong> تأتي آية ١٥١ بعد سياق مباشر من التسلية عقب هزيمة أُحد (١٤٩-١٥٠)، وتتكرر نفس السنة بلفظ مقارب في سياق بدر (الأنفال ١٢)، بينما يقابلها في المعنى مفهوم "السكينة" المفصّل في سورة الفتح، فتتشكّل منظومة قرآنية متكاملة: رعب يُلقى في قلوب الكافرين مقابل سكينة تنزل على قلوب المؤمنين، وهما وجها نفس السنة الإلهية الواحدة.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية عقدية إخبارية عن سنة إلهية ✅</div><div class="md">تُخبر عن سنة ثابتة متكررة: إلقاء الرعب في قلوب الكافرين بسبب الشرك، وهي من آيات نصرة الله لأوليائه.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية وعيد للمشركين ✅</div><div class="md">تتوعد المشركين بعقوبتين: نفسية دنيوية (الرعب) وأخروية (النار)، وهي من آيات الوعيد المرتبطة بجريمة الشرك تحديدًا.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تربوية-تزكوية ✅</div><div class="md">توظَّف في السياق الأوسع لتربية المؤمنين على التوكل واليقين، لا الاعتماد على القوة المادية وحدها.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:16px;"><strong>الخلاصة:</strong> آية آل عمران ١٥١ منظومة عقدية-وعيدية-تربوية: تقرر سنة إلهية في نصرة المؤمنين، وتتوعد المشركين بعقوبة نفسية وأخروية، وتؤصّل تربويًّا مبدأ التوكل على الله لا الاتكال على الأسباب فقط.</div>
+  <div class="sub"><h3>الأحكام والعبر المستنبطة</h3>
+    <div class="card c1"><div class="ct">الحكم الأول: تحريم الشرك وبيان خطورته الخاصة</div>
+      <p>استنبط المفسرون من ربط عقوبة الرعب بالشرك تحديدًا (لا بمطلق الكفر) خطورة جريمة الشرك الخاصة، إذ إنه اتهام لله بالحاجة إلى شريك أو ند، وهذا من أعظم أصول التوحيد المقررة في القرآن.</p>
+      <div class="src"><strong>المصدر:</strong> ابن كثير، تفسير القرآن العظيم، ج٢، ص١٤٠ (ط. دار طيبة) — عند تفسير آية ١٥١.</div>
+    </div>
+    <div class="card c2"><div class="ct">الحكم الثاني: مشروعية إعداد القوة مع عدم تعليق القلب بها وحدها</div>
+      <p>استُنبط من مجمل السياق (ربطًا بآية ﴿وَأَعِدُّوا لَهُم مَّا اسْتَطَعْتُم مِّن قُوَّةٍ﴾ الأنفال ٦٠) وجوب الأخذ بأسباب القوة المادية، مع تحريم تعليق القلب بها استقلالًا عن التوكل على الله، وهذا الجمع بين الأمرين أصل عقدي-فقهي مهم في باب الجهاد والإعداد.</p>
+      <div class="src"><strong>المصدر:</strong> القرطبي، الجامع لأحكام القرآن، ج٨، ص٤٢-٤٤ (ط. مؤسسة الرسالة) — عند تفسير آية الإعداد في الأنفال المرتبطة بنفس المعنى.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.28rem;">﴿سَنُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ بِمَا أَشْرَكُوا بِاللَّهِ مَا لَمْ يُنَزِّلْ بِهِ سُلْطَانًا وَمَأْوَاهُمُ النَّارُ وَبِئْسَ مَثْوَى الظَّالِمِينَ﴾</div>
+    <div class="vr">سورة آل عمران (٣)، الآية ١٥١</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">سَنُلْقِي</div><div class="id">السين حرف استقبال وتوكيد، «نُلقي» فعل مضارع مرفوع بالضمة المقدرة على الياء، والفاعل ضمير مستتر تقديره «نحن» يعود على الله تعالى (تعظيمًا).</div></div>
+    <div class="ir"><div class="iw">فِي قُلُوبِ</div><div class="id">جار ومجرور متعلق بـ«نُلقي»، مضاف.</div></div>
+    <div class="ir"><div class="iw">الَّذِينَ كَفَرُوا</div><div class="id">اسم موصول مضاف إليه مبني في محل جر، وجملة «كفروا» صلة الموصول لا محل لها من الإعراب.</div></div>
+    <div class="ir"><div class="iw">الرُّعْبَ</div><div class="id">مفعول به منصوب لفعل «نُلقي».</div></div>
+    <div class="ir"><div class="iw">بِمَا أَشْرَكُوا بِاللَّهِ</div><div class="id">الباء حرف جر سببية، «ما» مصدرية، «أشركوا» فعل ماضٍ وفاعل، والمصدر المؤول (بإشراكهم) في محل جر بالباء متعلق بـ«نُلقي»، «بالله» جار ومجرور متعلق بـ«أشركوا».</div></div>
+    <div class="ir"><div class="iw">مَا لَمْ يُنَزِّلْ بِهِ سُلْطَانًا</div><div class="id">«ما» اسم موصول في محل جر نعت لـ«الله» أو بدل، «لم يُنزّل» فعل مضارع مجزوم، والفاعل ضمير مستتر «هو» يعود على الله، «به» جار ومجرور متعلق بـ«يُنزّل»، «سلطانًا» مفعول به منصوب.</div></div>
+    <div class="ir"><div class="iw">وَمَأْوَاهُمُ</div><div class="id">الواو استئنافية، «مأوى» مبتدأ مرفوع بضمة مقدرة على الألف للتعذر، مضاف، والهاء والميم مضاف إليه.</div></div>
+    <div class="ir"><div class="iw">النَّارُ</div><div class="id">خبر المبتدأ مرفوع بالضمة.</div></div>
+    <div class="ir"><div class="iw">وَبِئْسَ</div><div class="id">الواو عاطفة أو استئنافية، «بئس» فعل ماضٍ جامد لإنشاء الذم.</div></div>
+    <div class="ir"><div class="iw">مَثْوَى الظَّالِمِينَ</div><div class="id">«مثوى» فاعل «بئس» مرفوع بضمة مقدرة على الألف، مضاف، «الظالمين» مضاف إليه مجرور بالياء لأنه جمع مذكر سالم، والمخصوص بالذم محذوف تقديره «هي» (أي: النار).</div></div>
+  </div>
+  <div class="card c1" style="margin-top:14px;"><div class="ct">ملاحظة: توكيد الفعل بالسين مع كونه سنة متكررة لا حدثًا واحدًا</div><p>استخدام «السين» (لا «سوف» الأبعد زمنًا) مع فعل «نُلقي» يفيد قرب الحدث وتكراره الفوري كلما تحقق سببه (الشرك)، لا أنه وعد بحدث واحد في زمن محدد، وهذا يناسب كون الآية تقرر سنة إلهية دائمة تتكرر في كل معركة بين الحق والباطل، لا واقعة تاريخية منتهية.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«فَإِذَا أَرَدْتَ أَنْ تَكُونَ قَوِيًّا، فَابْدَأْ بِإِصْلَاحِ قَلْبِكَ»<br><small style="font-size:.65em;color:var(--mist);">— من المقال</small></div>
+
+  <div class="card c1"><div class="ct">أولاً: التمييز بين القوة الظاهرية والقوة الداخلية الحقيقية</div><p>يعالج المقال نفسيًّا معيارًا خاطئًا شائعًا لتقييم القوة: قياسها بالعدد والعتاد فقط، متجاهلًا الحالة النفسية الداخلية (اليقين، الثبات) التي تحدد فعليًّا نتيجة أي مواجهة. <strong>التطبيق:</strong> عند تقييم استعدادك لأي تحدٍّ (مهني، اجتماعي، شخصي)، لا تكتفِ بجرد الموارد المادية، بل قيّم أيضًا ثبات قلبك ويقينك.</p></div>
+
+  <div class="card c2"><div class="ct">ثانياً: تفكيك آلية الرعب النفسي وأثره على الإدراك</div><p>يشرح المقال بدقة نفسية كيف يشوّه الرعب إدراك الإنسان للواقع («فلا يرى صاحبه الأشياء على حقيقتها»)، وهذا يطابق ما يعرفه علم النفس بتأثير القلق الشديد على التفكير الموضوعي وتضخيم المخاطر المتصورة. <strong>التطبيق:</strong> عند الشعور بقلق شديد تجاه موقف ما، تحقق أولًا: هل أرى الموقف كما هو، أم يكبّره الخوف في ذهني؟</p></div>
+
+  <div class="card c3"><div class="ct">ثالثاً: بناء الأمن النفسي المستقل عن الظروف الخارجية (مفهوم السكينة)</div><p>يقدّم المقال نموذجًا نفسيًّا مهمًّا: أن الطمأنينة الحقيقية لا ترتبط بغياب المشاكل الخارجية، بل بحالة استقرار داخلي مستقل عنها («ليست أن تختفي المحن، وإنما أن يبقى القلب ثابتًا وسط العواصف»). <strong>التطبيق التربوي:</strong> اعمل على بناء مصادر أمان داخلية (اليقين بالله، الصلاة، الذكر) لا تعتمد كليًّا على استقرار الظروف الخارجية.</p></div>
+
+  <div class="card c1"><div class="ct">رابعاً: التوازن النفسي بين الأخذ بالأسباب والتوكل (تجنب القلقين المتضادين)</div><p>يعالج المقال قلقين متضادين شائعين: القلق الناتج عن الاتكال الكامل دون عمل، والقلق الناتج عن تعليق القلب بالأسباب المادية وحدها دون توكل. كلاهما مصدر اضطراب نفسي من زاوية مختلفة. <strong>التطبيق:</strong> اعمل بجد كامل في أخذ الأسباب، ثم حرّر قلبك من القلق بشأن النتيجة، فهي ليست بيدك أصلًا.</p></div>
+
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>الثنائية المتوازية طوال المقال:</strong> يبني المقال هيكله كله على مقارنات متوازية مستمرة (المؤمن الفقير/الجبار الغني، صاحب الحق/صاحب الباطل)، مما يرسّخ الفكرة المركزية عبر أمثلة متعددة الزوايا.</li>
+      <li><strong>الانتقال من العام الكوني إلى الشخصي التطبيقي:</strong> يبدأ المقال بتقرير سنة إلهية عامة (إلقاء الرعب)، وينتهي بتوصيات شخصية مباشرة للقارئ («فابدأ بإصلاح قلبك»)، محوّلًا القاعدة النظرية إلى برنامج عملي فردي.</li>
+      <li><strong>الختم بآية جامعة مستقلة:</strong> يختم المقال بآية ﴿وَمَا النَّصْرُ إِلَّا مِنْ عِندِ اللَّهِ﴾ منفصلة عن السياق النثري، لتكون خلاصة قرآنية مباشرة تُغلق المقال بنفس لغة الوحي التي افتُتح بها.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح وأئمة التفسير.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين سنن الله في نصرة المؤمنين ومعارك الحق والباطل المعاصرة في شتى الميادين.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية في تناول سنن النصر والهزيمة.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">التوكل واليقين</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">تثبيت القلوب</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.6;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(e){
+    e.preventDefault();
+    var id=l.getAttribute('href').slice(1);
+    var t=document.getElementById(id);
+    if(t){t.scrollIntoView({behavior:'smooth',block:'start'});}
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
