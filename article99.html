@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بَيْنَ الْبَحْرَيْنِ حَاجِزٌ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141220;--bg:#fbfcff;--bg2:#f4fbf9;
+  --s1:#d64550;--s2:#e8871e;--s3:#c99a1e;--s4:#4c9a2a;--s5:#1f9d8a;--s6:#2176ae;--s7:#5c4d9e;--s8:#9c3587;--s9:#c23b7a;
+  --hdr:#0e0c1f;--hdr2:#181236;--card-bg:#ffffff;--div:rgba(92,77,158,.72);--mist:#443f5c;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;font-weight:500;line-height:1.95;overflow-x:hidden;max-width:100%;
+-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+background-image:radial-gradient(ellipse at 6% 4%,rgba(214,69,80,.09) 0%,transparent 45%),radial-gradient(ellipse at 94% 10%,rgba(33,118,174,.09) 0%,transparent 45%),radial-gradient(ellipse at 10% 92%,rgba(76,154,42,.10) 0%,transparent 45%),radial-gradient(ellipse at 92% 96%,rgba(156,53,135,.10) 0%,transparent 45%);}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--s1),var(--s2),var(--s3),var(--s4),var(--s5),var(--s6),var(--s7),var(--s8),var(--s9));z-index:400;transform-origin:top;box-shadow:0 0 10px rgba(33,118,174,.5);}
+.rband{height:5px;background:linear-gradient(90deg,var(--s1),var(--s2),var(--s3),var(--s4),var(--s5),var(--s6),var(--s7),var(--s8),var(--s9));}
+.hdr{background:var(--hdr);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.5);border-bottom:2px solid transparent;border-image:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9)) 1;}
+.hdr-i{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;min-height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;font-size:1rem;flex-shrink:0;background:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:#f5f3ff;font-size:.9rem;text-align:center;flex:1;opacity:.95;overflow-wrap:break-word;word-break:break-word;min-width:120px;}
+.tbtn{background:linear-gradient(90deg,var(--s6),var(--s9));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-weight:600;font-size:.85rem;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;flex-wrap:wrap;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:290px;max-width:100%;flex-shrink:0;background:var(--hdr);position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;overflow-x:hidden;border-left:1px solid var(--div);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid var(--div);background:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.toc-s{color:#b0a8dd;font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#d8d2f2;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;font-weight:500;border-right:3px solid transparent;transition:all .2s;overflow-wrap:break-word;word-break:break-word;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(194,59,122,.16);border-right-color:var(--s9);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.92;}
+.main{flex:1;min-width:0;max-width:100%;padding:52px 64px;overflow-x:hidden;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:160px;height:4px;background:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9));border-radius:4px;}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;letter-spacing:.4em;}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--s6),var(--s9));color:#fff;font-size:.74rem;padding:4px 16px;border-radius:20px;margin-bottom:18px;font-weight:600;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.35rem;font-weight:700;line-height:1.5;margin-bottom:12px;background:linear-gradient(90deg,var(--s1),var(--s2),var(--s3),var(--s4),var(--s5),var(--s6),var(--s7),var(--s8));-webkit-background-clip:text;background-clip:text;color:transparent;overflow-wrap:break-word;word-break:break-word;}
+.hmeta{color:var(--mist);font-size:.94rem;font-weight:500;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-top:12px;}
+.hmeta .dot{width:5px;height:5px;background:var(--s6);border-radius:50%;}
+.vb{background:linear-gradient(135deg,var(--hdr),var(--hdr2));border:2px solid transparent;border-image:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9)) 1;border-radius:12px;padding:34px 40px;margin:36px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(33,118,174,.18),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.56rem;color:#faf9ff;line-height:2.15;position:relative;z-index:1;overflow-wrap:break-word;word-break:break-word;}
+.vt.sm{font-size:1.3rem;}
+.vr{background:linear-gradient(90deg,var(--s3),var(--s9));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:.88rem;margin-top:12px;position:relative;z-index:1;font-weight:700;}
+.abody{font-size:1.12rem;line-height:2.05;color:var(--ink);}
+.abody p{margin-bottom:1.4em;text-align:justify;overflow-wrap:break-word;word-break:break-word;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;background:linear-gradient(180deg,var(--s1),var(--s7));-webkit-background-clip:text;background-clip:text;color:transparent;float:right;line-height:.82;margin-left:8px;}
+.qv{font-family:'Scheherazade New',serif;font-size:1.24rem;color:var(--s6);text-align:center;margin:.4em 0;font-weight:700;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.2rem;font-weight:700;text-align:center;margin:16px 0;background:linear-gradient(90deg,var(--s4),var(--s7));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;color:#fff;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.75rem;border-bottom:3px solid;border-image:linear-gradient(90deg,var(--s1),var(--s9)) 1;padding-bottom:8px;flex:1;min-width:180px;color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.3rem;margin-bottom:12px;padding-right:14px;border-right:4px solid var(--s9);color:var(--s6);overflow-wrap:break-word;word-break:break-word;}
+.card{background:var(--card-bg);border:2px solid var(--div);border-radius:10px;padding:20px 24px;margin:16px 0;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.card.c1{border-right:6px solid var(--s1);}
+.card.c2{border-right:6px solid var(--s2);}
+.card.c3{border-right:6px solid var(--s3);}
+.card.c4{border-right:6px solid var(--s4);}
+.card.c5{border-right:6px solid var(--s5);}
+.card.c6{border-right:6px solid var(--s6);}
+.card.c7{border-right:6px solid var(--s7);}
+.card.c8{border-right:6px solid var(--s8);}
+.card.c9{border-right:6px solid var(--s9);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.15rem;margin-bottom:10px;font-weight:700;color:var(--ink);}
+.card p{font-size:.98rem;color:#262038;font-weight:500;line-height:1.9;margin-top:6px;overflow-wrap:break-word;word-break:break-word;}
+.card p strong{color:var(--ink);}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.96rem;border-radius:8px;overflow:hidden;table-layout:fixed;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.tbl th{background:linear-gradient(90deg,var(--s6),var(--s8));color:#fff;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;overflow-wrap:break-word;word-break:break-word;}
+.tbl td{padding:11px 14px;border-bottom:2px solid var(--div);vertical-align:top;line-height:1.85;overflow-wrap:break-word;word-break:break-word;}
+.tbl tr:nth-child(even) td{background:rgba(33,118,174,.06);}
+.term{font-family:'Scheherazade New',serif;font-size:1.06rem;color:var(--ink);font-weight:700;}
+.def{color:var(--mist);font-size:.92rem;font-weight:500;}
+.ir{display:flex;flex-wrap:wrap;gap:13px;padding:10px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.2rem;color:var(--s6);max-width:100%;font-weight:700;flex-shrink:0;overflow-wrap:break-word;word-break:break-word;}
+.id{color:#262038;font-size:.94rem;font-weight:500;flex:1;min-width:200px;line-height:1.9;overflow-wrap:break-word;word-break:break-word;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.38rem;text-align:center;padding:28px 34px;margin:38px 0;border-top:3px solid;border-bottom:3px solid;border-image:linear-gradient(90deg,var(--s1),var(--s9)) 1;position:relative;color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.pq::before{content:'❝';position:absolute;top:-6px;right:34px;font-size:2.7rem;background:linear-gradient(180deg,var(--s9),var(--s7));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;}
+.src{background:rgba(76,154,42,.09);border:2px solid rgba(76,154,42,.55);border-radius:9px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.88rem;font-weight:500;color:#265014;line-height:1.9;overflow-wrap:break-word;word-break:break-word;}
+.src strong{color:var(--s4);}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:4px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;margin-right:6px;}
+.grade.sahih{background:linear-gradient(90deg,var(--s4),var(--s5));}
+.rlist{list-style:none;padding:0;margin:12px 0;}
+.rlist li{font-family:'Scheherazade New',serif;font-size:1.06rem;padding:9px 0;border-bottom:1px dashed var(--div);overflow-wrap:break-word;word-break:break-word;}
+.rlist li:last-child{border-bottom:none;}
+.rlist li:nth-child(9n+1){color:var(--s1);}
+.rlist li:nth-child(9n+2){color:var(--s2);}
+.rlist li:nth-child(9n+3){color:var(--s3);}
+.rlist li:nth-child(9n+4){color:var(--s4);}
+.rlist li:nth-child(9n+5){color:var(--s5);}
+.rlist li:nth-child(9n+6){color:var(--s6);}
+.rlist li:nth-child(9n+7){color:var(--s7);}
+.rlist li:nth-child(9n+8){color:var(--s8);}
+.rlist li:nth-child(9n){color:var(--s9);}
+.atag{display:inline-block;background:rgba(33,118,174,.16);color:var(--s6);font-size:.73rem;font-weight:600;padding:4px 12px;border-radius:12px;margin:3px;border:2px solid rgba(33,118,174,.4);}
+.asec{background:linear-gradient(135deg,var(--hdr),var(--hdr2));border:2px solid transparent;border-image:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9)) 1;border-radius:12px;padding:34px 40px;margin:56px 0 38px;display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.ava{width:80px;height:80px;border-radius:22px;background:linear-gradient(135deg,var(--s1),var(--s7));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.ai{min-width:200px;flex:1;}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff;font-size:1.34rem;margin-bottom:5px;overflow-wrap:break-word;word-break:break-word;}
+.ai .at{color:#ffd7ee;font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#e4dcfa;font-size:.92rem;font-weight:500;line-height:1.85;margin-bottom:8px;overflow-wrap:break-word;word-break:break-word;}
+.ai p strong{color:#fff;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.28);border-radius:6px;padding:10px 13px;}
+.ami .aml{color:#f0d8ff;font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:#fff;font-size:.88rem;font-family:'Scheherazade New',serif;overflow-wrap:break-word;word-break:break-word;}
+.orn{text-align:center;font-size:1.25rem;margin:48px 0;letter-spacing:.42em;background:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.8;}
+footer{background:var(--hdr);color:#d8d2f2;text-align:center;padding:32px 20px;font-size:.85rem;font-weight:500;border-top:3px solid;border-image:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9)) 1;margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.08rem;margin-bottom:7px;background:linear-gradient(90deg,var(--s1),var(--s3),var(--s5),var(--s7),var(--s9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:280px;max-width:85vw;height:calc(100vh - 58px);overflow-y:auto;}.amg{grid-template-columns:1fr;}.hero h1{font-size:1.85rem;}.asec{flex-direction:column;}.main{padding:32px 20px;}}
+@media(max-width:640px){.main{padding:18px 12px;}.vb{padding:24px 18px;}.vt{font-size:1.1rem;}.hero h1{font-size:1.42rem;}.pq{font-size:1.05rem;padding:18px 14px;}.hdr-i{padding:0 12px;}.logo{display:none;}.card{padding:16px 16px;}.asec{padding:24px 20px;}}
+</style>
+</head>
+<body>
+<div class="rband"></div>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ السَّلْجُوقِي</div>
+    <div class="htitle">بَيْنَ الْبَحْرَيْنِ حَاجِزٌ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<div class="hero">
+  <span class="horn">🌈 ✦ 🌈</span>
+  <div class="hcat">تدبر قرآني · آيات كونية · سورة النمل · مكية · توحيد الربوبية</div>
+  <h1>بَيْنَ الْبَحْرَيْنِ حَاجِزٌ<br>وَحِينَ يَرْسُمُ اللهُ حُدُودَ الْأَشْيَاءِ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>سورة النمل، الآية ٦١</span>
+  </div>
+</div>
+
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--s1),var(--s7));">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿أَمَّنْ جَعَلَ الْأَرْضَ قَرَارًا وَجَعَلَ خِلَالَهَا أَنْهَارًا وَجَعَلَ لَهَا رَوَاسِيَ وَجَعَلَ بَيْنَ الْبَحْرَيْنِ حَاجِزًا ۗ أَإِلَٰهٌ مَّعَ اللَّهِ ۚ بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ﴾</div>
+    <div class="vr">سورة النمل (٢٧)، الآية ٦١</div>
+  </div>
+
+  <div class="abody">
+    <p>لَيْسَتْ هَذِهِ الْآيَةُ الْكَرِيمَةُ مُجَرَّدَ عَرْضٍ لِمَشْهَدٍ مِنْ مَشَاهِدِ الْكَوْنِ، وَإِنَّمَا هِيَ صَاعِقَةٌ تُوقِظُ الْقَلْبَ مِنْ غَفْلَتِهِ، وَنِدَاءٌ يَهُزُّ أَعْمَاقَ الرُّوحِ لِتَقِفَ أَمَامَ سُلْطَانِ اللهِ وَهَيْبَتِهِ. إِنَّهَا لَا تَعْرِضُ الْبَحْرَيْنِ عَلَى أَنَّهُمَا كُتْلَتَانِ مِنَ الْمَاءِ فَحَسْبُ، بَلْ تَعْرِضُ الْكَوْنَ كُلَّهُ وَهُوَ يَسِيرُ وَفْقَ نِظَامٍ مُحْكَمٍ، لَا يَخْتَلُّ فِيهِ مِيزَانٌ، وَلَا تَضْطَرِبُ فِيهِ سُنَّةٌ، وَلَا تَتَجَاوَزُ فِيهِ طَبِيعَةٌ أَوْ مَخْلُوقٌ حَدَّهُ الَّذِي رَسَمَهُ اللهُ لَهُ.</p>
+
+    <p>الْأَرْضُ قَرَارٌ... وَلَيْسَتْ كُرَةً مُضْطَرِبَةً تَتَقَاذَفُهَا الْفَوْضَى، وَإِنَّمَا مَهْدٌ مُمَهَّدٌ لِلْإِنْسَانِ، مُسْتَقِرَّةٌ بِمَا أَوْدَعَ اللهُ فِيهَا مِنْ سُنَنٍ وَقَوَانِينَ تَحْفَظُ الْحَيَاةَ وَتُدِيمُهَا. وَلَوْ شَاءَ سُبْحَانَهُ لَجَعَلَهَا تَمِيدُ بِأَهْلِهَا، أَوْ تَضْطَرِبُ فَلَا يَسْتَقِرُّ عَلَيْهَا قَدَمٌ، وَلَكِنَّهَا رَحْمَتُهُ الَّتِي جَعَلَتِ الْأَرْضَ قَرَارًا، وَسَكَنًا، وَمُسْتَوْدَعًا لِلْأَحْيَاءِ.</p>
+
+    <p>ثُمَّ تَتَدَفَّقُ الْأَنْهَارُ خِلَالِ الْأَرْضِ، فَتَجْرِي كَالشَّرَايِينِ فِي جَسَدٍ حَيٍّ، تَحْمِلُ الْحَيَاةَ إِلَى الصَّحَارَى وَالسُّهُولِ وَالْوِدْيَانِ. إِنَّ النَّهْرَ لَيْسَ مُجَرَّدَ مَاءٍ، بَلْ رِسَالَةُ رَحْمَةٍ، وَنِعْمَةٌ مُتَجَدِّدَةٌ، وَآيَةٌ تَشْهَدُ أَنَّ الرَّازِقَ وَاحِدٌ، وَأَنَّ الَّذِي سَاقَ الْمَاءَ مِنْ أَعَالِي الْجِبَالِ قَادِرٌ عَلَى أَنْ يَسُوقَ الرَّحْمَةَ إِلَى الْقُلُوبِ الْيَابِسَةِ.</p>
+
+    <p>ثُمَّ الْجِبَالُ... تِلْكَ الَّتِي يَرَاهَا الْإِنْسَانُ حِجَارَةً صَامِتَةً، بَيْنَمَا يَرَاهَا الْقُرْآنُ رَوَاسِيَ، تُثَبِّتُ الْأَرْضَ، وَتَغْرِسُ فِي النَّفْسِ مَعْنَى الثَّبَاتِ. فَالْجِبَالُ تُعَلِّمُ الْإِنْسَانَ أَنَّ الرُّسُوخَ لَا يَكُونُ بِالصَّخَبِ، وَإِنَّمَا بِالصَّبْرِ، وَأَنَّ أَعْظَمَ الْأَشْيَاءِ هِيَ الَّتِي تُؤَدِّي وَظِيفَتَهَا فِي صَمْتٍ.</p>
+
+    <p>ثُمَّ يَقِفُ الْقَلْبُ طَوِيلًا عِنْدَ هَذِهِ الْآيَةِ الْعَجِيبَةِ:</p>
+    <p class="qv">﴿وَجَعَلَ بَيْنَ الْبَحْرَيْنِ حَاجِزًا﴾</p>
+    <p>أَيُّ قُدْرَةٍ هَذِهِ؟! وَأَيُّ حِكْمَةٍ هَذِهِ؟! بَحْرَانِ يَلْتَقِيَانِ... هَذَا عَذْبٌ فُرَاتٌ، يَرْوِي الزُّرُوعَ، وَيَسْقِي الْعِبَادَ. وَذَاكَ مِلْحٌ أُجَاجٌ، يَحْمِلُ أَسْرَارَ الْبِحَارِ، وَيَحْفَظُ التَّوَازُنَ الْبِيئِيَّ. يَلْتَقِيَانِ... وَيَتَجَاوَرَانِ... وَلَكِنْ لِكُلٍّ مِنْهُمَا حُدُودُهُ الَّتِي لَا يَتَجَاوَزُهَا إِلَّا بِإِذْنِ اللهِ. لَيْسَ الْحَاجِزُ بِالضَّرُورَةِ جِدَارًا تَرَاهُ الْعُيُونُ، وَإِنَّمَا هُوَ أَمْرُ اللهِ، وَسُنَّتُهُ، وَقَانُونُهُ الَّذِي لَا يَرَاهُ النَّاسُ وَلَكِنَّهُمْ يَرَوْنَ آثَارَهُ فِي كُلِّ لَحْظَةٍ.</p>
+
+    <p>وَهَكَذَا يَسِيرُ الْكَوْنُ كُلُّهُ... الشَّمْسُ لَا تَصْطَدِمُ بِالْقَمَرِ. وَالْقَمَرُ لَا يَسْبِقُ الشَّمْسَ. وَالنُّجُومُ لَا تَتَنَاثَرُ عَبَثًا. وَالْبِحَارُ لَا تَطْغَى إِلَّا إِذَا أَذِنَ اللهُ. وَالرِّيَاحُ تَعْرِفُ طَرِيقَهَا. وَالسُّحُبُ تَسِيرُ بِأَمْرِ رَبِّهَا. كُلُّ شَيْءٍ يَعْرِفُ حُدُودَهُ... إِلَّا الْإِنْسَانَ... ذَلِكَ الْمَخْلُوقُ الَّذِي كَثِيرًا مَا يُحَاوِلُ تَحْطِيمَ الْحَوَاجِزِ الَّتِي وَضَعَهَا اللهُ.</p>
+
+    <p>يُرِيدُ أَنْ يَتَجَاوَزَ حُدُودَ الْحَلَالِ إِلَى الْحَرَامِ. وَحُدُودَ الْعَدْلِ إِلَى الظُّلْمِ. وَحُدُودَ الرَّحْمَةِ إِلَى الْقَسْوَةِ. وَحُدُودَ الْأَمَانَةِ إِلَى الْخِيَانَةِ. وَحُدُودَ الْعِفَّةِ إِلَى الْفُجُورِ. فَإِذَا تَجَاوَزَ حُدُودَ اللهِ، اضْطَرَبَتْ حَيَاتُهُ كَمَا يَضْطَرِبُ الْبَحْرُ إِذَا هَاجَ.</p>
+
+    <p class="ql">إِنَّ الْحَوَاجِزَ الَّتِي يَضَعُهَا اللهُ لَيْسَتْ قُيُودًا، وَإِنَّمَا هِيَ رَحْمَةٌ.</p>
+
+    <p>فَالْأُسْرَةُ لَهَا حَاجِزٌ يَحْفَظُهَا. وَالْأَخْلَاقُ لَهَا حَاجِزٌ يَصُونُهَا. وَالْمَالُ لَهُ حَاجِزٌ يَمْنَعُ الظُّلْمَ. وَاللِّسَانُ لَهُ حَاجِزٌ يَمْنَعُ الْفِتْنَةَ. وَالْعَيْنُ لَهَا حَاجِزٌ يَمْنَعُ الْحَرَامَ. وَالْقَلْبُ لَهُ حَاجِزٌ يَحْفَظُ الْإِيمَانَ. وَلَوْ أُزِيلَتْ هَذِهِ الْحَوَاجِزُ لَتَحَوَّلَتِ الْحَيَاةُ إِلَى بَحْرٍ هَائِجٍ لَا قَرَارَ لَهُ.</p>
+
+    <p>حَتَّى فِي الْعَلَاقَاتِ الْإِنْسَانِيَّةِ نَحْتَاجُ إِلَى الْحَوَاجِزِ الَّتِي تَحْفَظُ الْمَوَدَّةَ، فَلَا يَتَحَوَّلُ الْحُبُّ إِلَى تَمَلُّكٍ، وَلَا الْحُرِّيَّةُ إِلَى فَوْضَى، وَلَا الْقُوَّةُ إِلَى بَطْشٍ، وَلَا الْكَلِمَةُ إِلَى سِلَاحٍ يَهْدِمُ الْقُلُوبَ.</p>
+
+    <p>وَمَا أَكْثَرَ مَا نَتَعَلَّمُ مِنْ هَذِهِ الْآيَةِ! فَقَدْ يُجَاوِرُ الْمُؤْمِنُ الْفَاسِقَ، وَلَا يَأْخُذُ مِنْ فَسَادِهِ. وَيَعِيشُ الصَّالِحُ بَيْنَ أَهْلِ الدُّنْيَا، فَلَا تَذُوبُ هُوِيَّتُهُ. كَمَا يَلْتَقِي الْبَحْرَانِ، وَيَبْقَى لِكُلِّ وَاحِدٍ خَصَائِصُهُ. إِنَّ الْمُؤْمِنَ يَحْمِلُ فِي دَاخِلِهِ حَاجِزًا اسْمُهُ تَقْوَى اللهِ، يَمْنَعُهُ مِنَ الذَّوَبَانِ فِي الْبَاطِلِ مَهْمَا أَحَاطَتْ بِهِ الْفِتَنُ.</p>
+
+    <p>وَلَوْ تَأَمَّلَ الْإِنْسَانُ فِي نَفْسِهِ لَوَجَدَ أَنَّ اللهَ جَعَلَ فِيهَا أَيْضًا حَوَاجِزَ. الْقَلْبُ دَاخِلَ قَفَصٍ يَحْفَظُهُ. الدِّمَاغُ دَاخِلَ جُمْجُمَةٍ تَصُونُهُ. الْعَيْنُ دَاخِلَ جَفْنٍ يَحْرُسُهَا. وَالْجَنِينُ دَاخِلَ رَحِمٍ يَحْمِيهِ. إِنَّهَا سُنَّةُ الْحَوَاجِزِ... فَالْحَيَاةُ كُلُّهَا قَائِمَةٌ عَلَى الْحِمَايَةِ قَبْلَ الْعَطَاءِ.</p>
+
+    <p>ثُمَّ تُخْتَمُ الْآيَةُ بِذَلِكَ السُّؤَالِ الَّذِي يُزَلْزِلُ الْغَافِلِينَ:</p>
+    <p class="qv">﴿أَإِلَٰهٌ مَّعَ اللَّهِ﴾</p>
+    <p>أَيَسْتَطِيعُ أَحَدٌ أَنْ يَصْنَعَ أَرْضًا؟ أَوْ يُجْرِيَ نَهْرًا؟ أَوْ يُثَبِّتَ جَبَلًا؟ أَوْ يُقِيمَ حَاجِزًا بَيْنَ الْبَحْرَيْنِ؟ أَوْ يُدَبِّرَ هَذَا الْكَوْنَ لَحْظَةً وَاحِدَةً؟ لَا... بَلْ هُوَ اللهُ وَحْدَهُ.</p>
+
+    <p>ثُمَّ تَأْتِي الْحَسْرَةُ فِي آخِرِ الْآيَةِ:</p>
+    <p class="qv">﴿بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ﴾</p>
+    <p>لَا يَعْلَمُونَ أَنَّ وَرَاءَ كُلِّ قَطْرَةِ مَاءٍ رَبًّا رَحِيمًا. وَلَا يَعْلَمُونَ أَنَّ وَرَاءَ كُلِّ جَبَلٍ قُدْرَةً عَظِيمَةً. وَلَا يَعْلَمُونَ أَنَّ وَرَاءَ كُلِّ نِظَامٍ دَقِيقٍ حِكْمَةً بَالِغَةً. وَلَا يَعْلَمُونَ أَنَّ أَعْظَمَ الْحَوَاجِزِ هِيَ حُدُودُ اللهِ، وَأَنَّ السَّعَادَةَ كُلَّ السَّعَادَةِ فِي الْوُقُوفِ عِنْدَهَا، وَأَنَّ الشَّقَاءَ يَبْدَأُ يَوْمَ يَظُنُّ الْإِنْسَانُ أَنَّهُ أَقْدَرُ عَلَى تَدْبِيرِ حَيَاتِهِ مِنْ خَالِقِهِ.</p>
+
+    <p>طُوبَى لِقَلْبٍ رَأَى فِي الْبَحْرِ آيَةً. وَطُوبَى لِعَيْنٍ نَظَرَتْ إِلَى الْجَبَلِ فَازْدَادَ يَقِينُهَا. وَطُوبَى لِعَبْدٍ عَرَفَ أَنَّ كُلَّ مَا فِي الْكَوْنِ يُنَادِي: اللهُ وَاحِدٌ... اللهُ قَادِرٌ... اللهُ حَكِيمٌ... اللهُ رَحِيمٌ.</p>
+
+    <p>فَإِذَا امْتَلَأَ الْقَلْبُ بِهَذَا الْيَقِينِ، عَاشَ مُطْمَئِنًّا، وَسَكَنَتْ رُوحُهُ، وَعَلِمَ أَنَّ الَّذِي جَعَلَ بَيْنَ الْبَحْرَيْنِ حَاجِزًا، قَادِرٌ أَنْ يَجْعَلَ بَيْنَهُ وَبَيْنَ الْهُمُومِ حَاجِزًا، وَبَيْنَهُ وَبَيْنَ الْفِتَنِ حَاجِزًا، وَبَيْنَهُ وَبَيْنَ النَّارِ يَوْمَ الْقِيَامَةِ حَاجِزًا بِرَحْمَتِهِ وَفَضْلِهِ.</p>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--s6);font-weight:700;margin-top:30px;">عَلِي خَلِيل عَبَّاس السَّلْجُوقِي التُّرْكُمَانِي اللَّيْلَانِي</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--s1),var(--s2));">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية</h3></div>
+  <div class="card c1"><div class="ct">الاستعارة التصريحية في «الأنهار كالشرايين»</div><p>تشبيه صريح يُجري مقارنة بين شبكة الأنهار وشبكة الشرايين في الجسد الحي، وهو تصوير يمنح الأرض صفة الكائن الحي الذي تجري فيه الحياة عبر مجارٍ منظمة، فيربط بين نظام الكون الكبير ونظام الجسد الصغير في وحدة تصميم واحدة تدل على وحدة الصانع.</p></div>
+  <div class="card c2"><div class="ct">الاستعارة المكنية في «الشقاء يبدأ يوم يظن الإنسان أنه أقدر على تدبير حياته»</div><p>تصوير الشقاء بأنه حدث له «بداية» زمنية محددة استعارة تجعل المعنى المجرد (سوء العاقبة) أقرب للتحديد الزمني الحسي، وتربطه سببياً بلحظة تجاوز الحدود، مما يقوّي الرابطة المنطقية بين مجاوزة الحد والشقاء الناتج عنه.</p></div>
+  <div class="card c3"><div class="ct">صورة «الحياة بحر هائج لا قرار له»</div><p>تخيّل الحياة بلا حواجز أخلاقية على هيئة بحر هائج مضطرب صورة بصرية قوية تُسقط معنى «الحاجز» الكوني (بين البحرين) على المعنى الأخلاقي (حدود السلوك)، وهو ربط استعاري يوحّد موضوع المقال من أوله إلى آخره.</p></div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3></div>
+  <div class="card c4"><div class="ct">التكرار الفعلي «جَعَلَ» أربع مرات</div><p>تكرار الفعل «جعل» أربع مرات متتالية (الأرض قراراً، الأنهار، الرواسي، الحاجز) محسّن بديعي يُعرف بتكرار الفعل التوكيدي، يبني تعداداً متصاعداً للنعم الكونية قبل أن يصل إلى السؤال الإنكاري الختامي، فيكون التكرار تمهيداً حجاجياً للسؤال لا مجرد زخرفة لفظية.</p></div>
+  <div class="card c5"><div class="ct">الطباق بين «عذب فرات» و«ملح أُجاج»</div><p>تقابل لفظي دقيق بين وصفي الماءين (العذوبة والملوحة) يبرز المفارقة الكونية العجيبة: التقاء الضدين دون أن يفسد أحدهما الآخر، وهذا الطباق هو جوهر الإعجاز الذي تصفه الآية.</p></div>
+  <div class="card c6"><div class="ct">التكرار الاستهلالي في «وحدود... إلى...» و«له حاجز»</div><p>تكرار بنية «وحدود [كذا] إلى [كذا]» خمس مرات، ثم تكرار «له حاجز» ست مرات في فقرة لاحقة، أسلوبان بديعيان متتاليان يراكمان الأمثلة بإيقاع منتظم يعزز رسوخ الفكرة المركزية (الحدود رحمة لا قيد) في ذهن القارئ.</p></div>
+  <div class="card c7"><div class="ct">حسن التقسيم في ذكر الحواجز الداخلية في جسم الإنسان</div><p>تقسيم منظم لأربعة أعضاء حيوية (القلب، الدماغ، العين، الجنين) كل منها محاط بحاجز واقٍ محسّن تقسيمي يربط الدليل الكوني الخارجي (حاجز البحرين) بدليل داخلي في جسد الإنسان ذاته، فيغلق الحجة من جميع الجهات.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--s3),var(--s5));">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات والصرف</h3></div>
+  <table class="tbl">
+    <tr><th>اللفظ</th><th>الوزن الصرفي / الأصل</th><th>ملاحظة القراءات</th></tr>
+    <tr><td class="term">قَرَارًا</td><td class="def">مصدر على وزن «فَعَال» من «قرَّ يقرّ»، يفيد الثبات والاستقرار</td><td class="def">قراءة متواترة واحدة بفتح القاف؛ لا خلاف بين القراء العشرة في ضبطها</td></tr>
+    <tr><td class="term">رَوَاسِيَ</td><td class="def">جمع «راسية» اسم فاعل على وزن «فاعلة» من «رسا يرسو» الدال على الثبات والرسوخ</td><td class="def">قراءة الجمهور بفتح السين وكسرها في الجمع؛ لا خلاف مؤثر في المعنى</td></tr>
+    <tr><td class="term">حَاجِزًا</td><td class="def">اسم فاعل من «حجَز يحجُز» على وزن «فاعِل»، يفيد الفصل والمنع</td><td class="def">قراءة متواترة واحدة بنصب الزاي؛ إجماع القراء على الصيغة</td></tr>
+    <tr><td class="term">أَإِلَٰهٌ</td><td class="def">همزة الاستفهام الإنكاري + «إله» اسم على وزن «فِعال»</td><td class="def">اختلفت القراء في كيفية أداء الهمزتين المتتاليتين (تحقيقاً أو تسهيلاً)، دون خلاف في أصل المعنى الإنكاري</td></tr>
+  </table>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3></div>
+  <div class="card c8"><div class="ct">لفظ «قَرَار»</div><p>مشترك بين معنى الاستقرار المكاني (كما في الآية: الأرض قرار) ومعنى القرار بمعنى الحكم أو التقرير الذهني؛ والمراد هنا المعنى الأول: ثبات الأرض واستقرارها الفيزيائي الذي يجعلها صالحة للحياة.</p></div>
+  <div class="card c9"><div class="ct">لفظ «حَاجِز»</div><p>مشترك بين الحاجز المادي المحسوس (كالجدار) والحاجز المعنوي غير المرئي (كالسنة الكونية والحد الأخلاقي)؛ والمقال يوظّف اللفظ بالمعنيين معاً: الأول في وصف الفاصل بين البحرين، والثاني في التوسع الاستعاري إلى حدود الأخلاق والسلوك.</p></div>
+  <div class="card c1"><div class="ct">لفظ «الْبَحْرَيْنِ»</div><p>مشترك بين إطلاقه على بحرين حقيقيين متمايزين جغرافياً (كملتقى الأنهار العذبة بالبحر المالح) وإطلاقه في بعض المواضع القرآنية الأخرى على معانٍ رمزية موسّعة؛ والمراد هنا المعنى الحسي المباشر: التقاء الماء العذب بالماء المالح دون اختلاط.</p></div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3></div>
+  <table class="tbl">
+    <tr><th>اللفظان</th><th>الفرق الدقيق</th></tr>
+    <tr><td class="term">حَاجِز / سَدّ</td><td class="def">«الحاجز» فاصل قد يكون غير مرئي أو غير مادي (كسنة كونية)، أما «السدّ» فبناء مادي ظاهر مقصود الإنشاء؛ واختيار «حاجز» في الآية أدق لأنه يشير إلى قانون إلهي خفي لا جداراً مبنياً تراه العين.</td></tr>
+    <tr><td class="term">رَوَاسِي / جِبَال</td><td class="def">«الجبال» لفظ عام لكل مرتفع صخري، أما «الرواسي» فأخص يصف الجبال الثابتة الراسخة تحديداً بوظيفتها التثبيتية للأرض؛ فاستعمال «رواسي» بدل «جبال» يوظّف الوصف الوظيفي (الرسوخ) لا الوصف الشكلي فقط.</td></tr>
+    <tr><td class="term">عَذْب / فُرَات</td><td class="def">«العذب» كل ماء طيب الطعم بعامة، أما «الفرات» فأخص يصف الماء البالغ في العذوبة والسلاسة؛ والجمع بينهما في الآية توكيد مبالغ في وصف طيب الماء العذب.</td></tr>
+    <tr><td class="term">مِلْح / أُجَاج</td><td class="def">«الملح» كل ماء فيه طعم الملوحة، أما «الأُجاج» فأخص يصف الماء الشديد المرارة والملوحة معاً؛ والجمع بينهما يوكد شدة تباين الماءين المتجاورين، مما يعمّق الإعجاز في عدم اختلاطهما.</td></tr>
+  </table>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3></div>
+  <div class="card c2"><div class="ct">لماذا التدرج من الأرض إلى الأنهار إلى الجبال إلى البحرين؟</div><p>يسير الترتيب القرآني من الأكبر إلى الأدق: من استقرار الأرض ككل، إلى الأنهار الجارية فيها، إلى الجبال الثابتة عليها، إلى ظاهرة دقيقة محددة (حاجز بين بحرين)؛ وهذا التدرج البلاغي ينقل الذهن من التسليم بالكبير الواضح إلى التأمل في الدقيق الخفي، فيكون الاستدلال أشمل وأعمق أثراً.</p></div>
+  <div class="card c3"><div class="ct">لماذا «بل أكثرهم لا يعلمون» لا «كلهم لا يعلمون»؟</div><p>التخصيص بـ«أكثرهم» لا التعميم بـ«كلهم» دقة بلاغية تستثني من علم الحق وآمن به، فلا تكون الآية تعميماً ظالماً يشمل كل الناس، بل وصفاً واقعياً لحال الغالبية الغافلة مع بقاء الباب مفتوحاً لمن أبصر الحق واعتبر.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--s5),var(--s6));">٣</div><h2>ترابط السياقات بالآيات قبلها وبعدها والآيات الأخرى</h2></div>
+  <div class="card c4"><div class="ct">موضعها ضمن سلسلة «أمّن» في سورة النمل</div><p>هذه الآية هي الثانية في سلسلة الأسئلة الاستفهامية الخمسة في سورة النمل (٥٩-٦٤) التي تبدأ كلها بصيغة «أمّن»، وتأتي بعد آية خلق السماوات والأرض وإنبات الحدائق (٦٠)، وقبل آية إجابة دعاء المضطر (٦٢) التي تناولها مقال سابق؛ وهذا الترتيب يبني برهاناً متصاعداً من الخلق الكوني الشامل إلى تفصيل مظاهره (الأرض والأنهار والجبال والبحار) ثم إلى الأثر الوجداني المباشر في حياة الإنسان (إجابة الدعاء).</p></div>
+  <div class="card c5"><div class="ct">الصلة بآية البرزخ في سورة الرحمن</div><p>يتقاطع مضمون هذه الآية مع قوله تعالى في سورة الرحمن: ﴿مَرَجَ الْبَحْرَيْنِ يَلْتَقِيَانِ ۝ بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيَانِ﴾، وكلا الموضعين يصف الظاهرة الكونية نفسها بألفاظ متقاربة («حاجز» هنا و«برزخ» هناك)، مما يؤكد أن هذه الظاهرة موضع اهتمام قرآني متكرر يُستشهد به على عظمة الخالق وتمام صنعه.</p></div>
+  <div class="card c6"><div class="ct">الصلة بمفهوم الحدود الشرعية في آيات أخرى</div><p>يربط المقال هذه الظاهرة الكونية بمفهوم «حدود الله» الوارد في آيات الأحكام (كآيات المواريث والطلاق التي تختم غالباً بـ﴿تِلْكَ حُدُودُ اللَّهِ فَلَا تَعْتَدُوهَا﴾)، وهو ربط موضوعي يوسّع دلالة «الحاجز» الكوني إلى «الحدّ» الشرعي، مؤكداً أن كليهما مظهر لسنة إلهية واحدة قوامها الضبط والتوازن.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--s6),var(--s8));">٤</div><h2>نوع الآية والأحكام والدروس المستنبطة</h2></div>
+  <table class="tbl">
+    <tr><th>الجانب</th><th>البيان</th></tr>
+    <tr><td class="term">نوع الآية</td><td class="def">آية كونية عقدية استدلالية على توحيد الربوبية، ضمن سلسلة أدلة على استحقاق الله وحده للألوهية</td></tr>
+    <tr><td class="term">مقصدها الأساسي</td><td class="def">إثبات أن الله وحده هو الخالق المدبِّر لنظام الكون بدقة متناهية، وأن هذا الإتقان دليل عملي على بطلان الشرك</td></tr>
+    <tr><td class="term">الدرس / الأدب المستنبط</td><td class="def">وجوب التزام حدود الله في كل جوانب الحياة (الحلال والحرام، الأخلاق، العلاقات)، باعتبار الالتزام بالحدود سنة كونية شاملة لا تقتصر على التشريع فحسب</td></tr>
+    <tr><td class="term">أثرها التربوي</td><td class="def">تعليم النفس أن الحدود والقيود الشرعية رحمة لا تضييق، وأن مجاوزتها تُحدث اضطراباً في الحياة كما يحدث الاضطراب في أي نظام كوني إذا اختل توازنه</td></tr>
+  </table>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--s7),var(--s9));">٥</div><h2>إعراب الآية</h2></div>
+  <div class="sub"><h3>إعراب: ﴿أَمَّنْ جَعَلَ الْأَرْضَ قَرَارًا وَجَعَلَ خِلَالَهَا أَنْهَارًا وَجَعَلَ لَهَا رَوَاسِيَ وَجَعَلَ بَيْنَ الْبَحْرَيْنِ حَاجِزًا ۗ أَإِلَٰهٌ مَّعَ اللَّهِ ۚ بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ﴾ (النمل: ٦١)</h3></div>
+  <div class="ib" style="background:var(--card-bg);border:2px solid var(--div);border-radius:9px;padding:10px 18px;">
+    <div class="ir"><div class="iw">أَمَّنْ</div><div class="id">«أم» حرف عطف منقطعة بمعنى «بل» الإضرابية مع همزة استفهام مقدرة، «مَنْ» اسم استفهام مبني في محل رفع مبتدأ.</div></div>
+    <div class="ir"><div class="iw">جَعَلَ الْأَرْضَ قَرَارًا</div><div class="id">«جعل» فعل ماض مبني على الفتح، فاعله ضمير مستتر تقديره «هو» يعود على الله، والجملة الفعلية في محل رفع خبر «مَن»؛ «الأرضَ» مفعول به أول منصوب، «قراراً» مفعول به ثانٍ منصوب لأن «جعل» هنا بمعنى «صيَّر» تنصب مفعولين.</div></div>
+    <div class="ir"><div class="iw">وَجَعَلَ خِلَالَهَا أَنْهَارًا</div><div class="id">الواو عاطفة، «جعل» معطوفة على ما قبلها بنفس الإعراب؛ «خلالَها» ظرف مكان منصوب متعلق بمحذوف حال من «أنهاراً»، وهو مضاف والهاء مضاف إليه؛ «أنهاراً» مفعول به منصوب.</div></div>
+    <div class="ir"><div class="iw">وَجَعَلَ لَهَا رَوَاسِيَ</div><div class="id">معطوفة بنفس الإعراب؛ «لها» جار ومجرور متعلقان بمحذوف حال من «رواسي»؛ «رواسيَ» مفعول به منصوب بفتحة مقدرة، ممنوع من الصرف لصيغة منتهى الجموع.</div></div>
+    <div class="ir"><div class="iw">وَجَعَلَ بَيْنَ الْبَحْرَيْنِ حَاجِزًا</div><div class="id">معطوفة بنفس الإعراب؛ «بين» ظرف مكان منصوب متعلق بمحذوف حال من «حاجزاً»، وهو مضاف، «البحرين» مضاف إليه مجرور بالياء لأنه مثنى؛ «حاجزاً» مفعول به منصوب.</div></div>
+    <div class="ir"><div class="iw">أَإِلَٰهٌ مَّعَ اللَّهِ</div><div class="id">الهمزة للاستفهام الإنكاري، «إلهٌ» مبتدأ مرفوع مؤخر، «مع» ظرف مكان منصوب متعلق بخبر مقدَّم محذوف، وهو مضاف، «اللهِ» مضاف إليه مجرور.</div></div>
+    <div class="ir"><div class="iw">بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ</div><div class="id">«بل» حرف إضراب انتقالي، «أكثرُ» مبتدأ مرفوع مضاف، «هم» ضمير متصل مضاف إليه؛ «لا يعلمون» فعل مضارع مرفوع بثبوت النون والواو فاعل، والجملة في محل رفع خبر المبتدأ.</div></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--s9),var(--s1));">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«مَنْ أَتْقَنَ حَاجِزَ الْبَحْرَيْنِ، أَتْقَنَ حَاجِزَ قَلْبِكَ... فَقِفْ عِنْدَ حُدُودِهِ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card c1"><div class="ct">أولاً: النظر إلى الحدود الشرعية كرحمة لا قيد</div><p>يعيد المقال تعريف علاقتنا بالحدود الشرعية: أنها كالحاجز الكوني حماية لا تضييق. <strong>التطبيق:</strong> حين تجد في نفسك ثقلاً من التزام حكم شرعي، تذكّر أنه حاجز يحفظك كما يحفظ الحاجز الكوني توازن البحرين.</p></div>
+  <div class="card c2"><div class="ct">ثانياً: الثبات وسط المخالطة دون الذوبان</div><p>يعلّمنا مثال البحرين المتجاورين دون اختلاط أن المؤمن يمكن أن يخالط الناس دون أن يفقد هويته. <strong>التطبيق:</strong> إذا اضطررت لمخالطة بيئة فيها انحراف، احرص على حاجز داخلي من التقوى يمنعك من الذوبان في محيطك دون قطيعة تامة معه.</p></div>
+  <div class="card c3"><div class="ct">ثالثاً: تأمل النظام الدقيق سبيل لليقين</div><p>يدعو المقال إلى التأمل في دقة الكون كوسيلة لتقوية الإيمان. <strong>التطبيق:</strong> خصص وقتاً للتفكر في مظاهر الدقة الكونية من حولك (نظام الفصول، دورة الماء، توازن البيئة)، فهذا التأمل يغذي اليقين القلبي بوجود الله وقدرته.</p></div>
+  <div class="card c4"><div class="ct">رابعاً: الوعي بخطورة تجاوز الحدود الشخصية</div><p>يحذّر المقال من أن اضطراب الحياة يبدأ غالباً بتجاوز حدٍّ ما، فردياً كان أو أخلاقياً. <strong>التطبيق:</strong> راجع دورياً الحدود التي وضعتها لنفسك في علاقاتك وسلوكك، وتنبّه عند أول محاولة داخلية لتبرير تجاوزها.</p></div>
+
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="rlist">
+      <li>الانتقال من الكوني إلى الأخلاقي إلى النفسي: يبني المقال بنية ثلاثية تبدأ بالظاهرة الكونية (حاجز البحرين)، ثم توسّعها استعارياً إلى الحدود الأخلاقية، ثم تختمها بالحواجز الفسيولوجية داخل جسد الإنسان، في حركة دائرية من الخارج إلى الداخل.</li>
+      <li>التكرار كأداة إقناع تراكمية: يعتمد المقال تكرار الأبنية النحوية (وحدود...، له حاجز...) وسيلة بلاغية لتكديس الأدلة قبل الوصول إلى الخلاصة، بدل الاكتفاء بذكرها دفعة واحدة.</li>
+      <li>الوصل بين الحس والمعنى: كل صورة حسية في المقال (الأنهار، الجبال، البحران) تُستثمر فوراً لحمل معنى معنوي (الرحمة، الثبات، حفظ الهوية)، فلا يبقى المقال وصفاً علمياً جافاً بل يتحول إلى تأمل روحي.</li>
+      <li>الخاتمة التطمينية: يختم المقال بربط القدرة الكونية (جاعل الحاجز بين البحرين) بالقدرة على حماية القلب من الهموم والفتن والنار، فيتحول الدليل الكوني إلى مصدر طمأنينة شخصية للقارئ.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--s1),var(--s7));">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح وأئمة التفسير في الآيات الكونية.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين الآيات الكونية الدالة على الربوبية وحاجة الإنسان المعاصر إلى فهم حكمة الحدود الشرعية في حياته.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية في تناول سنن الله في الكون والتشريع.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">الآيات الكونية</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">التزكية</span>
+        <span class="atag">التوحيد</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.7;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
