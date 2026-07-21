@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موسوعة دُرَر الحياة في ظلال القرآن — الفهرس</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&family=Scheherazade+New:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#120d09;--parch:#f4ecdb;--gold:#8f6a1a;--gold-l:#d4b25a;
+  --lapis:#1f4e6b;--agate:#7a2e28;--sage:#3f5c48;--night:#14100a;
+  --line:rgba(120,85,15,.75);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{overflow-x:hidden;scroll-behavior:smooth;}
+body{max-width:100%;overflow-x:hidden;background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.9;font-weight:500;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;}
+.hdr{background:var(--night);padding:22px 20px;text-align:center;border-bottom:3px solid var(--gold-l);}
+.hdr h1{font-family:'Scheherazade New',serif;color:#f4ecdb;font-size:1.6rem;margin-bottom:6px;}
+.hdr p{color:#d4b25a;font-size:.9rem;}
+.home-link{display:inline-block;margin-top:12px;color:#a8ccc8;font-size:.85rem;text-decoration:none;border:1px solid rgba(212,178,90,.4);padding:6px 16px;border-radius:20px;}
+.wrap{max-width:820px;margin:0 auto;padding:30px 18px 60px;}
+.intro{background:rgba(255,255,255,.6);border:1.5px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:28px;font-family:'Amiri',serif;font-size:1.05rem;text-align:center;color:#2e2210;}
+.progress-note{text-align:center;font-family:'Cairo',sans-serif;font-size:.85rem;color:var(--sage);margin-bottom:24px;background:rgba(63,92,72,.08);border:1px solid rgba(63,92,72,.25);border-radius:20px;padding:8px 16px;display:inline-block;}
+.progress-wrap{text-align:center;}
+.surah-item{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px;display:flex;align-items:center;gap:16px;box-shadow:0 2px 10px rgba(18,13,9,.06);flex-wrap:wrap;}
+.surah-num{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-weight:700;font-size:1.1rem;flex-shrink:0;}
+.surah-name{font-family:'Scheherazade New',serif;font-size:1.25rem;font-weight:700;color:var(--ink);flex:1;min-width:120px;}
+.surah-btns{display:flex;gap:8px;flex-wrap:wrap;}
+.sbtn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.85rem;font-weight:600;text-decoration:none;transition:transform .2s;white-space:nowrap;}
+.sbtn:hover{transform:translateY(-2px);}
+.sbtn.read{background:var(--lapis);color:#fff;}
+.sbtn.dl{background:var(--agate);color:#fff;}
+.surah-item.pending{opacity:.45;background:rgba(255,255,255,.3);}
+.surah-item.pending .surah-num{background:#cbb98a;}
+.surah-item.pending .surah-name{color:#7a6a4a;}
+.pending-tag{font-size:.72rem;color:#8a6a3a;background:rgba(143,106,26,.12);padding:3px 10px;border-radius:12px;}
+footer{text-align:center;padding:24px;color:#7a6a4a;font-size:.82rem;}
+@media(max-width:480px){.surah-item{padding:13px 15px;}.surah-name{font-size:1.1rem;}.sbtn{padding:7px 13px;font-size:.8rem;}}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <h1>مَوْسُوعَةُ دُرَرِ الْحَيَاةِ فِي ظِلَالِ الْقُرْآنِ</h1>
+  <p>تأليف الشيخ علي خليل عباس السلجوقي التركماني الليلاني</p>
+  <a class="home-link" href="../index.html">⌂ العودة إلى الفهرس الرئيسي</a>
+</div>
+
+<div class="wrap">
+  <div class="intro">
+    مَوْسُوعَةٌ تَفْسِيرِيَّةٌ شَامِلَةٌ، مُرَتَّبَةٌ بِحَسَبِ تَرْتِيبِ سُوَرِ الْقُرْآنِ الْكَرِيمِ، تُضَافُ أَجْزَاؤُهَا تِبَاعًا بِإِذْنِ اللهِ.
+  </div>
+
+  <div class="progress-wrap">
+    <span class="progress-note" id="progressNote">تمّ رفع ٥ سور حتى الآن، والباقي قيد الإضافة تباعاً</span>
+  </div>
+
+  <div id="surahList" style="margin-top:24px;">
+    <!-- سيُملأ آلياً بالجافاسكربت أدناه حسب ترتيب المصحف -->
+  </div>
+</div>
+
+<footer>موسوعة السلجوقي التدبرية — نشر علمي لخدمة القرآن الكريم وأهله</footer>
+
+<script>
+// كل سور القرآن الكريم بترتيبها، مع تحديد المرفوع فعلياً
+var allSurahs = [
+  [1,"الفاتحة"],[2,"البقرة"],[3,"آل-عمران"],[4,"النساء"],[5,"المائدة"],[6,"الأنعام"],[7,"الأعراف"],[8,"الأنفال"],[9,"التوبة"],[10,"يونس"],
+  [11,"هود"],[12,"يوسف"],[13,"الرعد"],[14,"إبراهيم"],[15,"الحجر"],[16,"النحل"],[17,"الإسراء"],[18,"الكهف"],[19,"مريم"],[20,"طه"],
+  [21,"الأنبياء"],[22,"الحج"],[23,"المؤمنون"],[24,"النور"],[25,"الفرقان"],[26,"الشعراء"],[27,"النمل"],[28,"القصص"],[29,"العنكبوت"],[30,"الروم"],
+  [31,"لقمان"],[32,"السجدة"],[33,"الأحزاب"],[34,"سبأ"],[35,"فاطر"],[36,"يس"],[37,"الصافات"],[38,"ص"],[39,"الزمر"],[40,"غافر"],
+  [41,"فصلت"],[42,"الشورى"],[43,"الزخرف"],[44,"الدخان"],[45,"الجاثية"],[46,"الأحقاف"],[47,"محمد"],[48,"الفتح"],[49,"الحجرات"],[50,"ق"],
+  [51,"الذاريات"],[52,"الطور"],[53,"النجم"],[54,"القمر"],[55,"الرحمن"],[56,"الواقعة"],[57,"الحديد"],[58,"المجادلة"],[59,"الحشر"],[60,"الممتحنة"],
+  [61,"الصف"],[62,"الجمعة"],[63,"المنافقون"],[64,"التغابن"],[65,"الطلاق"],[66,"التحريم"],[67,"الملك"],[68,"القلم"],[69,"الحاقة"],[70,"المعارج"],
+  [71,"نوح"],[72,"الجن"],[73,"المزمل"],[74,"المدثر"],[75,"القيامة"],[76,"الإنسان"],[77,"المرسلات"],[78,"النبأ"],[79,"النازعات"],[80,"عبس"],
+  [81,"التكوير"],[82,"الانفطار"],[83,"المطففين"],[84,"الانشقاق"],[85,"البروج"],[86,"الطارق"],[87,"الأعلى"],[88,"الغاشية"],[89,"الفجر"],[90,"البلد"],
+  [91,"الشمس"],[92,"الليل"],[93,"الضحى"],[94,"الشرح"],[95,"التين"],[96,"العلق"],[97,"القدر"],[98,"البينة"],[99,"الزلزلة"],[100,"العاديات"],
+  [101,"القارعة"],[102,"التكاثر"],[103,"العصر"],[104,"الهمزة"],[105,"الفيل"],[106,"قريش"],[107,"الماعون"],[108,"الكوثر"],[109,"الكافرون"],[110,"النصر"],
+  [111,"المسد"],[112,"الإخلاص"],[113,"الفلق"],[114,"الناس"]
+];
+
+// أسماء الملفات المرفوعة فعلياً حتى الآن (حدِّث هذه القائمة كلما رفعت جزءاً جديداً)
+var uploaded = [14, 55, 33, 46, 54];
+
+var container = document.getElementById('surahList');
+var html = '';
+allSurahs.forEach(function(s){
+  var num = s[0], name = s[1];
+  var numAr = num.toLocaleString('ar-EG');
+  var fname = num + '-' + name + '.pdf';
+  var isUp = uploaded.indexOf(num) > -1;
+  if(isUp){
+    html += '<div class="surah-item">' +
+      '<div class="surah-num">' + numAr + '</div>' +
+      '<div class="surah-name">سورة ' + name + '</div>' +
+      '<div class="surah-btns">' +
+        '<a class="sbtn read" href="' + encodeURI(fname) + '" target="_blank" rel="noopener">📖 قراءة</a>' +
+        '<a class="sbtn dl" href="' + encodeURI(fname) + '" download>⬇ تحميل</a>' +
+      '</div>' +
+    '</div>';
+  }else{
+    html += '<div class="surah-item pending">' +
+      '<div class="surah-num">' + numAr + '</div>' +
+      '<div class="surah-name">سورة ' + name + '</div>' +
+      '<div class="pending-tag">قيد الإضافة</div>' +
+    '</div>';
+  }
+});
+container.innerHTML = html;
+
+var uploadedCount = uploaded.length.toLocaleString('ar-EG');
+document.getElementById('progressNote').textContent = 'تمّ رفع ' + uploadedCount + ' سور حتى الآن، والباقي قيد الإضافة تباعاً';
+</script>
+</body>
+</html>
