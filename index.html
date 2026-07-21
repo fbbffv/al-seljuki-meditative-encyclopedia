@@ -121,6 +121,14 @@ body{
 .search-box input:focus{box-shadow:0 0 0 4px rgba(176,141,52,.16);}
 .search-box .s-i{position:absolute;top:50%;right:18px;transform:translateY(-50%);color:var(--gold);font-size:1.15rem;}
 .search-note{text-align:center;color:var(--lapis);font-size:.92rem;margin-top:16px;display:none;}
+.search-result-card{background:rgba(255,255,255,.9);border:1.5px solid var(--line);border-radius:12px;padding:8px 16px;font-family:'Amiri',serif;font-size:.85rem;font-weight:600;color:var(--ink);text-decoration:none;transition:all .2s;box-shadow:0 1px 4px rgba(26,20,16,.08);}
+.search-result-card:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(26,20,16,.15);}
+.search-result-card.c-lapis{border-color:var(--lapis);}
+.search-result-card.c-agate{border-color:var(--agate);}
+.search-result-card.c-sage{border-color:var(--sage);}
+.search-result-card.c-gold{border-color:var(--gold);}
+.search-result-card.c-teal{border-color:#1f6b6b;}
+.search-result-card.c-plum{border-color:#6b1f5c;}
 
 /* ===== شارة إشعار: مقالات جديدة متاحة ===== */
 .new-badge{position:fixed;top:16px;left:16px;z-index:900;display:none;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold),var(--gold-l,#e8c878));color:#1a1206;padding:10px 18px;border-radius:30px;box-shadow:0 6px 22px rgba(0,0,0,.35);cursor:pointer;font-family:'Amiri',serif;font-size:.95rem;font-weight:700;border:none;animation:badgePulse 2.2s ease-in-out infinite;}
@@ -470,6 +478,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <input type="text" id="searchInput" placeholder="ابحث بعنوان، أو آية، أو سورة، أو موضوع..." onkeyup="filterAll()" autocomplete="off" autocorrect="off" spellcheck="false">
   </div>
   <div class="search-note" id="searchNote"></div>
+  <div id="searchResults" style="display:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;"></div>
 </div>
 
 <!-- أحدث ما أُضيف -->
@@ -1083,31 +1092,75 @@ function setMode(m){
     document.getElementById('m'+x).classList.toggle('on', x.toLowerCase()===m);
   });
 }
-// البحث الشامل (بطاقات الأحدث + روابط البوابات)
+// إزالة التشكيل العربي (الحركات) لجعل البحث متسامحاً
+function normalizeArabic(s){
+  if(!s) return '';
+  return s
+    .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g,'') // الحركات والتنوين والسكون والشدة
+    .replace(/[إأآا]/g,'ا')
+    .replace(/ى/g,'ي')
+    .replace(/ة/g,'ه')
+    .replace(/ؤ/g,'و')
+    .replace(/ئ/g,'ي')
+    .toLowerCase();
+}
+// البحث الشامل (نتائج مسطّحة تحت شريط البحث + بطاقات الأحدث)
 function filterAll(){
-  var q=document.getElementById('searchInput').value.trim().toLowerCase();
+  var raw=document.getElementById('searchInput').value.trim();
+  var q=normalizeArabic(raw);
   var note=document.getElementById('searchNote');
-  var gates=document.getElementById('gatesSec');
+  var resultsBox=document.getElementById('searchResults');
+  var gatesSec=document.getElementById('gatesSec');
   var latest=document.getElementById('latestSec');
+
   if(q===''){
-    document.querySelectorAll('.b-link').forEach(function(l){l.style.display='';});
+    document.querySelectorAll('.b-link,.ayah-link,.bab-link').forEach(function(l){l.style.display='';});
     document.querySelectorAll('.lc').forEach(function(c){c.style.display='';});
     document.querySelectorAll('.gate').forEach(function(g){g.classList.remove('open');});
+    document.querySelectorAll('.branch').forEach(function(b){b.classList.remove('open');});
+    document.querySelectorAll('.surah-group,.bab-group').forEach(function(g){g.classList.remove('open');});
     note.style.display='none';
+    resultsBox.style.display='none';
+    resultsBox.innerHTML='';
+    if(gatesSec) gatesSec.style.display='';
     return;
   }
-  var count=0;
-  document.querySelectorAll('.b-link').forEach(function(l){
-    var m=l.textContent.toLowerCase().indexOf(q)>-1;
-    l.style.display=m?'':'none'; if(m)count++;
+
+  var matches=[];
+  document.querySelectorAll('.ayah-link,.bab-link,.b-link').forEach(function(l){
+    var txt=normalizeArabic(l.textContent);
+    if(txt.indexOf(q)>-1){
+      matches.push({href:l.getAttribute('href'), text:l.textContent.trim(), cls:l.className});
+    }
   });
+
+  // إزالة التكرارات (نفس الرابط قد يظهر أكثر من مرة)
+  var seen={};
+  var unique=[];
+  matches.forEach(function(m){
+    if(!seen[m.href]){ seen[m.href]=true; unique.push(m); }
+  });
+
   document.querySelectorAll('.lc').forEach(function(c){
-    c.style.display=c.innerText.toLowerCase().indexOf(q)>-1?'':'none';
+    c.style.display=normalizeArabic(c.innerText).indexOf(q)>-1?'':'none';
   });
-  // نفتح البوابات لإظهار النتائج
-  document.querySelectorAll('.gate').forEach(function(g){g.classList.add('open');});
+
+  if(gatesSec) gatesSec.style.display='none';
   note.style.display='block';
-  note.textContent=count>0?('عُثر على '+count+' مقالاً مطابقاً'):'لا نتائج مطابقة — جرّب كلمة أخرى';
+
+  if(unique.length>0){
+    note.textContent='عُثر على '+unique.length+' مقالاً مطابقاً';
+    resultsBox.style.display='flex';
+    resultsBox.innerHTML=unique.map(function(m){
+      var colorClass=m.cls.match(/c-\w+/);
+      var cc=colorClass?colorClass[0]:'c-gold';
+      return '<a href="'+m.href+'" class="search-result-card '+cc+'">'+m.text+'</a>';
+    }).join('');
+  }else{
+    note.textContent='لا نتائج مطابقة — جرّب كلمة أخرى';
+    resultsBox.style.display='none';
+    resultsBox.innerHTML='';
+  }
 }
 // شريط التقدم العلوي
 window.addEventListener('scroll',function(){
