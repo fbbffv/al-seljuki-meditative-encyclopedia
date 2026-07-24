@@ -14,7 +14,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html{overflow-x:hidden;scroll-behavior:smooth;}
 body{max-width:100%;overflow-x:hidden;background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.9;font-weight:500;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;}
-.hdr{background:var(--night);padding:22px 20px;text-align:center;border-bottom:3px solid var(--gold-l);}
+.hdr{background:var(--night);padding:22px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;}
 .hdr h1{font-family:'Scheherazade New',serif;color:#f4ecdb;font-size:1.6rem;margin-bottom:6px;}
 .hdr p{color:#d4b25a;font-size:.9rem;}
 .home-link{display:inline-block;margin-top:12px;color:#a8ccc8;font-size:.85rem;text-decoration:none;border:1px solid rgba(212,178,90,.4);padding:6px 16px;border-radius:20px;}
@@ -79,7 +79,7 @@ var allSurahs = [
 ];
 
 // أسماء الملفات المرفوعة فعلياً حتى الآن (حدِّث هذه القائمة كلما رفعت جزءاً جديداً)
-var uploaded = [14, 55, 33, 46, 54];
+var uploaded = [3, 6, 8, 9, 13, 14, 15, 33, 46, 54, 55];
 
 var container = document.getElementById('surahList');
 var html = '';
