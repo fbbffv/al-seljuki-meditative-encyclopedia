@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الَّذِي بَارَكْنَا حَوْلَهُ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f1ec;--gold-m:#d9a62e;
+  --red:#e0243f;--redl:#ff92a8;--redd:#1a0508;
+  --orange:#e0761e;--orangel:#ffbf82;--oranged:#1e1204;
+  --yellow:#c99418;--yellowl:#ffe08a;--yellowd:#201804;
+  --green:#1fa356;--greenl:#8fe8ae;--greend:#04200f;
+  --teal:#16a0a0;--teall:#82eeee;--teald:#042020;
+  --blue:#2864d8;--bluel:#96bcff;--blued:#050e20;
+  --violet:#7838d8;--violetl:#cfaaff;--violetd:#130520;
+  --magenta:#c02aa8;--magental:#f4aae8;--magentad:#200518;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:#150f0c;font-family:'Noto Naskh Arabic',serif;line-height:1.95;font-weight:500;overflow-x:hidden;
+background-image:radial-gradient(ellipse at 10% 0%,rgba(40,100,216,.08) 0%,transparent 45%),radial-gradient(ellipse at 90% 30%,rgba(217,166,46,.07) 0%,transparent 45%),radial-gradient(ellipse at 50% 100%,rgba(31,163,86,.06) 0%,transparent 45%);}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));z-index:400;box-shadow:0 0 10px rgba(0,0,0,.4);}
+.hdr{background:#08060c;border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.6);}
+.hdr-i{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:0 24px;max-width:1400px;margin:0 auto;min-height:60px;gap:12px;}
+.logo{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.02rem;flex-shrink:0;background:linear-gradient(90deg,var(--redl),var(--yellowl),var(--teall),var(--bluel));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.htitle{font-family:'Scheherazade New',serif;font-weight:600;color:#fff;font-size:.86rem;text-align:center;flex:1;min-width:120px;text-shadow:0 1px 3px rgba(0,0,0,.6);}
+.tbtn{background:linear-gradient(90deg,var(--violet),var(--magenta));color:#fff;border:none;padding:8px 16px;border-radius:5px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-weight:700;font-size:.84rem;white-space:nowrap;box-shadow:0 2px 10px rgba(192,42,168,.45);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 60px);}
+.sb{width:290px;flex-shrink:0;background:#06050a;position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;overflow-x:hidden;border-left:2px solid rgba(255,255,255,.14);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:60px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.02rem;padding:18px;border-bottom:1px solid rgba(255,255,255,.16);background:linear-gradient(90deg,var(--redl),var(--orangel),var(--yellowl),var(--greenl),var(--teall),var(--bluel),var(--violetl));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.toc-s{color:#a89fbb;font-size:.66rem;letter-spacing:.11em;padding:12px 18px 4px;font-weight:700;}
+.toc-a{display:block;color:#d9d4e2;text-decoration:none;padding:8px 18px 8px 26px;font-size:.83rem;font-weight:600;border-right:4px solid transparent;transition:all .2s;word-break:break-word;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(255,255,255,.09);}
+a.toc-a[href="#article"].active,a.toc-a[href="#article"]:hover{border-right-color:var(--blue)!important;}
+a.toc-a[href="#s1"].active,a.toc-a[href="#s1"]:hover{border-right-color:var(--orange)!important;}
+a.toc-a[href="#s2"].active,a.toc-a[href="#s2"]:hover{border-right-color:var(--yellow)!important;}
+a.toc-a[href="#s3"].active,a.toc-a[href="#s3"]:hover{border-right-color:var(--green)!important;}
+a.toc-a[href="#s4"].active,a.toc-a[href="#s4"]:hover{border-right-color:var(--teal)!important;}
+a.toc-a[href="#s5"].active,a.toc-a[href="#s5"]:hover{border-right-color:var(--red)!important;}
+a.toc-a[href="#s6"].active,a.toc-a[href="#s6"]:hover{border-right-color:var(--violet)!important;}
+a.toc-a[href="#author"].active,a.toc-a[href="#author"]:hover{border-right-color:var(--magenta)!important;}
+.main{flex:1;min-width:0;padding:52px 64px;overflow-x:hidden;}
+
+.hero{text-align:center;margin-bottom:52px;padding:46px 28px;border-radius:20px;background:linear-gradient(160deg,var(--blued) 0%,color-mix(in srgb, var(--blue) 30%, var(--blued)) 100%);box-shadow:0 10px 34px rgba(0,0,0,.35),inset 0 0 0 2px rgba(255,255,255,.1);position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));}
+.horn{font-size:1.4rem;display:block;margin-bottom:14px;opacity:.9;letter-spacing:.35em;color:var(--bluel);}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--teal),var(--blue));color:#fff;font-weight:700;font-size:.72rem;padding:5px 16px;border-radius:20px;margin-bottom:20px;box-shadow:0 3px 12px rgba(40,100,216,.45);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:1.85rem;font-weight:700;color:#fff;line-height:1.65;margin-bottom:14px;text-shadow:0 2px 10px rgba(0,0,0,.5);word-wrap:break-word;}
+.hmeta{color:var(--bluel);font-size:.9rem;font-weight:600;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin-top:14px;}
+.hmeta .dot{width:5px;height:5px;background:var(--gold-m);border-radius:50%;flex-shrink:0;}
+
+.vb{background:#08060c;border:2px solid rgba(255,255,255,.18);border-radius:12px;padding:32px 34px;margin:32px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.35);}
+.vb::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));}
+.vt{font-family:'Scheherazade New',serif;font-weight:600;font-size:1.34rem;color:#fdf8ee;line-height:2.15;position:relative;z-index:1;text-shadow:0 1px 4px rgba(0,0,0,.5);word-wrap:break-word;}
+.vt.sm{font-size:1.18rem;}
+.vr{color:var(--gold-m);font-weight:700;font-size:.86rem;margin-top:14px;position:relative;z-index:1;}
+
+#article{--sc:var(--blue);--scl:var(--bluel);--scd:var(--blued);}
+#s1{--sc:var(--orange);--scl:var(--orangel);--scd:var(--oranged);}
+#s2{--sc:var(--yellow);--scl:var(--yellowl);--scd:var(--yellowd);}
+#s3{--sc:var(--green);--scl:var(--greenl);--scd:var(--greend);}
+#s4{--sc:var(--teal);--scl:var(--teall);--scd:var(--teald);}
+#s5{--sc:var(--red);--scl:var(--redl);--scd:var(--redd);}
+#s6{--sc:var(--violet);--scl:var(--violetl);--scd:var(--violetd);}
+
+#article,#s1,#s2,#s3,#s4,#s5,#s6{background:linear-gradient(160deg,var(--scd) 0%,color-mix(in srgb, var(--sc) 34%, var(--scd)) 100%);border-radius:20px;padding:38px 36px 48px;box-shadow:0 10px 34px rgba(0,0,0,.32),inset 0 0 0 2px rgba(255,255,255,.1);position:relative;overflow:hidden;}
+#article::before,#s1::before,#s2::before,#s3::before,#s4::before,#s5::before,#s6::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--scl),var(--sc));}
+
+.sec{margin-top:58px;padding-top:0;scroll-margin-top:78px;}
+.sec-h{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:26px;position:relative;z-index:1;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-weight:800;font-size:1.05rem;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.35);}
+#article .sec-n,#s1 .sec-n,#s2 .sec-n,#s3 .sec-n,#s4 .sec-n,#s5 .sec-n,#s6 .sec-n{background:linear-gradient(135deg,var(--scl),var(--sc));}
+.sec h2{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.55rem;color:#fff;flex:1;min-width:150px;text-shadow:0 2px 8px rgba(0,0,0,.35);}
+.sub{margin-top:36px;margin-bottom:18px;position:relative;z-index:1;}
+.sub h3{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.24rem;margin-bottom:14px;padding-right:16px;color:#fff;}
+#article .sub h3,#s1 .sub h3,#s2 .sub h3,#s3 .sub h3,#s4 .sub h3,#s5 .sub h3,#s6 .sub h3{border-right:4px solid var(--scl);}
+
+.abody{font-size:1.08rem;line-height:2.1;color:#f6f0e4;font-weight:500;position:relative;z-index:1;}
+.abody p{margin-bottom:1.55em;text-align:justify;}
+.abody p:first-child::first-letter{font-size:3.1em;font-family:'Scheherazade New',serif;color:var(--gold-m);float:right;line-height:.8;margin-left:9px;text-shadow:0 2px 8px rgba(217,166,46,.55);}
+.hl{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.14rem;color:#f0cd6e;text-align:center;padding:13px 18px;margin:8px 0;border-right:5px solid var(--gold-m);background:rgba(217,166,46,.12);border-radius:0 8px 8px 0;}
+.scene-list{list-style:none;padding:0;margin:10px 0 20px;position:relative;z-index:1;}
+.scene-list li{font-family:'Scheherazade New',serif;font-weight:600;font-size:1.08rem;color:#ede2c8;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.18);text-align:center;}
+.scene-list li:last-child{border-bottom:none;}
+#article .scene-list li,#s1 .scene-list li,#s2 .scene-list li,#s3 .scene-list li,#s4 .scene-list li,#s5 .scene-list li,#s6 .scene-list li{color:var(--scl);}
+.sig{text-align:center;color:var(--gold-m);font-weight:700;font-size:1rem;margin:14px 0;font-family:'Scheherazade New',serif;position:relative;z-index:1;}
+
+.card{border-radius:11px;padding:20px 24px;margin:18px 0;box-shadow:0 4px 16px rgba(0,0,0,.18);position:relative;z-index:1;}
+#article .card,#s1 .card,#s2 .card,#s3 .card,#s4 .card,#s5 .card,#s6 .card{background:color-mix(in srgb, var(--sc) 22%, var(--scd));border:2px solid color-mix(in srgb, var(--scl) 50%, transparent);}
+#article .card.t,#s1 .card.t,#s2 .card.t,#s3 .card.t,#s4 .card.t,#s5 .card.t,#s6 .card.t{border-right:5px solid var(--scl);}
+#article .card.t2,#s1 .card.t2,#s2 .card.t2,#s3 .card.t2,#s4 .card.t2,#s5 .card.t2,#s6 .card.t2{border-right:5px solid var(--sc);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.14rem;font-weight:700;margin-bottom:11px;}
+#article .ct,#s1 .ct,#s2 .ct,#s3 .ct,#s4 .ct,#s5 .ct,#s6 .ct{color:var(--scl);}
+.card p{font-size:.98rem;line-height:1.95;margin-top:6px;font-weight:500;}
+#article .card p,#s1 .card p,#s2 .card p,#s3 .card p,#s4 .card p,#s5 .card p,#s6 .card p{color:#f5f1f8;}
+
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.94rem;border-radius:9px;overflow:hidden;position:relative;z-index:1;table-layout:fixed;}
+#article .tbl,#s1 .tbl,#s2 .tbl,#s3 .tbl,#s4 .tbl,#s5 .tbl,#s6 .tbl{background:color-mix(in srgb, var(--sc) 17%, var(--scd));}
+.tbl th{color:#fff;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-weight:700;font-size:.96rem;word-break:break-word;}
+#article .tbl th,#s1 .tbl th,#s2 .tbl th,#s3 .tbl th,#s4 .tbl th,#s5 .tbl th,#s6 .tbl th{background:var(--sc);}
+.tbl td{padding:11px 14px;vertical-align:top;line-height:1.85;font-weight:500;word-break:break-word;overflow-wrap:break-word;}
+#article .tbl td,#s1 .tbl td,#s2 .tbl td,#s3 .tbl td,#s4 .tbl td,#s5 .tbl td,#s6 .tbl td{color:#f5f1f8;border-bottom:1px solid color-mix(in srgb, var(--scl) 30%, transparent);}
+.term{font-family:'Scheherazade New',serif;font-size:1.03rem;font-weight:700;}
+#article .term,#s1 .term,#s2 .term,#s3 .term,#s4 .term,#s5 .term,#s6 .term{color:var(--scl);}
+.def{font-size:.9rem;font-weight:500;}
+#article .def,#s1 .def,#s2 .def,#s3 .def,#s4 .def,#s5 .def,#s6 .def{color:#ddd8e8;}
+
+.ib{border-radius:9px;padding:16px 18px;margin:12px 0;position:relative;z-index:1;}
+#article .ib,#s1 .ib,#s2 .ib,#s3 .ib,#s4 .ib,#s5 .ib,#s6 .ib{background:color-mix(in srgb, var(--sc) 20%, var(--scd));}
+.ir{display:flex;flex-wrap:wrap;gap:12px;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.18);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.14rem;font-weight:800;flex-shrink:0;word-break:break-word;}
+#article .iw,#s1 .iw,#s2 .iw,#s3 .iw,#s4 .iw,#s5 .iw,#s6 .iw{color:var(--scl);}
+.id{font-size:.92rem;flex:1;min-width:150px;line-height:1.9;font-weight:500;word-break:break-word;}
+#article .id,#s1 .id,#s2 .id,#s3 .id,#s4 .id,#s5 .id,#s6 .id{color:#ece7f4;}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0;position:relative;z-index:1;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:18px 0;position:relative;z-index:1;}
+.mc{border-radius:9px;padding:17px 18px;box-shadow:0 3px 12px rgba(0,0,0,.18);min-width:0;}
+#article .mc,#s1 .mc,#s2 .mc,#s3 .mc,#s4 .mc,#s5 .mc,#s6 .mc{background:color-mix(in srgb, var(--sc) 22%, var(--scd));border:2px solid color-mix(in srgb, var(--scl) 45%, transparent);}
+.mc .ml{font-size:.72rem;margin-bottom:5px;display:block;font-weight:800;letter-spacing:.03em;}
+#article .mc .ml,#s1 .mc .ml,#s2 .mc .ml,#s3 .mc .ml,#s4 .mc .ml,#s5 .mc .ml,#s6 .mc .ml{color:var(--scl);}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.03rem;font-weight:800;margin-bottom:5px;word-break:break-word;}
+#article .mc .mv,#s1 .mc .mv,#s2 .mc .mv,#s3 .mc .mv,#s4 .mc .mv,#s5 .mc .mv,#s6 .mc .mv{color:#fff;}
+.mc .md{font-size:.83rem;line-height:1.65;font-weight:500;}
+#article .mc .md,#s1 .mc .md,#s2 .mc .md,#s3 .mc .md,#s4 .mc .md,#s5 .mc .md,#s6 .mc .md{color:#ddd8e8;}
+
+.cl{list-style:none;padding:0;margin:12px 0;position:relative;z-index:1;}
+.cl li{padding:9px 26px 9px 0;position:relative;border-bottom:1px dashed rgba(255,255,255,.18);line-height:1.9;font-weight:500;word-break:break-word;}
+#article .cl li,#s1 .cl li,#s2 .cl li,#s3 .cl li,#s4 .cl li,#s5 .cl li,#s6 .cl li{color:#f5f1f8;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;font-size:.9em;top:12px;font-weight:900;}
+#article .cl li::before,#s1 .cl li::before,#s2 .cl li::before,#s3 .cl li::before,#s4 .cl li::before,#s5 .cl li::before,#s6 .cl li::before{color:var(--scl);}
+
+.cb{border-radius:11px;padding:20px 24px;margin:18px 0;position:relative;z-index:1;}
+#article .cb,#s1 .cb,#s2 .cb,#s3 .cb,#s4 .cb,#s5 .cb,#s6 .cb{background:linear-gradient(135deg,var(--scd),color-mix(in srgb, var(--sc) 42%, var(--scd)));border:2px solid color-mix(in srgb, var(--scl) 45%, transparent);}
+.cb .bt{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.06rem;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.18);}
+#article .cb .bt,#s1 .cb .bt,#s2 .cb .bt,#s3 .cb .bt,#s4 .cb .bt,#s5 .cb .bt,#s6 .cb .bt{color:var(--scl);}
+.ci{padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.14);font-size:.9rem;line-height:1.85;}
+#article .ci,#s1 .ci,#s2 .ci,#s3 .ci,#s4 .ci,#s5 .ci,#s6 .ci{color:#ece7f4;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;font-size:.99rem;display:block;margin-bottom:3px;word-break:break-word;}
+#article .ci .vi,#s1 .ci .vi,#s2 .ci .vi,#s3 .ci .vi,#s4 .ci .vi,#s5 .ci .vi,#s6 .ci .vi{color:#fff;}
+.ci .vs{font-size:.76rem;opacity:.95;}
+#article .ci .vs,#s1 .ci .vs,#s2 .ci .vs,#s3 .ci .vs,#s4 .ci .vs,#s5 .ci .vs,#s6 .ci .vs{color:var(--scl);}
+.vrd{border-radius:8px;padding:18px 20px;margin:14px 0;font-size:.92rem;line-height:1.9;position:relative;z-index:1;}
+#article .vrd,#s1 .vrd,#s2 .vrd,#s3 .vrd,#s4 .vrd,#s5 .vrd,#s6 .vrd{background:linear-gradient(135deg,var(--scd),color-mix(in srgb, var(--sc) 27%, var(--scd)));border:2px solid color-mix(in srgb, var(--scl) 40%, transparent);color:#ece7f4;}
+.vrd strong{color:#fff;}
+
+.src{background:linear-gradient(135deg,#2e1f06,#40290a);border:2px solid #d9a62e;border-radius:9px;padding:15px 18px;margin:14px 0;font-size:.88rem;color:#f9e8bb;line-height:1.9;font-weight:500;box-shadow:0 4px 14px rgba(0,0,0,.25);position:relative;z-index:1;word-break:break-word;}
+.src strong{color:#fff5da;}
+.grade{display:inline-block;font-size:.66rem;padding:3px 10px;border-radius:4px;font-weight:800;color:#fff;margin-left:6px;}
+.grade.sahih{background:#1e8a4c;}
+
+.pq{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.34rem;color:#fff;text-align:center;padding:28px 32px;margin:40px 0;border-radius:16px;background:linear-gradient(135deg,var(--violetd),color-mix(in srgb, var(--violet) 37%, var(--violetd)));border:2px solid rgba(207,170,255,.45);box-shadow:0 10px 30px rgba(0,0,0,.3);position:relative;word-wrap:break-word;}
+.pq::before{content:'❝';position:absolute;top:6px;right:22px;font-size:2.6rem;color:var(--violetl);opacity:.4;}
+.pq small{display:block;margin-top:14px;font-size:.58em;color:var(--violetl);font-weight:600;}
+
+.orn{text-align:center;font-size:1.2rem;margin:48px 0;letter-spacing:.35em;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.9;font-weight:700;}
+
+.asec{background:linear-gradient(135deg,var(--magentad),color-mix(in srgb, var(--magenta) 34%, var(--magentad)));border:2px solid rgba(244,170,232,.4);border-radius:16px;padding:36px 36px;margin:60px 0 38px;display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;box-shadow:0 10px 30px rgba(0,0,0,.32);position:relative;overflow:hidden;}
+.asec::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet),var(--magenta));}
+.ava{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--magental),var(--magenta));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 6px 20px rgba(192,42,168,.45);}
+.ai{flex:1;min-width:200px;}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff;font-size:1.32rem;margin-bottom:5px;text-shadow:0 2px 6px rgba(0,0,0,.35);word-break:break-word;}
+.ai .at{color:var(--magental);font-size:.86rem;margin-bottom:15px;font-weight:600;}
+.ai p{color:#f5e9f2;font-size:.91rem;line-height:1.9;margin-bottom:9px;}
+.ai p strong{color:var(--magental);}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:15px 0;}
+.ami{background:rgba(255,255,255,.1);border:1px solid rgba(244,170,232,.35);border-radius:6px;padding:11px 13px;min-width:0;}
+.ami .aml{color:var(--magental);font-size:.7rem;margin-bottom:3px;display:block;font-weight:700;}
+.ami .amv{color:#fff;font-size:.88rem;font-family:'Scheherazade New',serif;font-weight:700;word-break:break-word;}
+.atag{display:inline-block;background:rgba(255,255,255,.12);color:var(--magental);font-size:.73rem;font-weight:700;padding:4px 12px;border-radius:14px;margin:3px;border:1px solid rgba(244,170,232,.4);}
+
+footer{background:#08060c;color:#a99fbf;text-align:center;padding:32px 20px;font-size:.85rem;border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--teal),var(--blue),var(--violet)) 1;margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-weight:700;font-size:1.04rem;margin-bottom:8px;background:linear-gradient(90deg,var(--redl),var(--yellowl),var(--teall),var(--bluel));-webkit-background-clip:text;background-clip:text;color:transparent;}
+
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:60px;width:280px;height:calc(100vh - 60px);overflow-y:auto;}.main{padding:30px 20px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.5rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 12px;}.vt{font-size:1.05rem;}.hero{padding:28px 16px;}.hero h1{font-size:1.22rem;}.hdr-i{padding:0 12px;}.logo{display:none;}#article,#s1,#s2,#s3,#s4,#s5,#s6{padding:24px 16px 32px;border-radius:14px;}.iw{min-width:0;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ السَّلْجُوقِي</div>
+    <div class="htitle">الَّذِي بَارَكْنَا حَوْلَهُ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٤. نوع الآية والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب الآية</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">🕌 🌈 🕌</span>
+  <div class="hcat">تدبر قرآني · الإسراء ١ · مكية · بركة الأقصى وسنن التمكين</div>
+  <h1>﴿الَّذِي بَارَكْنَا حَوْلَهُ﴾...<br>حِينَ جَعَلَ اللهُ بَرَكَةَ الْأَرْضِ تَدُورُ حَوْلَ الْأَقْصَى</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>الإسراء: ١</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى الَّذِي بَارَكْنَا حَوْلَهُ لِنُرِيَهُ مِنْ آيَاتِنَا ۚ إِنَّهُ هُوَ السَّمِيعُ الْبَصِيرُ﴾</div>
+    <div class="vr">سورة الإسراء (١٧)، الآية ١، مكية</div>
+  </div>
+
+  <div class="abody">
+    <p>لَيْسَتْ كَلِمَاتُ الْقُرْآنِ أَلْفَاظًا تُتْلَى فَحَسْبُ، بَلْ هِيَ عَوَالِمُ مِنَ الْهِدَايَةِ، وَبِحَارٌ مِنَ الْأَسْرَارِ، وَآفَاقٌ تَمْتَدُّ عَبْرَ الزَّمَانِ وَالْمَكَانِ. فَإِذَا وَقَفَ الْقَلْبُ عِنْدَ قَوْلِهِ تَعَالَى: ﴿الَّذِي بَارَكْنَا حَوْلَهُ﴾ شَعَرَ أَنَّ اللهَ سُبْحَانَهُ يَلْفِتُ أَنْظَارَ الْمُؤْمِنِينَ إِلَى حَقِيقَةٍ عَظِيمَةٍ، وَأَنَّ هَذِهِ الْكَلِمَاتِ الْقَلِيلَةَ تَحْمِلُ مِنَ الدَّلَالَاتِ مَا تَعْجَزُ عَنْهُ الْمُجَلَّدَاتُ.</p>
+
+    <p>إِنَّهَا لَيْسَتْ بَرَكَةً عَابِرَةً، وَلَا وَصْفًا تَارِيخِيًّا انْقَضَى، وَإِنَّمَا شَهَادَةٌ رَبَّانِيَّةٌ بَاقِيَةٌ مَا بَقِيَ الْقُرْآنُ، تَتَرَدَّدُ فِي الْأَرْضِ كُلَّمَا تُلِيَتْ هَذِهِ الْآيَةُ، لِتُخْبِرَ الْبَشَرِيَّةَ أَنَّ هُنَاكَ بُقْعَةً اخْتَارَهَا اللهُ، وَأَحَاطَهَا بِعِنَايَتِهِ، وَجَعَلَهَا مَوْضِعَ رِسَالَاتِهِ، وَمَيْدَانَ أَنْبِيَائِهِ، وَمَسْرَى خَاتَمِ رُسُلِهِ ﷺ.</p>
+
+    <p>لَقَدْ بَدَأَ الْإِسْلَامُ مِنْ مَكَّةَ، حَيْثُ انْطَلَقَتْ كَلِمَةُ لَا إِلَهَ إِلَّا اللهُ فِي مُوَاجَهَةِ الْوَثَنِيَّةِ، وَمِنْهَا أَشْرَقَ نُورُ الرِّسَالَةِ إِلَى الدُّنْيَا كُلِّهَا. وَلَكِنَّ اللهَ سُبْحَانَهُ رَبَطَ بِدَايَةَ الِانْطِلَاقِ بِخَاتِمَةِ التَّمْكِينِ؛ فَكَانَتْ رِحْلَةُ الْإِسْرَاءِ إِعْلَانًا أَنَّ طَرِيقَ الْأُمَّةِ يَمْتَدُّ مِنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى.</p>
+
+    <div class="hl">أَوَّلًا: الْبَرَكَةُ الَّتِي تَتَجَاوَزُ الْمَكَانَ</div>
+
+    <p>تَأَمَّلِ التَّعْبِيرَ الْقُرْآنِيَّ... لَمْ يَقُلْ سُبْحَانَهُ: بَارَكْنَاهُ... وَلَمْ يَقُلْ: بَارَكْنَا فِيهِ... بَلْ قَالَ:</p>
+
+    <div class="hl">﴿الَّذِي بَارَكْنَا حَوْلَهُ﴾</div>
+
+    <p>وَكَأَنَّ الْبَرَكَةَ قَدْ فَاضَتْ حَتَّى غَمَرَتْ مَا حَوْلَهُ.</p>
+
+    <ul class="scene-list">
+      <li>فَإِذَا كَانَتِ الْأَرْضُ الْمُحِيطَةُ مُبَارَكَةً... فَكَيْفَ بِمَوْضِعِ الْمَسْجِدِ نَفْسِهِ؟</li>
+      <li>وَإِذَا كَانَ الظِّلُّ مُبَارَكًا... فَكَيْفَ بِالشَّجَرَةِ؟</li>
+      <li>وَإِذَا كَانَ النُّورُ يَمْلَأُ الْأُفُقَ... فَكَيْفَ بِالشَّمْسِ؟</li>
+    </ul>
+
+    <div class="hl">ثَانِيًا: بَرَكَةُ السَّمَاءِ وَبَرَكَةُ الْأَرْضِ</div>
+
+    <p>اجْتَمَعَتْ فِي هَذِهِ الْبُقْعَةِ بَرَكَتَانِ عَظِيمَتَانِ... بَرَكَةُ الْوَحْيِ... وَبَرَكَةُ الرِّزْقِ.</p>
+
+    <ul class="scene-list">
+      <li>فَهِيَ أَرْضُ إِبْرَاهِيمَ...</li>
+      <li>وَمَقَامُ دَاوُدَ...</li>
+      <li>وَمُلْكُ سُلَيْمَانَ...</li>
+      <li>وَدَعْوَةُ زَكَرِيَّا...</li>
+      <li>وَمِحْرَابُ مَرْيَمَ...</li>
+      <li>وَمَهْدُ عِيسَى عَلَيْهِ السَّلَامُ...</li>
+    </ul>
+
+    <p class="sig">وَفِيهَا صَلَّى خَاتَمُ الْأَنْبِيَاءِ ﷺ إِمَامًا بِجَمِيعِ الرُّسُلِ، وَكَأَنَّ الرِّسَالَاتِ كُلَّهَا سَلَّمَتْ رَايَتَهَا لِلرِّسَالَةِ الْخَاتِمَةِ.</p>
+
+    <p>وَفِي الْوَقْتِ نَفْسِهِ... هِيَ أَرْضُ الْخِصْبِ وَالْخَيْرِ، وَالْأَنْهَارِ، وَالزُّرُوعِ، وَالثِّمَارِ. فَاجْتَمَعَ غِذَاءُ الْأَرْوَاحِ مَعَ غِذَاءِ الْأَبْدَانِ. قَالَ تَعَالَى:</p>
+
+    <div class="vb" style="margin:22px 0;"><div class="vt sm">﴿وَلَوْ أَنَّ أَهْلَ الْقُرَىٰ آمَنُوا وَاتَّقَوْا لَفَتَحْنَا عَلَيْهِمْ بَرَكَاتٍ مِّنَ السَّمَاءِ وَالْأَرْضِ﴾</div><div class="vr">الأعراف: ٩٦</div></div>
+
+    <div class="hl">ثَالِثًا: حَوْلَ الْأَقْصَى تَتَكَرَّرُ بِدَايَاتُ النَّصْرِ</div>
+
+    <p>مَا أَعْجَبَ التَّارِيخَ... كُلَّمَا ظَنَّ النَّاسُ أَنَّ الْإِسْلَامَ انْتَهَى... عَادَ النَّصْرُ مِنْ حَوْلِ الْمَسْجِدِ الْأَقْصَى.</p>
+
+    <p>حِينَ اجْتَاحَ الْمَغُولُ الدُّنْيَا... وَسَقَطَتْ بَغْدَادُ... وَاحْتَرَقَتِ الْمَكْتَبَاتُ... ظَنَّ كَثِيرٌ مِنَ النَّاسِ أَنَّ صَفْحَةَ الْإِسْلَامِ قَدْ طُوِيَتْ. لَكِنَّ اللهَ كَانَ يُعِدُّ صَفْحَةً جَدِيدَةً... فَكَانَتْ عَيْنُ جَالُوتَ فِي أَرْضِ الشَّامِ، حَيْثُ كُسِرَ زَحْفُ الْمَغُولِ.</p>
+
+    <p>ثُمَّ جَاءَ زَمَنُ الصَّلِيبِيِّينَ... وَاحْتُلَّتِ الْقُدْسُ عُقُودًا طَوِيلَةً... لَكِنَّ اللهَ أَخْرَجَ مِنَ الْأُمَّةِ رِجَالًا وَحَّدُوا صُفُوفَهَا، حَتَّى جَاءَتْ حِطِّينُ، فَعَادَ الْأَقْصَى إِلَى حِضْنِ الْمُسْلِمِينَ، وَكَانَ الْفَتْحُ ثَمَرَةَ إِصْلَاحٍ طَوِيلٍ وَوَحْدَةٍ وَاجْتِمَاعٍ.</p>
+
+    <p class="sig">وَلَيْسَ الْمَقْصُودُ أَنَّ الْمَكَانَ وَحْدَهُ يَصْنَعُ النَّصْرَ، وَإِنَّمَا أَنَّ اللهَ جَعَلَ هَذِهِ الْأَرْضَ الْمُبَارَكَةَ مَيْدَانًا تَتَجَلَّى فِيهِ آيَاتُهُ حِينَ تَأْخُذُ الْأُمَّةُ بِأَسْبَابِ الْإِيمَانِ وَالْإِعْدَادِ.</p>
+
+    <div class="hl">رَابِعًا: مُسْتَقْبَلُ الْأَرْضِ أَيْضًا هُنَاكَ</div>
+
+    <p>وَلَيْسَ الْمَاضِي وَحْدَهُ هُوَ الَّذِي يَرْتَبِطُ بِهَذِهِ الْأَرْضِ... بَلِ الْمُسْتَقْبَلُ كَذَلِكَ. فَقَدْ دَلَّتْ نُصُوصُ السُّنَّةِ عَلَى أَنَّ أَحْدَاثًا عَظِيمَةً مِنْ آخِرِ الزَّمَانِ تَقَعُ فِي أَرْضِ الشَّامِ، وَمِنْهَا نُزُولُ عِيسَى عَلَيْهِ السَّلَامُ.</p>
+
+    <div class="hl">خَامِسًا: الْبَرَكَةُ لَيْسَتْ حِجَارَةً... بَلْ عَقِيدَةً</div>
+
+    <p>كَمْ مِنَ النَّاسِ يَظُنُّونَ أَنَّ الْبَرَكَةَ فِي الْحَجَرِ... وَلَكِنَّ الْقُرْآنَ يُعَلِّمُنَا أَنَّ الْبَرَكَةَ فِي طَاعَةِ اللهِ.</p>
+
+    <ul class="scene-list">
+      <li>فَقَدْ يَبْقَى الْبِنَاءُ... وَتَغِيبُ الْبَرَكَةُ إِذَا غَابَ الْإِيمَانُ.</li>
+      <li>وَقَدْ يَكُونُ الْمُؤْمِنُ غَرِيبًا ضَعِيفًا... وَلَكِنَّ اللهَ يَمْلَأُ قَلْبَهُ بَرَكَةً وَيَقِينًا.</li>
+    </ul>
+
+    <p class="sig">وَلِهَذَا فَإِنَّ أَعْظَمَ طَرِيقٍ لِنُصْرَةِ الْمَسْجِدِ الْأَقْصَى يَبْدَأُ بِإِحْيَاءِ التَّوْحِيدِ، وَإِقَامَةِ الصَّلَاةِ، وَالِاعْتِصَامِ بِالْقُرْآنِ، وَإِصْلَاحِ النُّفُوسِ، وَاجْتِمَاعِ الْكَلِمَةِ عَلَى الْحَقِّ.</p>
+
+    <p>فَالْأَقْصَى لَيْسَ مُجَرَّدَ مَعْلَمٍ تَارِيخِيٍّ... بَلْ رَمْزٌ لِوَحْدَةِ رِسَالَةِ الْأَنْبِيَاءِ، وَشَاهِدٌ عَلَى أَنَّ التَّوْحِيدَ هُوَ الطَّرِيقُ إِلَى الْعِزَّةِ.</p>
+
+    <p class="hl">فَاللَّهُمَّ اجْعَلْ قُلُوبَنَا مُعَلَّقَةً بِبُيُوتِكَ، ثَابِتَةً عَلَى تَوْحِيدِكَ، عَامِرَةً بِطَاعَتِكَ، وَارْزُقْ أُمَّتَنَا صَلَاحًا يَجْمَعُ كَلِمَتَهَا عَلَى الْحَقِّ، وَيُهَيِّئُ لَهَا مِنْ أَمْرِهَا رَشَدًا.</p>
+
+    <!-- تخريج -->
+    <div class="sub"><h3>📚 تخريج الآيات والأحاديث الواردة في المقال</h3>
+      <div class="src"><strong>﴿سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى الَّذِي بَارَكْنَا حَوْلَهُ...﴾</strong><br>سورة الإسراء (١٧)، الآية ١، مكية. انظر: ابن كثير، تفسير القرآن العظيم، ج٥، ص٣-٧ (ط. دار طيبة، ١٤٢٠هـ).</div>
+      <div class="src"><strong>﴿وَلَوْ أَنَّ أَهْلَ الْقُرَىٰ آمَنُوا وَاتَّقَوْا لَفَتَحْنَا عَلَيْهِمْ بَرَكَاتٍ مِّنَ السَّمَاءِ وَالْأَرْضِ﴾</strong><br>سورة الأعراف (٧)، الآية ٩٦، مكية.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث دعاء النبي ﷺ بالبركة للشام</strong><br>«اللَّهُمَّ بَارِكْ لَنَا فِي شَامِنَا، اللَّهُمَّ بَارِكْ لَنَا فِي يَمَنِنَا» — أخرجه البخاري في صحيحه، كتاب الاستسقاء، ح١٠٣٧. عن عبدالله بن عمر رضي الله عنهما.</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث نزول عيسى عليه السلام في الشام</strong><br>«فَبَيْنَمَا إِمَامُهُمْ قَدْ تَقَدَّمَ يُصَلِّي بِهِمُ الصُّبْحَ، إِذْ نَزَلَ عِيسَى ابْنُ مَرْيَمَ...» — أخرجه مسلم في صحيحه، كتاب الفتن وأشراط الساعة، ح٢٩٣٧. عن النواس بن سمعان رضي الله عنه.</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 -->
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+  <div class="card t"><div class="ct">دلالة حرف الجر «حَوْلَ» في التعبير القرآني</div><p>اختيار «حَوْلَهُ» بدل «فيه» أو الضمير المباشر يُوسِّع دائرة البركة من نقطة محددة إلى محيط شامل، وهذا الاتساع اللغوي يُترجمه المقال ببراعة عبر سلسلة من الأسئلة الاستنتاجية (فإذا كانت الأرض المحيطة مباركة، فكيف بموضع المسجد نفسه؟).</p></div>
+  <div class="card t2"><div class="ct">التصعيد المنطقي: من المحيط إلى المركز</div><p>ثلاثة أسئلة استدلالية متتالية (الأرض/المسجد، الظل/الشجرة، النور/الشمس) تستخدم منطق «إذا كان الفرع كذا فكيف بالأصل» لتقوية معنى البركة المركزية عبر الاستدلال بالمحيط عليها.</p></div>
+  <div class="card t"><div class="ct">تعداد الأنبياء المتتالي كصورة بلاغية للتراكم التاريخي</div><p>سلسلة «أرض إبراهيم... ومقام داود... وملك سليمان...» تُصوِّر تراكماً تاريخياً متصاعداً للبركة النبوية في بقعة واحدة، وتبلغ ذروتها بصلاة خاتم الأنبياء إماماً بالجميع — صورة رمزية لختم الرسالات.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 -->
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+  <div class="card t"><div class="ct">أسلوب الربط التاريخي المعاصر: من عين جالوت إلى حطين</div><p>ينتقل المقال من التفسير القرآني إلى السرد التاريخي (المغول، الصليبيون) بسلاسة، مستخدماً هذه الوقائع كأمثلة تطبيقية لسنة تكرار النصر حول الأقصى، لا كحشو تاريخي منفصل عن الموضوع العقدي.</p></div>
+  <div class="card t2"><div class="ct">التمييز بين بركة الحجر وبركة العقيدة</div><p>يُقيم المقال تفريقاً دقيقاً بين فهمين شائعين: البركة المادية في ذات المكان، والبركة الحقيقية المشروطة بطاعة الله — وهذا التمييز اللغوي («قد يبقى البناء وتغيب البركة») يُصحح مفهوماً شعبياً خاطئاً بأسلوب بليغ موجز.</p></div>
+
+  <div class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <table class="tbl">
+      <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+      <tr><td class="term">الإسراء</td><td class="def">السير ليلاً من مكان إلى آخر على الأرض — رحلة المسجد الحرام إلى الأقصى.</td></tr>
+      <tr><td class="term">المعراج</td><td class="def">الصعود من الأرض إلى السماء — الرحلة التالية من الأقصى إلى السماوات العلى.</td></tr>
+      <tr><td class="term">البركة</td><td class="def">الخير الثابت النامي المتصل — لا مجرد نفع عابر.</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 -->
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>ترابط السياقات بالآيات</h2></div>
+  <div class="cb"><div class="bt">آيات متعلقة ببركة الأرض المقدسة</div>
+    <div class="ci"><span class="vi">﴿وَنَجَّيْنَاهُ وَلُوطًا إِلَى الْأَرْضِ الَّتِي بَارَكْنَا فِيهَا لِلْعَالَمِينَ﴾</span><span class="vs">الأنبياء (٢١): ٧١، مكية — استخدام نفس الجذر (البركة) في وصف نجاة إبراهيم ولوط إلى نفس الأرض.</span></div>
+    <div class="ci"><span class="vi">﴿وَلِسُلَيْمَانَ الرِّيحَ غُدُوُّهَا شَهْرٌ وَرَوَاحُهَا شَهْرٌ ۖ وَأَسَلْنَا لَهُ عَيْنَ الْقِطْرِ ۖ إِلَى الْأَرْضِ الَّتِي بَارَكْنَا فِيهَا﴾</span><span class="vs">سبأ (٣٤): ١٢، مكية — تكرار وصف نفس الأرض بالبركة في سياق ملك سليمان.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط الكلي:</strong> آية الإسراء ١ جزء من منظومة قرآنية متكررة تصف أرض الشام والقدس بالبركة عبر قصص أنبياء متعددين (إبراهيم، لوط، سليمان)، مما يُؤكد استمرارية هذه البركة عبر التاريخ النبوي كله.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 -->
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>نوع الآية والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">آية إخبار عن معجزة ✅</div><div class="md">تُخبر عن رحلة الإسراء المعجزة، من أعلام النبوة الثابتة.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">آية عقدية — بركة الأرض ✅</div><div class="md">تُقرِّر خصوصية الأرض المباركة حول الأقصى، مرتبطة بتاريخ الأنبياء.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">آية تأصيل لمكانة الأقصى ✅</div><div class="md">تُؤصِّل لمكانة المسجد الأقصى كثالث الحرمين وأولى القبلتين.</div></div>
+  </div>
+  <div class="sub"><h3>الأحكام الشرعية المستنبطة</h3>
+    <div class="card t"><div class="ct">الحكم الأول: مشروعية شد الرحال لزيارة المسجد الأقصى</div><p>يُستنبط من مكانة الأقصى الثابتة في القرآن والسنة استحباب زيارته والصلاة فيه، وهو أحد المساجد الثلاثة التي تُشد إليها الرحال.</p><div class="src"><strong>المصدر:</strong> ابن كثير، تفسير القرآن العظيم، ج٥، ص٤-٥ (ط. دار طيبة).</div></div>
+    <div class="card t2"><div class="ct">الحكم الثاني: وجوب السعي لتحرير المسجد الأقصى وحفظه</div><p>يُستنبط من مكانة الأقصى العقدية وجوب الاهتمام بأمره والسعي لحفظه وتحريره بالأسباب المشروعة، وهو أصل تأصله سيرة الأمة عبر التاريخ.</p><div class="src"><strong>المصدر:</strong> ابن تيمية، مجموع الفتاوى، ج٢٧، ص١-١٠ (ط. مجمع الملك فهد) — في فضل بيت المقدس.</div></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 -->
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>إعراب الآية الكريمة تفصيلاً</h2></div>
+  <div class="vb" style="margin-bottom:22px;">
+    <div class="vt" style="font-size:1.1rem;">﴿سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى الَّذِي بَارَكْنَا حَوْلَهُ﴾</div>
+    <div class="vr">الإسراء (١٧)، الآية ١ (جزء)، مكية</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">سُبْحَانَ</div><div class="id">مفعول مطلق منصوب لفعل محذوف وجوباً تقديره «أسبِّح»، وهذا الحذف من مواضع الاختصاص بالتسبيح.</div></div>
+    <div class="ir"><div class="iw">الَّذِي أَسْرَىٰ</div><div class="id">اسم موصول مضاف إليه مجرور. «أسرى»: فعل ماضٍ مبني على فتح مقدَّر، والفاعل ضمير مستتر يعود على الله.</div></div>
+    <div class="ir"><div class="iw">بِعَبْدِهِ</div><div class="id">جار ومجرور متعلقان بـ«أسرى»، والهاء مضاف إليه يعود على النبي ﷺ.</div></div>
+    <div class="ir"><div class="iw">لَيْلًا</div><div class="id">ظرف زمان منصوب متعلق بـ«أسرى»، والتنكير للتقليل يفيد أن الرحلة تمت في جزء يسير من الليل.</div></div>
+    <div class="ir"><div class="iw">مِنَ الْمَسْجِدِ الْحَرَامِ</div><div class="id">جار ومجرور متعلقان بـ«أسرى»، «الحرام»: نعت مجرور.</div></div>
+    <div class="ir"><div class="iw">إِلَى الْمَسْجِدِ الْأَقْصَى</div><div class="id">جار ومجرور معطوف بالمعنى على ما قبله، «الأقصى»: نعت مجرور بكسرة مقدرة على الألف.</div></div>
+    <div class="ir"><div class="iw">الَّذِي بَارَكْنَا حَوْلَهُ</div><div class="id">اسم موصول نعت لـ«المسجد الأقصى». «باركنا»: فعل وفاعل (نا الفاعلين للتعظيم). «حوله»: ظرف مكان منصوب متعلق بـ«باركنا»، والهاء مضاف إليه.</div></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 -->
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«فَإِنَّ الْبَرَكَةَ لَا تُنْتَزَعُ بِظُلْمٍ، وَلَا تَزُولُ مِنْ كِتَابِ اللهِ»<br><small>— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card t"><div class="ct">أولاً: التمييز بين اليأس التاريخي واليقين العقدي</div><p>عرض المقال لسقوط بغداد ثم عين جالوت، واحتلال القدس ثم حطين، يُعلِّم درساً نفسياً مهماً: الهزائم المرحلية لا تعني الانتهاء النهائي. <strong>التطبيق:</strong> حين تشعر باليأس من أوضاع الأمة، استحضر هذا النمط التاريخي المتكرر من الانكسار ثم النهوض.</p></div>
+  <div class="card t2"><div class="ct">ثانياً: ربط النصرة بالإصلاح الداخلي لا الشعارات وحدها</div><p>يُعلِّم المقال أن نصرة الأقصى تبدأ بإحياء التوحيد وإصلاح النفوس، لا بالخطابة وحدها. <strong>التطبيق:</strong> اسأل نفسك: ما نصيبي الفعلي من «إحياء التوحيد وإصلاح النفس» الذي دعا إليه المقال كطريق حقيقي للنصرة؟</p></div>
+  <div class="card t"><div class="ct">ثالثاً: تصحيح مفهوم البركة من المادة إلى العقيدة</div><p>التفريق بين بركة الحجر وبركة الطاعة يُعالج نزعة شائعة نحو تقديس الأمكنة لذاتها. <strong>التطبيق:</strong> لا تجعل تعلقك بالأماكن المقدسة بديلاً عن التزامك العملي بما تدعو إليه من توحيد وطاعة.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين بركة الأقصى التاريخية وواقع الأمة المعاصر.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">المسجد الأقصى</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">علم الحديث</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.7;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
