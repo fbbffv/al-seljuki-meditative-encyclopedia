@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بَرَاءَةُ التَّوْحِيدِ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#161421;--bg:#fbfaff;--bg2:#fff7f2;
+  --t1:#c81d3f;--t2:#e0631e;--t3:#c48f0a;--t4:#3f8f3a;--t5:#0f8e82;--t6:#1a6fb5;--t7:#5a3ea8;--t8:#8c1f8f;--t9:#c81f6b;
+  --hdr:#0d0b1e;--hdr2:#1a1338;--card-bg:#ffffff;--div:rgba(90,62,168,.72);--mist:#3c3550;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;font-weight:500;line-height:1.95;overflow-x:hidden;max-width:100%;
+-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+background-image:radial-gradient(ellipse at 6% 4%,rgba(200,29,63,.09) 0%,transparent 45%),radial-gradient(ellipse at 94% 10%,rgba(26,111,181,.09) 0%,transparent 45%),radial-gradient(ellipse at 10% 92%,rgba(63,143,58,.10) 0%,transparent 45%),radial-gradient(ellipse at 92% 96%,rgba(140,31,143,.10) 0%,transparent 45%);}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--t1),var(--t2),var(--t3),var(--t4),var(--t5),var(--t6),var(--t7),var(--t8),var(--t9));z-index:400;transform-origin:top;box-shadow:0 0 10px rgba(26,111,181,.5);}
+.rband{height:5px;background:linear-gradient(90deg,var(--t1),var(--t2),var(--t3),var(--t4),var(--t5),var(--t6),var(--t7),var(--t8),var(--t9));}
+.hdr{background:var(--hdr);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.5);border-bottom:2px solid transparent;border-image:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9)) 1;}
+.hdr-i{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;min-height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;font-size:1rem;flex-shrink:0;background:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:#f6f2ff;font-size:.9rem;text-align:center;flex:1;opacity:.95;overflow-wrap:break-word;word-break:break-word;min-width:120px;}
+.tbtn{background:linear-gradient(90deg,var(--t6),var(--t9));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-weight:600;font-size:.85rem;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;flex-wrap:wrap;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:290px;max-width:100%;flex-shrink:0;background:var(--hdr);position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;overflow-x:hidden;border-left:1px solid var(--div);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid var(--div);background:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.toc-s{color:#b3a4e8;font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#dad0f7;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;font-weight:500;border-right:3px solid transparent;transition:all .2s;overflow-wrap:break-word;word-break:break-word;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(200,31,107,.16);border-right-color:var(--t9);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.92;}
+.main{flex:1;min-width:0;max-width:100%;padding:52px 64px;overflow-x:hidden;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:160px;height:4px;background:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9));border-radius:4px;}
+.horn{font-size:1.5rem;display:block;margin-bottom:14px;letter-spacing:.4em;}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--t6),var(--t9));color:#fff;font-size:.74rem;padding:4px 16px;border-radius:20px;margin-bottom:18px;font-weight:600;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.3rem;font-weight:700;line-height:1.5;margin-bottom:12px;background:linear-gradient(90deg,var(--t1),var(--t2),var(--t3),var(--t4),var(--t5),var(--t6),var(--t7),var(--t8));-webkit-background-clip:text;background-clip:text;color:transparent;overflow-wrap:break-word;word-break:break-word;}
+.hero h2.sub-h{font-family:'Scheherazade New',serif;font-size:1.15rem;color:var(--mist);font-weight:600;margin-top:6px;}
+.hmeta{color:var(--mist);font-size:.94rem;font-weight:500;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-top:12px;}
+.hmeta .dot{width:5px;height:5px;background:var(--t6);border-radius:50%;}
+.vb{background:linear-gradient(135deg,var(--hdr),var(--hdr2));border:2px solid transparent;border-image:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9)) 1;border-radius:12px;padding:30px 38px;margin:32px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(140,31,143,.18),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.5rem;color:#faf7ff;line-height:2.1;position:relative;z-index:1;overflow-wrap:break-word;word-break:break-word;}
+.vt.sm{font-size:1.28rem;}
+.vr{background:linear-gradient(90deg,var(--t3),var(--t9));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:.88rem;margin-top:12px;position:relative;z-index:1;font-weight:700;}
+.abody{font-size:1.12rem;line-height:2.05;color:var(--ink);}
+.abody p{margin-bottom:1.35em;text-align:justify;overflow-wrap:break-word;word-break:break-word;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;background:linear-gradient(180deg,var(--t1),var(--t7));-webkit-background-clip:text;background-clip:text;color:transparent;float:right;line-height:.82;margin-left:8px;}
+.qv{font-family:'Scheherazade New',serif;font-size:1.28rem;color:var(--t6);text-align:center;margin:.4em 0;font-weight:700;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.2rem;font-weight:700;text-align:center;margin:16px 0;background:linear-gradient(90deg,var(--t4),var(--t7));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;color:#fff;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.72rem;border-bottom:3px solid;border-image:linear-gradient(90deg,var(--t1),var(--t9)) 1;padding-bottom:8px;flex:1;min-width:180px;color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.28rem;margin-bottom:12px;padding-right:14px;border-right:4px solid var(--t9);color:var(--t6);overflow-wrap:break-word;word-break:break-word;}
+.card{background:var(--card-bg);border:2px solid var(--div);border-radius:10px;padding:20px 24px;margin:16px 0;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.card.c1{border-right:6px solid var(--t1);}
+.card.c2{border-right:6px solid var(--t2);}
+.card.c3{border-right:6px solid var(--t3);}
+.card.c4{border-right:6px solid var(--t4);}
+.card.c5{border-right:6px solid var(--t5);}
+.card.c6{border-right:6px solid var(--t6);}
+.card.c7{border-right:6px solid var(--t7);}
+.card.c8{border-right:6px solid var(--t8);}
+.card.c9{border-right:6px solid var(--t9);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.14rem;margin-bottom:10px;font-weight:700;color:var(--ink);}
+.card p{font-size:.98rem;color:#241f38;font-weight:500;line-height:1.9;margin-top:6px;overflow-wrap:break-word;word-break:break-word;}
+.card p strong{color:var(--ink);}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.96rem;border-radius:8px;overflow:hidden;table-layout:fixed;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.tbl th{background:linear-gradient(90deg,var(--t6),var(--t8));color:#fff;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.98rem;overflow-wrap:break-word;word-break:break-word;}
+.tbl td{padding:11px 14px;border-bottom:2px solid var(--div);vertical-align:top;line-height:1.85;overflow-wrap:break-word;word-break:break-word;}
+.tbl tr:nth-child(even) td{background:rgba(26,111,181,.06);}
+.term{font-family:'Scheherazade New',serif;font-size:1.05rem;color:var(--ink);font-weight:700;}
+.def{color:var(--mist);font-size:.92rem;font-weight:500;}
+.ir{display:flex;flex-wrap:wrap;gap:13px;padding:10px 0;border-bottom:1px dashed var(--div);align-items:flex-start;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--t6);max-width:100%;font-weight:700;flex-shrink:0;overflow-wrap:break-word;word-break:break-word;}
+.id{color:#241f38;font-size:.94rem;font-weight:500;flex:1;min-width:200px;line-height:1.9;overflow-wrap:break-word;word-break:break-word;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.35rem;text-align:center;padding:28px 32px;margin:38px 0;border-top:3px solid;border-bottom:3px solid;border-image:linear-gradient(90deg,var(--t1),var(--t9)) 1;position:relative;color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.pq::before{content:'❝';position:absolute;top:-6px;right:32px;font-size:2.6rem;background:linear-gradient(180deg,var(--t9),var(--t7));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;}
+.src{background:rgba(63,143,58,.09);border:2px solid rgba(63,143,58,.55);border-radius:9px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.88rem;font-weight:500;color:#1e4a1a;line-height:1.9;overflow-wrap:break-word;word-break:break-word;}
+.src strong{color:var(--t4);}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:4px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;margin-right:6px;}
+.grade.sahih{background:linear-gradient(90deg,var(--t4),var(--t5));}
+.rlist{list-style:none;padding:0;margin:12px 0;}
+.rlist li{font-family:'Scheherazade New',serif;font-size:1.05rem;padding:9px 0;border-bottom:1px dashed var(--div);overflow-wrap:break-word;word-break:break-word;}
+.rlist li:last-child{border-bottom:none;}
+.rlist li:nth-child(9n+1){color:var(--t1);}
+.rlist li:nth-child(9n+2){color:var(--t2);}
+.rlist li:nth-child(9n+3){color:var(--t3);}
+.rlist li:nth-child(9n+4){color:var(--t4);}
+.rlist li:nth-child(9n+5){color:var(--t5);}
+.rlist li:nth-child(9n+6){color:var(--t6);}
+.rlist li:nth-child(9n+7){color:var(--t7);}
+.rlist li:nth-child(9n+8){color:var(--t8);}
+.rlist li:nth-child(9n){color:var(--t9);}
+.atag{display:inline-block;background:rgba(26,111,181,.16);color:var(--t6);font-size:.73rem;font-weight:600;padding:4px 12px;border-radius:12px;margin:3px;border:2px solid rgba(26,111,181,.4);}
+.asec{background:linear-gradient(135deg,var(--hdr),var(--hdr2));border:2px solid transparent;border-image:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9)) 1;border-radius:12px;padding:34px 40px;margin:56px 0 38px;display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.ava{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--t1),var(--t7));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.ai{min-width:200px;flex:1;}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff;font-size:1.32rem;margin-bottom:5px;overflow-wrap:break-word;word-break:break-word;}
+.ai .at{color:#ffd0e6;font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#e6def9;font-size:.92rem;font-weight:500;line-height:1.85;margin-bottom:8px;overflow-wrap:break-word;word-break:break-word;}
+.ai p strong{color:#fff;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.28);border-radius:6px;padding:10px 13px;}
+.ami .aml{color:#f2d4ff;font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:#fff;font-size:.88rem;font-family:'Scheherazade New',serif;overflow-wrap:break-word;word-break:break-word;}
+.orn{text-align:center;font-size:1.25rem;margin:48px 0;letter-spacing:.42em;background:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.8;}
+footer{background:var(--hdr);color:#dad0f7;text-align:center;padding:32px 20px;font-size:.85rem;font-weight:500;border-top:3px solid;border-image:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9)) 1;margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.08rem;margin-bottom:7px;background:linear-gradient(90deg,var(--t1),var(--t3),var(--t5),var(--t7),var(--t9));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:280px;max-width:85vw;height:calc(100vh - 58px);overflow-y:auto;}.amg{grid-template-columns:1fr;}.hero h1{font-size:1.8rem;}.asec{flex-direction:column;}.main{padding:32px 20px;}}
+@media(max-width:640px){.main{padding:18px 12px;}.vb{padding:22px 16px;}.vt{font-size:1.08rem;}.hero h1{font-size:1.38rem;}.pq{font-size:1.02rem;padding:18px 14px;}.hdr-i{padding:0 12px;}.logo{display:none;}.card{padding:16px 16px;}.asec{padding:24px 20px;}}
+</style>
+</head>
+<body>
+<div class="rband"></div>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ السَّلْجُوقِي</div>
+    <div class="htitle">بَرَاءَةُ التَّوْحِيدِ — سُورَةُ الْكَافِرُونَ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية</div>
+  <a class="toc-a" href="#s1">١. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٢. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <a class="toc-a" href="#s3">٣. ترابط السياقات والآيات الأخرى</a>
+  <a class="toc-a" href="#s4">٤. نوع السورة والأحكام</a>
+  <a class="toc-a" href="#s5">٥. إعراب السورة</a>
+  <a class="toc-a" href="#s6">٦. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<div class="hero">
+  <span class="horn">🌈 ✦ 🌈</span>
+  <div class="hcat">تدبر قرآني · سورة الكافرون · مكية · التوحيد والمفاصلة العقدية</div>
+  <h1>بَرَاءَةُ التَّوْحِيدِ<br>وَالْمُفَاصَلَةُ الْكُبْرَى بَيْنَ نُورِ الْإِيمَانِ وَظُلُمَاتِ الشِّرْكِ</h1>
+  <h2 class="sub-h">وَقَفَاتٌ تَدَبُّرِيَّةٌ فِي سُورَةِ الْكَافِرُونَ: إِعْلَانُ الْحُرِّيَّةِ لِلَّهِ وَحْدَهُ وَعِزَّةُ الثَّبَاتِ عَلَى الْعَقِيدَةِ</h2>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>سورة الكافرون كاملة</span>
+  </div>
+</div>
+
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--t1),var(--t7));">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt">﴿قُلْ يَا أَيُّهَا الْكَافِرُونَ ۝ لَا أَعْبُدُ مَا تَعْبُدُونَ ۝ وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ ۝ وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ ۝ وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ ۝ لَكُمْ دِينُكُمْ وَلِيَ دِينِ﴾</div>
+    <div class="vr">سورة الكافرون (١٠٩)، الآيات ١-٦ كاملة</div>
+  </div>
+
+  <div class="abody">
+    <p>إِنَّهَا لَيْسَتْ سُورَةً قَصِيرَةً تُقْرَأُ فِي دَقَائِقَ، وَإِنَّمَا هِيَ إِعْلَانٌ رَبَّانِيٌّ خَالِدٌ، وَمِيثَاقُ عَقِيدَةٍ لَا يَذُوبُ، وَحُدُودٌ فَاصِلَةٌ بَيْنَ الْإِيمَانِ وَالْكُفْرِ، وَبَيْنَ التَّوْحِيدِ وَالشِّرْكِ، وَبَيْنَ الْعَبُودِيَّةِ لِلَّهِ وَالْعَبُودِيَّةِ لِغَيْرِهِ. إِنَّهَا سُورَةٌ نَزَلَتْ لِتَبْنِيَ الْإِنْسَانَ الْمُؤْمِنَ الَّذِي لَا يُسَاوِمُ عَلَى دِينِهِ، وَلَا يَبِيعُ عَقِيدَتَهُ مَهْمَا عَظُمَتِ الْإِغْرَاءَاتُ، وَمَهْمَا اشْتَدَّتِ الضُّغُوطُ.</p>
+
+    <p>لَقَدْ جَاءَ الْإِسْلَامُ لِيُحَرِّرَ الْإِنْسَانَ مِنْ عَبُودِيَّةِ الْبَشَرِ، وَمِنْ عَبُودِيَّةِ الْهَوَى، وَمِنْ عَبُودِيَّةِ الْمَالِ وَالْمَنْصِبِ وَالشَّهْوَةِ، وَلِيَجْعَلَهُ عَبْدًا لِلَّهِ وَحْدَهُ. وَلِذَلِكَ كَانَتْ سُورَةُ الْكَافِرُونَ إِعْلَانًا صَارِخًا بِأَنَّ الْعَقِيدَةَ لَيْسَتْ سِلْعَةً لِلْمُسَاوَمَةِ، وَلَا جِسْرًا لِتَحْقِيقِ الْمَكَاسِبِ، وَلَا وَرَقَةً فِي مُفَاوَضَاتِ السِّيَاسَةِ، وَإِنَّمَا هِيَ عَهْدٌ مَعَ اللَّهِ لَا يَقْبَلُ التَّبْدِيلَ.</p>
+
+    <div class="sub"><h3>﴿قُلْ يَا أَيُّهَا الْكَافِرُونَ﴾</h3></div>
+    <p>تَبْدَأُ السُّورَةُ بِأَمْرٍ إِلَهِيٍّ مُبَاشِرٍ: ﴿قُلْ﴾. إِنَّهَا لَيْسَتْ كَلِمَاتٍ مِنْ عِنْدِ مُحَمَّدٍ ﷺ، وَإِنَّمَا وَحْيٌ مِنْ رَبِّ الْعَالَمِينَ، وَلِذَلِكَ لَا يَمْلِكُ أَحَدٌ تَغْيِيرَهَا أَوْ تَخْفِيفَهَا أَوْ مُجَامَلَتَهَا. ثُمَّ يَأْتِي النِّدَاءُ الصَّرِيحُ: ﴿يَا أَيُّهَا الْكَافِرُونَ﴾. إِنَّ الْقُرْآنَ لَا يُزَيِّنُ الْأَلْفَاظَ عَلَى حِسَابِ الْحَقَائِقِ، وَلَا يَطْمِسُ الْفُرُوقَ بَيْنَ الْإِيمَانِ وَالْكُفْرِ، وَلَا يَخْلِطُ بَيْنَ النُّورِ وَالظَّلَامِ.</p>
+
+    <p>لَقَدْ كَانَ مُشْرِكُو قُرَيْشٍ يَقْتَرِحُونَ حَلًّا وَسَطًا؛ سَنَةً يَعْبُدُ فِيهَا النَّبِيُّ ﷺ آلِهَتَهُمْ، وَسَنَةً يَعْبُدُونَ فِيهَا اللَّهَ، حَتَّى لَا يَخْسَرَ أَحَدٌ مَكَانَتَهُ. لَكِنَّ الْوَحْيَ جَاءَ لِيُعْلِنَ أَنَّ الْعَقِيدَةَ لَا تَعْرِفُ الْحُلُولَ الْوَسَطَ. فَالتَّوْحِيدُ لَا يَقْبَلُ أَنْصَافَ الْمَوَاقِفِ. وَالْحَقُّ لَا يَمْتَزِجُ بِالْبَاطِلِ. وَالنُّورُ لَا يُصَافِحُ الظَّلَامَ. إِنَّهَا أَوَّلُ كَلِمَةٍ فِي إِعْلَانِ الْمُفَاصَلَةِ الْعَقَدِيَّةِ.</p>
+
+    <div class="sub"><h3>﴿لَا أَعْبُدُ مَا تَعْبُدُونَ﴾</h3></div>
+    <p>لَيْسَ الْمَقْصُودُ مُجَرَّدَ الْأَصْنَامِ الْحَجَرِيَّةِ. بَلْ كُلُّ مَا يُعْبَدُ مِنْ دُونِ اللَّهِ... عَبَادَةُ الْمَالِ... عَبَادَةُ الشُّهْرَةِ... عَبَادَةُ الْمَنْصِبِ... عَبَادَةُ الْحِزْبِ... عَبَادَةُ الْقَوْمِيَّةِ... عَبَادَةُ الشَّهْوَةِ... عَبَادَةُ النَّفْسِ... كُلُّهَا تَدْخُلُ فِي مَعْنَى الْآيَةِ. فَالْعَبُودِيَّةُ لَا تَكُونُ إِلَّا لِلَّهِ. إِنَّ الْمُؤْمِنَ لَا يَنْحَنِي إِلَّا لِلَّهِ. وَلَا يَخْضَعُ إِلَّا لِلَّهِ. وَلَا يَرْجُو إِلَّا اللَّهَ. وَلَا يَخَافُ إِلَّا اللَّهَ. وَهَذِهِ هِيَ الْحُرِّيَّةُ الْحَقِيقِيَّةُ.</p>
+
+    <div class="sub"><h3>﴿وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ﴾</h3></div>
+    <p>إِنَّهَا حَقِيقَةٌ مُؤْلِمَةٌ. فَلَيْسَ كُلُّ مَنْ قَالَ: نَحْنُ نُؤْمِنُ بِاللَّهِ، يَكُونُ قَدْ عَبَدَ اللَّهَ حَقًّا. إِنَّ عَبَادَةَ اللَّهِ لَيْسَتْ كَلِمَةً بِاللِّسَانِ. بَلْ إِخْلَاصٌ كَامِلٌ. وَاسْتِسْلَامٌ كَامِلٌ. وَطَاعَةٌ كَامِلَةٌ. فَمَنْ جَعَلَ هَوَاهُ حُكْمًا فَوْقَ شَرَعِ اللَّهِ، فَقَدِ انْحَرَفَ عَنْ حَقِيقَةِ الْعَبُودِيَّةِ. وَمَنْ قَدَّمَ أَوَامِرَ الْبَشَرِ عَلَى أَوَامِرِ اللَّهِ، فَقَدْ وَقَعَ فِي خَلَلِ الْعَبُودِيَّةِ. وَهُنَا يَرْسُمُ الْقُرْآنُ الْخَطَّ الْفَاصِلَ.</p>
+
+    <div class="sub"><h3>﴿وَلَا أَنَا عَابِدٌ مَا عَبَدْتُمْ﴾</h3></div>
+    <p>يَتَكَرَّرُ النَّفْيُ. وَلَيْسَ التَّكْرَارُ عَبَثًا. إِنَّهُ بِنَاءٌ نَفْسِيٌّ. وَتَرْبِيَةٌ إِيمَانِيَّةٌ. وَثَبَاتٌ لَا يَتَزَعْزَعُ. فَالْمُؤْمِنُ لَا يَتَلَوَّنُ. وَلَا يُبَدِّلُ دِينَهُ. وَلَا يُغَيِّرُ عَقِيدَتَهُ بِحَسَبِ الظُّرُوفِ. وَلَا يُسَاوِمُ تَحْتَ الضَّغْطِ. وَلَا يَبِيعُ دِينَهُ مُقَابِلَ مَنْصِبٍ. وَلَا يَشْتَرِي رِضَا النَّاسِ بِسَخَطِ اللَّهِ.</p>
+
+    <p>كَمْ مِنْ إِنْسَانٍ بَاعَ مَبَادِئَهُ مِنْ أَجْلِ وَظِيفَةٍ! وَكَمْ مِنْ آخَرَ غَيَّرَ الْحَقَّ طَلَبًا لِشُهْرَةٍ! وَكَمْ مِنْ ثَالِثٍ أَخْفَى دِينَهُ خَوْفًا مِنْ نَقْدِ النَّاسِ! أَمَّا الْمُؤْمِنُ... فَقَدْ تَعَلَّمَ مِنْ سُورَةِ الْكَافِرُونَ أَنَّ الْعَقِيدَةَ أَغْلَى مِنَ الدُّنْيَا كُلِّهَا.</p>
+
+    <div class="sub"><h3>﴿وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ﴾ (تكرار)</h3></div>
+    <p>يَتَكَرَّرُ مَرَّةً أُخْرَى. لِيُغْلِقَ الْقُرْآنُ كُلَّ بَابٍ لِلَالْتِبَاسِ. فَلَا لِقَاءَ بَيْنَ التَّوْحِيدِ وَالشِّرْكِ. وَلَا مُصَالَحَةَ بَيْنَ الْحَقِّ وَالْبَاطِلِ. وَلَا امْتِزَاجَ بَيْنَ مَنْهَجِ اللَّهِ وَمَنَاهِجِ الْبَشَرِ إِذَا نَاقَضَتْهُ. إِنَّهَا الْمُفَاصَلَةُ. وَلَيْسَتِ الْقَطِيعَةَ فِي الْإِحْسَانِ أَوِ الْعَدْلِ؛ فَالْإِسْلَامُ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ مَعَ النَّاسِ جَمِيعًا، لَكِنَّهُ يَرْفُضُ الذَّوَبَانَ الْعَقَدِيَّ وَالتَّنَازُلَ عَنْ أُصُولِ الدِّينِ.</p>
+
+    <p>لَقَدْ عَاشَ الْمُسْلِمُونَ الْأَوَّلُونَ بَيْنَ الْمُشْرِكِينَ. وَتَعَامَلُوا مَعَهُمْ. وَبَاعُوا وَاشْتَرَوْا مِنْهُمْ. لَكِنَّهُمْ لَمْ يَذُوبُوا فِي عَقَائِدِهِمْ. وَلَمْ يُقَلِّدُوا عِبَادَاتِهِمْ. وَلَمْ يُسَاوِمُوا عَلَى تَوْحِيدِهِمْ. وَهَكَذَا يَنْبَغِي أَنْ يَكُونَ الْمُسْلِمُ فِي كُلِّ زَمَانٍ.</p>
+
+    <div class="sub"><h3>﴿لَكُمْ دِينُكُمْ وَلِيَ دِينِ﴾</h3></div>
+    <p>مَا أَعْظَمَهَا مِنْ خَاتِمَةٍ! لَيْسَتِ اسْتِسْلَامًا لِلْبَاطِلِ. وَلَيْسَتْ رِضًا بِالْكُفْرِ. وَلَكِنَّهَا إِعْلَانُ اسْتِقْلَالِ الْعَقِيدَةِ. إِنَّهَا تَقُولُ: لَنْ أَعْبُدَ مَا تَعْبُدُونَ. وَلَنْ أَتَنَازَلَ عَنْ دِينِي. وَلَنْ أَخْلِطَ الْحَقَّ بِالْبَاطِلِ. وَلَنْ أُذِيبَ هُوِيَّتِي. وَلَنْ أَبِيعَ تَوْحِيدِي. إِنَّهَا كَلِمَةُ الْعِزَّةِ. وَكَلِمَةُ الثَّبَاتِ. وَكَلِمَةُ الْحُرِّيَّةِ. فَالَّذِي عَرَفَ اللَّهَ لَا يُمْكِنُ أَنْ يَسْتَبْدِلَ بِهِ غَيْرَهُ.</p>
+
+    <div class="sub"><h3>الْمُفَاصَلَةُ... طَرِيقُ الْأَنْبِيَاءِ جَمِيعًا</h3></div>
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿إِنَّنِي بَرَاءٌ مِّمَّا تَعْبُدُونَ ۝ إِلَّا الَّذِي فَطَرَنِي﴾</div><div class="vr">سورة الزخرف (٤٣)، الآيتان ٢٦-٢٧</div></div>
+    <p>لَقَدْ قَالَ إِبْرَاهِيمُ عَلَيْهِ السَّلَامُ هَذِهِ الْكَلِمَةَ.</p>
+    <div class="vb" style="margin:16px 0;"><div class="vt sm">﴿أَأَرْبَابٌ مُّتَفَرِّقُونَ خَيْرٌ أَمِ اللَّهُ الْوَاحِدُ الْقَهَّارُ﴾</div><div class="vr">سورة يوسف (١٢)، الآية ٣٩</div></div>
+    <p>وَقَالَ يُوسُفُ عَلَيْهِ السَّلَامُ وَهُوَ فِي السِّجْنِ هَذِهِ الْكَلِمَةَ. وَقَالَ مُوسَى عَلَيْهِ السَّلَامُ لِفِرْعَوْنَ حِينَ ادَّعَى الرُّبُوبِيَّةَ إِنَّ الْأَمْرَ لِلَّهِ وَحْدَهُ. وَجَاءَ مُحَمَّدٌ ﷺ لِيَخْتِمَ مَوْكِبَ الْأَنْبِيَاءِ مُعْلِنًا الْبَرَاءَةَ الْكَامِلَةَ مِنْ كُلِّ مَعْبُودٍ سِوَى اللَّهِ. إِنَّهَا سِلْسِلَةٌ وَاحِدَةٌ... وَدَعْوَةٌ وَاحِدَةٌ... وَعَقِيدَةٌ وَاحِدَةٌ... وَتَوْحِيدٌ وَاحِدٌ... وَمُفَاصَلَةٌ وَاحِدَةٌ.</p>
+
+    <div class="sub"><h3>شَوَاهِدُ مِنْ وَاقِعِ الْحَيَاةِ</h3></div>
+    <p>كَمْ مِنْ شَابٍّ ضَاعَتْ هُوِيَّتُهُ لِأَنَّهُ أَرَادَ أَنْ يُقَلِّدَ كُلَّ مَا يَرَاهُ! وَكَمْ مِنْ فَتَاةٍ تَنَازَلَتْ عَنْ حَيَائِهَا حَتَّى لَا تُوصَفَ بِالتَّخَلُّفِ! وَكَمْ مِنْ مُسْلِمٍ صَارَ يَسْتَحِي مِنْ شَعَائِرِ دِينِهِ أَمَامَ النَّاسِ! وَكَمْ مِنْ إِنْسَانٍ جَعَلَ رِضَا النَّاسِ أَكْبَرَ مِنْ رِضَا اللَّهِ! كُلُّ هَؤُلَاءِ يَحْتَاجُونَ أَنْ يَعِيشُوا مَعَ سُورَةِ الْكَافِرُونَ. فَهِيَ تُعَلِّمُهُمْ أَنَّ الْمُؤْمِنَ لَا يَسْتَمِدُّ قِيمَتَهُ مِنْ تَصْفِيقِ النَّاسِ. وَلَا مِنْ إِعْجَابَاتِ الشَّاشَاتِ. وَلَا مِنْ رِضَا الْمُجْتَمَعِ. إِنَّمَا يَسْتَمِدُّ عِزَّتَهُ مِنْ قَوْلِهِ تَعَالَى: ﴿لَا أَعْبُدُ مَا تَعْبُدُونَ﴾.</p>
+
+    <div class="sub"><h3>رِسَالَةُ السُّورَةِ إِلَى شَبَابِ الْأُمَّةِ</h3></div>
+    <p class="ql">لَا تَتَنَازَلْ عَنْ صَلَاتِكَ. لَا تَخْجَلْ مِنْ حِجَابِكِ. لَا تَسْتَحِ مِنْ سُنَّةِ نَبِيِّكَ ﷺ. لَا تَجْعَلِ الْمُوضَةَ تَقُودُكَ. لَا تَجْعَلِ الشُّهْرَةَ تَصْنَعُ مَبَادِئَكَ. لَا تَجْعَلِ الْمَالَ يَشْتَرِي دِينَكَ. لَا تَجْعَلِ الْهَوَى يَقُودُ قَلْبَكَ. اجْعَلِ اللَّهَ أَوَّلًا... وَآخِرًا... وَدَائِمًا.</p>
+
+    <div class="sub"><h3>خَاتِمَة</h3></div>
+    <p>سُورَةُ الْكَافِرُونَ لَيْسَتْ إِعْلَانَ خُصُومَةٍ مَعَ النَّاسِ، وَإِنَّمَا إِعْلَانُ وَلَاءٍ خَالِصٍ لِلَّهِ، وَبَرَاءَةٌ مِنَ الشِّرْكِ، وَثَبَاتٌ عَلَى التَّوْحِيدِ، وَوُضُوحٌ فِي الْهُوِيَّةِ، وَعِزَّةٌ فِي الِانْتِمَاءِ إِلَى الْإِسْلَامِ. إِنَّهَا تُعَلِّمُ الْمُؤْمِنَ أَنْ يُحْسِنَ إِلَى الْخَلْقِ جَمِيعًا، وَيَعْدِلَ مَعَ الْجَمِيعِ، وَيَدْعُوَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ، لَكِنَّهُ لَا يُسَاوِمُ عَلَى عَقِيدَتِهِ، وَلَا يَخْلِطُ بَيْنَ الْحَقِّ وَالْبَاطِلِ، وَلَا يُذِيبُ هُوِيَّتَهُ فِي تَيَّارَاتِ الِانْحِرَافِ.</p>
+
+    <p>فَإِذَا اسْتَقَرَّتْ هَذِهِ السُّورَةُ فِي الْقَلْبِ، أَصْبَحَ الْقَلْبُ حُرًّا مِنْ كُلِّ عَبُودِيَّةٍ إِلَّا لِلَّهِ، عَزِيزًا بِاللَّهِ، ثَابِتًا عَلَى الْحَقِّ، مُطْمَئِنًّا بِوَعْدِ اللَّهِ، حَتَّى يَلْقَى رَبَّهُ وَهُوَ يَقُولُ بِلِسَانِ الْحَالِ وَالْمَقَالِ: ﴿لَكُمْ دِينُكُمْ وَلِيَ دِينِ﴾.</p>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--t6);font-weight:700;margin-top:30px;">عَلِيّ خَلِيل عَبَّاس السَّلْجُوقِيّ التُّرْكُمَانِيّ اللَّيْلَانِيّ</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--t1),var(--t2));">١</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية</h3></div>
+  <div class="card c1"><div class="ct">الاستعارة التصريحية في «النور لا يصافح الظلام»</div><p>تشبيه الحق بالنور والباطل بالظلام مع إسناد فعل «المصافحة» الإنساني إليهما استعارة مكنية تُجسّد استحالة التقاء الضدين في صورة حركة اجتماعية مألوفة (المصافحة)، فيصبح الامتناع عن المصالحة العقدية أمراً بديهياً كامتناع تصافح نقيضين لا يلتقيان.</p></div>
+  <div class="card c2"><div class="ct">الاستعارة المكنية في «لا يذوب» و«لا يتلوّن»</div><p>وصف العقيدة الثابتة بأنها «لا تذوب» ووصف المؤمن بأنه «لا يتلوّن» استعارتان تُشبّهان الثبات على الدين بصلابة المادة المقاومة للذوبان وثبات اللون الأصيل، وهما صورتان حسيتان تقرّبان معنى الثبات العقدي المجرد.</p></div>
+  <div class="card c3"><div class="ct">التجسيد في «الخط الفاصل»</div><p>تصوير الفارق العقدي بين التوحيد والشرك بأنه «خط» يرسمه القرآن تجسيد بصري للمعنى المعنوي (الفرق العقدي)، يحوّل مفهوماً مجرداً إلى صورة هندسية واضحة الحدود لا لبس فيها.</p></div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3></div>
+  <div class="card c4"><div class="ct">التكرار البياني لـ﴿وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ﴾</div><p>تكرار هذه الجملة بعينها مرتين في السورة (الآيتان ٣ و٥) من أبرز الظواهر البلاغية في السورة، وقد اختلف العلماء في توجيهه: فمنهم من رآه توكيداً لفظياً محضاً لتقرير المعنى ونفي كل احتمال للمهادنة، ومنهم من فرّق بين الآيتين بأن الأولى نفي للحال والثانية نفي للاستقبال، وكلا التوجيهين يخدم مقصد السورة في القطع بمفاصلة لا رجعة فيها.</p></div>
+  <div class="card c5"><div class="ct">الطباق بين «لكم دينكم» و«ولي دين»</div><p>تقابل الضميرين (كم/ي) في الشطرين الختاميين محسّن طباق ضمائري دقيق يرسم الحدود الفاصلة بأقل الألفاظ وأوجزها، فتكون الآية الختامية إيجازاً بليغاً يلخّص السورة كلها في ست كلمات.</p></div>
+  <div class="card c6"><div class="ct">التكرار الاستهلالي في النصائح الختامية («لا تتنازل... لا تخجل... لا تستحِ...»)</div><p>تكرار صيغة النهي المتتالية سبع مرات في فقرة الرسالة الموجهة للشباب أسلوب بديعي يراكم التوجيهات العملية بإيقاع نصحي متصاعد، يهيئ القارئ لتلقي الخلاصة («اجعل الله أولاً وآخراً ودائماً») بقوة تراكمية.</p></div>
+  <div class="card c7"><div class="ct">حسن التقسيم في تعداد صور العبادة المعاصرة</div><p>تعداد سبع صور لـ«ما يُعبد من دون الله» (المال، الشهرة، المنصب، الحزب، القومية، الشهوة، النفس) تقسيم منظم يوسّع معنى «ما تعبدون» من الأصنام الحجرية التاريخية إلى صور الشرك الخفي المعاصر، فيحافظ على راهنية الآية عبر العصور.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--t3),var(--t5));">٢</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات والصرف</h3></div>
+  <table class="tbl">
+    <tr><th>اللفظ</th><th>الوزن الصرفي / الأصل</th><th>ملاحظة القراءات</th></tr>
+    <tr><td class="term">الْكَافِرُونَ</td><td class="def">جمع مذكر سالم لـ«كافر» اسم فاعل من «كفر يكفر» على وزن «فاعِل»، من (ك ف ر) الدال أصلاً على الستر والتغطية</td><td class="def">قراءة متواترة واحدة برفع الواو والنون؛ لا خلاف بين القراء العشرة</td></tr>
+    <tr><td class="term">أَعْبُدُ</td><td class="def">فعل مضارع من «عبَد يعبُد» على وزن «أَفْعُل» بضمير المتكلم، من (ع ب د) الدال على الخضوع والتذلل</td><td class="def">إجماع القراء على الصيغة والحركة، دون خلاف</td></tr>
+    <tr><td class="term">عَابِدٌ / عَابِدُونَ</td><td class="def">اسم فاعل من «عبَد» على وزن «فاعِل»، مفرداً وجمعاً</td><td class="def">قراءة الجمهور بالرفع في «عابد» على أنه خبر «أنا»، وبالرفع في «عابدون» جمعاً مذكراً سالماً؛ لا خلاف مؤثر</td></tr>
+    <tr><td class="term">عَبَدتُّمْ</td><td class="def">فعل ماض من «عبَد» متصل بضمير المخاطبين، على وزن «فَعَلْتُمْ»</td><td class="def">قراءة متواترة بتشديد التاء المدغمة؛ إجماع القراء العشرة على الصيغة</td></tr>
+  </table>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3></div>
+  <div class="card c8"><div class="ct">لفظ «الدِّين»</div><p>مشترك بين معنى العقيدة والملة (كما في ختام السورة: لكم دينكم ولي دين) ومعنى الجزاء والحساب (كما في قوله تعالى: مالك يوم الدين)؛ والمراد هنا المعنى الأول: المنهج والملة التي يُعبد بها الله أو غيره.</p></div>
+  <div class="card c9"><div class="ct">لفظ «الْعِبَادَة»</div><p>مشترك بين العبادة الشعائرية المباشرة (كالصلاة والسجود لمعبود) والعبادة بمعنى الطاعة والخضوع القلبي الشامل (كطاعة الهوى أو المال)؛ والمقال وسّع دلالة اللفظ إلى المعنى الثاني في قوله إن عبادة المال والشهرة والمنصب داخلة في معنى الآية، وهذا توسيع تفسيري معتبر لعموم اللفظ.</p></div>
+  <div class="card c1"><div class="ct">لفظ «الْبَرَاءَة»</div><p>مشترك بين البراءة من الذنب (كبراءة المتهم) والبراءة من الشرك والمعبودات الباطلة (كما في قول إبراهيم: إنني براء مما تعبدون)؛ والمراد في سياق المقال المعنى الثاني: إعلان القطيعة العقدية التامة مع كل معبود سوى الله.</p></div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3></div>
+  <table class="tbl">
+    <tr><th>اللفظان</th><th>الفرق الدقيق</th></tr>
+    <tr><td class="term">الْمُفَاصَلَة / الْقَطِيعَة</td><td class="def">«المفاصلة» فصل في أصل العقيدة والمعبود مع بقاء التعامل والإحسان في شؤون الحياة الأخرى، أما «القطيعة» فانقطاع تام في كل تعامل؛ والمقال ينص صراحة على أن السورة مفاصلة لا قطيعة، موضحاً أن الإسلام يأمر بالعدل والإحسان مع الجميع رغم الحسم العقدي.</td></tr>
+    <tr><td class="term">الْكَافِر / الْمُشْرِك</td><td class="def">«الكافر» أعم يشمل كل من جحد الحق أو ستره أياً كان نوع جحوده، أما «المشرك» أخص يصف من جعل مع الله شريكاً في العبادة؛ وخطاب السورة لـ«الكافرون» كان موجهاً في سياق نزولها تحديداً لمشركي قريش، فاستُعمل اللفظ الأعم مع قصد الأخص بحسب سبب النزول.</td></tr>
+    <tr><td class="term">التَّوْحِيد / الْإِيمَان</td><td class="def">«التوحيد» أخص يتعلق بإفراد الله بالعبادة والألوهية تحديداً، أما «الإيمان» أعم يشمل التصديق بكل ما جاء به الوحي من غيبيات وأحكام؛ وسورة الكافرون مركزة على التوحيد تحديداً بوصفه جوهر المفاصلة، لا على الإيمان بعمومه.</td></tr>
+  </table>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3></div>
+  <div class="card c2"><div class="ct">لماذا افتُتحت السورة بـ«قل» ولم يُحذف الفعل كعادة بعض الأوامر القرآنية؟</div><p>إثبات فعل «قل» صراحة (بخلاف حذفه في بعض السياقات القرآنية الأخرى) يؤكد أن هذا الإعلان تبليغ مباشر مقصود بلفظه لا مجرد إشارة ضمنية، فيكون النبي ﷺ مأموراً بنطق هذه الكلمات بعينها لا مجرد إفهام معناها، وهذا يرفع من درجة الحسم والوضوح في الخطاب.</p></div>
+  <div class="card c3"><div class="ct">لماذا تكرر النفي بأربع صيغ مختلفة الترتيب لا بصيغة واحدة؟</div><p>تنويع صيغ النفي بين «لا أعبد» و«لا أنتم عابدون» و«لا أنا عابد» و«لا أنتم عابدون» (تبديل بين فعل واسم فاعل، وبين المتكلم والمخاطبين) أسلوب بلاغي يمنع الرتابة مع الحفاظ على المعنى الواحد، ويُغلق كل زاوية محتملة للالتباس من جميع الجهات الممكنة (فعلي واسمي، من طرفي الخطاب).</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--t5),var(--t6));">٣</div><h2>ترابط السياقات وعلاقة السورة بالآيات الأخرى</h2></div>
+  <div class="card c4"><div class="ct">سبب نزول السورة وسياقها التاريخي</div><p>نزلت السورة رداً على عرض مشركي قريش على النبي ﷺ حلاً وسطاً يقتضي التناوب في العبادة، وهذا السياق التاريخي يفسر شدة الحسم في السورة: فهي ليست عداءً ابتدائياً بل رداً على محاولة مساومة صريحة على أصل العقيدة، مما يجعل القطع فيها ضرورة لا خياراً.</p></div>
+  <div class="card c5"><div class="ct">الصلة بآية إبراهيم في سورة الزخرف</div><p>يربط المقال خاتمة السورة بقول إبراهيم عليه السلام ﴿إِنَّنِي بَرَاءٌ مِّمَّا تَعْبُدُونَ إِلَّا الَّذِي فَطَرَنِي﴾، وهو ربط موضوعي يُظهر أن مبدأ المفاصلة العقدية سنة ثابتة عبر الأنبياء جميعاً لا خاصة بخاتمهم ﷺ، فيتسق موقف النبي محمد مع موقف أبي الأنبياء إبراهيم عليهما السلام.</p></div>
+  <div class="card c6"><div class="ct">الصلة بموقف يوسف عليه السلام في السجن</div><p>استحضار قول يوسف عليه السلام ﴿أَأَرْبَابٌ مُّتَفَرِّقُونَ خَيْرٌ أَمِ اللَّهُ الْوَاحِدُ الْقَهَّارُ﴾ يربط مفاصلة سورة الكافرون بنموذج تاريخي آخر لنبي أعلن التوحيد في أحرج الظروف (وهو مسجون)، مما يؤكد أن الثبات على العقيدة لا يتوقف على راحة الظرف أو صعوبته.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--t6),var(--t8));">٤</div><h2>نوع السورة والأحكام والدروس المستنبطة</h2></div>
+  <table class="tbl">
+    <tr><th>الجانب</th><th>البيان</th></tr>
+    <tr><td class="term">نوع السورة</td><td class="def">سورة مكية عقدية، من سور المفاصلة والبراءة من الشرك، نزلت في سياق دعوي مباشر رداً على عرض مساومة على أصل العقيدة</td></tr>
+    <tr><td class="term">مقصدها الأساسي</td><td class="def">إعلان استقلال العقيدة الإسلامية التام عن كل عبادة أخرى، وتقرير أن التوحيد لا يقبل حلولاً وسطى أو مهادنة في أصله</td></tr>
+    <tr><td class="term">الحكم / الأدب المستنبط</td><td class="def">وجوب الثبات على العقيدة وعدم مجاراة الضغوط الاجتماعية أو المصلحية على حساب أصول الدين، مع بقاء وجوب العدل والإحسان في التعامل مع غير المسلمين فيما لا يمس أصل العقيدة</td></tr>
+    <tr><td class="term">أثرها التربوي</td><td class="def">تحصين الهوية الإيمانية من الذوبان في البيئات المخالفة، وتعليم النفس أن العزة الحقيقية في الثبات على الحق لا في إرضاء الناس على حساب الدين</td></tr>
+  </table>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--t7),var(--t9));">٥</div><h2>إعراب السورة كاملة</h2></div>
+
+  <div class="sub"><h3>إعراب: ﴿قُلْ يَا أَيُّهَا الْكَافِرُونَ﴾</h3></div>
+  <div class="ib" style="background:var(--card-bg);border:2px solid var(--div);border-radius:9px;padding:10px 18px;">
+    <div class="ir"><div class="iw">قُلْ</div><div class="id">فعل أمر مبني على السكون، والفاعل ضمير مستتر وجوباً تقديره «أنت» يعود على النبي ﷺ.</div></div>
+    <div class="ir"><div class="iw">يَا أَيُّهَا الْكَافِرُونَ</div><div class="id">«يا» أداة نداء، «أيُّ» منادى نكرة مقصودة مبني على الضم في محل نصب، و«ها» حرف تنبيه زائد للتوكيد، «الكافرون» بدل أو نعت مرفوع لـ«أيّ» تبعاً للفظه، وعلامة رفعه الواو لأنه جمع مذكر سالم.</div></div>
+  </div>
+
+  <div class="sub"><h3>إعراب: ﴿لَا أَعْبُدُ مَا تَعْبُدُونَ﴾</h3></div>
+  <div class="ib" style="background:var(--card-bg);border:2px solid var(--div);border-radius:9px;padding:10px 18px;">
+    <div class="ir"><div class="iw">لَا أَعْبُدُ</div><div class="id">«لا» نافية غير عاملة، «أعبدُ» فعل مضارع مرفوع بالضمة وعلامة الرفع الضمة، والفاعل ضمير مستتر تقديره «أنا».</div></div>
+    <div class="ir"><div class="iw">مَا تَعْبُدُونَ</div><div class="id">«ما» اسم موصول مبني في محل نصب مفعول به لـ«أعبد»، «تعبدون» فعل مضارع مرفوع بثبوت النون والواو فاعل، والجملة صلة الموصول لا محل لها من الإعراب.</div></div>
+  </div>
+
+  <div class="sub"><h3>إعراب: ﴿وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ﴾</h3></div>
+  <div class="ib" style="background:var(--card-bg);border:2px solid var(--div);border-radius:9px;padding:10px 18px;">
+    <div class="ir"><div class="iw">وَلَا أَنتُمْ</div><div class="id">الواو استئنافية أو عاطفة، «لا» نافية، «أنتم» ضمير منفصل مبني في محل رفع مبتدأ.</div></div>
+    <div class="ir"><div class="iw">عَابِدُونَ</div><div class="id">خبر المبتدأ مرفوع بالواو لأنه جمع مذكر سالم، وهو اسم فاعل يعمل عمل فعله.</div></div>
+    <div class="ir"><div class="iw">مَا أَعْبُدُ</div><div class="id">«ما» اسم موصول مبني في محل نصب مفعول به لاسم الفاعل «عابدون»، «أعبدُ» فعل مضارع مرفوع، والفاعل ضمير مستتر تقديره «أنا»، والجملة صلة الموصول.</div></div>
+  </div>
+
+  <div class="sub"><h3>إعراب: ﴿وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ﴾</h3></div>
+  <div class="ib" style="background:var(--card-bg);border:2px solid var(--div);border-radius:9px;padding:10px 18px;">
+    <div class="ir"><div class="iw">وَلَا أَنَا عَابِدٌ</div><div class="id">الواو عاطفة، «لا» نافية، «أنا» ضمير منفصل مبتدأ، «عابدٌ» خبر مرفوع بالتنوين (بخلاف «عابدون» في الآية السابقة لأنه هنا مفرد مطابق للمخبَر عنه «أنا»).</div></div>
+    <div class="ir"><div class="iw">مَّا عَبَدتُّمْ</div><div class="id">«ما» اسم موصول مبني في محل جر أو نصب متعلق بـ«عابد» (اسم الفاعل يعمل عمل فعله فينصب مفعولاً به)، «عبدتُّم» فعل ماض مبني على السكون، والتاء المتحركة فاعل، والميم علامة جمع الذكور.</div></div>
+  </div>
+
+  <div class="sub"><h3>إعراب: ﴿لَكُمْ دِينُكُمْ وَلِيَ دِينِ﴾</h3></div>
+  <div class="ib" style="background:var(--card-bg);border:2px solid var(--div);border-radius:9px;padding:10px 18px;">
+    <div class="ir"><div class="iw">لَكُمْ</div><div class="id">جار ومجرور خبر مقدَّم متعلق بمحذوف.</div></div>
+    <div class="ir"><div class="iw">دِينُكُمْ</div><div class="id">مبتدأ مؤخر مرفوع بالضمة، وهو مضاف، والكاف والميم مضاف إليه.</div></div>
+    <div class="ir"><div class="iw">وَلِيَ دِينِ</div><div class="id">الواو عاطفة، «لي» جار ومجرور خبر مقدَّم معطوف على الجملة الأولى؛ «دينِ» مبتدأ مؤخر مرفوع بضمة مقدرة، وهو مضاف، والياء المحذوفة رسماً واكتفي عنها بالكسرة مضاف إليه في محل جر.</div></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--t9),var(--t1));">٦</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«مَنْ عَرَفَ اللَّهَ حَقَّ الْمَعْرِفَةِ، لَمْ يَعُدْ يَخْشَى أَنْ يَقُولَ: لَكُمْ دِينُكُمْ وَلِيَ دِينِ»<br><small style="font-size:.65em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card c1"><div class="ct">أولاً: الوضوح في الهوية الإيمانية</div><p>تعلّمنا السورة أن وضوح الهوية العقدية ليس عدواناً بل صحة نفسية واجتماعية. <strong>التطبيق:</strong> لا تخجل من التصريح بهويتك الإيمانية أمام من يخالفك، فالوضوح يمنحك احتراماً أكبر من التذبذب.</p></div>
+  <div class="card c2"><div class="ct">ثانياً: التمييز بين المفاصلة العقدية والقطيعة الاجتماعية</div><p>يعلّمنا المقال أن الثبات على الدين لا يعني قطع التعامل مع المخالفين. <strong>التطبيق:</strong> تعامل بالعدل والإحسان مع من حولك مهما اختلفت عقيدته، مع بقائك متمسكاً بثوابتك دون مجاملة على حسابها.</p></div>
+  <div class="card c3"><div class="ct">ثالثاً: مقاومة الذوبان في بيئة مخالفة</div><p>تحذّر السورة من خطر الانصهار التدريجي في محيط يخالف القيم دون وعي. <strong>التطبيق:</strong> إذا وجدت نفسك في بيئة تضغط عليك لتغيير سلوكك أو مظهرك الديني، تذكّر أن الثبات ليس تشدداً بل حفاظاً على هويتك.</p></div>
+  <div class="card c4"><div class="ct">رابعاً: استمداد العزة من الله لا من تصفيق الناس</div><p>يوجّه المقال نحو مصدر داخلي للقيمة الذاتية بدل الاعتماد على رضا الآخرين. <strong>التطبيق:</strong> قبل أن تتخذ قراراً يمس مبادئك، اسأل نفسك: هل أفعله لرضا الله أم لإرضاء من حولي؟</p></div>
+
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="rlist">
+      <li>البناء التفسيري المتسلسل آية بآية: يسير المقال وفق ترتيب آيات السورة، شارحاً كل آية على حدة قبل الانتقال للتالية، وهو منهج تفسيري تقليدي يمنح القارئ إحاطة كاملة بالسورة آية آية.</li>
+      <li>التوسيع من السياق التاريخي إلى الواقع المعاصر: ينتقل المقال من سبب النزول التاريخي (عرض قريش) إلى تطبيقات معاصرة (الشباب، الموضة، الشهرة)، فيحافظ على راهنية السورة عبر الزمن.</li>
+      <li>الخطاب المباشر التحفيزي في القسم الأخير: التحول إلى صيغة الأمر والنهي المباشر («لا تتنازل...، اجعل الله أولاً...») يحوّل المقال من تفسير نظري إلى نداء تربوي عملي موجَّه للقارئ مباشرة.</li>
+      <li>ربط السورة بسلسلة الأنبياء: توسيع المرجعية من سورة واحدة إلى نموذج نبوي متكرر (إبراهيم، يوسف، موسى) يمنح المفاصلة العقدية طابع السنة الكونية الثابتة لا الموقف الفردي العابر.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--t1),var(--t7));">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح وأئمة التفسير في سور العقيدة والتوحيد.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين إعلان المفاصلة العقدية القرآني وحاجة الشباب المعاصر إلى تحصين هويتهم الإيمانية وسط ضغوط اجتماعية وإعلامية متزايدة.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية في تناول قضايا التوحيد والثبات على الدين.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">التوحيد والعقيدة</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">التزكية</span>
+        <span class="atag">فقه الهوية الإيمانية</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.7;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>

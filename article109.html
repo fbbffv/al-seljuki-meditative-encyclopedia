@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الهَيْئَةُ العَامَّةُ لِتَطْبِيعِ الكَبَائِرِ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141a16;--bg:#faf9f4;--bg2:#f4f8f3;
+  --gold:#8a6300;--gold2:#a67c00;--em1:#0d5c4a;--em2:#0f7a5f;--em3:#12946f;--brz:#7a4a1e;--brz2:#9c5f22;--wine:#6b1030;--slate:#1f3b52;
+  --hdr:#0a1512;--hdr2:#122720;--card-bg:#ffffff;--div:rgba(15,122,95,.7);--mist:#3a4740;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;font-weight:500;line-height:1.95;overflow-x:hidden;max-width:100%;
+-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+background-image:radial-gradient(ellipse at 6% 4%,rgba(15,122,95,.09) 0%,transparent 45%),radial-gradient(ellipse at 94% 10%,rgba(138,99,0,.09) 0%,transparent 45%),radial-gradient(ellipse at 10% 92%,rgba(122,74,30,.08) 0%,transparent 45%),radial-gradient(ellipse at 92% 96%,rgba(107,16,48,.07) 0%,transparent 45%);}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--em1),var(--em2),var(--em3),var(--gold),var(--gold2),var(--brz),var(--brz2),var(--wine));z-index:400;transform-origin:top;box-shadow:0 0 10px rgba(15,122,95,.5);}
+.rband{height:5px;background:linear-gradient(90deg,var(--em1),var(--em2),var(--em3),var(--gold),var(--gold2),var(--brz),var(--brz2),var(--wine));}
+.hdr{background:var(--hdr);position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(0,0,0,.5);border-bottom:2px solid transparent;border-image:linear-gradient(90deg,var(--em2),var(--gold),var(--brz2),var(--wine)) 1;}
+.hdr-i{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;min-height:58px;gap:16px;}
+.logo{font-family:'Scheherazade New',serif;font-size:1rem;flex-shrink:0;background:linear-gradient(90deg,var(--em3),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.htitle{font-family:'Scheherazade New',serif;color:#eef7f2;font-size:.88rem;text-align:center;flex:1;opacity:.95;overflow-wrap:break-word;word-break:break-word;min-width:120px;}
+.tbtn{background:linear-gradient(90deg,var(--em2),var(--gold2));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-weight:600;font-size:.85rem;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;flex-wrap:wrap;max-width:1400px;margin:0 auto;min-height:calc(100vh - 58px);}
+.sb{width:290px;max-width:100%;flex-shrink:0;background:var(--hdr);position:sticky;top:58px;height:calc(100vh - 58px);overflow-y:auto;overflow-x:hidden;border-left:1px solid var(--div);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:58px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-size:1rem;padding:16px 18px;border-bottom:1px solid var(--div);background:linear-gradient(90deg,var(--em3),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;}
+.toc-s{color:#8fb0a3;font-size:.67rem;letter-spacing:.1em;padding:10px 18px 3px;}
+.toc-a{display:block;color:#cfe4da;text-decoration:none;padding:7px 18px 7px 26px;font-size:.83rem;font-weight:500;border-right:3px solid transparent;transition:all .2s;overflow-wrap:break-word;word-break:break-word;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(166,124,0,.18);border-right-color:var(--gold2);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.92;}
+.main{flex:1;min-width:0;max-width:100%;padding:52px 64px;overflow-x:hidden;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:38px;border-bottom:1px solid var(--div);position:relative;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:160px;height:4px;background:linear-gradient(90deg,var(--em2),var(--gold2),var(--brz2));border-radius:4px;}
+.horn{font-size:1.4rem;display:block;margin-bottom:14px;letter-spacing:.4em;color:var(--gold2);}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--em2),var(--gold2));color:#fff;font-size:.74rem;padding:4px 16px;border-radius:20px;margin-bottom:18px;font-weight:600;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.15rem;font-weight:700;line-height:1.55;margin-bottom:12px;color:var(--em1);overflow-wrap:break-word;word-break:break-word;}
+.hero h2.sub-h{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--mist);font-weight:600;margin-top:6px;}
+.hmeta{color:var(--mist);font-size:.94rem;font-weight:500;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-top:12px;}
+.hmeta .dot{width:5px;height:5px;background:var(--gold2);border-radius:50%;}
+.vb{background:linear-gradient(135deg,var(--hdr),var(--hdr2));border:2px solid transparent;border-image:linear-gradient(90deg,var(--em2),var(--gold2),var(--brz2)) 1;border-radius:12px;padding:30px 38px;margin:32px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(166,124,0,.16),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.42rem;color:#f6f2e4;line-height:2.05;position:relative;z-index:1;overflow-wrap:break-word;word-break:break-word;}
+.vt.sm{font-size:1.22rem;}
+.vr{background:linear-gradient(90deg,var(--gold2),var(--brz2));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:.88rem;margin-top:12px;position:relative;z-index:1;font-weight:700;}
+.abody{font-size:1.1rem;line-height:2.05;color:var(--ink);}
+.abody p{margin-bottom:1.35em;text-align:justify;overflow-wrap:break-word;word-break:break-word;}
+.abody p:first-child::first-letter{font-size:3em;font-family:'Scheherazade New',serif;color:var(--em1);float:right;line-height:.82;margin-left:8px;}
+.qv{font-family:'Scheherazade New',serif;font-size:1.2rem;color:var(--wine);text-align:center;margin:.4em 0;font-weight:700;}
+.ql{font-family:'Scheherazade New',serif;font-size:1.16rem;font-weight:700;text-align:center;margin:16px 0;color:var(--em1);}
+.sec{margin-top:70px;padding-top:18px;scroll-margin-top:78px;}
+.sec-h{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:26px;}
+.sec-n{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.05rem;font-weight:700;color:#fff;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.62rem;border-bottom:3px solid;border-image:linear-gradient(90deg,var(--em2),var(--wine)) 1;padding-bottom:8px;flex:1;min-width:180px;color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.sub{margin-top:34px;margin-bottom:18px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.22rem;margin-bottom:12px;padding-right:14px;border-right:4px solid var(--gold2);color:var(--em1);overflow-wrap:break-word;word-break:break-word;}
+.card{background:var(--card-bg);border:2px solid var(--div);border-radius:10px;padding:20px 24px;margin:16px 0;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.card.c1{border-right:6px solid var(--em1);}
+.card.c2{border-right:6px solid var(--em2);}
+.card.c3{border-right:6px solid var(--em3);}
+.card.c4{border-right:6px solid var(--gold);}
+.card.c5{border-right:6px solid var(--gold2);}
+.card.c6{border-right:6px solid var(--brz);}
+.card.c7{border-right:6px solid var(--brz2);}
+.card.c8{border-right:6px solid var(--wine);}
+.card.c9{border-right:6px solid var(--slate);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.1rem;margin-bottom:10px;font-weight:700;color:var(--ink);}
+.card p{font-size:.97rem;color:#232d27;font-weight:500;line-height:1.9;margin-top:6px;overflow-wrap:break-word;word-break:break-word;}
+.card p strong{color:var(--ink);}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem;border-radius:8px;overflow:hidden;table-layout:fixed;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.tbl th{background:linear-gradient(90deg,var(--em2),var(--brz2));color:#fff;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:.96rem;overflow-wrap:break-word;word-break:break-word;}
+.tbl td{padding:11px 14px;border-bottom:2px solid var(--div);vertical-align:top;line-height:1.85;overflow-wrap:break-word;word-break:break-word;}
+.tbl tr:nth-child(even) td{background:rgba(15,122,95,.06);}
+.term{font-family:'Scheherazade New',serif;font-size:1.04rem;color:var(--ink);font-weight:700;}
+.def{color:var(--mist);font-size:.9rem;font-weight:500;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.28rem;text-align:center;padding:28px 32px;margin:38px 0;border-top:3px solid;border-bottom:3px solid;border-image:linear-gradient(90deg,var(--em2),var(--wine)) 1;position:relative;color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.pq::before{content:'❝';position:absolute;top:-6px;right:32px;font-size:2.5rem;color:var(--gold2);line-height:1;}
+.src{background:rgba(15,122,95,.08);border:2px solid rgba(15,122,95,.5);border-radius:9px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.87rem;font-weight:500;color:#0e3a2f;line-height:1.9;overflow-wrap:break-word;word-break:break-word;}
+.src strong{color:var(--em2);}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:4px;font-weight:700;font-family:'Noto Naskh Arabic',serif;color:#fff;margin-right:6px;}
+.grade.sahih{background:linear-gradient(90deg,var(--em2),var(--em3));}
+.rlist{list-style:none;padding:0;margin:12px 0;}
+.rlist li{font-family:'Scheherazade New',serif;font-size:1.03rem;padding:9px 0;border-bottom:1px dashed var(--div);overflow-wrap:break-word;word-break:break-word;color:var(--ink);}
+.rlist li:last-child{border-bottom:none;}
+.atag{display:inline-block;background:rgba(15,122,95,.14);color:var(--em1);font-size:.72rem;font-weight:600;padding:4px 12px;border-radius:12px;margin:3px;border:2px solid rgba(15,122,95,.35);}
+.asec{background:linear-gradient(135deg,var(--hdr),var(--hdr2));border:2px solid transparent;border-image:linear-gradient(90deg,var(--em2),var(--gold2),var(--brz2)) 1;border-radius:12px;padding:34px 40px;margin:56px 0 38px;display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;box-shadow:0 8px 26px rgba(0,0,0,.1);}
+.ava{width:80px;height:80px;border-radius:16px;background:linear-gradient(135deg,var(--em1),var(--brz2));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:1.9rem;color:#fff;font-weight:700;flex-shrink:0;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.ai{min-width:200px;flex:1;}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff;font-size:1.28rem;margin-bottom:5px;overflow-wrap:break-word;word-break:break-word;}
+.ai .at{color:#c7e8d8;font-size:.86rem;margin-bottom:13px;}
+.ai p{color:#dcece4;font-size:.92rem;font-weight:500;line-height:1.85;margin-bottom:8px;overflow-wrap:break-word;word-break:break-word;}
+.ai p strong{color:#fff;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;}
+.ami{background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.28);border-radius:6px;padding:10px 13px;}
+.ami .aml{color:#ffdf9c;font-size:.7rem;margin-bottom:3px;display:block;}
+.ami .amv{color:#fff;font-size:.87rem;font-family:'Scheherazade New',serif;overflow-wrap:break-word;word-break:break-word;}
+.orn{text-align:center;font-size:1.15rem;margin:48px 0;letter-spacing:.42em;color:var(--gold2);opacity:.8;}
+footer{background:var(--hdr);color:#cfe4da;text-align:center;padding:32px 20px;font-size:.85rem;font-weight:500;border-top:3px solid;border-image:linear-gradient(90deg,var(--em2),var(--gold2),var(--brz2)) 1;margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;color:#a9d9c4;font-weight:700;}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:58px;width:280px;max-width:85vw;height:calc(100vh - 58px);overflow-y:auto;}.amg{grid-template-columns:1fr;}.hero h1{font-size:1.65rem;}.asec{flex-direction:column;}.main{padding:32px 20px;}}
+@media(max-width:640px){.main{padding:18px 12px;}.vb{padding:22px 16px;}.vt{font-size:1.02rem;}.hero h1{font-size:1.3rem;}.pq{font-size:.98rem;padding:18px 14px;}.hdr-i{padding:0 12px;}.logo{display:none;}.card{padding:16px 16px;}.asec{padding:24px 20px;}}
+</style>
+</head>
+<body>
+<div class="rband"></div>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ السَّلْجُوقِي</div>
+    <div class="htitle">الهَيْئَةُ العَامَّةُ لِتَطْبِيعِ الكَبَائِرِ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">الدراسة التحليلية متعددة الجوانب</div>
+  <a class="toc-a" href="#s1">١. الجانب الفكري والشرعي</a>
+  <a class="toc-a" href="#s2">٢. الاجتماعي والثقافي والإعلامي</a>
+  <a class="toc-a" href="#s3">٣. النفسي والأخلاقي والفلسفي</a>
+  <a class="toc-a" href="#s4">٤. التاريخي والمقارن واللغوي الدلالي</a>
+  <a class="toc-a" href="#s5">٥. التربوي والتكنولوجي</a>
+  <a class="toc-a" href="#s6">٦. الأنثروبولوجي والوجودي والمنهجي</a>
+  <a class="toc-a" href="#s7">٧. المستقبلي والحضاري والمؤسساتي</a>
+  <a class="toc-a" href="#s8">٨. الجانب الأدبي والبلاغي</a>
+  <a class="toc-a" href="#s9">٩. التوثيق الشرعي للأدلة</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<div class="hero">
+  <span class="horn">◆ ◇ ◆</span>
+  <div class="hcat">مقالة نقدية · نقد الخطاب الديني المعاصر · فقه الدعوة والتيسير</div>
+  <h1>«الهَيْئَةُ العَامَّةُ لِتَطْبِيعِ الكَبَائِرِ»</h1>
+  <h2 class="sub-h">مَنَابِرُ تَتَحَوَّلُ إِلَى خِدْمَةِ بَثٍّ مَدْفُوعٍ!</h2>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>مقالة في نقد الخطاب الديني</span>
+  </div>
+</div>
+
+<div id="article" class="sec" style="margin-top:0;padding-top:0;">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--em1),var(--brz2));">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="abody">
+    <p>فِي زَمَنِ العَجَائِبِ، لَمْ يَعُدْ بَعْضُ الوُعَّاظِ يَكْتَفُونَ بِالحَدِيثِ عَنِ التَّيْسِيرِ المَشْرُوعِ، بَلْ يُخَيَّلُ إِلَيْكَ -وَأَنْتَ تَسْتَمِعُ إِلَى بَعْضِ خِطَابَاتِهِمْ- أَنَّ مُهِمَّتَهُمُ الأَسَاسِيَّةَ هِيَ إِزَالَةُ رَهْبَةِ المَعْصِيَةِ مِنَ القُلُوبِ، حَتَّى تَصْبَحَ الكَبِيرَةُ وَكَأَنَّهَا مُجَرَّدُ "خَطَأٍ بَسِيطٍ" لَا يَسْتَحِقُّ أَنْ يُقْلِقَ صَاحِبَهُ!</p>
+
+    <p>فَتَسْتَمِعُ إِلَى خِطَابٍ يَكْثُرُ فِيهِ الحَدِيثُ عَنْ "لَا تُشَدِّدُوا"، وَ"لَا تُنَفِّرُوا"، حَتَّى يَكَادَ المُسْتَمِعُ يَظُنُّ أَنَّ الخَوْفَ مِنَ الذُّنُوبِ هُوَ المُشْكِلَةُ، لَا الذُّنُوبُ نَفْسُهَا!</p>
+
+    <p>وَلَوْ اسْتَمَرَّ الأَمْرُ عَلَى هَذَا المِنْوَالِ، فَقَدْ نَسْتَيْقِظُ يَوْمًا عَلَى إِعْلَانٍ تَخَيُّلِيٍّ يَقُولُ:</p>
+
+    <p class="ql">"يَسُرُّ هَيْئَةَ التَّرْفِيهِ الأَخْلَاقِيِّ أَنْ تُعْلِنَ عَنْ مَوْسِمٍ جَدِيدٍ مِنَ التَّطْبِيعِ مَعَ كُلِّ المُحَرَّمَاتِ... مَعَ تَخْفِيضَاتٍ خَاصَّةٍ عَلَى تَأْنِيبِ الضَّمِيرِ!"</p>
+
+    <p>إِنَّ الإِسْلَامَ دِينُ الرَّحْمَةِ، نَعَمْ، لَكِنَّهُ أَيْضًا دِينُ الأَمْرِ بِالمَعْرُوفِ وَالنَّهْيِ عَنِ المُنْكَرِ، قَالَ تَعَالَى:</p>
+
+    <div class="vb"><div class="vt sm">﴿وَلَا تَقْرَبُوا الزِّنَى إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا﴾</div><div class="vr">سورة الإسراء (١٧)، الآية ٣٢</div></div>
+
+    <p>وَقَالَ سُبْحَانَهُ:</p>
+
+    <div class="vb"><div class="vt sm">﴿قُلْ إِنَّمَا حَرَّمَ رَبِّيَ الْفَوَاحِشَ مَا ظَهَرَ مِنْهَا وَمَا بَطَنَ﴾</div><div class="vr">سورة الأعراف (٧)، الآية ٣٣</div></div>
+
+    <p>فَالرَّحْمَةُ لَا تَكُونُ بِإِلْغَاءِ التَّحْرِيمِ، وَلَا بِالتَّقْلِيلِ مِنْ شَأْنِ الكَبَائِرِ، وَإِنَّمَا بِفَتْحِ بَابِ التَّوْبَةِ مَعَ بَقَاءِ هَيْبَةِ المَعْصِيَةِ فِي النُّفُوسِ.</p>
+
+    <p>وَقَدْ حَذَّرَ النَّبِيُّ ﷺ فَقَالَ: «كُلُّ أُمَّتِي مُعَافًى إِلَّا المُجَاهِرِينَ»، فَكَيْفَ إِذَا أَصْبَحَ التَّهْوِينُ مِنَ الذَّنْبِ نَفْسِهِ مَادَّةً إِعْلَامِيَّةً مُتَكَرِّرَةً؟!</p>
+
+    <p>وَمِنْ أَخْطَرِ مَا يُنْتَقَدُ فِي بَعْضِ الخِطَابَاتِ المُعَاصِرَةِ أَنَّهَا قَدْ تُفْهَمُ وَكَأَنَّهَا تَدْعُو إِلَى التَّعَايُشِ مَعَ المُنْكَرِ بَدَلًا مِنْ مُقَاوَمَتِهِ، فَيَنْشَأُ جِيلٌ يَرَى الحَرَامَ أَمْرًا اعْتِيَادِيًّا، وَيَسْتَغْرِبُ مِمَّنْ يَتَمَسَّكُ بِالأَحْكَامِ الشَّرْعِيَّةِ!</p>
+
+    <p>وَقَدْ عُرِفَ فِي التَّارِيخِ أَنَّ بَعْضَ عُلَمَاءِ السُّوءِ كَانُوا يُبَرِّرُونَ سِيَاسَاتِ الحُكَّامِ وَيَجْتَهِدُونَ فِي تَزْيِينِ أَخْطَائِهِمْ، حَتَّى صَارَ النَّاسُ يُرَدِّدُونَ مَقُولَةَ السَّلَفِ:</p>
+
+    <p class="qv">"إِذَا فَسَدَ العَالِمُ فَسَدَ بِفَسَادِهِ عَالَمٌ بَاعَ دِينَهُ بِدُنْيَا غَيْرِهِ."</p>
+
+    <p>وَالعُلَمَاءُ الرَّبَّانِيُّونَ عَلَى النَّقِيضِ مِنْ ذَلِكَ؛ كَانُوا يُذَكِّرُونَ الحُكَّامَ وَالمَحْكُومِينَ مَعًا بِقَوْلِ اللهِ تَعَالَى:</p>
+
+    <div class="vb"><div class="vt sm">﴿وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ﴾</div><div class="vr">سورة المائدة (٥)، الآية ٢</div></div>
+
+    <p>أَمَّا السُّخْرِيَةُ الحَقِيقِيَّةُ، فَهِيَ أَنْ يَتَحَوَّلَ بَعْضُ الخِطَابِ الدِّينِيِّ -فِي نَظَرِ مُنْتَقِدِيهِ- إِلَى مَا يُشْبِهُ نَشَرَاتِ العَلَاقَاتِ العَامَّةِ، فَيَصْبَحُ المَمْنُوعُ مَأْلُوفًا، وَالمُنْكَرُ مَأْلُوفَ المَشْهَدِ، بَيْنَمَا تُوصَفُ الغَيْرَةُ عَلَى حُدُودِ اللهِ بِالتَّشَدُّدِ!</p>
+
+    <p>وَلِذَلِكَ يَبْقَى المِيزَانُ هُوَ القُرْآنُ وَالسُّنَّةُ، لَا أَهْوَاءُ النَّاسِ وَلَا ضُغُوطُ السِّيَاسَةِ وَلَا رَغَبَاتُ الإِعْلَامِ، فَالحَقُّ لَا يَتَغَيَّرُ بِتَغَيُّرِ المَوَاسِمِ، وَلَا يَزُولُ بِتَكْرَارِ التَّبْرِيرَاتِ.</p>
+
+    <p style="text-align:center;font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--em1);font-weight:700;margin-top:30px;">✍️ عَلِيٌّ خَلِيلٌ عَبَّاسٌ السَّلْجُوقِيُّ التُّرْكُمَانِيُّ اللَّيْلَانِيُّ</p>
+  </div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s1" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--em1),var(--em2));">١</div><h2>الجانب الفكري والديني (الشرعي)</h2></div>
+  <div class="card c1"><div class="ct">مفهوم «الخطاب الديني المعاصر»</div><p>يرصد المقال تحولاً من الخطاب التكليفي الصارم إلى خطاب يقوم على التسهيل والتهوين، وهذا التحول يحتاج ضبطاً دقيقاً: فالتيسير المشروع (رفع الحرج) له ضوابط أصولية معروفة (كأن تكون المشقة غير معتادة، وألا يمسّ التيسير قطعياً)، وما يصفه المقال هو تجاوز هذه الضوابط إلى تخفيف يمسّ أصل الحكم لا كيفية تطبيقه.</p></div>
+  <div class="card c2"><div class="ct">إشكالية المجاهرة بالمعاصي</div><p>يوظّف المقال حديث «كل أمتي معافى إلا المجاهرين» ليقلب زاوية النظر: أن أصل الابتلاء بالذنب متوقَّع في بشرية الإنسان، لكن الخطورة الحقيقية في تطبيع الجهر به وتحويله من سترٍ مطلوب إلى مادة مقبولة تُعرض وتُكرَّر.</p></div>
+  <div class="card c3"><div class="ct">التوازن الشرعي بين الرحمة والحدود</div><p>يقيم المقال معادلة دقيقة: الرحمة لا تكون بإلغاء التحريم بل بفتح باب التوبة مع بقاء هيبة المعصية في النفوس. وهذا يعكس المنهج القرآني الجامع بين آيات الرحمة والمغفرة وآيات الأمر بالمعروف والنهي عن المنكر دون تعارض بينهما.</p></div>
+  <div class="card c4"><div class="ct">مسؤولية العلماء والوعاظ</div><p>يميّز المقال بوضوح بين العالم الرباني الملتزم بالنص والغيرة على حدود الله، وبين من يطوّع الفتوى للتماشي مع الضغوط، مستنداً إلى مقولة السلف عن فساد العالم الذي يبيع دينه بدنيا غيره، وآية التعاون على البر لا الإثم كمعيار فارق بين الفريقين.</p></div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s2" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--em3),var(--gold));">٢</div><h2>الجانب الاجتماعي والثقافي والإعلامي</h2></div>
+  <div class="card c5"><div class="ct">تغيير الوعي الجمعي (التطبيع السلوكي)</div><p>يصف المقال ظاهرة اعتياد المجتمع للمنكر حتى يصبح الحرام مألوفاً، بينما توصف الاستقامة بـ«التشدد»، وهذا انزياح في موقع «الطبيعي» و«الشاذ» داخل المنظومة الاجتماعية، لا مجرد اختلاف رأي عابر.</p></div>
+  <div class="card c6"><div class="ct">صراع الأجيال وتأثير الخطاب المخفف</div><p>يشير المقال ضمناً إلى أثر التكرار الإعلامي في إعادة تعريف جيل جديد لمفهومي المقبول والمحظور بناءً على ما يُعرض إعلامياً، لا بناءً على النص الشرعي وحده.</p></div>
+  <div class="card c7"><div class="ct">تسقيف الخطاب لخدمة صناعة الترفيه</div><p>عبارة «هيئة الترفيه الأخلاقي» و«خدمة بث مدفوع» تشخيص ساخر لتحول المنبر من رسالة تخاطب الضمير إلى محتوى يخاطب معايير الانتشار والمشاهدات، وهو تحول بنيوي في وظيفة الخطاب لا مجرد أسلوب عرض.</p></div>
+  <div class="card c8"><div class="ct">قوة التكرار الإعلامي</div><p>يكرر المقال بنية «لا تشددوا... لا تنفروا» ليجسّد كيف يعيد التكرار الإعلامي تموضع المحظور من دائرة الصدمة إلى دائرة القبول التدريجي، وهو أثر تراكمي لا يظهر من عرض واحد بل من التكرار الممنهج.</p></div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s3" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--gold),var(--gold2));">٣</div><h2>الجانب النفسي والأخلاقي والفلسفي</h2></div>
+  <div class="card c9"><div class="ct">التكيف النفسي وزوال الحساسية</div><p>عبارة «تخفيضات على تأنيب الضمير» ترجمة ساخرة لظاهرة نفسية معروفة: أن التعرض المتكرر لمثير معين يُضعف تدريجياً الاستجابة الانفعالية تجاهه، فيتحول الشعور من الرفض إلى الاعتياد ثم القبول.</p></div>
+  <div class="card c1"><div class="ct">إزاحة العبء الأخلاقي</div><p>يشير المقال إلى حاجة نفسية للتبرير تجنباً للشعور بالذنب، وكيف يوفر الخطاب المهوِّن مخارج تُسكّن الضمير دون توبة حقيقية، وهذا يفرغ التوبة من وظيفتها الإصلاحية ليحوّلها إلى إجراء شكلي بارد.</p></div>
+  <div class="card c2"><div class="ct">نسبية الأخلاق مقابل المطلقية الشرعية</div><p>يقيم المقال ضمناً صراعاً بين أخلاق ثابتة مستندة إلى النص وأخلاق مرنة تحددها الثقافة السائدة، وهو صراع فلسفي حقيقي حول مصدر المعيار الأخلاقي: هل هو وحي ثابت أم توافق اجتماعي متغير.</p></div>
+  <div class="card c3"><div class="ct">التيسير المقصود شرعاً مقابل تتبع الرخص</div><p>يفرّق المقال ضمنياً بين تيسير مقصود شرعاً لرفع الحرج، وبين تتبع للرخص والأهواء يُفرغ الدين من مضمونه، وهذا الفرق الأصولي معروف عند الفقهاء بمصطلح «تتبع الرخص» المذموم عند جمهور الأصوليين.</p></div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s4" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--gold2),var(--brz));">٤</div><h2>الجانب التاريخي والمقارن واللغوي الدلالي</h2></div>
+  <div class="card c4"><div class="ct">تكرار الظاهرة في الأمم السابقة</div><p>يستحضر المقال ظاهرة «علماء السوء» تاريخياً، وهي امتداد لما حذّر منه القرآن في أمم سابقة من كتم الحق وتحريف المفاهيم لتلائم رغبات المجتمع أو السلطة، فالظاهرة ليست مستحدثة بل نمط متكرر عبر التاريخ.</p></div>
+  <div class="card c5"><div class="ct">دورة حياة المجتمعات وتحلل القيم</div><p>يصف المقال ضمناً كيف تبدأ المجتمعات بالتساهل في المنكرات الصغيرة قبل أن تصل إلى تطبيع الكبائر، وهذا تدرج معروف في أدبيات الانحلال الأخلاقي الاجتماعي، إذ نادراً ما يبدأ التحلل بالكبيرة مباشرة.</p></div>
+  <div class="card c6"><div class="ct">الهندسة اللغوية للخطاب</div><p>إعادة تسمية الاستقامة بـ«التشدد» والتهوين بـ«التيسير» عملية إعادة تأطير لغوي دقيقة يفضحها المقال دون استخدام مصطلحها الأكاديمي، وهي أداة قوية لأن من يتحكم بالتسمية يوجّه الحكم المسبق للمتلقي قبل سماع الحجة.</p></div>
+  <div class="card c7"><div class="ct">الانزلاق الدلالي</div><p>يشير المقال إلى كيف تساهم الصياغات اللفظية الملتوية في تغيير انطباع المستمع تجاه الكبائر دون مساس مباشر بنص الحكم الشرعي، وهذا انزلاق في الدلالة الوجدانية للفظ لا في الحكم الفقهي المعلن.</p></div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s5" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--brz),var(--brz2));">٥</div><h2>الجانب التربوي والأسري والتكنولوجي</h2></div>
+  <div class="card c8"><div class="ct">اضطراب المرجعية التربوية عند الأبناء</div><p>يشير المقال ضمناً إلى التناقض الذي يعيشه الطفل حين يتلقى في الأسرة أن أمراً ما حرام، ثم يرى خطاباً دينياً إعلامياً يهوّن منه، وهذا التناقض يُربك المرجعية الأخلاقية للناشئة ويضعف سلطة الوالدين التوجيهية.</p></div>
+  <div class="card c9"><div class="ct">خوارزميات التفاعل وتسليع الدين</div><p>يصف المقال ضمناً كيف تدفع منصات التواصل المحتوى الديني نحو صيغة «المحتوى السريع» الباحث عن الإعجابات، مما يحوّل الموعظة من رسالة إصلاحية تقوّم السلوك إلى منتج استهلاكي مرِح لا يكلّف المشاهد مشقة المحاسبة الذاتية.</p></div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s6" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--wine),var(--slate));">٦</div><h2>الجانب الأنثروبولوجي والوجودي والمنهجي</h2></div>
+  <div class="card c1"><div class="ct">تفكيك المهابة ونزع القداسة</div><p>يوضح المقال كيف يساهم الخطاب التبسيطي في نزع الهالة الإيمانية عن الأحكام الشرعية، فيتحول المحظور الديني من «حرمة يهتز لها الوجدان» إلى «خيار قابل للتفاوض»، وهذا تحول في طبيعة العلاقة بالنص لا في نصه ذاته.</p></div>
+  <div class="card c2"><div class="ct">تفريغ التوبة من معناها الوجودي</div><p>التهوين المنظّم من الذنب يسلب الإنسان خوفه الصادق وشعوره بالمسؤولية، مما يحوّل التوبة من صراع نفسي إصلاحي يبني الشخصية إلى إجراء شكلي بارد لا يحمل دلالة إيمانية عميقة.</p></div>
+  <div class="card c3"><div class="ct">انحراف مناهج الاستنباط الفقهي</div><p>يشير المقال ضمناً إلى خطورة التوسع غير المنضبط في قواعد مثل «تغيّر الفتوى بتغيّر الأزمان» أو «المشقة تجلب التيسير» عند إسقاطها على الكبائر القطعية، وهذا إسقاط خاطئ يُخرج القاعدة عن نطاقها الأصولي المحدد ويجعل النص تابعاً للواقع بدل أن يكون هادياً له.</p></div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s7" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--em1),var(--wine));">٧</div><h2>الجانب المستقبلي والحضاري والمؤسساتي</h2></div>
+  <div class="card c4"><div class="ct">انهيار المناعة الأخلاقية للمجتمع</div><p>يحذّر المقال ضمناً من أن تفكيك المحارم خطوة تلو خطوة قد يؤدي إلى انكشاف المنظومة الأخلاقية كاملة، بحيث يعجز المجتمع عن مقاومة انحرافات جديدة قادمة.</p></div>
+  <div class="card c5"><div class="ct">عولمة التمييع الأخلاقي وفقدان القوة الناعمة</div><p>يشير المقال إلى خطر أن يفقد المنهج الإسلامي تمايزه كبديل حضاري ذي أصول ثابتة، ليصبح تابعاً يُعاد تشكيله كلما تغيرت موجة الثقافة العالمية، بدل أن يبقى معياراً مستقلاً لها.</p></div>
+  <div class="card c6"><div class="ct">تحول الوظيفة الدعوية إلى «بيروقراطية ترفيهية»</div><p>عبارة «هيئة» في عنوان المقال نفسها نقد مؤسساتي: أن تفرغ المؤسسات الدينية من مهمتها التأديبية والإصلاحية لتتحول إلى إدارة خدمات إرضاء جماهيري، وهذا يخلق تضارب مصالح بين أمانة البلاغ الشرعي ومتطلبات الانتشار والتمويل.</p></div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s8" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--brz2),var(--gold2));">٨</div><h2>الجانب الأدبي والبلاغي (تحليل النص نفسه)</h2></div>
+  <div class="card c7"><div class="ct">المفارقة البنيوية كأداة نقد</div><p>يبني المقال «مؤسسة وهمية» بمصطلحات إدارية-تسويقية (هيئة، إعلان، تخفيضات) ويطبّقها على موضوع ديني مقدَّس، فينتج تناقضاً صادماً يكشف عبثية الظاهرة أفضل من أي وصف مباشر، وهذا أسلوب المفارقة البنيوية الذي يجعل القارئ يستنتج الحكم بنفسه بدل أن يُملى عليه.</p></div>
+  <div class="card c8"><div class="ct">المجاز المستمد من الثقافة الرقمية والإعلامية</div><p>استعارات مثل «خدمة بث مدفوع» و«نشرات العلاقات العامة» تستمد صورها من عالم الإعلام والتسويق المعاصر لا من التراث البلاغي القديم، وهذا يمنح النقد راهنية ويجعله مفهوماً فورياً لقارئ العصر.</p></div>
+  <div class="card c9"><div class="ct">تصنيف أدبي: مقالة النقد الساخر</div><p>يندرج المقال ضمن أدب المقالة النقدية التي تمزج بين الغيرة الدينية والتحليل الفلسفي للواقع، معتمداً السخرية المريرة بدل الخطابة المباشرة، وهو أسلوب أدبي راسخ في النقد الاجتماعي عبر التاريخ.</p></div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="s9" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--em2),var(--em1));">٩</div><h2>التوثيق الشرعي للأدلة الواردة في المقال</h2></div>
+  <div class="src"><strong>حديث المجاهرين:</strong> عن أبي هريرة رضي الله عنه قال: سمعت رسول الله ﷺ يقول: «كُلُّ أُمَّتِي مُعَافًى إِلَّا الْمُجَاهِرِينَ، وَإِنَّ مِنَ الْمُجَاهَرَةِ أَنْ يَعْمَلَ الرَّجُلُ بِاللَّيْلِ عَمَلًا، ثُمَّ يُصْبِحَ وَقَدْ سَتَرَهُ اللَّهُ عَلَيْهِ، فَيَقُولَ: يَا فُلَانُ عَمِلْتُ الْبَارِحَةَ كَذَا وَكَذَا، وَقَدْ بَاتَ يَسْتُرُهُ رَبُّهُ وَيُصْبِحُ يَكْشِفُ سِتْرَ اللَّهِ عَنْهُ». <span class="grade sahih">صحيح</span> متفق عليه، رواه البخاري في صحيحه، كتاب الأدب، باب ستر المؤمن على نفسه، حديث رقم (٦٠٦٩)، ورواه مسلم أيضاً في صحيحه من حديث أبي هريرة رضي الله عنه.</div>
+  <div class="src" style="margin-top:16px;"><strong>الآيات القرآنية المستشهد بها في المقال:</strong> ﴿وَلَا تَقْرَبُوا الزِّنَى إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا﴾ سورة الإسراء، الآية ٣٢؛ ﴿قُلْ إِنَّمَا حَرَّمَ رَبِّيَ الْفَوَاحِشَ مَا ظَهَرَ مِنْهَا وَمَا بَطَنَ﴾ سورة الأعراف، الآية ٣٣؛ ﴿وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ﴾ سورة المائدة، الآية ٢.</div>
+</div>
+
+<div class="orn">◆ ◇ ❖ ◇ ◆</div>
+
+<div id="author" class="sec">
+  <div class="sec-h"><div class="sec-n" style="background:linear-gradient(135deg,var(--em1),var(--brz2));">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة التفسير والرؤى بالتزام دقيق بضوابط القرآن والسنة، مستحضرًا أقوال السلف الصالح وأئمة الفقه في مسائل التيسير والتشدد.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين المنهج الشرعي الأصيل وواقع الخطاب الديني المعاصر وتحدياته الإعلامية والتكنولوجية.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً عقدية في تناول قضايا الانحراف الفكري والمنهجي المعاصر.</p>
+      <div style="margin-top:13px;">
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">نقد الخطاب الديني</span>
+        <span class="atag">فقه التيسير</span>
+        <span class="atag">علم الحديث</span>
+        <span class="atag">التزكية</span>
+        <span class="atag">الإصلاح الاجتماعي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ السَّلْجُوقِي التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَأَهْلِهِ</p>
+  <p style="margin-top:7px;font-size:.77rem;opacity:.7;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>

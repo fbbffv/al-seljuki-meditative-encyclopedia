@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الظُّلْمُ... حِينَ يَتَحَوَّلُ إِلَى ظُلُمَاتٍ — موسوعة السلجوقي</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1a0e0c;--bg:#fdf4ee;--bg2:#f2ddce;
+  --bd:#100604;--bt:#fff2e6;
+  --crm:#a01828;--crm-l:#d64858;--crm-d:#600e18;
+  --gold:#a8781e;--gold-l:#d0a444;--gold-d:#6a4a10;
+  --div:#e0b494;--mist:#4a2a20;
+  --accent:var(--crm);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;font-weight:500;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+  overflow-x:hidden;max-width:100%;
+  background-image:
+    radial-gradient(circle at 10% 6%, rgba(160,24,40,.10) 0%, transparent 32%),
+    radial-gradient(circle at 90% 12%, rgba(168,120,30,.10) 0%, transparent 32%),
+    radial-gradient(circle at 18% 82%, rgba(168,120,30,.08) 0%, transparent 32%),
+    radial-gradient(circle at 88% 90%, rgba(160,24,40,.08) 0%, transparent 32%);
+}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--crm),var(--gold));z-index:400;transform-origin:top;box-shadow:0 0 8px rgba(0,0,0,.3);}
+.hdr{background:var(--bd);border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;box-shadow:0 4px 28px rgba(0,0,0,.5);}
+.hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:60px;gap:16px;flex-wrap:wrap;}
+.logo{font-family:'Scheherazade New',serif;font-size:1.05rem;flex-shrink:0;font-weight:700;color:var(--crm-l);}
+.logo span{color:var(--gold-l);font-weight:800;}
+.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.92rem;text-align:center;flex:1;opacity:.98;font-weight:600;}
+.tbtn{background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.86rem;font-weight:700;white-space:nowrap;box-shadow:0 3px 10px rgba(168,120,30,.4);}
+.tbtn:hover{filter:brightness(1.15);}
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 60px);}
+.sb{width:290px;flex-shrink:0;background:linear-gradient(180deg,#100604,#1c0c08);position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;border-left:2px solid var(--crm-d);transition:transform .3s;z-index:100;}
+.sb.off{transform:translateX(110%);position:fixed;top:60px;left:0;}
+.toc-h{font-family:'Scheherazade New',serif;font-size:1.05rem;padding:18px 18px 10px;font-weight:700;color:var(--gold-l);}
+.toc-s{color:var(--crm-l);font-size:.68rem;letter-spacing:.12em;padding:12px 18px 4px;font-weight:700;}
+.toc-a{display:block;color:#e8c8a8;text-decoration:none;padding:8px 18px 8px 26px;font-size:.85rem;border-right:3px solid transparent;transition:all .2s;font-weight:500;overflow-wrap:break-word;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(255,255,255,.1);border-right-color:var(--crm-l);}
+.toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.92;}
+.main{flex:1;min-width:0;padding:52px 64px;max-width:100%;}
+.hero{text-align:center;margin-bottom:52px;padding-bottom:40px;border-bottom:3px solid var(--gold-l);position:relative;}
+.horn{font-size:1.6rem;display:block;margin-bottom:16px;letter-spacing:.4em;color:var(--crm);font-weight:700;}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;font-size:.78rem;font-weight:700;padding:5px 18px;border-radius:22px;margin-bottom:20px;box-shadow:0 3px 10px rgba(168,120,30,.35);}
+.hero h1{font-family:'Scheherazade New',serif;font-size:2.1rem;font-weight:800;line-height:1.55;margin-bottom:14px;color:var(--crm-d);}
+.hmeta{color:var(--mist);font-size:.96rem;font-weight:700;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:14px;}
+.hmeta .dot{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;}
+.vb{background:linear-gradient(135deg,#1c0c08,#100604);border:2px solid var(--gold-l);border-radius:14px;padding:36px 42px;margin:38px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(160,24,40,.2);}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(214,72,88,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Scheherazade New',serif;font-size:1.5rem;color:#fff2e6;line-height:2.15;position:relative;z-index:1;font-weight:600;text-shadow:0 2px 12px rgba(168,120,30,.25);}
+.vt.sm{font-size:1.28rem;}
+.vr{font-size:.88rem;margin-top:14px;position:relative;z-index:1;font-weight:700;color:var(--gold-l);}
+.abody{font-size:1.15rem;line-height:2.1;color:#1a0e0c;font-weight:500;}
+.abody p{margin-bottom:1.6em;text-align:justify;overflow-wrap:break-word;}
+.abody p:first-child::first-letter{font-size:3.2em;font-family:'Scheherazade New',serif;font-weight:800;float:right;line-height:.8;margin-left:10px;color:var(--crm-d);}
+.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;font-weight:800;text-align:center;margin:12px 0;color:var(--gold-d);}
+.zeena-list{list-style:none;padding:0;margin:12px 0 22px;}
+.zeena-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--crm-d);font-weight:700;padding:9px 0;border-bottom:2px dashed var(--div);overflow-wrap:break-word;}
+.zeena-list li:last-child{border-bottom:none;}
+.compare-list{list-style:none;padding:0;margin:16px 0;}
+.compare-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--gold-d);font-weight:700;padding:10px 0;border-bottom:2px dashed var(--div);text-align:center;overflow-wrap:break-word;}
+.compare-list li:last-child{border-bottom:none;}
+.fawqahum-list{list-style:none;padding:0;margin:12px 0;}
+.fawqahum-list li{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--gold-d);text-align:center;padding:9px 0;border-bottom:2px dashed var(--div);font-weight:800;overflow-wrap:break-word;}
+.fawqahum-list li:last-child{border-bottom:none;}
+.src{background:linear-gradient(135deg,#fff5e0,#f8e4c4);border:2px solid var(--gold-l);border-radius:10px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.89rem;color:#5a3810;line-height:1.9;font-weight:500;overflow-wrap:break-word;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+.src strong{color:#8a5800;}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:14px;font-weight:800;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade.sahih{background:linear-gradient(90deg,#0e7a4a,#2a9c6a);}
+.grade.hasan{background:linear-gradient(90deg,var(--gold),var(--gold-l));}
+.sec{margin-top:74px;padding-top:20px;scroll-margin-top:80px;}
+.sec-h{display:flex;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap;}
+.sec-n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--crm-l));color:#fff;box-shadow:0 4px 14px rgba(160,24,40,.4);}
+.sec h2{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--bd);border-bottom:4px solid var(--accent);padding-bottom:9px;flex:1;font-weight:800;min-width:0;overflow-wrap:break-word;}
+.sub{margin-top:36px;margin-bottom:20px;}
+.sub h3{font-family:'Scheherazade New',serif;font-size:1.35rem;font-weight:800;margin-bottom:14px;padding-right:16px;border-right:5px solid var(--accent);color:var(--bd);overflow-wrap:break-word;}
+.card{background:#fff;border:2px solid var(--div);border-radius:12px;padding:22px 26px;margin:18px 0;box-shadow:0 1px 4px rgba(0,0,0,.1),0 8px 26px rgba(0,0,0,.06);}
+.card.b{border-right:6px solid var(--crm);}
+.card.b2{border-right:6px solid var(--gold);}
+.card.b3{border-right:6px solid var(--crm-d);}
+.ct{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--bd);margin-bottom:11px;font-weight:800;overflow-wrap:break-word;}
+.card p{font-size:1rem;color:#1a0e0c;line-height:1.95;margin-top:6px;font-weight:500;overflow-wrap:break-word;}
+.bdg{font-size:.7rem;padding:3px 10px;border-radius:14px;font-family:'Noto Naskh Arabic',sans-serif;background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;font-weight:800;}
+.tbl{width:100%;table-layout:fixed;border-collapse:collapse;margin:14px 0;font-size:.98rem;border-radius:10px;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.08);}
+.tbl th{background:linear-gradient(90deg,var(--bd),#2a1208);color:#ffdcb0;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:1rem;font-weight:800;word-break:break-word;}
+.tbl td{padding:11px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.85;word-break:break-word;overflow-wrap:break-word;}
+.tbl tr:nth-child(even) td{background:#fbeee0;}
+.term{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--gold-d);font-weight:800;}
+.def{color:var(--mist);font-size:.94rem;font-weight:500;}
+.ib{background:linear-gradient(135deg,#fbeee0,#f4dcc4);border-radius:10px;padding:16px 20px;margin:12px 0;}
+.ir{display:flex;gap:14px;padding:9px 0;border-bottom:2px dashed var(--div);align-items:flex-start;flex-wrap:wrap;}
+.ir:last-child{border-bottom:none;}
+.iw{font-family:'Scheherazade New',serif;font-size:1.24rem;color:var(--crm-d);min-width:150px;max-width:100%;font-weight:800;flex-shrink:0;overflow-wrap:break-word;}
+.id{color:var(--mist);font-size:.94rem;flex:1;min-width:200px;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
+.pq{font-family:'Scheherazade New',serif;font-size:1.5rem;color:var(--bd);text-align:center;padding:30px 40px;margin:40px 0;border-top:4px solid var(--gold);border-bottom:4px solid var(--crm);position:relative;font-weight:700;background:linear-gradient(135deg,#fff5e0,#fbeee0);border-radius:8px;overflow-wrap:break-word;}
+.pq::before{content:'❝';position:absolute;top:0;right:38px;font-size:3rem;color:var(--gold);opacity:.35;line-height:1;}
+.cb{background:linear-gradient(135deg,#100604,#2a1208);border:2px solid var(--gold-l);border-radius:12px;padding:26px 32px;margin:22px 0;}
+.cb .bt{color:#ffd88a;font-family:'Scheherazade New',serif;font-size:1.2rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--crm-l);overflow-wrap:break-word;}
+.ci{color:#e8c8a8;padding:10px 0;border-bottom:1px dashed rgba(224,180,148,.3);font-size:.94rem;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
+.ci:last-child{border-bottom:none;}
+.ci .vi{font-family:'Scheherazade New',serif;color:#ffe0c0;font-size:1.04rem;display:block;margin-bottom:4px;font-weight:700;}
+.ci .vs{color:#f0a8a8;font-size:.8rem;}
+.vrd{background:linear-gradient(135deg,#100604,#2a1208);border:2px solid var(--crm-l);border-radius:9px;padding:18px 22px;margin:14px 0;color:#f0d4d4;font-size:.96rem;line-height:1.95;font-weight:500;overflow-wrap:break-word;}
+.vrd strong{color:#ffd88a;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:18px 0;}
+.mc{background:#fff;border:2px solid var(--div);border-radius:10px;padding:18px 20px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+.mc .ml{color:var(--gold);font-size:.75rem;margin-bottom:5px;display:block;font-weight:800;}
+.mc .mv{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bd);font-weight:800;margin-bottom:5px;overflow-wrap:break-word;}
+.mc .md{color:var(--mist);font-size:.86rem;line-height:1.65;font-weight:500;overflow-wrap:break-word;}
+.cl{list-style:none;padding:0;margin:12px 0;}
+.cl li{padding:9px 28px 9px 0;position:relative;border-bottom:1px dashed var(--div);color:#1a0e0c;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
+.cl li:last-child{border-bottom:none;}
+.cl li::before{content:'◈';position:absolute;right:0;color:var(--crm);font-size:.9em;top:12px;font-weight:900;}
+.asec{background:linear-gradient(135deg,#100604,#2a1208);border:3px solid var(--gold-l);border-radius:14px;padding:36px 42px;margin:60px 0 40px;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;}
+.ava{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--crm),var(--crm-l));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:2rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 4px 16px rgba(160,24,40,.4);}
+.ai{flex:1;min-width:0;}
+.ai h3{font-family:'Scheherazade New',serif;color:#fff2e6;font-size:1.4rem;margin-bottom:6px;font-weight:800;overflow-wrap:break-word;}
+.ai .at{color:#ffd88a;font-size:.88rem;margin-bottom:14px;font-weight:600;overflow-wrap:break-word;}
+.ai p{color:#e8c8a8;font-size:.94rem;line-height:1.9;margin-bottom:9px;font-weight:500;overflow-wrap:break-word;}
+.ai p strong{color:#f0a8a8;}
+.amg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0;}
+.ami{background:rgba(255,255,255,.08);border:1px solid rgba(224,180,148,.35);border-radius:8px;padding:11px 14px;min-width:0;}
+.ami .aml{color:#f0a8a8;font-size:.7rem;margin-bottom:3px;display:block;font-weight:700;}
+.ami .amv{color:#fff2e6;font-size:.88rem;font-family:'Scheherazade New',serif;font-weight:600;overflow-wrap:break-word;}
+.atag{display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;font-weight:700;}
+.orn{text-align:center;font-size:1.25rem;margin:48px 0;letter-spacing:.42em;font-weight:700;color:var(--crm-l);}
+footer{background:var(--bd);color:#e8c8a8;text-align:center;padding:30px 20px;font-size:.85rem;border-top:3px solid var(--gold-l);margin-top:76px;}
+footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;font-weight:800;color:var(--gold-l);}
+footer .fb span{color:var(--crm-l);}
+@media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:60px;width:275px;height:calc(100vh - 60px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.75rem;}.asec{flex-direction:column;}}
+@media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.15rem;}.hero h1{font-size:1.4rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}.iw{min-width:100%;}.tbl{font-size:.86rem;}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header class="hdr">
+  <div class="hdr-i">
+    <div class="logo">مَوْسُوعَةُ <span>السَّلْجُوقِي</span></div>
+    <div class="htitle">الظُّلْمُ... حِينَ يَتَحَوَّلُ إِلَى ظُلُمَاتٍ</div>
+    <button class="tbtn" onclick="toggleSB()">☰ الفهرس</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sb off" id="sb">
+  <div class="toc-h">◈ فهرس المحتوى</div>
+  <div class="toc-s">المقال</div>
+  <a class="toc-a" href="#article">نص المقال كاملاً</a>
+  <div class="toc-s">علوم الحديث</div>
+  <a class="toc-a" href="#h1">١. تخريج الحديث ودرجته</a>
+  <div class="toc-s">البلاغة واللغة</div>
+  <a class="toc-a" href="#s1">٢. الجانب البلاغي الدقيق</a>
+  <a class="toc-a sub" href="#s1a">الصور البيانية</a>
+  <a class="toc-a sub" href="#s1b">المحسنات البديعية</a>
+  <a class="toc-a" href="#s2">٣. اللغوي والأدبي</a>
+  <a class="toc-a sub" href="#s2a">القراءات والصرف</a>
+  <a class="toc-a sub" href="#s2b">المشترك اللفظي</a>
+  <a class="toc-a sub" href="#s2c">الفروق اللغوية والمعجمية</a>
+  <a class="toc-a sub" href="#s2d">الإيضاح اللغوي والبلاغي</a>
+  <div class="toc-s">السياقات والأحكام</div>
+  <a class="toc-a" href="#s3">٤. ترابط السياقات بالآيات</a>
+  <a class="toc-a" href="#s4">٥. نوع النص والأحكام الشرعية</a>
+  <a class="toc-a" href="#s5">٦. إعراب الآية والحديث</a>
+  <a class="toc-a" href="#s6">٧. التدبر النفسي والتربوي</a>
+  <a class="toc-a" href="#author">نبذة عن المؤلف</a>
+</aside>
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <span class="horn">✦ ✧ ✦</span>
+  <div class="hcat">دراسة حديثية قرآنية · سورة إبراهيم ٤٢ · صحيح مسلم</div>
+  <h1>الظُّلْمُ... حِينَ يَتَحَوَّلُ إِلَى ظُلُمَاتٍ تَبْتَلِعُ أَصْحَابَهَا<br>وَيُشْرِقُ نُورُ المَظْلُومِينَ يَوْمَ يَفِرُّ النَّاسُ مِنْ أَنْفُسِهِمْ</h1>
+  <div class="hmeta">
+    <span>✍ الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</span>
+    <span class="dot"></span>
+    <span>موسوعة التدبر المعاصر</span>
+    <span class="dot"></span>
+    <span>حديث جابر/ابن عمر · إبراهيم: ٤٢</span>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div id="article" class="sec" style="margin-top:0;padding-top:0;--accent:var(--crm);">
+  <div class="sec-h"><div class="sec-n">نص</div><h2>نص المقال كاملاً</h2></div>
+
+  <div class="vb">
+    <div class="vt sm">«اتَّقُوا الظُّلْمَ؛ فَإِنَّ الظُّلْمَ ظُلُمَاتٌ يَوْمَ الْقِيَامَةِ»</div>
+    <div class="vr">رواه مسلم عن جابر وابن عمر رضي الله عنهما</div>
+  </div>
+
+  <div class="abody">
+    <p>لَيْسَ هَذَا الحَدِيثُ كَلِمَاتٍ تُتْلَى عَلَى الأَسْمَاعِ فَحَسْبُ، بَلْ هُوَ زِلْزَالٌ يَهُزُّ القُلُوبَ الغَافِلَةَ، وَنَاقُوسُ خَطَرٍ يَدُقُّ فِي ضَمِيرِ الإِنْسَانِيَّةِ كُلِّهَا. إِنَّهُ إِعْلَانٌ رَبَّانِيٌّ أَنَّ الظُّلْمَ لَيْسَ حَادِثَةً تَنْتَهِي بِانْتِهَاءِ لَحْظَتِهَا، وَلَا كَلِمَةً تُنْسَى، وَلَا صَفْعَةً يَمْحُوهَا الزَّمَنُ، بَلْ هُوَ ظُلْمَةٌ تَتَشَكَّلُ مُنْذُ اللَّحْظَةِ الأُولَى الَّتِي تَمْتَدُّ فِيهَا يَدٌ إِلَى حَقٍّ، أَوْ يَنْطِقُ فِيهَا لِسَانٌ بِبَاطِلٍ، أَوْ يُكْسَرُ فِيهَا قَلْبٌ بِغَيْرِ حَقٍّ.</p>
+
+    <p>إِنَّ الظَّالِمَ قَدْ يَنَامُ عَلَى فِرَاشٍ وَثِيرٍ، وَيُحِيطُ نَفْسَهُ بِالحُرَّاسِ، وَيَحْسَبُ أَنَّ القُوَّةَ تَحْمِيهِ، وَأَنَّ المَالَ يَسْتُرُهُ، وَأَنَّ المَنَاصِبَ تَرْفَعُ عَنْهُ الحِسَابَ. لَكِنَّ القُرْآنَ يَكْشِفُ الحَقِيقَةَ الَّتِي لَا يَرَاهَا أَصْحَابُ الأَبْصَارِ المَحْدُودَةِ؛ فَالظَّالِمُ لَا يَسِيرُ فِي نُورٍ، بَلْ يَسِيرُ دَاخِلَ نَفَقٍ مِنَ الظُّلُمَاتِ صَنَعَهُ بِنَفْسِهِ، حَجَرًا فَوْقَ حَجَرٍ، وَظُلْمًا فَوْقَ ظُلْمٍ، حَتَّى إِذَا انْكَشَفَ الغِطَاءُ يَوْمَ القِيَامَةِ وَجَدَ نَفْسَهُ مُحَاطًا بِلَيْلٍ لَا فَجْرَ بَعْدَهُ.</p>
+
+    <p>قَالَ تَعَالَى:</p>
+
+    <div class="vb" style="margin:20px 0;"><div class="vt sm">﴿وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ ۚ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍ تَشْخَصُ فِيهِ الْأَبْصَارُ﴾</div><div class="vr">سورة إبراهيم: ٤٢</div></div>
+
+    <p>مَا أَرْوَعَ هَذَا التَّهْدِيدَ... وَمَا أَهْيَبَهُ... لَيْسَ التَّأْخِيرُ نَجَاةً... وَلَيْسَ الإِمْهَالُ رِضًا... وَلَيْسَ طُولُ العُمُرِ دَلِيلًا عَلَى القَبُولِ... بَلْ قَدْ يَكُونُ الإِمْهَالُ زِيَادَةً فِي الحُجَّةِ، حَتَّى إِذَا جَاءَتْ سَاعَةُ الأَخْذِ، جَاءَ أَخْذُ العَزِيزِ الجَبَّارِ الَّذِي لَا يُفْلِتُ مِنْهُ أَحَدٌ.</p>
+
+    <ul class="zeena-list">
+      <li>كَمْ مِنْ ظَالِمٍ مَلَأَ الأَرْضَ ضَجِيجًا... ثُمَّ صَارَ خَبَرًا فِي صَفَحَاتِ التَّارِيخِ.</li>
+      <li>وَكَمْ مِنْ مُتَجَبِّرٍ ظَنَّ أَنَّ النَّاسَ عَبِيدُهُ... فَإِذَا بِهِ تَحْتَ التُّرَابِ لَا يَسْتَطِيعُ أَنْ يَدْفَعَ عَنْ نَفْسِهِ دُودَةً صَغِيرَةً.</li>
+      <li>وَكَمْ مِنْ إِنْسَانٍ بَكَى لِأَنَّهُ ظُلِمَ... ثُمَّ جَعَلَ اللهُ دُمُوعَهُ سَبَبًا لِرَفْعَتِهِ فِي الدُّنْيَا وَالآخِرَةِ.</li>
+    </ul>
+
+    <p>انْظُرْ حَوْلَكَ... كَمْ مِنْ مُوَظَّفٍ ظُلِمَ فِي رِزْقِهِ... كَمْ مِنْ يَتِيمٍ أُكِلَ مَالُهُ... كَمْ مِنِ امْرَأَةٍ سُلِبَ حَقُّهَا... كَمْ مِنْ عَامِلٍ حُرِمَ أَجْرَهُ... كَمْ مِنْ إِنْسَانٍ اغْتِيلَتْ سُمْعَتُهُ بِكَلِمَةٍ كَاذِبَةٍ... كَمْ مِنْ قَلْبٍ انْكَسَرَ بِسَبَبِ اسْتِعْلَاءِ مُتَكَبِّرٍ...</p>
+
+    <p class="ql">كُلُّ ذَلِكَ مَحْفُوظٌ... لَيْسَ فِي ذَاكِرَةِ البَشَرِ فَقَطْ... بَلْ فِي كِتَابٍ لَا يُغَادِرُ صَغِيرَةً وَلَا كَبِيرَةً إِلَّا أَحْصَاهَا.</p>
+
+    <p>وَيَا لَلْعَجَبِ... قَدْ يَنْسَى المَظْلُومُ ظُلَامَتَهُ مَعَ الأَيَّامِ... لَكِنَّ اللهَ لَا يَنْسَاهَا أَبَدًا. وَقَدْ يَمُوتُ الظَّالِمُ قَبْلَ أَنْ يَعْتَذِرَ... لَكِنَّ المَحْكَمَةَ الحَقِيقِيَّةَ لَمْ تَبْدَأْ بَعْدُ.</p>
+
+    <p>وَهُنَاكَ... لَنْ تَكُونَ الأَمْوَالُ عُمْلَةً... وَلَا المَنَاصِبُ شَفَاعَةً... وَلَا القَبَائِلُ حِمَايَةً... وَلَا الجُيُوشُ نَصِيرًا... بَلْ تَكُونُ الحَسَنَاتُ وَالسَّيِّئَاتُ هِيَ العُمْلَةَ الوَحِيدَةَ.</p>
+
+    <p>فَيَا حَسْرَةَ الظَّالِمِ... حِينَ يَرَى حَسَنَاتِهِ الَّتِي تَعِبَ فِي جَمْعِهَا، تَتَطَايَرُ إِلَى خُصُومِهِ وَاحِدًا بَعْدَ آخَرَ... وَهَلْ يُوجَدُ إِفْلَاسٌ أَعْظَمُ مِنْ رَجُلٍ يَدْخُلُ القِيَامَةَ بِصَلَاةٍ وَصِيَامٍ وَصَدَقَةٍ، ثُمَّ يَخْرُجُ مِنْهَا صِفْرَ اليَدَيْنِ، لِأَنَّ حُقُوقَ العِبَادِ سَبَقَتْ عِبَادَاتِهِ؟!</p>
+
+    <p>أَمَّا المَظْلُومُ... ذَلِكَ الَّذِي بَكَى فِي جَوْفِ اللَّيْلِ... وَلَمْ يَسْمَعْ أَنِينَهُ أَحَدٌ... ذَلِكَ الَّذِي قَالَ: «حَسْبِيَ اللهُ وَنِعْمَ الوَكِيلُ» وَلَمْ يَجِدْ نَصِيرًا مِنَ البَشَرِ... فَإِنَّ السَّمَاءَ كُلَّهَا كَانَتْ تَسْمَعُهُ... وَالعَرْشَ لَمْ يَكُنْ بَعِيدًا عَنْ دُعَائِهِ... وَرَبُّ العَالَمِينَ تَكَفَّلَ بِقَضِيَّتِهِ.</p>
+
+    <p class="ql">إِنَّ دَعْوَةَ المَظْلُومِ لَيْسَتْ مُجَرَّدَ كَلِمَاتٍ... إِنَّهَا سَهْمٌ يَصْعَدُ إِلَى السَّمَاءِ لَا تَعْتَرِضُهُ الحُجُبُ.</p>
+
+    <p>وَقَدْ تَتَأَخَّرُ الإِجَابَةُ لِحِكْمَةٍ... لَكِنَّهَا لَا تَضِيعُ أَبَدًا... لِأَنَّ الَّذِي وَعَدَ بِالنَّصْرِ هُوَ الحَقُّ سُبْحَانَهُ.</p>
+
+    <p>أَيُّهَا المُؤْمِنُ... فَتِّشْ فِي حَيَاتِكَ...</p>
+
+    <ul class="zeena-list">
+      <li>هَلْ ظَلَمْتَ زَوْجَةً؟ هَلْ قَصَّرْتَ فِي حَقِّ وَالِدَيْكَ؟ هَلْ آذَيْتَ جَارًا؟</li>
+      <li>هَلْ اغْتَبْتَ أَخًا؟ هَلْ أَكَلْتَ مَالًا لَيْسَ لَكَ؟ هَلِ اسْتَغْلَلْتَ مَنْصِبًا؟</li>
+      <li>هَلْ كَسَرْتَ قَلْبَ إِنْسَانٍ بِكَلِمَةٍ سَاخِرَةٍ؟ هَلْ حَرَمْتَ عَامِلًا أَجْرَهُ؟</li>
+      <li>هَلْ شَهِدْتَ زُورًا؟ هَلْ نَقَلْتَ كَذِبًا؟ هَلْ فَرَّقْتَ بَيْنَ النَّاسِ بِالبُهْتَانِ؟</li>
+    </ul>
+
+    <p class="ql">كُلُّ هَذِهِ مَظَالِمُ... وَكُلُّهَا سَتَتَحَوَّلُ إِلَى ظُلُمَاتٍ إِنْ لَمْ تَتُبْ مِنْهَا قَبْلَ الرَّحِيلِ.</p>
+
+    <p>وَمَا أَسْرَعَ الرَّحِيلَ... بِالأَمْسِ كَانَ مَعَنَا أُنَاسٌ... وَاليَوْمَ هُمْ تَحْتَ التُّرَابِ... وَغَدًا سَيُقَالُ عَنَّا كَمَا قِيلَ عَنْهُمْ.</p>
+
+    <p>فَمَا أَجْمَلَ أَنْ نَلْقَى اللهَ وَقُلُوبُ النَّاسِ رَاضِيَةٌ عَنَّا... وَمَا أَشْقَى عَبْدًا يَحْمِلُ عَلَى ظَهْرِهِ حُقُوقَ العِبَادِ وَهُوَ يَظُنُّ أَنَّهُ نَاجٍ.</p>
+
+    <ul class="compare-list">
+      <li>فَبَادِرُوا إِلَى رَدِّ الحُقُوقِ...</li>
+      <li>وَاطْلُبُوا المُسَامَحَةَ...</li>
+      <li>وَأَصْلِحُوا مَا أَفْسَدْتُمْ...</li>
+    </ul>
+
+    <p>فَإِنَّ سَاعَةَ الِاعْتِذَارِ فِي الدُّنْيَا أَهْوَنُ مِنْ لَحْظَةِ الحِسَابِ بَيْنَ يَدَيِ اللهِ.</p>
+
+    <div class="vb"><div class="vt sm">اللَّهُمَّ طَهِّرْ قُلُوبَنَا مِنَ الظُّلْمِ... وَطَهِّرْ أَلْسِنَتَنَا مِنَ الأَذَى... وَطَهِّرْ أَيْدِيَنَا مِنَ الحَرَامِ... وَاجْعَلْنَا مِنْ أَهْلِ العَدْلِ وَالإِحْسَانِ... وَلَا تَجْعَلْ فِي أَعْنَاقِنَا حَقًّا لِمَخْلُوقٍ يَوْمَ نَلْقَاكَ... وَانْصُرْ كُلَّ مَظْلُومٍ... وَاكْشِفْ كَرْبَ كُلِّ مَكْرُوبٍ، إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.</div></div>
+
+    <!-- تخريج -->
+    <div class="sub"><h3>📚 تخريج الحديث والآية الواردَين في المقال</h3>
+      <div class="src"><strong>حديث «اتَّقُوا الظُّلْمَ فَإِنَّ الظُّلْمَ ظُلُمَاتٌ يَوْمَ الْقِيَامَةِ»</strong><br>رُوي من طريقين: (١) عن جابر بن عبدالله رضي الله عنه بلفظ أطول: «اتقوا الظلم فإن الظلم ظلمات يوم القيامة، واتقوا الشح فإن الشح أهلك من كان قبلكم» — أخرجه مسلم في صحيحه، كتاب البر والصلة والآداب، ح٢٥٧٨. والبخاري في الأدب المفرد، ح٤٨٣. وأحمد في المسند (٣/٣٢٣). (٢) وعن عبدالله بن عمر رضي الله عنهما بلفظ: «اتقوا الظلم فإنه ظلمات يوم القيامة» — أخرجه مسلم في صحيحه، ح٢٥٧٩. وأصله عند البخاري في صحيحه (٢٤٤٧) دون قوله «اتقوا الظلم». <span class="grade sahih">صحيح متفق على أصله عند الشيخين، وتمامه عند مسلم</span></div>
+      <div class="src"><strong>﴿وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ...﴾</strong><br>سورة إبراهيم (١٤)، الآية ٤٢، مكية، الجزء الثالث عشر. قال القرطبي: «هذا تسلية للنبي ﷺ بعد أن أعجبه من أفعال المشركين ومخالفتهم دين إبراهيم؛ أي اصبر كما صبر إبراهيم، وأعلم أن تأخير العذاب ليس للرضا بأفعالهم، بل هي سنة الله إمهال العصاة مدة». وقال ابن عاشور: «والمراد بالظلم هنا الشرك... ويشمل ذلك ما كان من الظلم دون الشرك، مثل ظلم الناس بالاعتداء عليهم أو حرمانهم حقوقهم» — (التحرير والتنوير، تفسير الآية ٤٢ من سورة إبراهيم). ونقل ابن كثير عن سفيان بن عيينة قوله: «هي تسلية للمظلوم وتهديد للظالم» — (تفسير القرآن العظيم).</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث اتقاء دعوة المظلوم</strong><br>عن ابن عباس رضي الله عنهما أن النبي ﷺ قال لمعاذ حين بعثه إلى اليمن: «وَاتَّقِ دَعْوَةَ الْمَظْلُومِ؛ فَإِنَّهُ لَيْسَ بَيْنَهَا وَبَيْنَ اللَّهِ حِجَابٌ» — متفق عليه: البخاري في صحيحه، كتاب الزكاة، ح١٤٩٦. ومسلم في صحيحه، ح١٩. وهذا أصل مباشر لما بناه المقال في وصف دعاء المظلوم بأنه «سهم يصعد إلى السماء لا تعترضه الحجب».</div>
+      <div class="src"><span class="grade sahih">صحيح</span><strong>حديث «المفلس» — سبق حقوق العباد على العبادات</strong><br>عن أبي هريرة رضي الله عنه أن رسول الله ﷺ قال: «أَتَدْرُونَ مَا الْمُفْلِسُ؟» قالوا: المفلس فينا من لا درهم له ولا متاع. فقال: «إِنَّ الْمُفْلِسَ مِنْ أُمَّتِي يَأْتِي يَوْمَ الْقِيَامَةِ بِصَلَاةٍ وَصِيَامٍ وَزَكَاةٍ، وَيَأْتِي قَدْ شَتَمَ هَذَا، وَقَذَفَ هَذَا، وَأَكَلَ مَالَ هَذَا، وَسَفَكَ دَمَ هَذَا، وَضَرَبَ هَذَا، فَيُعْطَى هَذَا مِنْ حَسَنَاتِهِ وَهَذَا مِنْ حَسَنَاتِهِ، فَإِنْ فَنِيَتْ حَسَنَاتُهُ قَبْلَ أَنْ يُقْضَى مَا عَلَيْهِ أُخِذَ مِنْ خَطَايَاهُمْ فَطُرِحَتْ عَلَيْهِ، ثُمَّ طُرِحَ فِي النَّارِ» — أخرجه مسلم في صحيحه، كتاب البر والصلة والآداب، ح٢٥٨١. وهو الأصل النبوي المباشر لما وصفه المقال بـ«حسناته تتطاير إلى خصومه».</div>
+    </div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- H1 TAKHRIJ -->
+<div id="h1" class="sec" style="--accent:var(--gold);">
+  <div class="sec-h"><div class="sec-n">١</div><h2>تخريج الحديث ودرجته وتبويبه</h2></div>
+
+  <div class="card b">
+    <div class="ct">التخريج التفصيلي ودرجة الصحة</div>
+    <p>الحديث ورد بروايتين متكاملتين كلتاهما في صحيح مسلم: الأولى عن جابر بن عبدالله رضي الله عنه بلفظ أطول يجمع بين النهي عن الظلم والنهي عن الشح، أخرجها مسلم في «كتاب البر والصلة والآداب» (باب تحريم الظلم)، رقم ٢٥٧٨، من طريق داود بن قيس عن عبيدالله بن مقسم عن جابر. والثانية عن عبدالله بن عمر رضي الله عنهما بلفظ مختصر «إن الظلم ظلمات يوم القيامة»، أخرجها مسلم برقم ٢٥٧٩، وأصل معناها عند البخاري في صحيحه (٢٤٤٧) في كتاب المظالم دون لفظ «اتقوا الظلم» صراحة.</p>
+    <p>قال الإمام النووي في شرحه على مسلم: «هذا الحديث من الأحاديث الجامعة لقواعد المصالح والمفاسد». وذكر القاضي عياض في إكمال المعلم احتمالين في معنى «ظلمات»: الأول أنه على ظاهره (ظلمة حسية يوم القيامة يفتقدها الظالم بينما يسعى نور المؤمنين بين أيديهم)، والثاني أنها كناية عن الشدائد كما في قوله تعالى ﴿مَن يُنَجِّيكُم مِّن ظُلُمَاتِ الْبَرِّ وَالْبَحْرِ﴾.</p>
+  </div>
+
+  <div class="card b2">
+    <div class="ct">التصنيف من حيث الشهرة والتبويب في كتب السنة</div>
+    <p>الحديث من الأحاديث المشهورة المتفق على صحتها، وقد اتفق عليه الشيخان في أصل معناه وانفرد مسلم بتمام لفظه. وُضع في كتب الجوامع تحت «كتاب البر والصلة والآداب» عند مسلم، و«كتاب المظالم والغصب» عند البخاري، وهذا التبويب المزدوج (الأدب + المظالم) يكشف فقه المحدثين في اعتبار الظلم قضية أخلاقية اجتماعية (باب البر) وقضية حقوقية إجرائية (باب المظالم) في آن واحد.</p>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S1 BALAGHAH -->
+<div id="s1" class="sec" style="--accent:var(--crm);">
+  <div class="sec-h"><div class="sec-n">٢</div><h2>الجانب البلاغي الدقيق</h2></div>
+
+  <div id="s1a" class="sub"><h3>الصور البيانية في الحديث والآية والمقال</h3>
+    <div class="card b"><div class="ct">أولاً: الجناس الاشتقاقي المعجز — «الظُّلْمُ ظُلُمَاتٌ»</div><p>هذا من أبدع الجناس النبوي: ربط «الظلم» (الفعل الأخلاقي) بـ«الظلمات» (النتيجة الحسية الأخروية) عبر اشتقاق لفظي واحد، فيصير اللفظ نفسه دليلاً على المعنى: من يظلم يصنع لنفسه ظلاماً، وكأن الفعل يحمل عقوبته في جوهر اسمه اللغوي.</p></div>
+    <div class="card b2"><div class="ct">ثانياً: جمع «ظُلُمَاتٍ» لا إفراد «ظُلْمَةٍ»</div><p>اختيار الجمع («ظلمات») بدل المفرد له دلالة بلاغية عميقة: كل ظلم يُضيف طبقة ظلام جديدة، فتتراكم الظلمات بتراكم المظالم، وهو ما جسّده المقال بقوله «حجراً فوق حجر، وظلماً فوق ظلم» في استعارة بنائية توضح هذا التراكم.</p></div>
+    <div class="card b3"><div class="ct">ثالثاً: الاستعارة القرآنية ﴿تَشْخَصُ فِيهِ الْأَبْصَارُ﴾</div><p>تعبير بديع يُصوّر هول الموقف بأثره الجسدي على العين (شخوصها أي عدم طرفها من شدة الرعب)، وهذه استعارة تصويرية تنقل الهول من الوصف المجرد إلى مشهد بصري مرئي يكاد يُحسّ.</p></div>
+    <div class="card b"><div class="ct">رابعاً: استعارة المقال المركزية — «نَفَقٌ مِنَ الظُّلُمَاتِ صَنَعَهُ بِنَفْسِهِ»</div><p>صوّر المؤلف مسار الظالم كنفق مظلم يبنيه بيديه حجراً حجراً، وهذه استعارة معمارية معاصرة تُترجم المعنى الحديثي المجرد (ظلمات يوم القيامة) إلى صورة هندسية يفهمها القارئ المعاصر بسهولة أكبر.</p></div>
+  </div>
+
+  <div id="s1b" class="sub"><h3>المحسنات البديعية</h3>
+    <div class="card b"><div class="ct">النفي المتكرر المتصاعد: «لَنْ تَكُونَ الأَمْوَالُ عُمْلَةً... وَلَا المَنَاصِبُ شَفَاعَةً... وَلَا القَبَائِلُ حِمَايَةً... وَلَا الجُيُوشُ نَصِيرًا»</div><p>أربع جمل منفية متتالية بنفس البنية تُفرغ كل أدوات القوة الدنيوية من قيمتها الواحدة تلو الأخرى، تصعيداً بلاغياً يهدم كل أمل في النجاة بغير العدل الإلهي.</p></div>
+    <div class="card b2"><div class="ct">الاستفهام التوبيخي المتكرر: «هَلْ ظَلَمْتَ...؟ هَلْ قَصَّرْتَ...؟ هَلْ آذَيْتَ...؟» (عشرة أسئلة متتالية)</div><p>سلسلة استفهامية طويلة تُحاكي أسلوب المحاسبة القضائية، وتدفع القارئ لمراجعة ذاتية شاملة عبر تعداد صور المظالم اليومية المألوفة التي يستهين بها الناس.</p></div>
+    <div class="card b3"><div class="ct">الطباق الزمني: «سَاعَةُ الِاعْتِذَارِ فِي الدُّنْيَا» ↔ «لَحْظَةُ الحِسَابِ بَيْنَ يَدَيِ اللهِ»</div><p>مقابلة بين زمنين (ساعة قصيرة سهلة في الدنيا، ولحظة عصيبة يوم القيامة) تُلخص الحكمة العملية للمقال كله في جملة ختامية واحدة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S2 LUGHAWI -->
+<div id="s2" class="sec" style="--accent:var(--gold);">
+  <div class="sec-h"><div class="sec-n">٣</div><h2>الجانب اللغوي والأدبي</h2></div>
+
+  <div id="s2a" class="sub"><h3>القراءات المتنوعة والتحليل الصرفي</h3>
+    <div class="card b"><div class="ct">ملاحظة حول القراءات والروايات</div><p>آية إبراهيم ٤٢ محل اتفاق القراء العشرة دون خلاف معتبر في أصل كلماتها. أما الحديث فوردت فيه روايتان (جابر وابن عمر) بألفاظ متقاربة، وهو من اختلاف الرواة في اللفظ لا تعارضاً في المعنى، وهو شائع مقبول في علم الحديث.</p></div>
+    <table class="tbl">
+      <tr><th>الكلمة</th><th>الوزن</th><th>التحليل الصرفي</th></tr>
+      <tr><td class="term">اتَّقُوا</td><td>افْتَعِلُوا</td><td class="def">فعل أمر من باب الافتعال من «وقى»، أصله «اِوْتَقُوا» أُبدلت الواو تاء وأُدغمت، يفيد المبالغة في الحذر والوقاية.</td></tr>
+      <tr><td class="term">ظُلُمَاتٌ</td><td>فُعُلَات (جمع ظُلْمة)</td><td class="def">جمع مؤنث سالم لـ«ظُلْمة»، والجمع هنا يفيد التكثير والتعدد كما سبق بيانه.</td></tr>
+      <tr><td class="term">تَحْسَبَنَّ</td><td>تَفْعَلَنَّ</td><td class="def">فعل مضارع مؤكد بنون التوكيد الثقيلة من «حَسِبَ»، والتوكيد يفيد النهي المُشدَّد عن هذا الظن.</td></tr>
+      <tr><td class="term">غَافِلًا</td><td>فَاعِل</td><td class="def">اسم فاعل من «غَفَلَ»، منصوب على أنه مفعول ثانٍ لـ«تحسبن».</td></tr>
+      <tr><td class="term">تَشْخَصُ</td><td>تَفْعَلُ</td><td class="def">فعل مضارع من «شَخَصَ» بمعنى ارتفع البصر ولم يطرف، يفيد استمرار الحال من شدة الهول.</td></tr>
+    </table>
+  </div>
+
+  <div id="s2b" class="sub"><h3>المشترك اللفظي</h3>
+    <div class="card b"><div class="ct"><span class="bdg">مشترك</span> كلمة «الظُّلْم»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد والتوضيح</th></tr>
+        <tr><td class="term">التعدي على حقوق العباد (كما في الحديث)</td><td class="def">المعنى المراد في سياق المقال — أخذ الحقوق المالية والمعنوية بغير وجه حق.</td></tr>
+        <tr><td class="term">الشرك بالله (كما في آية إبراهيم عند بعض المفسرين)</td><td class="def">فسّر ابن عاشور «الظالمون» في السياق الأصلي بأنهم المشركون، والظلم هنا ظلم العقيدة.</td></tr>
+        <tr><td class="term">وضع الشيء في غير موضعه (المعنى اللغوي الجامع)</td><td class="def">الأصل اللغوي العام الذي يشمل كل صور الانحراف عن الحق.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct"><span class="bdg">مشترك</span> كلمة «الظُّلُمَات»</div>
+      <table class="tbl">
+        <tr><th>المعنى</th><th>الشاهد</th></tr>
+        <tr><td class="term">الظلمة الحسية يوم القيامة (كما في الحديث)</td><td class="def">أحد قولي القاضي عياض — ظلمة حقيقية يفتقدها الظالم عند سعي نور المؤمنين.</td></tr>
+        <tr><td class="term">الشدائد والأهوال (تفسير مجازي)</td><td class="def">القول الثاني عند القاضي عياض، كما فُسّرت به ﴿ظُلُمَاتِ الْبَرِّ وَالْبَحْرِ﴾.</td></tr>
+        <tr><td class="term">ظلمات الكفر والضلال (استعمال قرآني آخر)</td><td class="def">﴿يُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ﴾ — استعمال معنوي عقدي.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="s2c" class="sub"><h3>الفروق اللغوية والمعجمية</h3>
+    <div class="card b"><div class="ct">الفرق بين: الظُّلْمُ / الْجَوْرُ / الْبَغْيُ / الْعُدْوَانُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الظُّلْم</td><td class="def">وضع الشيء في غير موضعه، أعم الألفاظ وأشملها لكل صور التجاوز.</td></tr>
+        <tr><td class="term">الْجَوْر</td><td class="def">الميل عن العدل في الحكم والقضاء خاصة — أخص من الظلم.</td></tr>
+        <tr><td class="term">الْبَغْي</td><td class="def">الظلم المصحوب بابتغاء العلو على الغير عمداً.</td></tr>
+        <tr><td class="term">الْعُدْوَان</td><td class="def">التجاوز المصحوب بالاعتداء المباشر الفعلي — أشد ألفاظ الظلم حدة.</td></tr>
+      </table>
+    </div>
+    <div class="card b2"><div class="ct">الفرق بين: الْإِمْهَالُ / التَّأْخِيرُ / الْغَفْلَةُ / الْإِهْمَالُ</div>
+      <table class="tbl">
+        <tr><th>اللفظ</th><th>الفرق الدقيق</th></tr>
+        <tr><td class="term">الْإِمْهَال</td><td class="def">تأجيل العقوبة عمداً وحكمة مع كمال العلم والقدرة — هذا معنى الآية بحق الله.</td></tr>
+        <tr><td class="term">التَّأْخِير</td><td class="def">التأجيل العام، قد يكون بحكمة أو بلا حكمة.</td></tr>
+        <tr><td class="term">الْغَفْلَة</td><td class="def">الذهول والنسيان — وهذا ما نفته الآية صراحة عن الله تعالى.</td></tr>
+        <tr><td class="term">الْإِهْمَال</td><td class="def">ترك المتابعة والرقابة كلياً — وهذا مستحيل في حق الله المحيط علمه بكل شيء.</td></tr>
+      </table>
+      <div class="vrd"><strong>لطيفة:</strong> الآية نفت الغفلة («ولا تحسبن الله غافلاً») لا التأخير («إنما يؤخرهم»)، فأثبتت التأخير مع نفي الغفلة، وهذا فرق دقيق يُبيّن أن إمهال الله للظالمين ليس نسياناً بل حكمة مقصودة، وهذا ما فصّله المقال بقوله «قد يكون الإمهال زيادة في الحجة».</div>
+    </div>
+  </div>
+
+  <div id="s2d" class="sub"><h3>الإيضاح اللغوي والبلاغي</h3>
+    <div class="card b"><div class="ct">دلالة صيغة الأمر «اتَّقُوا» بدل «لا تظلموا»</div><p>اختيار النبي ﷺ صيغة «اتقوا الظلم» (الأمر بالوقاية والحذر) بدل النهي المباشر «لا تظلموا» أسلوب تربوي أعمق: فالتقوى تستلزم بناء حاجز داخلي مستمر ضد الظلم، لا مجرد الامتناع اللحظي عن فعل بعينه، وهذا يُناسب خطورة الظلم التي يُحذّر منها الحديث.</p></div>
+    <div class="card b2"><div class="ct">معنى الفاء السببية في «فَإِنَّ الظُّلْمَ ظُلُمَاتٌ»</div><p>الفاء هنا سببية تعليلية تربط الأمر بالتقوى (اتقوا) بعلته المباشرة (كون الظلم ظلمات)، وهذا الأسلوب النبوي (أمر + تعليل فوري) من أساليب الإقناع البليغة التي تجمع بين التوجيه والحجة في جملة واحدة موجزة.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S3 CONTEXTS -->
+<div id="s3" class="sec" style="--accent:var(--crm-d);">
+  <div class="sec-h"><div class="sec-n">٤</div><h2>ترابط السياقات بالآيات والأحاديث</h2></div>
+  <div class="cb"><div class="bt">السياق المباشر لآية إبراهيم ٤٢ — تسلية النبي ﷺ (٤١-٤٣)</div>
+    <div class="ci"><span class="vi">﴿رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ﴾</span><span class="vs">إبراهيم: ٤١ — يسبق آية ٤٢ دعاء إبراهيم عليه السلام، فيربط السياق بين دعاء النبي المظلوم (إبراهيم) ووعد الله بعدم الغفلة عن الظالمين، مما يمنح النبي ﷺ (المخاطَب بالآية) الأسوة بأبيه إبراهيم في الصبر على أذى قومه.</span></div>
+  </div>
+  <div class="cb"><div class="bt">اللحاق — وصف هول يوم القيامة (٤٣)</div>
+    <div class="ci"><span class="vi">﴿مُهْطِعِينَ مُقْنِعِي رُءُوسِهِمْ لَا يَرْتَدُّ إِلَيْهِمْ طَرْفُهُمْ ۖ وَأَفْئِدَتُهُمْ هَوَاءٌ﴾</span><span class="vs">إبراهيم: ٤٣ — تفصيل لحال «شخوص الأبصار» المذكورة في الآية السابقة، فيصف حال الظالمين يوم القيامة بمزيد تفصيل مرعب يُكمّل الصورة.</span></div>
+  </div>
+  <div class="cb"><div class="bt">آيات أخرى في القرآن عن مآل الظالمين والقصاص</div>
+    <div class="ci"><span class="vi">﴿وَسَيَعْلَمُ الَّذِينَ ظَلَمُوا أَيَّ مُنقَلَبٍ يَنقَلِبُونَ﴾</span><span class="vs">الشعراء: ٢٢٧ — نظير مباشر لمعنى تهديد الظالمين بمصير محتوم، بأسلوب مختلف (المنقلب) لكن بذات الروح التحذيرية.</span></div>
+    <div class="ci"><span class="vi">﴿وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ﴾ (تكرار)</span><span class="vs">تكررت نفس الآية بحروفها في سورة إبراهيم فقط دون تكرار حرفي مطابق في مواضع أخرى، لكن معناها يتردد في آيات مشابهة كآية آل عمران ١٧٨: ﴿وَلَا يَحْسَبَنَّ الَّذِينَ كَفَرُوا أَنَّمَا نُمْلِي لَهُمْ خَيْرٌ لِّأَنفُسِهِمْ ۚ إِنَّمَا نُمْلِي لَهُمْ لِيَزْدَادُوا إِثْمًا﴾.</span></div>
+  </div>
+  <div class="vrd"><strong>الترابط الكلي:</strong> آية إبراهيم ٤٢ جزء من سياق تسلية نبوية أوسع (٤١-٤٣) يربط دعاء الأنبياء المظلومين بوعد الله بعدم الغفلة عن الظالمين، وتتردد هذه المعاني في آيات أخرى (آل عمران ١٧٨، الشعراء ٢٢٧)، كما يتضافر معها الحديث النبوي («اتقوا الظلم») ليُشكّلا معاً منظومة تحذيرية متكاملة من القرآن والسنة.</div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S4 CLASSIFICATION -->
+<div id="s4" class="sec" style="--accent:var(--gold-d);">
+  <div class="sec-h"><div class="sec-n">٥</div><h2>نوع النص والأحكام الشرعية</h2></div>
+  <div class="g3">
+    <div class="mc"><span class="ml">النوع الأول</span><div class="mv">نص تحذيري وعيدي ✅</div><div class="md">حديث وآية يحذران من الظلم بأسلوب الوعيد الشديد المقترن بالتعليل.</div></div>
+    <div class="mc"><span class="ml">النوع الثاني</span><div class="mv">نص غيبي إخباري ✅</div><div class="md">إخبار عن حقيقة غيبية (ظلمات يوم القيامة) يجب الإيمان بها كما وردت.</div></div>
+    <div class="mc"><span class="ml">النوع الثالث</span><div class="mv">نص في باب حقوق العباد ✅</div><div class="md">يرتبط مباشرة بفقه المعاملات وحقوق الآدميين وأحكامها الأخروية.</div></div>
+  </div>
+  <div class="vrd" style="margin-top:18px;"><strong>الخلاصة:</strong> النص يجمع بين التحذير الغيبي (ظلمات القيامة) والتقرير العقدي (عدم غفلة الله)، وهو أصل مهم في فقه حقوق العباد الذي تُبنى عليه أحكام كثيرة في المعاملات والقصاص والتوبة.</div>
+  <div class="sub"><h3>الأحكام والقيم المستنبطة</h3>
+    <div class="card b"><div class="ct">الحكم الأول: تحريم الظلم بجميع صوره وأنواعه</div><p>يُستفاد من عموم لفظ «الظلم» في الحديث (نكرة في سياق النهي تفيد العموم) تحريم كل صور الظلم: المالي، والبدني، واللفظي، والمعنوي، دون استثناء أي نوع منها.</p></div>
+    <div class="card b2"><div class="ct">الحكم الثاني: وجوب رد المظالم والتحلل منها قبل الموت</div><p>يُستفاد من حديث «المفلس» ومن دعوة المقال («فبادروا إلى رد الحقوق») وجوب المبادرة إلى رد الحقوق المغصوبة والتحلل من صاحبها قبل فوات الأوان، وهذا أصل فقهي في باب التوبة من حقوق العباد.</p></div>
+    <div class="card b"><div class="ct">الحكم الثالث: عدم اغترار الظالم بإمهال الله له</div><p>يُستفاد من الآية أن تأخير العقوبة ليس دليل رضا، وهذا أصل عقدي يُحذّر من سوء فهم سنة الإمهال الإلهي، فلا يُستدل بطول العافية على صحة المسلك.</p></div>
+    <div class="card b2"><div class="ct">الحكم الرابع: مشروعية دعاء المظلوم على ظالمه واستجابته</div><p>يُستفاد من حديث «اتق دعوة المظلوم» مشروعية دعاء المظلوم، وأن هذا الدعاء له خصوصية في الاستجابة لا يشترك فيها كل دعاء، فلا حجاب بينه وبين الله.</p></div>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S5 IRAB -->
+<div id="s5" class="sec" style="--accent:var(--crm);">
+  <div class="sec-h"><div class="sec-n">٦</div><h2>إعراب الحديث والآية تفصيلاً</h2></div>
+
+  <div class="vb" style="margin-bottom:24px;">
+    <div class="vt sm">«اتَّقُوا الظُّلْمَ؛ فَإِنَّ الظُّلْمَ ظُلُمَاتٌ يَوْمَ الْقِيَامَةِ»</div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">اتَّقُوا</div><div class="id">فعل أمر مبني على حذف النون لاتصاله بواو الجماعة، والواو ضمير متصل في محل رفع فاعل.</div></div>
+    <div class="ir"><div class="iw">الظُّلْمَ</div><div class="id">مفعول به منصوب وعلامة نصبه الفتحة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">فَإِنَّ</div><div class="id">الفاء تعليلية سببية. «إِنَّ» حرف توكيد ونصب.</div></div>
+    <div class="ir"><div class="iw">الظُّلْمَ</div><div class="id">اسم «إنّ» منصوب وعلامة نصبه الفتحة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">ظُلُمَاتٌ</div><div class="id">خبر «إنّ» مرفوع وعلامة رفعه تنوين الضم، لأنه جمع مؤنث سالم.</div></div>
+    <div class="ir"><div class="iw">يَوْمَ الْقِيَامَةِ</div><div class="id">ظرف زمان منصوب متعلق بمحذوف حال من «ظلمات» أو متعلق بها مباشرة، وهو مضاف. «الْقِيَامَةِ» مضاف إليه مجرور.</div></div>
+  </div>
+
+  <div class="vb" style="margin:22px 0;">
+    <div class="vt sm">﴿وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ ۚ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍ تَشْخَصُ فِيهِ الْأَبْصَارُ﴾
+    </div>
+  </div>
+  <div class="ib">
+    <div class="ir"><div class="iw">وَلَا</div><div class="id">الواو استئنافية. «لَا» ناهية جازمة.</div></div>
+    <div class="ir"><div class="iw">تَحْسَبَنَّ</div><div class="id">فعل مضارع مبني على الفتح لاتصاله بنون التوكيد الثقيلة في محل جزم بـ«لا» الناهية، والفاعل ضمير مستتر تقديره «أنت» يعود على النبي ﷺ.</div></div>
+    <div class="ir"><div class="iw">اللَّهَ</div><div class="id">مفعول به أول لـ«تحسبن» منصوب وعلامة نصبه الفتحة الظاهرة.</div></div>
+    <div class="ir"><div class="iw">غَافِلًا</div><div class="id">مفعول به ثانٍ منصوب وعلامة نصبه تنوين الفتح.</div></div>
+    <div class="ir"><div class="iw">عَمَّا يَعْمَلُ</div><div class="id">«عَنْ» حرف جر، «مَا» اسم موصول في محل جر بـ«عن»، متعلقان بـ«غافلاً». «يَعْمَلُ» فعل مضارع، والجملة صلة الموصول.</div></div>
+    <div class="ir"><div class="iw">الظَّالِمُونَ</div><div class="id">فاعل «يعمل» مرفوع وعلامة رفعه الواو لأنه جمع مذكر سالم.</div></div>
+    <div class="ir"><div class="iw">إِنَّمَا</div><div class="id">كافة ومكفوفة، «إنّ» كُفَّت عن العمل بـ«ما» الكافة، فأصبحت الجملة بعدها غير عاملة النصب والرفع، وتفيد الحصر.</div></div>
+    <div class="ir"><div class="iw">يُؤَخِّرُهُمْ</div><div class="id">فعل مضارع مرفوع، والفاعل ضمير مستتر تقديره «هو» يعود على الله تعالى، والهاء مفعول به.</div></div>
+    <div class="ir"><div class="iw">لِيَوْمٍ</div><div class="id">جار ومجرور متعلق بـ«يُؤَخِّرُهُمْ».</div></div>
+    <div class="ir"><div class="iw">تَشْخَصُ فِيهِ الْأَبْصَارُ</div><div class="id">«تَشْخَصُ» فعل مضارع مرفوع. «فِيهِ» جار ومجرور متعلق بـ«تَشْخَصُ». «الْأَبْصَارُ» فاعل مرفوع. والجملة في محل جر مضاف إليه لـ«يوم».</div></div>
+  </div>
+  <div class="card b" style="margin-top:16px;"><div class="ct">لطيفة إعرابية: توكيد «تَحْسَبَنَّ» بنون التوكيد الثقيلة</div><p>اقتران فعل النهي بنون التوكيد الثقيلة («تحسبَنّ» لا «تحسب») يُفيد تشديداً مضاعفاً في النهي، وهذا التوكيد النحوي يُناسب خطورة الظن المنهي عنه (ظن غفلة الله عن الظالمين)، فكأن الآية تستبعد هذا الظن استبعاداً قاطعاً لا يقبل التردد.</p></div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- S6 TADABBUR -->
+<div id="s6" class="sec" style="--accent:var(--gold);">
+  <div class="sec-h"><div class="sec-n">٧</div><h2>التدبر النفسي والتربوي</h2></div>
+  <div class="pq">«قَدْ يَنْسَى المَظْلُومُ ظُلَامَتَهُ مَعَ الأَيَّامِ... لَكِنَّ اللهَ لَا يَنْسَاهَا أَبَدًا»<br><small style="font-size:.62em;color:var(--mist);">— الشيخ علي خليل السلجوقي</small></div>
+  <div class="card b"><div class="ct">أولاً: علاج جرح "غياب الإنصاف الدنيوي" للمظلوم</div><p>يُقدّم المقال علاجاً نفسياً عميقاً لأشد الجراح النفسية إيلاماً: الشعور بأن ظلماً وقع ولن يُنصف صاحبه أبداً. تذكير المظلوم بأن «السماء كلها كانت تسمعه» يُعيد بناء الأمل في عدالة مؤجلة لا عدالة ضائعة. <strong>التطبيق:</strong> عند الشعور بالظلم دون منفذ للإنصاف الدنيوي، توجيه الطاقة النفسية نحو الدعاء بدل الاستسلام لليأس أو الانتقام الذاتي.</p></div>
+  <div class="card b2"><div class="ct">ثانياً: تفكيك وهم "الأمان المادي" لدى الظالم</div><p>يكشف المقال مفارقة نفسية دقيقة: الظالم الذي «يحيط نفسه بالحراس» يفعل ذلك لأن قلقاً داخلياً يُلاحقه، فالحراسة الخارجية المفرطة أحياناً مؤشر على انعدام أمان داخلي. <strong>التطبيق:</strong> عدم الانخداع بمظاهر قوة وسطوة من يمارس الظلم، فالاطمئنان الحقيقي لا يُشترى بالحراسة بل بسلامة الذمة.</p></div>
+  <div class="card b"><div class="ct">ثالثاً: بناء وعي بخطورة "المظالم الصغيرة" المتراكمة</div><p>قائمة الأسئلة العشرة («هل ظلمت زوجة؟ هل آذيت جاراً؟») تُعالج ظاهرة نفسية شائعة: الاستهانة بالمظالم اليومية الصغيرة التي لا تبدو "ظلماً" في نظر مرتكبها. <strong>التطبيق:</strong> إجراء محاسبة ذاتية دورية باستخدام هذه الأسئلة كأداة عملية للكشف عن المظالم المنسية أو المُهوَّن من شأنها.</p></div>
+  <div class="card b2"><div class="ct">رابعاً: تحويل الخوف من الحساب إلى دافع للمبادرة لا الشلل</div><p>يختم المقال بدعوة عملية («فبادروا إلى رد الحقوق») بدل ترك القارئ في حالة خوف مُقعد من هول الوعيد. <strong>التطبيق:</strong> تحويل أي شعور بالذنب تجاه مظلمة سابقة إلى خطوة عملية فورية (اعتذار، رد حق، طلب مسامحة) بدل الاجترار النفسي العقيم.</p></div>
+  <div class="sub"><h3>المنهج الأدبي والفكري للمقال</h3>
+    <ul class="cl">
+      <li><strong>الجمع بين الحديث والآية في بنية واحدة:</strong> يدمج المقال النص النبوي (الحديث) بالنص القرآني (آية إبراهيم) في نسيج واحد متكامل، فيُقدّم حجة مزدوجة المصدر (وحي متلو ووحي غير متلو) لتقرير الفكرة.</li>
+      <li><strong>الاستطراد الواقعي الكثيف:</strong> يُترجم المؤلف كل معنى تجريدي إلى صورة واقعية محددة (الموظف المظلوم، اليتيم المسلوب ماله، العامل المحروم أجره)، فيُقرّب المفهوم الغيبي (الظلمات الأخروية) من واقع القارئ اليومي.</li>
+      <li><strong>البناء الثنائي (الظالم/المظلوم):</strong> يُقسّم المقال بنيته بين مصير الظالم (الحسرة، الإفلاس) ومصير المظلوم (النصرة، الاستجابة)، فيُقدّم صورة عدل متكاملة الطرفين.</li>
+      <li><strong>الختام بالدعاء الجامع التطبيقي:</strong> يختم المقال بدعاء يستحضر مفردات النص ذاتها (الظلم، الطهارة، النصرة)، فيربط التحليل النظري بالممارسة العبادية المباشرة.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="orn">✦ ✧ ❖ ✧ ✦</div>
+
+<!-- AUTHOR -->
+<div id="author" class="sec" style="--accent:var(--crm);">
+  <div class="sec-h"><div class="sec-n">✦</div><h2>نبذة عن المؤلف</h2></div>
+  <div class="asec">
+    <div class="ava">ع</div>
+    <div class="ai">
+      <h3>الشيخ علي خليل عبّاس السلجوقي التركماني اللّيلاني</h3>
+      <div class="at">باحث متخصص في علوم القرآن الكريم والتدبر المعاصر · العراق ١٩٧٠م</div>
+      <div class="amg">
+        <div class="ami"><span class="aml">الاختصاص</span><span class="amv">علوم القرآن والتدبر المعاصر</span></div>
+        <div class="ami"><span class="aml">المولد</span><span class="amv">العراق، ١٩٧٠م</span></div>
+        <div class="ami"><span class="aml">المنهج</span><span class="amv">الكتاب والسنة · الربط المعاصر</span></div>
+        <div class="ami"><span class="aml">المجال الإضافي</span><span class="amv">علم الحديث · أحاديث الفتن</span></div>
+      </div>
+      <p><strong>العمق التفسيري:</strong> دراسة الحديث والقرآن معاً بالتزام دقيق بضوابط علوم الحديث والتفسير، مستحضرًا أقوال السلف الصالح وأئمة الشرح.</p>
+      <p><strong>البُعد الزمني:</strong> الربط الحي بين الوعيد النبوي القرآني من الظلم وواقع المظالم الاجتماعية المعاصرة — يُحوّل التحذير الغيبي إلى وعي عملي بحقوق العباد.</p>
+      <p><strong>التحصيل العلمي:</strong> تخصص في أحاديث الفتن وإخبارات النبي ﷺ، مما يُضفي على كتاباته دقةً حديثية وعقدية نادرة في تناول قضايا العدل والظلم.</p>
+      <div style="margin-top:14px;">
+        <span class="atag">علوم الحديث</span>
+        <span class="atag">علوم القرآن</span>
+        <span class="atag">فقه حقوق العباد</span>
+        <span class="atag">التدبر المعاصر</span>
+        <span class="atag">التزكية النفسية</span>
+        <span class="atag">العدل الإلهي</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّة</div>
+  <p>نَشْرٌ عِلْمِيٌّ لِخِدْمَةِ الْقُرْآنِ الْكَرِيمِ وَالسُّنَّةِ النَّبَوِيَّةِ</p>
+  <p style="margin-top:8px;font-size:.78rem;opacity:.85;">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){
+  var t=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  document.getElementById('prog').style.height=(t/h*100)+'vh';
+});
+function toggleSB(){
+  var sb=document.getElementById('sb');
+  sb.classList.toggle('off');
+  sb.classList.toggle('open');
+}
+var secs=document.querySelectorAll('.sec[id]');
+var links=document.querySelectorAll('.toc-a');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      links.forEach(function(l){l.classList.remove('active');});
+      var a=document.querySelector('.toc-a[href="#'+e.target.id+'"]');
+      if(a)a.classList.add('active');
+    }
+  });
+},{threshold:.15,rootMargin:'-78px 0px -58% 0px'});
+secs.forEach(function(s){obs.observe(s);});
+links.forEach(function(l){
+  l.addEventListener('click',function(){
+    document.getElementById('sb').classList.add('off');
+    document.getElementById('sb').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
