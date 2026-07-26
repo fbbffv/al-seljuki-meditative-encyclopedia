@@ -19,130 +19,132 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>الظُّلْمُ... حِينَ يَتَحَوَّلُ إِلَى ظُلُمَاتٍ — موسوعة السلجوقي</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Display&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#1a0e0c;--bg:#fdf4ee;--bg2:#f2ddce;
-  --bd:#100604;--bt:#fff2e6;
-  --crm:#a01828;--crm-l:#d64858;--crm-d:#600e18;
-  --gold:#a8781e;--gold-l:#d0a444;--gold-d:#6a4a10;
-  --div:#e0b494;--mist:#4a2a20;
+  --ink:#0A192F;--bg:#F9F8F6;--bg2:#EFEBE0;
+  --bd:#0A192F;--bt:#F9F8F6;
+  --crm:#6b1f35;--crm-l:#D4AF37;--crm-d:#0D1B2A;
+  --gold:#8a6a12;--gold-l:#D4AF37;--gold-d:#8a6a12;
+  --div:#E8CD6E;--mist:#3a4a5c;
   --accent:var(--crm);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
-  background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;font-weight:500;
+  background:var(--bg);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.95;font-weight:500;
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
   max-width:100%;overflow-wrap:break-word;
   background-image:
-    radial-gradient(circle at 10% 6%, rgba(160,24,40,.10) 0%, transparent 32%),
-    radial-gradient(circle at 90% 12%, rgba(168,120,30,.10) 0%, transparent 32%),
-    radial-gradient(circle at 18% 82%, rgba(168,120,30,.08) 0%, transparent 32%),
-    radial-gradient(circle at 88% 90%, rgba(160,24,40,.08) 0%, transparent 32%);
+    radial-gradient(circle at 10% 6%, rgba(13,27,42,.10) 0%, transparent 32%),
+    radial-gradient(circle at 90% 12%, rgba(13,27,42,.10) 0%, transparent 32%),
+    radial-gradient(circle at 18% 82%, rgba(13,27,42,.08) 0%, transparent 32%),
+    radial-gradient(circle at 88% 90%, rgba(13,27,42,.08) 0%, transparent 32%);
 }
-#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--crm),var(--gold));z-index:400;transform-origin:top;box-shadow:0 0 8px rgba(0,0,0,.3);}
-.hdr{background:var(--bd);border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;box-shadow:0 4px 28px rgba(0,0,0,.5);overflow-x:hidden;}
+#prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--crm),var(--gold));z-index:400;transform-origin:top;box-shadow:0 0 8px rgba(10,25,47,.3);}
+.hdr{background:var(--bd);border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;box-shadow:0 4px 28px rgba(10,25,47,.5);overflow-x:hidden;}
 .hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:60px;gap:16px;flex-wrap:wrap;}
-.logo{font-family:'Scheherazade New',serif;font-size:1.05rem;flex-shrink:0;font-weight:700;color:var(--crm-l);}
+.logo{font-family:'Amiri Display',serif;font-size:1.05rem;flex-shrink:0;font-weight:700;color:var(--crm-l);}
 .logo span{color:var(--gold-l);font-weight:800;}
-.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.92rem;text-align:center;flex:1;opacity:.98;font-weight:600;}
-.tbtn{background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.86rem;font-weight:700;white-space:nowrap;box-shadow:0 3px 10px rgba(168,120,30,.4);}
+.htitle{font-family:'Amiri Display',serif;color:var(--bt);font-size:.92rem;text-align:center;flex:1;opacity:.98;font-weight:600;}
+.tbtn{background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Cairo',sans-serif;font-size:.86rem;font-weight:700;white-space:nowrap;box-shadow:0 3px 10px rgba(13,27,42,.4);}
 .tbtn:hover{filter:brightness(1.15);}
 .layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 60px);}
-.sb{width:290px;flex-shrink:0;background:linear-gradient(180deg,#100604,#1c0c08);position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;overflow-x:hidden;border-left:2px solid var(--crm-d);transition:transform .3s;z-index:100;}
+.sb{width:290px;flex-shrink:0;background:linear-gradient(180deg,#0A192F,#0A192F);position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;overflow-x:hidden;border-left:2px solid var(--crm-d);transition:transform .3s;z-index:100;}
 .sb.off{transform:translateX(110%);position:fixed;top:60px;left:0;}
-.toc-h{font-family:'Scheherazade New',serif;font-size:1.05rem;padding:18px 18px 10px;font-weight:700;color:var(--gold-l);}
+.toc-h{font-family:'Amiri Display',serif;font-size:1.05rem;padding:18px 18px 10px;font-weight:700;color:var(--gold-l);}
 .toc-s{color:var(--crm-l);font-size:.68rem;letter-spacing:.12em;padding:12px 18px 4px;font-weight:700;}
-.toc-a{display:block;color:#e8c8a8;text-decoration:none;padding:8px 18px 8px 26px;font-size:.85rem;border-right:3px solid transparent;transition:all .2s;font-weight:500;overflow-wrap:break-word;}
-.toc-a:hover,.toc-a.active{color:#fff;background:rgba(255,255,255,.1);border-right-color:var(--crm-l);}
+.toc-a{display:block;color:#E8CD6E;text-decoration:none;padding:8px 18px 8px 26px;font-size:.85rem;border-right:3px solid transparent;transition:all .2s;font-weight:500;overflow-wrap:break-word;}
+.toc-a:hover,.toc-a.active{color:#fff;background:rgba(232,205,110,.1);border-right-color:var(--crm-l);}
 .toc-a.sub{padding-right:32px;font-size:.79rem;opacity:.92;}
 .main{flex:1;min-width:0;padding:52px 64px;max-width:100%;overflow-x:hidden;}
 .hero{text-align:center;margin-bottom:52px;padding-bottom:40px;border-bottom:3px solid var(--gold-l);position:relative;}
 .horn{font-size:1.6rem;display:block;margin-bottom:16px;letter-spacing:.4em;color:var(--crm);font-weight:700;}
-.hcat{display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;font-size:.78rem;font-weight:700;padding:5px 18px;border-radius:22px;margin-bottom:20px;box-shadow:0 3px 10px rgba(168,120,30,.35);}
-.hero h1{font-family:'Scheherazade New',serif;font-size:2.1rem;font-weight:800;line-height:1.55;margin-bottom:14px;color:var(--crm-d);}
+.hcat{display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;font-size:.78rem;font-weight:700;padding:5px 18px;border-radius:22px;margin-bottom:20px;box-shadow:0 3px 10px rgba(13,27,42,.35);}
+.hero h1{font-family:'Amiri Display',serif;font-size:2.1rem;font-weight:800;line-height:1.55;margin-bottom:14px;color:var(--crm-d);}
 .hmeta{color:var(--mist);font-size:.96rem;font-weight:700;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:14px;}
 .hmeta .dot{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;}
-.vb{background:linear-gradient(135deg,#1c0c08,#100604);border:2px solid var(--gold-l);border-radius:14px;padding:36px 42px;margin:38px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(160,24,40,.2);}
-.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(214,72,88,.12),transparent 68%);pointer-events:none;}
-.vt{font-family:'Scheherazade New',serif;font-size:1.5rem;color:#fff2e6;line-height:2.15;position:relative;z-index:1;font-weight:600;text-shadow:0 2px 12px rgba(168,120,30,.25);}
+.share-article-btn{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid #D4AF37;color:#8a6a12;font-family:'Cairo',sans-serif;font-weight:600;font-size:.85rem;padding:9px 22px;border-radius:24px;cursor:pointer;margin-top:16px;transition:.2s;}
+.share-article-btn:hover{background:rgba(212,175,55,.1);}
+.vb{background:linear-gradient(135deg,#0A192F,#0A192F);border:2px solid var(--gold-l);border-radius:14px;padding:36px 42px;margin:38px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(13,27,42,.2);}
+.vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(138,106,18,.12),transparent 68%);pointer-events:none;}
+.vt{font-family:'Amiri Display',serif;font-size:1.5rem;color:#E8CD6E;line-height:2.15;position:relative;z-index:1;font-weight:600;text-shadow:0 2px 12px rgba(13,27,42,.25);}
 .vt.sm{font-size:1.28rem;}
 .vr{font-size:.88rem;margin-top:14px;position:relative;z-index:1;font-weight:700;color:var(--gold-l);}
-.abody{font-size:1.15rem;line-height:2.1;color:#1a0e0c;font-weight:500;}
+.abody{font-size:1.15rem;line-height:2.1;color:#0A192F;font-weight:500;}
 .abody p{margin-bottom:1.6em;text-align:justify;overflow-wrap:break-word;}
-.abody p:first-child::first-letter{font-size:3.2em;font-family:'Scheherazade New',serif;font-weight:800;float:right;line-height:.8;margin-left:10px;color:var(--crm-d);}
-.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;font-weight:800;text-align:center;margin:12px 0;color:var(--gold-d);}
+.abody p:first-child::first-letter{font-size:3.2em;font-family:'Amiri Display',serif;font-weight:800;float:right;line-height:.8;margin-left:10px;color:var(--crm-d);}
+.ql{font-family:'Amiri Display',serif;font-size:1.22rem;font-weight:800;text-align:center;margin:12px 0;color:var(--gold-d);}
 .zeena-list{list-style:none;padding:0;margin:12px 0 22px;}
-.zeena-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--crm-d);font-weight:700;padding:9px 0;border-bottom:2px dashed var(--div);overflow-wrap:break-word;}
+.zeena-list li{font-family:'Amiri Display',serif;font-size:1.14rem;color:var(--crm-d);font-weight:700;padding:9px 0;border-bottom:2px dashed var(--div);overflow-wrap:break-word;}
 .zeena-list li:last-child{border-bottom:none;}
 .compare-list{list-style:none;padding:0;margin:16px 0;}
-.compare-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--gold-d);font-weight:700;padding:10px 0;border-bottom:2px dashed var(--div);text-align:center;overflow-wrap:break-word;}
+.compare-list li{font-family:'Amiri Display',serif;font-size:1.14rem;color:var(--gold-d);font-weight:700;padding:10px 0;border-bottom:2px dashed var(--div);text-align:center;overflow-wrap:break-word;}
 .compare-list li:last-child{border-bottom:none;}
-.src{background:linear-gradient(135deg,#fff5e0,#f8e4c4);border:2px solid var(--gold-l);border-radius:10px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.89rem;color:#5a3810;line-height:1.9;font-weight:500;overflow-wrap:break-word;box-shadow:0 1px 4px rgba(0,0,0,.08);}
-.src strong{color:#8a5800;}
-.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:14px;font-weight:800;font-family:'Noto Naskh Arabic',serif;color:#fff;}
-.grade.sahih{background:linear-gradient(90deg,#0e7a4a,#2a9c6a);}
+.src{background:linear-gradient(135deg,#E8CD6E,#E8CD6E);border:2px solid var(--gold-l);border-radius:10px;padding:14px 18px;margin:12px 0;font-family:'Cairo',sans-serif;font-size:.89rem;color:#0A192F;line-height:1.9;font-weight:500;overflow-wrap:break-word;box-shadow:0 1px 4px rgba(10,25,47,.08);}
+.src strong{color:#0D1B2A;}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:14px;font-weight:800;font-family:'Cairo',sans-serif;color:#fff;}
+.grade.sahih{background:linear-gradient(90deg,#0D1B2A,#0D1B2A);}
 .grade.hasan{background:linear-gradient(90deg,var(--gold),var(--gold-l));}
 .sec{margin-top:74px;padding-top:20px;scroll-margin-top:80px;}
 .sec-h{display:flex;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap;}
-.sec-n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--crm-l));color:#fff;box-shadow:0 4px 14px rgba(160,24,40,.4);}
-.sec h2{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--bd);border-bottom:4px solid var(--accent);padding-bottom:9px;flex:1;font-weight:800;min-width:0;overflow-wrap:break-word;}
+.sec-n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Amiri Display',serif;font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--crm-l));color:#fff;box-shadow:0 4px 14px rgba(13,27,42,.4);}
+.sec h2{font-family:'Amiri Display',serif;font-size:1.85rem;color:var(--bd);border-bottom:4px solid var(--accent);padding-bottom:9px;flex:1;font-weight:800;min-width:0;overflow-wrap:break-word;}
 .sub{margin-top:36px;margin-bottom:20px;}
-.sub h3{font-family:'Scheherazade New',serif;font-size:1.35rem;font-weight:800;margin-bottom:14px;padding-right:16px;border-right:5px solid var(--accent);color:var(--bd);overflow-wrap:break-word;}
-.card{background:#fff;border:2px solid var(--div);border-radius:12px;padding:22px 26px;margin:18px 0;box-shadow:0 1px 4px rgba(0,0,0,.1),0 8px 26px rgba(0,0,0,.06);}
+.sub h3{font-family:'Amiri Display',serif;font-size:1.35rem;font-weight:800;margin-bottom:14px;padding-right:16px;border-right:5px solid var(--accent);color:var(--bd);overflow-wrap:break-word;}
+.card{background:#fff;border:2px solid var(--div);border-radius:12px;padding:22px 26px;margin:18px 0;box-shadow:0 1px 4px rgba(10,25,47,.1),0 8px 26px rgba(10,25,47,.06);}
 .card.b{border-right:6px solid var(--crm);}
 .card.b2{border-right:6px solid var(--gold);}
 .card.b3{border-right:6px solid var(--crm-d);}
-.ct{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--bd);margin-bottom:11px;font-weight:800;overflow-wrap:break-word;}
-.card p{font-size:1rem;color:#1a0e0c;line-height:1.95;margin-top:6px;font-weight:500;overflow-wrap:break-word;}
-.bdg{font-size:.7rem;padding:3px 10px;border-radius:14px;font-family:'Noto Naskh Arabic',sans-serif;background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;font-weight:800;}
-.tbl{width:100%;table-layout:fixed;border-collapse:collapse;margin:14px 0;font-size:.98rem;border-radius:10px;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.08);}
-.tbl th{background:linear-gradient(90deg,var(--bd),#2a1208);color:#ffdcb0;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:1rem;font-weight:800;word-break:break-word;}
+.ct{font-family:'Amiri Display',serif;font-size:1.18rem;color:var(--bd);margin-bottom:11px;font-weight:800;overflow-wrap:break-word;}
+.card p{font-size:1rem;color:#0A192F;line-height:1.95;margin-top:6px;font-weight:500;overflow-wrap:break-word;}
+.bdg{font-size:.7rem;padding:3px 10px;border-radius:14px;font-family:'Cairo',sans-serif;background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;font-weight:800;}
+.tbl{width:100%;table-layout:fixed;border-collapse:collapse;margin:14px 0;font-size:.98rem;border-radius:10px;overflow:hidden;box-shadow:0 8px 26px rgba(10,25,47,.08);}
+.tbl th{background:linear-gradient(90deg,var(--bd),#0A192F);color:#E8CD6E;padding:11px 14px;text-align:right;font-family:'Amiri Display',serif;font-size:1rem;font-weight:800;word-break:break-word;}
 .tbl td{padding:11px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.85;word-break:break-word;overflow-wrap:break-word;}
-.tbl tr:nth-child(even) td{background:#fbeee0;}
-.term{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--gold-d);font-weight:800;}
+.tbl tr:nth-child(even) td{background:#F9F8F6;}
+.term{font-family:'Amiri Display',serif;font-size:1.1rem;color:var(--gold-d);font-weight:800;}
 .def{color:var(--mist);font-size:.94rem;font-weight:500;}
-.ib{background:linear-gradient(135deg,#fbeee0,#f4dcc4);border-radius:10px;padding:16px 20px;margin:12px 0;}
+.ib{background:linear-gradient(135deg,#F9F8F6,#E8CD6E);border-radius:10px;padding:16px 20px;margin:12px 0;}
 .ir{display:flex;gap:14px;padding:9px 0;border-bottom:2px dashed var(--div);align-items:flex-start;flex-wrap:wrap;}
 .ir:last-child{border-bottom:none;}
-.iw{font-family:'Scheherazade New',serif;font-size:1.24rem;color:var(--crm-d);min-width:150px;max-width:100%;font-weight:800;flex-shrink:0;overflow-wrap:break-word;}
+.iw{font-family:'Amiri Display',serif;font-size:1.24rem;color:var(--crm-d);min-width:150px;max-width:100%;font-weight:800;flex-shrink:0;overflow-wrap:break-word;}
 .id{color:var(--mist);font-size:.94rem;flex:1;min-width:200px;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
-.pq{font-family:'Scheherazade New',serif;font-size:1.5rem;color:var(--bd);text-align:center;padding:30px 40px;margin:40px 0;border-top:4px solid var(--gold);border-bottom:4px solid var(--crm);position:relative;font-weight:700;background:linear-gradient(135deg,#fff5e0,#fbeee0);border-radius:8px;overflow-wrap:break-word;}
+.pq{font-family:'Amiri Display',serif;font-size:1.5rem;color:var(--bd);text-align:center;padding:30px 40px;margin:40px 0;border-top:4px solid var(--gold);border-bottom:4px solid var(--crm);position:relative;font-weight:700;background:linear-gradient(135deg,#E8CD6E,#F9F8F6);border-radius:8px;overflow-wrap:break-word;}
 .pq::before{content:'❝';position:absolute;top:0;right:38px;font-size:3rem;color:var(--gold);opacity:.35;line-height:1;}
-.cb{background:linear-gradient(135deg,#100604,#2a1208);border:2px solid var(--gold-l);border-radius:12px;padding:26px 32px;margin:22px 0;}
-.cb .bt{color:#ffd88a;font-family:'Scheherazade New',serif;font-size:1.2rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--crm-l);overflow-wrap:break-word;}
-.ci{color:#e8c8a8;padding:10px 0;border-bottom:1px dashed rgba(224,180,148,.3);font-size:.94rem;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
+.cb{background:linear-gradient(135deg,#0A192F,#0A192F);border:2px solid var(--gold-l);border-radius:12px;padding:26px 32px;margin:22px 0;}
+.cb .bt{color:#E8CD6E;font-family:'Amiri Display',serif;font-size:1.2rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--crm-l);overflow-wrap:break-word;}
+.ci{color:#E8CD6E;padding:10px 0;border-bottom:1px dashed rgba(232,205,110,.3);font-size:.94rem;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
 .ci:last-child{border-bottom:none;}
-.ci .vi{font-family:'Scheherazade New',serif;color:#ffe0c0;font-size:1.04rem;display:block;margin-bottom:4px;font-weight:700;}
-.ci .vs{color:#f0a8a8;font-size:.8rem;}
-.vrd{background:linear-gradient(135deg,#100604,#2a1208);border:2px solid var(--crm-l);border-radius:9px;padding:18px 22px;margin:14px 0;color:#f0d4d4;font-size:.96rem;line-height:1.95;font-weight:500;overflow-wrap:break-word;}
-.vrd strong{color:#ffd88a;}
+.ci .vi{font-family:'Amiri Display',serif;color:#E8CD6E;font-size:1.04rem;display:block;margin-bottom:4px;font-weight:700;}
+.ci .vs{color:#E8CD6E;font-size:.8rem;}
+.vrd{background:linear-gradient(135deg,#0A192F,#0A192F);border:2px solid var(--crm-l);border-radius:9px;padding:18px 22px;margin:14px 0;color:#E8CD6E;font-size:.96rem;line-height:1.95;font-weight:500;overflow-wrap:break-word;}
+.vrd strong{color:#E8CD6E;}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0;}
 .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:18px 0;}
-.mc{background:#fff;border:2px solid var(--div);border-radius:10px;padding:18px 20px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+.mc{background:#fff;border:2px solid var(--div);border-radius:10px;padding:18px 20px;box-shadow:0 1px 4px rgba(10,25,47,.08);}
 .mc .ml{color:var(--gold);font-size:.75rem;margin-bottom:5px;display:block;font-weight:800;}
-.mc .mv{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bd);font-weight:800;margin-bottom:5px;overflow-wrap:break-word;}
+.mc .mv{font-family:'Amiri Display',serif;font-size:1.1rem;color:var(--bd);font-weight:800;margin-bottom:5px;overflow-wrap:break-word;}
 .mc .md{color:var(--mist);font-size:.86rem;line-height:1.65;font-weight:500;overflow-wrap:break-word;}
 .cl{list-style:none;padding:0;margin:12px 0;}
-.cl li{padding:9px 28px 9px 0;position:relative;border-bottom:1px dashed var(--div);color:#1a0e0c;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
+.cl li{padding:9px 28px 9px 0;position:relative;border-bottom:1px dashed var(--div);color:#0A192F;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
 .cl li:last-child{border-bottom:none;}
 .cl li::before{content:'◈';position:absolute;right:0;color:var(--crm);font-size:.9em;top:12px;font-weight:900;}
-.asec{background:linear-gradient(135deg,#100604,#2a1208);border:3px solid var(--gold-l);border-radius:14px;padding:36px 42px;margin:60px 0 40px;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;}
-.ava{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--crm),var(--crm-l));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:2rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 4px 16px rgba(160,24,40,.4);}
+.asec{background:linear-gradient(135deg,#0A192F,#0A192F);border:3px solid var(--gold-l);border-radius:14px;padding:36px 42px;margin:60px 0 40px;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;}
+.ava{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--crm),var(--crm-l));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Amiri Display',serif;font-size:2rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 4px 16px rgba(13,27,42,.4);}
 .ai{flex:1;min-width:0;}
-.ai h3{font-family:'Scheherazade New',serif;color:#fff2e6;font-size:1.4rem;margin-bottom:6px;font-weight:800;overflow-wrap:break-word;}
-.ai .at{color:#ffd88a;font-size:.88rem;margin-bottom:14px;font-weight:600;overflow-wrap:break-word;}
-.ai p{color:#e8c8a8;font-size:.94rem;line-height:1.9;margin-bottom:9px;font-weight:500;overflow-wrap:break-word;}
-.ai p strong{color:#f0a8a8;}
+.ai h3{font-family:'Amiri Display',serif;color:#E8CD6E;font-size:1.4rem;margin-bottom:6px;font-weight:800;overflow-wrap:break-word;}
+.ai .at{color:#E8CD6E;font-size:.88rem;margin-bottom:14px;font-weight:600;overflow-wrap:break-word;}
+.ai p{color:#E8CD6E;font-size:.94rem;line-height:1.9;margin-bottom:9px;font-weight:500;overflow-wrap:break-word;}
+.ai p strong{color:#E8CD6E;}
 .amg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0;}
-.ami{background:rgba(255,255,255,.08);border:1px solid rgba(224,180,148,.35);border-radius:8px;padding:11px 14px;min-width:0;}
-.ami .aml{color:#f0a8a8;font-size:.7rem;margin-bottom:3px;display:block;font-weight:700;}
-.ami .amv{color:#fff2e6;font-size:.88rem;font-family:'Scheherazade New',serif;font-weight:600;overflow-wrap:break-word;}
+.ami{background:rgba(232,205,110,.08);border:1px solid rgba(232,205,110,.35);border-radius:8px;padding:11px 14px;min-width:0;}
+.ami .aml{color:#E8CD6E;font-size:.7rem;margin-bottom:3px;display:block;font-weight:700;}
+.ami .amv{color:#E8CD6E;font-size:.88rem;font-family:'Amiri Display',serif;font-weight:600;overflow-wrap:break-word;}
 .atag{display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold-l));color:#fff;font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;font-weight:700;}
 .orn{text-align:center;font-size:1.25rem;margin:48px 0;letter-spacing:.42em;font-weight:700;color:var(--crm-l);}
-footer{background:var(--bd);color:#e8c8a8;text-align:center;padding:30px 20px;font-size:.85rem;border-top:3px solid var(--gold-l);margin-top:76px;}
-footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;font-weight:800;color:var(--gold-l);}
+footer{background:var(--bd);color:#E8CD6E;text-align:center;padding:30px 20px;font-size:.85rem;border-top:3px solid var(--gold-l);margin-top:76px;}
+footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:7px;font-weight:800;color:var(--gold-l);}
 footer .fb span{color:var(--crm-l);}
 @media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:60px;width:275px;height:calc(100vh - 60px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.75rem;}.asec{flex-direction:column;}}
 @media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.15rem;}.hero h1{font-size:1.4rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}.iw{min-width:100%;}.tbl{font-size:.86rem;}}
@@ -150,7 +152,7 @@ footer .fb span{color:var(--crm-l);}
 </head>
 <body>
 <div class="view-counter" style="text-align:center;margin:18px auto;font-family:'Cairo',sans-serif;font-size:.9rem;">
-  <span style="display:inline-flex;align-items:center;gap:7px;background:rgba(176,141,52,.12);border:1px solid rgba(176,141,52,.28);border-radius:30px;padding:6px 18px;">
+  <span style="display:inline-flex;align-items:center;gap:7px;background:rgba(138,106,18,.12);border:1px solid rgba(138,106,18,.28);border-radius:30px;padding:6px 18px;">
     <span style="font-size:1rem;">👁</span>
     شوهد <span id="view-count" style="font-weight:700;">…</span> مرة
   </span>
@@ -224,6 +226,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <span class="dot"></span>
     <span>حديث جابر/ابن عمر · إبراهيم: ٤٢</span>
   </div>
+  <button class="share-article-btn" onclick="shareArticle()" id="shareArticleBtn">
+    <span>↗</span> شارِكِ المَقَالَ
+  </button>
 </div>
 
 <!-- ARTICLE -->
@@ -537,31 +542,31 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
 .edge-tab{position:fixed;bottom:70px;z-index:500;transition:transform .3s;}
 .edge-tab.left{left:0;} .edge-tab.right{right:0;}
-.edge-nub{width:5px;height:24px;background:#0d3b2a;border:1px solid rgba(46,144,104,.6);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:-2px 0 8px rgba(0,0,0,.2);}
+.edge-nub{width:5px;height:24px;background:#0D1B2A;border:1px solid rgba(13,27,42,.6);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:-2px 0 8px rgba(10,25,47,.2);}
 .edge-tab.left .edge-nub{border-radius:0 4px 4px 0;border-left:none;}
-.edge-tab.right .edge-nub{border-radius:4px 0 0 4px;border-right:none;box-shadow:2px 0 8px rgba(0,0,0,.2);}
-.edge-nub::before{content:'';width:1.5px;height:9px;background:#d0f0e0;border-radius:2px;opacity:.8;}
-.edge-panel{position:absolute;bottom:0;display:flex;flex-direction:column;gap:4px;background:#0d3b2a;border:1px solid rgba(46,144,104,.6);padding:0;max-width:0;opacity:0;overflow:hidden;transition:all .3s;}
+.edge-tab.right .edge-nub{border-radius:4px 0 0 4px;border-right:none;box-shadow:2px 0 8px rgba(10,25,47,.2);}
+.edge-nub::before{content:'';width:1.5px;height:9px;background:#F9F8F6;border-radius:2px;opacity:.8;}
+.edge-panel{position:absolute;bottom:0;display:flex;flex-direction:column;gap:4px;background:#0D1B2A;border:1px solid rgba(13,27,42,.6);padding:0;max-width:0;opacity:0;overflow:hidden;transition:all .3s;}
 .edge-tab.left .edge-panel{left:5px;border-radius:0 6px 6px 0;border-right:none;}
 .edge-tab.right .edge-panel{right:5px;border-radius:6px 0 0 6px;border-left:none;}
 .edge-tab.open .edge-panel{max-width:38px;padding:5px 4px;opacity:1;}
 .edge-item{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.68rem;color:#fff;text-decoration:none;flex-shrink:0;cursor:pointer;border:none;}
 .pdf-bar{text-align:center;margin:40px auto 10px;}
-.pdf-btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#155e42,#0d3b2a);color:#eafff4;border:1px solid rgba(46,144,104,.5);border-radius:40px;padding:12px 30px;font-family:'Scheherazade New',serif;font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .2s;}
+.pdf-btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#0D1B2A,#0D1B2A);color:#F9F8F6;border:1px solid rgba(13,27,42,.5);border-radius:40px;padding:12px 30px;font-family:'Amiri Display',serif;font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(10,25,47,.2);transition:transform .2s;}
 .pdf-btn:hover{transform:translateY(-3px);}
 .vb{position:relative;}
-.copy-verse{position:absolute;top:10px;left:10px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,168,56,.4);background:rgba(0,0,0,.25);color:#d8cba0;font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:3;}
-.copy-verse:hover{background:rgba(201,168,56,.25);color:#fff;}
-.copy-verse.done{background:#1a7a50;color:#fff;border-color:#1a7a50;}
-body.night{background:#0c1512 !important;color:#d6e4dc !important;}
-body.night .card,body.night .mc,body.night .ib{background:#132420 !important;border-color:#24443a !important;}
-body.night .card *,body.night .mc *,body.night .ib *{color:#cfe0d8 !important;}
-body.night .abody,body.night .abody p{color:#d6e4dc !important;}
-body.night .sec h2,body.night .sub h3,body.night .hero h1,body.night .ct,body.night .term,body.night .iw{color:#e8d9a8 !important;}
-body.night .tbl td{border-color:#24443a !important;}
-body.night .pq{background:rgba(255,255,255,.03) !important;}
-body.night .src{background:#1c1a12 !important;}
-body.night .src *{color:#d8c88a !important;}
+.copy-verse{position:absolute;top:10px;left:10px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(212,175,55,.4);background:rgba(10,25,47,.25);color:#E8CD6E;font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:3;}
+.copy-verse:hover{background:rgba(212,175,55,.25);color:#fff;}
+.copy-verse.done{background:#8a6a12;color:#fff;border-color:#8a6a12;}
+body.night{background:#0D1B2A !important;color:#F9F8F6 !important;}
+body.night .card,body.night .mc,body.night .ib{background:#0D1B2A !important;border-color:#0D1B2A !important;}
+body.night .card *,body.night .mc *,body.night .ib *{color:#F9F8F6 !important;}
+body.night .abody,body.night .abody p{color:#F9F8F6 !important;}
+body.night .sec h2,body.night .sub h3,body.night .hero h1,body.night .ct,body.night .term,body.night .iw{color:#E8CD6E !important;}
+body.night .tbl td{border-color:#0D1B2A !important;}
+body.night .pq{background:rgba(232,205,110,.03) !important;}
+body.night .src{background:#0D1B2A !important;}
+body.night .src *{color:#E8CD6E !important;}
 @media print{
   .edge-tab,#sb,.hdr,.home-link,.pdf-bar,.copy-verse,#prog,.tbtn{display:none !important;}
   .main{padding:0 !important;}
@@ -575,9 +580,9 @@ body.night .src *{color:#d8c88a !important;}
 <!-- ===== نتوء جانبي أيسر: الفهرس الرئيسي + الوضع الليلي + الصعود للأعلى ===== -->
 <div class="edge-tab left" id="edgeNav">
   <div class="edge-panel">
-    <a class="edge-item home-link" href="index.html" title="الفهرس الرئيسي" style="background:#7a2e28;">⌂</a>
-    <button class="edge-item" id="nightBtn" title="الوضع الليلي" onclick="toggleNight()" style="background:#3f5c48;">🌙</button>
-    <button class="edge-item" id="topBtn" title="الصعود للأعلى" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background:#1f4e6b;">↑</button>
+    <a class="edge-item home-link" href="index.html" title="الفهرس الرئيسي" style="background:#8a6a12;">⌂</a>
+    <button class="edge-item" id="nightBtn" title="الوضع الليلي" onclick="toggleNight()" style="background:#8a6a12;">🌙</button>
+    <button class="edge-item" id="topBtn" title="الصعود للأعلى" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background:#0A192F;">↑</button>
   </div>
   <div class="edge-nub" onclick="document.getElementById('edgeNav').classList.toggle('open')"></div>
 </div>
@@ -621,9 +626,9 @@ document.querySelectorAll('.vb').forEach(function(box){
 </div>
 
 <div class="reader-react" style="max-width:820px;margin:46px auto 0;padding:0 22px;">
-  <div style="background:linear-gradient(135deg,rgba(255,255,255,.6),rgba(236,224,200,.4));border:1.5px solid rgba(176,141,52,.35);border-radius:18px;padding:26px 22px;text-align:center;">
-    <h3 style="font-family:'Amiri',serif;font-size:1.5rem;color:#7a2e28;margin-bottom:6px;">بِمَ يَصِفُ قَلْبُكَ هَذَا المَقَالَ؟</h3>
-    <p style="font-family:'Cairo',sans-serif;font-size:.9rem;color:#6a5636;margin-bottom:20px;">اختَرْ ما يُعبِّرُ عن انطِباعِكَ — نُسعَدُ بمشارَكتِكَ</p>
+  <div style="background:linear-gradient(135deg,rgba(232,205,110,.6),rgba(232,205,110,.4));border:1.5px solid rgba(138,106,18,.35);border-radius:18px;padding:26px 22px;text-align:center;">
+    <h3 style="font-family:'Amiri Display',serif;font-size:1.5rem;color:#8a6a12;margin-bottom:6px;">بِمَ يَصِفُ قَلْبُكَ هَذَا المَقَالَ؟</h3>
+    <p style="font-family:'Cairo',sans-serif;font-size:.9rem;color:#8a6a12;margin-bottom:20px;">اختَرْ ما يُعبِّرُ عن انطِباعِكَ — نُسعَدُ بمشارَكتِكَ</p>
     <div class="react-btns" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
       <button class="rb" data-msg="نَفَعَكَ اللهُ بِمَا قَرَأْتَ 🌿" data-key="istafadt">✨ اسْتَفَدْتُ</button>
       <button class="rb" data-msg="الحَمْدُ لِلَّهِ الَّذِي نَفَعَكَ 🌱" data-key="nafaani">🌱 نَفَعَنِي مَا قَرَأْتُ</button>
@@ -635,13 +640,13 @@ document.querySelectorAll('.vb').forEach(function(box){
       <button class="rb" data-msg="حِسٌّ مُرْهَفٌ وَتَقْدِيرٌ رَاقٍ 🌟" data-key="tabir">🌟 تَعْبِيرٌ رَاقٍ</button>
       <button class="rb" data-msg="وَجَزَاكَ خَيْرًا عَلَى دُعَائِكَ 🤲" data-key="jazah">🤲 جَزَى اللهُ الكَاتِبَ خَيْرًا</button>
     </div>
-    <div class="react-thanks" style="display:none;margin-top:18px;font-family:'Amiri',serif;font-size:1.25rem;color:#3f5c48;"></div>
+    <div class="react-thanks" style="display:none;margin-top:18px;font-family:'Amiri Display',serif;font-size:1.25rem;color:#8a6a12;"></div>
   </div>
 </div>
 <style>
-.reader-react .rb{background:rgba(255,255,255,.7);border:1px solid rgba(176,141,52,.3);border-radius:30px;padding:9px 18px;font-family:'Cairo',sans-serif;font-size:.92rem;color:#1a1410;cursor:pointer;transition:all .2s;}
-.reader-react .rb:hover{background:#b08d34;color:#fff;transform:translateY(-2px);}
-.reader-react .rb.chosen{background:#3f5c48;color:#fff;border-color:#3f5c48;}
+.reader-react .rb{background:rgba(232,205,110,.7);border:1px solid rgba(138,106,18,.3);border-radius:30px;padding:9px 18px;font-family:'Cairo',sans-serif;font-size:.92rem;color:#0A192F;cursor:pointer;transition:all .2s;}
+.reader-react .rb:hover{background:#D4AF37;color:#fff;transform:translateY(-2px);}
+.reader-react .rb.chosen{background:#8a6a12;color:#fff;border-color:#8a6a12;}
 </style>
 <script>
 (function(){
@@ -667,55 +672,55 @@ document.querySelectorAll('.vb').forEach(function(box){
 </script>
 
 <div class="related-sec sub" style="margin-top:50px;">
-  <h3 style="font-family:'Scheherazade New',serif;">📖 اقرأ أيضاً</h3>
-  <a class="rel-card" href="article97.html" style="display:block;background:#fff;border:1px solid rgba(176,141,52,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
-      <div style="font-size:.72rem;color:#a8741e;margin-bottom:4px;">شرح الحديث · شرح الحديث</div>
-      <div style="font-family:'Amiri',serif;font-size:1.02rem;color:#1a1410;">حين تغربل القلوب قبل الوجوه</div>
-    </a><a class="rel-card" href="article96.html" style="display:block;background:#fff;border:1px solid rgba(176,141,52,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
-      <div style="font-size:.72rem;color:#a8741e;margin-bottom:4px;">شرح الحديث · آل عمران ١٥١</div>
-      <div style="font-family:'Amiri',serif;font-size:1.02rem;color:#1a1410;">حين تنهزم القلوب قبل الجيوش</div>
-    </a><a class="rel-card" href="article63.html" style="display:block;background:#fff;border:1px solid rgba(176,141,52,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
-      <div style="font-size:.72rem;color:#a8741e;margin-bottom:4px;">شرح الحديث · شرح الحديث</div>
-      <div style="font-family:'Amiri',serif;font-size:1.02rem;color:#1a1410;">القابض على الجمر</div>
+  <h3 style="font-family:'Amiri Display',serif;">📖 اقرأ أيضاً</h3>
+  <a class="rel-card" href="article97.html" style="display:block;background:#fff;border:1px solid rgba(138,106,18,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
+      <div style="font-size:.72rem;color:#D4AF37;margin-bottom:4px;">شرح الحديث · شرح الحديث</div>
+      <div style="font-family:'Amiri Display',serif;font-size:1.02rem;color:#0A192F;">حين تغربل القلوب قبل الوجوه</div>
+    </a><a class="rel-card" href="article96.html" style="display:block;background:#fff;border:1px solid rgba(138,106,18,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
+      <div style="font-size:.72rem;color:#D4AF37;margin-bottom:4px;">شرح الحديث · آل عمران ١٥١</div>
+      <div style="font-family:'Amiri Display',serif;font-size:1.02rem;color:#0A192F;">حين تنهزم القلوب قبل الجيوش</div>
+    </a><a class="rel-card" href="article63.html" style="display:block;background:#fff;border:1px solid rgba(138,106,18,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
+      <div style="font-size:.72rem;color:#D4AF37;margin-bottom:4px;">شرح الحديث · شرح الحديث</div>
+      <div style="font-family:'Amiri Display',serif;font-size:1.02rem;color:#0A192F;">القابض على الجمر</div>
     </a>
 </div>
 
 <!-- ===== قسم الملاحظات والتقييم والحقوق ===== -->
-<div class="fb-sec" style="max-width:820px;margin:36px auto 0;background:#fff;border:1px solid rgba(176,141,52,.28);border-radius:12px;padding:26px 28px;box-shadow:0 3px 14px rgba(0,0,0,.06);">
-  <div style="font-family:'Amiri',serif;font-size:1.3rem;color:#1a1410;margin-bottom:6px;">📝 هَلْ لَدَيْكَ مُلَاحَظَةٌ حَوْلَ هَذَا الْمَقَالِ؟</div>
-  <div style="color:#6a5636;font-size:.88rem;margin-bottom:16px;font-family:'Cairo',sans-serif;">اختر نوع الملاحظة، ثم اكتب تفاصيلها إن أردت</div>
+<div class="fb-sec" style="max-width:820px;margin:36px auto 0;background:#fff;border:1px solid rgba(138,106,18,.28);border-radius:12px;padding:26px 28px;box-shadow:0 3px 14px rgba(10,25,47,.06);">
+  <div style="font-family:'Amiri Display',serif;font-size:1.3rem;color:#0A192F;margin-bottom:6px;">📝 هَلْ لَدَيْكَ مُلَاحَظَةٌ حَوْلَ هَذَا الْمَقَالِ؟</div>
+  <div style="color:#8a6a12;font-size:.88rem;margin-bottom:16px;font-family:'Cairo',sans-serif;">اختر نوع الملاحظة، ثم اكتب تفاصيلها إن أردت</div>
   <form action="https://formsubmit.co/tahirnajim1987@gmail.com" method="POST" style="margin:0;">
     <input type="hidden" name="_subject" value="ملاحظة جديدة على مقال في الموسوعة">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="box">
     <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;" id="fbChips">
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#F9F8F6;border:1.5px solid #E8CD6E;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="ملاحظة علمية" checked style="margin-left:4px;">ملاحظة علمية</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#F9F8F6;border:1.5px solid #E8CD6E;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="ملاحظة إملائية" style="margin-left:4px;">ملاحظة إملائية</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#F9F8F6;border:1.5px solid #E8CD6E;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="ملاحظة ترجمة" style="margin-left:4px;">ملاحظة ترجمة</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#F9F8F6;border:1.5px solid #E8CD6E;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="ملاحظة توضيح" style="margin-left:4px;">ملاحظة توضيح</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#F9F8F6;border:1.5px solid #E8CD6E;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="رابط لا يعمل" style="margin-left:4px;">رابط لا يعمل</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#F9F8F6;border:1.5px solid #E8CD6E;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="أخرى" style="margin-left:4px;">أخرى</label>
     </div>
-    <textarea name="نص_الملاحظة" placeholder="اكتب ملاحظتك هنا (اختياري لكن يُفضَّل)..." style="width:100%;border:1.5px solid #d0b088;border-radius:8px;padding:12px 14px;font-family:'Cairo',sans-serif;font-size:.92rem;resize:vertical;min-height:75px;margin-bottom:12px;box-sizing:border-box;"></textarea>
-    <input type="email" name="بريد_المرسل" placeholder="بريدك الإلكتروني (اختياري، إن أردت رداً)" style="width:100%;border:1.5px solid #d0b088;border-radius:8px;padding:10px 14px;font-family:'Cairo',sans-serif;font-size:.88rem;margin-bottom:14px;box-sizing:border-box;">
-    <button type="submit" style="background:linear-gradient(135deg,#8a5a3a,#5a4030);color:#fff;border:none;padding:10px 28px;border-radius:24px;font-family:'Cairo',sans-serif;font-weight:700;cursor:pointer;font-size:.92rem;">إرسال الملاحظة</button>
+    <textarea name="نص_الملاحظة" placeholder="اكتب ملاحظتك هنا (اختياري لكن يُفضَّل)..." style="width:100%;border:1.5px solid #E8CD6E;border-radius:8px;padding:12px 14px;font-family:'Cairo',sans-serif;font-size:.92rem;resize:vertical;min-height:75px;margin-bottom:12px;box-sizing:border-box;"></textarea>
+    <input type="email" name="بريد_المرسل" placeholder="بريدك الإلكتروني (اختياري، إن أردت رداً)" style="width:100%;border:1.5px solid #E8CD6E;border-radius:8px;padding:10px 14px;font-family:'Cairo',sans-serif;font-size:.88rem;margin-bottom:14px;box-sizing:border-box;">
+    <button type="submit" style="background:linear-gradient(135deg,#0D1B2A,#8a6a12);color:#fff;border:none;padding:10px 28px;border-radius:24px;font-family:'Cairo',sans-serif;font-weight:700;cursor:pointer;font-size:.92rem;">إرسال الملاحظة</button>
   </form>
 </div>
 
 <!-- ===== قسم "هل انتفعت؟" (يُسجَّل في GoatCounter فقط، لا يظهر للزوار) ===== -->
-<div style="max-width:820px;margin:22px auto 0;background:#1a1410;color:#f0dcb8;border-radius:12px;padding:22px 28px;text-align:center;">
-  <div style="font-family:'Amiri',serif;font-size:1.15rem;margin-bottom:14px;color:#c17f3e;">هَلِ انْتَفَعْتَ بِهَذَا الْمَقَالِ؟</div>
+<div style="max-width:820px;margin:22px auto 0;background:#0A192F;color:#E8CD6E;border-radius:12px;padding:22px 28px;text-align:center;">
+  <div style="font-family:'Amiri Display',serif;font-size:1.15rem;margin-bottom:14px;color:#D4AF37;">هَلِ انْتَفَعْتَ بِهَذَا الْمَقَالِ؟</div>
   <div style="display:flex;gap:14px;justify-content:center;">
-    <button onclick="rateArticle('نعم')" id="uBtnYes" style="background:rgba(255,255,255,.08);border:1.5px solid rgba(193,127,62,.4);color:#f0dcb8;padding:9px 26px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.92rem;cursor:pointer;">👍 نعم</button>
-    <button onclick="rateArticle('لا')" id="uBtnNo" style="background:rgba(255,255,255,.08);border:1.5px solid rgba(193,127,62,.4);color:#f0dcb8;padding:9px 26px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.92rem;cursor:pointer;">👎 لا</button>
+    <button onclick="rateArticle('نعم')" id="uBtnYes" style="background:rgba(232,205,110,.08);border:1.5px solid rgba(138,106,18,.4);color:#E8CD6E;padding:9px 26px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.92rem;cursor:pointer;">👍 نعم</button>
+    <button onclick="rateArticle('لا')" id="uBtnNo" style="background:rgba(232,205,110,.08);border:1.5px solid rgba(138,106,18,.4);color:#E8CD6E;padding:9px 26px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.92rem;cursor:pointer;">👎 لا</button>
   </div>
-  <div id="uThanks" style="display:none;margin-top:12px;color:#c17f3e;font-size:.88rem;">شكراً لتقييمك 🌿</div>
+  <div id="uThanks" style="display:none;margin-top:12px;color:#D4AF37;font-size:.88rem;">شكراً لتقييمك 🌿</div>
 </div>
 <script>
 function rateArticle(val){
@@ -729,8 +734,8 @@ function rateArticle(val){
 </script>
 
 <!-- ===== حقوق النشر (السنة تلقائية) ===== -->
-<div style="max-width:820px;margin:18px auto 0;text-align:center;color:#3a2c1e;font-size:.84rem;padding:14px 0;border-top:1px solid #d0b088;">
-  جميع الحقوق محفوظة لموقع <strong style="color:#5a4030;">موسوعة السلجوقي التدبرية</strong> © <span id="copyYear"></span>
+<div style="max-width:820px;margin:18px auto 0;text-align:center;color:#0D1B2A;font-size:.84rem;padding:14px 0;border-top:1px solid #E8CD6E;">
+  جميع الحقوق محفوظة لموقع <strong style="color:#8a6a12;">موسوعة السلجوقي التدبرية</strong> © <span id="copyYear"></span>
 </div>
 <script>document.getElementById('copyYear').textContent = new Date().getFullYear();</script>
 
@@ -739,7 +744,7 @@ function rateArticle(val){
         async src="//gc.zgo.at/count.js"></script>
 
 <div class="sub" style="margin-top:56px;">
-  <h3 style="font-family:'Scheherazade New',serif;">💬 التعليقات والنقاش</h3>
+  <h3 style="font-family:'Amiri Display',serif;">💬 التعليقات والنقاش</h3>
   <div id="disqus_thread"></div>
   <script>
   function loadDisqus(){
@@ -795,6 +800,23 @@ links.forEach(function(l){
     document.getElementById('sb').classList.remove('open');
   });
 });
+
+// مشاركة المقال
+function shareArticle(){
+  var url = window.location.href;
+  var title = document.title;
+  var text = 'مقال من موسوعة السلجوقي التدبرية';
+  if(navigator.share){
+    navigator.share({title:title, text:text, url:url}).catch(function(){});
+  } else {
+    navigator.clipboard.writeText(url).then(function(){
+      var btn = document.getElementById('shareArticleBtn');
+      var old = btn.innerHTML;
+      btn.innerHTML = '<span>✓</span> تم نسخ رابط المقال';
+      setTimeout(function(){ btn.innerHTML = old; }, 2200);
+    }).catch(function(){});
+  }
+}
 </script>
 </body>
 </html>
