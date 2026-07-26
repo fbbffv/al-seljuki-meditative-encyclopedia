@@ -456,14 +456,18 @@ document.addEventListener('DOMContentLoaded', function() {
 .copy-verse{position:absolute;top:10px;left:10px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,168,56,.4);background:rgba(0,0,0,.25);color:#E8CD6E;font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:3;}
 .copy-verse:hover{background:rgba(201,168,56,.25);color:#fff;}
 .copy-verse.done{background:#8a6a12;color:#fff;border-color:#8a6a12;}
-body.night{background:#0c1512 !important;color:#F9F8F6 !important;}
-body.night .card,body.night .mc,body.night .ib{background:#132420 !important;border-color:#0D1B2A !important;}
+
+body.night .hero h1,
+body.night .sec h2,
+body.night body{color:#E8CD6E !important;}
+body.night{background:#0A192F !important;color:#F9F8F6 !important;}
+body.night .card,body.night .mc,body.night .ib{background:#0D1B2A !important;border-color:#0D1B2A !important;}
 body.night .card *,body.night .mc *,body.night .ib *{color:#F9F8F6 !important;}
 body.night .abody,body.night .abody p{color:#F9F8F6 !important;}
 body.night .sec h2,body.night .sub h3,body.night .hero h1,body.night .ct,body.night .term,body.night .iw{color:#E8CD6E !important;}
 body.night .tbl td{border-color:#0D1B2A !important;}
 body.night .pq{background:rgba(255,255,255,.03) !important;}
-body.night .src{background:#1c1a12 !important;}
+body.night .src{background:#0A192F !important;}
 body.night .src *{color:#E8CD6E !important;}
 @media print{
   .edge-tab,#sb,.hdr,.home-link,.pdf-bar,.copy-verse,#prog,.tbtn{display:none !important;}
