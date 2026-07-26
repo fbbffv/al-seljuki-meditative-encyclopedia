@@ -325,7 +325,8 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(212
   .hero h1{font-size:1.7rem;}
   .tugra{font-size:1rem;letter-spacing:.2em;}
 }
-.edge-tab-home{position:fixed;top:50%;transform:translateY(-50%);z-index:500;transition:transform .3s;}
+.edge-tab-home{position:fixed;top:50%;transform:translateY(-50%);z-index:500;transition:transform .3s,opacity .3s;}
+.edge-tab-home.hide-on-scroll{opacity:0;pointer-events:none;transform:translateY(-50%) translateX(60px);}
 .edge-tab-home.right{right:0;}
 .edge-nub-home{width:22px;height:105px;background:linear-gradient(180deg,var(--night),#0D1B2A);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:-3px 3px 14px rgba(0,0,0,.3);border-radius:8px 0 0 8px;border-right:none;}
 .edge-nub-home span{writing-mode:vertical-rl;text-orientation:mixed;font-family:'Cairo',sans-serif;font-weight:700;font-size:.85rem;color:var(--gold-lt);letter-spacing:.04em;}
@@ -1502,6 +1503,26 @@ function shareSite(){
     }).catch(function(){});
   }
 }
+</script>
+<script>
+// إخفاء الزر العائم للتواصل عند الدخول إلى قسم الأفرع، وإظهاره فقط في الواجهة الرئيسية
+(function(){
+  var edgeTab = document.getElementById('edgeHome');
+  var gatesSec = document.getElementById('gatesSec');
+  if(!edgeTab || !gatesSec) return;
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        // وصلنا لقسم الأفرع: أخفِ الزر
+        edgeTab.classList.add('hide-on-scroll');
+      } else if(entry.boundingClientRect.top > 0){
+        // ما زلنا أعلى قسم الأفرع (في الواجهة): أظهر الزر
+        edgeTab.classList.remove('hide-on-scroll');
+      }
+    });
+  }, {rootMargin:'0px 0px -85% 0px'});
+  obs.observe(gatesSec);
+})();
 </script>
 </body>
 </html>
