@@ -16,7 +16,7 @@
 
 <!-- ═══ إعدادات التطبيق (PWA) — أندرويد / آيفون / آيباد / ويندوز / ماك ═══ -->
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#14100a">
+<meta name="theme-color" content="#0A192F">
 <link rel="icon" type="image/png" href="icon.png">
 <!-- آيفون وآيباد -->
 <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
@@ -25,7 +25,7 @@
 <meta name="apple-mobile-web-app-title" content="السلجوقي">
 <!-- ويندوز -->
 <meta name="msapplication-TileImage" content="icon.png">
-<meta name="msapplication-TileColor" content="#14100a">
+<meta name="msapplication-TileColor" content="#0A192F">
 <meta name="description" content="الموسوعة السلجوقية: منصة علمية شاملة للشيخ علي خليل السلجوقي — تدبر القرآن والحديث، الفقه وأصوله، السياسة الشرعية والنقد، الرقائق والطب النبوي وتعبير الرؤى.">
 <meta name="keywords" content="موسوعة السلجوقي, الموسوعة السلجوقية, علي خليل السلجوقي, تدبر القرآن, شرح الحديث, الفقه, أصول الفقه, السياسة الشرعية, تفسير الأحلام, الطب النبوي, أحاديث الفتن">
 <meta name="author" content="الشيخ علي خليل عباس السلجوقي التركماني الليلاني">
@@ -48,22 +48,22 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"موسوعة السلجوقي","alternateName":"الموسوعة السلجوقية","url":"https://fbbffv.github.io/al-seljuki-meditative-encyclopedia/","author":{"@type":"Person","name":"الشيخ علي خليل عباس السلجوقي التركماني الليلاني"},"inLanguage":"ar"}
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;900&family=Reem+Kufi:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Display&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* لوح مستوحى من المخطوطات المذهّبة: حبر، رقّ، ذهب، لازورد، عقيق */
-  --ink:#120d09;         /* حبر بنّي داكن */
-  --parch:#f4ecdb;       /* لون الرقّ */
-  --parch2:#ece0c8;
-  --gold:#8f6a1a;        /* ذهب المخطوط */
-  --gold-l:#d4b25a;
-  --gold-lt:#e8d9a8;
-  --lapis:#1f4e6b;       /* لازورد */
-  --lapis-l:#2f6d92;
-  --agate:#7a2e28;       /* عقيق أحمر داكن */
-  --sage:#3f5c48;        /* أخضر زيتوني */
-  --night:#14100a;       /* خلفية داكنة */
-  --line:rgba(120,85,15,.75);
+  /* ==== لوحة الألوان الملكية الفاخرة الجديدة (تجريبية) — عالية التباين ==== */
+  --ink:#0A192F;         /* كحلي ملكي داكن — نص أساسي */
+  --parch:#F9F8F6;       /* عاجي فاخر — خلفية فاتحة */
+  --parch2:#EFEBE0;
+  --gold:#8a6a12;        /* ذهبي داكن (للنص على خلفية فاتحة — تباين عالٍ) */
+  --gold-l:#D4AF37;      /* ذهبي فاخر مشرق (للحدود والخلفيات الداكنة) */
+  --gold-lt:#E8CD6E;     /* ذهبي فاتح جداً (للنص على خلفية كحلية داكنة) */
+  --lapis:#0D1B2A;       /* كحلي ثانوي */
+  --lapis-l:#1B3A5C;
+  --agate:#6b1f35;       /* عقيق/نبيذي داكن */
+  --sage:#2f4a3a;        /* أخضر زيتوني داكن */
+  --night:#0A192F;       /* خلفية داكنة كحلية ملكية */
+  --line:rgba(212,175,55,.55);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -73,9 +73,9 @@ body{
   font-family:'Cairo',sans-serif;line-height:1.9;font-weight:500;
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
   background-image:
-    radial-gradient(ellipse at 0% 0%,rgba(31,78,107,.06),transparent 42%),
-    radial-gradient(ellipse at 100% 0%,rgba(122,46,40,.05),transparent 42%),
-    radial-gradient(ellipse at 50% 100%,rgba(176,141,52,.08),transparent 55%);
+    radial-gradient(ellipse at 0% 0%,rgba(10,25,47,.06),transparent 42%),
+    radial-gradient(ellipse at 100% 0%,rgba(107,31,53,.05),transparent 42%),
+    radial-gradient(ellipse at 50% 100%,rgba(212,175,55,.08),transparent 55%);
   min-height:100vh;
 }
 /* شريط تقدم علوي */
@@ -84,7 +84,7 @@ body{
 /* ===== الترويسة ===== */
 .hdr{background:linear-gradient(180deg,var(--night),#1d1710);border-bottom:2px solid var(--gold);position:sticky;top:0;z-index:200;box-shadow:0 3px 30px rgba(0,0,0,.5);}
 .hdr-i{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;height:62px;padding:0 22px;gap:14px;}
-.brand{font-family:'Reem Kufi',sans-serif;color:var(--gold-lt);font-size:1.15rem;font-weight:700;letter-spacing:.5px;white-space:nowrap;}
+.brand{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:clamp(1rem,1.6vw,1.35rem);font-weight:700;letter-spacing:.5px;white-space:nowrap;}
 .brand b{color:var(--gold-l);}
 .modes{display:flex;gap:6px;}
 .mode-btn{width:36px;height:36px;border-radius:9px;border:1px solid var(--line);background:rgba(212,178,90,.08);color:var(--gold-lt);cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
@@ -103,37 +103,41 @@ body{
 .hero-frame::before,.hero-frame::after{content:'';position:absolute;width:26px;height:26px;border:2px solid var(--gold-l);}
 .hero-frame::before{top:-1px;right:-1px;border-left:0;border-bottom:0;border-radius:0 20px 0 0;}
 .hero-frame::after{bottom:-1px;left:-1px;border-right:0;border-top:0;border-radius:0 0 0 20px;}
-.tugra{font-family:'Reem Kufi',sans-serif;font-size:1.35rem;color:var(--gold);letter-spacing:.35em;margin-bottom:20px;opacity:.75;}
-.hero h1{font-family:'Amiri',serif;font-size:3.1rem;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px;position:relative;}
-.hero h1 .accent{color:var(--agate);}
-.hero .lede{font-family:'Amiri',serif;font-size:1.5rem;color:var(--lapis);margin:14px 0;position:relative;}
-.hero .desc{font-size:1rem;color:#5a4a34;max-width:640px;margin:0 auto;position:relative;}
+.tugra{font-family:'Amiri Display',serif;font-size:1.35rem;color:var(--gold);letter-spacing:.35em;margin-bottom:20px;opacity:.75;}
+.hero h1{font-family:'Amiri Display',serif;font-size:3.1rem;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px;position:relative;}
+.hero h1 .accent{color:#6b1f35;}
+.hero .lede{font-family:'Amiri Display',serif;font-size:1.5rem;color:var(--lapis);margin:14px 0;position:relative;}
+.hero .desc{font-size:1rem;color:#3a4a5c;max-width:640px;margin:0 auto;position:relative;}
 .rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:26px auto 0;max-width:340px;color:var(--gold);}
 .rule::before,.rule::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold));}
 .rule span{font-size:1.1rem;}
-.author-line{margin-top:20px;font-size:.92rem;color:#6a5636;position:relative;}
-.author-line b{color:var(--agate);font-weight:600;}
+.author-line{margin-top:20px;font-size:.92rem;color:#3a4a5c;position:relative;}
+.author-line b{color:#6b1f35;font-weight:600;}
 
 /* ===== البحث ===== */
 .search-wrap{max-width:640px;margin:34px auto 0;padding:0 22px;position:relative;z-index:3;}
 .search-box{position:relative;}
-.search-box input{width:100%;padding:15px 52px 15px 20px;border:1.5px solid var(--gold);border-radius:14px;background:rgba(255,255,255,.7);font-family:'Cairo',sans-serif;font-size:1.02rem;color:var(--ink);outline:none;transition:box-shadow .2s;}
-.search-box input:focus{box-shadow:0 0 0 4px rgba(176,141,52,.16);}
-.search-box .s-i{position:absolute;top:50%;right:18px;transform:translateY(-50%);color:var(--gold);font-size:1.15rem;}
+.search-box input{width:100%;padding:16px 54px 16px 22px;border:1px solid var(--gold-l);border-radius:16px;background:rgba(255,255,255,.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-family:'Cairo',sans-serif;font-size:1.02rem;font-weight:500;color:var(--ink);outline:none;transition:box-shadow .2s;box-shadow:0 8px 26px rgba(10,25,47,.1);}
+.search-box input:focus{box-shadow:0 0 0 4px rgba(212,175,55,.18);}
+.search-box .s-i{position:absolute;top:50%;right:20px;transform:translateY(-50%);color:var(--gold);font-size:1.15rem;}
+.search-filters{display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap;}
+.sf-chip{background:rgba(255,255,255,.5);backdrop-filter:blur(10px);border:1px solid var(--gold-l);color:var(--gold);font-family:'Cairo',sans-serif;font-size:.8rem;font-weight:600;padding:6px 16px;border-radius:20px;cursor:pointer;transition:.2s;user-select:none;}
+.sf-chip:hover{background:rgba(212,175,55,.12);}
+.sf-chip.on{background:var(--gold);color:#fff;border-color:var(--gold);}
 .search-note{text-align:center;color:var(--lapis);font-size:.92rem;margin-top:16px;display:none;}
-.search-result-card{background:rgba(255,255,255,.9);border:1.5px solid var(--line);border-radius:12px;padding:8px 16px;font-family:'Amiri',serif;font-size:.85rem;font-weight:600;color:var(--ink);text-decoration:none;transition:all .2s;box-shadow:0 1px 4px rgba(26,20,16,.08);}
-.search-result-card:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(26,20,16,.15);}
+.search-result-card{background:rgba(255,255,255,.9);border:1.5px solid var(--line);border-radius:12px;padding:8px 16px;font-family:'Amiri Display',serif;font-size:.85rem;font-weight:600;color:var(--ink);text-decoration:none;transition:all .2s;box-shadow:0 1px 4px rgba(10,25,47,.08);}
+.search-result-card:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(10,25,47,.15);}
 .search-result-card.c-lapis{border-color:var(--lapis);}
-.search-result-card.c-agate{border-color:var(--agate);}
-.search-result-card.c-sage{border-color:var(--sage);}
+.search-result-card.c-agate{border-color:#6b1f35;}
+.search-result-card.c-sage{border-color:#14304a;}
 .search-result-card.c-gold{border-color:var(--gold);}
-.search-result-card.c-teal{border-color:#1f6b6b;}
-.search-result-card.c-plum{border-color:#6b1f5c;}
+.search-result-card.c-teal{border-color:#96601c;}
+.search-result-card.c-plum{border-color:#1B3A5C;}
 
 /* ===== شارة إشعار: مقالات جديدة متاحة ===== */
-.new-badge{position:fixed;top:16px;left:16px;z-index:900;display:none;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold),var(--gold-l,#e8c878));color:#1a1206;padding:10px 18px;border-radius:30px;box-shadow:0 6px 22px rgba(0,0,0,.35);cursor:pointer;font-family:'Amiri',serif;font-size:.95rem;font-weight:700;border:none;animation:badgePulse 2.2s ease-in-out infinite;}
+.new-badge{position:fixed;top:16px;left:16px;z-index:900;display:none;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold),var(--gold-l,#e8c878));color:#0A192F;padding:10px 18px;border-radius:30px;box-shadow:0 6px 22px rgba(0,0,0,.35);cursor:pointer;font-family:'Amiri Display',serif;font-size:.95rem;font-weight:700;border:none;animation:badgePulse 2.2s ease-in-out infinite;}
 .new-badge.show{display:flex;}
-.new-badge .nb-dot{width:9px;height:9px;background:#c1440e;border-radius:50%;flex-shrink:0;}
+.new-badge .nb-dot{width:9px;height:9px;background:#D4AF37;border-radius:50%;flex-shrink:0;}
 @keyframes badgePulse{0%,100%{box-shadow:0 6px 22px rgba(0,0,0,.35);}50%{box-shadow:0 6px 30px rgba(212,178,90,.55);}}
 @media(max-width:640px){.new-badge{top:auto;bottom:18px;left:14px;right:14px;justify-content:center;font-size:.88rem;}}
 
@@ -142,34 +146,35 @@ body{
 .latest-inner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 15% 0%,rgba(212,178,90,.14),transparent 55%);pointer-events:none;}
 .latest-h{display:flex;align-items:center;gap:12px;margin-bottom:18px;position:relative;}
 .latest-h .sp{color:var(--gold-l);font-size:1.3rem;}
-.latest-h h2{font-family:'Reem Kufi',sans-serif;color:var(--gold-lt);font-size:1.35rem;}
-.latest-h .tag{margin-right:auto;background:var(--agate);color:#fff;font-size:.7rem;padding:4px 13px;border-radius:20px;font-weight:600;}
+.latest-h h2{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.35rem;}
+.latest-h .tag{margin-right:auto;background:#6b1f35;color:#fff;font-size:.7rem;padding:4px 13px;border-radius:20px;font-weight:600;}
 .latest-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative;}
 .lc{background:rgba(244,236,219,.96);border-radius:14px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .2s;position:relative;border:1px solid var(--line);}
 .lc:hover{transform:translateY(-4px);}
 .lc-top{background:linear-gradient(135deg,var(--lc-a,var(--lapis)),var(--lc-b,var(--lapis-l)));padding:20px 22px;min-height:120px;display:flex;flex-direction:column;justify-content:center;position:relative;}
-.lc-rib{position:absolute;top:13px;left:-36px;background:var(--agate);color:#fff;font-size:.68rem;font-weight:700;padding:5px 42px;transform:rotate(-45deg);}
+.lc-rib{position:absolute;top:13px;left:-36px;background:#6b1f35;color:#fff;font-size:.68rem;font-weight:700;padding:5px 42px;transform:rotate(-45deg);}
 .lc-cat{color:var(--gold-lt);font-size:.72rem;margin-bottom:7px;letter-spacing:.04em;}
-.lc-verse{font-family:'Amiri',serif;font-size:1.18rem;color:#fff;line-height:1.8;}
+.lc-verse{font-family:'Amiri Display',serif;font-size:1.18rem;color:#fff;line-height:1.8;}
 .lc-body{padding:16px 20px;}
-.lc-body h3{font-family:'Amiri',serif;font-size:1.32rem;color:var(--ink);line-height:1.5;margin-bottom:8px;}
+.lc-body h3{font-family:'Amiri Display',serif;font-size:1.32rem;color:var(--ink);line-height:1.5;margin-bottom:8px;}
 .lc-cta{color:var(--gold);font-weight:700;font-size:.88rem;}
 
 /* ===== البوابات ===== */
 .gates{max-width:1200px;margin:56px auto 0;padding:0 22px;}
 .gates-title{display:flex;align-items:center;gap:16px;margin-bottom:8px;}
-.gates-title h2{font-family:'Reem Kufi',sans-serif;font-size:1.7rem;color:var(--ink);white-space:nowrap;}
+.gates-title h2{font-family:'Amiri Display',serif;font-size:clamp(1.4rem,2.6vw,2.15rem);font-weight:700;color:var(--ink);white-space:nowrap;}
 .gates-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--gold),transparent);}
-.gates-sub{color:#6a5636;font-size:.95rem;margin-bottom:30px;}
-.gate{background:linear-gradient(150deg,color-mix(in srgb, var(--gate-c,var(--gold)) 9%, #fdfbf7),color-mix(in srgb, var(--gate-c,var(--gold)) 17%, #fdfbf7));backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:2px solid var(--gate-c,var(--gold));border-radius:20px;margin-bottom:22px;overflow:hidden;box-shadow:0 8px 26px rgba(26,20,16,.1);transition:box-shadow .25s;}
+.gates-sub{color:#3a4a5c;font-size:.95rem;margin-bottom:30px;}
+.gate{background:rgba(255,255,255,.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--gold-l);border-radius:16px;margin-bottom:22px;overflow:hidden;box-shadow:0 8px 30px rgba(10,25,47,.12);transition:box-shadow .25s,transform .25s;}
+.gate:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(10,25,47,.18);}
 .gate .branch-h{color:color-mix(in srgb, var(--gate-c,var(--gold)) 70%, #1a1410);}
-.gate.open{box-shadow:0 14px 40px rgba(26,20,16,.14);}
+.gate.open{box-shadow:0 14px 40px rgba(10,25,47,.14);}
 .gate-head{display:flex;align-items:center;gap:18px;padding:24px 26px;cursor:pointer;position:relative;user-select:none;}
 .gate-emblem{width:60px;height:60px;flex-shrink:0;border-radius:16px;background:linear-gradient(135deg,var(--gate-c),var(--gate-c2,var(--gate-c)));display:flex;align-items:center;justify-content:center;font-size:1.9rem;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.16);}
 .gate-txt{flex:1;}
-.gate-txt h3{font-family:'Reem Kufi',sans-serif;font-size:1.42rem;color:var(--ink);line-height:1.4;}
+.gate-txt h3{font-family:'Amiri Display',serif;font-size:clamp(1.15rem,2vw,1.65rem);font-weight:700;color:var(--ink);line-height:1.4;}
 .gate-txt .en{font-size:.74rem;color:var(--gate-c);letter-spacing:.12em;text-transform:uppercase;opacity:.85;}
-.gate-txt p{font-size:.9rem;color:#6a5636;margin-top:3px;}
+.gate-txt p{font-size:.9rem;color:#3a4a5c;margin-top:3px;}
 .gate-arrow{font-size:1.3rem;color:var(--gate-c);transition:transform .3s;}
 .gate.open .gate-arrow{transform:rotate(90deg);}
 .gate-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1);}
@@ -177,75 +182,75 @@ body{
 .branches{padding:4px 26px 26px;}
 .branch{border-top:1px dashed var(--line);padding:18px 0 4px;}
 .branch:first-child{border-top:0;}
-.branch-h{font-family:'Amiri',serif;font-size:1.22rem;color:var(--gate-c);font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;position:sticky;top:0;z-index:6;background:rgba(253,251,247,.97);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);padding:8px 4px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;}
+.branch-h{font-family:'Amiri Display',serif;font-size:clamp(1.05rem,1.6vw,1.42rem);color:var(--gate-c);font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;position:sticky;top:0;z-index:6;background:rgba(253,251,247,.97);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);padding:8px 4px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;}
 .branch-arrow{margin-right:auto;font-size:1.05rem;color:var(--gate-c);transition:transform .25s;opacity:.85;flex-shrink:0;}
 .branch.open .branch-arrow{transform:rotate(-90deg);}
 .branch-h::before{content:'◈';font-size:.85em;opacity:.7;}
 .branch-sub{list-style:none;padding-right:26px;display:none;}
 .branch.open .branch-sub{display:block;}
-.branch-sub li{position:relative;padding:5px 18px 5px 0;color:#4a3c28;font-size:.95rem;}
+.branch-sub li{position:relative;padding:5px 18px 5px 0;color:#3a4a5c;font-size:clamp(.9rem,1vw,1.02rem);font-weight:500;}
 .branch-sub li::before{content:'—';position:absolute;right:0;color:var(--gate-c);opacity:.6;}
-.branch-count{display:inline-block;background:rgba(176,141,52,.14);color:var(--gold);font-size:.72rem;padding:1px 9px;border-radius:12px;margin-right:8px;}
+.branch-count{display:inline-block;background:rgba(138,106,18,.14);color:var(--gold);font-size:.72rem;padding:1px 9px;border-radius:12px;margin-right:8px;}
 .branch-links{display:none;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin-top:8px;align-items:start;}
 .branch.open .branch-links{display:grid;}
 .branch.open{max-height:72vh;overflow-y:auto;overflow-x:hidden;}
-.b-link{background:rgba(255,255,255,.96);border:1.5px solid var(--line);border-radius:14px;padding:3px 9px;font-size:.7rem;color:var(--ink);text-decoration:none;transition:background .2s;font-family:'Amiri',serif;font-weight:700;box-shadow:0 1px 4px rgba(26,20,16,.1);}
+.b-link{background:rgba(255,255,255,.96);border:1.5px solid var(--line);border-radius:14px;padding:3px 9px;font-size:.7rem;color:var(--ink);text-decoration:none;transition:background .2s;font-family:'Amiri Display',serif;font-weight:700;box-shadow:0 1px 4px rgba(10,25,47,.1);}
 .b-link:hover{background:var(--gate-c);color:#fff;}
 .b-num{display:inline-block;font-weight:700;color:var(--gate-c);margin-left:3px;font-size:.82em;opacity:.75;}
 .b-link:hover .b-num{color:#fff;opacity:.95;}
 
-.b-link.c-lapis{color:var(--lapis);background:rgba(31,78,107,.12);border-color:rgba(31,78,107,.35);}
-.b-link.c-agate{color:var(--agate);background:rgba(122,46,40,.12);border-color:rgba(122,46,40,.35);}
-.b-link.c-sage{color:var(--sage);background:rgba(63,92,72,.12);border-color:rgba(63,92,72,.35);}
-.b-link.c-gold{color:#8a6414;background:rgba(176,141,52,.16);border-color:rgba(176,141,52,.4);}
-.b-link.c-plum{color:#6b3a6b;background:rgba(107,58,107,.12);border-color:rgba(107,58,107,.35);}
-.b-link.c-teal{color:#1a6b5c;background:rgba(26,107,92,.12);border-color:rgba(26,107,92,.35);}
+.b-link.c-lapis{color:var(--lapis);background:rgba(10,25,47,.12);border-color:rgba(10,25,47,.35);}
+.b-link.c-agate{color:#6b1f35;background:rgba(107,31,53,.12);border-color:rgba(107,31,53,.35);}
+.b-link.c-sage{color:#14304a;background:rgba(20,48,74,.12);border-color:rgba(20,48,74,.35);}
+.b-link.c-gold{color:#8a6a12;background:rgba(138,106,18,.16);border-color:rgba(138,106,18,.4);}
+.b-link.c-plum{color:#1B3A5C;background:rgba(27,58,92,.12);border-color:rgba(27,58,92,.35);}
+.b-link.c-teal{color:#96601c;background:rgba(150,96,28,.12);border-color:rgba(150,96,28,.35);}
 .b-link.c-lapis:hover{background:var(--lapis);color:#fff;}
-.b-link.c-agate:hover{background:var(--agate);color:#fff;}
-.b-link.c-sage:hover{background:var(--sage);color:#fff;}
-.b-link.c-gold:hover{background:#8a6414;color:#fff;}
-.b-link.c-plum:hover{background:#6b3a6b;color:#fff;}
-.b-link.c-teal:hover{background:#1a6b5c;color:#fff;}
+.b-link.c-agate:hover{background:#6b1f35;color:#fff;}
+.b-link.c-sage:hover{background:#14304a;color:#fff;}
+.b-link.c-gold:hover{background:#8a6a12;color:#fff;}
+.b-link.c-plum:hover{background:#1B3A5C;color:#fff;}
+.b-link.c-teal:hover{background:#96601c;color:#fff;}
 .b-link.c-lapis:hover .b-num,.b-link.c-agate:hover .b-num,.b-link.c-sage:hover .b-num,.b-link.c-gold:hover .b-num,.b-link.c-plum:hover .b-num,.b-link.c-teal:hover .b-num{color:#fff;opacity:.95;}
 
 .surah-group{margin-bottom:0;border-radius:10px;overflow:hidden;border:1px solid var(--line);}
-.surah-head{padding:5px 9px;display:flex;align-items:center;gap:4px;font-family:'Amiri',serif;font-weight:700;font-size:.8rem;color:#fff;}
+.surah-head{padding:5px 9px;display:flex;align-items:center;gap:4px;font-family:'Amiri Display',serif;font-weight:700;font-size:clamp(.82rem,1.1vw,1rem);color:#fff;}
 .surah-c{margin-right:auto;font-size:.6rem;background:rgba(255,255,255,.28);padding:1px 6px;border-radius:10px;}
-.surah-group .ayah-link{display:flex;align-items:center;gap:5px;padding:4px 8px 4px 18px;text-decoration:none;font-family:'Amiri',serif;font-weight:600;font-size:.72rem;border-bottom:1px dashed var(--line);}
+.surah-group .ayah-link{display:flex;align-items:center;gap:5px;padding:4px 8px 4px 18px;text-decoration:none;font-family:'Amiri Display',serif;font-weight:600;font-size:clamp(.78rem,1vw,.92rem);border-bottom:1px dashed var(--line);}
 .surah-group .ayah-link:last-of-type{border-bottom:none;}
 .ayah-n{font-size:.62rem;font-weight:700;padding:1px 6px;border-radius:8px;flex-shrink:0;}
 .surah-group.c-lapis .surah-head{background:var(--lapis);}
-.surah-group.c-lapis .ayah-link{background:rgba(31,78,107,.07);color:var(--lapis);}
-.surah-group.c-lapis .ayah-n{background:rgba(31,78,107,.16);color:var(--lapis);}
-.surah-group.c-agate .surah-head{background:var(--agate);}
-.surah-group.c-agate .ayah-link{background:rgba(122,46,40,.07);color:var(--agate);}
-.surah-group.c-agate .ayah-n{background:rgba(122,46,40,.16);color:var(--agate);}
-.surah-group.c-sage .surah-head{background:var(--sage);}
-.surah-group.c-sage .ayah-link{background:rgba(63,92,72,.07);color:var(--sage);}
-.surah-group.c-sage .ayah-n{background:rgba(63,92,72,.16);color:var(--sage);}
-.surah-group.c-gold .surah-head{background:#8a6414;}
-.surah-group.c-gold .ayah-link{background:rgba(176,141,52,.1);color:#8a6414;}
-.surah-group.c-gold .ayah-n{background:rgba(176,141,52,.2);color:#8a6414;}
-.surah-group.c-plum .surah-head{background:#6b3a6b;}
-.surah-group.c-plum .ayah-link{background:rgba(107,58,107,.07);color:#6b3a6b;}
-.surah-group.c-plum .ayah-n{background:rgba(107,58,107,.16);color:#6b3a6b;}
-.surah-group.c-teal .surah-head{background:#1a6b5c;}
-.surah-group.c-teal .ayah-link{background:rgba(26,107,92,.07);color:#1a6b5c;}
-.surah-group.c-teal .ayah-n{background:rgba(26,107,92,.16);color:#1a6b5c;}
+.surah-group.c-lapis .ayah-link{background:rgba(10,25,47,.07);color:var(--lapis);}
+.surah-group.c-lapis .ayah-n{background:rgba(10,25,47,.16);color:var(--lapis);}
+.surah-group.c-agate .surah-head{background:#6b1f35;}
+.surah-group.c-agate .ayah-link{background:rgba(107,31,53,.07);color:#6b1f35;}
+.surah-group.c-agate .ayah-n{background:rgba(107,31,53,.16);color:#6b1f35;}
+.surah-group.c-sage .surah-head{background:#14304a;}
+.surah-group.c-sage .ayah-link{background:rgba(20,48,74,.07);color:#14304a;}
+.surah-group.c-sage .ayah-n{background:rgba(20,48,74,.16);color:#14304a;}
+.surah-group.c-gold .surah-head{background:#8a6a12;}
+.surah-group.c-gold .ayah-link{background:rgba(138,106,18,.1);color:#8a6a12;}
+.surah-group.c-gold .ayah-n{background:rgba(138,106,18,.2);color:#8a6a12;}
+.surah-group.c-plum .surah-head{background:#1B3A5C;}
+.surah-group.c-plum .ayah-link{background:rgba(27,58,92,.07);color:#1B3A5C;}
+.surah-group.c-plum .ayah-n{background:rgba(27,58,92,.16);color:#1B3A5C;}
+.surah-group.c-teal .surah-head{background:#96601c;}
+.surah-group.c-teal .ayah-link{background:rgba(150,96,28,.07);color:#96601c;}
+.surah-group.c-teal .ayah-n{background:rgba(150,96,28,.16);color:#96601c;}
 .surah-group.pending{border-style:dashed;}
-.surah-head.pending-head{background:#8a7550;font-size:.88rem;}
+.surah-head.pending-head{background:#8a6a12;font-size:.88rem;}
 .surah-group.pending{display:flex;flex-direction:column;gap:5px;padding:10px 12px;}
 
 .bab-group{margin-bottom:0;border-radius:9px;overflow:hidden;border:1px solid var(--line);}
-.bab-head{padding:4px 8px;display:flex;align-items:center;gap:4px;font-family:'Amiri',serif;font-weight:700;font-size:.78rem;color:#fff;}
+.bab-head{padding:4px 8px;display:flex;align-items:center;gap:4px;font-family:'Amiri Display',serif;font-weight:700;font-size:clamp(.8rem,1.05vw,.96rem);color:#fff;}
 .bab-c{margin-right:auto;font-size:.58rem;background:rgba(255,255,255,.28);padding:1px 6px;border-radius:10px;}
-.bab-link{display:block;padding:4px 8px;text-decoration:none;font-family:'Amiri',serif;font-weight:600;font-size:.72rem;}
-.bab-group.c-lapis .bab-head{background:var(--lapis);} .bab-group.c-lapis .bab-link{background:rgba(31,78,107,.07);color:var(--lapis);}
-.bab-group.c-agate .bab-head{background:var(--agate);} .bab-group.c-agate .bab-link{background:rgba(122,46,40,.07);color:var(--agate);}
-.bab-group.c-sage .bab-head{background:var(--sage);} .bab-group.c-sage .bab-link{background:rgba(63,92,72,.07);color:var(--sage);}
-.bab-group.c-gold .bab-head{background:#8a6414;} .bab-group.c-gold .bab-link{background:rgba(176,141,52,.1);color:#8a6414;}
-.bab-group.c-plum .bab-head{background:#6b3a6b;} .bab-group.c-plum .bab-link{background:rgba(107,58,107,.07);color:#6b3a6b;}
-.bab-group.c-teal .bab-head{background:#1a6b5c;} .bab-group.c-teal .bab-link{background:rgba(26,107,92,.07);color:#1a6b5c;}
+.bab-link{display:block;padding:4px 8px;text-decoration:none;font-family:'Amiri Display',serif;font-weight:600;font-size:clamp(.78rem,1vw,.92rem);}
+.bab-group.c-lapis .bab-head{background:var(--lapis);} .bab-group.c-lapis .bab-link{background:rgba(10,25,47,.07);color:var(--lapis);}
+.bab-group.c-agate .bab-head{background:#6b1f35;} .bab-group.c-agate .bab-link{background:rgba(107,31,53,.07);color:#6b1f35;}
+.bab-group.c-sage .bab-head{background:#14304a;} .bab-group.c-sage .bab-link{background:rgba(20,48,74,.07);color:#14304a;}
+.bab-group.c-gold .bab-head{background:#8a6a12;} .bab-group.c-gold .bab-link{background:rgba(138,106,18,.1);color:#8a6a12;}
+.bab-group.c-plum .bab-head{background:#1B3A5C;} .bab-group.c-plum .bab-link{background:rgba(27,58,92,.07);color:#1B3A5C;}
+.bab-group.c-teal .bab-head{background:#96601c;} .bab-group.c-teal .bab-link{background:rgba(150,96,28,.07);color:#96601c;}
 
 .bab-group .bab-link{display:none;}
 .bab-group.open{max-height:260px;overflow-y:auto;overflow-x:hidden;}
@@ -260,24 +265,24 @@ body{
 .surah-head{cursor:pointer;position:sticky;top:0;z-index:3;}
 .surah-arrow{font-size:.85rem;transition:transform .25s;opacity:.85;}
 .surah-group.open .surah-arrow{transform:rotate(-90deg);}
-.branch-empty{color:#9a8865;font-size:.85rem;font-style:italic;padding:4px 26px;}
+.branch-empty{color:#8a6a12;font-size:.85rem;font-style:italic;padding:4px 26px;}
 
 /* ===== نموذج الاتصال ===== */
 .contact{max-width:680px;margin:60px auto 0;padding:0 22px;}
 .contact-card{background:linear-gradient(135deg,var(--night),#20180e);border:1.5px solid var(--gold);border-radius:20px;padding:34px 28px;position:relative;overflow:hidden;}
-.contact-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,rgba(31,78,107,.18),transparent 55%);pointer-events:none;}
-.contact-card h2{font-family:'Reem Kufi',sans-serif;color:var(--gold-lt);font-size:1.5rem;text-align:center;margin-bottom:6px;position:relative;}
-.contact-card .cd{color:#b39a6a;text-align:center;font-size:.92rem;margin-bottom:22px;position:relative;}
+.contact-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,rgba(10,25,47,.18),transparent 55%);pointer-events:none;}
+.contact-card h2{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.5rem;text-align:center;margin-bottom:6px;position:relative;}
+.contact-card .cd{color:#8a6a12;text-align:center;font-size:.92rem;margin-bottom:22px;position:relative;}
 .cform{display:flex;flex-direction:column;gap:13px;position:relative;}
 .cform input,.cform textarea{width:100%;padding:13px 17px;border-radius:11px;border:1px solid var(--line);background:rgba(244,236,219,.95);font-family:'Cairo',sans-serif;font-size:1rem;color:var(--ink);outline:none;}
 .cform input:focus,.cform textarea:focus{border-color:var(--gold-l);}
 .cform textarea{min-height:120px;resize:vertical;}
-.cform button{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:1.1rem;border:none;border-radius:30px;padding:14px;cursor:pointer;transition:transform .2s;}
+.cform button{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);font-family:'Amiri Display',serif;font-weight:700;font-size:1.1rem;border:none;border-radius:30px;padding:14px;cursor:pointer;transition:transform .2s;}
 .cform button:hover{transform:translateY(-2px);}
 
 /* ===== التذييل ===== */
-footer{background:linear-gradient(180deg,#1d1710,var(--night));color:#8a7550;text-align:center;padding:40px 20px;margin-top:60px;border-top:2px solid var(--gold);}
-footer .fb{font-family:'Reem Kufi',sans-serif;font-size:1.2rem;color:var(--gold-lt);margin-bottom:8px;}
+footer{background:linear-gradient(180deg,#1d1710,var(--night));color:#8a6a12;text-align:center;padding:40px 20px;margin-top:60px;border-top:2px solid var(--gold);}
+footer .fb{font-family:'Amiri Display',serif;font-size:1.2rem;color:var(--gold-lt);margin-bottom:8px;}
 footer .fb b{color:var(--gold-l);}
 footer .f-email{margin:14px 0;}
 footer .f-email a{color:var(--gold-lt);text-decoration:none;border:1px solid var(--line);border-radius:30px;padding:8px 20px;font-size:.92rem;display:inline-flex;align-items:center;gap:8px;transition:background .2s;}
@@ -288,21 +293,21 @@ footer .fl{font-size:.78rem;opacity:.6;margin-top:8px;}
 .fab:hover{transform:translateY(-3px);}
 
 /* ===== أوضاع القراءة ===== */
-body.dark{--ink:#e8dcc4;--parch:#14100a;--parch2:#1d1710;background:#14100a;}
-body.dark .hero h1{color:#e8dcc4;}
-body.dark .hero h1 .accent{color:#d98a6a;}
-body.dark .hero .desc,body.dark .gates-sub,body.dark .gate-txt p,body.dark .branch-sub li{color:#b8a888;}
-body.dark .gate{background:linear-gradient(135deg,rgba(40,32,20,.6),rgba(30,24,14,.5));}
-body.dark .gate-txt h3,body.dark .gates-title h2,body.dark .lc-body h3,body.dark .branch-empty{color:#e8dcc4;}
-body.dark .search-box input{background:rgba(40,32,20,.7);color:#e8dcc4;}
-body.dark .lc{background:rgba(30,24,14,.95);}
-body.dark .b-link{background:rgba(40,32,20,.6);color:#e8dcc4;}
-body.dark .cform input,body.dark .cform textarea{background:rgba(40,32,20,.9);color:#e8dcc4;}
-body.dark .author-line{color:#a89670;}
+body.dark{--ink:#E8CD6E;--parch:#0A192F;--parch2:#0D1B2A;background:#0A192F;}
+body.dark .hero h1{color:#E8CD6E;}
+body.dark .hero h1 .accent{color:#D4AF37;}
+body.dark .hero .desc,body.dark .gates-sub,body.dark .gate-txt p,body.dark .branch-sub li{color:#E8CD6E;}
+body.dark .gate{background:linear-gradient(135deg,rgba(13,27,42,.6),rgba(10,25,47,.5));}
+body.dark .gate-txt h3,body.dark .gates-title h2,body.dark .lc-body h3,body.dark .branch-empty{color:#E8CD6E;}
+body.dark .search-box input{background:rgba(13,27,42,.7);color:#E8CD6E;}
+body.dark .lc{background:rgba(10,25,47,.95);}
+body.dark .b-link{background:rgba(13,27,42,.6);color:#E8CD6E;}
+body.dark .cform input,body.dark .cform textarea{background:rgba(13,27,42,.9);color:#E8CD6E;}
+body.dark .author-line{color:#E8CD6E;}
 
-body.sepia{--ink:#43351f;--parch:#f2e4c9;--parch2:#e8d7b5;background:#f2e4c9;}
-body.sepia .hero h1{color:#43351f;}
-body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232,215,181,.4));}
+body.sepia{--ink:#0A192F;--parch:#F4ECD8;--parch2:#EDE0C0;background:#F4ECD8;}
+body.sepia .hero h1{color:#0A192F;}
+body.sepia .gate{background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(212,175,55,.14));}
 
 /* ===== التجاوب ===== */
 @media(max-width:820px){
@@ -322,7 +327,7 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
 }
 .edge-tab-home{position:fixed;top:50%;transform:translateY(-50%);z-index:500;transition:transform .3s;}
 .edge-tab-home.right{right:0;}
-.edge-nub-home{width:22px;height:105px;background:linear-gradient(180deg,var(--night),#1a1206);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:-3px 3px 14px rgba(0,0,0,.3);border-radius:8px 0 0 8px;border-right:none;}
+.edge-nub-home{width:22px;height:105px;background:linear-gradient(180deg,var(--night),#0D1B2A);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:-3px 3px 14px rgba(0,0,0,.3);border-radius:8px 0 0 8px;border-right:none;}
 .edge-nub-home span{writing-mode:vertical-rl;text-orientation:mixed;font-family:'Cairo',sans-serif;font-weight:700;font-size:.85rem;color:var(--gold-lt);letter-spacing:.04em;}
 .edge-panel-home{position:absolute;top:50%;transform:translateY(-50%);right:22px;display:flex;flex-direction:column;gap:8px;background:var(--night);border:1px solid var(--gold);padding:0;max-width:0;opacity:0;overflow:hidden;transition:all .3s;border-radius:10px 0 0 10px;border-left:none;}
 .edge-tab-home.open .edge-panel-home{max-width:56px;padding:12px 9px;opacity:1;}
@@ -333,10 +338,10 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
 
 /* صورة الشيخ في الهيرو - إطار دائري مزخرف */
 .sheikh-frame{position:relative;width:170px;height:170px;margin:0 auto 26px;}
-.sheikh-frame .ring-out{position:absolute;inset:-14px;border:1px solid rgba(176,141,52,.35);border-radius:50%;}
-.sheikh-frame .ring-mid{position:absolute;inset:-7px;border:2px dashed rgba(176,141,52,.45);border-radius:50%;animation:spin 40s linear infinite;}
+.sheikh-frame .ring-out{position:absolute;inset:-14px;border:1px solid rgba(138,106,18,.35);border-radius:50%;}
+.sheikh-frame .ring-mid{position:absolute;inset:-7px;border:2px dashed rgba(138,106,18,.45);border-radius:50%;animation:spin 40s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg);}}
-.sheikh-frame .ring-in{position:absolute;inset:0;border-radius:50%;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 30px rgba(176,141,52,.35),inset 0 0 20px rgba(0,0,0,.2);}
+.sheikh-frame .ring-in{position:absolute;inset:0;border-radius:50%;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 30px rgba(138,106,18,.35),inset 0 0 20px rgba(0,0,0,.2);}
 .sheikh-frame .ring-in img{width:100%;height:100%;object-fit:cover;display:block;}
 .sheikh-frame .corner-star{position:absolute;color:var(--gold);font-size:1.1rem;}
 .sheikh-frame .cs-t{top:-26px;left:50%;transform:translateX(-50%);}
@@ -348,18 +353,27 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
 .welcome-card{max-width:760px;margin:40px auto 0;padding:0 22px;}
 .wc-inner{background:linear-gradient(135deg,var(--night),#20180e);border:1.5px solid var(--gold);border-radius:20px;padding:30px 26px;position:relative;overflow:hidden;text-align:center;}
 .wc-inner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(212,178,90,.14),transparent 60%);pointer-events:none;}
-.wc-avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;border:3px solid var(--gold-l);margin:0 auto 16px;box-shadow:0 4px 18px rgba(0,0,0,.4);position:relative;}
-.wc-avatar img{width:100%;height:100%;object-fit:cover;display:block;}
-.wc-inner h3{font-family:'Reem Kufi',sans-serif;color:var(--gold-lt);font-size:1.4rem;margin-bottom:6px;position:relative;}
-.wc-inner .wc-name{font-family:'Amiri',serif;color:var(--gg);font-size:1.15rem;margin-bottom:14px;position:relative;}
-.wc-inner .wc-bio{color:#c8b48a;font-size:.98rem;line-height:2;max-width:600px;margin:0 auto 22px;position:relative;font-family:'Cairo',sans-serif;}
+.wc-avatar{width:150px;height:150px;margin:0 auto 18px;position:relative;}
+.wc-avatar::before{content:'';position:absolute;inset:-14px;border:1px solid var(--gold-l);border-radius:50%;opacity:.35;}
+.wc-avatar::after{content:'✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧';position:absolute;inset:-30px;border-radius:50%;color:var(--gold-l);font-size:.6rem;letter-spacing:2px;line-height:1;text-align:center;opacity:.4;overflow:hidden;white-space:nowrap;animation:avatarSpin 40s linear infinite;}
+.wc-avatar-ring{position:absolute;inset:-5px;border:2px solid var(--gold);border-radius:50%;box-shadow:0 0 20px rgba(212,175,55,.25);}
+.wc-avatar img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%;
+  -webkit-mask-image:radial-gradient(circle at 50% 42%, black 58%, rgba(0,0,0,.7) 72%, transparent 92%);
+  mask-image:radial-gradient(circle at 50% 42%, black 58%, rgba(0,0,0,.7) 72%, transparent 92%);
+}
+@keyframes avatarSpin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+.wc-inner h3{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.4rem;margin-bottom:6px;position:relative;}
+.wc-inner .wc-name{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.15rem;margin-bottom:14px;position:relative;}
+.wc-inner .wc-bio{color:#E8CD6E;font-size:.98rem;line-height:2;max-width:600px;margin:0 auto 22px;position:relative;font-family:'Cairo',sans-serif;}
 /* مشغل النشيد */
-.nasheed-player{display:inline-flex;align-items:center;gap:14px;background:rgba(176,141,52,.12);border:1px solid rgba(201,168,56,.4);border-radius:40px;padding:10px 22px;position:relative;}
+.nasheed-player{display:inline-flex;align-items:center;gap:14px;background:rgba(138,106,18,.12);border:1px solid rgba(212,175,55,.4);border-radius:40px;padding:10px 22px;position:relative;}
+.share-site-btn{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid var(--gold-l);color:var(--gold-lt);font-family:'Cairo',sans-serif;font-weight:600;font-size:.85rem;padding:9px 20px;border-radius:24px;cursor:pointer;margin-bottom:18px;position:relative;transition:.2s;}
+.share-site-btn:hover{background:rgba(212,175,55,.14);}
 .nasheed-player button{width:44px;height:44px;border-radius:50%;border:none;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .2s;flex-shrink:0;}
 .nasheed-player button:hover{transform:scale(1.08);}
 .nasheed-player .np-label{text-align:right;}
-.nasheed-player .np-title{color:var(--gold-lt);font-family:'Amiri',serif;font-size:1.05rem;}
-.nasheed-player .np-sub{color:var(--gg);font-size:.76rem;}
+.nasheed-player .np-title{color:var(--gold-lt);font-family:'Amiri Display',serif;font-size:1.05rem;}
+.nasheed-player .np-sub{color:var(--gold-lt);font-size:.76rem;}
 @media(max-width:520px){.sheikh-frame{width:140px;height:140px;}.wc-inner{padding:24px 18px;}}
 
 /* ═══ بطاقة تثبيت التطبيق (PWA Install Card) ═══ */
@@ -375,16 +389,16 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,250,238,.6),rgba(232
 }
 .install-card::before{content:'';position:absolute;inset:0;border-radius:18px;background:radial-gradient(ellipse at 20% 0%,rgba(212,178,90,.16),transparent 60%);pointer-events:none;}
 .install-card.show{transform:translateX(-50%) translateY(0);}
-.install-close{position:absolute;top:7px;left:9px;background:none;border:none;color:#8a7550;font-size:.85rem;cursor:pointer;line-height:1;padding:4px;z-index:2;}
+.install-close{position:absolute;top:7px;left:9px;background:none;border:none;color:#8a6a12;font-size:.85rem;cursor:pointer;line-height:1;padding:4px;z-index:2;}
 .install-close:hover{color:var(--gold-lt);}
 .install-icon{width:48px;height:48px;border-radius:13px;overflow:hidden;border:2px solid var(--gold-l);flex-shrink:0;box-shadow:0 3px 10px rgba(0,0,0,.35);position:relative;z-index:1;}
 .install-icon img{width:100%;height:100%;object-fit:cover;display:block;}
 .install-txt{flex:1;min-width:0;position:relative;z-index:1;}
-.install-title{font-family:'Reem Kufi',sans-serif;color:var(--gold-lt);font-size:.98rem;font-weight:700;}
-.install-sub{color:#b39a6a;font-size:.76rem;margin-top:3px;line-height:1.55;}
-.install-btn{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);border:none;border-radius:24px;padding:10px 19px;font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:.86rem;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:transform .2s;position:relative;z-index:1;}
+.install-title{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:.98rem;font-weight:700;}
+.install-sub{color:#8a6a12;font-size:.76rem;margin-top:3px;line-height:1.55;}
+.install-btn{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);border:none;border-radius:24px;padding:10px 19px;font-family:'Amiri Display',serif;font-weight:700;font-size:.86rem;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:transform .2s;position:relative;z-index:1;}
 .install-btn:hover{transform:translateY(-2px);}
-body.dark .install-card,body.sepia .install-card{background:linear-gradient(135deg,var(--night),#20180e);}
+body.dark .install-card,body.sepia .install-card{background:linear-gradient(135deg,var(--night),#0D1B2A);}
 @media(max-width:480px){
   .install-card{padding:12px 14px;gap:10px;bottom:16px;}
   .install-icon{width:42px;height:42px;}
@@ -399,20 +413,37 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 .books-inner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 85% 0%,rgba(212,178,90,.14),transparent 55%);pointer-events:none;}
 .books-h{display:flex;align-items:center;gap:12px;margin-bottom:22px;position:relative;}
 .books-h .sp{color:var(--gold-l);font-size:1.3rem;}
-.books-h h2{font-family:'Reem Kufi',sans-serif;color:var(--gold-lt);font-size:1.35rem;}
-.book-card{display:flex;gap:24px;position:relative;background:rgba(244,236,219,.06);border:1px solid rgba(212,178,90,.25);border-radius:16px;padding:20px;}
-.book-cover{flex-shrink:0;width:140px;height:190px;border-radius:9px;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.45);border:2px solid var(--gold-l);}
-.book-cover img{width:100%;height:100%;object-fit:cover;display:block;}
+.books-h h2{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.35rem;}
+.book-card{display:flex;gap:24px;position:relative;background:rgba(255,255,255,.05);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--gold-l);border-radius:16px;padding:20px;}
+.book-cover{flex-shrink:0;width:140px;height:190px;border-radius:4px 8px 8px 4px;perspective:900px;position:relative;}
+.book-cover-3d{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.3,1);border-radius:4px 8px 8px 4px;box-shadow:0 10px 30px rgba(0,0,0,.45);}
+.book-card:hover .book-cover-3d{transform:rotateY(-24deg) rotateX(3deg) translateY(-6px);}
+.book-cover-3d img{width:100%;height:100%;object-fit:cover;display:block;border-radius:4px 8px 8px 4px;border:2px solid var(--gold-l);}
+.book-cover-3d::before{content:'';position:absolute;left:-11px;top:2px;bottom:2px;width:11px;background:linear-gradient(90deg,#1a1408,#3a2c14);transform:rotateY(-90deg);transform-origin:right;border-radius:3px 0 0 3px;box-shadow:inset 0 0 0 1px rgba(212,178,90,.4);}
+.book-cover-3d::after{content:'';position:absolute;inset:0;border-radius:4px 8px 8px 4px;background:linear-gradient(115deg,rgba(255,255,255,.25) 0%,transparent 30%);pointer-events:none;}
 .book-info{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;}
-.book-info h3{font-family:'Amiri',serif;color:var(--gold-lt);font-size:1.5rem;line-height:1.5;margin-bottom:4px;}
-.book-sub{font-family:'Amiri',serif;color:#c8b48a;font-size:1.05rem;margin-bottom:12px;}
-.book-desc{color:#b39a6a;font-size:.92rem;line-height:1.85;margin-bottom:18px;}
-.book-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:.95rem;padding:11px 22px;border-radius:26px;text-decoration:none;width:fit-content;transition:transform .2s;}
+.book-info h3{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.5rem;line-height:1.5;margin-bottom:4px;}
+.book-sub{font-family:'Amiri Display',serif;color:#E8CD6E;font-size:1.05rem;margin-bottom:12px;}
+.book-desc{color:#8a6a12;font-size:.92rem;line-height:1.85;margin-bottom:18px;}
+.book-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);font-family:'Amiri Display',serif;font-weight:700;font-size:.95rem;padding:11px 22px;border-radius:26px;text-decoration:none;width:fit-content;transition:transform .2s;}
 .book-btn:hover{transform:translateY(-2px);}
-.books-more{text-align:center;color:#c8a878;font-family:'Amiri',serif;font-size:.95rem;margin-top:20px;position:relative;opacity:.9;}
+.books-more{text-align:center;color:#8a6a12;font-family:'Amiri Display',serif;font-size:.95rem;margin-top:20px;position:relative;opacity:.9;}
 @media(max-width:640px){.book-card{flex-direction:column;align-items:center;text-align:center;}.book-cover{width:150px;height:200px;}.book-info{align-items:center;}}
 
-/* ===== زر فيسبوك العائم ===== */
+/* ===== الفهرست الجانبي الثابت (ديسك توب فقط) ===== */
+.quick-nav{display:none;}
+@media(min-width:1280px){
+  .quick-nav{
+    display:block;position:fixed;top:50%;left:24px;transform:translateY(-50%);
+    z-index:150;background:rgba(255,255,255,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    border:1px solid var(--gold-l);border-radius:16px;padding:18px 4px;max-width:200px;
+    box-shadow:0 12px 34px rgba(10,25,47,.14);
+  }
+  .quick-nav .qn-title{font-family:'Amiri Display',serif;color:var(--gold);font-weight:700;font-size:.82rem;padding:0 16px 10px;border-bottom:1px solid rgba(212,175,55,.3);margin-bottom:8px;}
+  .quick-nav a{display:block;color:var(--ink);text-decoration:none;font-family:'Cairo',sans-serif;font-weight:500;font-size:.78rem;padding:7px 16px;border-right:3px solid transparent;transition:all .2s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .quick-nav a:hover{background:rgba(212,175,55,.08);}
+  .quick-nav a.qn-active{color:var(--gold);font-weight:700;border-right-color:var(--gold);background:rgba(212,175,55,.1);}
+}
 
 </style>
 </head>
@@ -422,6 +453,19 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   <span>🔔 توجد مقالات جديدة — اضغط للتحديث</span>
 </button>
 <div id="prog"></div>
+
+<!-- الفهرست الجانبي الثابت (ديسك توب فقط) -->
+<nav class="quick-nav" id="quickNav">
+  <div class="qn-title">◈ الأفرع العلمية</div>
+  <a href="#links-quran" data-target="links-quran">التفسير والتدبر</a>
+  <a href="#links-hadith" data-target="links-hadith">السنة وشروح الحديث</a>
+  <a href="#links-qisas" data-target="links-qisas">القصص القرآني والنبوي</a>
+  <a href="#links-fiqh" data-target="links-fiqh">الأحكام الفقهية</a>
+  <a href="#links-siyasa" data-target="links-siyasa">السياسة الشرعية</a>
+  <a href="#links-tahakum" data-target="links-tahakum">المقالات التهكمية</a>
+  <a href="#links-radd" data-target="links-radd">المناظرات والردود</a>
+  <a href="#links-raqaiq" data-target="links-raqaiq">الرقائق والسلوك</a>
+</nav>
 
 <header class="hdr">
   <div class="hdr-i">
@@ -456,10 +500,13 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 <!-- بطاقة الترحيب والتعريف بالشيخ + النشيد -->
 <div class="welcome-card">
   <div class="wc-inner">
-    <div class="wc-avatar"><img src="sheikh.png" alt="الشيخ علي خليل السلجوقي"></div>
+    <div class="wc-avatar"><div class="wc-avatar-ring"></div><img src="sheikh.png" alt="الشيخ علي خليل السلجوقي"></div>
     <h3>مَرْحَبًا بِكُمْ فِي رِحَابِ المَوْسُوعَةِ</h3>
     <div class="wc-name">الشَّيْخُ عَلِيّ خَلِيل عَبَّاس السَّلْجُوقِيّ التُّرْكْمَانِيّ اللِّيلَانِيّ</div>
     <p class="wc-bio">باحِثٌ مَوسوعيٌّ أفنى قَلَمَهُ في خِدمةِ كتابِ اللهِ العزيزِ وسُنّةِ نبيِّهِ ﷺ؛ يَجولُ بينَ التَّدبُّرِ والفِقهِ وأصولِهِ، ونقدِ الواقعِ، والرَّقائقِ والحياةِ، بأسلوبٍ بَديعٍ يَجمَعُ عُمقَ العالِمِ وبَيانَ الأديبِ. فمَرحبًا بكم في رِحابِ فِكرِهِ ومَعارِفِهِ.</p>
+    <button class="share-site-btn" onclick="shareSite()" id="shareSiteBtn">
+      <span>↗</span> شارِكِ المَوْسُوعَةَ
+    </button>
     <div class="nasheed-player">
       <button id="npBtn" onclick="toggleNasheed()" aria-label="تشغيل النشيد">▶</button>
       <div class="np-label">
@@ -477,6 +524,12 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <span class="s-i">🔍</span>
     <input type="text" id="searchInput" placeholder="ابحث بعنوان، أو آية، أو سورة، أو موضوع..." onkeyup="filterAll()" autocomplete="off" autocorrect="off" spellcheck="false">
   </div>
+  <div class="search-filters">
+    <span class="sf-chip on" data-f="all">كل الأقسام</span>
+    <span class="sf-chip" data-f="surah">حسب السورة</span>
+    <span class="sf-chip" data-f="article">حسب المقال</span>
+    <span class="sf-chip" data-f="book">حسب المؤلَّفات</span>
+  </div>
   <div class="search-note" id="searchNote"></div>
   <div id="searchResults" style="display:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;"></div>
 </div>
@@ -490,12 +543,12 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
       <span class="tag">جديد</span>
     </div>
     <div class="latest-grid">
-      <a class="lc" href="article115.html" style="--lc-a:#d7263d;--lc-b:#7b2cbf;">
+      <a class="lc" href="article115.html" style="--lc-a:#0A192F;--lc-b:#1B3A5C;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">بوابة الوحيين · التفسير القرآني</div><div class="lc-verse">﴿فَنَادَىٰ فِي الظُّلُمَاتِ أَن لَّا إِلَٰهَ إِلَّا أَنتَ﴾</div></div>
         <div class="lc-body"><h3>مَنْ خَرَجَ مِنْ أَمْرِ اللَّهِ... أَدْرَكَتْهُ الظُّلُمَاتُ</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article109.html" style="--lc-a:#e63946;--lc-b:#7209b7;">
+      <a class="lc" href="article109.html" style="--lc-a:#0A192F;--lc-b:#1B3A5C;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">فرع المقالات التهكمية والساخرة</div><div class="lc-verse">«يَسُرُّ هَيْئَةَ التَّرْفِيهِ الأَخْلَاقِيِّ أَنْ تُعْلِنَ...»</div></div>
         <div class="lc-body"><h3>الهَيْئَةُ العَامَّةُ لِتَطْبِيعِ الكَبَائِرِ</h3><div class="lc-cta">اقرأ المقال ←</div></div>
@@ -512,7 +565,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
       <h2>مِنْ مُؤَلَّفَاتِ الشَّيْخِ</h2>
     </div>
     <div class="book-card">
-      <div class="book-cover"><img src="book1-cover.png" alt="غلاف كتاب نوادر التفاسير"></div>
+      <div class="book-cover"><div class="book-cover-3d"><img src="book1-cover.png" alt="غلاف كتاب نوادر التفاسير"></div></div>
       <div class="book-info">
         <h3>نَوَادِرُ التَّفَاسِيرِ</h3>
         <div class="book-sub">فِي شَرْحِ وَتَدَبُّرِ بَعْضِ الآيَاتِ وَالسُّوَرِ</div>
@@ -521,7 +574,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
       </div>
     </div>
     <div class="book-card">
-      <div class="book-cover"><img src="موسوعة درر الحياة في ظلال القرآن/book2-cover.png" alt="غلاف موسوعة درر الحياة في ظلال القرآن"></div>
+      <div class="book-cover"><div class="book-cover-3d"><img src="موسوعة درر الحياة في ظلال القرآن/book2-cover.png" alt="غلاف موسوعة درر الحياة في ظلال القرآن"></div></div>
       <div class="book-info">
         <h3>مَوْسُوعَةُ دُرَرِ الْحَيَاةِ فِي ظِلَالِ الْقُرْآنِ</h3>
         <div class="book-sub">مَوْسُوعَةٌ تَفْسِيرِيَّةٌ شَامِلَةٌ عَلَى أَجْزَاءٍ</div>
@@ -539,7 +592,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   <p class="gates-sub">أربعُ بوّاباتٍ كبرى، تنبثقُ من كلٍّ منها فروعُها. اضغط البوّابةَ لتُفتَح.</p>
 
   <!-- بوابة 1: الوحيان -->
-  <div class="gate" style="--gate-c:#1f4e6b;--gate-c2:#2f6d92;">
+  <div class="gate" style="--gate-c:#0A192F;--gate-c2:#1B3A5C;">
     <div class="gate-head" onclick="toggleGate(this)">
       <div class="gate-emblem">۩</div>
       <div class="gate-txt">
@@ -877,7 +930,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   </div>
 
   <!-- بوابة 3: نقد الواقع -->
-  <div class="gate" style="--gate-c:#7a2e28;--gate-c2:#a34840;">
+  <div class="gate" style="--gate-c:#6b1f35;--gate-c2:#8a2e4a;">
     <div class="gate-head" onclick="toggleGate(this)">
       <div class="gate-emblem">✒</div>
       <div class="gate-txt">
@@ -969,7 +1022,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   </div>
 
   <!-- بوابة 4: الرقائق -->
-  <div class="gate" style="--gate-c:#b08d34;--gate-c2:#d4b25a;">
+  <div class="gate" style="--gate-c:#8a6a12;--gate-c2:#D4AF37;">
     <div class="gate-head" onclick="toggleGate(this)">
       <div class="gate-emblem">❁</div>
       <div class="gate-txt">
@@ -1404,5 +1457,51 @@ document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio
 })();
 </script>
 
+<script>
+// تفاعل بصري لفلاتر البحث (تجريبي)
+document.querySelectorAll('.sf-chip').forEach(function(chip){
+  chip.addEventListener('click', function(){
+    document.querySelectorAll('.sf-chip').forEach(function(c){c.classList.remove('on');});
+    chip.classList.add('on');
+  });
+});
+
+// إضاءة القسم النشط في الفهرست الجانبي الثابت أثناء التمرير
+(function(){
+  var qnLinks = document.querySelectorAll('.quick-nav a');
+  if(!qnLinks.length) return;
+  var targets = [];
+  qnLinks.forEach(function(a){
+    var el = document.getElementById(a.getAttribute('data-target'));
+    if(el) targets.push({el: el, link: a});
+  });
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      var match = targets.find(function(t){return t.el === entry.target;});
+      if(!match) return;
+      if(entry.isIntersecting){
+        qnLinks.forEach(function(l){l.classList.remove('qn-active');});
+        match.link.classList.add('qn-active');
+      }
+    });
+  }, {rootMargin:'-20% 0px -70% 0px'});
+  targets.forEach(function(t){ obs.observe(t.el); });
+})();// مشاركة الموقع
+function shareSite(){
+  var url = 'https://fbbffv.github.io/al-seljuki-meditative-encyclopedia/';
+  var title = 'موسوعة السلجوقي التدبرية';
+  var text = 'موسوعة علمية شاملة للتفسير والتدبر القرآني المعاصر — للشيخ علي خليل السلجوقي';
+  if(navigator.share){
+    navigator.share({title:title, text:text, url:url}).catch(function(){});
+  } else {
+    navigator.clipboard.writeText(url).then(function(){
+      var btn = document.getElementById('shareSiteBtn');
+      var old = btn.innerHTML;
+      btn.innerHTML = '<span>✓</span> تم نسخ الرابط';
+      setTimeout(function(){ btn.innerHTML = old; }, 2200);
+    }).catch(function(){});
+  }
+}
+</script>
 </body>
 </html>

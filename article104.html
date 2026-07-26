@@ -19,20 +19,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>حِينَ يَتَحَوَّلُ البِئْرُ إِلَى بَوَّابَةِ المَجْدِ — موسوعة السلجوقي</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Display&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#1c1206;--bg:#fdf6ea;--bg2:#f4e6c8;
-  --bd:#140c04;--bt:#fff3da;
-  --amb:#b8791e;--amb-l:#e0a848;--amb-d:#7a4e10;
-  --teal:#0e6e6a;--teal-l:#2a9c94;--teal-d:#0a4a48;
-  --div:#e0c088;--mist:#4a3620;
+  --ink:#0A192F;--bg:#F9F8F6;--bg2:#EFEBE0;
+  --bd:#0A192F;--bt:#F9F8F6;
+  --amb:#8a6a12;--amb-l:#D4AF37;--amb-d:#8a6a12;
+  --teal:#8a6a12;--teal-l:#D4AF37;--teal-d:#0D1B2A;
+  --div:#D4AF37;--mist:#3a4a5c;
   --accent:var(--amb);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
-  background:var(--bg);color:var(--ink);font-family:'Noto Naskh Arabic',serif;line-height:1.95;font-weight:500;
+  background:var(--bg);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.95;font-weight:500;
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
   overflow-x:hidden;max-width:100%;
   background-image:
@@ -44,15 +44,15 @@ body{
 #prog{position:fixed;top:0;right:0;width:4px;background:linear-gradient(to bottom,var(--amb),var(--teal));z-index:400;transform-origin:top;box-shadow:0 0 8px rgba(0,0,0,.3);}
 .hdr{background:var(--bd);border-bottom:3px solid var(--amb-l);position:sticky;top:0;z-index:200;box-shadow:0 4px 28px rgba(0,0,0,.5);}
 .hdr-i{display:flex;align-items:center;justify-content:space-between;padding:0 32px;max-width:1400px;margin:0 auto;height:60px;gap:16px;flex-wrap:wrap;}
-.logo{font-family:'Scheherazade New',serif;font-size:1.05rem;flex-shrink:0;font-weight:700;color:var(--amb-l);}
+.logo{font-family:'Amiri Display',serif;font-size:1.05rem;flex-shrink:0;font-weight:700;color:var(--amb-l);}
 .logo span{color:var(--teal-l);font-weight:800;}
-.htitle{font-family:'Scheherazade New',serif;color:var(--bt);font-size:.92rem;text-align:center;flex:1;opacity:.98;font-weight:600;}
-.tbtn{background:linear-gradient(90deg,var(--teal),var(--teal-l));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Noto Naskh Arabic',serif;font-size:.86rem;font-weight:700;white-space:nowrap;box-shadow:0 3px 10px rgba(14,110,106,.4);}
+.htitle{font-family:'Amiri Display',serif;color:var(--bt);font-size:.92rem;text-align:center;flex:1;opacity:.98;font-weight:600;}
+.tbtn{background:linear-gradient(90deg,var(--teal),var(--teal-l));color:#fff;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-family:'Cairo',sans-serif;font-size:.86rem;font-weight:700;white-space:nowrap;box-shadow:0 3px 10px rgba(14,110,106,.4);}
 .tbtn:hover{filter:brightness(1.15);}
 .layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 60px);}
 .sb{width:290px;flex-shrink:0;background:linear-gradient(180deg,#140c04,#1e1408);position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;border-left:2px solid var(--amb-d);transition:transform .3s;z-index:100;}
 .sb.off{transform:translateX(110%);position:fixed;top:60px;left:0;}
-.toc-h{font-family:'Scheherazade New',serif;font-size:1.05rem;padding:18px 18px 10px;font-weight:700;color:var(--amb-l);}
+.toc-h{font-family:'Amiri Display',serif;font-size:1.05rem;padding:18px 18px 10px;font-weight:700;color:var(--amb-l);}
 .toc-s{color:var(--teal-l);font-size:.68rem;letter-spacing:.12em;padding:12px 18px 4px;font-weight:700;}
 .toc-a{display:block;color:#e8d0a0;text-decoration:none;padding:8px 18px 8px 26px;font-size:.85rem;border-right:3px solid transparent;transition:all .2s;font-weight:500;overflow-wrap:break-word;}
 .toc-a:hover,.toc-a.active{color:#fff;background:rgba(255,255,255,.1);border-right-color:var(--teal-l);}
@@ -61,63 +61,65 @@ body{
 .hero{text-align:center;margin-bottom:52px;padding-bottom:40px;border-bottom:3px solid var(--amb-l);position:relative;}
 .horn{font-size:1.6rem;display:block;margin-bottom:16px;letter-spacing:.4em;color:var(--amb);font-weight:700;}
 .hcat{display:inline-block;background:linear-gradient(90deg,var(--teal),var(--teal-l));color:#fff;font-size:.78rem;font-weight:700;padding:5px 18px;border-radius:22px;margin-bottom:20px;box-shadow:0 3px 10px rgba(14,110,106,.35);}
-.hero h1{font-family:'Scheherazade New',serif;font-size:2.15rem;font-weight:800;line-height:1.55;margin-bottom:14px;color:var(--amb-d);}
+.hero h1{font-family:'Amiri Display',serif;font-size:2.15rem;font-weight:800;line-height:1.55;margin-bottom:14px;color:var(--amb-d);}
 .hmeta{color:var(--mist);font-size:.96rem;font-weight:700;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:14px;}
 .hmeta .dot{width:5px;height:5px;background:var(--teal);border-radius:50%;flex-shrink:0;}
+.share-article-btn{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid #D4AF37;color:#8a6a12;font-family:'Cairo',sans-serif;font-weight:600;font-size:.85rem;padding:9px 22px;border-radius:24px;cursor:pointer;margin-top:16px;transition:.2s;}
+.share-article-btn:hover{background:rgba(212,175,55,.1);}
 .vb{background:linear-gradient(135deg,#1e1408,#140c04);border:2px solid var(--amb-l);border-radius:14px;padding:36px 42px;margin:38px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(184,121,30,.2);}
 .vb::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(42,156,148,.12),transparent 68%);pointer-events:none;}
-.vt{font-family:'Scheherazade New',serif;font-size:1.55rem;color:#fff3da;line-height:2.15;position:relative;z-index:1;font-weight:600;text-shadow:0 2px 12px rgba(184,121,30,.25);}
+.vt{font-family:'Amiri Display',serif;font-size:1.55rem;color:#fff3da;line-height:2.15;position:relative;z-index:1;font-weight:600;text-shadow:0 2px 12px rgba(184,121,30,.25);}
 .vt.sm{font-size:1.28rem;}
 .vr{font-size:.88rem;margin-top:14px;position:relative;z-index:1;font-weight:700;color:var(--teal-l);}
 .abody{font-size:1.15rem;line-height:2.1;color:#1c1206;font-weight:500;}
 .abody p{margin-bottom:1.6em;text-align:justify;overflow-wrap:break-word;}
-.abody p:first-child::first-letter{font-size:3.2em;font-family:'Scheherazade New',serif;font-weight:800;float:right;line-height:.8;margin-left:10px;color:var(--amb-d);}
-.ql{font-family:'Scheherazade New',serif;font-size:1.22rem;font-weight:800;text-align:center;margin:12px 0;color:var(--teal-d);}
+.abody p:first-child::first-letter{font-size:3.2em;font-family:'Amiri Display',serif;font-weight:800;float:right;line-height:.8;margin-left:10px;color:var(--amb-d);}
+.ql{font-family:'Amiri Display',serif;font-size:1.22rem;font-weight:800;text-align:center;margin:12px 0;color:var(--teal-d);}
 .zeena-list{list-style:none;padding:0;margin:12px 0 22px;}
-.zeena-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--amb-d);font-weight:700;padding:9px 0;border-bottom:2px dashed var(--div);overflow-wrap:break-word;}
+.zeena-list li{font-family:'Amiri Display',serif;font-size:1.14rem;color:var(--amb-d);font-weight:700;padding:9px 0;border-bottom:2px dashed var(--div);overflow-wrap:break-word;}
 .zeena-list li:last-child{border-bottom:none;}
 .compare-list{list-style:none;padding:0;margin:16px 0;}
-.compare-list li{font-family:'Scheherazade New',serif;font-size:1.14rem;color:var(--teal-d);font-weight:700;padding:10px 0;border-bottom:2px dashed var(--div);text-align:center;overflow-wrap:break-word;}
+.compare-list li{font-family:'Amiri Display',serif;font-size:1.14rem;color:var(--teal-d);font-weight:700;padding:10px 0;border-bottom:2px dashed var(--div);text-align:center;overflow-wrap:break-word;}
 .compare-list li:last-child{border-bottom:none;}
 .fawqahum-list{list-style:none;padding:0;margin:12px 0;}
-.fawqahum-list li{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--teal-d);text-align:center;padding:9px 0;border-bottom:2px dashed var(--div);font-weight:800;overflow-wrap:break-word;}
+.fawqahum-list li{font-family:'Amiri Display',serif;font-size:1.18rem;color:var(--teal-d);text-align:center;padding:9px 0;border-bottom:2px dashed var(--div);font-weight:800;overflow-wrap:break-word;}
 .fawqahum-list li:last-child{border-bottom:none;}
-.src{background:linear-gradient(135deg,#fff5e0,#fbe8c8);border:2px solid var(--amb-l);border-radius:10px;padding:14px 18px;margin:12px 0;font-family:'Noto Naskh Arabic',serif;font-size:.89rem;color:#5a3c10;line-height:1.9;font-weight:500;overflow-wrap:break-word;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+.src{background:linear-gradient(135deg,#fff5e0,#fbe8c8);border:2px solid var(--amb-l);border-radius:10px;padding:14px 18px;margin:12px 0;font-family:'Cairo',sans-serif;font-size:.89rem;color:#5a3c10;line-height:1.9;font-weight:500;overflow-wrap:break-word;box-shadow:0 1px 4px rgba(0,0,0,.08);}
 .src strong{color:#8a5c00;}
-.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:14px;font-weight:800;font-family:'Noto Naskh Arabic',serif;color:#fff;}
+.grade{display:inline-block;font-size:.68rem;padding:3px 10px;border-radius:14px;font-weight:800;font-family:'Cairo',sans-serif;color:#fff;}
 .grade.sahih{background:linear-gradient(90deg,var(--teal),var(--teal-l));}
 .grade.hasan{background:linear-gradient(90deg,var(--amb),var(--amb-l));}
 .sec{margin-top:74px;padding-top:20px;scroll-margin-top:80px;}
 .sec-h{display:flex;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap;}
-.sec-n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Scheherazade New',serif;font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--amb-l));color:#fff;box-shadow:0 4px 14px rgba(184,121,30,.4);}
-.sec h2{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--bd);border-bottom:4px solid var(--accent);padding-bottom:9px;flex:1;font-weight:800;min-width:0;overflow-wrap:break-word;}
+.sec-n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Amiri Display',serif;font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--amb-l));color:#fff;box-shadow:0 4px 14px rgba(184,121,30,.4);}
+.sec h2{font-family:'Amiri Display',serif;font-size:1.85rem;color:var(--bd);border-bottom:4px solid var(--accent);padding-bottom:9px;flex:1;font-weight:800;min-width:0;overflow-wrap:break-word;}
 .sub{margin-top:36px;margin-bottom:20px;}
-.sub h3{font-family:'Scheherazade New',serif;font-size:1.35rem;font-weight:800;margin-bottom:14px;padding-right:16px;border-right:5px solid var(--accent);color:var(--bd);overflow-wrap:break-word;}
+.sub h3{font-family:'Amiri Display',serif;font-size:1.35rem;font-weight:800;margin-bottom:14px;padding-right:16px;border-right:5px solid var(--accent);color:var(--bd);overflow-wrap:break-word;}
 .card{background:#fff;border:2px solid var(--div);border-radius:12px;padding:22px 26px;margin:18px 0;box-shadow:0 1px 4px rgba(0,0,0,.1),0 8px 26px rgba(0,0,0,.06);}
 .card.b{border-right:6px solid var(--amb);}
 .card.b2{border-right:6px solid var(--teal);}
 .card.b3{border-right:6px solid var(--amb-d);}
-.ct{font-family:'Scheherazade New',serif;font-size:1.18rem;color:var(--bd);margin-bottom:11px;font-weight:800;overflow-wrap:break-word;}
+.ct{font-family:'Amiri Display',serif;font-size:1.18rem;color:var(--bd);margin-bottom:11px;font-weight:800;overflow-wrap:break-word;}
 .card p{font-size:1rem;color:#1c1206;line-height:1.95;margin-top:6px;font-weight:500;overflow-wrap:break-word;}
-.bdg{font-size:.7rem;padding:3px 10px;border-radius:14px;font-family:'Noto Naskh Arabic',sans-serif;background:linear-gradient(90deg,var(--teal),var(--teal-l));color:#fff;font-weight:800;}
+.bdg{font-size:.7rem;padding:3px 10px;border-radius:14px;font-family:'Cairo',sans-serif;background:linear-gradient(90deg,var(--teal),var(--teal-l));color:#fff;font-weight:800;}
 .tbl{width:100%;table-layout:fixed;border-collapse:collapse;margin:14px 0;font-size:.98rem;border-radius:10px;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.08);}
-.tbl th{background:linear-gradient(90deg,var(--bd),#241606);color:#ffe0a0;padding:11px 14px;text-align:right;font-family:'Scheherazade New',serif;font-size:1rem;font-weight:800;word-break:break-word;}
+.tbl th{background:linear-gradient(90deg,var(--bd),#241606);color:#ffe0a0;padding:11px 14px;text-align:right;font-family:'Amiri Display',serif;font-size:1rem;font-weight:800;word-break:break-word;}
 .tbl td{padding:11px 14px;border-bottom:1px solid var(--bg2);vertical-align:top;line-height:1.85;word-break:break-word;overflow-wrap:break-word;}
 .tbl tr:nth-child(even) td{background:#fbf0da;}
-.term{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--teal-d);font-weight:800;}
+.term{font-family:'Amiri Display',serif;font-size:1.1rem;color:var(--teal-d);font-weight:800;}
 .def{color:var(--mist);font-size:.94rem;font-weight:500;}
 .ib{background:linear-gradient(135deg,#fbf0da,#f4e4c0);border-radius:10px;padding:16px 20px;margin:12px 0;}
 .ir{display:flex;gap:14px;padding:9px 0;border-bottom:2px dashed var(--div);align-items:flex-start;flex-wrap:wrap;}
 .ir:last-child{border-bottom:none;}
-.iw{font-family:'Scheherazade New',serif;font-size:1.24rem;color:var(--amb-d);min-width:150px;max-width:100%;font-weight:800;flex-shrink:0;overflow-wrap:break-word;}
+.iw{font-family:'Amiri Display',serif;font-size:1.24rem;color:var(--amb-d);min-width:150px;max-width:100%;font-weight:800;flex-shrink:0;overflow-wrap:break-word;}
 .id{color:var(--mist);font-size:.94rem;flex:1;min-width:200px;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
-.pq{font-family:'Scheherazade New',serif;font-size:1.5rem;color:var(--bd);text-align:center;padding:30px 40px;margin:40px 0;border-top:4px solid var(--teal);border-bottom:4px solid var(--amb);position:relative;font-weight:700;background:linear-gradient(135deg,#fff5e0,#e8f4f2);border-radius:8px;overflow-wrap:break-word;}
+.pq{font-family:'Amiri Display',serif;font-size:1.5rem;color:var(--bd);text-align:center;padding:30px 40px;margin:40px 0;border-top:4px solid var(--teal);border-bottom:4px solid var(--amb);position:relative;font-weight:700;background:linear-gradient(135deg,#fff5e0,#e8f4f2);border-radius:8px;overflow-wrap:break-word;}
 .pq::before{content:'❝';position:absolute;top:0;right:38px;font-size:3rem;color:var(--amb);opacity:.35;line-height:1;}
 .cb{background:linear-gradient(135deg,#140c04,#241606);border:2px solid var(--amb-l);border-radius:12px;padding:26px 32px;margin:22px 0;}
-.cb .bt{color:#ffd88a;font-family:'Scheherazade New',serif;font-size:1.2rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--teal-l);overflow-wrap:break-word;}
+.cb .bt{color:#ffd88a;font-family:'Amiri Display',serif;font-size:1.2rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--teal-l);overflow-wrap:break-word;}
 .ci{color:#e8d4a8;padding:10px 0;border-bottom:1px dashed rgba(224,168,72,.3);font-size:.94rem;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
 .ci:last-child{border-bottom:none;}
-.ci .vi{font-family:'Scheherazade New',serif;color:#fff0d0;font-size:1.04rem;display:block;margin-bottom:4px;font-weight:700;}
+.ci .vi{font-family:'Amiri Display',serif;color:#fff0d0;font-size:1.04rem;display:block;margin-bottom:4px;font-weight:700;}
 .ci .vs{color:#7ecec4;font-size:.8rem;}
 .vrd{background:linear-gradient(135deg,#140c04,#241606);border:2px solid var(--teal-l);border-radius:9px;padding:18px 22px;margin:14px 0;color:#d0ece8;font-size:.96rem;line-height:1.95;font-weight:500;overflow-wrap:break-word;}
 .vrd strong{color:#ffd88a;}
@@ -125,27 +127,27 @@ body{
 .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:18px 0;}
 .mc{background:#fff;border:2px solid var(--div);border-radius:10px;padding:18px 20px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
 .mc .ml{color:var(--teal);font-size:.75rem;margin-bottom:5px;display:block;font-weight:800;}
-.mc .mv{font-family:'Scheherazade New',serif;font-size:1.1rem;color:var(--bd);font-weight:800;margin-bottom:5px;overflow-wrap:break-word;}
+.mc .mv{font-family:'Amiri Display',serif;font-size:1.1rem;color:var(--bd);font-weight:800;margin-bottom:5px;overflow-wrap:break-word;}
 .mc .md{color:var(--mist);font-size:.86rem;line-height:1.65;font-weight:500;overflow-wrap:break-word;}
 .cl{list-style:none;padding:0;margin:12px 0;}
 .cl li{padding:9px 28px 9px 0;position:relative;border-bottom:1px dashed var(--div);color:#1c1206;line-height:1.9;font-weight:500;overflow-wrap:break-word;}
 .cl li:last-child{border-bottom:none;}
 .cl li::before{content:'◈';position:absolute;right:0;color:var(--amb);font-size:.9em;top:12px;font-weight:900;}
 .asec{background:linear-gradient(135deg,#140c04,#241606);border:3px solid var(--amb-l);border-radius:14px;padding:36px 42px;margin:60px 0 40px;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;}
-.ava{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--amb),var(--amb-l));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Scheherazade New',serif;font-size:2rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 4px 16px rgba(184,121,30,.4);}
+.ava{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--amb),var(--amb-l));border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Amiri Display',serif;font-size:2rem;color:#fff;font-weight:800;flex-shrink:0;box-shadow:0 4px 16px rgba(184,121,30,.4);}
 .ai{flex:1;min-width:0;}
-.ai h3{font-family:'Scheherazade New',serif;color:#fff3da;font-size:1.4rem;margin-bottom:6px;font-weight:800;overflow-wrap:break-word;}
+.ai h3{font-family:'Amiri Display',serif;color:#fff3da;font-size:1.4rem;margin-bottom:6px;font-weight:800;overflow-wrap:break-word;}
 .ai .at{color:#ffd88a;font-size:.88rem;margin-bottom:14px;font-weight:600;overflow-wrap:break-word;}
 .ai p{color:#e8d4a8;font-size:.94rem;line-height:1.9;margin-bottom:9px;font-weight:500;overflow-wrap:break-word;}
 .ai p strong{color:#7ecec4;}
 .amg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0;}
 .ami{background:rgba(255,255,255,.08);border:1px solid rgba(224,168,72,.35);border-radius:8px;padding:11px 14px;min-width:0;}
 .ami .aml{color:#7ecec4;font-size:.7rem;margin-bottom:3px;display:block;font-weight:700;}
-.ami .amv{color:#fff3da;font-size:.88rem;font-family:'Scheherazade New',serif;font-weight:600;overflow-wrap:break-word;}
+.ami .amv{color:#fff3da;font-size:.88rem;font-family:'Amiri Display',serif;font-weight:600;overflow-wrap:break-word;}
 .atag{display:inline-block;background:linear-gradient(90deg,var(--teal),var(--teal-l));color:#fff;font-size:.73rem;padding:3px 11px;border-radius:12px;margin:3px;font-weight:700;}
 .orn{text-align:center;font-size:1.25rem;margin:48px 0;letter-spacing:.42em;font-weight:700;color:var(--amb-l);}
 footer{background:var(--bd);color:#e8d0a0;text-align:center;padding:30px 20px;font-size:.85rem;border-top:3px solid var(--amb-l);margin-top:76px;}
-footer .fb{font-family:'Scheherazade New',serif;font-size:1.05rem;margin-bottom:7px;font-weight:800;color:var(--amb-l);}
+footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:7px;font-weight:800;color:var(--amb-l);}
 footer .fb span{color:var(--teal-l);}
 @media(max-width:1100px){.sb{display:none;}.sb.open{display:block;position:fixed;right:0;top:60px;width:275px;height:calc(100vh - 60px);overflow-y:auto;}.main{padding:32px 24px;}.g2,.g3,.amg{grid-template-columns:1fr;}.hero h1{font-size:1.8rem;}.asec{flex-direction:column;}}
 @media(max-width:640px){.main{padding:20px 13px;}.vt{font-size:1.2rem;}.hero h1{font-size:1.45rem;}.pq{font-size:1.15rem;padding:20px 16px;}.hdr-i{padding:0 13px;}.logo{display:none;}.iw{min-width:100%;}.tbl{font-size:.86rem;}}
@@ -224,6 +226,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <span class="dot"></span>
     <span>يوسف: ٧</span>
   </div>
+  <button class="share-article-btn" onclick="shareArticle()" id="shareArticleBtn">
+    <span>↗</span> شارِكِ المَقَالَ
+  </button>
 </div>
 
 <!-- ARTICLE -->
@@ -362,7 +367,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <p class="ql">وَهَكَذَا هِيَ حَيَاةُ المُؤْمِنِ... قَدْ تَطُولُ الطَّرِيقُ... لَكِنَّ النِّهَايَةَ الجَمِيلَةَ لَا يَصْنَعُهَا إِلَّا اللهُ.</p>
 
-    <p style="text-align:center;font-weight:800;font-family:'Scheherazade New',serif;font-size:1.3rem;color:var(--amb-d);margin:24px 0;">رَسَائِلُ لِكُلِّ قَلْبٍ حَزِينٍ</p>
+    <p style="text-align:center;font-weight:800;font-family:'Amiri Display',serif;font-size:1.3rem;color:var(--amb-d);margin:24px 0;">رَسَائِلُ لِكُلِّ قَلْبٍ حَزِينٍ</p>
 
     <ul class="fawqahum-list">
       <li>إِذَا خَانَكَ النَّاسُ... فَتَذَكَّرْ يُوسُفَ.</li>
@@ -593,21 +598,21 @@ document.addEventListener('DOMContentLoaded', function() {
 .edge-tab.open .edge-panel{max-width:38px;padding:5px 4px;opacity:1;}
 .edge-item{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.68rem;color:#fff;text-decoration:none;flex-shrink:0;cursor:pointer;border:none;}
 .pdf-bar{text-align:center;margin:40px auto 10px;}
-.pdf-btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#155e42,#0d3b2a);color:#eafff4;border:1px solid rgba(46,144,104,.5);border-radius:40px;padding:12px 30px;font-family:'Scheherazade New',serif;font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .2s;}
+.pdf-btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#155e42,#0d3b2a);color:#F9F8F6;border:1px solid rgba(46,144,104,.5);border-radius:40px;padding:12px 30px;font-family:'Amiri Display',serif;font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .2s;}
 .pdf-btn:hover{transform:translateY(-3px);}
 .vb{position:relative;}
-.copy-verse{position:absolute;top:10px;left:10px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,168,56,.4);background:rgba(0,0,0,.25);color:#d8cba0;font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:3;}
+.copy-verse{position:absolute;top:10px;left:10px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,168,56,.4);background:rgba(0,0,0,.25);color:#E8CD6E;font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:3;}
 .copy-verse:hover{background:rgba(201,168,56,.25);color:#fff;}
-.copy-verse.done{background:#1a7a50;color:#fff;border-color:#1a7a50;}
-body.night{background:#0c1512 !important;color:#d6e4dc !important;}
-body.night .card,body.night .mc,body.night .ib{background:#132420 !important;border-color:#24443a !important;}
-body.night .card *,body.night .mc *,body.night .ib *{color:#cfe0d8 !important;}
-body.night .abody,body.night .abody p{color:#d6e4dc !important;}
-body.night .sec h2,body.night .sub h3,body.night .hero h1,body.night .ct,body.night .term,body.night .iw{color:#e8d9a8 !important;}
-body.night .tbl td{border-color:#24443a !important;}
+.copy-verse.done{background:#8a6a12;color:#fff;border-color:#8a6a12;}
+body.night{background:#0c1512 !important;color:#F9F8F6 !important;}
+body.night .card,body.night .mc,body.night .ib{background:#132420 !important;border-color:#0D1B2A !important;}
+body.night .card *,body.night .mc *,body.night .ib *{color:#F9F8F6 !important;}
+body.night .abody,body.night .abody p{color:#F9F8F6 !important;}
+body.night .sec h2,body.night .sub h3,body.night .hero h1,body.night .ct,body.night .term,body.night .iw{color:#E8CD6E !important;}
+body.night .tbl td{border-color:#0D1B2A !important;}
 body.night .pq{background:rgba(255,255,255,.03) !important;}
 body.night .src{background:#1c1a12 !important;}
-body.night .src *{color:#d8c88a !important;}
+body.night .src *{color:#E8CD6E !important;}
 @media print{
   .edge-tab,#sb,.hdr,.home-link,.pdf-bar,.copy-verse,#prog,.tbtn{display:none !important;}
   .main{padding:0 !important;}
@@ -621,8 +626,8 @@ body.night .src *{color:#d8c88a !important;}
 <!-- ===== نتوء جانبي أيسر: الفهرس الرئيسي + الوضع الليلي + الصعود للأعلى ===== -->
 <div class="edge-tab left" id="edgeNav">
   <div class="edge-panel">
-    <a class="edge-item home-link" href="index.html" title="الفهرس الرئيسي" style="background:#7a2e28;">⌂</a>
-    <button class="edge-item" id="nightBtn" title="الوضع الليلي" onclick="toggleNight()" style="background:#3f5c48;">🌙</button>
+    <a class="edge-item home-link" href="index.html" title="الفهرس الرئيسي" style="background:#8a6a12;">⌂</a>
+    <button class="edge-item" id="nightBtn" title="الوضع الليلي" onclick="toggleNight()" style="background:#8a6a12;">🌙</button>
     <button class="edge-item" id="topBtn" title="الصعود للأعلى" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="background:#1f4e6b;">↑</button>
   </div>
   <div class="edge-nub" onclick="document.getElementById('edgeNav').classList.toggle('open')"></div>
@@ -668,8 +673,8 @@ document.querySelectorAll('.vb').forEach(function(box){
 
 <div class="reader-react" style="max-width:820px;margin:46px auto 0;padding:0 22px;">
   <div style="background:linear-gradient(135deg,rgba(255,255,255,.6),rgba(236,224,200,.4));border:1.5px solid rgba(176,141,52,.35);border-radius:18px;padding:26px 22px;text-align:center;">
-    <h3 style="font-family:'Amiri',serif;font-size:1.5rem;color:#7a2e28;margin-bottom:6px;">بِمَ يَصِفُ قَلْبُكَ هَذَا المَقَالَ؟</h3>
-    <p style="font-family:'Cairo',sans-serif;font-size:.9rem;color:#6a5636;margin-bottom:20px;">اختَرْ ما يُعبِّرُ عن انطِباعِكَ — نُسعَدُ بمشارَكتِكَ</p>
+    <h3 style="font-family:'Amiri Display',serif;font-size:1.5rem;color:#8a6a12;margin-bottom:6px;">بِمَ يَصِفُ قَلْبُكَ هَذَا المَقَالَ؟</h3>
+    <p style="font-family:'Cairo',sans-serif;font-size:.9rem;color:#8a6a12;margin-bottom:20px;">اختَرْ ما يُعبِّرُ عن انطِباعِكَ — نُسعَدُ بمشارَكتِكَ</p>
     <div class="react-btns" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
       <button class="rb" data-msg="نَفَعَكَ اللهُ بِمَا قَرَأْتَ 🌿" data-key="istafadt">✨ اسْتَفَدْتُ</button>
       <button class="rb" data-msg="الحَمْدُ لِلَّهِ الَّذِي نَفَعَكَ 🌱" data-key="nafaani">🌱 نَفَعَنِي مَا قَرَأْتُ</button>
@@ -681,13 +686,13 @@ document.querySelectorAll('.vb').forEach(function(box){
       <button class="rb" data-msg="حِسٌّ مُرْهَفٌ وَتَقْدِيرٌ رَاقٍ 🌟" data-key="tabir">🌟 تَعْبِيرٌ رَاقٍ</button>
       <button class="rb" data-msg="وَجَزَاكَ خَيْرًا عَلَى دُعَائِكَ 🤲" data-key="jazah">🤲 جَزَى اللهُ الكَاتِبَ خَيْرًا</button>
     </div>
-    <div class="react-thanks" style="display:none;margin-top:18px;font-family:'Amiri',serif;font-size:1.25rem;color:#3f5c48;"></div>
+    <div class="react-thanks" style="display:none;margin-top:18px;font-family:'Amiri Display',serif;font-size:1.25rem;color:#8a6a12;"></div>
   </div>
 </div>
 <style>
-.reader-react .rb{background:rgba(255,255,255,.7);border:1px solid rgba(176,141,52,.3);border-radius:30px;padding:9px 18px;font-family:'Cairo',sans-serif;font-size:.92rem;color:#1a1410;cursor:pointer;transition:all .2s;}
+.reader-react .rb{background:rgba(255,255,255,.7);border:1px solid rgba(176,141,52,.3);border-radius:30px;padding:9px 18px;font-family:'Cairo',sans-serif;font-size:.92rem;color:#0A192F;cursor:pointer;transition:all .2s;}
 .reader-react .rb:hover{background:#b08d34;color:#fff;transform:translateY(-2px);}
-.reader-react .rb.chosen{background:#3f5c48;color:#fff;border-color:#3f5c48;}
+.reader-react .rb.chosen{background:#8a6a12;color:#fff;border-color:#8a6a12;}
 </style>
 <script>
 (function(){
@@ -713,55 +718,55 @@ document.querySelectorAll('.vb').forEach(function(box){
 </script>
 
 <div class="related-sec sub" style="margin-top:50px;">
-  <h3 style="font-family:'Scheherazade New',serif;">📖 اقرأ أيضاً</h3>
+  <h3 style="font-family:'Amiri Display',serif;">📖 اقرأ أيضاً</h3>
   <a class="rel-card" href="article22-qa-aljubb.html" style="display:block;background:#fff;border:1px solid rgba(176,141,52,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
-      <div style="font-size:.72rem;color:#a8741e;margin-bottom:4px;">قصص الأنبياء · يوسف</div>
-      <div style="font-family:'Amiri',serif;font-size:1.02rem;color:#1a1410;">قاع الجب</div>
+      <div style="font-size:.72rem;color:#D4AF37;margin-bottom:4px;">قصص الأنبياء · يوسف</div>
+      <div style="font-family:'Amiri Display',serif;font-size:1.02rem;color:#0A192F;">قاع الجب</div>
     </a><a class="rel-card" href="article16-yusuf-raf-aldhulm.html" style="display:block;background:#fff;border:1px solid rgba(176,141,52,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
-      <div style="font-size:.72rem;color:#a8741e;margin-bottom:4px;">قصص الأنبياء · يوسف</div>
-      <div style="font-family:'Amiri',serif;font-size:1.02rem;color:#1a1410;">يوسف ورفع الظلم</div>
+      <div style="font-size:.72rem;color:#D4AF37;margin-bottom:4px;">قصص الأنبياء · يوسف</div>
+      <div style="font-family:'Amiri Display',serif;font-size:1.02rem;color:#0A192F;">يوسف ورفع الظلم</div>
     </a><a class="rel-card" href="article103.html" style="display:block;background:#fff;border:1px solid rgba(176,141,52,.28);border-radius:10px;padding:14px 18px;margin-bottom:10px;text-decoration:none;">
-      <div style="font-size:.72rem;color:#a8741e;margin-bottom:4px;">قصص الأنبياء · الرعد ٣١</div>
-      <div style="font-family:'Amiri',serif;font-size:1.02rem;color:#1a1410;">إذا تحركت الجبال بكلام الله</div>
+      <div style="font-size:.72rem;color:#D4AF37;margin-bottom:4px;">قصص الأنبياء · الرعد ٣١</div>
+      <div style="font-family:'Amiri Display',serif;font-size:1.02rem;color:#0A192F;">إذا تحركت الجبال بكلام الله</div>
     </a>
 </div>
 
 <!-- ===== قسم الملاحظات والتقييم والحقوق ===== -->
 <div class="fb-sec" style="max-width:820px;margin:36px auto 0;background:#fff;border:1px solid rgba(176,141,52,.28);border-radius:12px;padding:26px 28px;box-shadow:0 3px 14px rgba(0,0,0,.06);">
-  <div style="font-family:'Amiri',serif;font-size:1.3rem;color:#1a1410;margin-bottom:6px;">📝 هَلْ لَدَيْكَ مُلَاحَظَةٌ حَوْلَ هَذَا الْمَقَالِ؟</div>
-  <div style="color:#6a5636;font-size:.88rem;margin-bottom:16px;font-family:'Cairo',sans-serif;">اختر نوع الملاحظة، ثم اكتب تفاصيلها إن أردت</div>
+  <div style="font-family:'Amiri Display',serif;font-size:1.3rem;color:#0A192F;margin-bottom:6px;">📝 هَلْ لَدَيْكَ مُلَاحَظَةٌ حَوْلَ هَذَا الْمَقَالِ؟</div>
+  <div style="color:#8a6a12;font-size:.88rem;margin-bottom:16px;font-family:'Cairo',sans-serif;">اختر نوع الملاحظة، ثم اكتب تفاصيلها إن أردت</div>
   <form action="https://formsubmit.co/tahirnajim1987@gmail.com" method="POST" style="margin:0;">
     <input type="hidden" name="_subject" value="ملاحظة جديدة على مقال في الموسوعة">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="box">
     <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;" id="fbChips">
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="ملاحظة علمية" checked style="margin-left:4px;">ملاحظة علمية</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="ملاحظة إملائية" style="margin-left:4px;">ملاحظة إملائية</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="ملاحظة ترجمة" style="margin-left:4px;">ملاحظة ترجمة</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="ملاحظة توضيح" style="margin-left:4px;">ملاحظة توضيح</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="رابط لا يعمل" style="margin-left:4px;">رابط لا يعمل</label>
-      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#5a4030;cursor:pointer;font-family:'Cairo',sans-serif;">
+      <label style="background:#f7f2ec;border:1.5px solid #d0b088;border-radius:20px;padding:7px 16px;font-size:.83rem;color:#8a6a12;cursor:pointer;font-family:'Cairo',sans-serif;">
         <input type="radio" name="نوع_الملاحظة" value="أخرى" style="margin-left:4px;">أخرى</label>
     </div>
     <textarea name="نص_الملاحظة" placeholder="اكتب ملاحظتك هنا (اختياري لكن يُفضَّل)..." style="width:100%;border:1.5px solid #d0b088;border-radius:8px;padding:12px 14px;font-family:'Cairo',sans-serif;font-size:.92rem;resize:vertical;min-height:75px;margin-bottom:12px;box-sizing:border-box;"></textarea>
     <input type="email" name="بريد_المرسل" placeholder="بريدك الإلكتروني (اختياري، إن أردت رداً)" style="width:100%;border:1.5px solid #d0b088;border-radius:8px;padding:10px 14px;font-family:'Cairo',sans-serif;font-size:.88rem;margin-bottom:14px;box-sizing:border-box;">
-    <button type="submit" style="background:linear-gradient(135deg,#8a5a3a,#5a4030);color:#fff;border:none;padding:10px 28px;border-radius:24px;font-family:'Cairo',sans-serif;font-weight:700;cursor:pointer;font-size:.92rem;">إرسال الملاحظة</button>
+    <button type="submit" style="background:linear-gradient(135deg,#8a5a3a,#8a6a12);color:#fff;border:none;padding:10px 28px;border-radius:24px;font-family:'Cairo',sans-serif;font-weight:700;cursor:pointer;font-size:.92rem;">إرسال الملاحظة</button>
   </form>
 </div>
 
 <!-- ===== قسم "هل انتفعت؟" (يُسجَّل في GoatCounter فقط، لا يظهر للزوار) ===== -->
-<div style="max-width:820px;margin:22px auto 0;background:#1a1410;color:#f0dcb8;border-radius:12px;padding:22px 28px;text-align:center;">
-  <div style="font-family:'Amiri',serif;font-size:1.15rem;margin-bottom:14px;color:#c17f3e;">هَلِ انْتَفَعْتَ بِهَذَا الْمَقَالِ؟</div>
+<div style="max-width:820px;margin:22px auto 0;background:#0A192F;color:#E8CD6E;border-radius:12px;padding:22px 28px;text-align:center;">
+  <div style="font-family:'Amiri Display',serif;font-size:1.15rem;margin-bottom:14px;color:#D4AF37;">هَلِ انْتَفَعْتَ بِهَذَا الْمَقَالِ؟</div>
   <div style="display:flex;gap:14px;justify-content:center;">
-    <button onclick="rateArticle('نعم')" id="uBtnYes" style="background:rgba(255,255,255,.08);border:1.5px solid rgba(193,127,62,.4);color:#f0dcb8;padding:9px 26px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.92rem;cursor:pointer;">👍 نعم</button>
-    <button onclick="rateArticle('لا')" id="uBtnNo" style="background:rgba(255,255,255,.08);border:1.5px solid rgba(193,127,62,.4);color:#f0dcb8;padding:9px 26px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.92rem;cursor:pointer;">👎 لا</button>
+    <button onclick="rateArticle('نعم')" id="uBtnYes" style="background:rgba(255,255,255,.08);border:1.5px solid rgba(193,127,62,.4);color:#E8CD6E;padding:9px 26px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.92rem;cursor:pointer;">👍 نعم</button>
+    <button onclick="rateArticle('لا')" id="uBtnNo" style="background:rgba(255,255,255,.08);border:1.5px solid rgba(193,127,62,.4);color:#E8CD6E;padding:9px 26px;border-radius:20px;font-family:'Cairo',sans-serif;font-size:.92rem;cursor:pointer;">👎 لا</button>
   </div>
-  <div id="uThanks" style="display:none;margin-top:12px;color:#c17f3e;font-size:.88rem;">شكراً لتقييمك 🌿</div>
+  <div id="uThanks" style="display:none;margin-top:12px;color:#D4AF37;font-size:.88rem;">شكراً لتقييمك 🌿</div>
 </div>
 <script>
 function rateArticle(val){
@@ -775,8 +780,8 @@ function rateArticle(val){
 </script>
 
 <!-- ===== حقوق النشر (السنة تلقائية) ===== -->
-<div style="max-width:820px;margin:18px auto 0;text-align:center;color:#3a2c1e;font-size:.84rem;padding:14px 0;border-top:1px solid #d0b088;">
-  جميع الحقوق محفوظة لموقع <strong style="color:#5a4030;">موسوعة السلجوقي التدبرية</strong> © <span id="copyYear"></span>
+<div style="max-width:820px;margin:18px auto 0;text-align:center;color:#0D1B2A;font-size:.84rem;padding:14px 0;border-top:1px solid #d0b088;">
+  جميع الحقوق محفوظة لموقع <strong style="color:#8a6a12;">موسوعة السلجوقي التدبرية</strong> © <span id="copyYear"></span>
 </div>
 <script>document.getElementById('copyYear').textContent = new Date().getFullYear();</script>
 
@@ -785,7 +790,7 @@ function rateArticle(val){
         async src="//gc.zgo.at/count.js"></script>
 
 <div class="sub" style="margin-top:56px;">
-  <h3 style="font-family:'Scheherazade New',serif;">💬 التعليقات والنقاش</h3>
+  <h3 style="font-family:'Amiri Display',serif;">💬 التعليقات والنقاش</h3>
   <div id="disqus_thread"></div>
   <script>
   function loadDisqus(){
@@ -841,6 +846,23 @@ links.forEach(function(l){
     document.getElementById('sb').classList.remove('open');
   });
 });
+
+// مشاركة المقال
+function shareArticle(){
+  var url = window.location.href;
+  var title = document.title;
+  var text = 'مقال من موسوعة السلجوقي التدبرية';
+  if(navigator.share){
+    navigator.share({title:title, text:text, url:url}).catch(function(){});
+  } else {
+    navigator.clipboard.writeText(url).then(function(){
+      var btn = document.getElementById('shareArticleBtn');
+      var old = btn.innerHTML;
+      btn.innerHTML = '<span>✓</span> تم نسخ رابط المقال';
+      setTimeout(function(){ btn.innerHTML = old; }, 2200);
+    }).catch(function(){});
+  }
+}
 </script>
 </body>
 </html>
