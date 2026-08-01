@@ -63,14 +63,14 @@
   --agate:#6b1f35;       /* عقيق/نبيذي داكن */
   --sage:#2f4a3a;        /* أخضر زيتوني داكن */
   --night:#0A192F;       /* خلفية داكنة كحلية ملكية */
-  --line:rgba(212,175,55,.55);
+  --line:rgba(212,175,55,.7);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
   max-width:100%;overflow-x:hidden;
   background:var(--parch);color:var(--ink);
-  font-family:'Cairo',sans-serif;line-height:1.9;font-weight:500;
+  font-family:'Cairo',sans-serif;line-height:1.9;font-weight:600;
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
   background-image:
     radial-gradient(ellipse at 0% 0%,rgba(10,25,47,.06),transparent 42%),
@@ -107,11 +107,11 @@ body{
 .hero h1{font-family:'Amiri Display',serif;font-size:3.1rem;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px;position:relative;}
 .hero h1 .accent{color:#6b1f35;}
 .hero .lede{font-family:'Amiri Display',serif;font-size:1.5rem;color:var(--lapis);margin:14px 0;position:relative;}
-.hero .desc{font-size:1rem;color:#3a4a5c;max-width:640px;margin:0 auto;position:relative;}
+.hero .desc{font-size:1rem;color:#1c2733;max-width:640px;margin:0 auto;position:relative;font-weight:600;}
 .rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:26px auto 0;max-width:340px;color:var(--gold);}
 .rule::before,.rule::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold));}
 .rule span{font-size:1.1rem;}
-.author-line{margin-top:20px;font-size:.92rem;color:#3a4a5c;position:relative;}
+.author-line{margin-top:20px;font-size:.92rem;color:#1c2733;position:relative;}
 .author-line b{color:#6b1f35;font-weight:600;}
 
 /* ===== البحث ===== */
@@ -164,7 +164,7 @@ body{
 .gates-title{display:flex;align-items:center;gap:16px;margin-bottom:8px;}
 .gates-title h2{font-family:'Amiri Display',serif;font-size:clamp(1.4rem,2.6vw,2.15rem);font-weight:700;color:var(--ink);white-space:nowrap;}
 .gates-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--gold),transparent);}
-.gates-sub{color:#3a4a5c;font-size:.95rem;margin-bottom:30px;}
+.gates-sub{color:#1c2733;font-size:.95rem;margin-bottom:30px;font-weight:600;}
 .gate{background:rgba(255,255,255,.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--gold-l);border-radius:16px;margin-bottom:22px;overflow:hidden;box-shadow:0 8px 30px rgba(10,25,47,.12);transition:box-shadow .25s,transform .25s;}
 .gate:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(10,25,47,.18);}
 .gate .branch-h{color:color-mix(in srgb, var(--gate-c,var(--gold)) 70%, #1a1410);}
@@ -174,7 +174,7 @@ body{
 .gate-txt{flex:1;}
 .gate-txt h3{font-family:'Amiri Display',serif;font-size:clamp(1.15rem,2vw,1.65rem);font-weight:700;color:var(--ink);line-height:1.4;}
 .gate-txt .en{font-size:.74rem;color:var(--gate-c);letter-spacing:.12em;text-transform:uppercase;opacity:.85;}
-.gate-txt p{font-size:.9rem;color:#3a4a5c;margin-top:3px;}
+.gate-txt p{font-size:.9rem;color:#1c2733;margin-top:3px;font-weight:600;}
 .gate-arrow{font-size:1.3rem;color:var(--gate-c);transition:transform .3s;}
 .gate.open .gate-arrow{transform:rotate(90deg);}
 .gate-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1);}
@@ -188,7 +188,7 @@ body{
 .branch-h::before{content:'◈';font-size:.85em;opacity:.7;}
 .branch-sub{list-style:none;padding-right:26px;display:none;}
 .branch.open .branch-sub{display:block;}
-.branch-sub li{position:relative;padding:5px 18px 5px 0;color:#3a4a5c;font-size:clamp(.9rem,1vw,1.02rem);font-weight:500;}
+.branch-sub li{position:relative;padding:5px 18px 5px 0;color:#1c2733;font-size:clamp(.9rem,1vw,1.02rem);font-weight:600;}
 .branch-sub li::before{content:'—';position:absolute;right:0;color:var(--gate-c);opacity:.6;}
 .branch-count{display:inline-block;background:rgba(138,106,18,.14);color:var(--gold);font-size:.72rem;padding:1px 9px;border-radius:12px;margin-right:8px;}
 .branch-links{display:none;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin-top:8px;align-items:start;}
@@ -437,20 +437,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 .books-more{text-align:center;color:#8a6a12;font-family:'Amiri Display',serif;font-size:.95rem;margin-top:20px;position:relative;opacity:.9;}
 @media(max-width:640px){.book-card{flex-direction:column;align-items:center;text-align:center;}.book-cover{width:150px;height:200px;}.book-info{align-items:center;}}
 
-/* ===== الفهرست الجانبي الثابت (ديسك توب فقط) ===== */
-.quick-nav{display:none;}
-@media(min-width:1280px){
-  .quick-nav{
-    display:block;position:fixed;top:50%;left:24px;transform:translateY(-50%);
-    z-index:150;background:rgba(255,255,255,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-    border:1px solid var(--gold-l);border-radius:16px;padding:18px 4px;max-width:200px;
-    box-shadow:0 12px 34px rgba(10,25,47,.14);
-  }
-  .quick-nav .qn-title{font-family:'Amiri Display',serif;color:var(--gold);font-weight:700;font-size:.82rem;padding:0 16px 10px;border-bottom:1px solid rgba(212,175,55,.3);margin-bottom:8px;}
-  .quick-nav a{display:block;color:var(--ink);text-decoration:none;font-family:'Cairo',sans-serif;font-weight:500;font-size:.78rem;padding:7px 16px;border-right:3px solid transparent;transition:all .2s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .quick-nav a:hover{background:rgba(212,175,55,.08);}
-  .quick-nav a.qn-active{color:var(--gold);font-weight:700;border-right-color:var(--gold);background:rgba(212,175,55,.1);}
-}
+/* تم حذف الفهرست الجانبي العائم بناءً على طلب المستخدم */
 
 </style>
 </head>
@@ -460,19 +447,6 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   <span>🔔 توجد مقالات جديدة — اضغط للتحديث</span>
 </button>
 <div id="prog"></div>
-
-<!-- الفهرست الجانبي الثابت (ديسك توب فقط) -->
-<nav class="quick-nav" id="quickNav">
-  <div class="qn-title">◈ الأفرع العلمية</div>
-  <a href="#links-quran" data-target="links-quran">التفسير والتدبر</a>
-  <a href="#links-hadith" data-target="links-hadith">السنة وشروح الحديث</a>
-  <a href="#links-qisas" data-target="links-qisas">القصص القرآني والنبوي</a>
-  <a href="#links-fiqh" data-target="links-fiqh">الأحكام الفقهية</a>
-  <a href="#links-siyasa" data-target="links-siyasa">السياسة الشرعية</a>
-  <a href="#links-tahakum" data-target="links-tahakum">المقالات التهكمية</a>
-  <a href="#links-radd" data-target="links-radd">المناظرات والردود</a>
-  <a href="#links-raqaiq" data-target="links-raqaiq">الرقائق والسلوك</a>
-</nav>
 
 <header class="hdr">
   <div class="hdr-i">
@@ -1499,27 +1473,8 @@ document.querySelectorAll('.sf-chip').forEach(function(chip){
   });
 });
 
-// إضاءة القسم النشط في الفهرست الجانبي الثابت أثناء التمرير
-(function(){
-  var qnLinks = document.querySelectorAll('.quick-nav a');
-  if(!qnLinks.length) return;
-  var targets = [];
-  qnLinks.forEach(function(a){
-    var el = document.getElementById(a.getAttribute('data-target'));
-    if(el) targets.push({el: el, link: a});
-  });
-  var obs = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      var match = targets.find(function(t){return t.el === entry.target;});
-      if(!match) return;
-      if(entry.isIntersecting){
-        qnLinks.forEach(function(l){l.classList.remove('qn-active');});
-        match.link.classList.add('qn-active');
-      }
-    });
-  }, {rootMargin:'-20% 0px -70% 0px'});
-  targets.forEach(function(t){ obs.observe(t.el); });
-})();// مشاركة الموقع
+// (تم حذف كود الفهرست الجانبي العائم بناءً على طلب المستخدم)
+// مشاركة الموقع
 function shareSite(){
   var url = 'https://fbbffv.github.io/al-seljuki-meditative-encyclopedia/';
   var title = 'موسوعة السلجوقي التدبرية';
