@@ -33,6 +33,7 @@ body{
   max-width:100%;overflow-x:hidden;
   background:var(--parch);color:var(--ink);
   font-family:'Cairo',sans-serif;line-height:1.9;font-weight:600;
+  transition:background .3s,color .3s;
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
   background-image:
     radial-gradient(ellipse at 0% 0%,rgba(10,25,47,.06),transparent 42%),
@@ -78,6 +79,17 @@ body{
 .file-link .ft{flex:1;}
 .pending-note{color:#8a8578;font-size:.85rem;font-style:italic;padding:10px 14px;}
 
+body.dark{--ink:#E8CD6E;--parch:#0A192F;background:#0A192F;}
+body.dark .intro{background:rgba(13,27,42,.85) !important;color:#E8CD6E !important;}
+body.dark .range-group{background:#0D1B2A !important;border-color:rgba(212,175,55,.5) !important;}
+body.dark .aspect-head{background:rgba(13,27,42,.6) !important;}
+body.dark .aspect-title{color:#E8CD6E !important;}
+body.dark .file-link{background:rgba(13,27,42,.7) !important;color:#E8CD6E !important;border-color:rgba(212,175,55,.4) !important;}
+body.sepia{--ink:#0A192F;--parch:#F4ECD8;background:#F4ECD8;}
+.mode-btns{display:flex;gap:6px;justify-content:center;margin-top:12px;}
+.mode-btn{width:34px;height:34px;border-radius:8px;border:1px solid rgba(212,178,90,.5);background:rgba(255,255,255,.08);color:var(--gold-lt);cursor:pointer;font-size:.95rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.mode-btn.on{background:rgba(212,175,55,.35);}
+
 footer{background:var(--night);color:#f8fafc;text-align:center;padding:28px 20px;font-size:.85rem;border-top:3px solid var(--gold-l);margin-top:20px;}
 footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:7px;font-weight:800;color:var(--gold-l);}
 footer .fb span{color:var(--gold-lt);}
@@ -95,6 +107,11 @@ footer .fb span{color:var(--gold-lt);}
 <h1>سُورَةُ الْفَاتِحَةِ</h1>
 <div class="sub">دراسة موسوعية شاملة · موسوعة السلجوقي التدبرية</div>
 <a href="index.html" class="home-link">⌂ العودة إلى الفهرس الرئيسي</a>
+<div class="mode-btns">
+  <button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
+  <button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="دافئ">◐</button>
+  <button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
+</div>
 </header>
 
 <div class="wrap">
@@ -265,6 +282,13 @@ function toggleRange(headerElem){
 function toggleAspect(headerElem, e){
   if(e) e.stopPropagation();
   headerElem.parentElement.classList.toggle('open');
+}
+function setMode(m){
+  document.body.classList.remove('dark','sepia');
+  if(m!=='light') document.body.classList.add(m);
+  ['Light','Sepia','Dark'].forEach(function(x){
+    document.getElementById('m'+x).classList.toggle('on', x.toLowerCase()===m);
+  });
 }
 </script>
 
