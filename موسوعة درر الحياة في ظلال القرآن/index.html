@@ -13,7 +13,14 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{max-width:100%;overflow-wrap:break-word;background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.9;font-weight:600;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;}
+body{max-width:100%;overflow-wrap:break-word;background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.9;font-weight:600;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;transition:background .3s,color .3s;}
+body.dark{--ink:#E8CD6E;--parch:#0A192F;background:#0A192F;}
+body.dark .intro{background:rgba(13,27,42,.85) !important;color:#E8CD6E !important;}
+body.dark .surah-item,body.dark .card{background:rgba(13,27,42,.7) !important;color:#E8CD6E !important;}
+body.sepia{--ink:#0A192F;--parch:#F4ECD8;background:#F4ECD8;}
+.mode-btns{display:flex;gap:6px;justify-content:center;margin-top:10px;}
+.mode-btn{width:34px;height:34px;border-radius:8px;border:1px solid rgba(212,178,90,.5);background:rgba(255,255,255,.08);color:#E8CD6E;cursor:pointer;font-size:.95rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.mode-btn.on{background:rgba(212,175,55,.35);}
 .hdr{background:var(--night);padding:22px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;overflow-x:hidden;}
 .hdr h1{font-family:'Amiri Display',serif;color:#F9F8F6;font-size:1.6rem;margin-bottom:6px;}
 .hdr p{color:#D4AF37;font-size:.9rem;}
@@ -43,6 +50,11 @@ footer{text-align:center;padding:24px;color:#1c2733;font-size:.82rem;}
   <h1>مَوْسُوعَةُ دُرَرِ الْحَيَاةِ فِي ظِلَالِ الْقُرْآنِ</h1>
   <p>تأليف الشيخ علي خليل عباس السلجوقي التركماني الليلاني</p>
   <a class="home-link" href="../index.html">⌂ العودة إلى الفهرس الرئيسي</a>
+  <div class="mode-btns">
+    <button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
+    <button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="دافئ">◐</button>
+    <button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
+  </div>
 </div>
 
 <div class="wrap">
@@ -110,6 +122,14 @@ container.innerHTML = html;
 
 var uploadedCount = uploaded.length.toLocaleString('ar-EG');
 document.getElementById('progressNote').textContent = 'تمّ رفع ' + uploadedCount + ' سور حتى الآن، والباقي قيد الإضافة تباعاً';
+
+function setMode(m){
+  document.body.classList.remove('dark','sepia');
+  if(m!=='light') document.body.classList.add(m);
+  ['Light','Sepia','Dark'].forEach(function(x){
+    document.getElementById('m'+x).classList.toggle('on', x.toLowerCase()===m);
+  });
+}
 </script>
 </body>
 </html>
