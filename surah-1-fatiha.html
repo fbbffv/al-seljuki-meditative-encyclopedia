@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y000RD20N"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-1Y000RD20N');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="الشيخ علي خليل عباس السلجوقي التركماني الليلاني">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="سورة الفاتحة — دراسة موسوعية شاملة | موسوعة السلجوقي التدبرية">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="موسوعة السلجوقي التدبرية">
+<meta property="og:image" content="https://fbbffv.github.io/al-seljuki-meditative-encyclopedia/icon.png">
+<title>سورة الفاتحة — دراسة موسوعية شاملة | موسوعة السلجوقي التدبرية</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Display&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A192F; --parch:#F9F8F6; --parch2:#EFEBE0;
+  --gold:#8a6a12; --gold-l:#D4AF37; --gold-lt:#E8CD6E;
+  --lapis:#0D1B2A; --lapis-l:#1B3A5C;
+  --agate:#6b1f35; --sage:#2f4a3a;
+  --night:#0A192F; --line:rgba(212,175,55,.7);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  max-width:100%;overflow-x:hidden;
+  background:var(--parch);color:var(--ink);
+  font-family:'Cairo',sans-serif;line-height:1.9;font-weight:600;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+  background-image:
+    radial-gradient(ellipse at 0% 0%,rgba(10,25,47,.06),transparent 42%),
+    radial-gradient(ellipse at 100% 0%,rgba(107,31,53,.05),transparent 42%),
+    radial-gradient(ellipse at 50% 100%,rgba(212,175,55,.08),transparent 55%);
+  min-height:100vh;
+}
+.hdr{background:var(--night);padding:26px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;overflow-x:hidden;box-shadow:0 4px 24px rgba(0,0,0,.4);}
+.hdr h1{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.5rem;font-weight:800;margin-bottom:6px;}
+.hdr .sub{color:#cbd5e1;font-size:.85rem;font-weight:500;}
+.home-link{display:inline-block;margin-top:14px;color:var(--gold-lt);font-size:.85rem;text-decoration:none;border:1px solid rgba(212,178,90,.65);padding:7px 18px;border-radius:20px;font-weight:600;transition:background .2s;}
+.home-link:hover{background:rgba(212,178,90,.15);}
+
+.wrap{max-width:900px;margin:0 auto;padding:40px 20px 80px;}
+.intro{background:rgba(255,255,255,.92);border:1.5px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:34px;font-family:'Amiri Display',serif;font-size:1.05rem;text-align:center;color:var(--ink);box-shadow:0 2px 10px rgba(10,25,47,.08);}
+.intro .verse{font-size:1.3rem;color:var(--gold);font-weight:700;margin-bottom:10px;}
+
+/* نطاق آيات (المستوى الأول من الأكورديون) */
+.range-group{background:#fff;border:1.5px solid var(--line);border-radius:16px;margin-bottom:22px;overflow:hidden;box-shadow:0 4px 18px rgba(10,25,47,.06);}
+.range-head{display:flex;justify-content:space-between;align-items:center;padding:20px 26px;cursor:pointer;user-select:none;background:linear-gradient(135deg,var(--night),#152a45);transition:background .2s;}
+.range-head:hover{filter:brightness(1.1);}
+.range-title{font-family:'Amiri Display',serif;font-size:1.25rem;font-weight:800;color:var(--gold-lt);}
+.range-icon{font-size:1rem;color:var(--gold-lt);transition:transform .3s;}
+.range-group.open > .range-head .range-icon{transform:rotate(180deg);}
+.range-body{display:none;padding:20px 26px 26px;}
+.range-group.open > .range-body{display:block;}
+
+/* جانب دراسي (المستوى الثاني من الأكورديون، داخل نطاق الآيات) */
+.aspect-group{border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden;}
+.aspect-group:last-child{margin-bottom:0;}
+.aspect-head{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;cursor:pointer;user-select:none;background:var(--parch2);transition:background .2s;}
+.aspect-head:hover{background:#e5ddc9;}
+.aspect-title{font-family:'Amiri Display',serif;font-size:1.05rem;font-weight:700;color:var(--ink);}
+.aspect-count{font-size:.72rem;color:var(--gold);font-weight:700;background:rgba(212,175,55,.15);padding:2px 10px;border-radius:12px;margin-right:8px;}
+.aspect-icon{font-size:.85rem;color:var(--gold);transition:transform .3s;}
+.aspect-group.open > .aspect-head .aspect-icon{transform:rotate(180deg);}
+.aspect-body{display:none;padding:6px 20px 14px;}
+.aspect-group.open > .aspect-body{display:block;}
+
+.file-link{display:flex;align-items:center;gap:10px;padding:10px 14px;margin-top:6px;background:#fff;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.92rem;transition:all .2s;}
+.file-link:hover{background:rgba(212,175,55,.08);border-color:var(--gold-l);}
+.file-link .fn{width:26px;height:26px;border-radius:50%;background:var(--gold-l);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;flex-shrink:0;}
+.file-link .ft{flex:1;}
+.pending-note{color:#8a8578;font-size:.85rem;font-style:italic;padding:10px 14px;}
+
+footer{background:var(--night);color:#f8fafc;text-align:center;padding:28px 20px;font-size:.85rem;border-top:3px solid var(--gold-l);margin-top:20px;}
+footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:7px;font-weight:800;color:var(--gold-l);}
+footer .fb span{color:var(--gold-lt);}
+
+@media(max-width:640px){
+.wrap{padding:26px 14px 60px;}
+.hdr h1{font-size:1.2rem;}
+.range-head,.range-body{padding-left:16px;padding-right:16px;}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+<h1>سُورَةُ الْفَاتِحَةِ</h1>
+<div class="sub">دراسة موسوعية شاملة · موسوعة السلجوقي التدبرية</div>
+<a href="index.html" class="home-link">⌂ العودة إلى الفهرس الرئيسي</a>
+</header>
+
+<div class="wrap">
+
+<div class="intro">
+<div class="verse">﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ﴾</div>
+<div>دراسة تدبرية موسّعة تجمع بين صحة التفسير، وعمق التدبر، وجمال البيان — من جوانب متعددة</div>
+</div>
+
+<!-- نطاق آية ١-٧ -->
+<div class="range-group open">
+  <div class="range-head" onclick="toggleRange(this)">
+    <span class="range-title">آيَةُ ١ - ٧ (السورة كاملةً)</span>
+    <span class="range-icon">▼</span>
+  </div>
+  <div class="range-body">
+
+    <!-- جانب: التفسير التدبري الأدبي التأملي -->
+    <div class="aspect-group open">
+      <div class="aspect-head" onclick="toggleAspect(this, event)">
+        <span class="aspect-title">التَّفْسِيرُ التَّدَبُّرِيُّ الْأَدَبِيُّ التَّأَمُّلِيُّ <span class="aspect-count">٩ / ٩ ✓</span></span>
+        <span class="aspect-icon">▼</span>
+      </div>
+      <div class="aspect-body">
+        <a class="file-link" href="article129.html" target="_blank">
+          <span class="fn">١</span>
+          <span class="ft">الجزء الأول — البسملة</span>
+        </a>
+        <a class="file-link" href="article130.html" target="_blank">
+          <span class="fn">٢</span>
+          <span class="ft">الجزء الثاني — الحمد لله رب العالمين</span>
+        </a>
+        <a class="file-link" href="article131.html" target="_blank">
+          <span class="fn">٣</span>
+          <span class="ft">الجزء الثالث — الرحمن الرحيم</span>
+        </a>
+        <a class="file-link" href="article132.html" target="_blank">
+          <span class="fn">٤</span>
+          <span class="ft">الجزء الرابع — مالك يوم الدين</span>
+        </a>
+        <a class="file-link" href="article133.html" target="_blank">
+          <span class="fn">٥</span>
+          <span class="ft">الجزء الخامس — إياك نعبد وإياك نستعين</span>
+        </a>
+        <a class="file-link" href="article134.html" target="_blank">
+          <span class="fn">٦</span>
+          <span class="ft">الجزء السادس — اهدنا الصراط المستقيم</span>
+        </a>
+        <a class="file-link" href="article135.html" target="_blank">
+          <span class="fn">٧</span>
+          <span class="ft">الجزء السابع — صراط الذين أنعمت عليهم</span>
+        </a>
+        <a class="file-link" href="article136.html" target="_blank">
+          <span class="fn">٨</span>
+          <span class="ft">الجزء الثامن — غير المغضوب عليهم ولا الضالين</span>
+        </a>
+        <a class="file-link" href="article137.html" target="_blank">
+          <span class="fn">٩</span>
+          <span class="ft">الجزء التاسع — خاتمة عامة لسورة الفاتحة</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- جانب: الدراسة البلاغية الدقيقة -->
+    <div class="aspect-group">
+      <div class="aspect-head" onclick="toggleAspect(this, event)">
+        <span class="aspect-title">الدِّرَاسَةُ الْبَلَاغِيَّةُ الدَّقِيقَةُ <span class="aspect-count">٦ مجلدات (١٠-٦١) ✓</span></span>
+        <span class="aspect-icon">▼</span>
+      </div>
+      <div class="aspect-body">
+        <a class="file-link" href="article138.html" target="_blank">
+          <span class="fn">١٠-١٥</span>
+          <span class="ft">المجلد الأول — الأجزاء من العاشر إلى الخامس عشر كاملة (البسملة بلاغياً)</span>
+        </a>
+        <a class="file-link" href="article139.html" target="_blank">
+          <span class="fn">١٦-٢٠</span>
+          <span class="ft">المجلد الثاني — الأجزاء من السادس عشر إلى العشرين (البسملة: بيان وبديع ومعاني)</span>
+        </a>
+        <a class="file-link" href="article140.html" target="_blank">
+          <span class="fn">٢١-٣٠</span>
+          <span class="ft">المجلد الثالث — الأجزاء من الحادي والعشرين إلى الثلاثين (بلاغة كامل آيات السورة)</span>
+        </a>
+        <a class="file-link" href="article141.html" target="_blank">
+          <span class="fn">٣١-٤٠</span>
+          <span class="ft">المجلد الرابع — الأجزاء من الحادي والثلاثين إلى الأربعين</span>
+        </a>
+        <a class="file-link" href="article142.html" target="_blank">
+          <span class="fn">٤١-٥٠</span>
+          <span class="ft">المجلد الخامس — الأجزاء من الحادي والأربعين إلى الخمسين</span>
+        </a>
+        <a class="file-link" href="article143.html" target="_blank">
+          <span class="fn">٥١-٦١</span>
+          <span class="ft">المجلد السادس — الأجزاء من الحادي والخمسين إلى الحادي والستين (ختام الدراسة البلاغية)</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<footer>
+<div class="fb">مَوْسُوعَةُ <span>السَّلْجُوقِي</span> التَّدَبُّرِيَّةُ</div>
+<p>© جميع الحقوق محفوظة لـ علي خليل عباس السلجوقي التركماني الليلاني</p>
+</footer>
+
+<script>
+function toggleRange(headerElem){
+  headerElem.parentElement.classList.toggle('open');
+}
+function toggleAspect(headerElem, e){
+  if(e) e.stopPropagation();
+  headerElem.parentElement.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
