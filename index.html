@@ -190,7 +190,6 @@ body{
 .branch.open .branch-sub{display:block;}
 .branch-sub li{position:relative;padding:5px 18px 5px 0;color:#1c2733;font-size:clamp(.9rem,1vw,1.02rem);font-weight:600;}
 .branch-sub li::before{content:'—';position:absolute;right:0;color:var(--gate-c);opacity:.6;}
-.branch-count{display:inline-block;background:rgba(138,106,18,.14);color:var(--gold);font-size:.72rem;padding:1px 9px;border-radius:12px;margin-right:8px;}
 .branch-links{display:none;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin-top:8px;align-items:start;}
 .branch.open .branch-links{display:grid;}
 .branch.open{max-height:72vh;overflow-y:auto;overflow-x:hidden;}
@@ -237,6 +236,9 @@ body{
 .surah-group.c-teal .surah-head{background:#96601c;}
 .surah-group.c-teal .ayah-link{background:rgba(150,96,28,.07);color:#96601c;}
 .surah-group.c-teal .ayah-n{background:rgba(150,96,28,.16);color:#96601c;}
+.surah-group.c-emerald .surah-head{background:#047857;}
+.surah-group.c-emerald .ayah-link{background:rgba(4,120,87,.07);color:#047857;}
+.surah-group.c-emerald .ayah-n{background:rgba(4,120,87,.16);color:#047857;}
 .surah-group.pending{border-style:dashed;}
 .surah-head.pending-head{background:#8a6a12;font-size:.88rem;}
 .surah-group.pending{display:flex;flex-direction:column;gap:5px;padding:10px 12px;}
@@ -594,7 +596,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h" onclick="toggleGate(this)">فرعُ التفسير والتدبر القرآني <span class="branch-count">٩٧</span> <span class="branch-arrow">‹</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ التفسير والتدبر القرآني <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>التحليل اللغوي والبياني والنظم</li>
             <li>الملاحظات البلاغية واللطائف الأدبية</li>
@@ -852,7 +854,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h" onclick="toggleGate(this)">فرعُ السنة النبوية وشروح الحديث <span class="branch-count">٦</span> <span class="branch-arrow">‹</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ السنة النبوية وشروح الحديث <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>شروح المتون وأحاديث الأحكام</li>
             <li>أحاديث الفتن والملاحم وأشراط الساعة</li>
@@ -879,7 +881,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h" onclick="toggleGate(this)">فرعُ القصص القرآني والنبوي <span class="branch-count">٨</span> <span class="branch-arrow">‹</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ القصص القرآني والنبوي <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub"><li>العبر والدروس المستفادة بأسلوب تفكري</li></ul>
           <div class="branch-links" id="links-qisas">
             <a class="b-link c-lapis" href="article66.html"><span class="b-num">١.</span> شعيب عليه السلام... حين يصبح الغِشُّ ديناً</a>
@@ -909,7 +911,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h" onclick="toggleGate(this)">فرعُ الأحكام الفقهية والفتاوى <span class="branch-count">٤</span> <span class="branch-arrow">‹</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ الأحكام الفقهية والفتاوى <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>فقه العبادات وفقه المعاملات</li>
             <li>فقه النوازل (المسائل المعاصرة المستجدة)</li>
@@ -960,7 +962,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h" onclick="toggleGate(this)">فرعُ السياسة الشرعية والاقتصاد <span class="branch-count">٧</span> <span class="branch-arrow">‹</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ السياسة الشرعية والاقتصاد <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>قراءات في المنظومات الاقتصادية والسياسية المعاصرة</li>
             <li>التنزيل على الواقع (ربط النصوص بحدث الساعة)</li>
@@ -997,7 +999,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h" onclick="toggleGate(this)">فرعُ المقالات التهكمية والساخرة <span class="branch-count">٢</span> <span class="branch-arrow">‹</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ المقالات التهكمية والساخرة <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>النقد الأسلوبي التهكمي للطبقات السياسية</li>
             <li>تعرية أطروحات «علماء البلاط» ومروّجي الخطاب المدجَّن</li>
@@ -1014,7 +1016,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
           </div>
         </div>
         <div class="branch">
-          <div class="branch-h" onclick="toggleGate(this)">فرعُ المناظرات والردود <span class="branch-count">٣</span> <span class="branch-arrow">‹</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ المناظرات والردود <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub">
             <li>الرد على الشبهات والملحدين والعلمانيين</li>
             <li>أرشيف المناظرات الفكرية (المكتوبة والمرئية)</li>
@@ -1052,7 +1054,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     <div class="gate-body">
       <div class="branches">
         <div class="branch">
-          <div class="branch-h" onclick="toggleGate(this)">فرعُ الرقائق والسلوك <span class="branch-count">٤</span> <span class="branch-arrow">‹</span></div>
+          <div class="branch-h" onclick="toggleGate(this)">فرعُ الرقائق والسلوك <span class="branch-arrow">‹</span></div>
           <ul class="branch-sub"><li>أعمال القلوب، والتزكية، ومداواة النفوس</li></ul>
           <div class="branch-links" id="links-raqaiq">
             <div class="bab-group c-lapis">
