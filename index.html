@@ -125,6 +125,14 @@ body{
 .sf-chip:hover{background:rgba(212,175,55,.12);}
 .sf-chip.on{background:var(--gold);color:#fff;border-color:var(--gold);}
 .search-note{text-align:center;color:var(--lapis);font-size:.92rem;margin-top:16px;display:none;}
+.tags-wrap{max-width:720px;margin:22px auto 0;text-align:center;}
+.tags-title{font-family:'Amiri Display',serif;color:var(--gold);font-size:1.05rem;font-weight:700;margin-bottom:12px;}
+.tags-note{font-size:.7rem;color:var(--mist);font-weight:500;}
+.tags-cloud{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+.tag-chip{background:rgba(255,255,255,.85);border:1.5px solid var(--gold-l);color:var(--ink);border-radius:20px;padding:7px 16px;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;}
+.tag-chip:hover,.tag-chip.on{background:var(--gold);color:#fff;border-color:var(--gold);}
+.tag-result-card{display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:8px;text-decoration:none;color:var(--ink);font-family:'Amiri Display',serif;font-size:.95rem;transition:background .2s;}
+.tag-result-card:hover{background:rgba(212,175,55,.08);}
 .search-result-card{background:rgba(255,255,255,.9);border:1.5px solid var(--line);border-radius:12px;padding:8px 16px;font-family:'Amiri Display',serif;font-size:.85rem;font-weight:600;color:var(--ink);text-decoration:none;transition:all .2s;box-shadow:0 1px 4px rgba(10,25,47,.08);}
 .search-result-card:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(10,25,47,.15);}
 .search-result-card.c-lapis{border-color:var(--lapis);}
@@ -523,6 +531,24 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   </div>
   <div class="search-note" id="searchNote"></div>
   <div id="searchResults" style="display:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;"></div>
+</div>
+
+<!-- تصفّح حسب الموضوع (تجريبي) -->
+<div class="tags-wrap">
+  <div class="tags-title">◈ تصفّح حسب الموضوع</div>
+  <div class="tags-cloud">
+    <span class="tag-chip" data-tag="التوبة">التوبة</span>
+    <span class="tag-chip" data-tag="الصبر">الصبر</span>
+    <span class="tag-chip" data-tag="القلب">القلب</span>
+    <span class="tag-chip" data-tag="النية">النية والإخلاص</span>
+    <span class="tag-chip" data-tag="القيامة">أهوال القيامة</span>
+    <span class="tag-chip" data-tag="الرحمة">رحمة الله</span>
+    <span class="tag-chip" data-tag="الشرك">الشرك والتوحيد</span>
+    <span class="tag-chip" data-tag="القرآن">التدبر القرآني</span>
+    <span class="tag-chip" data-tag="النبوة">السيرة والنبوة</span>
+    <span class="tag-chip" data-tag="السياسة">السياسة الشرعية</span>
+  </div>
+  <div id="tagResults" style="display:none;margin-top:16px;"></div>
 </div>
 
 <!-- أحدث ما أُضيف -->
@@ -1301,6 +1327,86 @@ function normalizeArabic(s){
     .toLowerCase();
 }
 // البحث الشامل (نتائج مسطّحة تحت شريط البحث + بطاقات الأحدث)
+// نظام الوسوم التجريبي (عيّنة تجريبية فقط - وسوم وهمية على مقالات محدودة)
+var tagsData = {
+  "التوبة": [
+    {href:"article124.html", title:"حِينَ تَتَكَسَّرُ القُلُوبُ عَلَى أَعْتَابِ المَغْفِرَةِ"},
+    {href:"article129.html", title:"حِينَ تَتَكَسَّرُ القُلُوبُ عَلَى أَعْتَابِ المَغْفِرَةِ (مقال آخر)"},
+    {href:"article160.html", title:"حِينَ تَضِيقُ الْأَرْضُ... فَارْفَعْ قَلْبَكَ إِلَى فَاطِرِ السَّمَاءِ"},
+    {href:"article165.html", title:"اسْتَجِيبُوا لِرَبِّكُمْ... قَبْلَ أَنْ يُغْلَقَ الْبَابُ"}
+  ],
+  "الصبر": [
+    {href:"article149.html", title:"حِينَ لَا يُنْجِي إِلَّا اللَّهُ: رِحْلَةُ السَّفِينَةِ"},
+    {href:"article141.html", title:"أَدَوَاتُ الْهِدَايَةِ وَمَنَافِذُ الْعِلْمِ"},
+    {href:"article131.html", title:"فَلْسَفَةُ الْعَطَاءِ وَالْمَنْعِ: حِينَ يُصَحِّحُ الْقُرْآنُ مِيزَانَ الْإِنْسَانِ"}
+  ],
+  "القلب": [
+    {href:"article119.html", title:"حِينَ يَصْدَأُ القَلْبُ... وَتُطْفَأُ مَصَابِيحُ الهِدَايَةِ"},
+    {href:"article116.html", title:"حِينَ يُطْفَأُ نُورُ الْقَلْبِ"},
+    {href:"article139.html", title:"حِينَ يَصْبَحُ الْوَطَنُ مَحَطَّةَ هَرُوبٍ لَا مَوْطِنَ كَرَامَةٍ"},
+    {href:"article133.html", title:"حِينَ يُحَاكِمُ الْهَوَى الْوَحْيَ... فَيُغْلِقُ الْقَلْبُ أَبْوَابَ السَّمَاءِ"},
+    {href:"article148.html", title:"حِينَ يَتَكَلَّمُ الْكَوْنُ... وَتَصْمُتُ الْقُلُوبُ"},
+    {href:"article121.html", title:"حِينُ يَسْكُنُ الْقَلْبُ إِلَى رَبِّهِ"}
+  ],
+  "النية": [
+    {href:"article167.html", title:"بَيْنَ «هَمَّ» وَ«نَوَى»... مَسَافَةٌ بَيْنَ الْخَاطِرِ وَالْعَزْمِ"}
+  ],
+  "القيامة": [
+    {href:"article161.html", title:"حِينَ لَا تَبْقَى إِلَّا الزِّيَادَةُ فِي الْعَذَابِ"},
+    {href:"article157.html", title:"تَمَهَّلْ... لَقَدْ مُنِحْتَ فُرْصَةً لَا تُمْنَحُ لِأَحَدٍ"},
+    {href:"article120.html", title:"حِينُ يُحْشَرُ الْأَشْبَاهُ مَعَ الْأَشْبَاهِ"},
+    {href:"article130.html", title:"حِينَ يُنْتَزَعُ اللِّبَاسُ... وَتَبْدَأُ الْهَزِيمَةُ الْأُولَى لِلْإِنْسَانِ"},
+    {href:"article132.html", title:"حِينَ تَتَحَوَّلُ الْأَعْمَالُ إِلَى حَسَرَاتٍ"}
+  ],
+  "الرحمة": [
+    {href:"article124.html", title:"حِينَ تَتَكَسَّرُ القُلُوبُ عَلَى أَعْتَابِ المَغْفِرَةِ"},
+    {href:"article160.html", title:"حِينَ تَضِيقُ الْأَرْضُ... فَارْفَعْ قَلْبَكَ إِلَى فَاطِرِ السَّمَاءِ"},
+    {href:"article123.html", title:"إِذَا فَتَحَ اللَّهُ أَبْوَابَ رَحْمَتِهِ... فَمَنْ ذَا الَّذِي يُغْلِقُهَا؟!"},
+    {href:"article156.html", title:"حِينَ يَعُودُ الْغَيْثُ إِلَى السَّمَاءِ... وَيَنْشَقُّ الْقَلْبُ لِلْحَيَاةِ"}
+  ],
+  "الشرك": [
+    {href:"article127.html", title:"حِينَ يَخْتَبِئُ الشِّرْكُ خَلْفَ سِتَارِ الْإِيمَانِ"},
+    {href:"article158.html", title:"بَوْاَبَةُ النُّورِ... بَيْنَ إِرَادَةِ الرَّحْمَنِ وَأُمْنِيَاتِ أَهْلِ الشَّهَوَاتِ"},
+    {href:"article147.html", title:"حِينَ اهْتَزَّتِ الْأَرْضُ... سَقَطَتِ الْفَلْسَفَةُ وَبَقِيَ الدُّعَاءُ"}
+  ],
+  "القرآن": [
+    {href:"article136.html", title:"حِينَ يَفْتَحُ الْقُرْآنُ أَبْوَابَ الْقُلُوبِ"},
+    {href:"article166.html", title:"حِينَ يُكْرَهُ حُكْمُ اللَّهِ… تُطْفَأُ مَصَابِيحُ الْعَمَلِ"},
+    {href:"article117.html", title:"حِينَ تُسَاقُ الكِبْرِيَاءُ إِلَى النَّارِ"}
+  ],
+  "النبوة": [
+    {href:"article134.html", title:"حِوَارٌ مَعَ أَكْبَرِ فِتْنَةٍ عَرَفَتْهَا الْبَشَرِيَّةُ"},
+    {href:"article151.html", title:"بَوْاَبَةُ النُّورِ... حِينَ يَفْتَحُ اللَّهُ لِعِبَادِهِ بَابَ الْمَحَبَّةِ"},
+    {href:"article135.html", title:"حِينَ يَكْتُبُ اللَّهُ الْفَتْحَ"},
+    {href:"article142.html", title:"أُمَّهَاتُ الْمُؤْمِنِينَ... بُيُوتُ الْوَحْيِ"}
+  ],
+  "السياسة": [
+    {href:"article164.html", title:"اتِّفَاقِيَّةُ «الْخَيْبَةِ الْمُشْتَرَكَةِ»…"},
+    {href:"article153.html", title:"سُومَنَات... حِينَ يَتَكَلَّمُ التَّارِيخُ وَيَصْمُتُ التَّزْيِيفُ"},
+    {href:"article154.html", title:"الدولة العثمانية ومعركة موهاكس"},
+    {href:"article159.html", title:"رَدٌّ عَلَى «الْحُلْمِ الْعَرَبِيِّ»... الْحَقِيقَةُ الْإِسْلَامِيَّةُ"}
+  ]
+};
+document.querySelectorAll('.tag-chip').forEach(function(chip){
+  chip.addEventListener('click', function(){
+    var wasOn = chip.classList.contains('on');
+    document.querySelectorAll('.tag-chip').forEach(function(c){c.classList.remove('on');});
+    var box = document.getElementById('tagResults');
+    if(wasOn){ box.style.display='none'; box.innerHTML=''; return; }
+    chip.classList.add('on');
+    var tag = chip.getAttribute('data-tag');
+    var items = tagsData[tag] || [];
+    if(!items.length){
+      box.innerHTML = '<div style="color:var(--mist);font-size:.9rem;">لا توجد مقالات مُوسَّمة بهذا بعد (تجربة أولية على عيّنة محدودة)</div>';
+    } else {
+      box.innerHTML = items.map(function(it){
+        return '<a class="tag-result-card" href="'+it.href+'">'+it.title+'</a>';
+      }).join('');
+    }
+    box.style.display = 'block';
+  });
+});
+
 function filterAll(){
   var raw=document.getElementById('searchInput').value.trim();
   var q=normalizeArabic(raw);
