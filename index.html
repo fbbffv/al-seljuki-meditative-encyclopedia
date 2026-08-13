@@ -84,8 +84,7 @@ body{
 /* ===== الترويسة ===== */
 .hdr{background:linear-gradient(180deg,var(--night),#1d1710);border-bottom:2px solid var(--gold);position:sticky;top:0;z-index:200;box-shadow:0 3px 30px rgba(0,0,0,.5);}
 .hdr-i{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;height:62px;padding:0 22px;gap:14px;}
-.brand{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:clamp(1rem,1.6vw,1.35rem);font-weight:700;letter-spacing:.5px;white-space:nowrap;display:flex;align-items:center;gap:8px;}
-.logo-video{width:42px;height:42px;object-fit:contain;flex-shrink:0;}
+.brand{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:clamp(1rem,1.6vw,1.35rem);font-weight:700;letter-spacing:.5px;white-space:nowrap;}
 .brand b{color:var(--gold-l);}
 .modes{display:flex;gap:6px;}
 .mode-btn{width:36px;height:36px;border-radius:9px;border:1px solid var(--line);background:rgba(212,178,90,.08);color:var(--gold-lt);cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
@@ -368,24 +367,6 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(212
 .sheikh-frame .cs-r{left:-26px;top:50%;transform:translateY(-50%);}
 
 /* البطاقة الترحيبية + مشغل النشيد */
-.site-logo-wrap{text-align:center;margin:36px auto 0;padding:0 22px;}
-.site-logo-video{
-  width:clamp(260px, 42vw, 620px);
-  aspect-ratio:16/9;
-  height:auto;
-  object-fit:contain;
-  display:inline-block;
-  background:#ffffff;
-  border-radius:20px;
-  box-shadow:0 8px 28px rgba(10,25,47,.18), 0 2px 8px rgba(0,0,0,.08);
-  border:1px solid rgba(212,175,55,.35);
-}
-@media(max-width:1024px){
-  .site-logo-video{width:clamp(220px, 55vw, 480px);}
-}
-@media(max-width:640px){
-  .site-logo-video{width:clamp(180px, 78vw, 340px);}
-}
 .welcome-card{max-width:760px;margin:40px auto 0;padding:0 22px;}
 .wc-inner{background:linear-gradient(135deg,var(--night),#20180e);border:1.5px solid var(--gold);border-radius:20px;padding:30px 26px;position:relative;overflow:hidden;text-align:center;}
 .wc-inner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(212,178,90,.14),transparent 60%);pointer-events:none;}
@@ -514,13 +495,6 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     </div>
   </div>
 </section>
-
-<!-- الشعار المتحرك (فيديو شفاف) -->
-<div class="site-logo-wrap">
-  <video class="site-logo-video" autoplay loop muted playsinline preload="auto">
-    <source src="logo.webm" type="video/webm">
-  </video>
-</div>
 
 <!-- بطاقة الترحيب والتعريف بالشيخ + النشيد -->
 <div class="welcome-card">
