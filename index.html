@@ -367,32 +367,33 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(212
 .sheikh-frame .cs-r{left:-26px;top:50%;transform:translateY(-50%);}
 
 /* البطاقة الترحيبية + مشغل النشيد */
-.sheikh-logo-wrap{text-align:center;margin:32px auto 0;padding:0 22px;background:var(--parch);}
+.sheikh-logo-wrap{text-align:center;margin:32px auto 0;padding:0 22px;background:var(--parch);position:relative;}
+.sheikh-logo-media{position:relative;display:inline-block;width:clamp(280px, 46vw, 640px);max-width:100%;}
 .sheikh-logo-img,
 .sheikh-logo-video{
-  width:clamp(280px, 46vw, 640px);
+  width:100%;
   aspect-ratio:16/9;
   height:auto;
   max-width:100%;
   object-fit:contain;
-  display:inline-block;
+  display:block;
   border:none;
   outline:none;
   box-shadow:none;
   background:transparent;
   mix-blend-mode:multiply;
 }
-.sheikh-logo-video{
-  -webkit-mask-image:radial-gradient(ellipse 62% 68% at 50% 50%, #000 55%, transparent 100%);
-  mask-image:radial-gradient(ellipse 62% 68% at 50% 50%, #000 55%, transparent 100%);
+.sheikh-logo-fade{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(ellipse 58% 62% at 50% 50%, transparent 48%, var(--parch) 90%);
 }
 @media(max-width:1024px){
-  .sheikh-logo-img,
-  .sheikh-logo-video{width:clamp(240px, 58vw, 480px);}
+  .sheikh-logo-media{width:clamp(240px, 58vw, 480px);}
 }
 @media(max-width:640px){
-  .sheikh-logo-img,
-  .sheikh-logo-video{width:clamp(200px, 82vw, 360px);}
+  .sheikh-logo-media{width:clamp(200px, 82vw, 360px);}
 }
 body.dark .sheikh-logo-video{mix-blend-mode:normal;}
 .welcome-card{max-width:760px;margin:40px auto 0;padding:0 22px;}
@@ -526,6 +527,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 
 <!-- شعار الشيخ الرسمي -->
 <div class="sheikh-logo-wrap">
+  <div class="sheikh-logo-media">
   <video
     class="sheikh-logo-video"
     autoplay
@@ -539,6 +541,8 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     aria-label="الشيخ علي خليل عباس السلجوقي التركماني الليلاني">
     <source src="logo-animated.mp4" type="video/mp4">
   </video>
+  <div class="sheikh-logo-fade"></div>
+  </div>
 </div>
 
 <!-- بطاقة الترحيب والتعريف بالشيخ + النشيد -->
