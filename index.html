@@ -367,6 +367,20 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(212
 .sheikh-frame .cs-r{left:-26px;top:50%;transform:translateY(-50%);}
 
 /* البطاقة الترحيبية + مشغل النشيد */
+.sheikh-logo-wrap{text-align:center;margin:32px auto 0;padding:0 22px;}
+.sheikh-logo-img{
+  width:clamp(280px, 46vw, 640px);
+  height:auto;
+  max-width:100%;
+  object-fit:contain;
+  display:inline-block;
+}
+@media(max-width:1024px){
+  .sheikh-logo-img{width:clamp(240px, 58vw, 480px);}
+}
+@media(max-width:640px){
+  .sheikh-logo-img{width:clamp(200px, 82vw, 360px);}
+}
 .welcome-card{max-width:760px;margin:40px auto 0;padding:0 22px;}
 .wc-inner{background:linear-gradient(135deg,var(--night),#20180e);border:1.5px solid var(--gold);border-radius:20px;padding:30px 26px;position:relative;overflow:hidden;text-align:center;}
 .wc-inner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(212,178,90,.14),transparent 60%);pointer-events:none;}
@@ -495,6 +509,11 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     </div>
   </div>
 </section>
+
+<!-- شعار الشيخ الرسمي -->
+<div class="sheikh-logo-wrap">
+  <img src="logo-desktop.png" alt="الشيخ علي خليل عباس السلجوقي التركماني الليلاني" class="sheikh-logo-img">
+</div>
 
 <!-- بطاقة الترحيب والتعريف بالشيخ + النشيد -->
 <div class="welcome-card">
