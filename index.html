@@ -104,6 +104,9 @@ body{
 .hero-frame::before{top:-1px;right:-1px;border-left:0;border-bottom:0;border-radius:0 20px 0 0;}
 .hero-frame::after{bottom:-1px;left:-1px;border-right:0;border-top:0;border-radius:0 0 0 20px;}
 .tugra{font-family:'Amiri Display',serif;font-size:1.35rem;color:var(--gold);letter-spacing:.35em;margin-bottom:20px;opacity:.75;}
+.top-emblem-wrap{text-align:center;padding:26px 22px 0;}
+.top-emblem{display:inline-block;margin:0 auto;width:clamp(220px, 42vw, 480px);max-width:100%;height:auto;mix-blend-mode:multiply;}
+body.dark .top-emblem{mix-blend-mode:normal;}
 .hero h1{font-family:'Amiri Display',serif;font-size:3.1rem;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px;position:relative;}
 .hero h1 .accent{color:#6b1f35;}
 .hero .lede{font-family:'Amiri Display',serif;font-size:1.5rem;color:var(--lapis);margin:14px 0;position:relative;}
@@ -499,6 +502,11 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     </div>
   </div>
 </header>
+
+<!-- الشعار العلوي المستقل -->
+<div class="top-emblem-wrap">
+  <img src="logo-header.png" alt="الشيخ علي خليل عباس السلجوقي التركماني الليلاني" class="top-emblem">
+</div>
 
 <!-- الهيرو -->
 <section class="hero">
