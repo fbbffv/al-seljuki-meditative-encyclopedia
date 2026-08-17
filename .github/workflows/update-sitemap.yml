@@ -40,6 +40,23 @@ jobs:
             echo "  <url><loc>${loc}</loc><priority>${priority}</priority><lastmod>${lastmod}</lastmod></url>" >> "$OUT"
           done
 
+          if [ -d "en" ]; then
+            for file in $(find en -maxdepth 1 -name "*.html" | sed 's|^\./||' | sort); do
+              if [ "$file" = "en/index.html" ]; then
+                loc="$BASE_URL/en/"
+                priority="0.9"
+              else
+                loc="$BASE_URL/$file"
+                priority="0.7"
+              fi
+              lastmod=$(git log -1 --format=%cs -- "$file")
+              if [ -z "$lastmod" ]; then
+                lastmod=$(date +%Y-%m-%d)
+              fi
+              echo "  <url><loc>${loc}</loc><priority>${priority}</priority><lastmod>${lastmod}</lastmod></url>" >> "$OUT"
+            done
+          fi
+
           echo '</urlset>' >> "$OUT"
 
       - name: Commit and push if changed
