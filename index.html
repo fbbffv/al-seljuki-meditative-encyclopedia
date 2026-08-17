@@ -301,6 +301,11 @@ footer .f-email{margin:14px 0;}
 footer .f-email a{color:var(--gold-lt);text-decoration:none;border:1px solid var(--line);border-radius:30px;padding:8px 20px;font-size:.92rem;display:inline-flex;align-items:center;gap:8px;transition:background .2s;}
 footer .f-email a:hover{background:rgba(212,178,90,.14);}
 footer .fl{font-size:.78rem;opacity:.6;margin-top:8px;}
+.quicklinks-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:760px;margin:34px auto 0;padding:0 22px;}
+.quicklink-btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--night),#20180e);border:1.5px solid var(--gold);color:var(--gold-lt);font-family:'Cairo',sans-serif;font-weight:700;font-size:.92rem;padding:13px 26px;border-radius:16px;text-decoration:none;transition:.25s;box-shadow:0 4px 14px rgba(0,0,0,.18);}
+.quicklink-btn .ql-icon{font-size:1.05rem;line-height:1;}
+.quicklink-btn:hover{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);transform:translateY(-2px);box-shadow:0 8px 20px rgba(212,175,55,.3);}
+@media(max-width:520px){.quicklinks-wrap{gap:10px;}.quicklink-btn{padding:11px 18px;font-size:.85rem;flex:1 1 auto;justify-content:center;}}
 
 /* ===== أزرار عائمة ===== */
 .fab:hover{transform:translateY(-3px);}
@@ -1393,12 +1398,23 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
   </div>
 </div>
 
+<div class="quicklinks-wrap">
+  <a href="about.html" class="quicklink-btn">
+    <span class="ql-icon">📖</span> مَنْ نَحْنُ
+  </a>
+  <a href="en/index.html" class="quicklink-btn">
+    <span class="ql-icon">🌐</span> English
+  </a>
+  <a href="sitemap-page.html" class="quicklink-btn">
+    <span class="ql-icon">🗺️</span> خَرِيطَةُ المَوْقِعِ
+  </a>
+</div>
+
 <footer>
   <div class="fb">مَوْسُوعَةُ <b>السَّلْجُوقِي</b></div>
   <p>مِنَصَّةٌ عِلْمِيَّةٌ مَوْسُوعِيَّةٌ لِخِدْمَةِ الْعِلْمِ وَأَهْلِهِ</p>
   <div class="f-email"><a href="mailto:tahirnajim1987@gmail.com">✉ tahirnajim1987@gmail.com</a></div>
   <p class="fl">الشيخ علي خليل عباس السلجوقي التركماني اللّيلاني — العراق</p>
-  <p class="fl" style="margin-top:10px;"><a href="about.html" style="color:#8a6a12;text-decoration:underline;">من نحن</a> · <a href="sitemap-page.html" style="color:#8a6a12;text-decoration:underline;">خريطة الموقع</a> · <a href="en/index.html" style="color:#8a6a12;text-decoration:underline;">English</a></p>
 </footer>
 
 <!-- بطاقة تثبيت الموسوعة كتطبيق (أندرويد / آيفون / آيباد / ويندوز / ماك) -->
