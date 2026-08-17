@@ -306,6 +306,11 @@ footer .fl{font-size:.78rem;opacity:.6;margin-top:8px;}
 .quicklink-btn .ql-icon{font-size:1.05rem;line-height:1;}
 .quicklink-btn:hover{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--night);transform:translateY(-2px);box-shadow:0 8px 20px rgba(212,175,55,.3);}
 @media(max-width:520px){.quicklinks-wrap{gap:10px;}.quicklink-btn{padding:11px 18px;font-size:.85rem;flex:1 1 auto;justify-content:center;}}
+.update-links-wrap{margin:28px auto 0;}
+.update-btn{cursor:pointer;font-family:'Cairo',sans-serif;}
+.update-btn:disabled{opacity:.55;cursor:default;transform:none !important;}
+.update-btn .ql-icon.spin{display:inline-block;animation:qlspin 1s linear infinite;}
+@keyframes qlspin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
 
 /* ===== أزرار عائمة ===== */
 .fab:hover{transform:translateY(-3px);}
@@ -539,6 +544,12 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     </div>
   </div>
 </section>
+
+<div class="quicklinks-wrap update-links-wrap">
+  <button type="button" class="quicklink-btn update-btn" id="checkUpdateBtn" onclick="checkForUpdates()">
+    <span class="ql-icon">🔄</span> <span id="checkUpdateLabel">تَحْدِيثُ المَوْسُوعَةِ</span>
+  </button>
+</div>
 
 <!-- شعار الشيخ الرسمي -->
 <div class="sheikh-logo-wrap">
@@ -1723,6 +1734,43 @@ function closeWelcomeVideo(){
     }
   });
 });
+
+/* زر: تحديث الموسوعة — يتحقق من وجود نسخة أحدث، ويطبّقها تلقائياً إن وُجدت */
+function checkForUpdates(){
+  var btn = document.getElementById('checkUpdateBtn');
+  var lbl = document.getElementById('checkUpdateLabel');
+  var icon = btn.querySelector('.ql-icon');
+  btn.disabled = true;
+  icon.classList.add('spin');
+  lbl.textContent = 'جارٍ التحقق...';
+
+  var finish = function(msg, revert){
+    lbl.textContent = msg;
+    icon.classList.remove('spin');
+    setTimeout(function(){
+      lbl.textContent = revert;
+      btn.disabled = false;
+    }, 2600);
+  };
+
+  if('serviceWorker' in navigator && window.__swReg){
+    window.__swReg.update().then(function(){
+      setTimeout(function(){
+        if(window.__swReg.waiting){
+          lbl.textContent = '✓ تم العثور على تحديث، جارٍ التطبيق...';
+          icon.classList.remove('spin');
+          window.__swReg.waiting.postMessage({type:'SKIP_WAITING'});
+        } else {
+          finish('✓ الموسوعة محدَّثة بالفعل', 'تَحْدِيثُ المَوْسُوعَةِ');
+        }
+      }, 900);
+    }).catch(function(){
+      finish('تعذّر التحقق، تحقق من الاتصال', 'تَحْدِيثُ المَوْسُوعَةِ');
+    });
+  } else {
+    finish('✓ الموسوعة محدَّثة بالفعل', 'تَحْدِيثُ المَوْسُوعَةِ');
+  }
+}
 </script>
 
 <!-- ═══ تثبيت التطبيق (PWA) + العمل بلا إنترنت + التحديث التلقائي ═══ -->
@@ -1802,7 +1850,12 @@ function closeWelcomeVideo(){
   // تسجيل عامل الخدمة: يفعّل التصفح بلا إنترنت + التحديث التلقائي الصامت
   if('serviceWorker' in navigator){
     window.addEventListener('load', function(){
-      navigator.serviceWorker.register('service-worker.js').catch(function(){});
+      navigator.serviceWorker.register('service-worker.js').then(function(reg){
+        window.__swReg = reg;
+      }).catch(function(){});
+    });
+    navigator.serviceWorker.addEventListener('controllerchange', function(){
+      window.location.reload();
     });
   }
 
