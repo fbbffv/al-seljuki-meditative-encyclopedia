@@ -1,0 +1,48 @@
+name: تحديث خريطة الموقع تلقائياً
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.html'
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate sitemap.xml
+        run: |
+          BASE_URL="https://fbbffv.github.io/al-seljuki-meditative-encyclopedia"
+          OUT="sitemap.xml"
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > "$OUT"
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> "$OUT"
+
+          for file in $(find . -maxdepth 1 -name "*.html" | sed 's|^\./||' | sort); do
+            if [ "$file" = "index.html" ]; then
+              loc="$BASE_URL/"
+              priority="1.0"
+            else
+              loc="$BASE_URL/$file"
+              priority="0.8"
+            fi
+            lastmod=$(git log -1 --format=%cs -- "$file")
+            if [ -z "$lastmod" ]; then
+              lastmod=$(date +%Y-%m-%d)
+            fi
+            echo "  <url><loc>${loc}</loc><priority>${priority}</priority><lastmod>${lastmod}</lastmod></url>" >> "$OUT"
+          done
+
+          echo '</urlset>' >> "$OUT"
+
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "تحديث تلقائي لخريطة الموقع (sitemap.xml)"
+          file_pattern: sitemap.xml
