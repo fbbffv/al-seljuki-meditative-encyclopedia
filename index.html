@@ -416,6 +416,13 @@ body.sepia .gate{background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(212
 .nasheed-player .np-label{text-align:right;}
 .nasheed-player .np-title{color:var(--gold-lt);font-family:'Amiri Display',serif;font-size:1.05rem;}
 .nasheed-player .np-sub{color:var(--gold-lt);font-size:.76rem;}
+.video-player{margin-top:14px;}
+.video-player button.vp-icon{width:44px;height:44px;flex-shrink:0;}
+.video-player .vp-icon svg{width:19px;height:19px;}
+#welcomeVideoModal{position:fixed;inset:0;background:#000;z-index:9999;display:none;align-items:center;justify-content:center;}
+#welcomeVideoModal.open{display:flex;}
+#welcomeVideoModal video{width:100%;height:100%;object-fit:contain;}
+#welcomeVideoModal .wv-close{position:absolute;top:18px;left:18px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#fff;font-size:1.3rem;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;}
 @media(max-width:520px){.sheikh-frame{width:140px;height:140px;}.wc-inner{padding:24px 18px;}}
 
 /* ═══ بطاقة تثبيت التطبيق (PWA Install Card) ═══ */
@@ -565,7 +572,25 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
       </div>
     </div>
     <audio id="nasheedAudio" src="nasheed.mp3" preload="none"></audio>
+
+    <div class="nasheed-player video-player">
+      <button class="vp-icon" onclick="openWelcomeVideo()" aria-label="مشاهدة الفيديو الترحيبي">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="5" width="15" height="14" rx="3" fill="currentColor"/>
+          <path d="M18.5 9.5L22 7v10l-3.5-2.5v-5z" fill="currentColor"/>
+        </svg>
+      </button>
+      <div class="np-label">
+        <div class="np-title">الفِيدْيُو التَّرْحِيبِيُّ لِلْمَوْقِعِ</div>
+        <div class="np-sub">اضغط للمشاهدة</div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div id="welcomeVideoModal">
+  <div class="wv-close" onclick="closeWelcomeVideo()" aria-label="إغلاق">✕</div>
+  <video id="welcomeVideoEl" src="sheikh-welcome.mp4" playsinline loop preload="none"></video>
 </div>
 
 <!-- البحث -->
@@ -1643,6 +1668,44 @@ function toggleNasheed(){
 }
 document.getElementById('nasheedAudio') && document.getElementById('nasheedAudio').addEventListener('ended',function(){
   document.getElementById('npBtn').textContent='▶';
+});
+
+/* الفيديو الترحيبي: تشغيل بشاشة كاملة + تكرار مستمر + إيقاف فوري عند الخروج */
+function openWelcomeVideo(){
+  var modal=document.getElementById('welcomeVideoModal');
+  var vid=document.getElementById('welcomeVideoEl');
+  modal.classList.add('open');
+  vid.currentTime=0;
+  var reqFs=modal.requestFullscreen||modal.webkitRequestFullscreen||modal.msRequestFullscreen;
+  var fsPromise = reqFs ? reqFs.call(modal) : Promise.resolve();
+  Promise.resolve(fsPromise).catch(function(){}).finally(function(){
+    vid.play().catch(function(){});
+  });
+}
+function closeWelcomeVideo(){
+  var modal=document.getElementById('welcomeVideoModal');
+  var vid=document.getElementById('welcomeVideoEl');
+  var exitFs=document.exitFullscreen||document.webkitExitFullscreen||document.msExitFullscreen;
+  if(document.fullscreenElement||document.webkitFullscreenElement){
+    (exitFs&&exitFs.call(document))||true;
+  }
+  vid.pause();
+  vid.currentTime=0;
+  modal.classList.remove('open');
+}
+['fullscreenchange','webkitfullscreenchange','msfullscreenchange'].forEach(function(evt){
+  document.addEventListener(evt,function(){
+    var isFs=document.fullscreenElement||document.webkitFullscreenElement||document.msFullscreenElement;
+    if(!isFs){
+      var modal=document.getElementById('welcomeVideoModal');
+      if(modal && modal.classList.contains('open')){
+        var vid=document.getElementById('welcomeVideoEl');
+        vid.pause();
+        vid.currentTime=0;
+        modal.classList.remove('open');
+      }
+    }
+  });
 });
 </script>
 
