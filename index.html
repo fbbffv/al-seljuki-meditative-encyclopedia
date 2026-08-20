@@ -104,6 +104,15 @@ body{
 .hero-frame::before{top:-1px;right:-1px;border-left:0;border-bottom:0;border-radius:0 20px 0 0;}
 .hero-frame::after{bottom:-1px;left:-1px;border-right:0;border-top:0;border-radius:0 0 0 20px;}
 .tugra{font-family:'Amiri Display',serif;font-size:1.35rem;color:var(--gold);letter-spacing:.35em;margin-bottom:20px;opacity:.75;}
+.dt-strip{display:flex;justify-content:space-between;align-items:center;gap:14px;max-width:900px;margin:18px auto 0;padding:0 22px;flex-wrap:wrap;}
+.dt-card{flex:1;min-width:150px;display:flex;flex-direction:column;align-items:center;gap:4px;background:linear-gradient(135deg,var(--night),#20180e);border:1.5px solid var(--gold);border-radius:16px;padding:14px 18px;box-shadow:0 4px 14px rgba(0,0,0,.18);}
+.dt-clock{font-family:'Cairo',sans-serif;font-weight:800;font-size:1.7rem;color:var(--gold-lt);letter-spacing:.05em;direction:ltr;}
+.dt-clock small{font-size:.85rem;opacity:.75;margin-right:4px;}
+.dt-label{font-family:'Amiri Display',serif;font-size:.82rem;color:var(--gold-lt);opacity:.85;}
+.dt-dates{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.dt-hijri{font-family:'Amiri Display',serif;font-size:1.05rem;color:var(--gold-lt);font-weight:700;}
+.dt-gregorian{font-family:'Cairo',sans-serif;font-size:.85rem;color:var(--gold-lt);opacity:.8;}
+@media(max-width:520px){.dt-strip{gap:8px;padding:0 14px;}.dt-card{padding:10px 8px;min-width:0;flex:1 1 0;}.dt-clock{font-size:1.15rem;}.dt-hijri{font-size:.8rem;}.dt-gregorian{font-size:.68rem;}.dt-label{font-size:.7rem;}}
 .top-emblem-wrap{text-align:center;padding:0;}
 .top-emblem-box{display:block;width:100%;background:#f0ebe2;border-top:2px solid var(--gold-l);border-bottom:2px solid var(--gold-l);padding:26px 22px;}
 .top-emblem{display:inline-block;margin:0 auto;width:clamp(220px, 42vw, 480px);max-width:100%;height:auto;}
@@ -493,7 +502,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 
 </style>
 </head>
-<body data-manifest-version="203">
+<body data-manifest-version="205">
 <button class="new-badge" id="newBadge" onclick="location.reload()">
   <span class="nb-dot"></span>
   <span>🔔 توجد مقالات جديدة — اضغط للتحديث</span>
@@ -544,6 +553,20 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     </div>
   </div>
 </section>
+
+<!-- شريط الساعة والتاريخ -->
+<div class="dt-strip">
+  <div class="dt-card">
+    <div class="dt-clock" id="liveClock">--:--:--</div>
+    <div class="dt-label">التوقيت الآن</div>
+  </div>
+  <div class="dt-card">
+    <div class="dt-dates">
+      <div class="dt-hijri" id="hijriDate">-- -- ----هـ</div>
+      <div class="dt-gregorian" id="gregorianDate">-- -- ----م</div>
+    </div>
+  </div>
+</div>
 
 <div class="quicklinks-wrap update-links-wrap">
   <button type="button" class="quicklink-btn update-btn" id="checkUpdateBtn" onclick="checkForUpdates()">
@@ -655,6 +678,16 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
       <span class="tag">جديد</span>
     </div>
     <div class="latest-grid">
+      <a class="lc" href="article205.html" style="--lc-a:#431407;--lc-b:#9a3412;">
+        <div class="lc-rib">جديد ✦</div>
+        <div class="lc-top"><div class="lc-cat">فرعُ السنة النبوية · أشراط الساعة</div><div class="lc-verse">«كيف أنعم وصاحب القرن قد التقم القرن»</div></div>
+        <div class="lc-body"><h3>حين يلتقم صاحب القرن قرنه... ويستيقظ القلب قبل أن تأتي النفخة</h3><div class="lc-cta">اقرأ المقال ←</div></div>
+      </a>
+      <a class="lc" href="article204.html" style="--lc-a:#7e22ce;--lc-b:#0f172a;">
+        <div class="lc-rib">جديد ✦</div>
+        <div class="lc-top"><div class="lc-cat">بوابة الوحيين · سورة الزلزلة</div><div class="lc-verse">﴿إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا﴾</div></div>
+        <div class="lc-body"><h3>سورة الزلزلة... حين تتكلم الأرض، وتنكشف الأعمال</h3><div class="lc-cta">اقرأ المقال ←</div></div>
+      </a>
       <a class="lc" href="article203.html" style="--lc-a:#0f172a;--lc-b:#0d9488;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">بوابة الوحيين · سورة النساء</div><div class="lc-verse">﴿وَدَّ الَّذِينَ كَفَرُوا لَوْ تَغْفُلُونَ عَنْ أَسْلِحَتِكُمْ﴾</div></div>
@@ -1089,6 +1122,10 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
               <a class="ayah-link c-plum" href="article187.html"><span class="ayah-n">آية ٦-٨</span> حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة</a>
             </div>
 <div class="surah-group c-agate">
+              <div class="surah-head" onclick="toggleGate(this)">٩٩- سورة الزلزلة <span class="surah-arrow">‹</span></div>
+              <a class="ayah-link c-agate" href="article204.html"><span class="ayah-n">السورة كاملة</span> حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة</a>
+            </div>
+<div class="surah-group c-agate">
               <div class="surah-head" onclick="toggleGate(this)">١٠٧- سورة الماعون <span class="surah-arrow">‹</span></div>
               <a class="ayah-link c-agate" href="article119.html"><span class="ayah-n">السورة كاملة</span> حين تموت الرحمة في القلب</a>
             </div>
@@ -1146,6 +1183,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
               <a class="bab-link c-sage" href="article194.html">حين يبهت الوَشْيُ… ويبقى الثوب: غربة التوحيد في آخر الزمان</a>
               <a class="bab-link c-sage" href="article195.html">«وَعُدْتُمْ مِنْ حَيْثُ بَدَأْتُمْ»… حين تدور الأيام ويعود الإسلام غريبًا</a>
               <a class="bab-link c-sage" href="article202.html">ثلاث سنوات من العطش والجوع… حين تضيق الأرض، ويبقى زاد القلب!</a>
+              <a class="bab-link c-sage" href="article205.html">حين يلتقم صاحب القرن قرنه... ويستيقظ القلب قبل أن تأتي النفخة</a>
             </div>
             <div class="bab-group c-gold">
               <div class="bab-head" onclick="toggleGate(this)">٤. باب السيرة والأخلاق الاجتماعية <span class="bab-arrow">‹</span></div>
@@ -1542,7 +1580,9 @@ var tagsData = {
     {href:"article120.html", title:"حِينُ يُحْشَرُ الْأَشْبَاهُ مَعَ الْأَشْبَاهِ"},
     {href:"article130.html", title:"حِينَ يُنْتَزَعُ اللِّبَاسُ... وَتَبْدَأُ الْهَزِيمَةُ الْأُولَى لِلْإِنْسَانِ"},
     {href:"article132.html", title:"حِينَ تَتَحَوَّلُ الْأَعْمَالُ إِلَى حَسَرَاتٍ"},
-    {href:"article192.html", title:"بينَ لَهِيبِ الإلقاءِ وَسَكِينَةِ الأمان"}
+    {href:"article192.html", title:"بينَ لَهِيبِ الإلقاءِ وَسَكِينَةِ الأمان"},
+    {href:"article204.html", title:"سورة الزلزلة... حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},
+    {href:"article205.html", title:"حين يلتقم صاحب القرن قرنه... ويستيقظ القلب قبل أن تأتي النفخة"}
   ],
   "الرحمة": [
     {href:"article124.html", title:"حِينَ تَتَكَسَّرُ القُلُوبُ عَلَى أَعْتَابِ المَغْفِرَةِ"},
@@ -1692,6 +1732,50 @@ window.addEventListener('scroll',function(){
   var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
   document.getElementById('prog').style.width=(h>0?(t/h*100):0)+'%';
 });
+
+/* الساعة الرقمية الحية + التاريخ الهجري والميلادي */
+(function(){
+  var hijriMonths=["مُحَرَّم","صَفَر","رَبِيع الأوَّل","رَبِيع الآخِر","جُمَادَى الأولى","جُمَادَى الآخِرة","رَجَب","شَعْبَان","رَمَضَان","شَوَّال","ذُو القَعْدَة","ذُو الحِجَّة"];
+  var gregMonths=["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"];
+  var weekDays=["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"];
+
+  function toHijri(date){
+    // خوارزمية تقريبية موثوقة (تقويم أم القرى التقديري) بالاعتماد على Intl إن توفر
+    try{
+      var fmt = new Intl.DateTimeFormat('en-TN-u-ca-islamic-umalqura',{day:'numeric',month:'numeric',year:'numeric'});
+      var parts = fmt.formatToParts(date);
+      var d={}; parts.forEach(function(p){ d[p.type]=p.value; });
+      return {day:parseInt(d.day,10), month:parseInt(d.month,10), year:parseInt(d.year,10)};
+    }catch(e){
+      return null;
+    }
+  }
+
+  function pad(n){ return n<10 ? '0'+n : ''+n; }
+
+  function update(){
+    var now = new Date();
+    var clockEl = document.getElementById('liveClock');
+    if(clockEl){
+      clockEl.textContent = pad(now.getHours())+':'+pad(now.getMinutes())+':'+pad(now.getSeconds());
+    }
+    var gEl = document.getElementById('gregorianDate');
+    if(gEl){
+      gEl.textContent = weekDays[now.getDay()]+'، '+now.getDate()+' '+gregMonths[now.getMonth()]+' '+now.getFullYear()+'م';
+    }
+    var hEl = document.getElementById('hijriDate');
+    if(hEl){
+      var h = toHijri(now);
+      if(h){
+        hEl.textContent = h.day+' '+(hijriMonths[h.month-1]||'')+' '+h.year+'هـ';
+      } else {
+        hEl.textContent = '';
+      }
+    }
+  }
+  update();
+  setInterval(update, 1000);
+})();
 </script>
 
 <script>
