@@ -1765,7 +1765,11 @@ window.addEventListener('scroll',function(){
     var now = new Date();
     var clockEl = document.getElementById('liveClock');
     if(clockEl){
-      clockEl.textContent = pad(now.getHours())+':'+pad(now.getMinutes())+':'+pad(now.getSeconds());
+      var h24 = now.getHours();
+      var period = h24 >= 12 ? 'م' : 'ص';
+      var h12 = h24 % 12;
+      if(h12 === 0) h12 = 12;
+      clockEl.innerHTML = pad(h12)+':'+pad(now.getMinutes())+':'+pad(now.getSeconds())+' <small>'+period+'</small>';
     }
     var gEl = document.getElementById('gregorianDate');
     if(gEl){
