@@ -20,20 +20,20 @@ gtag('config', 'G-1Y000RD20N');
 <link href="https://fonts.googleapis.com/css2?family=Amiri+Display&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#1c2733; --parch:#F9F8F6; --gold:#8a6a12; --gold-l:#D4AF37; --gold-lt:#E8CD6E;
+  --ink:#1c2733; --parch:#F9F8F6; --gold:#5c4408; --gold-l:#D4AF37; --gold-lt:#E8CD6E;
   --night:#0A192F; --line:rgba(212,175,55,.7);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.8;font-weight:600;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;}
+body{background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.8;font-weight:600;font-feature-settings:"kern" 1,"liga" 1,"calt" 1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;}
 .hdr{background:var(--night);padding:26px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;}
-.hdr h1{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.5rem;font-weight:800;margin-bottom:8px;}
+.hdr h1{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:clamp(1.3rem,2.5vw + 0.4rem,2.4rem);font-weight:800;margin-bottom:8px;text-shadow:0 1px 3px rgba(0,0,0,.5);}
 .hdr p{color:#cbd5e1;font-size:.85rem;}
 .home-link{display:inline-block;margin-top:12px;color:var(--gold-lt);font-size:.85rem;text-decoration:none;border:1px solid rgba(212,178,90,.65);padding:6px 16px;border-radius:20px;font-weight:600;}
 .home-link:hover{background:rgba(212,178,90,.15);}
 .sm-wrap{max-width:900px;margin:0 auto;padding:36px 20px 70px;}
 .sm-stats{text-align:center;background:rgba(255,255,255,.92);border:1.5px solid var(--line);border-radius:14px;padding:18px;margin-bottom:30px;font-family:'Amiri Display',serif;font-size:1.05rem;box-shadow:0 2px 10px rgba(10,25,47,.08);}
-.sm-branch{background:#fff;border:1.5px solid var(--line);border-radius:14px;margin-bottom:16px;overflow:hidden;box-shadow:0 3px 12px rgba(10,25,47,.06);}
+.sm-branch{background:#fff;border:1.5px solid var(--line);border-radius:14px;margin-bottom:16px;overflow:hidden;box-shadow:0 4px 18px rgba(10,25,47,.1);}
 .sm-branch-h{background:var(--bc);color:#fff;padding:16px 22px;cursor:pointer;font-family:'Amiri Display',serif;font-size:1.1rem;font-weight:700;display:flex;align-items:center;gap:10px;}
 .sm-arrow{transition:transform .25s;font-size:.9rem;}
 .sm-branch.open .sm-arrow{transform:rotate(180deg);}
@@ -46,11 +46,15 @@ body{background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;lin
 .sm-links{list-style:none;padding-right:16px;}
 .sm-links li{padding:6px 0;border-bottom:1px dashed var(--line);}
 .sm-links li:last-child{border-bottom:none;}
-.sm-links a{color:var(--ink);text-decoration:none;font-size:.9rem;transition:color .2s;}
+.sm-links a{color:var(--ink);text-decoration:none;font-size:clamp(.9rem,1vw + 0.3rem,1.05rem);font-weight:700;transition:color .2s;}
 .sm-links a:hover{color:var(--gold);text-decoration:underline;}
 .sm-verse{font-size:.72rem;color:var(--gold);background:rgba(212,175,55,.12);padding:2px 8px;border-radius:10px;margin-left:6px;font-weight:700;}
 footer{background:var(--night);color:#f8fafc;text-align:center;padding:26px 20px;font-size:.85rem;border-top:3px solid var(--gold-l);margin-top:30px;}
 footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:6px;font-weight:800;color:var(--gold-l);}
+@media screen and (min-width:1921px){
+  body{font-size:20px;}
+  .sm-wrap{max-width:1300px;}
+}
 </style>
 </head>
 <body>
