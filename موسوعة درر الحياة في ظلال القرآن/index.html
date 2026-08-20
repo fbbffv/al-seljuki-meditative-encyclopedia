@@ -7,13 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Amiri+Display&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#0A192F;--parch:#F9F8F6;--gold:#8a6a12;--gold-l:#D4AF37;
+  --ink:#0A192F;--parch:#F9F8F6;--gold:#5c4408;--gold-l:#D4AF37;
   --lapis:#0A192F;--agate:#6b1f35;--sage:#14304a;--night:#0A192F;
   --line:rgba(212,175,55,.7);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{max-width:100%;overflow-wrap:break-word;background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.9;font-weight:600;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;transition:background .3s,color .3s;}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;}
+body{max-width:100%;overflow-wrap:break-word;background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.9;font-weight:600;font-feature-settings:"kern" 1,"liga" 1,"calt" 1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;transition:background .3s,color .3s;}
 body.dark{--ink:#E8CD6E;--parch:#0A192F;background:#0A192F;}
 body.dark .intro{background:rgba(13,27,42,.85) !important;color:#E8CD6E !important;}
 body.dark .surah-item,body.dark .card{background:rgba(13,27,42,.7) !important;color:#E8CD6E !important;}
@@ -22,14 +22,14 @@ body.sepia{--ink:#0A192F;--parch:#F4ECD8;background:#F4ECD8;}
 .mode-btn{width:34px;height:34px;border-radius:8px;border:1px solid rgba(212,178,90,.5);background:rgba(255,255,255,.08);color:#E8CD6E;cursor:pointer;font-size:.95rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
 .mode-btn.on{background:rgba(212,175,55,.35);}
 .hdr{background:var(--night);padding:22px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;overflow-x:hidden;}
-.hdr h1{font-family:'Amiri Display',serif;color:#F9F8F6;font-size:1.6rem;margin-bottom:6px;}
+.hdr h1{font-family:'Amiri Display',serif;color:#F9F8F6;font-size:clamp(1.3rem,2.5vw + 0.4rem,2.2rem);margin-bottom:6px;font-weight:800;text-shadow:0 1px 3px rgba(0,0,0,.5);}
 .hdr p{color:#D4AF37;font-size:.9rem;}
 .home-link{display:inline-block;margin-top:12px;color:#E8CD6E;font-size:.85rem;text-decoration:none;border:1px solid rgba(212,178,90,.65);padding:6px 16px;border-radius:20px;font-weight:600;}
 .wrap{max-width:820px;margin:0 auto;padding:30px 18px 60px;}
-.intro{background:rgba(255,255,255,.92);border:1.5px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:28px;font-family:'Amiri Display',serif;font-size:1.05rem;text-align:center;color:#0A192F;box-shadow:0 2px 10px rgba(10,25,47,.08);}
+.intro{background:rgba(255,255,255,.92);border:1.5px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:28px;font-family:'Amiri Display',serif;font-size:clamp(1.05rem,1.2vw + 0.3rem,1.35rem);font-weight:700;text-align:center;color:#0A192F;box-shadow:0 4px 18px rgba(10,25,47,.14);}
 .progress-note{text-align:center;font-family:'Cairo',sans-serif;font-size:.85rem;color:var(--sage);margin-bottom:24px;background:rgba(20,48,74,.08);border:1px solid rgba(20,48,74,.25);border-radius:20px;padding:8px 16px;display:inline-block;}
 .progress-wrap{text-align:center;}
-.surah-item{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px;display:flex;align-items:center;gap:16px;box-shadow:0 2px 10px rgba(18,13,9,.06);flex-wrap:wrap;}
+.surah-item{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px;display:flex;align-items:center;gap:16px;box-shadow:0 4px 16px rgba(18,13,9,.1);flex-wrap:wrap;}
 .surah-num{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Amiri Display',serif;font-weight:700;font-size:1.1rem;flex-shrink:0;}
 .surah-name{font-family:'Amiri Display',serif;font-size:1.25rem;font-weight:700;color:var(--ink);flex:1;min-width:120px;}
 .surah-btns{display:flex;gap:8px;flex-wrap:wrap;}
@@ -40,9 +40,10 @@ body.sepia{--ink:#0A192F;--parch:#F4ECD8;background:#F4ECD8;}
 .surah-item.pending{opacity:.45;background:rgba(255,255,255,.3);}
 .surah-item.pending .surah-num{background:#E8CD6E;}
 .surah-item.pending .surah-name{color:#1c2733;}
-.pending-tag{font-size:.72rem;color:#8a6a12;background:rgba(143,106,26,.12);padding:3px 10px;border-radius:12px;}
-footer{text-align:center;padding:24px;color:#1c2733;font-size:.82rem;}
+.pending-tag{font-size:.72rem;color:#5c4408;background:rgba(143,106,26,.12);padding:3px 10px;border-radius:12px;font-weight:700;}
+footer{text-align:center;padding:24px;color:#1c2733;font-size:.82rem;font-weight:600;}
 @media(max-width:480px){.surah-item{padding:13px 15px;}.surah-name{font-size:1.1rem;}.sbtn{padding:7px 13px;font-size:.8rem;}}
+@media screen and (min-width:1921px){body{font-size:20px;}}
 </style>
 </head>
 <body>
