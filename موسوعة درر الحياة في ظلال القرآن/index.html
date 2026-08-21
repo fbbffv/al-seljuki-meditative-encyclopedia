@@ -19,6 +19,9 @@ body.dark .intro{background:rgba(13,27,42,.85) !important;color:#E8CD6E !importa
 body.dark .surah-item,body.dark .card{background:rgba(13,27,42,.7) !important;color:#E8CD6E !important;}
 body.sepia{--ink:#0A192F;--parch:#F4ECD8;background:#F4ECD8;}
 .mode-btns{display:flex;gap:6px;justify-content:center;margin-top:10px;}
+.hdr-top-bar{display:flex;justify-content:space-between;align-items:center;max-width:760px;margin:0 auto;}
+.back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--gold-lt);font-size:.85rem;text-decoration:none;border:1px solid rgba(212,178,90,.65);padding:7px 16px;border-radius:20px;font-weight:600;background:rgba(212,178,90,.08);transition:background .2s;}
+.back-btn:hover{background:rgba(212,178,90,.22);}
 .mode-btn{width:34px;height:34px;border-radius:8px;border:1px solid rgba(212,178,90,.5);background:rgba(255,255,255,.08);color:#E8CD6E;cursor:pointer;font-size:.95rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
 .mode-btn.on{background:rgba(212,175,55,.35);}
 .hdr{background:var(--night);padding:22px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;overflow-x:hidden;}
@@ -50,11 +53,13 @@ footer{text-align:center;padding:24px;color:#1c2733;font-size:.82rem;font-weight
 <div class="hdr">
   <h1>مَوْسُوعَةُ دُرَرِ الْحَيَاةِ فِي ظِلَالِ الْقُرْآنِ</h1>
   <p>تأليف الشيخ علي خليل عباس السلجوقي التركماني الليلاني</p>
-  <a class="home-link" href="../index.html">⌂ العودة إلى الفهرس الرئيسي</a>
-  <div class="mode-btns">
-    <button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
-    <button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="دافئ">◐</button>
-    <button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
+  <div class="hdr-top-bar">
+    <a class="back-btn" href="../index.html">→ رجوع</a>
+    <div class="mode-btns">
+      <button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
+      <button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="دافئ">◐</button>
+      <button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
+    </div>
   </div>
 </div>
 
