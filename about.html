@@ -32,6 +32,12 @@ body{
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
   background-image:none;
 }
+body.dark{--ink:#E8CD6E;--parch:#08111f;background:#08111f;}
+body.dark .section{background:rgba(13,27,42,.85) !important;}
+body.dark .section p,body.dark .mission-item p{color:#E8CD6E !important;}
+body.dark .mission-item{background:rgba(13,27,42,.7) !important;}
+body.sepia{--ink:#0A192F;--parch:#F4ECD8;background:#F4ECD8;}
+body.sepia .section{background:rgba(255,255,255,.7) !important;}
 .hdr{background:var(--night);padding:26px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;}
 .hdr h1{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:clamp(1.3rem,2.5vw + 0.4rem,2.4rem);font-weight:800;margin-bottom:8px;text-shadow:0 1px 3px rgba(0,0,0,.5);}
 .hdr p{color:#cbd5e1;font-size:.85rem;}
@@ -96,9 +102,7 @@ footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:6px
     <button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
   </div>
 </div>
-<h1>◈ مَنْ نَحْنُ</h1>
-<p>موسوعة السلجوقي التدبرية</p>
-<a href="index.html" class="home-link">⌂ العودة إلى الفهرس الرئيسي</a>
+<h1>◈ مَنْ نَحْنُ</h1><p>موسوعة السلجوقي التدبرية</p>
 </header>
 
 <div class="wrap">
