@@ -32,6 +32,11 @@ body{
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
   background-image:none;
 }
+body.dark{--ink:#E8CD6E;--parch:#08111f;background:#08111f;}
+body.dark .branch{background:rgba(13,27,42,.85) !important;}
+body.dark .intro{background:rgba(13,27,42,.7) !important;color:#E8CD6E !important;}
+body.sepia{--ink:#0A192F;--parch:#F4ECD8;background:#F4ECD8;}
+body.sepia .branch{background:rgba(255,255,255,.7) !important;}
 .hdr{background:var(--night);padding:28px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;}
 .hdr h1{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:clamp(1.3rem,2.5vw + 0.4rem,2.3rem);font-weight:800;margin-bottom:8px;text-shadow:0 1px 3px rgba(0,0,0,.5);}
 .hdr p{color:#cbd5e1;font-size:.9rem;}
