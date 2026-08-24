@@ -1,5 +1,5 @@
 {
-  "version": 221,
+  "version": 223,
   "articles": [
     "article-alsuljuqi.html",
     "article-hawa-sharia.html",
@@ -131,12 +131,7 @@
     "article214.html",
     "article215.html",
     "article216.html",
-    "article217.html",
-    "article218.html",
-    "article219.html",
     "article22-qa-aljubb.html",
-    "article220.html",
-    "article221.html",
     "article23-sayaalam.html",
     "article24-alqab-mamlaka.html",
     "article26-sabbih-alaala.html",
@@ -219,6 +214,8 @@
     "article96.html",
     "article97.html",
     "article98.html",
-    "article99.html"
+    "article99.html",
+    "article222.html",
+    "article223.html"
   ]
 }
