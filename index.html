@@ -3121,6 +3121,15 @@ function checkForUpdates(){
   window.addEventListener('appinstalled', function(){
     dismissInstall();
     updateHeaderBtn();
+    try{
+      if(window.goatcounter && window.goatcounter.count){
+        window.goatcounter.count({
+          path: 'pwa-install',
+          title: 'تثبيت التطبيق',
+          event: true
+        });
+      }
+    }catch(e){}
   });
 
   // آيفون وآيباد (سفاري لا يدعم beforeinstallprompt)
