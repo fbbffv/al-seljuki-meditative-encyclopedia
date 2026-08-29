@@ -1548,6 +1548,228 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 }
 </style>
 
+
+
+<style id="realistic-hardcover-books-v2">
+/* =========================================================
+   مجسم كتاب واقعي — الغلاف الأصلي هو الوجه الأمامي نفسه
+   لا توجد حدود ذهبية اصطناعية ولا إعادة رسم لنص الغلاف.
+   ========================================================= */
+
+#booksSec .book-card{
+  overflow:visible !important;
+  isolation:isolate;
+}
+
+#booksSec .book-cover{
+  width:190px !important;
+  height:275px !important;
+  flex-shrink:0 !important;
+  perspective:1800px !important;
+  perspective-origin:42% 52% !important;
+  position:relative !important;
+  overflow:visible !important;
+  margin:0 10px 24px 0 !important;
+  filter:drop-shadow(11px 24px 20px rgba(0,0,0,.30));
+}
+
+/* الظل الأرضي: بيضاوي ناعم بدل كتلة سوداء */
+#booksSec .book-cover::after{
+  content:"" !important;
+  position:absolute !important;
+  left:9% !important;
+  right:-10% !important;
+  bottom:-22px !important;
+  height:30px !important;
+  border-radius:50% !important;
+  background:rgba(20,15,8,.30) !important;
+  filter:blur(13px) !important;
+  transform:rotate(-2deg) !important;
+  pointer-events:none !important;
+  z-index:-5 !important;
+}
+
+/* جسم الكتاب */
+#booksSec .book-cover-3d{
+  width:100% !important;
+  height:100% !important;
+  position:relative !important;
+  transform-style:preserve-3d !important;
+  transform-origin:30% 50% !important;
+  transform:rotateY(-17deg) rotateX(1.2deg) !important;
+  border-radius:2px 5px 5px 2px !important;
+  background:transparent !important;
+  box-shadow:
+    0 16px 22px rgba(0,0,0,.25),
+    4px 7px 10px rgba(0,0,0,.18) !important;
+  transition:transform .55s cubic-bezier(.2,.75,.25,1),filter .55s ease !important;
+}
+
+/* كتلة الصفحات — لون ورق طبيعي مع خطوط دقيقة غير منتظمة */
+#booksSec .book-pages{
+  position:absolute !important;
+  z-index:1 !important;
+  top:4px !important;
+  right:-16px !important;
+  bottom:4px !important;
+  width:17px !important;
+  border-radius:0 4px 4px 0 !important;
+  background:
+    linear-gradient(90deg,
+      rgba(123,99,58,.20) 0%,
+      rgba(250,241,215,.98) 16%,
+      rgba(255,249,229,1) 55%,
+      rgba(216,196,151,.88) 100%
+    ) !important;
+  box-shadow:
+    inset 2px 0 3px rgba(90,67,31,.22),
+    inset -2px 0 3px rgba(90,67,31,.14),
+    3px 2px 7px rgba(0,0,0,.22) !important;
+  transform:translateZ(-7px) !important;
+  overflow:hidden !important;
+}
+
+/* خطوط الصفحات الدقيقة */
+#booksSec .book-pages::before{
+  content:"" !important;
+  position:absolute !important;
+  inset:2px 1px !important;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(120,91,42,.00) 0px,
+      rgba(120,91,42,.00) 1px,
+      rgba(120,91,42,.16) 1.25px,
+      rgba(120,91,42,.16) 1.7px,
+      rgba(255,255,255,.00) 2.8px,
+      rgba(255,255,255,.00) 4px
+    ) !important;
+  opacity:.72 !important;
+  mix-blend-mode:multiply !important;
+}
+
+/* تموج خفيف جدًا على حافة الورق حتى لا تبدو كخطوط هندسية */
+#booksSec .book-pages::after{
+  content:"" !important;
+  position:absolute !important;
+  top:3px !important;
+  right:1px !important;
+  bottom:3px !important;
+  width:4px !important;
+  border-radius:0 4px 4px 0 !important;
+  background:
+    repeating-linear-gradient(
+      178deg,
+      rgba(90,67,30,.08) 0 7px,
+      rgba(255,255,255,.28) 7px 12px,
+      rgba(90,67,30,.05) 12px 18px
+    ) !important;
+  opacity:.7 !important;
+}
+
+/* كعب خلفي داكن: يظهر فقط بقدر منظور الكتاب */
+#booksSec .book-spine{
+  position:absolute !important;
+  z-index:0 !important;
+  left:-10px !important;
+  top:2px !important;
+  bottom:2px !important;
+  width:13px !important;
+  border-radius:4px 0 0 4px !important;
+  background:
+    linear-gradient(90deg,#16120d 0%,#2b2114 42%,#4b391d 72%,#1b140c 100%) !important;
+  box-shadow:
+    inset -1px 0 2px rgba(255,255,255,.08),
+    -3px 2px 6px rgba(0,0,0,.24) !important;
+  transform:translateZ(-8px) rotateY(-90deg) !important;
+  transform-origin:right center !important;
+}
+
+/* الحافة العلوية للورق: قصيرة، غير مبالغ فيها */
+#booksSec .book-top-pages{
+  position:absolute !important;
+  z-index:0 !important;
+  top:-5px !important;
+  left:7px !important;
+  right:-10px !important;
+  height:7px !important;
+  border-radius:3px 5px 0 0 !important;
+  background:
+    linear-gradient(180deg,#fff8e3 0%,#eadbb8 55%,#cdbb8d 100%) !important;
+  box-shadow:
+    inset 0 -1px 2px rgba(95,72,35,.20),
+    0 -1px 4px rgba(0,0,0,.12) !important;
+  transform:skewX(-9deg) rotateX(70deg) !important;
+  transform-origin:bottom center !important;
+}
+
+/* خط فاصل رفيع بين الغلاف وكتلة الورق */
+#booksSec .book-cover-3d img{
+  position:relative !important;
+  z-index:4 !important;
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  border:0 !important;
+  border-radius:2px 5px 5px 2px !important;
+  box-shadow:
+    inset 4px 0 10px rgba(0,0,0,.16),
+    inset -1px 0 3px rgba(255,255,255,.04) !important;
+  backface-visibility:hidden !important;
+}
+
+/* لمعة شبه غير محسوسة: تحفظ ملمس الغلاف ولا تغطي النص */
+#booksSec .book-cover-3d::after{
+  content:"" !important;
+  position:absolute !important;
+  z-index:5 !important;
+  inset:2px !important;
+  border-radius:2px 5px 5px 2px !important;
+  background:linear-gradient(
+    112deg,
+    rgba(255,255,255,.014),
+    transparent 23%,
+    transparent 89%
+  ) !important;
+  pointer-events:none !important;
+}
+
+@media (hover:hover) and (pointer:fine){
+  #booksSec .book-card:hover .book-cover-3d{
+    transform:rotateY(-22deg) rotateX(2.5deg) translateY(-6px) !important;
+    filter:brightness(1.025) !important;
+  }
+}
+
+@media screen and (max-width:640px){
+  #booksSec .book-cover{
+    width:min(175px,68vw) !important;
+    height:min(252px,98vw) !important;
+    margin:0 auto 18px !important;
+    filter:drop-shadow(7px 18px 15px rgba(0,0,0,.28));
+  }
+  #booksSec .book-cover-3d{
+    transform:rotateY(-12deg) rotateX(1deg) !important;
+  }
+  #booksSec .book-pages{
+    right:-13px !important;
+    width:14px !important;
+  }
+  #booksSec .book-spine{
+    left:-8px !important;
+    width:11px !important;
+  }
+  #booksSec .book-top-pages{
+    right:-8px !important;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  #booksSec .book-cover-3d{transition:none !important;}
+}
+</style>
+
 </head>
 <body data-manifest-version="239">
 <button class="new-badge" id="newBadge" onclick="checkForUpdates()">
@@ -3068,6 +3290,9 @@ function checkForUpdates(){
   var finish = function(msg, revert){
     lbl.textContent = msg;
     icon.classList.remove('spin');
+    /* لا تبقى شارة التحديث ظاهرة بعد التأكد من أن الصفحة محدثة */
+    var badge = document.getElementById('newBadge');
+    if(badge) badge.classList.remove('show');
     setTimeout(function(){
       lbl.textContent = revert;
       btn.disabled = false;
@@ -3080,12 +3305,16 @@ function checkForUpdates(){
         if(window.__swReg.waiting){
           lbl.textContent = '✓ تم العثور على تحديث، جارٍ التطبيق...';
           icon.classList.remove('spin');
+          var badge = document.getElementById('newBadge');
+          if(badge) badge.classList.remove('show');
           window.__swReg.waiting.postMessage({type:'SKIP_WAITING'});
         } else {
           finish('✓ الموسوعة محدَّثة بالفعل', 'تَحْدِيثُ المَوْسُوعَةِ');
         }
       }, 900);
     }).catch(function(){
+      var badge = document.getElementById('newBadge');
+      if(badge) badge.classList.remove('show');
       finish('تعذّر التحقق، تحقق من الاتصال', 'تَحْدِيثُ المَوْسُوعَةِ');
     });
   } else {
