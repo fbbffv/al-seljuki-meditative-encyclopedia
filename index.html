@@ -1548,6 +1548,155 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 }
 </style>
 
+
+<style id="luxury-book-3d-v1">
+/* عرض الأغلفة ككتب فاخرة ثلاثية الأبعاد — لا يغيّر ملفات الأغلفة نفسها */
+#booksSec .book-card{
+  overflow:visible !important;
+  isolation:isolate;
+}
+
+#booksSec .book-cover{
+  width:190px !important;
+  height:265px !important;
+  perspective:1200px !important;
+  perspective-origin:50% 50% !important;
+  position:relative !important;
+  filter:drop-shadow(0 22px 24px rgba(0,0,0,.38));
+  margin-left:10px;
+}
+
+#booksSec .book-cover::after{
+  content:"";
+  position:absolute;
+  left:10%;
+  right:-8%;
+  bottom:-18px;
+  height:28px;
+  border-radius:50%;
+  background:rgba(0,0,0,.38);
+  filter:blur(13px);
+  transform:rotate(-2deg);
+  pointer-events:none;
+  z-index:-1;
+}
+
+#booksSec .book-cover-3d{
+  width:100% !important;
+  height:100% !important;
+  position:relative !important;
+  transform-style:preserve-3d !important;
+  transform-origin:42% 50% !important;
+  transform:rotateY(-14deg) rotateX(1.5deg) !important;
+  border-radius:3px 8px 8px 3px !important;
+  box-shadow:
+    0 18px 28px rgba(0,0,0,.48),
+    8px 8px 0 rgba(0,0,0,.12),
+    13px 13px 0 rgba(0,0,0,.08) !important;
+  transition:transform .55s cubic-bezier(.2,.8,.25,1),filter .55s ease !important;
+}
+
+#booksSec .book-card:hover .book-cover-3d{
+  transform:rotateY(-22deg) rotateX(3deg) translateY(-7px) !important;
+  filter:brightness(1.04);
+}
+
+#booksSec .book-cover-3d img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  display:block !important;
+  position:relative !important;
+  z-index:3 !important;
+  border:2px solid #d8b45a !important;
+  border-radius:3px 8px 8px 3px !important;
+  box-shadow:
+    inset 5px 0 10px rgba(0,0,0,.28),
+    inset -2px 0 5px rgba(255,255,255,.12) !important;
+}
+
+#booksSec .book-cover-3d::before{
+  content:"";
+  position:absolute;
+  left:-16px;
+  top:3px;
+  bottom:3px;
+  width:16px;
+  z-index:2;
+  background:
+    linear-gradient(90deg,#120f0a 0%,#2c2415 35%,#8f6f2d 68%,#211a0d 100%);
+  transform:rotateY(-90deg);
+  transform-origin:right center;
+  border-radius:3px 0 0 3px;
+  box-shadow:
+    inset 0 0 0 1px rgba(232,205,110,.55),
+    -5px 0 9px rgba(0,0,0,.28);
+}
+
+#booksSec .book-cover-3d::after{
+  content:"";
+  position:absolute;
+  top:3px;
+  right:-13px;
+  bottom:3px;
+  width:13px;
+  z-index:1;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #f0dfb0 0,
+      #f0dfb0 1px,
+      #b9a77a 1px,
+      #b9a77a 2px,
+      #e6d39f 2px,
+      #e6d39f 4px
+    );
+  transform:translateZ(-3px);
+  border-radius:0 4px 4px 0;
+  box-shadow:
+    inset -2px 0 3px rgba(0,0,0,.25),
+    4px 3px 8px rgba(0,0,0,.25);
+}
+
+#booksSec .book-info{
+  position:relative;
+  z-index:5;
+}
+
+#booksSec .book-info h3{
+  text-shadow:0 2px 10px rgba(0,0,0,.35);
+}
+
+#booksSec .book-btn{
+  box-shadow:0 8px 18px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.25);
+}
+
+/* فروق لونية فاخرة خفيفة بين الكتب دون تغيير هوية الموقع */
+#booksSec .book-card:nth-of-type(1) .book-cover-3d img{
+  border-color:#caa44d !important;
+}
+#booksSec .book-card:nth-of-type(2) .book-cover-3d img{
+  border-color:#d7b85a !important;
+}
+#booksSec .book-card:nth-of-type(3) .book-cover-3d img{
+  border-color:#e0c06b !important;
+}
+
+@media (max-width:640px){
+  #booksSec .book-cover{
+    width:min(190px,72vw) !important;
+    height:min(265px,100vw) !important;
+    margin:0 auto 16px !important;
+  }
+  #booksSec .book-cover-3d{
+    transform:rotateY(-10deg) rotateX(1deg) !important;
+  }
+  #booksSec .book-card:hover .book-cover-3d{
+    transform:rotateY(-13deg) rotateX(1.5deg) translateY(-3px) !important;
+  }
+}
+</style>
+
 </head>
 <body data-manifest-version="239">
 <button class="new-badge" id="newBadge" onclick="checkForUpdates()">
