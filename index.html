@@ -1548,161 +1548,8 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 }
 </style>
 
-
-<style id="realistic-hardcover-books-v1">
-/* مجسمات كتب واقعية للأغلفة الثلاثة — الغلاف الأصلي لا يُعاد رسمه أو تغييره */
-#booksSec .book-cover{
-  width:190px !important;
-  height:275px !important;
-  flex-shrink:0 !important;
-  perspective:1400px !important;
-  perspective-origin:48% 50% !important;
-  position:relative !important;
-  overflow:visible !important;
-  margin:0 8px 20px 0 !important;
-  filter:drop-shadow(10px 24px 22px rgba(0,0,0,.32));
-}
-
-#booksSec .book-cover-3d{
-  width:100% !important;
-  height:100% !important;
-  position:relative !important;
-  transform-style:preserve-3d !important;
-  transform-origin:34% 50% !important;
-  transform:rotateY(-18deg) rotateX(1deg) !important;
-  border-radius:3px 8px 8px 3px !important;
-  box-shadow:
-    0 14px 24px rgba(0,0,0,.34),
-    0 3px 5px rgba(0,0,0,.28) !important;
-  transition:transform .55s cubic-bezier(.2,.75,.25,1),filter .55s ease !important;
-  background:transparent !important;
-}
-
-/* الصفحات: كتلة ورقية حقيقية خلف الغلاف */
-#booksSec .book-pages{
-  position:absolute !important;
-  z-index:1 !important;
-  top:3px !important;
-  right:-18px !important;
-  bottom:3px !important;
-  width:18px !important;
-  border-radius:0 5px 5px 0 !important;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      #f7edcf 0, #f7edcf 1px,
-      #d8c89e 1px, #d8c89e 2px,
-      #fff7dc 2px, #fff7dc 4px
-    ) !important;
-  box-shadow:
-    inset -2px 0 3px rgba(80,55,20,.22),
-    5px 4px 9px rgba(0,0,0,.23) !important;
-  transform:translateZ(-5px) !important;
-}
-
-/* ظهر/كعب الكتاب */
-#booksSec .book-spine{
-  position:absolute !important;
-  z-index:0 !important;
-  left:-18px !important;
-  top:2px !important;
-  bottom:2px !important;
-  width:18px !important;
-  border-radius:4px 0 0 4px !important;
-  background:
-    linear-gradient(90deg,#15100a 0%,#4c3918 42%,#b18a36 70%,#2a1d0d 100%) !important;
-  box-shadow:
-    inset 0 0 0 1px rgba(230,195,100,.55),
-    -5px 3px 9px rgba(0,0,0,.28) !important;
-  transform:rotateY(-90deg) !important;
-  transform-origin:right center !important;
-}
-
-/* حافة الصفحات العلوية */
-#booksSec .book-top-pages{
-  position:absolute !important;
-  z-index:0 !important;
-  top:-9px !important;
-  left:4px !important;
-  right:-12px !important;
-  height:9px !important;
-  border-radius:3px 5px 0 0 !important;
-  background:
-    repeating-linear-gradient(
-      0deg,
-      #fff6d9 0, #fff6d9 1px,
-      #d5c395 1px, #d5c395 2px
-    ) !important;
-  transform:skewX(-12deg) rotateX(72deg) !important;
-  transform-origin:bottom center !important;
-  box-shadow:0 -2px 5px rgba(0,0,0,.16) !important;
-}
-
-/* الغلاف نفسه يبقى الصورة الأصلية دون أي إعادة رسم */
-#booksSec .book-cover-3d img{
-  position:relative !important;
-  z-index:4 !important;
-  display:block !important;
-  width:100% !important;
-  height:100% !important;
-  object-fit:cover !important;
-  border:0 !important;
-  border-radius:2px 5px 5px 2px !important;
-  box-shadow:
-    inset 4px 0 9px rgba(0,0,0,.18),
-    inset -2px 0 4px rgba(255,255,255,.045) !important;
-  backface-visibility:hidden !important;
-}
-
-/* لمعان زجاجي خفيف فوق الغلاف دون المساس بالنص */
-#booksSec .book-cover-3d::after{
-  content:"" !important;
-  position:absolute !important;
-  z-index:5 !important;
-  inset:2px !important;
-  border-radius:2px 5px 5px 2px !important;
-  background:linear-gradient(112deg,rgba(255,255,255,.018),transparent 25%,transparent 88%) !important;
-  pointer-events:none !important;
-}
-
-/* حركة بسيطة فقط على الأجهزة التي تدعم hover */
-@media (hover:hover) and (pointer:fine){
-  #booksSec .book-card:hover .book-cover-3d{
-    transform:rotateY(-24deg) rotateX(3deg) translateY(-7px) !important;
-    filter:brightness(1.035) !important;
-  }
-}
-
-/* الهاتف: كتاب واقعي لكن بلا خروج أفقي */
-@media screen and (max-width:640px){
-  #booksSec .book-cover{
-    width:min(175px,68vw) !important;
-    height:min(252px,98vw) !important;
-    margin:0 auto 14px !important;
-    filter:drop-shadow(7px 18px 16px rgba(0,0,0,.30));
-  }
-  #booksSec .book-cover-3d{
-    transform:rotateY(-13deg) rotateX(1deg) !important;
-  }
-  #booksSec .book-pages{
-    right:-14px !important;
-    width:14px !important;
-  }
-  #booksSec .book-spine{
-    left:-14px !important;
-    width:14px !important;
-  }
-  #booksSec .book-top-pages{
-    right:-9px !important;
-  }
-}
-@media (prefers-reduced-motion:reduce){
-  #booksSec .book-cover-3d{transition:none !important;}
-}
-</style>
-
 </head>
-<body data-manifest-version="237">
+<body data-manifest-version="239">
 <button class="new-badge" id="newBadge" onclick="checkForUpdates()">
   <span class="nb-dot"></span>
   <span>🔔 توجد مقالات جديدة — اضغط للتحقق والتحديث</span>
@@ -1879,108 +1726,106 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
       <h2>أَحْدَثُ مَا أُضِيفَ</h2>
       <span class="tag">جديد</span>
     </div>
-    <div class="latest-grid">
-      <a class="lc" href="articles/article237.html" style="--lc-a:#1d4ed8;--lc-b:#172554;">
+    <div class="latest-grid"><a class="lc" href="articles/article239.html" style="--lc-a:#be185d;--lc-b:#701a75;">
+<div class="lc-rib">جديد ✦</div>
+<div class="lc-top"><div class="lc-cat">مقال 239 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
+<div class="lc-body"><h3>«اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!</h3><div class="lc-cta">اقرأ المقال ←</div></div>
+</a>
+<a class="lc" href="articles/article238.html" style="--lc-a:#7c3aed;--lc-b:#4c1d95;">
+<div class="lc-rib">جديد ✦</div>
+<div class="lc-top"><div class="lc-cat">مقال 238 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
+<div class="lc-body"><h3>حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان</h3><div class="lc-cta">اقرأ المقال ←</div></div>
+</a>
+<a class="lc" href="articles/article237.html" style="--lc-a:#1d4ed8;--lc-b:#172554;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 237 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="articles/article236.html" style="--lc-a:#b45309;--lc-b:#78350f;">
+<a class="lc" href="articles/article236.html" style="--lc-a:#b45309;--lc-b:#78350f;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 236 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>مسلمٌ يمشي بمحاذاة الحائط… حتى لا تصيبه الحقيقة!</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="articles/article235.html" style="--lc-a:#047857;--lc-b:#064e3b;">
+<a class="lc" href="articles/article235.html" style="--lc-a:#047857;--lc-b:#064e3b;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 235 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article234.html" style="--lc-a:#7e22ce;--lc-b:#3b0764;">
+<a class="lc" href="article234.html" style="--lc-a:#7e22ce;--lc-b:#3b0764;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 234 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article233.html" style="--lc-a:#be123c;--lc-b:#831843;">
+<a class="lc" href="article233.html" style="--lc-a:#be123c;--lc-b:#831843;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 233 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>الخوف العاصم: حين يوقظك «اليوم العظيم» قبل أن تزلَّ القدم</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article232.html" style="--lc-a:#0f766e;--lc-b:#134e4a;">
+<a class="lc" href="article232.html" style="--lc-a:#0f766e;--lc-b:#134e4a;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 232 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article231.html" style="--lc-a:#0369a1;--lc-b:#0c4a6e;">
+<a class="lc" href="article231.html" style="--lc-a:#0369a1;--lc-b:#0c4a6e;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 231 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>موانع التكفير الجديدة: المشيخة و«خدمة وليّ الأمر»!</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article230.html" style="--lc-a:#166534;--lc-b:#14532d;">
+<a class="lc" href="article230.html" style="--lc-a:#166534;--lc-b:#14532d;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 230 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>حين يضع الوحي عن كتفيك ثقل الطريق</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article229.html" style="--lc-a:#c2410c;--lc-b:#7c2d12;">
+<a class="lc" href="article229.html" style="--lc-a:#c2410c;--lc-b:#7c2d12;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 229 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>سيفُ السُّنّة في المولد… وغمدُه في موسم الرياض!</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article228.html" style="--lc-a:#4338ca;--lc-b:#1e1b4b;">
+<a class="lc" href="article228.html" style="--lc-a:#4338ca;--lc-b:#1e1b4b;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 228 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>الاعتصام الأخير: ربُّ الناس وملكُ الناس وإلهُ الناس</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article227.html" style="--lc-a:#a21caf;--lc-b:#701a75;">
+<a class="lc" href="article227.html" style="--lc-a:#a21caf;--lc-b:#701a75;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 227 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article226.html" style="--lc-a:#92400e;--lc-b:#451a03;">
+<a class="lc" href="article226.html" style="--lc-a:#92400e;--lc-b:#451a03;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 226 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>الغاشية: حين يستيقظ القلب قبل أن يغشاه المصير</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article225.html" style="--lc-a:#15803d;--lc-b:#14532d;">
+<a class="lc" href="article225.html" style="--lc-a:#15803d;--lc-b:#14532d;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 225 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>بوابة الأوابين… حين يعرف الله ضعفك ويعرف قلبك</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article224.html" style="--lc-a:#0e7490;--lc-b:#164e63;">
+<a class="lc" href="article224.html" style="--lc-a:#0e7490;--lc-b:#164e63;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 224 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article223.html" style="--lc-a:#9f1239;--lc-b:#4c0519;">
+<a class="lc" href="article223.html" style="--lc-a:#9f1239;--lc-b:#4c0519;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 223 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article222.html" style="--lc-a:#6d28d9;--lc-b:#3b0764;">
+<a class="lc" href="article222.html" style="--lc-a:#6d28d9;--lc-b:#3b0764;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 222 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>حين تُطوى السماء… وتُفتح صحائف الأعمال</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article221.html" style="--lc-a:#365314;--lc-b:#1a2e05;">
+<a class="lc" href="article221.html" style="--lc-a:#365314;--lc-b:#1a2e05;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 221 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>خُلُودٌ لَا يَبْلَىٰ… حين دخل الشيطان إلى الإنسان من باب الخلود</h3><div class="lc-cta">اقرأ المقال ←</div></div>
       </a>
-      <a class="lc" href="article220.html" style="--lc-a:#155e75;--lc-b:#083344;">
+<a class="lc" href="article220.html" style="--lc-a:#155e75;--lc-b:#083344;">
         <div class="lc-rib">جديد ✦</div>
         <div class="lc-top"><div class="lc-cat">مقال 220 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
         <div class="lc-body"><h3>المعايير الفقهية لتصنيف الديار: دراسة تأصيلية</h3><div class="lc-cta">اقرأ المقال ←</div></div>
-      </a>
-      <a class="lc" href="article219.html" style="--lc-a:#7c2d12;--lc-b:#431407;">
-        <div class="lc-rib">جديد ✦</div>
-        <div class="lc-top"><div class="lc-cat">مقال 219 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
-        <div class="lc-body"><h3>تروسُ الطغيان… حين يتحوّل الجندي من إنسانٍ إلى أداةٍ في يدِ الظلم</h3><div class="lc-cta">اقرأ المقال ←</div></div>
-      </a>
-      <a class="lc" href="article218.html" style="--lc-a:#1e3a8a;--lc-b:#172554;">
-        <div class="lc-rib">جديد ✦</div>
-        <div class="lc-top"><div class="lc-cat">مقال 218 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div>
-        <div class="lc-body"><h3>آية الرضوان: حين سكنت القلوب تحت الشجرة… ففتح الله أبواب السماء</h3><div class="lc-cta">اقرأ المقال ←</div></div>
-      </a>
-    </div>
+      </a></div>
   </div>
 </div>
 
@@ -1988,12 +1833,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 <section class="books" id="booksSec">
   <div class="books-inner">
 <div class="book-card">
-      <div class="book-cover"><div class="book-cover-3d">
-  <div class="book-pages"></div>
-  <div class="book-spine"></div>
-  <div class="book-top-pages"></div>
-  <img src="book1-cover.png" alt="غلاف كتاب نوادر التفاسير">
-</div></div>
+      <div class="book-cover"><div class="book-cover-3d"><img src="book1-cover.png" alt="غلاف كتاب نوادر التفاسير"></div></div>
       <div class="book-info">
         <h3>نَوَادِرُ التَّفَاسِيرِ</h3>
         <div class="book-sub">فِي شَرْحِ وَتَدَبُّرِ بَعْضِ الآيَاتِ وَالسُّوَرِ</div>
@@ -2002,12 +1842,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
       </div>
     </div>
 <div class="book-card">
-      <div class="book-cover"><div class="book-cover-3d">
-  <div class="book-pages"></div>
-  <div class="book-spine"></div>
-  <div class="book-top-pages"></div>
-  <img src="موسوعة درر الحياة في ظلال القرآن/book2-cover.png" alt="غلاف موسوعة درر الحياة في ظلال القرآن">
-</div></div>
+      <div class="book-cover"><div class="book-cover-3d"><img src="موسوعة درر الحياة في ظلال القرآن/book2-cover.png" alt="غلاف موسوعة درر الحياة في ظلال القرآن"></div></div>
       <div class="book-info">
         <h3>مَوْسُوعَةُ دُرَرِ الْحَيَاةِ فِي ظِلَالِ الْقُرْآنِ</h3>
         <div class="book-sub">مَوْسُوعَةٌ تَفْسِيرِيَّةٌ شَامِلَةٌ عَلَى أَجْزَاءٍ</div>
@@ -2018,11 +1853,8 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
 <article class="book-card">
       <div class="book-cover">
         <div class="book-cover-3d">
-  <div class="book-pages"></div>
-  <div class="book-spine"></div>
-  <div class="book-top-pages"></div>
-  <img src="book3/book3-cover.png" alt="التوحيد في ضوء الكتاب والسنة">
-</div>
+          <img src="book3/book3-cover.png" alt="التوحيد في ضوء الكتاب والسنة">
+        </div>
       </div>
       <div class="book-info">
         <h3>التوحيد</h3>
@@ -2486,6 +2318,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
               <a class="bab-link c-sage" href="article195.html">«وَعُدْتُمْ مِنْ حَيْثُ بَدَأْتُمْ»… حين تدور الأيام ويعود الإسلام غريبًا</a>
               <a class="bab-link c-sage" href="article202.html">ثلاث سنوات من العطش والجوع… حين تضيق الأرض، ويبقى زاد القلب!</a>
               <a class="bab-link c-sage" href="article205.html">حين يلتقم صاحب القرن قرنه... ويستيقظ القلب قبل أن تأتي النفخة</a>
+<a class="bab-link c-sage" href="articles/article238.html">حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان</a>
             </div>
             <div class="bab-group c-gold">
               <div class="bab-head" onclick="toggleGate(this)">٤. باب السيرة والأخلاق الاجتماعية <span class="bab-arrow">‹</span></div>
@@ -2616,6 +2449,7 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
             <div class="bab-group c-teal">
               <div class="bab-head" onclick="toggleGate(this)">٦. باب الاقتصاد والفساد <span class="bab-arrow">‹</span></div>
               <a class="bab-link c-teal" href="article9-hina-tustanzaf.html">حين تُستنزف المليارات</a>
+<a class="bab-link c-teal" href="articles/article239.html">«اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!</a>
             </div>
             <div class="bab-group c-lapis">
               <div class="bab-head" onclick="toggleGate(this)">٧. باب شمول الشريعة وحاكمية الشرع <span class="bab-arrow">‹</span></div>
@@ -2974,6 +2808,7 @@ var tagsData = {
     {href:"articles/article236.html", title:"مسلمٌ يمشي بمحاذاة الحائط… حتى لا تصيبه الحقيقة!"}
   ],
   "النبوة": [
+    {href:"articles/article238.html", title:"حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},
     {href:"article134.html", title:"حِوَارٌ مَعَ أَكْبَرِ فِتْنَةٍ عَرَفَتْهَا الْبَشَرِيَّةُ"},
     {href:"article151.html", title:"بَوْاَبَةُ النُّورِ... حِينَ يَفْتَحُ اللَّهُ لِعِبَادِهِ بَابَ الْمَحَبَّةِ"},
     {href:"article135.html", title:"حِينَ يَكْتُبُ اللَّهُ الْفَتْحَ"},
@@ -2982,6 +2817,7 @@ var tagsData = {
     {href:"article184.html", title:"منابر النور… حين يكون الحب لله وحده"}
   ],
   "السياسة": [
+    {href:"articles/article239.html", title:"«اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!"},
     {href:"articles/article235.html", title:"حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},
     {href:"article231.html", title:"موانع التكفير الجديدة: المشيخة و«خدمة وليّ الأمر»!"},
     {href:"article229.html", title:"سيفُ السُّنّة في المولد… وغمدُه في موسم الرياض!"},
@@ -2998,6 +2834,7 @@ var tagsData = {
     {href:"article207.html", title:"الطَّرِيقُ إِلَى سَرَابِ أَنْقَرَةَ: سَنَوَاتُ التِّيهِ فِي صَحَرَاءِ الأُرْدُوغَانِيَّةِ"}
   ],
   "الفتن": [
+    {href:"articles/article238.html", title:"حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},
     {href:"article215.html", title:"حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء"},
 
     {href:"article63.html", title:"القابض على الجمر"},
@@ -3013,6 +2850,7 @@ var tagsData = {
     {href:"article202.html", title:"ثلاث سنوات من العطش والجوع… حين تضيق الأرض، ويبقى زاد القلب!"}
   ],
   "الطغيان": [
+    {href:"articles/article239.html", title:"«اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!"},
     {href:"article211.html", title:"حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},
 
     {href:"article177.html", title:"حين يشرّع الطاغوتُ لنفسه القتل: «ذَرُونِي أَقْتُلْ مُوسَى»"},
