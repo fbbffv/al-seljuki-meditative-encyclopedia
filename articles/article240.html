@@ -231,6 +231,37 @@ body.night .scholars, body.theme-dark .scholars { color: #fcd34d !important; }
 .amg{grid-template-columns:1fr;gap:12px;}
 }
 </style>
+
+<style id="wcag-clarity-enhancement">
+/* تحسينات التباين والوضوح فقط — دون تغيير المحتوى أو البنية أو الوظائف */
+html { color-scheme: light; }
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+.abody, .abody p {
+  hyphens: none;
+  overflow-wrap: break-word;
+}
+.hdr-btn, .back-step-btn, .theme-select, .share-article-btn, .pdf-btn,
+.reader-react .rb, .fb-sec button, .fb-sec input, .fb-sec textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+.hdr-btn:focus-visible, .back-step-btn:focus-visible, .theme-select:focus-visible,
+.share-article-btn:focus-visible, .pdf-btn:focus-visible,
+.reader-react .rb:focus-visible, .fb-sec button:focus-visible,
+.fb-sec input:focus-visible, .fb-sec textarea:focus-visible {
+  outline: 3px solid #fbbf24 !important;
+  outline-offset: 3px;
+}
+@media (prefers-contrast: more) {
+  body { color: #000 !important; background: #fff !important; }
+  .abody { color: #000 !important; }
+  .para-group-card { border-width: 3px !important; }
+}
+</style>
+
 </head>
 <body>
 <div id="prog"></div>
