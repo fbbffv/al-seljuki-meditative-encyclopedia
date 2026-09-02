@@ -26,8 +26,7 @@ jobs:
           echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> "$OUT"
 
           # ملفات HTML في الجذر — نحافظ على الروابط القديمة كما هي
-          find . -maxdepth 1 -type f -name "*.html" -print0 | sort -z | while IFS= read -r -d "" path; do
-                 file="${path#./}"
+          for file in $(find . -maxdepth 1 -type f -name "*.html" | sed 's|^\./||' | sort); do
             if [ "$file" = "index.html" ]; then
               loc="$BASE_URL/"
               priority="1.0"
@@ -44,7 +43,7 @@ jobs:
 
           # المقالات الجديدة مستقبلًا داخل مجلد articles/
           if [ -d "articles" ]; then
-            find articles -maxdepth 1 -type f -name "*.html" -print0 | sort -z | while IFS= read -r -d "" file; do
+            for file in $(find articles -maxdepth 1 -type f -name "*.html" | sort); do
               loc="$BASE_URL/$file"
               priority="0.8"
               lastmod=$(git log -1 --format=%cs -- "$file")
@@ -56,7 +55,7 @@ jobs:
           fi
 
           if [ -d "en" ]; then
-            find en -maxdepth 1 -type f -name "*.html" -print0 | sort -z | while IFS= read -r -d "" file; do
+            for file in $(find en -maxdepth 1 -name "*.html" | sed 's|^\./||' | sort); do
               if [ "$file" = "en/index.html" ]; then
                 loc="$BASE_URL/en/"
                 priority="0.9"
