@@ -583,5 +583,229 @@ function setMode(m){
   });
 }
 </script>
+<style id="seljuki-sitemap-no-text-glow-v2">
+/* Final clarity layer: remove luminous text/box effects only. */
+.sm-branch,
+.sm-branch-h,
+.sm-links,
+.sm-links a,
+.sm-group-name,
+.sm-count,
+.sm-arrow,
+.sm-verse,
+.sm-stats,
+.sm-stats *,
+.sm-branch *,
+.sm-links *,
+.sm-group-name *,
+.sm-count *,
+.sm-arrow *,
+.sm-verse * {
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.sm-branch,
+.sm-links a,
+.sm-stats,
+.sm-verse {
+  box-shadow: none !important;
+}
+
+.sm-branch-h,
+.sm-links a,
+.sm-group-name,
+.sm-count,
+.sm-arrow,
+.sm-verse,
+.sm-stats {
+  opacity: 1 !important;
+}
+
+body:not(.dark):not(.sepia) .sm-branch *,
+body.sepia .sm-branch *,
+body.dark .sm-branch * {
+  text-shadow: none !important;
+  filter: none !important;
+}
+</style>
 </body>
 </html>
+
+<style id="seljuki-sitemap-high-contrast-v1">
+/* خريطة الموقع — طبقة ألوان فقط، في الأوضاع الثلاثة.
+   لا تغيّر المحتوى أو HTML أو JavaScript أو المقاسات أو التخطيط. */
+
+/* النهاري */
+body:not(.dark):not(.sepia){
+  --ink:#07111F !important; --parch:#FFFFFF !important;
+  --gold:#6B4300 !important; --gold-l:#FFD43B !important;
+  --gold-lt:#FFF3B0 !important; --night:#07111F !important;
+  --line:#B87900 !important;
+  background:#FFFFFF !important; color:#07111F !important;
+}
+
+/* الدافئ */
+body.sepia{
+  --ink:#17120B !important; --parch:#FBF8F0 !important;
+  --gold:#6B4300 !important; --gold-l:#D49A18 !important;
+  --gold-lt:#FFF0B8 !important; --night:#07111F !important;
+  --line:#B87900 !important;
+  background:#FBF8F0 !important; color:#17120B !important;
+}
+
+/* المظلم */
+body.dark{
+  --ink:#FFFFFF !important; --parch:#07111F !important;
+  --gold:#FFD43B !important; --gold-l:#FFD43B !important;
+  --gold-lt:#FFF3B0 !important; --night:#020B18 !important;
+  --line:#D49A18 !important;
+  background:#07111F !important; color:#FFFFFF !important;
+}
+
+/* الهيدر والتذييل: نفس الوضوح في كل الأوضاع */
+body:not(.dark):not(.sepia) .hdr,
+body.sepia .hdr,
+body.dark .hdr,
+body:not(.dark):not(.sepia) footer,
+body.sepia footer,
+body.dark footer{
+  background:#07111F !important;
+  color:#FFFFFF !important;
+  border-color:#FFD43B !important;
+}
+body:not(.dark):not(.sepia) .hdr h1,
+body.sepia .hdr h1,
+body.dark .hdr h1,
+body:not(.dark):not(.sepia) footer .fb,
+body.sepia footer .fb,
+body.dark footer .fb,
+body:not(.dark):not(.sepia) .home-link,
+body.sepia .home-link,
+body.dark .home-link,
+body:not(.dark):not(.sepia) .back-btn,
+body.sepia .back-btn,
+body.dark .back-btn,
+body:not(.dark):not(.sepia) .mode-btn,
+body.sepia .mode-btn,
+body.dark .mode-btn{
+  color:#FFD43B !important;
+}
+body:not(.dark):not(.sepia) .hdr p,
+body.sepia .hdr p,
+body.dark .hdr p{
+  color:#FFFFFF !important;
+}
+body:not(.dark):not(.sepia) .home-link,
+body.sepia .home-link,
+body.dark .home-link,
+body:not(.dark):not(.sepia) .back-btn,
+body.sepia .back-btn,
+body.dark .back-btn,
+body:not(.dark):not(.sepia) .mode-btn,
+body.sepia .mode-btn,
+body.dark .mode-btn{
+  border-color:#FFD43B !important;
+  background:#10243D !important;
+}
+body:not(.dark):not(.sepia) .home-link:hover,
+body.sepia .home-link:hover,
+body.dark .home-link:hover,
+body:not(.dark):not(.sepia) .back-btn:hover,
+body.sepia .back-btn:hover,
+body.dark .back-btn:hover,
+body:not(.dark):not(.sepia) .mode-btn:hover,
+body.sepia .mode-btn:hover,
+body.dark .mode-btn:hover,
+body:not(.dark):not(.sepia) .mode-btn.on,
+body.sepia .mode-btn.on,
+body.dark .mode-btn.on{
+  background:#0757B8 !important; color:#FFFFFF !important;
+}
+
+/* إحصاءات الصفحة */
+body:not(.dark):not(.sepia) .sm-stats,
+body.sepia .sm-stats{
+  background:#FFFDF8 !important; color:#07111F !important;
+  border-color:#B87900 !important; box-shadow:none !important;
+}
+body.dark .sm-stats{
+  background:#0B1D34 !important; color:#FFFFFF !important;
+  border-color:#FFD43B !important; box-shadow:none !important;
+}
+
+/* ألوان الفروع — 9 ألوان مشبعة، مع نص أبيض عالي التباين.
+   .sm-wrap > div: الطفل الأول هو الإحصاءات، لذلك تبدأ الفروع من child 2. */
+.sm-wrap > .sm-branch:nth-child(2){--bc:#0757B8 !important;}
+.sm-wrap > .sm-branch:nth-child(3){--bc:#8B1235 !important;}
+.sm-wrap > .sm-branch:nth-child(4){--bc:#075C38 !important;}
+.sm-wrap > .sm-branch:nth-child(5){--bc:#006B73 !important;}
+.sm-wrap > .sm-branch:nth-child(6){--bc:#5B2A86 !important;}
+.sm-wrap > .sm-branch:nth-child(7){--bc:#6B4300 !important;}
+.sm-wrap > .sm-branch:nth-child(8){--bc:#A23E00 !important;}
+.sm-wrap > .sm-branch:nth-child(9){--bc:#0A5EA8 !important;}
+.sm-wrap > .sm-branch:nth-child(10){--bc:#006B5E !important;}
+
+body:not(.dark):not(.sepia) .sm-branch,
+body.sepia .sm-branch{
+  background:#FFFDF8 !important;
+  border-color:#B87900 !important;
+  box-shadow:none !important;
+}
+body.dark .sm-branch{
+  background:#0B1D34 !important;
+  border-color:#FFD43B !important;
+  box-shadow:none !important;
+}
+.sm-branch-h{
+  background:var(--bc) !important;
+  color:#FFFFFF !important;
+  text-shadow:0 1px 2px rgba(0,0,0,.55) !important;
+}
+.sm-count{
+  color:#FFFFFF !important;
+  background:rgba(0,0,0,.30) !important;
+}
+.sm-arrow{color:#FFFFFF !important;}
+
+/* أسماء المجموعات */
+body:not(.dark):not(.sepia) .sm-group-name,
+body.sepia .sm-group-name{
+  color:#07111F !important;
+  border-right-color:var(--bc) !important;
+  text-shadow:none !important;
+}
+body.dark .sm-group-name{
+  color:#FFFFFF !important;
+  border-right-color:var(--bc) !important;
+  text-shadow:0 1px 2px rgba(0,0,0,.65) !important;
+}
+
+/* روابط المقالات */
+body:not(.dark):not(.sepia) .sm-links a{color:#07111F !important;text-shadow:none !important;}
+body.sepia .sm-links a{color:#17120B !important;text-shadow:none !important;}
+body.dark .sm-links a{color:#FFFFFF !important;text-shadow:0 1px 2px rgba(0,0,0,.7) !important;}
+body:not(.dark):not(.sepia) .sm-links a:hover{color:#0757B8 !important;text-decoration:underline !important;}
+body.sepia .sm-links a:hover{color:#8A5A00 !important;text-decoration:underline !important;}
+body.dark .sm-links a:hover{color:#FFD43B !important;text-decoration:underline !important;}
+
+/* الفواصل وشارات الآيات */
+body:not(.dark):not(.sepia) .sm-links li,
+body.sepia .sm-links li{border-bottom-color:#C28A00 !important;}
+body.dark .sm-links li{border-bottom-color:#D49A18 !important;}
+body:not(.dark):not(.sepia) .sm-verse,
+body.sepia .sm-verse{
+  color:#FFFFFF !important; background:#6B4300 !important;
+}
+body.dark .sm-verse{
+  color:#07111F !important; background:#FFD43B !important;
+}
+
+/* تفاعل واضح */
+.sm-branch-h:hover{filter:brightness(1.08) saturate(1.12) !important;}
+body:not(.dark) :focus-visible,
+body.dark :focus-visible{
+  outline:3px solid #FFD43B !important;
+  outline-offset:3px !important;
+}
+</style>

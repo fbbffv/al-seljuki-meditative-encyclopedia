@@ -90,6 +90,216 @@ footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:6px
   .wrap{max-width:1200px;}
 }
 </style>
+
+<style id="seljuki-about-luxury-modern-v1">
+/* Luxury / modern / saturated visual layer — preserves original HTML, content and behavior */
+:root{
+  --lux-bg:#FFFFFF;
+  --lux-surface:#F4F8FF;
+  --lux-surface-2:#FFF8D8;
+  --lux-ink:#07111F;
+  --lux-muted:#24364A;
+  --lux-primary:#0757B8;
+  --lux-primary-2:#003F8F;
+  --lux-gold:#8A5A00;
+  --lux-gold-bright:#FFD21A;
+  --lux-green:#006B4F;
+  --lux-line:#B87900;
+}
+html{color-scheme:light;}
+body{
+  background:var(--lux-bg) !important;
+  color:var(--lux-ink) !important;
+  background-image:none !important;
+}
+.hdr{
+  background:#07111F !important;
+  border-bottom:4px solid var(--lux-gold-bright) !important;
+  box-shadow:0 5px 18px rgba(7,17,31,.18);
+}
+.hdr h1{
+  color:#FFD21A !important;
+  text-shadow:none !important;
+}
+.hdr p{color:#FFFFFF !important;}
+.home-link,.back-btn,.mode-btn{
+  color:#FFD21A !important;
+  border-color:#FFD21A !important;
+  background:#102B4A !important;
+}
+.home-link:hover,.back-btn:hover,.mode-btn:hover,.mode-btn.on{
+  background:#174C7F !important;
+}
+.author-card{
+  background:linear-gradient(135deg,#07111F 0%,#0A3B68 58%,#0757B8 100%) !important;
+  border:2px solid #FFD21A !important;
+  box-shadow:0 12px 32px rgba(7,17,31,.22) !important;
+}
+.author-avatar{
+  background:linear-gradient(135deg,#8A5A00,#FFD21A) !important;
+  border-color:#FFFFFF !important;
+  color:#07111F !important;
+  box-shadow:0 4px 16px rgba(255,210,26,.28) !important;
+}
+.author-name{color:#FFD21A !important;text-shadow:none !important;}
+.author-bio{color:#FFFFFF !important;}
+.fact{
+  background:#102B4A !important;
+  border:1px solid #45B8FF !important;
+}
+.fact-l{color:#55E6A5 !important;}
+.fact-v{color:#FFFFFF !important;}
+
+.section{
+  background:#FFFFFF !important;
+  border:2px solid #0757B8 !important;
+  box-shadow:0 5px 18px rgba(7,17,31,.10) !important;
+}
+.section h2{
+  color:#0757B8 !important;
+  border-bottom-color:#FFD21A !important;
+  text-shadow:none !important;
+}
+.section p{color:#07111F !important;}
+.mission-item{
+  background:#F4F8FF !important;
+  border:2px solid #0757B8 !important;
+  box-shadow:0 3px 12px rgba(7,17,31,.08) !important;
+}
+.mission-item h3{color:#07111F !important;text-shadow:none !important;}
+.mission-item p{color:#24364A !important;}
+.contact-btn{
+  background:#07111F !important;
+  color:#FFD21A !important;
+  border:2px solid #FFD21A !important;
+}
+.contact-btn:hover{background:#174C7F !important;}
+footer{
+  background:#07111F !important;
+  color:#FFFFFF !important;
+  border-top:4px solid #FFD21A !important;
+}
+footer .fb{color:#FFD21A !important;text-shadow:none !important;}
+footer .fb span{color:#FFFFFF !important;}
+
+/* Dark mode: saturated navy + electric gold + emerald accents */
+body.dark{
+  --ink:#FFFFFF !important;
+  --parch:#070D18 !important;
+  background:#070D18 !important;
+  color:#FFFFFF !important;
+  color-scheme:dark;
+}
+body.dark .hdr{
+  background:#020711 !important;
+  border-bottom-color:#FFD21A !important;
+}
+body.dark .hdr p{color:#FFFFFF !important;}
+body.dark .author-card{
+  background:linear-gradient(135deg,#020711 0%,#0B2540 55%,#063E70 100%) !important;
+  border-color:#FFD21A !important;
+}
+body.dark .author-name{color:#FFD21A !important;}
+body.dark .author-bio{color:#FFFFFF !important;}
+body.dark .author-avatar{color:#07111F !important;}
+body.dark .fact{
+  background:#102B4A !important;
+  border-color:#45B8FF !important;
+}
+body.dark .fact-l{color:#55E6A5 !important;}
+body.dark .fact-v{color:#FFFFFF !important;}
+body.dark .section{
+  background:#0B1728 !important;
+  border-color:#39A9FF !important;
+}
+body.dark .section h2{color:#FFD21A !important;border-bottom-color:#FFD21A !important;}
+body.dark .section p{color:#FFFFFF !important;}
+body.dark .mission-item{
+  background:#102B4A !important;
+  border-color:#45B8FF !important;
+}
+body.dark .mission-item h3{color:#FFFFFF !important;}
+body.dark .mission-item p{color:#F4F8FF !important;}
+body.dark .contact-btn{
+  background:#FFD21A !important;
+  color:#07111F !important;
+  border-color:#FFD21A !important;
+}
+body.dark .contact-btn:hover{background:#FFE36E !important;}
+body.dark footer{background:#020711 !important;color:#FFFFFF !important;border-top-color:#FFD21A !important;}
+body.dark footer .fb{color:#FFD21A !important;}
+body.dark footer .fb span{color:#FFFFFF !important;}
+
+/* Warm mode: premium ivory + burgundy + antique-gold */
+body.sepia{
+  --ink:#17100B !important;
+  --parch:#FFF9ED !important;
+  background:#FFF9ED !important;
+  color:#17100B !important;
+  color-scheme:light;
+}
+body.sepia .hdr{
+  background:#3A1020 !important;
+  border-bottom-color:#FFD65A !important;
+}
+body.sepia .hdr h1{color:#FFD65A !important;}
+body.sepia .hdr p{color:#FFFFFF !important;}
+body.sepia .home-link,body.sepia .back-btn,body.sepia .mode-btn{
+  color:#FFD65A !important;
+  border-color:#FFD65A !important;
+  background:#5B1B31 !important;
+}
+body.sepia .home-link:hover,body.sepia .back-btn:hover,body.sepia .mode-btn:hover,body.sepia .mode-btn.on{
+  background:#71324A !important;
+}
+body.sepia .author-card{
+  background:linear-gradient(135deg,#2B0B18 0%,#5B1B31 62%,#8A4B00 100%) !important;
+  border-color:#FFD65A !important;
+}
+body.sepia .author-name{color:#FFD65A !important;}
+body.sepia .author-bio{color:#FFFFFF !important;}
+body.sepia .fact{
+  background:#4A1730 !important;
+  border-color:#FFD65A !important;
+}
+body.sepia .fact-l{color:#55E6A5 !important;}
+body.sepia .fact-v{color:#FFFFFF !important;}
+body.sepia .section{
+  background:#FFFDF7 !important;
+  border-color:#A86400 !important;
+}
+body.sepia .section h2{color:#71324A !important;border-bottom-color:#D49A18 !important;}
+body.sepia .section p{color:#17100B !important;}
+body.sepia .mission-item{
+  background:#FFF3D6 !important;
+  border-color:#A86400 !important;
+}
+body.sepia .mission-item h3{color:#3A1020 !important;}
+body.sepia .mission-item p{color:#2A211A !important;}
+body.sepia .contact-btn{
+  background:#3A1020 !important;
+  color:#FFD65A !important;
+  border-color:#FFD65A !important;
+}
+body.sepia .contact-btn:hover{background:#71324A !important;}
+body.sepia footer{background:#3A1020 !important;color:#FFFFFF !important;border-top-color:#FFD65A !important;}
+body.sepia footer .fb{color:#FFD65A !important;}
+body.sepia footer .fb span{color:#FFFFFF !important;}
+
+/* Crisp rendering: no decorative text glow; strong focus for keyboard users */
+.hdr,.author-card,.section,.mission-item,footer,
+.hdr h1,.author-name,.section h2,.mission-item h3,footer .fb{
+  text-shadow:none !important;
+}
+a:focus-visible,button:focus-visible{
+  outline:3px solid #FF4D00 !important;
+  outline-offset:3px !important;
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto !important;}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important;animation-iteration-count:1 !important;}
+}
+</style>
 </head>
 <body>
 
