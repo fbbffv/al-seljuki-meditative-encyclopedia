@@ -137,5 +137,63 @@ function setMode(m){
   });
 }
 </script>
+
+<style id="seljuki-luxury-modern-high-contrast">
+/* Luxury modern saturated visual layer — content/structure/JS preserved */
+:root{
+  --ink:#07111F;--parch:#FFFFFF;--gold:#7A4E00;--gold-l:#FFD21A;
+  --lapis:#0057B8;--agate:#8B1235;--sage:#075C38;--night:#07111F;
+  --line:#B87900;
+}
+body{background:#FFFFFF;color:#07111F;}
+.hdr{background:#07111F;border-bottom:4px solid #FFD21A;}
+.hdr h1{color:#FFD21A;text-shadow:none;}
+.hdr p{color:#FFFFFF;}
+.back-btn,.mode-btn{color:#FFD21A;border-color:#FFD21A;background:#102A4A;}
+.back-btn:hover,.mode-btn:hover,.mode-btn.on{background:#174B78;}
+.intro{background:#FFFFFF;color:#07111F;border-color:#B87900;box-shadow:none;}
+.intro h2{color:#7A4E00;}
+.intro p{color:#07111F;}
+.progress-note{color:#07111F;background:#F2F7FF;border-color:#0057B8;}
+.surah-item{background:#FFFFFF;color:#07111F;border-color:#B87900;box-shadow:none;}
+.surah-name{color:#07111F;}
+.surah-num{background:#0057B8;color:#FFFFFF;}
+.sbtn.read{background:#0057B8;color:#FFFFFF;}
+.sbtn.dl{background:#8B1235;color:#FFFFFF;}
+.sbtn:hover{transform:translateY(-2px);}
+.surah-item.pending{opacity:1;background:#F3F6FA;border-color:#8A96A8;}
+.surah-item.pending .surah-num{background:#718096;color:#FFFFFF;}
+.surah-item.pending .surah-name{color:#263445;}
+.pending-tag{color:#07111F;background:#FFE36E;border:1px solid #A66F00;}
+footer{background:#07111F;color:#FFFFFF;border-top:4px solid #FFD21A;}
+/* warm */
+body.sepia{--ink:#17100B;--parch:#FFF9ED;background:#FFF9ED;}
+body.sepia .intro{background:#FFFDF7;color:#17100B !important;border-color:#8A4B00;}
+body.sepia .surah-item{background:#FFFDF7;color:#17100B;border-color:#8A4B00;}
+body.sepia .surah-name{color:#17100B;}
+body.sepia .progress-note{color:#17100B;background:#FFF2C7;border-color:#8A4B00;}
+body.sepia .surah-item.pending{background:#F7EEDC;border-color:#8A7A62;}
+body.sepia .surah-item.pending .surah-name{color:#30261C;}
+body.sepia footer{background:#17100B;color:#FFFFFF;}
+/* dark */
+body.dark{--ink:#FFFFFF;--parch:#070D18;background:#070D18;}
+body.dark .intro{background:#0D1D30 !important;color:#FFFFFF !important;border-color:#FFD21A;}
+body.dark .intro h2,body.dark .intro p{color:#FFFFFF !important;}
+body.dark .progress-note{background:#123A73;color:#FFFFFF;border-color:#36B9FF;}
+body.dark .surah-item{background:#0D1D30 !important;color:#FFFFFF !important;border-color:#FFD21A;box-shadow:none;}
+body.dark .surah-name{color:#FFFFFF !important;}
+body.dark .surah-item.pending{background:#162235 !important;border-color:#718096;}
+body.dark .surah-item.pending .surah-name{color:#FFFFFF !important;}
+body.dark .pending-tag{background:#FFD21A;color:#07111F;border-color:#FFD21A;}
+body.dark footer{background:#070D18;color:#FFFFFF;}
+/* crispness and keyboard focus */
+*,.surah-item,.intro,.progress-note,.sbtn,.mode-btn,.back-btn,.pending-tag{filter:none;text-shadow:none;}
+.sbtn,.mode-btn,.back-btn{box-shadow:none;}
+a:focus-visible,button:focus-visible{outline:3px solid #FFEA70;outline-offset:3px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto !important;transition:none !important;}
+}
+</style>
+
 </body>
 </html>
