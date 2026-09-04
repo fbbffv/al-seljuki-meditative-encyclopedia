@@ -3818,6 +3818,41 @@ body.dark #gatesSec > .gate .branch-empty{color:#E8CD6E !important}
 body.dark .new-badge{color:#061326 !important}
 </style>
 
+<style id="seljuki-logo-seamless-background-v1">
+/* خلفية الشعارين فقط — لدمج حواف الصور مع الصندوق ومنع ظهورها كصور مستطيلة */
+.top-emblem-box{
+  background:#FFFFFF !important;
+}
+
+.sheikh-logo-media{
+  background:#F7F0E5 !important;
+}
+
+/* لا نضيف إطارًا أو ظلًا للصورتين؛ الخلفية المحيطة هي التي تحمل التصميم */
+.top-emblem,
+.sheikh-logo-img,
+.sheikh-logo-video{
+  border:none !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
+
+/* مطابقة الوضع الليلي: يبقى الدمج محصورًا في صندوق الشعار فقط */
+body.dark .top-emblem-box{
+  background:#071525 !important;
+}
+body.dark .sheikh-logo-media{
+  background:#071525 !important;
+}
+
+/* الوضع الدافئ: خلفية عاجية هادئة للشعار المتحرك */
+body.sepia .top-emblem-box{
+  background:#FBF8F0 !important;
+}
+body.sepia .sheikh-logo-media{
+  background:#F7F0E5 !important;
+}
+</style>
 </head>
 <body data-manifest-version="260">
 <button class="new-badge" id="newBadge" onclick="checkForUpdates()">
