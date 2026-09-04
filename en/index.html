@@ -157,5 +157,112 @@ function setMode(m){
   });
 }
 </script>
+
+<style id="seljuki-english-luxury-modern-v2">
+/* Luxury / modern / high-contrast visual layer — content and structure preserved */
+:root{
+  --ink:#07111F !important;
+  --parch:#FFFFFF !important;
+  --gold:#6B4300 !important;
+  --gold-l:#FFD21A !important;
+  --gold-lt:#FFF1A6 !important;
+  --night:#071A33 !important;
+  --line:#B87900 !important;
+}
+body{background:#FFFFFF !important;color:#07111F !important;}
+body.dark{
+  --ink:#FFFFFF !important;--parch:#070D18 !important;
+  --gold:#FFD21A !important;--gold-l:#FFD21A !important;--gold-lt:#FFF4B0 !important;
+  --night:#050A12 !important;--line:#39A9FF !important;
+  background:#070D18 !important;color:#FFFFFF !important;
+}
+body.sepia{
+  --ink:#17100B !important;--parch:#FFF9ED !important;
+  --gold:#71324A !important;--gold-l:#FFD65A !important;--gold-lt:#FFF0B0 !important;
+  --night:#4A1830 !important;--line:#9A5A00 !important;
+  background:#FFF9ED !important;color:#17100B !important;
+}
+
+/* crisp rendering: no glow/shadow on text or interface */
+.hdr h1,.hdr p,.back-btn,.mode-btn,.lang-btn,.intro h2,.intro p,
+.branch-h,.branch-body,.branch-status,.notify-box h3,.notify-box p,
+.contact-btn,footer,.fb{ text-shadow:none !important; filter:none !important; opacity:1 !important; }
+
+/* Header */
+.hdr{background:#071A33 !important;border-bottom:3px solid #FFD21A !important;}
+.hdr h1{color:#FFD21A !important;}
+.hdr p{color:#FFFFFF !important;}
+.back-btn,.mode-btn,.lang-btn{color:#FFF1A6 !important;border-color:#FFD21A !important;background:#0D2B4A !important;}
+.back-btn:hover,.mode-btn:hover,.mode-btn.on,.lang-btn:hover{background:#16466F !important;}
+.lang-btn.active{background:#FFD21A !important;color:#07111F !important;}
+
+/* Light */
+.intro{background:#FFFFFF !important;border:2px solid #B87900 !important;box-shadow:none !important;}
+.intro h2{color:#6B4300 !important;}
+.intro p{color:#07111F !important;}
+.branch{background:#FFFFFF !important;border:2px solid #0A5CC8 !important;box-shadow:none !important;}
+.branch-h{background:#0A5CC8 !important;color:#FFFFFF !important;}
+.branch-status{background:#FFFFFF !important;color:#07111F !important;border:1px solid #FFFFFF !important;}
+.branch-body{background:#F2F7FF !important;color:#07111F !important;}
+.notify-box{background:#071A33 !important;border:2px solid #FFD21A !important;}
+.notify-box h3{color:#FFD21A !important;}
+.notify-box p{color:#FFFFFF !important;}
+.contact-btn{background:#0D2B4A !important;color:#FFF1A6 !important;border:2px solid #FFD21A !important;}
+.contact-btn:hover{background:#16466F !important;}
+footer{background:#071A33 !important;color:#FFFFFF !important;border-top:3px solid #FFD21A !important;}
+footer .fb{color:#FFD21A !important;}
+footer .fb span{color:#FFF1A6 !important;}
+
+/* Sepia */
+body.sepia .hdr{background:#4A1830 !important;border-bottom-color:#FFD65A !important;}
+body.sepia .hdr h1,body.sepia .hdr p{color:#FFF0B0 !important;}
+body.sepia .back-btn,body.sepia .mode-btn,body.sepia .lang-btn{color:#FFF0B0 !important;background:#672442 !important;border-color:#FFD65A !important;}
+body.sepia .back-btn:hover,body.sepia .mode-btn:hover,body.sepia .mode-btn.on,body.sepia .lang-btn:hover{background:#823055 !important;}
+body.sepia .lang-btn.active{background:#FFD65A !important;color:#17100B !important;}
+body.sepia .intro{background:#FFFDF7 !important;border-color:#9A5A00 !important;}
+body.sepia .intro h2{color:#71324A !important;}
+body.sepia .intro p{color:#17100B !important;}
+body.sepia .branch{background:#FFFDF7 !important;border-color:#9A5A00 !important;}
+body.sepia .branch-h{background:#71324A !important;color:#FFFFFF !important;}
+body.sepia .branch-status{background:#FFFFFF !important;color:#17100B !important;}
+body.sepia .branch-body{background:#FFF2C7 !important;color:#17100B !important;}
+body.sepia .notify-box{background:#4A1830 !important;border-color:#FFD65A !important;}
+body.sepia .notify-box h3{color:#FFD65A !important;}
+body.sepia .notify-box p{color:#FFFFFF !important;}
+body.sepia .contact-btn{background:#672442 !important;color:#FFF0B0 !important;border-color:#FFD65A !important;}
+body.sepia .contact-btn:hover{background:#823055 !important;}
+body.sepia footer{background:#4A1830 !important;color:#FFFFFF !important;border-top-color:#FFD65A !important;}
+body.sepia footer .fb{color:#FFD65A !important;}
+
+/* Dark */
+body.dark .hdr{background:#050A12 !important;border-bottom-color:#FFD21A !important;}
+body.dark .hdr h1{color:#FFD21A !important;}
+body.dark .hdr p{color:#FFFFFF !important;}
+body.dark .back-btn,body.dark .mode-btn,body.dark .lang-btn{background:#102B4A !important;color:#FFF4B0 !important;border-color:#39A9FF !important;}
+body.dark .back-btn:hover,body.dark .mode-btn:hover,body.dark .mode-btn.on,body.dark .lang-btn:hover{background:#16466F !important;}
+body.dark .lang-btn.active{background:#FFD21A !important;color:#07111F !important;}
+body.dark .intro{background:#0B1626 !important;border-color:#FFD21A !important;box-shadow:none !important;}
+body.dark .intro h2{color:#FFD21A !important;}
+body.dark .intro p{color:#FFFFFF !important;}
+body.dark .branch{background:#0B1626 !important;border-color:#39A9FF !important;box-shadow:none !important;}
+body.dark .branch-h{background:#123A73 !important;color:#FFFFFF !important;}
+body.dark .branch-status{background:#FFD21A !important;color:#07111F !important;border-color:#FFD21A !important;}
+body.dark .branch-body{background:#102B4A !important;color:#FFFFFF !important;}
+body.dark .notify-box{background:#071A33 !important;border-color:#FFD21A !important;}
+body.dark .notify-box h3{color:#FFD21A !important;}
+body.dark .notify-box p{color:#FFFFFF !important;}
+body.dark .contact-btn{background:#102B4A !important;color:#FFF4B0 !important;border-color:#39A9FF !important;}
+body.dark .contact-btn:hover{background:#16466F !important;}
+body.dark footer{background:#050A12 !important;color:#FFFFFF !important;border-top-color:#FFD21A !important;}
+body.dark footer .fb{color:#FFD21A !important;}
+body.dark footer .fb span{color:#FFF4B0 !important;}
+
+/* keyboard focus and non-text/UI contrast */
+a:focus-visible,button:focus-visible{
+  outline:3px solid #00A6FF !important;outline-offset:3px !important;
+  box-shadow:none !important;
+}
+</style>
+
 </body>
 </html>
