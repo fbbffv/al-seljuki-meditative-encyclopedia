@@ -5,7 +5,7 @@
   - كل مقال يزوره المستخدم مرة واحدة (بإنترنت) يُصبح متاحاً دائماً بعدها بلا إنترنت.
 */
 
-const CACHE_VERSION = 'suljuki-v3';
+const CACHE_VERSION = 'suljuki-v4';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -37,6 +37,14 @@ self.addEventListener('activate', (event) => {
 function isHomePageRequest(url) {
   return url.pathname.endsWith('/') || url.pathname.endsWith('/index.html');
 }
+
+
+// تطبيق التحديث فوراً عند طلب الصفحة الرئيسية.
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
 
 self.addEventListener('fetch', (event) => {
   const req = event.request;
