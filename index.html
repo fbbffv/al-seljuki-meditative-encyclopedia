@@ -5525,7 +5525,7 @@ function checkForUpdates(){
 (function(){
   var MANIFEST_URL = 'articles-manifest.json';
   var SEEN_KEY = 'suljuki_downloaded_articles_v1';
-  var CACHE_NAME = 'suljuki-v2';
+  var CACHE_NAME = 'suljuki-v4';
   var dlCard = document.getElementById('dlCard');
   var dlTitle = document.getElementById('dlTitle');
   var dlSub = document.getElementById('dlSub');
@@ -5574,7 +5574,7 @@ function checkForUpdates(){
     saveSeen(seen);
     if(!silent){
       dlTitle.textContent = 'اكتمل التحميل ✅';
-      dlSub.textContent = okCount + ' مقالاً أصبح متاحاً بلا إنترنت';
+      dlSub.textContent = okCount + ' مقالاً جديداً أصبح متاحاً بلا إنترنت';
       setTimeout(function(){ dlCard.classList.remove('show'); }, 3500);
     }
   }
@@ -5587,7 +5587,20 @@ function checkForUpdates(){
       var res = await fetch(MANIFEST_URL + '?v=' + Date.now(), {cache:'no-store'});
       var data = await res.json();
       var seen = getSeen();
-      var toDownload = (data.articles || []).filter(function(a){ return seen.indexOf(a) === -1; });
+      var cache = await caches.open(CACHE_NAME);
+      var toDownload = [];
+
+      // لا نعتمد على localStorage وحده؛ نتحقق من وجود كل مقال فعلياً في الكاش.
+      for(var i = 0; i < (data.articles || []).length; i++){
+        var articleUrl = data.articles[i];
+        var cached = await cache.match(articleUrl);
+        if(!cached){
+          toDownload.push(articleUrl);
+        }else if(seen.indexOf(articleUrl) === -1){
+          seen.push(articleUrl);
+        }
+      }
+      saveSeen(seen);
       await downloadList(toDownload, false);
     }catch(e){
       dlTitle.textContent = 'تعذّر التحميل';
