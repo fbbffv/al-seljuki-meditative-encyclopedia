@@ -68,10 +68,139 @@ footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:6px
   .sm-wrap{max-width:1300px;}
 }
 </style>
+
+<style id="final-global-accessibility-clarity">
+/* Final WCAG-oriented clarity/accessibility layer.
+   Content and JavaScript behavior are preserved. */
+html{
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+  scroll-behavior:smooth;
+}
+body{
+  font-weight:600;
+  line-height:1.9;
+  overflow-wrap:break-word;
+}
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid #005FCC !important;
+  outline-offset:3px !important;
+  box-shadow:0 0 0 2px #FFFFFF !important;
+}
+.a11y-skip-link{
+  position:fixed;
+  top:10px;
+  right:10px;
+  z-index:10000;
+  transform:translateY(-180%);
+  padding:10px 16px;
+  border:2px solid #FFD21A;
+  border-radius:10px;
+  background:#07111F;
+  color:#FFFFFF;
+  font-weight:800;
+  text-decoration:none;
+  box-shadow:0 4px 14px rgba(0,0,0,.25);
+}
+.a11y-skip-link:focus{
+  transform:translateY(0);
+}
+#main-content{scroll-margin-top:110px;}
+
+/* Ensure interactive controls remain comfortably touchable. */
+button,
+a.back-btn,
+a.home-link,
+a.lang-btn,
+a.contact-btn,
+.sbtn{
+  min-height:36px;
+}
+
+/* High-contrast light-mode text and controls */
+body:not(.dark):not(.sepia) .section p,
+body:not(.dark):not(.sepia) .mission-item p,
+body:not(.dark):not(.sepia) .branch-body,
+body:not(.dark):not(.sepia) .intro p,
+body:not(.dark):not(.sepia) .sm-links a{
+  color:#07111F !important;
+}
+body:not(.dark):not(.sepia) .section h2,
+body:not(.dark):not(.sepia) .intro h2,
+body:not(.dark):not(.sepia) .sm-group-name{
+  color:#6B4300 !important;
+}
+
+/* Dark mode */
+body.dark a,
+body.dark .section p,
+body.dark .mission-item p,
+body.dark .branch-body,
+body.dark .intro p,
+body.dark .sm-links a{
+  color:#FFFFFF !important;
+}
+body.dark .section h2,
+body.dark .intro h2,
+body.dark .sm-group-name{
+  color:#FFD21A !important;
+}
+
+/* Warm mode */
+body.sepia .section p,
+body.sepia .mission-item p,
+body.sepia .branch-body,
+body.sepia .intro p,
+body.sepia .sm-links a{
+  color:#17100B !important;
+}
+body.sepia .section h2,
+body.sepia .intro h2,
+body.sepia .sm-group-name{
+  color:#71324A !important;
+}
+
+/* Motion safety */
+@media (prefers-reduced-motion:reduce){
+  html{
+    scroll-behavior:auto !important;
+  }
+  *,
+  *::before,
+  *::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+    scroll-behavior:auto !important;
+  }
+}
+
+/* Large-screen readability */
+@media screen and (min-width:1921px){
+  body{font-size:20px;}
+}
+
+/* Small-screen spacing and readable controls */
+@media (max-width:640px){
+  .hdr-top-bar{
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .wrap,
+  .sm-wrap{
+    width:100%;
+  }
+}
+</style>
+
 </head>
 <body>
+<a class="a11y-skip-link" href="#main-content">تجاوز إلى المحتوى الرئيسي</a>
+<main id="main-content">
 <header class="hdr">
-<div class="hdr-top-bar">
+<div class="hdr-top-bar" role="navigation" aria-label="التنقل الرئيسي">
   <a href="index.html" class="back-btn">→ رجوع</a>
   <div class="modes">
     <button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
@@ -563,6 +692,8 @@ footer .fb{font-family:'Amiri Display',serif;font-size:1.05rem;margin-bottom:6px
 <div class="sm-branch-h" onclick="toggleSM(this)"><span class="sm-arrow">▾</span> ١١. فرعُ تعبير الرؤى وتفسير الأحلام <span class="sm-count">0 مقالاً</span></div>
 <div class="sm-branch-body">
 </div></div></div>
+</main>
+
 <footer>
 <div class="fb">مَوْسُوعَةُ <span style="color:#E8CD6E;">السَّلْجُوقِي</span> التَّدَبُّرِيَّةُ</div>
 <p>© جميع الحقوق محفوظة لـ علي خليل عباس السلجوقي التركماني الليلاني</p>
@@ -812,3 +943,5 @@ body.dark :focus-visible{
   outline-offset:3px !important;
 }
 </style>
+</body>
+</html>
