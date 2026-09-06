@@ -4797,8 +4797,436 @@ body.sepia .topics-index-head p{
 }
 
 </style>
+<style id="modern-topic-cards-only">
+/* =========================================================
+   ALTERNATIVE MODERN TOPIC-CARD DESIGN
+   Scope: TOPIC INDEX ONLY — main topic cards and their
+   headings. Tag chips and the rest of the site are untouched.
+   High-contrast / clarity treatment.
+   ========================================================= */
+
+/* Topic index container: cleaner modern rhythm */
+.topics-index{
+  max-width:1240px !important;
+  margin:46px auto 0 !important;
+  padding:0 20px !important;
+}
+
+.topics-grid{
+  gap:18px !important;
+}
+
+/* Main card: emerald/navy architectural panel */
+.topic-category{
+  position:relative !important;
+  border:1px solid #B8942E !important;
+  border-radius:24px !important;
+  overflow:hidden !important;
+  background:#F7F5EF !important;
+  box-shadow:0 10px 30px rgba(6,21,42,.12) !important;
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease !important;
+}
+
+.topic-category::before{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  pointer-events:none !important;
+  border-radius:24px !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.8) !important;
+}
+
+.topic-category:hover{
+  transform:translateY(-3px) !important;
+  border-color:#8A6A12 !important;
+  box-shadow:0 16px 38px rgba(6,21,42,.18) !important;
+}
+
+/* Main clickable header: new split-gradient design */
+.topic-category-head{
+  position:relative !important;
+  grid-template-columns:58px 1fr 78px !important;
+  column-gap:16px !important;
+  min-height:108px !important;
+  padding:18px 20px !important;
+  border:0 !important;
+  border-bottom:1px solid #B8942E !important;
+  background:linear-gradient(110deg,#071A2E 0%,#0B2942 54%,#124E4A 100%) !important;
+  color:#FFFFFF !important;
+  isolation:isolate !important;
+}
+
+.topic-category-head::after{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  pointer-events:none !important;
+  background:linear-gradient(90deg,transparent 0%,rgba(212,175,55,.08) 72%,rgba(212,175,55,.20) 100%) !important;
+  z-index:-1 !important;
+}
+
+/* Icon medallion — right side in RTL layout */
+.topic-category-icon{
+  width:62px !important;
+  height:62px !important;
+  border:2px solid #D9BC55 !important;
+  border-radius:50% !important;
+  background:rgba(255,255,255,.07) !important;
+  box-shadow:0 0 0 5px rgba(212,175,55,.08), inset 0 0 20px rgba(212,175,55,.10) !important;
+  font-size:1.65rem !important;
+}
+
+/* Main title: very high contrast */
+.topic-category-title{
+  color:#FFFFFF !important;
+  font-size:clamp(1.15rem,1.75vw,1.48rem) !important;
+  font-weight:900 !important;
+  line-height:1.45 !important;
+  text-shadow:none !important;
+}
+
+/* Subtitle: readable gold, not low-opacity */
+.topic-category-sub{
+  color:#FFE9A3 !important;
+  font-size:.78rem !important;
+  font-weight:700 !important;
+  line-height:1.65 !important;
+  margin-top:4px !important;
+  opacity:1 !important;
+}
+
+/* Count/arrow area: clean circular control */
+.topic-category-arrow{
+  width:42px !important;
+  height:42px !important;
+  border:2px solid #D9BC55 !important;
+  color:#FFFFFF !important;
+  background:rgba(255,255,255,.06) !important;
+  font-size:1.25rem !important;
+  font-weight:900 !important;
+  box-shadow:inset 0 0 12px rgba(212,175,55,.08) !important;
+}
+
+.topic-category.open .topic-category-arrow{
+  color:#071A2E !important;
+  background:#F2D675 !important;
+  border-color:#FFF0A8 !important;
+}
+
+/* Keyboard focus: visible and unmistakable */
+.topic-category-head:focus-visible{
+  outline:3px solid #00A3FF !important;
+  outline-offset:3px !important;
+}
+
+/* Open state: a restrained gold accent */
+.topic-category.open{
+  border-color:#8A6A12 !important;
+  box-shadow:0 16px 38px rgba(6,21,42,.16) !important;
+}
+
+.topic-category.open .topic-category-head{
+  background:linear-gradient(110deg,#061326 0%,#0B3448 52%,#0D5B55 100%) !important;
+}
+
+/* Keep tag area functionally and visually separate */
+.topic-category-body{
+  background:#F7F5EF !important;
+}
+
+.topic-category.open .topic-category-body{
+  border-top:0 !important;
+}
+
+/* Dark mode — cards only */
+body.dark .topic-category{
+  background:#08111F !important;
+  border-color:#D9BC55 !important;
+  box-shadow:0 10px 30px rgba(0,0,0,.35) !important;
+}
+
+body.dark .topic-category-head{
+  background:linear-gradient(110deg,#030D1A 0%,#08243A 55%,#0B4A46 100%) !important;
+  border-bottom-color:#D9BC55 !important;
+}
+
+body.dark .topic-category-head::after{
+  background:linear-gradient(90deg,transparent 0%,rgba(212,175,55,.06) 72%,rgba(212,175,55,.16) 100%) !important;
+}
+
+body.dark .topic-category-title{
+  color:#FFFFFF !important;
+}
+
+body.dark .topic-category-sub{
+  color:#FFE9A3 !important;
+}
+
+body.dark .topic-category-icon{
+  border-color:#E5C85A !important;
+  background:rgba(255,255,255,.06) !important;
+}
+
+body.dark .topic-category-arrow{
+  color:#FFFFFF !important;
+  border-color:#E5C85A !important;
+  background:rgba(255,255,255,.06) !important;
+}
+
+body.dark .topic-category.open .topic-category-arrow{
+  color:#061326 !important;
+  background:#F2D675 !important;
+  border-color:#FFF0A8 !important;
+}
+
+body.dark .topic-category-body{
+  background:#08111F !important;
+}
+
+/* Sepia mode — cards only */
+body.sepia .topic-category{
+  background:#FFF9EA !important;
+  border-color:#8A6A12 !important;
+}
+
+body.sepia .topic-category-head{
+  background:linear-gradient(110deg,#071A2E 0%,#12344A 55%,#18534D 100%) !important;
+  border-bottom-color:#B8942E !important;
+}
+
+body.sepia .topic-category-title{
+  color:#FFFFFF !important;
+}
+
+body.sepia .topic-category-sub{
+  color:#FFE9A3 !important;
+}
+
+body.sepia .topic-category-icon{
+  border-color:#E5C85A !important;
+}
+
+body.sepia .topic-category-arrow{
+  color:#FFFFFF !important;
+  border-color:#E5C85A !important;
+}
+
+body.sepia .topic-category.open .topic-category-arrow{
+  color:#061326 !important;
+  background:#F2D675 !important;
+  border-color:#FFF0A8 !important;
+}
+
+body.sepia .topic-category-body{
+  background:#FFF9EA !important;
+}
+
+/* Responsive: comfortable touch target and clean stacking */
+@media(max-width:700px){
+  .topics-grid{
+    grid-template-columns:1fr !important;
+    gap:14px !important;
+  }
+
+  .topic-category-head{
+    min-height:100px !important;
+    grid-template-columns:52px 1fr 52px !important;
+    column-gap:12px !important;
+    padding:16px !important;
+  }
+
+  .topic-category-icon{
+    width:56px !important;
+    height:56px !important;
+  }
+
+  .topic-category-title{
+    font-size:1.16rem !important;
+  }
+
+  .topic-category-sub{
+    font-size:.75rem !important;
+  }
+
+  .topic-category-arrow{
+    width:40px !important;
+    height:40px !important;
+  }
+}
+
+@media(max-width:420px){
+  .topics-index{
+    padding:0 12px !important;
+  }
+
+  .topic-category-head{
+    grid-template-columns:48px 1fr 46px !important;
+    column-gap:10px !important;
+    padding:14px 12px !important;
+  }
+
+  .topic-category-icon{
+    width:52px !important;
+    height:52px !important;
+    font-size:1.45rem !important;
+  }
+
+  .topic-category-title{
+    font-size:1.08rem !important;
+  }
+
+  .topic-category-sub{
+    font-size:.72rem !important;
+  }
+}
+
+</style>
+<style id="final-topic-card-contrast-polish">
+/* =========================================================
+   FINAL CONTRAST POLISH — MODERN TOPIC CARDS ONLY
+   Keeps the approved shape; strengthens gold, borders and focus.
+   Scope: main topic cards only.
+   ========================================================= */
+
+.topic-category{
+  border-color:#8A6A12 !important;
+}
+
+.topic-category:hover{
+  border-color:#5E4300 !important;
+}
+
+.topic-category-head{
+  border-bottom-color:#8A6A12 !important;
+}
+
+.topic-category-sub{
+  color:#F7D66A !important;
+  font-weight:800 !important;
+}
+
+.topic-category-icon{
+  border-color:#E7C84A !important;
+}
+
+.topic-category-arrow{
+  border-color:#E7C84A !important;
+}
+
+.topic-category-head:focus-visible{
+  outline:3px solid #005A9C !important;
+  outline-offset:3px !important;
+  box-shadow:0 0 0 2px #FFFFFF, 0 0 0 5px #005A9C !important;
+}
+
+.topic-category.open{
+  border-color:#6B4F00 !important;
+}
+
+.topic-category.open .topic-category-arrow{
+  background:#F2D05D !important;
+  border-color:#FFF1A8 !important;
+}
+
+/* Dark mode */
+body.dark .topic-category{
+  border-color:#E7C84A !important;
+}
+
+body.dark .topic-category:hover{
+  border-color:#FFF0A8 !important;
+}
+
+body.dark .topic-category-head{
+  border-bottom-color:#E7C84A !important;
+}
+
+body.dark .topic-category-sub{
+  color:#F7D66A !important;
+}
+
+body.dark .topic-category-icon,
+body.dark .topic-category-arrow{
+  border-color:#F0D45F !important;
+}
+
+body.dark .topic-category-head:focus-visible{
+  outline-color:#66D9FF !important;
+  box-shadow:0 0 0 2px #08111F, 0 0 0 5px #66D9FF !important;
+}
+
+/* Sepia mode */
+body.sepia .topic-category{
+  border-color:#7A5800 !important;
+}
+
+body.sepia .topic-category-head{
+  border-bottom-color:#7A5800 !important;
+}
+
+body.sepia .topic-category-sub{
+  color:#F2CF59 !important;
+}
+
+body.sepia .topic-category-icon,
+body.sepia .topic-category-arrow{
+  border-color:#E7C84A !important;
+}
+
+/* Mobile: retain high legibility */
+@media(max-width:520px){
+  .topic-category-title{
+    font-weight:900 !important;
+  }
+
+  .topic-category-sub{
+    font-size:.76rem !important;
+  }
+}
+
+</style>
+
+<style id="site-accessibility-infrastructure">
+.a11y-skip-link{
+  position:fixed !important;
+  top:10px !important;
+  right:10px !important;
+  z-index:2147483647 !important;
+  transform:translateY(-200%) !important;
+  padding:10px 14px !important;
+  background:#071A2E !important;
+  color:#FFFFFF !important;
+  border:2px solid #F2D05D !important;
+  border-radius:8px !important;
+  font-weight:800 !important;
+  text-decoration:none !important;
+}
+.a11y-skip-link:focus-visible{
+  transform:translateY(0) !important;
+  outline:3px solid #66D9FF !important;
+  outline-offset:3px !important;
+}
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{
+  outline:3px solid #005A9C;
+  outline-offset:3px;
+}
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    scroll-behavior:auto !important;
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+}
+#main-content{scroll-margin-top:96px;}
+</style>
+
 </head>
 <body data-manifest-version="263">
+<a class="a11y-skip-link" href="#main-content">تجاوز إلى المحتوى الرئيسي</a>
+<main id="main-content">
+<nav aria-label="التنقل الرئيسي" id="primary-navigation"></nav>
+
 <button class="new-badge" id="newBadge" onclick="checkForUpdates()">
 <span class="nb-dot"></span>
 <span>🔔 توجد مقالات جديدة — اضغط للتحقق والتحديث</span>
@@ -4912,7 +5340,7 @@ body.sepia .topics-index-head p{
 <div class="search-wrap">
 <div class="search-box">
 <span class="s-i">🔍</span>
-<input autocomplete="off" autocorrect="off" id="searchInput" onkeyup="filterAll()" placeholder="ابحث بعنوان، أو آية، أو سورة، أو موضوع..." spellcheck="false" type="text"/>
+<input autocomplete="off" autocorrect="off" id="searchInput" onkeyup="filterAll()" placeholder="ابحث بعنوان، أو آية، أو سورة، أو موضوع..." spellcheck="false" type="text"/ aria-label="ابحث بعنوان، أو آية، أو سورة، أو موضوع...">
 </div>
 <div class="search-filters">
 <span class="sf-chip on" data-f="all">كل الأقسام</span>
@@ -6485,8 +6913,8 @@ body.sepia .topics-index-head p{
 <input name="_subject" type="hidden" value="رسالة جديدة من موسوعة السلجوقي"/>
 <input name="_captcha" type="hidden" value="false"/>
 <input name="_template" type="hidden" value="table"/>
-<input name="الاسم" placeholder="الاسم" required="" type="text"/>
-<input name="البريد الإلكتروني" placeholder="بريدك الإلكتروني" required="" type="email"/>
+<input name="الاسم" placeholder="الاسم" required="" type="text"/ aria-label="الاسم">
+<input name="البريد الإلكتروني" placeholder="بريدك الإلكتروني" required="" type="email"/ aria-label="بريدك الإلكتروني">
 <textarea name="الرسالة" placeholder="اكتب رسالتك هنا..." required=""></textarea>
 <button type="submit">إرسال الرسالة ✦</button>
 </form>
@@ -7133,5 +7561,6 @@ function shareSite(){
   });
 })();
 </script>
+</main>
 </body>
 </html>
