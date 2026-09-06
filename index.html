@@ -130,6 +130,228 @@ body{
 .author-line{margin-top:20px;font-size:.92rem;color:#1c2733;font-weight:700;position:relative;}
 .author-line b{color:#6b1f35;font-weight:600;}
 
+
+/* ═══ فهرس موضوعات الموسوعة — هوية فاخرة وعصرية عالية الوضوح ═══ */
+.topics-index{
+  max-width:1200px;
+  margin:46px auto 0;
+  padding:0 22px;
+}
+.topics-index-head{
+  text-align:center;
+  margin:0 auto 24px;
+  max-width:900px;
+}
+.topics-kicker{
+  font-family:'Amiri Display',serif;
+  color:var(--gold);
+  font-size:.86rem;
+  letter-spacing:.22em;
+  margin-bottom:6px;
+}
+.topics-index-head h2{
+  font-family:'Amiri Display',serif;
+  color:var(--ink);
+  font-size:clamp(1.55rem,3vw,2.25rem);
+  line-height:1.5;
+}
+.topics-index-head p{
+  color:#1c2733;
+  font-size:.92rem;
+  font-weight:600;
+  margin-top:6px;
+}
+.topics-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.topic-category{
+  border:1.5px solid var(--gold-l);
+  border-radius:20px;
+  overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(244,236,219,.72));
+  box-shadow:0 8px 28px rgba(10,25,47,.10);
+  transition:box-shadow .25s,transform .25s;
+}
+.topic-category:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 38px rgba(10,25,47,.15);
+}
+.topic-category-head{
+  width:100%;
+  display:grid;
+  grid-template-columns:54px 1fr auto;
+  grid-template-rows:auto auto;
+  column-gap:14px;
+  align-items:center;
+  text-align:right;
+  padding:17px 18px;
+  border:0;
+  background:linear-gradient(135deg,var(--night),#20180e);
+  color:#fff;
+  cursor:pointer;
+  font-family:'Cairo',sans-serif;
+}
+.topic-category-icon{
+  grid-row:1 / span 2;
+  width:54px;
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(212,175,55,.72);
+  border-radius:16px;
+  background:linear-gradient(135deg,rgba(212,175,55,.20),rgba(212,175,55,.06));
+  box-shadow:inset 0 0 18px rgba(212,175,55,.08),0 5px 16px rgba(0,0,0,.2);
+  font-size:1.65rem;
+}
+.topic-category-title{
+  font-family:'Amiri Display',serif;
+  color:#FFF4B0;
+  font-size:clamp(1.08rem,1.6vw,1.38rem);
+  font-weight:700;
+  line-height:1.35;
+}
+.topic-category-sub{
+  color:#E8CD6E;
+  font-size:.72rem;
+  margin-top:2px;
+  opacity:.92;
+}
+.topic-category-arrow{
+  grid-column:3;
+  grid-row:1 / span 2;
+  width:34px;
+  height:34px;
+  border:1px solid rgba(212,175,55,.7);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#FFF4B0;
+  font-size:1.2rem;
+  transition:transform .3s,background .25s;
+}
+.topic-category.open .topic-category-arrow{
+  transform:rotate(180deg);
+  background:rgba(212,175,55,.14);
+}
+.topic-category-body{
+  display:grid;
+  grid-template-rows:0fr;
+  transition:grid-template-rows .38s ease;
+}
+.topic-category.open .topic-category-body{
+  grid-template-rows:1fr;
+}
+.topic-category-body > .topic-tags{
+  min-height:0;
+  overflow:hidden;
+}
+.topic-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:center;
+  padding:14px 16px 17px;
+  background:rgba(255,255,255,.82);
+}
+.tag-chip{
+  appearance:none;
+  -webkit-appearance:none;
+  background:linear-gradient(145deg,#fff,#f5efe1);
+  border:1.5px solid rgba(138,106,18,.55);
+  color:var(--ink);
+  border-radius:14px;
+  padding:8px 13px;
+  font-family:'Cairo',sans-serif;
+  font-size:.78rem;
+  font-weight:700;
+  line-height:1.35;
+  cursor:pointer;
+  box-shadow:0 3px 10px rgba(10,25,47,.08),inset 0 1px 0 rgba(255,255,255,.95);
+  transition:transform .18s,box-shadow .18s,background .18s,color .18s,border-color .18s;
+}
+.tag-chip:hover{
+  transform:translateY(-2px);
+  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  color:var(--night);
+  border-color:var(--gold);
+  box-shadow:0 7px 18px rgba(212,175,55,.26);
+}
+.tag-chip.on{
+  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  color:var(--night);
+  border-color:var(--gold);
+  box-shadow:0 7px 18px rgba(212,175,55,.30);
+}
+.topic-results-shell{
+  margin:16px 0 0;
+  padding:14px 16px 16px;
+  border:1px solid rgba(212,175,55,.55);
+  border-radius:18px;
+  background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(244,236,219,.65));
+}
+.topic-results-title{
+  text-align:center;
+  color:var(--gold);
+  font-family:'Amiri Display',serif;
+  font-size:1rem;
+  font-weight:700;
+  margin-bottom:8px;
+}
+.topic-results .tag-result-card{
+  border-radius:13px;
+  border-width:1.5px;
+  padding:11px 15px;
+  font-size:.92rem;
+}
+body.dark .topics-index-head p{color:#FFF !important;}
+body.dark .topic-category{
+  background:#081120 !important;
+  border-color:#D4AF37 !important;
+  box-shadow:none !important;
+}
+body.dark .topic-category-head{background:linear-gradient(135deg,#061326,#0A2B52);}
+body.dark .topic-tags{background:#081120 !important;}
+body.dark .tag-chip{
+  background:linear-gradient(145deg,#0B1D33,#081120) !important;
+  color:#FFF !important;
+  border-color:#D4AF37 !important;
+  box-shadow:none !important;
+}
+body.dark .tag-chip:hover,body.dark .tag-chip.on{
+  background:linear-gradient(135deg,#D4AF37,#FFD43B) !important;
+  color:#061326 !important;
+}
+body.dark .topic-results-shell{
+  background:#081120 !important;
+  border-color:#D4AF37 !important;
+}
+body.sepia .topics-index-head p{color:#17120B !important;}
+body.sepia .topic-category{background:#FFFDF8 !important;border-color:#B87900 !important;}
+body.sepia .topic-tags{background:#FFFDF8 !important;}
+body.sepia .tag-chip{background:#FBF8F0 !important;color:#17120B !important;border-color:#B87900 !important;}
+body.sepia .tag-chip:hover,body.sepia .tag-chip.on{background:#D49A18 !important;color:#17120B !important;}
+body.sepia .topic-results-shell{background:#FFFDF8 !important;border-color:#B87900 !important;}
+@media(max-width:820px){
+  .topics-index{padding:0 18px;}
+  .topics-grid{grid-template-columns:1fr;}
+}
+@media(max-width:520px){
+  .topics-index{padding:0 14px;margin-top:34px;}
+  .topics-index-head h2{font-size:1.48rem;}
+  .topics-index-head p{font-size:.8rem;line-height:1.8;}
+  .topic-category-head{grid-template-columns:46px 1fr auto;padding:14px 13px;column-gap:10px;}
+  .topic-category-icon{width:46px;height:46px;font-size:1.35rem;border-radius:13px;}
+  .topic-category-title{font-size:1.02rem;}
+  .topic-category-sub{font-size:.64rem;}
+  .topic-category-arrow{width:31px;height:31px;font-size:1rem;}
+  .topic-tags{gap:7px;padding:12px 10px 14px;}
+  .tag-chip{padding:7px 10px;font-size:.73rem;border-radius:12px;}
+}
+
 /* ===== البحث ===== */
 .search-wrap{max-width:640px;margin:34px auto 0;padding:0 22px;position:relative;z-index:3;}
 .search-box{position:relative;}
@@ -3818,6 +4040,763 @@ body.dark #gatesSec > .gate .branch-empty{color:#E8CD6E !important}
 body.dark .new-badge{color:#061326 !important}
 </style>
 
+
+<style id="topic-tag-states-v2">
+.topics-index .tag-chip.topic-tag-active{opacity:1;cursor:pointer;pointer-events:auto;}
+.topics-index .tag-chip.topic-tag-active:hover{transform:translateY(-2px);}
+.topics-index .tag-chip.topic-tag-inactive{
+  opacity:.28; filter:saturate(.4); cursor:default; pointer-events:none;
+  box-shadow:none; transform:none !important; border-style:dashed;
+}
+.topic-tags-legend{
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;
+  margin:0 0 18px;padding:11px 14px;border:1px solid rgba(212,175,55,.22);
+  border-radius:14px;background:rgba(8,18,38,.48);color:var(--mist,#dfe7f2);
+  font-size:.82rem;
+}
+.topic-tags-legend .legend-future{opacity:.42;}
+</style>
+
+<style id="reclassified-tags-v3">
+.topic-category-legacy{border-color:rgba(212,175,55,.55)!important;}
+.topic-category-legacy .topic-category-head{background:linear-gradient(135deg,rgba(20,35,65,.96),rgba(45,27,70,.96));}
+.topic-tags-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;}
+.topics-index .tag-chip.topic-tag-active{opacity:1!important;filter:none!important;pointer-events:auto!important;cursor:pointer!important;}
+.topics-index .tag-chip.topic-tag-inactive{
+  opacity:.23!important;filter:saturate(.25)!important;pointer-events:none!important;
+  cursor:default!important;box-shadow:none!important;transform:none!important;border-style:dashed!important;
+}
+.tag-results-count{
+  margin:0 0 10px;padding:9px 12px;border-radius:12px;
+  border:1px solid rgba(212,175,55,.25);background:rgba(212,175,55,.07);
+  color:var(--mist,#dfe7f2);font-size:.82rem;font-weight:800;text-align:center;
+}
+</style>
+
+<style id="inline-tag-results-luxury-v4">
+/* نتائج الوسم تظهر داخل نفس الفرع، مباشرة تحت شبكة الوسوم */
+.topic-inline-results{
+  margin:18px 0 4px;
+  padding:16px;
+  border:1px solid rgba(212,175,55,.38);
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 90% 0%,rgba(212,175,55,.10),transparent 34%),
+    linear-gradient(135deg,rgba(8,20,42,.98),rgba(19,30,55,.98));
+  box-shadow:0 16px 38px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.04);
+  animation:inlineResultsIn .28s ease both;
+}
+.inline-results-head{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  margin-bottom:12px;
+  padding-bottom:11px;
+  border-bottom:1px solid rgba(212,175,55,.18);
+}
+.inline-results-icon{
+  width:34px;height:34px;display:grid;place-items:center;flex:0 0 34px;
+  border-radius:50%;
+  border:1px solid rgba(212,175,55,.55);
+  color:#f2d77b;
+  background:rgba(212,175,55,.08);
+  box-shadow:0 0 18px rgba(212,175,55,.10);
+}
+.inline-results-head strong{
+  display:block;
+  color:#f6e7ae;
+  font-size:.95rem;
+  line-height:1.5;
+}
+.inline-results-head small{
+  display:block;
+  margin-top:2px;
+  color:var(--mist,#dfe7f2);
+  opacity:.72;
+  font-size:.72rem;
+}
+.inline-results-close{
+  margin-inline-start:auto;
+  width:31px;height:31px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:50%;
+  background:rgba(255,255,255,.04);
+  color:var(--mist,#dfe7f2);
+  font-size:1.15rem;
+  cursor:pointer;
+  transition:.2s ease;
+}
+.inline-results-close:hover{
+  border-color:rgba(212,175,55,.55);
+  color:#f6e7ae;
+  transform:rotate(90deg);
+}
+.inline-results-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:9px;
+}
+.inline-result-card{
+  min-width:0;
+  display:grid;
+  grid-template-columns:34px 1fr 18px;
+  align-items:center;
+  gap:9px;
+  padding:11px 12px;
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:14px;
+  background:rgba(255,255,255,.035);
+  color:inherit;
+  text-decoration:none;
+  transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease;
+}
+.inline-result-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(212,175,55,.42);
+  background:rgba(212,175,55,.065);
+  box-shadow:0 8px 22px rgba(0,0,0,.16);
+}
+.inline-result-number{
+  width:30px;height:30px;display:grid;place-items:center;
+  border-radius:9px;
+  color:#e9cf70;
+  background:rgba(212,175,55,.09);
+  border:1px solid rgba(212,175,55,.18);
+  font-size:.68rem;
+  font-weight:900;
+}
+.inline-result-title{
+  min-width:0;
+  color:#edf2f8;
+  font-size:.80rem;
+  line-height:1.65;
+  font-weight:700;
+}
+.inline-result-arrow{
+  color:#d9bd5b;
+  font-size:1.15rem;
+  transition:transform .2s ease;
+}
+.inline-result-card:hover .inline-result-arrow{transform:translateX(-3px);}
+.topics-index .tag-chip.on{
+  border-color:rgba(212,175,55,.90)!important;
+  box-shadow:0 0 0 2px rgba(212,175,55,.12),0 8px 22px rgba(212,175,55,.12)!important;
+  background:linear-gradient(135deg,rgba(212,175,55,.18),rgba(255,255,255,.06))!important;
+}
+@keyframes inlineResultsIn{
+  from{opacity:0;transform:translateY(-8px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@media (max-width:760px){
+  .topic-inline-results{margin-top:14px;padding:12px;border-radius:17px;}
+  .inline-results-list{grid-template-columns:1fr;}
+  .inline-result-card{padding:10px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .topic-inline-results,.inline-result-card,.inline-results-close{animation:none!important;transition:none!important;}
+}
+</style>
+
+<style id="seljuki-topic-tag-original-behavior-final">
+/* وسم الموضوع: نفس منطق وألوان الوسوم الأصلية، مع إبقاء الإطار الفاخر للفهرس */
+.topic-tags .tag-chip{
+  appearance:none;
+  -webkit-appearance:none;
+  background:rgba(255,255,255,.85) !important;
+  border:1.5px solid var(--gold-l) !important;
+  color:var(--ink) !important;
+  border-radius:20px !important;
+  padding:7px 16px !important;
+  font-size:.85rem !important;
+  font-weight:600 !important;
+  cursor:pointer;
+  transition:all .2s;
+  transform:none;
+  box-shadow:none !important;
+}
+.topic-tags .tag-chip:hover,
+.topic-tags .tag-chip.on{
+  background:var(--gold) !important;
+  color:#fff !important;
+  border-color:var(--gold) !important;
+  transform:none;
+  box-shadow:none !important;
+}
+.topic-tags .tag-chip[aria-disabled="true"]{
+  cursor:default;
+  opacity:.58;
+}
+.topic-tags .tag-chip[aria-disabled="true"]:hover{
+  background:rgba(255,255,255,.85) !important;
+  color:var(--ink) !important;
+  border-color:var(--gold-l) !important;
+}
+
+/* النهاري */
+body:not(.dark):not(.sepia) .topic-tags .tag-chip{
+  background:#F3E7C7 !important;
+  border-color:#7A5000 !important;
+  color:#07111F !important;
+}
+body:not(.dark):not(.sepia) .topic-tags .tag-chip:hover,
+body:not(.dark):not(.sepia) .topic-tags .tag-chip.on{
+  background:#A87300 !important;
+  border-color:#5C3B00 !important;
+  color:#FFF !important;
+}
+
+/* الدافئ/السبيا */
+body.sepia .topic-tags .tag-chip{
+  background:#F7F0DF !important;
+  color:#17120B !important;
+  border-color:#B87900 !important;
+}
+body.sepia .topic-tags .tag-chip:hover,
+body.sepia .topic-tags .tag-chip.on{
+  background:#F0E2C3 !important;
+  color:#111111 !important;
+  border-color:#8A5A00 !important;
+}
+
+/* الداكن */
+body.dark .topic-tags .tag-chip{
+  background:#0B1F3A !important;
+  border-color:#D4AF37 !important;
+  color:#FFFFFF !important;
+  text-shadow:0 1px 2px rgba(0,0,0,.65);
+}
+body.dark .topic-tags .tag-chip:hover,
+body.dark .topic-tags .tag-chip.on{
+  background:#8A5A00 !important;
+  border-color:#FFD43B !important;
+  color:#FFFFFF !important;
+}
+body.dark .topic-tags .tag-chip[aria-disabled="true"]:hover{
+  background:#0B1F3A !important;
+  border-color:#D4AF37 !important;
+  color:#FFFFFF !important;
+}
+
+/* صندوق النتائج: يظهر مباشرة بعد الوسم المضغوط وقبل بقية الوسوم */
+.topic-inline-results{
+  flex:0 0 100%;
+  width:100%;
+  box-sizing:border-box;
+  margin:2px 0 8px;
+  padding:13px 14px 15px;
+  border:1px solid rgba(212,175,55,.65);
+  border-radius:16px;
+  background:rgba(255,255,255,.92);
+  text-align:right;
+}
+.topic-inline-results .topic-results-heading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin:0 0 9px;
+  color:var(--ink);
+  font-family:'Amiri Display',serif;
+  font-weight:700;
+  font-size:.95rem;
+}
+.topic-inline-results .topic-results-count{
+  color:var(--gold);
+  font-family:'Cairo',sans-serif;
+  font-size:.78rem;
+  font-weight:700;
+}
+.topic-inline-results .tag-result-card{
+  display:block;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:10px 13px;
+  margin-bottom:7px;
+  text-decoration:none;
+  color:var(--ink);
+  font-family:'Amiri Display',serif;
+  font-size:.92rem;
+  transition:background .2s;
+}
+.topic-inline-results .tag-result-card:last-child{margin-bottom:0;}
+.topic-inline-results .tag-result-card:hover{
+  background:rgba(212,175,55,.08);
+}
+body.dark .topic-inline-results{
+  background:#081120 !important;
+  border-color:#D4AF37 !important;
+}
+body.dark .topic-inline-results .topic-results-heading,
+body.dark .topic-inline-results .tag-result-card{
+  color:#FFF !important;
+}
+body.dark .topic-inline-results .tag-result-card{
+  background:#0B1F3A !important;
+  border-color:#D4AF37 !important;
+}
+body.dark .topic-inline-results .tag-result-card:hover{
+  background:#102D50 !important;
+}
+body.sepia .topic-inline-results{
+  background:#FFFDF8 !important;
+  border-color:#B87900 !important;
+}
+body.sepia .topic-inline-results .tag-result-card{
+  background:#F7F0DF !important;
+  border-color:#B87900 !important;
+  color:#17120B !important;
+}
+</style>
+
+
+<style id="topic-spacing-final">
+/* تقليل الفراغ بين «أحدث ما أضيف» وفهرس الوسوم */
+.latest-added + .topics-section,
+.latest-added ~ .topics-section {
+  margin-top: 10px !important;
+  padding-top: 0 !important;
+}
+</style>
+
+
+<style id="topic-index-headings-only-final">
+/* واجهة الفهرس: إظهار العناوين الرئيسية فقط، والوسوم تظهر عند فتح الفرع */
+.topic-category:not(.open) .topic-tags,
+.topic-category:not(.open) [data-topic-tags],
+[data-topic-category]:not(.open) .topic-tags,
+[data-topic-category]:not(.open) [data-topic-tags] {
+  display:none !important;
+}
+
+/* لا يظهر أي جزء من الوسوم داخل الفرع المغلق */
+.topic-category:not(.open) .tag-chip,
+[data-topic-category]:not(.open) .tag-chip {
+  visibility:hidden !important;
+}
+</style>
+
+
+<style id="topic-category-symbols-final">
+/* رمز الأسرة والمجتمع: ثلاثة أشخاص مجردون بلا ملامح وجه */
+.topic-category-icon[aria-label="رمز مجرد للأسرة والمجتمع"]{
+  font-family:Arial,sans-serif !important;
+  font-size:1.35rem !important;
+  letter-spacing:-.18em !important;
+  white-space:nowrap !important;
+}
+
+/* الشيطان والآخرة والجنة والنار: بلا رمز وبلا صندوق فارغ */
+.topic-category-icon[aria-hidden="true"]:empty{
+  display:none !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty){
+  grid-template-columns:1fr auto !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-title{
+  grid-column:1 !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-arrow{
+  grid-column:2 !important;
+}
+</style>
+
+
+<style id="topic-heading-level-final">
+/* الفروع التي بلا رموز: نفس مستوى وحجم ووزن عناوين بقية الفروع */
+.topic-category-head .topic-category-title{
+  font-size:clamp(1.08rem,1.6vw,1.38rem) !important;
+  font-weight:700 !important;
+  line-height:1.35 !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty){
+  display:grid !important;
+  grid-template-columns:1fr auto !important;
+  grid-template-rows:auto auto !important;
+  column-gap:14px !important;
+  align-items:center !important;
+  text-align:right !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-title{
+  grid-column:1 !important;
+  grid-row:1 !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-sub{
+  grid-column:1 !important;
+  grid-row:2 !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-arrow{
+  grid-column:2 !important;
+  grid-row:1 / span 2 !important;
+}
+@media(max-width:520px){
+  .topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty){
+    grid-template-columns:1fr auto !important;
+    column-gap:10px !important;
+  }
+  .topic-category-head .topic-category-title{
+    font-size:1.02rem !important;
+  }
+}
+</style>
+
+
+<style id="topic-iconless-title-align-final">
+/* محاذاة عناوين الفروع بلا رموز مع بداية كتابة بقية الفروع تمامًا */
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty){
+  grid-template-columns:54px 1fr auto !important;
+  column-gap:14px !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-title,
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-sub{
+  grid-column:2 !important;
+  text-align:right !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-title{
+  grid-row:1 !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-sub{
+  grid-row:2 !important;
+}
+.topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty) .topic-category-arrow{
+  grid-column:3 !important;
+  grid-row:1 / span 2 !important;
+}
+@media(max-width:520px){
+  .topic-category-head:has(.topic-category-icon[aria-hidden="true"]:empty){
+    grid-template-columns:46px 1fr auto !important;
+    column-gap:10px !important;
+  }
+}
+</style>
+
+
+<style id="topic-index-heading-polish-final">
+/* تحسين عنوان فهرس الموسوعة */
+.topics-kicker{
+  font-size:1.08rem !important;
+  font-weight:800 !important;
+  color:#7A5A00 !important;
+  letter-spacing:.16em !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.7);
+}
+.topics-index-head h2{
+  color:#0A192F !important;
+  font-size:clamp(1.75rem,3.2vw,2.55rem) !important;
+  font-weight:800 !important;
+  line-height:1.45 !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.75);
+}
+.topics-index-head p{
+  color:#26384A !important;
+  font-size:1rem !important;
+  font-weight:600 !important;
+  line-height:1.95 !important;
+  max-width:820px;
+  margin:8px auto 0 !important;
+}
+body.dark .topics-kicker{
+  color:#E8CD6E !important;
+  text-shadow:0 1px 2px rgba(0,0,0,.7);
+}
+body.dark .topics-index-head h2{
+  color:#FFF0A8 !important;
+  text-shadow:0 1px 3px rgba(0,0,0,.75);
+}
+body.dark .topics-index-head p{
+  color:#E8CD6E !important;
+  text-shadow:0 1px 2px rgba(0,0,0,.65);
+}
+body.sepia .topics-kicker{
+  color:#6B4A00 !important;
+}
+body.sepia .topics-index-head h2{
+  color:#0A192F !important;
+}
+body.sepia .topics-index-head p{
+  color:#2A241A !important;
+}
+@media(max-width:520px){
+  .topics-kicker{font-size:.98rem !important;}
+  .topics-index-head h2{font-size:1.62rem !important;}
+  .topics-index-head p{font-size:.9rem !important;line-height:1.9 !important;}
+}
+</style>
+
+<style id="wcag-tag-list-contrast">
+/* =========================================================
+   WCAG CONTRAST / CLARITY — TAG LIST ONLY
+   Scope intentionally limited to .topic-tags and its contents.
+   ========================================================= */
+
+/* Strong, readable tag text without changing the rest of the site */
+.topic-tags .tag-chip{
+  color:#111827 !important;
+  background:#FFFFFF !important;
+  border:2px solid #7A5A00 !important;
+  font-weight:800 !important;
+  font-size:1rem !important;
+  line-height:1.5 !important;
+  text-shadow:none !important;
+  box-shadow:0 1px 2px rgba(0,0,0,.12) !important;
+}
+
+/* Hover: clear state change while preserving the site's gold identity */
+.topic-tags .tag-chip:hover{
+  color:#FFFFFF !important;
+  background:#6B4A00 !important;
+  border-color:#4A3200 !important;
+}
+
+/* Keyboard focus: highly visible focus indicator */
+.topic-tags .tag-chip:focus-visible{
+  outline:3px solid #005FCC !important;
+  outline-offset:3px !important;
+  box-shadow:0 0 0 2px #FFFFFF, 0 0 0 5px #005FCC !important;
+}
+
+/* Active tag */
+.topic-tags .tag-chip.on{
+  color:#FFFFFF !important;
+  background:#6B4A00 !important;
+  border-color:#4A3200 !important;
+  font-weight:900 !important;
+}
+
+/* Disabled tags remain clearly disabled without becoming illegible */
+.topic-tags .tag-chip[aria-disabled="true"]{
+  color:#4B5563 !important;
+  background:#F3F4F6 !important;
+  border-color:#6B7280 !important;
+  opacity:1 !important;
+  cursor:not-allowed !important;
+}
+
+/* Inline results generated directly beneath an active tag */
+.topic-tags .topic-inline-results{
+  color:#111827 !important;
+  background:#FFFFFF !important;
+  border:2px solid #7A5A00 !important;
+  border-radius:12px !important;
+  padding:12px !important;
+  margin:8px 0 12px !important;
+}
+
+/* Results heading and count */
+.topic-tags .topic-results-heading{
+  color:#111827 !important;
+  font-weight:900 !important;
+  line-height:1.6 !important;
+}
+
+.topic-tags .topic-results-count{
+  color:#4A3200 !important;
+  font-weight:800 !important;
+}
+
+/* Article-result links */
+.topic-tags .tag-result-card{
+  color:#0B1F3A !important;
+  background:#F8FAFC !important;
+  border:1px solid #64748B !important;
+  font-weight:700 !important;
+  line-height:1.65 !important;
+  text-decoration:none !important;
+}
+
+.topic-tags .tag-result-card:hover{
+  color:#FFFFFF !important;
+  background:#0B1F3A !important;
+  border-color:#0B1F3A !important;
+}
+
+.topic-tags .tag-result-card:focus-visible{
+  outline:3px solid #005FCC !important;
+  outline-offset:2px !important;
+}
+
+/* Dark mode — tag list only */
+body.dark .topic-tags .tag-chip{
+  color:#FFFFFF !important;
+  background:#0B1F3A !important;
+  border-color:#E8CD6E !important;
+}
+
+body.dark .topic-tags .tag-chip:hover,
+body.dark .topic-tags .tag-chip.on{
+  color:#FFFFFF !important;
+  background:#6B4A00 !important;
+  border-color:#FFE58A !important;
+}
+
+body.dark .topic-tags .tag-chip[aria-disabled="true"]{
+  color:#D1D5DB !important;
+  background:#1F2937 !important;
+  border-color:#9CA3AF !important;
+}
+
+body.dark .topic-tags .topic-inline-results{
+  color:#FFFFFF !important;
+  background:#0B1F3A !important;
+  border-color:#E8CD6E !important;
+}
+
+body.dark .topic-tags .topic-results-heading{
+  color:#FFFFFF !important;
+}
+
+body.dark .topic-tags .topic-results-count{
+  color:#FFE58A !important;
+}
+
+body.dark .topic-tags .tag-result-card{
+  color:#FFFFFF !important;
+  background:#132B49 !important;
+  border-color:#B8C4D1 !important;
+}
+
+body.dark .topic-tags .tag-result-card:hover{
+  color:#FFFFFF !important;
+  background:#06152A !important;
+  border-color:#FFE58A !important;
+}
+
+/* Sepia mode — tag list only */
+body.sepia .topic-tags .tag-chip{
+  color:#111827 !important;
+  background:#FFFDF5 !important;
+  border-color:#6B4A00 !important;
+}
+
+body.sepia .topic-tags .tag-chip:hover,
+body.sepia .topic-tags .tag-chip.on{
+  color:#FFFFFF !important;
+  background:#6B4A00 !important;
+  border-color:#3F2B00 !important;
+}
+
+body.sepia .topic-tags .tag-chip[aria-disabled="true"]{
+  color:#4B5563 !important;
+  background:#F1EBDD !important;
+  border-color:#6B6255 !important;
+}
+
+body.sepia .topic-tags .topic-inline-results{
+  color:#111827 !important;
+  background:#FFFDF5 !important;
+  border-color:#6B4A00 !important;
+}
+
+body.sepia .topic-tags .topic-results-heading{
+  color:#111827 !important;
+}
+
+body.sepia .topic-tags .topic-results-count{
+  color:#4A3200 !important;
+}
+
+body.sepia .topic-tags .tag-result-card{
+  color:#0B1F3A !important;
+  background:#F8F2E5 !important;
+  border-color:#6B6255 !important;
+}
+
+/* Small screens: preserve readable tap targets */
+@media(max-width:520px){
+  .topic-tags .tag-chip{
+    font-size:.96rem !important;
+    line-height:1.55 !important;
+    min-height:44px !important;
+    padding:8px 12px !important;
+  }
+
+  .topic-tags .topic-inline-results{
+    padding:10px !important;
+  }
+}
+
+</style>
+<style id="wcag-topic-index-headings">
+/* =========================================================
+   WCAG CONTRAST / CLARITY — TOPIC INDEX HEADINGS ONLY
+   Scope: the three topic-index heading texts, plus their
+   immediate topic-index heading container. No other site area.
+   ========================================================= */
+
+/* فَهْرِسُ الْمَوْسُوعَةِ ✦ */
+.topics-index-head .topics-kicker{
+  color:#5A4100 !important;
+  font-weight:900 !important;
+  font-size:1.1rem !important;
+  line-height:1.6 !important;
+  text-shadow:none !important;
+}
+
+/* 📚 موضوعات موسوعة السلجوقي التدبرية */
+.topics-index-head h2{
+  color:#06152A !important;
+  font-weight:900 !important;
+  font-size:clamp(1.8rem,3.25vw,2.6rem) !important;
+  line-height:1.5 !important;
+  text-shadow:none !important;
+}
+
+/* الوصف أسفل العنوان */
+.topics-index-head p{
+  color:#172B3D !important;
+  font-weight:700 !important;
+  font-size:1.02rem !important;
+  line-height:2 !important;
+  text-shadow:none !important;
+}
+
+/* Dark mode — same three texts only */
+body.dark .topics-index-head .topics-kicker{
+  color:#FFF0A8 !important;
+  text-shadow:none !important;
+}
+
+body.dark .topics-index-head h2{
+  color:#FFFFFF !important;
+  text-shadow:none !important;
+}
+
+body.dark .topics-index-head p{
+  color:#F3E7B3 !important;
+  text-shadow:none !important;
+}
+
+/* Sepia mode — same three texts only */
+body.sepia .topics-index-head .topics-kicker{
+  color:#513900 !important;
+}
+
+body.sepia .topics-index-head h2{
+  color:#06152A !important;
+}
+
+body.sepia .topics-index-head p{
+  color:#211C15 !important;
+}
+
+/* Mobile readability */
+@media(max-width:520px){
+  .topics-index-head .topics-kicker{
+    font-size:1rem !important;
+  }
+
+  .topics-index-head h2{
+    font-size:1.68rem !important;
+    line-height:1.55 !important;
+  }
+
+  .topics-index-head p{
+    font-size:.92rem !important;
+    line-height:1.95 !important;
+  }
+}
+
+</style>
 </head>
 <body data-manifest-version="263">
 <button class="new-badge" id="newBadge" onclick="checkForUpdates()">
@@ -3848,8 +4827,8 @@ body.dark .new-badge{color:#061326 !important}
 <div class="hero-frame"></div>
 <div class="tugra">✦ ✧ ❖ ✧ ✦</div>
 <div class="sheikh-frame">
-<span class="corner-star cs-t">✦</span><span class="corner-star cs-b">✦</span>
-<span class="corner-star cs-l">✧</span><span class="corner-star cs-r">✧</span>
+
+
 <span class="ring-out"></span><span class="ring-mid"></span>
 <span class="ring-in"><img alt="الشيخ علي خليل السلجوقي" src="sheikh.png"/></span>
 </div>
@@ -3944,33 +4923,687 @@ body.dark .new-badge{color:#061326 !important}
 <div class="search-note" id="searchNote"></div>
 <div id="searchResults" style="display:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;"></div>
 </div>
-<!-- تصفّح حسب الموضوع (تجريبي) -->
-<div class="tags-wrap">
-<div class="tags-title">◈ تصفّح حسب الموضوع</div>
-<div class="tags-cloud">
-<span class="tag-chip" data-tag="التوبة">التوبة</span>
-<span class="tag-chip" data-tag="الصبر">الصبر</span>
-<span class="tag-chip" data-tag="القلب">القلب</span>
-<span class="tag-chip" data-tag="النية">النية والإخلاص</span>
-<span class="tag-chip" data-tag="القيامة">أهوال القيامة</span>
-<span class="tag-chip" data-tag="الرحمة">رحمة الله</span>
-<span class="tag-chip" data-tag="الشرك">الشرك والتوحيد</span>
-<span class="tag-chip" data-tag="القرآن">التدبر القرآني</span>
-<span class="tag-chip" data-tag="النبوة">السيرة والنبوة</span>
-<span class="tag-chip" data-tag="السياسة">السياسة الشرعية</span>
-<span class="tag-chip" data-tag="الفتن">الفتن</span>
-<span class="tag-chip" data-tag="الطغيان">الطغيان</span>
-<span class="tag-chip" data-tag="النعمة">النعمة والشكر</span>
-<span class="tag-chip" data-tag="تصنيف الديار">تصنيف الديار</span>
-<span class="tag-chip" data-tag="التأويل">التأويل</span>
-</div>
-<div id="tagResults" style="display:none;margin-top:16px;"></div>
-</div>
+<!-- ═══════════════════════════════════════════════════════════════
+     فهرس موضوعات الموسوعة — النسخة الفاخرة العصرية
+     الأبواب الكبرى قابلة للفتح والإغلاق، والوسوم قابلة للنقر.
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="topics-index" id="topicsIndex" aria-label="فهرس موضوعات الموسوعة">
+  <div class="topics-index-head">
+    <div class="topics-kicker">✦ فَهْرِسُ الْمَوْسُوعَةِ ✦</div>
+    <h2>📚 موضوعات موسوعة السلجوقي التدبرية</h2>
+    <p>استكشف الموضوعات الكبرى، وافتح أي باب لتظهر وسومه، ثم اضغط على الوسم لعرض المقالات المرتبطة به.</p>
+  </div>
+
+  <div class="topics-grid">
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🕋</span>
+        <span class="topic-category-title">القرآن الكريم</span>
+        <span class="topic-category-sub">القرآن والتدبر والتفسير والهداية</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="القرآن الكريم" aria-disabled="false">القرآن الكريم</button>
+          <button class="tag-chip topic-tag-active" data-tag="التدبر" aria-disabled="false">التدبر</button>
+          <button class="tag-chip topic-tag-active" data-tag="التفسير" aria-disabled="false">التفسير</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="هداية القرآن" aria-disabled="true">هداية القرآن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="نور القرآن" aria-disabled="true">نور القرآن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="آيات الله" aria-disabled="true">آيات الله</button>
+          <button class="tag-chip topic-tag-active" data-tag="قصص القرآن" aria-disabled="false">قصص القرآن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أمثال القرآن" aria-disabled="true">أمثال القرآن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="موضوعات القرآن" aria-disabled="true">موضوعات القرآن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="مقاصد القرآن" aria-disabled="true">مقاصد القرآن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سياق الآيات" aria-disabled="true">سياق الآيات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سياق السورة" aria-disabled="true">سياق السورة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="محور السورة" aria-disabled="true">محور السورة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="ترابط الآيات" aria-disabled="true">ترابط الآيات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والإنسان" aria-disabled="true">القرآن والإنسان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والحياة" aria-disabled="true">القرآن والحياة</button>
+          <button class="tag-chip topic-tag-active" data-tag="القرآن والواقع" aria-disabled="false">القرآن والواقع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والتغيير" aria-disabled="true">القرآن والتغيير</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والإصلاح" aria-disabled="true">القرآن والإصلاح</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التدبر المعاصر" aria-disabled="true">التدبر المعاصر</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">❤️</span>
+        <span class="topic-category-title">القلب وتزكية النفس</span>
+        <span class="topic-category-sub">الإيمان الباطن وإصلاح القلب والنفس</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="القلب" aria-disabled="false">القلب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="حياة القلب" aria-disabled="true">حياة القلب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القلب السليم" aria-disabled="true">القلب السليم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="مرض القلب" aria-disabled="true">مرض القلب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="قسوة القلب" aria-disabled="true">قسوة القلب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النية" aria-disabled="true">النية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإخلاص" aria-disabled="true">الإخلاص</button>
+          <button class="tag-chip topic-tag-active" data-tag="التقوى" aria-disabled="false">التقوى</button>
+          <button class="tag-chip topic-tag-active" data-tag="اليقين" aria-disabled="false">اليقين</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التوكل" aria-disabled="true">التوكل</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الخشوع" aria-disabled="true">الخشوع</button>
+          <button class="tag-chip topic-tag-active" data-tag="السكينة" aria-disabled="false">السكينة</button>
+          <button class="tag-chip topic-tag-active" data-tag="التوبة" aria-disabled="false">التوبة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإنابة" aria-disabled="true">الإنابة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الاستغفار" aria-disabled="false">الاستغفار</button>
+          <button class="tag-chip topic-tag-active" data-tag="محاسبة النفس" aria-disabled="false">محاسبة النفس</button>
+          <button class="tag-chip topic-tag-active" data-tag="مجاهدة النفس" aria-disabled="false">مجاهدة النفس</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الهوى" aria-disabled="true">الهوى</button>
+          <button class="tag-chip topic-tag-active" data-tag="الشهوة" aria-disabled="false">الشهوة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الحسد" aria-disabled="true">الحسد</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الكبر" aria-disabled="true">الكبر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الرياء" aria-disabled="true">الرياء</button>
+          <button class="tag-chip topic-tag-active" data-tag="الغفلة" aria-disabled="false">الغفلة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="البصيرة" aria-disabled="true">البصيرة</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🧠</span>
+        <span class="topic-category-title">الإيمان والعقيدة</span>
+        <span class="topic-category-sub">التوحيد والغيب واليقين والشبهات</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="التوحيد" aria-disabled="false">التوحيد</button>
+          <button class="tag-chip topic-tag-active" data-tag="الشرك" aria-disabled="false">الشرك</button>
+          <button class="tag-chip topic-tag-active" data-tag="الإيمان" aria-disabled="false">الإيمان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أسماء الله الحسنى" aria-disabled="true">أسماء الله الحسنى</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="صفات الله" aria-disabled="true">صفات الله</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="معرفة الله" aria-disabled="true">معرفة الله</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="تعظيم الله" aria-disabled="true">تعظيم الله</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="مراقبة الله" aria-disabled="true">مراقبة الله</button>
+          <button class="tag-chip topic-tag-active" data-tag="اليقين" aria-disabled="false">اليقين</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الفطرة" aria-disabled="true">الفطرة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الإيمان بالغيب" aria-disabled="false">الإيمان بالغيب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القدر" aria-disabled="true">القدر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النبوة" aria-disabled="true">النبوة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الرسل" aria-disabled="true">الرسل</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الملائكة" aria-disabled="true">الملائكة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الجن" aria-disabled="true">الجن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النفاق" aria-disabled="true">النفاق</button>
+          <button class="tag-chip topic-tag-active" data-tag="الكفر" aria-disabled="false">الكفر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإلحاد" aria-disabled="true">الإلحاد</button>
+          <button class="tag-chip topic-tag-active" data-tag="الشبهات العقدية" aria-disabled="false">الشبهات العقدية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الحجة والبرهان" aria-disabled="true">الحجة والبرهان</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🌱</span>
+        <span class="topic-category-title">الأخلاق والسلوك</span>
+        <span class="topic-category-sub">أخلاق المؤمن وبناء السلوك</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-inactive" data-tag="الصدق" aria-disabled="true">الصدق</button>
+          <button class="tag-chip topic-tag-active" data-tag="الأمانة" aria-disabled="false">الأمانة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الوفاء" aria-disabled="false">الوفاء</button>
+          <button class="tag-chip topic-tag-active" data-tag="الرحمة" aria-disabled="false">الرحمة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="العفو" aria-disabled="true">العفو</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الصفح" aria-disabled="true">الصفح</button>
+          <button class="tag-chip topic-tag-active" data-tag="الحلم" aria-disabled="false">الحلم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التواضع" aria-disabled="true">التواضع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الحياء" aria-disabled="true">الحياء</button>
+          <button class="tag-chip topic-tag-active" data-tag="العفة" aria-disabled="false">العفة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="حفظ اللسان" aria-disabled="true">حفظ اللسان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="غض البصر" aria-disabled="true">غض البصر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="حسن الظن" aria-disabled="true">حسن الظن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الغيبة" aria-disabled="true">الغيبة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النميمة" aria-disabled="true">النميمة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الكذب" aria-disabled="true">الكذب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الخيانة" aria-disabled="true">الخيانة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الظلم" aria-disabled="false">الظلم</button>
+          <button class="tag-chip topic-tag-active" data-tag="الإحسان" aria-disabled="false">الإحسان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القناعة" aria-disabled="true">القناعة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الزهد" aria-disabled="true">الزهد</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🕌</span>
+        <span class="topic-category-title">العبادة والطاعة</span>
+        <span class="topic-category-sub">العبادات والقربات وأعمال القلوب</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="العبادة" aria-disabled="false">العبادة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الصلاة" aria-disabled="true">الصلاة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الصيام" aria-disabled="true">الصيام</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الزكاة" aria-disabled="true">الزكاة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الحج" aria-disabled="false">الحج</button>
+          <button class="tag-chip topic-tag-active" data-tag="الدعاء" aria-disabled="false">الدعاء</button>
+          <button class="tag-chip topic-tag-active" data-tag="الذكر" aria-disabled="false">الذكر</button>
+          <button class="tag-chip topic-tag-active" data-tag="الاستغفار" aria-disabled="false">الاستغفار</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الخشوع" aria-disabled="true">الخشوع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="قيام الليل" aria-disabled="true">قيام الليل</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الصدقة" aria-disabled="true">الصدقة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإنفاق" aria-disabled="true">الإنفاق</button>
+          <button class="tag-chip topic-tag-active" data-tag="الطاعة" aria-disabled="false">الطاعة</button>
+          <button class="tag-chip topic-tag-active" data-tag="التقرب إلى الله" aria-disabled="false">التقرب إلى الله</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المسارعة إلى الخيرات" aria-disabled="true">المسارعة إلى الخيرات</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">⚔️</span>
+        <span class="topic-category-title">الابتلاء والصبر والثبات</span>
+        <span class="topic-category-sub">مواقف الاختبار والنجاة والثبات</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="الابتلاء" aria-disabled="false">الابتلاء</button>
+          <button class="tag-chip topic-tag-active" data-tag="البلاء" aria-disabled="false">البلاء</button>
+          <button class="tag-chip topic-tag-active" data-tag="الفتنة" aria-disabled="false">الفتنة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المحنة" aria-disabled="true">المحنة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المصيبة" aria-disabled="true">المصيبة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الصبر" aria-disabled="false">الصبر</button>
+          <button class="tag-chip topic-tag-active" data-tag="الثبات" aria-disabled="false">الثبات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الثبات على الدين" aria-disabled="true">الثبات على الدين</button>
+          <button class="tag-chip topic-tag-active" data-tag="اليقين" aria-disabled="false">اليقين</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التوكل" aria-disabled="true">التوكل</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الفرج" aria-disabled="true">الفرج</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النصر" aria-disabled="true">النصر</button>
+          <button class="tag-chip topic-tag-active" data-tag="التمكين" aria-disabled="false">التمكين</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الهجرة" aria-disabled="true">الهجرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التضحية" aria-disabled="true">التضحية</button>
+          <button class="tag-chip topic-tag-active" data-tag="سنن الابتلاء" aria-disabled="false">سنن الابتلاء</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon" aria-hidden="true"></span>
+        <span class="topic-category-title">الشيطان والهوى والشهوات</span>
+        <span class="topic-category-sub">مداخل الباطل ومجاهدة النفس</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="الشيطان" aria-disabled="false">الشيطان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="إبليس" aria-disabled="true">إبليس</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="وسوسة الشيطان" aria-disabled="true">وسوسة الشيطان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="تزيين الباطل" aria-disabled="true">تزيين الباطل</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="خطوات الشيطان" aria-disabled="true">خطوات الشيطان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="كيد الشيطان" aria-disabled="true">كيد الشيطان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإغواء" aria-disabled="true">الإغواء</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الهوى" aria-disabled="true">الهوى</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="اتباع الهوى" aria-disabled="true">اتباع الهوى</button>
+          <button class="tag-chip topic-tag-active" data-tag="الشهوة" aria-disabled="false">الشهوة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الشهوات" aria-disabled="false">الشهوات</button>
+          <button class="tag-chip topic-tag-active" data-tag="العفة" aria-disabled="false">العفة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="غض البصر" aria-disabled="true">غض البصر</button>
+          <button class="tag-chip topic-tag-active" data-tag="الغفلة" aria-disabled="false">الغفلة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التعلق بالدنيا" aria-disabled="true">التعلق بالدنيا</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🌍</span>
+        <span class="topic-category-title">الإنسان والحياة والدنيا</span>
+        <span class="topic-category-sub">الإنسان والوقت والتحول والحياة</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="الإنسان" aria-disabled="false">الإنسان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الفطرة" aria-disabled="true">الفطرة</button>
+          <button class="tag-chip topic-tag-active" data-tag="العقل" aria-disabled="false">العقل</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التفكير" aria-disabled="true">التفكير</button>
+          <button class="tag-chip topic-tag-active" data-tag="التدبر" aria-disabled="false">التدبر</button>
+          <button class="tag-chip topic-tag-active" data-tag="العلم" aria-disabled="false">العلم</button>
+          <button class="tag-chip topic-tag-active" data-tag="الجهل" aria-disabled="false">الجهل</button>
+          <button class="tag-chip topic-tag-active" data-tag="الإرادة" aria-disabled="false">الإرادة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الاختيار" aria-disabled="true">الاختيار</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المسؤولية" aria-disabled="true">المسؤولية</button>
+          <button class="tag-chip topic-tag-active" data-tag="الحياة" aria-disabled="false">الحياة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الدنيا" aria-disabled="false">الدنيا</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="متاع الدنيا" aria-disabled="true">متاع الدنيا</button>
+          <button class="tag-chip topic-tag-active" data-tag="حب الدنيا" aria-disabled="false">حب الدنيا</button>
+          <button class="tag-chip topic-tag-active" data-tag="الوقت" aria-disabled="false">الوقت</button>
+          <button class="tag-chip topic-tag-active" data-tag="العمر" aria-disabled="false">العمر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأجل" aria-disabled="true">الأجل</button>
+          <button class="tag-chip topic-tag-active" data-tag="اغتنام الفرص" aria-disabled="false">اغتنام الفرص</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التغيير" aria-disabled="true">التغيير</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="بناء الإنسان" aria-disabled="true">بناء الإنسان</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon" aria-hidden="true"></span>
+        <span class="topic-category-title">الآخرة والجنة والنار</span>
+        <span class="topic-category-sub">الموت والقيامة والحساب والمصير</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="الآخرة" aria-disabled="false">الآخرة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الموت" aria-disabled="false">الموت</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القبر" aria-disabled="true">القبر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="البرزخ" aria-disabled="true">البرزخ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="البعث" aria-disabled="true">البعث</button>
+          <button class="tag-chip topic-tag-active" data-tag="الحشر" aria-disabled="false">الحشر</button>
+          <button class="tag-chip topic-tag-active" data-tag="القيامة" aria-disabled="false">القيامة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الحساب" aria-disabled="true">الحساب</button>
+          <button class="tag-chip topic-tag-active" data-tag="الميزان" aria-disabled="false">الميزان</button>
+          <button class="tag-chip topic-tag-active" data-tag="الصراط" aria-disabled="false">الصراط</button>
+          <button class="tag-chip topic-tag-active" data-tag="صحائف الأعمال" aria-disabled="false">صحائف الأعمال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الشفاعة" aria-disabled="true">الشفاعة</button>
+          <button class="tag-chip topic-tag-active" data-tag="المغفرة" aria-disabled="false">المغفرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الجزاء" aria-disabled="true">الجزاء</button>
+          <button class="tag-chip topic-tag-active" data-tag="الجنة" aria-disabled="false">الجنة</button>
+          <button class="tag-chip topic-tag-active" data-tag="نعيم الجنة" aria-disabled="false">نعيم الجنة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أهل الجنة" aria-disabled="true">أهل الجنة</button>
+          <button class="tag-chip topic-tag-active" data-tag="النار" aria-disabled="false">النار</button>
+          <button class="tag-chip topic-tag-active" data-tag="جهنم" aria-disabled="false">جهنم</button>
+          <button class="tag-chip topic-tag-active" data-tag="عذاب النار" aria-disabled="false">عذاب النار</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أهل النار" aria-disabled="true">أهل النار</button>
+          <button class="tag-chip topic-tag-active" data-tag="الحسرة والندامة" aria-disabled="false">الحسرة والندامة</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">📜</span>
+        <span class="topic-category-title">قصص القرآن والأنبياء</span>
+        <span class="topic-category-sub">القصص والعبر والشخصيات القرآنية</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="يوسف عليه السلام" aria-disabled="false">يوسف عليه السلام</button>
+          <button class="tag-chip topic-tag-active" data-tag="سورة يوسف" aria-disabled="false">سورة يوسف</button>
+          <button class="tag-chip topic-tag-active" data-tag="موسى عليه السلام" aria-disabled="false">موسى عليه السلام</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="إبراهيم عليه السلام" aria-disabled="true">إبراهيم عليه السلام</button>
+          <button class="tag-chip topic-tag-active" data-tag="شعيب عليه السلام" aria-disabled="false">شعيب عليه السلام</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="نوح عليه السلام" aria-disabled="true">نوح عليه السلام</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="آدم عليه السلام" aria-disabled="true">آدم عليه السلام</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="عيسى عليه السلام" aria-disabled="true">عيسى عليه السلام</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="محمد ﷺ" aria-disabled="true">محمد ﷺ</button>
+          <button class="tag-chip topic-tag-active" data-tag="فرعون" aria-disabled="false">فرعون</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="قارون" aria-disabled="true">قارون</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="مريم عليها السلام" aria-disabled="true">مريم عليها السلام</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أصحاب الكهف" aria-disabled="true">أصحاب الكهف</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="صاحب الجنتين" aria-disabled="true">صاحب الجنتين</button>
+          <button class="tag-chip topic-tag-active" data-tag="أصحاب الأخدود" aria-disabled="false">أصحاب الأخدود</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="ذو القرنين" aria-disabled="true">ذو القرنين</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="بلقيس" aria-disabled="true">بلقيس</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="امرأة العزيز" aria-disabled="true">امرأة العزيز</button>
+          <button class="tag-chip topic-tag-active" data-tag="العبر من القصص" aria-disabled="false">العبر من القصص</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنن الأنبياء" aria-disabled="true">سنن الأنبياء</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon" aria-hidden="true"></span>
+        <span class="topic-category-title">الأسرة والمجتمع</span>
+        <span class="topic-category-sub">البيت والتربية والعلاقات والأمة</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="الأسرة" aria-disabled="false">الأسرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الزواج" aria-disabled="true">الزواج</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الزوج" aria-disabled="true">الزوج</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الزوجة" aria-disabled="true">الزوجة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأب" aria-disabled="true">الأب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأم" aria-disabled="true">الأم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأبناء" aria-disabled="true">الأبناء</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="بر الوالدين" aria-disabled="true">بر الوالدين</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="صلة الرحم" aria-disabled="true">صلة الرحم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التربية" aria-disabled="true">التربية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الطلاق" aria-disabled="true">الطلاق</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الميراث" aria-disabled="true">الميراث</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المجتمع" aria-disabled="true">المجتمع</button>
+          <button class="tag-chip topic-tag-active" data-tag="الأمة" aria-disabled="false">الأمة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الأخوة" aria-disabled="false">الأخوة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الوحدة" aria-disabled="false">الوحدة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الفرقة" aria-disabled="false">الفرقة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التكافل" aria-disabled="true">التكافل</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإصلاح الاجتماعي" aria-disabled="true">الإصلاح الاجتماعي</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">⚖️</span>
+        <span class="topic-category-title">العدل والظلم والإصلاح</span>
+        <span class="topic-category-sub">الحقوق والإصلاح ومواجهة الفساد</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="العدل" aria-disabled="false">العدل</button>
+          <button class="tag-chip topic-tag-active" data-tag="الظلم" aria-disabled="false">الظلم</button>
+          <button class="tag-chip topic-tag-active" data-tag="الإحسان" aria-disabled="false">الإحسان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإصلاح" aria-disabled="true">الإصلاح</button>
+          <button class="tag-chip topic-tag-active" data-tag="الفساد" aria-disabled="false">الفساد</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأمر بالمعروف" aria-disabled="true">الأمر بالمعروف</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النهي عن المنكر" aria-disabled="true">النهي عن المنكر</button>
+          <button class="tag-chip topic-tag-active" data-tag="الحقوق" aria-disabled="false">الحقوق</button>
+          <button class="tag-chip topic-tag-active" data-tag="الإنصاف" aria-disabled="false">الإنصاف</button>
+          <button class="tag-chip topic-tag-active" data-tag="رفع الظلم" aria-disabled="false">رفع الظلم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="رد الحقوق" aria-disabled="true">رد الحقوق</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القصاص" aria-disabled="true">القصاص</button>
+          <button class="tag-chip topic-tag-active" data-tag="الشهادة" aria-disabled="false">الشهادة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الوفاء بالعهد" aria-disabled="false">الوفاء بالعهد</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الوفاء بالعقود" aria-disabled="true">الوفاء بالعقود</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="إصلاح المجتمع" aria-disabled="true">إصلاح المجتمع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="إصلاح الأمة" aria-disabled="true">إصلاح الأمة</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">💰</span>
+        <span class="topic-category-title">المال والرزق والمعاملات</span>
+        <span class="topic-category-sub">المال والكسب والإنفاق والمعاملات</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="المال" aria-disabled="false">المال</button>
+          <button class="tag-chip topic-tag-active" data-tag="الرزق" aria-disabled="false">الرزق</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الغنى" aria-disabled="true">الغنى</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الفقر" aria-disabled="true">الفقر</button>
+          <button class="tag-chip topic-tag-active" data-tag="التجارة" aria-disabled="false">التجارة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="البيع" aria-disabled="true">البيع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الشراء" aria-disabled="true">الشراء</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الدين" aria-disabled="true">الدين</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الديون" aria-disabled="true">الديون</button>
+          <button class="tag-chip topic-tag-active" data-tag="الربا" aria-disabled="false">الربا</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الزكاة" aria-disabled="true">الزكاة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الصدقة" aria-disabled="true">الصدقة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإنفاق" aria-disabled="true">الإنفاق</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الميراث" aria-disabled="true">الميراث</button>
+          <button class="tag-chip topic-tag-active" data-tag="الوصية" aria-disabled="false">الوصية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأمانة المالية" aria-disabled="true">الأمانة المالية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الكسب" aria-disabled="true">الكسب</button>
+          <button class="tag-chip topic-tag-active" data-tag="فتنة المال" aria-disabled="false">فتنة المال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الاستدراج بالمال" aria-disabled="true">الاستدراج بالمال</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🗣️</span>
+        <span class="topic-category-title">الدعوة والحوار والمناظرة</span>
+        <span class="topic-category-sub">الحجة والبيان والرد المنهجي</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-inactive" data-tag="الدعوة" aria-disabled="true">الدعوة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="البلاغ" aria-disabled="true">البلاغ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الحكمة" aria-disabled="true">الحكمة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الموعظة الحسنة" aria-disabled="true">الموعظة الحسنة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النصيحة" aria-disabled="true">النصيحة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الحوار" aria-disabled="false">الحوار</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المناظرة" aria-disabled="true">المناظرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الجدال" aria-disabled="true">الجدال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الحجة" aria-disabled="true">الحجة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="البرهان" aria-disabled="true">البرهان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الدليل" aria-disabled="true">الدليل</button>
+          <button class="tag-chip topic-tag-active" data-tag="الشبهات" aria-disabled="false">الشبهات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الرد على الشبهات" aria-disabled="true">الرد على الشبهات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="إقامة الحجة" aria-disabled="true">إقامة الحجة</button>
+          <button class="tag-chip topic-tag-active" data-tag="أدب الاختلاف" aria-disabled="false">أدب الاختلاف</button>
+          <button class="tag-chip topic-tag-active" data-tag="الرد العلمي" aria-disabled="false">الرد العلمي</button>
+          <button class="tag-chip topic-tag-active" data-tag="الرد المنهجي" aria-disabled="false">الرد المنهجي</button>
+          <button class="tag-chip topic-tag-active" data-tag="تصحيح المفاهيم" aria-disabled="false">تصحيح المفاهيم</button>
+          <button class="tag-chip topic-tag-active" data-tag="صناعة الوعي" aria-disabled="false">صناعة الوعي</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">ﷺ</span>
+        <span class="topic-category-title">السنة النبوية والحديث</span>
+        <span class="topic-category-sub">الحديث والسيرة وفقه السنة</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="السنة النبوية" aria-disabled="false">السنة النبوية</button>
+          <button class="tag-chip topic-tag-active" data-tag="الأحاديث النبوية" aria-disabled="false">الأحاديث النبوية</button>
+          <button class="tag-chip topic-tag-active" data-tag="شرح الحديث" aria-disabled="false">شرح الحديث</button>
+          <button class="tag-chip topic-tag-active" data-tag="فقه الحديث" aria-disabled="false">فقه الحديث</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="علوم الحديث" aria-disabled="true">علوم الحديث</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الحديث القدسي" aria-disabled="true">الحديث القدسي</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أقوال النبي ﷺ" aria-disabled="true">أقوال النبي ﷺ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أفعال النبي ﷺ" aria-disabled="true">أفعال النبي ﷺ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="تقريرات النبي ﷺ" aria-disabled="true">تقريرات النبي ﷺ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="شمائل النبي ﷺ" aria-disabled="true">شمائل النبي ﷺ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="هدي النبي ﷺ" aria-disabled="true">هدي النبي ﷺ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أخلاق النبي ﷺ" aria-disabled="true">أخلاق النبي ﷺ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="السيرة النبوية" aria-disabled="true">السيرة النبوية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التربية النبوية" aria-disabled="true">التربية النبوية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="فقه السنة" aria-disabled="true">فقه السنة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="فوائد الحديث" aria-disabled="true">فوائد الحديث</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="دروس الحديث" aria-disabled="true">دروس الحديث</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الفتن في السنة" aria-disabled="true">الفتن في السنة</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🔥</span>
+        <span class="topic-category-title">الفتن وأشراط الساعة</span>
+        <span class="topic-category-sub">الفتن والثبات وآخر الزمان</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="الفتن" aria-disabled="false">الفتن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الفتن الكبرى" aria-disabled="true">الفتن الكبرى</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الفتن الصغرى" aria-disabled="true">الفتن الصغرى</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الثبات في الفتن" aria-disabled="true">الثبات في الفتن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النجاة من الفتن" aria-disabled="true">النجاة من الفتن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="أشراط الساعة" aria-disabled="true">أشراط الساعة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="علامات الساعة" aria-disabled="true">علامات الساعة</button>
+          <button class="tag-chip topic-tag-active" data-tag="آخر الزمان" aria-disabled="false">آخر الزمان</button>
+          <button class="tag-chip topic-tag-active" data-tag="الدجال" aria-disabled="false">الدجال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="يأجوج ومأجوج" aria-disabled="true">يأجوج ومأجوج</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="نزول عيسى" aria-disabled="true">نزول عيسى</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المهدي" aria-disabled="true">المهدي</button>
+          <button class="tag-chip topic-tag-active" data-tag="الملاحم" aria-disabled="false">الملاحم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الفتن المعاصرة" aria-disabled="true">الفتن المعاصرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="فتنة الشبهات" aria-disabled="true">فتنة الشبهات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="فتنة الشهوات" aria-disabled="true">فتنة الشهوات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="فقه الفتن" aria-disabled="true">فقه الفتن</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🌌</span>
+        <span class="topic-category-title">الكون وآيات الله</span>
+        <span class="topic-category-sub">التفكر في الخلق وآيات الآفاق والأنفس</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="الكون" aria-disabled="false">الكون</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الخلق" aria-disabled="true">الخلق</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="السماوات" aria-disabled="true">السماوات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأرض" aria-disabled="true">الأرض</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الشمس" aria-disabled="true">الشمس</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القمر" aria-disabled="true">القمر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النجوم" aria-disabled="true">النجوم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الليل والنهار" aria-disabled="true">الليل والنهار</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الجبال" aria-disabled="true">الجبال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="البحار" aria-disabled="true">البحار</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المطر" aria-disabled="true">المطر</button>
+          <button class="tag-chip topic-tag-active" data-tag="الرياح" aria-disabled="false">الرياح</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="النبات" aria-disabled="true">النبات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الحيوان" aria-disabled="true">الحيوان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="آيات الآفاق" aria-disabled="true">آيات الآفاق</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="آيات الأنفس" aria-disabled="true">آيات الأنفس</button>
+          <button class="tag-chip topic-tag-active" data-tag="التفكر في الخلق" aria-disabled="false">التفكر في الخلق</button>
+          <button class="tag-chip topic-tag-active" data-tag="دلائل القدرة" aria-disabled="false">دلائل القدرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="دلائل الحكمة" aria-disabled="true">دلائل الحكمة</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">🧭</span>
+        <span class="topic-category-title">سنن الله في الحياة</span>
+        <span class="topic-category-sub">القوانين الربانية في الأفراد والأمم</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-inactive" data-tag="سنن الله" aria-disabled="true">سنن الله</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الابتلاء" aria-disabled="true">سنة الابتلاء</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة التغيير" aria-disabled="true">سنة التغيير</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة النصر" aria-disabled="true">سنة النصر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الهزيمة" aria-disabled="true">سنة الهزيمة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة التمكين" aria-disabled="true">سنة التمكين</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة التداول" aria-disabled="true">سنة التداول</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة التدافع" aria-disabled="true">سنة التدافع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الاستدراج" aria-disabled="true">سنة الاستدراج</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الإمهال" aria-disabled="true">سنة الإمهال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الأخذ" aria-disabled="true">سنة الأخذ</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الجزاء" aria-disabled="true">سنة الجزاء</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الشكر" aria-disabled="true">سنة الشكر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الظلم" aria-disabled="true">سنة الظلم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنة الإصلاح" aria-disabled="true">سنة الإصلاح</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنن النهوض" aria-disabled="true">سنن النهوض</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنن السقوط" aria-disabled="true">سنن السقوط</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سنن الأمم" aria-disabled="true">سنن الأمم</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">📖</span>
+        <span class="topic-category-title">القرآن والواقع والتدبر المعاصر</span>
+        <span class="topic-category-sub">قراءة الواقع في ضوء الوحي</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="القرآن والواقع" aria-disabled="false">القرآن والواقع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التدبر المعاصر" aria-disabled="true">التدبر المعاصر</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والحياة المعاصرة" aria-disabled="true">القرآن والحياة المعاصرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن وبناء الوعي" aria-disabled="true">القرآن وبناء الوعي</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن وصناعة الإنسان" aria-disabled="true">القرآن وصناعة الإنسان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والتغيير" aria-disabled="true">القرآن والتغيير</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والإصلاح" aria-disabled="true">القرآن والإصلاح</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والمجتمع" aria-disabled="true">القرآن والمجتمع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والأمة" aria-disabled="true">القرآن والأمة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والفتن المعاصرة" aria-disabled="true">القرآن والفتن المعاصرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والشبهات المعاصرة" aria-disabled="true">القرآن والشبهات المعاصرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والتربية" aria-disabled="true">القرآن والتربية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والأسرة" aria-disabled="true">القرآن والأسرة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والشباب" aria-disabled="true">القرآن والشباب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والمرأة" aria-disabled="true">القرآن والمرأة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والعمل" aria-disabled="true">القرآن والعمل</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والمال" aria-disabled="true">القرآن والمال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القرآن والسياسة" aria-disabled="true">القرآن والسياسة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="قراءة الواقع في ضوء القرآن" aria-disabled="true">قراءة الواقع في ضوء القرآن</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الوعي القرآني" aria-disabled="true">الوعي القرآني</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="البصيرة القرآنية" aria-disabled="true">البصيرة القرآنية</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-category" data-topic-category>
+      <button class="topic-category-head" type="button" aria-expanded="false">
+        <span class="topic-category-icon">⚖️</span>
+        <span class="topic-category-title">أصول الفقه والقواعد الفقهية</span>
+        <span class="topic-category-sub">الأدلة والقواعد والمقاصد والأعذار</span>
+        <span class="topic-category-arrow">⌄</span>
+      </button>
+      <div class="topic-category-body">
+        <div class="topic-tags">
+          <button class="tag-chip topic-tag-active" data-tag="أصول الفقه" aria-disabled="false">أصول الفقه</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القواعد الفقهية" aria-disabled="true">القواعد الفقهية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="مقاصد الشريعة" aria-disabled="true">مقاصد الشريعة</button>
+          <button class="tag-chip topic-tag-active" data-tag="الأحكام الشرعية" aria-disabled="false">الأحكام الشرعية</button>
+          <button class="tag-chip topic-tag-active" data-tag="الحلال والحرام" aria-disabled="false">الحلال والحرام</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأدلة الشرعية" aria-disabled="true">الأدلة الشرعية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الكتاب والسنة" aria-disabled="true">الكتاب والسنة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإجماع" aria-disabled="true">الإجماع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="القياس" aria-disabled="true">القياس</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الاستصحاب" aria-disabled="true">الاستصحاب</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الاستحسان" aria-disabled="true">الاستحسان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المصلحة" aria-disabled="true">المصلحة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="سد الذرائع" aria-disabled="true">سد الذرائع</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="العرف" aria-disabled="true">العرف</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الاجتهاد" aria-disabled="true">الاجتهاد</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="التقليد" aria-disabled="true">التقليد</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الرخص" aria-disabled="true">الرخص</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="العزائم" aria-disabled="true">العزائم</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الضرورات" aria-disabled="true">الضرورات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="رفع الحرج" aria-disabled="true">رفع الحرج</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الأمور بمقاصدها" aria-disabled="true">الأمور بمقاصدها</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="اليقين لا يزول بالشك" aria-disabled="true">اليقين لا يزول بالشك</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="المشقة تجلب التيسير" aria-disabled="true">المشقة تجلب التيسير</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الضرر يزال" aria-disabled="true">الضرر يزال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="العادة محكمة" aria-disabled="true">العادة محكمة</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="درء المفاسد" aria-disabled="true">درء المفاسد</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="جلب المصالح" aria-disabled="true">جلب المصالح</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="مآلات الأفعال" aria-disabled="true">مآلات الأفعال</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="فقه الأولويات" aria-disabled="true">فقه الأولويات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="فقه الموازنات" aria-disabled="true">فقه الموازنات</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="فقه النوازل" aria-disabled="true">فقه النوازل</button>
+          <button class="tag-chip topic-tag-active" data-tag="الأعذار الشرعية" aria-disabled="false">الأعذار الشرعية</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الخطأ والنسيان" aria-disabled="true">الخطأ والنسيان</button>
+          <button class="tag-chip topic-tag-inactive" data-tag="الإكراه" aria-disabled="true">الإكراه</button>
+          <button class="tag-chip topic-tag-active" data-tag="الجهل" aria-disabled="false">الجهل</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  
+    </div>
+</section>
+
+<!-- أحدث ما أُضيف -->
 <!-- أحدث ما أُضيف -->
 <div class="latest" id="latestSec">
 <div class="latest-inner">
 <div class="latest-h">
-<span class="sp">✦</span>
+
 <h2>أَحْدَثُ مَا أُضِيفَ</h2>
 <span class="tag">جديد</span>
 </div>
@@ -4960,266 +6593,83 @@ function normalizeArabic(s){
 }
 // البحث الشامل (نتائج مسطّحة تحت شريط البحث + بطاقات الأحدث)
 // نظام الوسوم التجريبي (عيّنة تجريبية فقط - وسوم وهمية على مقالات محدودة)
-var tagsData = {
-  "التوبة": [
-    {href:"article124.html", title:"حِينَ تَتَكَسَّرُ القُلُوبُ عَلَى أَعْتَابِ المَغْفِرَةِ"},
-    {href:"article129.html", title:"حِينَ تَتَكَسَّرُ القُلُوبُ عَلَى أَعْتَابِ المَغْفِرَةِ (مقال آخر)"},
-    {href:"article160.html", title:"حِينَ تَضِيقُ الْأَرْضُ... فَارْفَعْ قَلْبَكَ إِلَى فَاطِرِ السَّمَاءِ"},
-    {href:"article165.html", title:"اسْتَجِيبُوا لِرَبِّكُمْ... قَبْلَ أَنْ يُغْلَقَ الْبَابُ"},
-    {href:"article172.html", title:"حين تُغلق أبواب التوبة… لا ينفع الإيمان المتأخر!"}
-  ],
-  "الصبر": [
-    {href:"articles/article263.html", title:"زَمَنُ الصَّبْر... حِينَ يَصِيرُ الثَّبَاتُ عِبَادَةً عَظِيمَة"},
-    {href:"articles/article252.html", title:"حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء"},
-    {href:"article210.html", title:"سورة العصر.. سفينة النجاة في بحر الزمن"},
+var tagsData = {"القرآن الكريم":[{"href":"article133.html","title":"آية ٩١ حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء"},{"href":"article230.html","title":"آية ٢٨٥-٢٨٦ حين يضع الوحي عن كتفيك ثقل الطريق"},{"href":"article68.html","title":"آية ٣٧ رجال يصنعهم القرآن"},{"href":"article46.html","title":"آية ١٩٢-١٩٥ نفحات التنزيل... حين يخاطب الوحي القلب قبل السمع"},{"href":"article142.html","title":"آية ٦ أمهات المؤمنين... بيوت الوحي التي لا تطفئها سهام الافتراء"},{"href":"articles/article235.html","title":"٤. حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},{"href":"article136.html","title":"آية ٢٤ حين يفتح القرآن أبواب القلوب: رحلة التدبر من التلاوة إلى الحياة"},{"href":"article14-allama-alquran.html","title":"آية ١-٤ قبل أن يُخلق الإنسان كان القرآن"},{"href":"article137.html","title":"آية ١ سورة الإنسان... حين يأخذ القرآن بيد الروح من العدم إلى الخلود"},{"href":"article119.html","title":"السورة كاملة حين تموت الرحمة في القلب"},{"href":"article112.html","title":"السورة كاملة حين تغشى الوجوه الحقيقة"},{"href":"article226.html","title":"السورة كاملة الغاشية: حين يستيقظ القلب قبل أن يغشاه المصير"},{"href":"article131.html","title":"آية ١٥-١٧ فلسفة العطاء والمنع: حين يصحح القرآن ميزان الإنسان"},{"href":"article204.html","title":"السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},{"href":"article210.html","title":"السورة كاملة سورة العصر.. سفينة النجاة في بحر الزمن"},{"href":"article138.html","title":"السورة كاملة الكوثر... حين يسكب الله البلسم على القلوب المجروحة"},{"href":"article111.html","title":"السورة كاملة براءة التوحيد"},{"href":"article206.html","title":"السورة كاملة حِينَ يَسْقُطُ الْمَالُ وَالنَّسَبُ وَيَبْقَى مِيزَانُ الله"},{"href":"article76.html","title":"آية ١-٤ سورة تهدم كل الأصنام في القلب"},{"href":"article6-surat-alfalaq.html","title":"تفسير السورة سورة الفلق"},{"href":"article81.html","title":"٠. يسألونك... حين كان الوحي يصنع العقول (موضوعي)"},{"href":"articles/article238.html","title":"١١. حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},{"href":"article113.html","title":"١. ومن أحسن من الله حكماً"},{"href":"article-alsuljuqi.html","title":"آية ٢٦ على أبواب العروش المهدمة"},{"href":"article-hawa-sharia.html","title":"آية ٤٤-٥٠ حين يتحول الهوى إلى شريعة"},{"href":"article101.html","title":"آية ١٠١ حين تنهار شجرة الأنساب"},{"href":"article102.html","title":"آية ١٢ حين يهزم الرعب الجيوش"},{"href":"article107.html","title":"آية ٢٠ حين تتحول الخضرة إلى حطام"},{"href":"article108.html","title":"آية ٢٠ حين تتحول الخضرة إلى حطام (مقال ثانٍ)"},{"href":"article114.html","title":"آية ١ الذي باركنا حوله"},{"href":"article123.html","title":"آية ٢ إذا فتح الله أبواب رحمته"},{"href":"article126.html","title":"آية ١٠٥ حين يكتب الله وعده فمن ذا الذي يملك أن يمحوه"},{"href":"article128.html","title":"آية ١٠٥ (موسّعة) حين يكتب الله وعده — دراسة موسوعية موسّعة (٥٢ قسماً)"},{"href":"article130.html","title":"آية ٢٧ حين يُنتزع اللباس وتبدأ الهزيمة الأولى للإنسان"},{"href":"article139.html","title":"آية ١٢٤ حين يصبح الوطن محطة هروب لا موطن كرامة"},{"href":"article144.html","title":"آية ٧ وراء الشوكة... يصنع الله الرجال"},{"href":"article150.html","title":"آية ١٥-١٧ حين يسقط الجبار... ولا يبقى إلا وجه الله"},{"href":"article155.html","title":"آية ٨-١٠ حين يخرس العالم... ويتكلم الناقور"},{"href":"article157.html","title":"آية ٩٩-١٠٠ تمهّل... لقد مُنحت فرصة لا تُمنح لأحد"},{"href":"article165.html","title":"آية ٤٧ استجيبوا لربكم... قبل أن يُغلق الباب ويُطوى الكتاب"},{"href":"article166.html","title":"آية ٩ حين يُكره حكم الله… تُطفأ مصابيح العمل"},{"href":"article173.html","title":"آية ٢٠ أنت لا تعيش فقط… أنت تحرث!"},{"href":"article188.html","title":"آية ٣٤ ولاية التقوى وسقوط أوهام الاستحقاق"},{"href":"article191.html","title":"آية ٤-٥ لِلَّهِ الأَمْرُ مِنْ قَبْلُ وَمِنْ بَعْدُ… حين يسقط وهمُ السيطرة ويبقى تدبيرُ الله"},{"href":"article208.html","title":"آية ٧٣-٧٥ حِينَ يَسْقُطُ الْوَهْمُ وَيَبْقَى الْوَاحِدُ الأَحَدُ"},{"href":"article21-suqut-alashkhas.html","title":"آية ١٤٤ حين يسقط الأشخاص فلا تسقط المبادئ"},{"href":"article225.html","title":"آية ٣٢ بوابة الأوابين… حين يعرف الله ضعفك ويعرف قلبك"},{"href":"article228.html","title":"آية ١-٦ الاعتصام الأخير: ربُّ الناس وملكُ الناس وإلهُ الناس"},{"href":"article35-mithaq-bala.html","title":"آية ١٧٢ ميثاق «بلى»... حين اختارت الروح طريق الامتحان"},{"href":"article37.html","title":"آية ٧ حين يكون الله رابع النجوى"},{"href":"article38.html","title":"آية ٢٣ بين هباء الرماد وخلود الأثر"},{"href":"article41.html","title":"آية ٦٤-٦٥ صوت يسبق السقوط... وجيش لا ينام"},{"href":"article47.html","title":"آية ١٠١ عذاب الستر المنكشف"},{"href":"article49.html","title":"آية ١٢ رؤوس انحنت... لكن بعد أن أُغلق باب الرجعة"},{"href":"article5-yawm-albatsha.html","title":"آية ١٦ يوم البطشة الكبرى"},{"href":"article51.html","title":"آية ١٢ حين يسعى النور ويتخلف الظلام"},{"href":"article52.html","title":"آية ٧-٩ بين العرض والنجاة"},{"href":"article55.html","title":"آية ١٤-١٥ خلف السور... حين ينطق الصمت ويسقط القناع"},{"href":"article58.html","title":"آية ٦ من صرخة المهد إلى لقاء الرب"},{"href":"article59.html","title":"آية ٩ حين تُغلق نوافذ الروح"},{"href":"article60.html","title":"آية ١٤٠ حين يشتدّ الظلام... لماذا تنتظر البشرية المخلّص؟"},{"href":"article62.html","title":"آية ٤٤ حين ينقلب المشهد"},{"href":"article65.html","title":"آية ٤-٧ الوعد الذي يتكرر"},{"href":"article69.html","title":"آية ١٤٠ حين يدور الزمان"},{"href":"article7-alkhunnas.html","title":"آية ١٥-١٦ الخنس الجوار الكنس"},{"href":"article73.html","title":"آية ١٥-١٩ حين يقسم الله بالمختفي والراحل"},{"href":"article74.html","title":"آية ٦ الطريق الذي لا يضل سالكه"},{"href":"article77.html","title":"آية ٢١٠ حين ينشق الغمام"},{"href":"article79.html","title":"آية ١١١ الصفقة التي لا تخسر أبداً"},{"href":"article82.html","title":"آية ٣ من الطين إلى العرش"},{"href":"article83.html","title":"آية ١١٥ من عبث التراب إلى حكمة المصير"},{"href":"article85.html","title":"آية ٩٥ حين ينفض الجمع"},{"href":"article91.html","title":"آية ١٦٨ بين اللقمة والخطوة"},{"href":"article92.html","title":"آية ٥٩-٧٠ حين اختار موسى ضوء النهار"},{"href":"article95.html","title":"آية ١-١٤ بعد اثنتي عشرة «إذا»... حين لا يبقى معك إلا ما أحضرت"},{"href":"articles/article253.html","title":"جديد ✦ 11. مقال 253 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة عِيسَىٰ بَيْنَ الرَّفْعِ وَالتَّطْهِيرِ وَغَلَبَةِ أَهْلِ الْحَقِّ اقرأ المقال ←"},{"href":"articles/article259.html","title":"جديد ✦ 5. مقال 259 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة الزَّبَدُ يعلو لحظةً… والحقُّ يمكث أبدًا اقرأ المقال ←"}],"التدبر":[{"href":"article133.html","title":"آية ٩١ حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء"},{"href":"article230.html","title":"آية ٢٨٥-٢٨٦ حين يضع الوحي عن كتفيك ثقل الطريق"},{"href":"article141.html","title":"آية ٧٨ أدوات الهداية ومنافذ العلم: تدبر في ثلاثية السمع والأبصار والأفئدة"},{"href":"article68.html","title":"آية ٣٧ رجال يصنعهم القرآن"},{"href":"article46.html","title":"آية ١٩٢-١٩٥ نفحات التنزيل... حين يخاطب الوحي القلب قبل السمع"},{"href":"article142.html","title":"آية ٦ أمهات المؤمنين... بيوت الوحي التي لا تطفئها سهام الافتراء"},{"href":"articles/article235.html","title":"٤. حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},{"href":"article136.html","title":"آية ٢٤ حين يفتح القرآن أبواب القلوب: رحلة التدبر من التلاوة إلى الحياة"},{"href":"article14-allama-alquran.html","title":"آية ١-٤ قبل أن يُخلق الإنسان كان القرآن"},{"href":"article137.html","title":"آية ١ سورة الإنسان... حين يأخذ القرآن بيد الروح من العدم إلى الخلود"},{"href":"article119.html","title":"السورة كاملة حين تموت الرحمة في القلب"},{"href":"article112.html","title":"السورة كاملة حين تغشى الوجوه الحقيقة"},{"href":"article226.html","title":"السورة كاملة الغاشية: حين يستيقظ القلب قبل أن يغشاه المصير"},{"href":"article131.html","title":"آية ١٥-١٧ فلسفة العطاء والمنع: حين يصحح القرآن ميزان الإنسان"},{"href":"article204.html","title":"السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},{"href":"article210.html","title":"السورة كاملة سورة العصر.. سفينة النجاة في بحر الزمن"},{"href":"article138.html","title":"السورة كاملة الكوثر... حين يسكب الله البلسم على القلوب المجروحة"},{"href":"article111.html","title":"السورة كاملة براءة التوحيد"},{"href":"article206.html","title":"السورة كاملة حِينَ يَسْقُطُ الْمَالُ وَالنَّسَبُ وَيَبْقَى مِيزَانُ الله"},{"href":"article76.html","title":"آية ١-٤ سورة تهدم كل الأصنام في القلب"},{"href":"article6-surat-alfalaq.html","title":"تفسير السورة سورة الفلق"},{"href":"article81.html","title":"٠. يسألونك... حين كان الوحي يصنع العقول (موضوعي)"},{"href":"article199.html","title":"٤. مسافرون في قطار الزمن… تدبّر في وصية «كأنك غريب»"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},{"href":"articles/article238.html","title":"١١. حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},{"href":"article113.html","title":"١. ومن أحسن من الله حكماً"},{"href":"article-alsuljuqi.html","title":"آية ٢٦ على أبواب العروش المهدمة"},{"href":"article-hawa-sharia.html","title":"آية ٤٤-٥٠ حين يتحول الهوى إلى شريعة"},{"href":"article101.html","title":"آية ١٠١ حين تنهار شجرة الأنساب"},{"href":"article114.html","title":"آية ١ الذي باركنا حوله"},{"href":"article126.html","title":"آية ١٠٥ حين يكتب الله وعده فمن ذا الذي يملك أن يمحوه"},{"href":"article128.html","title":"آية ١٠٥ (موسّعة) حين يكتب الله وعده — دراسة موسوعية موسّعة (٥٢ قسماً)"},{"href":"article130.html","title":"آية ٢٧ حين يُنتزع اللباس وتبدأ الهزيمة الأولى للإنسان"},{"href":"article153.html","title":"١. سلسلة التأريخ الإسلامي الحقيقي (١) — سومنات... حين يتكلم التاريخ ويصمت التزييف"},{"href":"article73.html","title":"آية ١٥-١٩ حين يقسم الله بالمختفي والراحل"},{"href":"articles/article253.html","title":"جديد ✦ 11. مقال 253 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة عِيسَىٰ بَيْنَ الرَّفْعِ وَالتَّطْهِيرِ وَغَلَبَةِ أَهْلِ الْحَقِّ اقرأ المقال ←"}],"التفسير":[{"href":"article6-surat-alfalaq.html","title":"تفسير السورة سورة الفلق"}],"هداية القرآن":[],"نور القرآن":[],"آيات الله":[],"قصص القرآن":[{"href":"article42.html","title":"٣. من غيابة الجب إلى عرش البر"},{"href":"article104.html","title":"آية ٧ حين يتحول البئر إلى بوابة المجد"},{"href":"article22-qa-aljubb.html","title":"آية ١٩ من قاع الجب... تبدأ الحكاية لا تنتهي"}],"موضوعات القرآن":[],"القلب":[{"href":"articles/article249.html","title":"آية ١ 🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح"},{"href":"articles/article248.html","title":"٥. 💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس"},{"href":"article133.html","title":"آية ٩١ حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء"},{"href":"article132.html","title":"آية ١٦٧ حين تتحول الأعمال إلى حسرات... المشهد الذي يهز القلوب قبل فوات الأوان"},{"href":"article96.html","title":"آية ١٥١ حين تنهزم القلوب قبل الجيوش"},{"href":"article232.html","title":"٤. حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية"},{"href":"article18-insalakha.html","title":"آية ١٧٥ حين يُسلخ القلب من النور"},{"href":"article121.html","title":"آية ٢٨-٢٩ حين يسكن القلب إلى ربه"},{"href":"article171.html","title":"آية ١٩-٢٠ حرثُ الآخرة… حين يستقيم القلب فتستقيم الخطى"},{"href":"article148.html","title":"آية ٥٩ حين يتكلم الكون... وتصمت القلوب"},{"href":"article116.html","title":"آية ١٢٥-١٢٦ حين يُطفأ نور القلب"},{"href":"article86.html","title":"آية ٨٨-٨٩ القلب السليم... جواز العبور إلى الله"},{"href":"article46.html","title":"آية ١٩٢-١٩٥ نفحات التنزيل... حين يخاطب الوحي القلب قبل السمع"},{"href":"article185.html","title":"آية ٦١ حين تكون الأرض قرارًا… يكون القلب بحاجة إلى قرار"},{"href":"articles/article240.html","title":"آية ١٥-١٧ «حين تتجافى الأجساد… وتحيا القلوب»"},{"href":"article124.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة"},{"href":"article129.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة (مقال آخر)"},{"href":"article192.html","title":"آية ٤٠ بينَ لَهِيبِ الإلقاءِ وَسَكِينَةِ الأمان: حين تسقط الأقنعة… ولا يبقى إلا ما قدّم القلبُ والإنسان"},{"href":"article136.html","title":"آية ٢٤ حين يفتح القرآن أبواب القلوب: رحلة التدبر من التلاوة إلى الحياة"},{"href":"article218.html","title":"آية ١٨ آية الرضوان: حين سكنت القلوب تحت الشجرة… ففتح الله أبواب السماء"},{"href":"article53.html","title":"آية ٧-٨ بين نسيج السماء واضطراب القلوب"},{"href":"article119.html","title":"السورة كاملة حين تموت الرحمة في القلب"},{"href":"article156.html","title":"آية ١١-١٤ حين يعود الغيث إلى السماء... وينشق القلب للحياة"},{"href":"article226.html","title":"السورة كاملة الغاشية: حين يستيقظ القلب قبل أن يغشاه المصير"},{"href":"article34-tuhsi-alniam.html","title":"آية ١١ حين تُحصي النعم يزهر القلب"},{"href":"article138.html","title":"السورة كاملة الكوثر... حين يسكب الله البلسم على القلوب المجروحة"},{"href":"article76.html","title":"آية ١-٤ سورة تهدم كل الأصنام في القلب"},{"href":"article97.html","title":"٢. حين تغربل القلوب قبل الوجوه"},{"href":"article170.html","title":"٣. حين يصبح الإيمان غريباً في القلب: بادروا بالأعمال قبل أن تأتي الفتنة"},{"href":"article202.html","title":"٩. ثلاث سنوات من العطش والجوع… حين تضيق الأرض، ويبقى زاد القلب!"},{"href":"article205.html","title":"١٠. حين يلتقم صاحب القرن قرنه... ويستيقظ القلب قبل أن تأتي النفخة"},{"href":"article59.html","title":"آية ٩ حين تُغلق نوافذ الروح"}],"حياة القلب":[],"القلب السليم":[],"مرض القلب":[],"قسوة القلب":[],"النية":[],"الإخلاص":[],"التقوى":[{"href":"article189.html","title":"آية ١٥٣ صِرَاطِي… الطريق الذي يستقيم به الإنسان وتستقيم به الحياة والآخرة"},{"href":"article171.html","title":"آية ١٩-٢٠ حرثُ الآخرة… حين يستقيم القلب فتستقيم الخطى"},{"href":"article227.html","title":"آية ٦٣-٦٤ تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا"},{"href":"article184.html","title":"٣. منابر النور… حين يكون الحب لله وحده"},{"href":"article188.html","title":"آية ٣٤ ولاية التقوى وسقوط أوهام الاستحقاق"},{"href":"article37.html","title":"آية ٧ حين يكون الله رابع النجوى"},{"href":"article74.html","title":"آية ٦ الطريق الذي لا يضل سالكه"},{"href":"article91.html","title":"آية ١٦٨ بين اللقمة والخطوة"},{"href":"articles/article244.html","title":"جديد ✦ 20. مقال 244 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة ✍️🔥 لا تَبَالِ... فالعاقبة هناك! 🔥✍️ اقرأ المقال ←"}],"اليقين":[{"href":"article175.html","title":"٤. حين يخفُّ الدين فتثقل الفتنة… صلابة اليقين في زمن الدجال"},{"href":"article54.html","title":"١. من أوائل الإيمان إلى كمال اليقين"},{"href":"article126.html","title":"آية ١٠٥ حين يكتب الله وعده فمن ذا الذي يملك أن يمحوه"},{"href":"article128.html","title":"آية ١٠٥ (موسّعة) حين يكتب الله وعده — دراسة موسوعية موسّعة (٥٢ قسماً)"},{"href":"article191.html","title":"آية ٤-٥ لِلَّهِ الأَمْرُ مِنْ قَبْلُ وَمِنْ بَعْدُ… حين يسقط وهمُ السيطرة ويبقى تدبيرُ الله"},{"href":"article51.html","title":"آية ١٢ حين يسعى النور ويتخلف الظلام"},{"href":"article62.html","title":"آية ٤٤ حين ينقلب المشهد"},{"href":"article65.html","title":"آية ٤-٧ الوعد الذي يتكرر"},{"href":"article74.html","title":"آية ٦ الطريق الذي لا يضل سالكه"},{"href":"articles/article259.html","title":"جديد ✦ 5. مقال 259 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة الزَّبَدُ يعلو لحظةً… والحقُّ يمكث أبدًا اقرأ المقال ←"}],"التوكل":[],"الخشوع":[],"السكينة":[{"href":"article192.html","title":"آية ٤٠ بينَ لَهِيبِ الإلقاءِ وَسَكِينَةِ الأمان: حين تسقط الأقنعة… ولا يبقى إلا ما قدّم القلبُ والإنسان"}],"التوبة":[{"href":"article172.html","title":"آية ١٥٨ حين تُغلق أبواب التوبة… لا ينفع الإيمان المتأخر!"},{"href":"article124.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة"},{"href":"article129.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة (مقال آخر)"},{"href":"article123.html","title":"آية ٢ إذا فتح الله أبواب رحمته"},{"href":"article157.html","title":"آية ٩٩-١٠٠ تمهّل... لقد مُنحت فرصة لا تُمنح لأحد"},{"href":"article165.html","title":"آية ٤٧ استجيبوا لربكم... قبل أن يُغلق الباب ويُطوى الكتاب"},{"href":"article225.html","title":"آية ٣٢ بوابة الأوابين… حين يعرف الله ضعفك ويعرف قلبك"},{"href":"article49.html","title":"آية ١٢ رؤوس انحنت... لكن بعد أن أُغلق باب الرجعة"}],"الإنابة":[],"الاستغفار":[{"href":"article172.html","title":"آية ١٥٨ حين تُغلق أبواب التوبة… لا ينفع الإيمان المتأخر!"},{"href":"article124.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة"},{"href":"article129.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة (مقال آخر)"},{"href":"article225.html","title":"آية ٣٢ بوابة الأوابين… حين يعرف الله ضعفك ويعرف قلبك"}],"محاسبة النفس":[{"href":"article45.html","title":"١. أربع مهالك خفية"}],"مجاهدة النفس":[{"href":"article45.html","title":"١. أربع مهالك خفية"}],"الهوى":[],"الشهوة":[{"href":"article158.html","title":"آية ٢٧-٢٨ بوابة النور... بين إرادة الرحمن وأمنيات أهل الشهوات"},{"href":"article105.html","title":"١. تمهل الشهوة وانهيار الأسرة"},{"href":"article56.html","title":"١. كازانوفا... ولكن بعمامة!"},{"href":"article109.html","title":"١. الهيئة العامة لتطبيع الكبائر"},{"href":"article-hawa-sharia.html","title":"آية ٤٤-٥٠ حين يتحول الهوى إلى شريعة"}],"العفة":[{"href":"article56.html","title":"١. كازانوفا... ولكن بعمامة!"}],"غض البصر":[],"الغفلة":[{"href":"article169.html","title":"آية ٤٤ حين يسبّح الكون كله... ويبقى الإنسان وحده في الغفلة"},{"href":"article204.html","title":"السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},{"href":"article45.html","title":"١. أربع مهالك خفية"},{"href":"articles/article236.html","title":"٨. مسلمٌ يمشي بمحاذاة الحائط… حتى لا تصيبه الحقيقة!"},{"href":"article109.html","title":"١. الهيئة العامة لتطبيع الكبائر"},{"href":"article59.html","title":"آية ٩ حين تُغلق نوافذ الروح"}],"العقل":[{"href":"article81.html","title":"٠. يسألونك... حين كان الوحي يصنع العقول (موضوعي)"}],"التفكير":[],"العلم":[{"href":"article211.html","title":"آية ١٥٩-١٦٠ حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},{"href":"article141.html","title":"آية ٧٨ أدوات الهداية ومنافذ العلم: تدبر في ثلاثية السمع والأبصار والأفئدة"},{"href":"articles/article239.html","title":"٢. «اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!"},{"href":"article23-sayaalam.html","title":"١. وسيعلم حين ينكشف الغطاء"}],"الجهل":[{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"articles/article257.html","title":"٧. عذرُ الجهل والتأويل... إلا إذا خالفناهم!"},{"href":"articles/article256.html","title":"٦. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article255.html","title":"٥. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article254.html","title":"آيات ١١١-١١٧ الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article213.html","title":"آية ١٩ حين تقوم الحجة وتسقط دعوى الجهل"},{"href":"article212.html","title":"آية ٦ الجهل ليس جوازَ عبورٍ إلى الشرك"},{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"},{"href":"article44.html","title":"١. الجهل عذر أم تقصير؟"},{"href":"article217.html","title":"٢. التأويل بين العذر والإنكار"}],"التوحيد":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article212.html","title":"آية ٦ الجهل ليس جوازَ عبورٍ إلى الشرك"},{"href":"article127.html","title":"آية ١٠٦ حين يختبئ الشرك خلف ستار الإيمان"},{"href":"article186.html","title":"آية ٣ حين يصبح القرب من الله حُجّةً للشرك: «ما نعبدهم إلا ليقرّبونا إلى الله زُلْفَى»"},{"href":"article27-tashri-lighayrillah.html","title":"آية ٢١ حين يصبح التشريع لغير الله"},{"href":"articles/article235.html","title":"٤. حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},{"href":"article111.html","title":"السورة كاملة براءة التوحيد"},{"href":"article76.html","title":"آية ١-٤ سورة تهدم كل الأصنام في القلب"},{"href":"article194.html","title":"٧. حين يبهت الوَشْيُ… ويبقى الثوب: غربة التوحيد في آخر الزمان"},{"href":"article195.html","title":"٨. «وَعُدْتُمْ مِنْ حَيْثُ بَدَأْتُمْ»… حين تدور الأيام ويعود الإسلام غريبًا"},{"href":"article191.html","title":"آية ٤-٥ لِلَّهِ الأَمْرُ مِنْ قَبْلُ وَمِنْ بَعْدُ… حين يسقط وهمُ السيطرة ويبقى تدبيرُ الله"},{"href":"article208.html","title":"آية ٧٣-٧٥ حِينَ يَسْقُطُ الْوَهْمُ وَيَبْقَى الْوَاحِدُ الأَحَدُ"},{"href":"article228.html","title":"آية ١-٦ الاعتصام الأخير: ربُّ الناس وملكُ الناس وإلهُ الناس"},{"href":"articles/article259.html","title":"جديد ✦ 5. مقال 259 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة الزَّبَدُ يعلو لحظةً… والحقُّ يمكث أبدًا اقرأ المقال ←"}],"الشرك":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article212.html","title":"آية ٦ الجهل ليس جوازَ عبورٍ إلى الشرك"},{"href":"article127.html","title":"آية ١٠٦ حين يختبئ الشرك خلف ستار الإيمان"},{"href":"article186.html","title":"آية ٣ حين يصبح القرب من الله حُجّةً للشرك: «ما نعبدهم إلا ليقرّبونا إلى الله زُلْفَى»"},{"href":"article27-tashri-lighayrillah.html","title":"آية ٢١ حين يصبح التشريع لغير الله"},{"href":"articles/article235.html","title":"٤. حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"}],"الإيمان":[{"href":"article3-zagm-iman.html","title":"آية ٦٠ حين يصبح الزعم إيماناً"},{"href":"article172.html","title":"آية ١٥٨ حين تُغلق أبواب التوبة… لا ينفع الإيمان المتأخر!"},{"href":"article127.html","title":"آية ١٠٦ حين يختبئ الشرك خلف ستار الإيمان"},{"href":"article70.html","title":"آية ٢-٣ حين يكون الأدب مع رسول الله ﷺ ميزان الإيمان"},{"href":"article143.html","title":"آية ٤ حين تنكشف الحدود... وتُولد الهوية الإيمانية"},{"href":"article170.html","title":"٣. حين يصبح الإيمان غريباً في القلب: بادروا بالأعمال قبل أن تأتي الفتنة"},{"href":"article54.html","title":"١. من أوائل الإيمان إلى كمال اليقين"},{"href":"article188.html","title":"آية ٣٤ ولاية التقوى وسقوط أوهام الاستحقاق"},{"href":"article208.html","title":"آية ٧٣-٧٥ حِينَ يَسْقُطُ الْوَهْمُ وَيَبْقَى الْوَاحِدُ الأَحَدُ"},{"href":"article228.html","title":"آية ١-٦ الاعتصام الأخير: ربُّ الناس وملكُ الناس وإلهُ الناس"},{"href":"article37.html","title":"آية ٧ حين يكون الله رابع النجوى"},{"href":"article51.html","title":"آية ١٢ حين يسعى النور ويتخلف الظلام"},{"href":"article55.html","title":"آية ١٤-١٥ خلف السور... حين ينطق الصمت ويسقط القناع"},{"href":"article58.html","title":"آية ٦ من صرخة المهد إلى لقاء الرب"},{"href":"articles/article253.html","title":"جديد ✦ 11. مقال 253 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة عِيسَىٰ بَيْنَ الرَّفْعِ وَالتَّطْهِيرِ وَغَلَبَةِ أَهْلِ الْحَقِّ اقرأ المقال ←"}],"الفطرة":[],"الإيمان بالغيب":[{"href":"articles/article237.html","title":"آيات ٤٧-٤٨ يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ"},{"href":"article39.html","title":"١. حين يتكلم الغيب (النفس الطيبة)"},{"href":"article35-mithaq-bala.html","title":"آية ١٧٢ ميثاق «بلى»... حين اختارت الروح طريق الامتحان"}],"القدر":[],"النبوة":[],"الرسل":[],"الجن":[],"النفاق":[],"الكفر":[{"href":"article214.html","title":"آية ٦٥-٦٦ حين تتكلم الكلمة بالكفر"},{"href":"article190.html","title":"٢. بين فقه الصبر على الجور وفقه مقاومة الكفر: هل يجوز اختزال كلام الأئمة في شعار «لا خروج أبداً»؟"}],"الإلحاد":[],"الشبهات العقدية":[{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"articles/article257.html","title":"٧. عذرُ الجهل والتأويل... إلا إذا خالفناهم!"},{"href":"articles/article256.html","title":"٦. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article255.html","title":"٥. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article254.html","title":"آيات ١١١-١١٧ الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article122.html","title":"آية ٢٩ والذين معه شهادة السماء التي تسقط كل شبهة"},{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"},{"href":"article44.html","title":"١. الجهل عذر أم تقصير؟"},{"href":"article217.html","title":"٢. التأويل بين العذر والإنكار"}],"الحجة والبرهان":[],"الصدق":[],"الأمانة":[{"href":"article211.html","title":"آية ١٥٩-١٦٠ حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},{"href":"article88.html","title":"١. إلى من يهمه الأمر"}],"الوفاء":[{"href":"article167.html","title":"١. بين \"همّ\" و\"نوى\"... مسافة بين الخاطر والعزم والعهد مع الله"},{"href":"article88.html","title":"١. إلى من يهمه الأمر"}],"الرحمة":[{"href":"article152.html","title":"آية ١٥٩ حين تصنع الرحمة الرجال"},{"href":"article149.html","title":"آية ٤١-٤٤ حين لا يُنجي إلا الله: رحلة السفينة بين موج الابتلاء وشاطئ الرحمة"},{"href":"article78.html","title":"آية ٤٩-٥٠ بين نداء الرحمة وهيبة العذاب"},{"href":"article98.html","title":"آية ١١ حين تستعجل النفس وتتدخل رحمة الله"},{"href":"article12-zilal-alrahma.html","title":"آية ٤٥ ظلال الرحمة بين حركة الكون وسكون الفناء"},{"href":"article119.html","title":"السورة كاملة حين تموت الرحمة في القلب"},{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"},{"href":"article10-saraqathu-alrahma.html","title":"١. جاء ليسرق الدنيا فسرقته الرحمة"},{"href":"article196.html","title":"٣. حين غَلَبَتِ الرَّحمةُ الغَضَبَ: تأملات في قوله ﷺ «إِنَّ رَحْمَتِي غَلَبَتْ غَضَبِي»"},{"href":"article123.html","title":"آية ٢ إذا فتح الله أبواب رحمته"}],"العفو":[],"الحلم":[{"href":"article159.html","title":"٢. رد على \"الحلم العربي\"... الحقيقة الإسلامية"}],"التواضع":[],"الحياء":[],"حفظ اللسان":[],"الغيبة":[],"النميمة":[],"الكذب":[],"الخيانة":[],"الظلم":[{"href":"article19-dhun-nun.html","title":"آية ٨٧ من أعماق الظلمات يولد فجر النجاة"},{"href":"article115.html","title":"آية ٨٧-٨٨ من خرج من أمر الله أدركته الظلمات"},{"href":"article110.html","title":"٢. الظلم حين يتحول إلى ظلمات"},{"href":"article17-ali-ibn-abi-talib.html","title":"١. أمير المؤمنين علي المبتلى المظلوم"},{"href":"article16-yusuf-raf-aldhulm.html","title":"١. يوسف بين رفع الظلم والتحاكم"},{"href":"article219.html","title":"٢. تروسُ الطغيان… حين يتحوّل الجندي من إنسانٍ إلى أداةٍ في يدِ الظلم"},{"href":"articles/article242.html","title":"١. «تمام العيش»... عندما تصصبح المظالم مجرد إشعارات يجب كتمها! 😂📵"},{"href":"article150.html","title":"آية ١٥-١٧ حين يسقط الجبار... ولا يبقى إلا وجه الله"}],"الإحسان":[{"href":"articles/article238.html","title":"١١. حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"}],"القناعة":[],"الزهد":[],"العبادة":[{"href":"articles/article263.html","title":"٤. زَمَنُ الصَّبْر... حِينَ يَصِيرُ الثَّبَاتُ عِبَادَةً عَظِيمَة"},{"href":"article151.html","title":"آية ٥٦ بوابة النور... حين يفتح الله لعباده باب المحبة"},{"href":"article79.html","title":"آية ١١١ الصفقة التي لا تخسر أبداً"}],"الصلاة":[],"الصيام":[],"الزكاة":[],"الحج":[{"href":"article213.html","title":"آية ١٩ حين تقوم الحجة وتسقط دعوى الجهل"},{"href":"article186.html","title":"آية ٣ حين يصبح القرب من الله حُجّةً للشرك: «ما نعبدهم إلا ليقرّبونا إلى الله زُلْفَى»"}],"الدعاء":[{"href":"article209.html","title":"آية ١٩٣ مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ فِي رِحَابِ الآيَةِ 193 مِنْ آلِ عِمْرَانَ"},{"href":"article147.html","title":"آية ٦٥ حين اهتزت الأرض... سقطت الفلسفة وبقي الدعاء"}],"الذكر":[{"href":"articles/article249.html","title":"آية ١ 🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح"},{"href":"article169.html","title":"آية ٤٤ حين يسبّح الكون كله... ويبقى الإنسان وحده في الغفلة"},{"href":"article146.html","title":"آية ٤١ حين تتمرد حلقة في كون يسبح الله"},{"href":"article26-sabbih-alaala.html","title":"آية ١ سبح اسم ربك الأعلى"}],"قيام الليل":[],"الطاعة":[{"href":"articles/article263.html","title":"٤. زَمَنُ الصَّبْر... حِينَ يَصِيرُ الثَّبَاتُ عِبَادَةً عَظِيمَة"},{"href":"article151.html","title":"آية ٥٦ بوابة النور... حين يفتح الله لعباده باب المحبة"},{"href":"article165.html","title":"آية ٤٧ استجيبوا لربكم... قبل أن يُغلق الباب ويُطوى الكتاب"}],"التقرب إلى الله":[{"href":"articles/article263.html","title":"٤. زَمَنُ الصَّبْر... حِينَ يَصِيرُ الثَّبَاتُ عِبَادَةً عَظِيمَة"},{"href":"article151.html","title":"آية ٥٦ بوابة النور... حين يفتح الله لعباده باب المحبة"},{"href":"article79.html","title":"آية ١١١ الصفقة التي لا تخسر أبداً"}],"المسارعة إلى الخيرات":[],"الصدقة":[],"الإنفاق":[],"الابتلاء":[{"href":"articles/article252.html","title":"آية ١٤٣ حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء"},{"href":"article215.html","title":"آية ١١٦ حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء"},{"href":"article149.html","title":"آية ٤١-٤٤ حين لا يُنجي إلا الله: رحلة السفينة بين موج الابتلاء وشاطئ الرحمة"},{"href":"article104.html","title":"آية ٧ حين يتحول البئر إلى بوابة المجد"},{"href":"article130.html","title":"آية ٢٧ حين يُنتزع اللباس وتبدأ الهزيمة الأولى للإنسان"},{"href":"article144.html","title":"آية ٧ وراء الشوكة... يصنع الله الرجال"},{"href":"article22-qa-aljubb.html","title":"آية ١٩ من قاع الجب... تبدأ الحكاية لا تنتهي"},{"href":"article31-ibtila-tamhis.html","title":"٢٠. حين يبتلي الله وحين يمحص"},{"href":"article35-mithaq-bala.html","title":"آية ١٧٢ ميثاق «بلى»... حين اختارت الروح طريق الامتحان"},{"href":"article41.html","title":"آية ٦٤-٦٥ صوت يسبق السقوط... وجيش لا ينام"},{"href":"article62.html","title":"آية ٤٤ حين ينقلب المشهد"}],"البلاء":[{"href":"articles/article252.html","title":"آية ١٤٣ حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء"},{"href":"article215.html","title":"آية ١١٦ حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء"},{"href":"article149.html","title":"آية ٤١-٤٤ حين لا يُنجي إلا الله: رحلة السفينة بين موج الابتلاء وشاطئ الرحمة"},{"href":"article31-ibtila-tamhis.html","title":"٢٠. حين يبتلي الله وحين يمحص"}],"الفتنة":[{"href":"article211.html","title":"آية ١٥٩-١٦٠ حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},{"href":"article170.html","title":"٣. حين يصبح الإيمان غريباً في القلب: بادروا بالأعمال قبل أن تأتي الفتنة"},{"href":"article134.html","title":"٢. حوار مع أكبر فتنة عرفتها البشرية — حديث الجساسة"},{"href":"article175.html","title":"٤. حين يخفُّ الدين فتثقل الفتنة… صلابة اليقين في زمن الدجال"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},{"href":"article102.html","title":"آية ١٢ حين يهزم الرعب الجيوش"},{"href":"article65.html","title":"آية ٤-٧ الوعد الذي يتكرر"}],"المحنة":[],"المصيبة":[],"الصبر":[{"href":"articles/article263.html","title":"٤. زَمَنُ الصَّبْر... حِينَ يَصِيرُ الثَّبَاتُ عِبَادَةً عَظِيمَة"},{"href":"article8-ma-asbarahum.html","title":"آية ١٧٥ فما أصبرهم على النار"},{"href":"article223.html","title":"آية ٢٤ حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾"},{"href":"article63.html","title":"١. القابض على الجمر"},{"href":"article17-ali-ibn-abi-talib.html","title":"١. أمير المؤمنين علي المبتلى المظلوم"},{"href":"article190.html","title":"٢. بين فقه الصبر على الجور وفقه مقاومة الكفر: هل يجوز اختزال كلام الأئمة في شعار «لا خروج أبداً»؟"},{"href":"article144.html","title":"آية ٧ وراء الشوكة... يصنع الله الرجال"},{"href":"article31-ibtila-tamhis.html","title":"٢٠. حين يبتلي الله وحين يمحص"}],"الثبات":[{"href":"articles/article263.html","title":"٤. زَمَنُ الصَّبْر... حِينَ يَصِيرُ الثَّبَاتُ عِبَادَةً عَظِيمَة"},{"href":"articles/article252.html","title":"آية ١٤٣ حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء"},{"href":"article8-ma-asbarahum.html","title":"آية ١٧٥ فما أصبرهم على النار"},{"href":"article223.html","title":"آية ٢٤ حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾"},{"href":"article63.html","title":"١. القابض على الجمر"},{"href":"article175.html","title":"٤. حين يخفُّ الدين فتثقل الفتنة… صلابة اليقين في زمن الدجال"},{"href":"article195.html","title":"٨. «وَعُدْتُمْ مِنْ حَيْثُ بَدَأْتُمْ»… حين تدور الأيام ويعود الإسلام غريبًا"},{"href":"article190.html","title":"٢. بين فقه الصبر على الجور وفقه مقاومة الكفر: هل يجوز اختزال كلام الأئمة في شعار «لا خروج أبداً»؟"},{"href":"article102.html","title":"آية ١٢ حين يهزم الرعب الجيوش"},{"href":"article139.html","title":"آية ١٢٤ حين يصبح الوطن محطة هروب لا موطن كرامة"},{"href":"article144.html","title":"آية ٧ وراء الشوكة... يصنع الله الرجال"},{"href":"article21-suqut-alashkhas.html","title":"آية ١٤٤ حين يسقط الأشخاص فلا تسقط المبادئ"},{"href":"article41.html","title":"آية ٦٤-٦٥ صوت يسبق السقوط... وجيش لا ينام"},{"href":"article60.html","title":"آية ١٤٠ حين يشتدّ الظلام... لماذا تنتظر البشرية المخلّص؟"},{"href":"article92.html","title":"آية ٥٩-٧٠ حين اختار موسى ضوء النهار"},{"href":"articles/article244.html","title":"جديد ✦ 20. مقال 244 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة ✍️🔥 لا تَبَالِ... فالعاقبة هناك! 🔥✍️ اقرأ المقال ←"}],"النصر":[],"التمكين":[{"href":"article216.html","title":"٦. حِينَ تَتَحَوَّلُ قَاعِدَةُ «أَخَفِّ الضَّرَرَيْنِ» إِلَى جِسْرٍ لِتَمْكِينِ الضَّرَرِ الأَكْبَرِ"}],"الهجرة":[],"التضحية":[],"سنن الابتلاء":[{"href":"articles/article252.html","title":"آية ١٤٣ حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء"},{"href":"article215.html","title":"آية ١١٦ حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء"},{"href":"article149.html","title":"آية ٤١-٤٤ حين لا يُنجي إلا الله: رحلة السفينة بين موج الابتلاء وشاطئ الرحمة"},{"href":"article31-ibtila-tamhis.html","title":"٢٠. حين يبتلي الله وحين يمحص"}],"الشيطان":[{"href":"article32-yaiduka-alshaytan.html","title":"آية ٢٦٨ حين يعدك الشيطان بالفقر"},{"href":"article221.html","title":"آية ١٢٠ خُلُودٌ لَا يَبْلَىٰ… حين دخل الشيطان إلى الإنسان من باب الخلود"},{"href":"article168.html","title":"آية ٩٧-٩٨ حين يقترب الشيطان… فافتح باب الله"}],"إبليس":[],"وسوسة الشيطان":[],"تزيين الباطل":[],"كيد الشيطان":[],"الإغواء":[],"اتباع الهوى":[],"الشهوات":[{"href":"article158.html","title":"آية ٢٧-٢٨ بوابة النور... بين إرادة الرحمن وأمنيات أهل الشهوات"},{"href":"article105.html","title":"١. تمهل الشهوة وانهيار الأسرة"}],"التعلق بالدنيا":[],"الإنسان":[{"href":"articles/article249.html","title":"آية ١ 🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح"},{"href":"article189.html","title":"آية ١٥٣ صِرَاطِي… الطريق الذي يستقيم به الإنسان وتستقيم به الحياة والآخرة"},{"href":"article169.html","title":"آية ٤٤ حين يسبّح الكون كله... ويبقى الإنسان وحده في الغفلة"},{"href":"article93.html","title":"آية ١٠٠ حين يضيق الإنسان وتتسع خزائن الرحمن"},{"href":"article221.html","title":"آية ١٢٠ خُلُودٌ لَا يَبْلَىٰ… حين دخل الشيطان إلى الإنسان من باب الخلود"},{"href":"article192.html","title":"آية ٤٠ بينَ لَهِيبِ الإلقاءِ وَسَكِينَةِ الأمان: حين تسقط الأقنعة… ولا يبقى إلا ما قدّم القلبُ والإنسان"},{"href":"article163.html","title":"آية ٧ حين تنسج السماء رسالتها في قلب الإنسان"},{"href":"article14-allama-alquran.html","title":"آية ١-٤ قبل أن يُخلق الإنسان كان القرآن"},{"href":"article137.html","title":"آية ١ سورة الإنسان... حين يأخذ القرآن بيد الروح من العدم إلى الخلود"},{"href":"article131.html","title":"آية ١٥-١٧ فلسفة العطاء والمنع: حين يصحح القرآن ميزان الإنسان"},{"href":"article187.html","title":"آية ٦-٨ حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة"},{"href":"articles/article238.html","title":"١١. حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"}],"الإرادة":[{"href":"article158.html","title":"آية ٢٧-٢٨ بوابة النور... بين إرادة الرحمن وأمنيات أهل الشهوات"}],"الاختيار":[],"المسؤولية":[],"الحياة":[{"href":"article189.html","title":"آية ١٥٣ صِرَاطِي… الطريق الذي يستقيم به الإنسان وتستقيم به الحياة والآخرة"},{"href":"article136.html","title":"آية ٢٤ حين يفتح القرآن أبواب القلوب: رحلة التدبر من التلاوة إلى الحياة"}],"الدنيا":[{"href":"article11-sarab-aldunya.html","title":"آية ٢١٢ بين سراب الدنيا وعلو الآخرة"},{"href":"article201.html","title":"آية ١١٢ حين يتحوّل النعيم إلى نذير: ﴿فَأَذَاقَهَا اللَّهُ لِبَاسَ الْجُوعِ وَالْخَوْفِ﴾"},{"href":"article67.html","title":"آية ٦٤ الدنيا... مسرح ينطفئ ضوؤه"},{"href":"article72.html","title":"آية ١٨-٢٦ حين تُطوى الدنيا"},{"href":"article198.html","title":"٣. استظلَّ برهةً ثم انطلق… حين يصبح ظلُّ الدنيا طريقًا إلى الآخرة"},{"href":"article193.html","title":"٦. حين تنقلب الموازين… ويصبح اللُّكَع أسعد الناس بالدنيا!"},{"href":"article10-saraqathu-alrahma.html","title":"١. جاء ليسرق الدنيا فسرقته الرحمة"},{"href":"article107.html","title":"آية ٢٠ حين تتحول الخضرة إلى حطام"},{"href":"article108.html","title":"آية ٢٠ حين تتحول الخضرة إلى حطام (مقال ثانٍ)"}],"متاع الدنيا":[],"حب الدنيا":[{"href":"article11-sarab-aldunya.html","title":"آية ٢١٢ بين سراب الدنيا وعلو الآخرة"}],"الوقت":[{"href":"article199.html","title":"٤. مسافرون في قطار الزمن… تدبّر في وصية «كأنك غريب»"}],"العمر":[{"href":"article132.html","title":"آية ١٦٧ حين تتحول الأعمال إلى حسرات... المشهد الذي يهز القلوب قبل فوات الأوان"},{"href":"article161.html","title":"آية ٣٠ حين لا تبقى إلا الزيادة في العذاب... رسالة إلى كل قلب قبل فوات الأوان"},{"href":"article199.html","title":"٤. مسافرون في قطار الزمن… تدبّر في وصية «كأنك غريب»"},{"href":"article173.html","title":"آية ٢٠ أنت لا تعيش فقط… أنت تحرث!"},{"href":"article38.html","title":"آية ٢٣ بين هباء الرماد وخلود الأثر"}],"الأجل":[],"اغتنام الفرص":[{"href":"article132.html","title":"آية ١٦٧ حين تتحول الأعمال إلى حسرات... المشهد الذي يهز القلوب قبل فوات الأوان"},{"href":"article161.html","title":"آية ٣٠ حين لا تبقى إلا الزيادة في العذاب... رسالة إلى كل قلب قبل فوات الأوان"},{"href":"article20-sakrat-almawt.html","title":"١. حين تنطفئ الأصوات ولا يبقى إلا العمل"},{"href":"article157.html","title":"آية ٩٩-١٠٠ تمهّل... لقد مُنحت فرصة لا تُمنح لأحد"},{"href":"article95.html","title":"آية ١-١٤ بعد اثنتي عشرة «إذا»... حين لا يبقى معك إلا ما أحضرت"}],"التغيير":[],"بناء الإنسان":[],"الآخرة":[{"href":"article20-sakrat-almawt.html","title":"١. حين تنطفئ الأصوات ولا يبقى إلا العمل"},{"href":"article101.html","title":"آية ١٠١ حين تنهار شجرة الأنساب"},{"href":"article107.html","title":"آية ٢٠ حين تتحول الخضرة إلى حطام"},{"href":"article108.html","title":"آية ٢٠ حين تتحول الخضرة إلى حطام (مقال ثانٍ)"},{"href":"article155.html","title":"آية ٨-١٠ حين يخرس العالم... ويتكلم الناقور"},{"href":"article173.html","title":"آية ٢٠ أنت لا تعيش فقط… أنت تحرث!"},{"href":"article38.html","title":"آية ٢٣ بين هباء الرماد وخلود الأثر"},{"href":"article47.html","title":"آية ١٠١ عذاب الستر المنكشف"},{"href":"article5-yawm-albatsha.html","title":"آية ١٦ يوم البطشة الكبرى"},{"href":"article52.html","title":"آية ٧-٩ بين العرض والنجاة"},{"href":"article77.html","title":"آية ٢١٠ حين ينشق الغمام"},{"href":"article82.html","title":"آية ٣ من الطين إلى العرش"},{"href":"article83.html","title":"آية ١١٥ من عبث التراب إلى حكمة المصير"},{"href":"article85.html","title":"آية ٩٥ حين ينفض الجمع"},{"href":"article95.html","title":"آية ١-١٤ بعد اثنتي عشرة «إذا»... حين لا يبقى معك إلا ما أحضرت"},{"href":"articles/article244.html","title":"جديد ✦ 20. مقال 244 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة ✍️🔥 لا تَبَالِ... فالعاقبة هناك! 🔥✍️ اقرأ المقال ←"}],"الموت":[{"href":"article87.html","title":"آية ١٧٩ قلوب تمشي... ولكنها ماتت قبل أن تموت"},{"href":"article80.html","title":"آية ٣٤ يوم يموت الحزن إلى الأبد"},{"href":"article119.html","title":"السورة كاملة حين تموت الرحمة في القلب"},{"href":"article20-sakrat-almawt.html","title":"١. حين تنطفئ الأصوات ولا يبقى إلا العمل"},{"href":"article47.html","title":"آية ١٠١ عذاب الستر المنكشف"},{"href":"article58.html","title":"آية ٦ من صرخة المهد إلى لقاء الرب"}],"القبر":[],"البرزخ":[],"البعث":[],"الحشر":[{"href":"article28-kayfa-jamaanahum.html","title":"آية ٢٥ كيف إذا جمعناهم؟!"},{"href":"article120.html","title":"آية ٢٢-٢٣ حين يُحشر الأشباه مع الأشباه"},{"href":"article182.html","title":"٢. المرء مع من أحب… حين يتحول الحب إلى طريقٍ إلى الحشر"}],"القيامة":[{"href":"article233.html","title":"٢. الخوف العاصم: حين يوقظك «اليوم العظيم» قبل أن تزلَّ القدم"},{"href":"article155.html","title":"آية ٨-١٠ حين يخرس العالم... ويتكلم الناقور"},{"href":"article5-yawm-albatsha.html","title":"آية ١٦ يوم البطشة الكبرى"},{"href":"article52.html","title":"آية ٧-٩ بين العرض والنجاة"},{"href":"article77.html","title":"آية ٢١٠ حين ينشق الغمام"},{"href":"article85.html","title":"آية ٩٥ حين ينفض الجمع"}],"الحساب":[],"الميزان":[{"href":"article70.html","title":"آية ٢-٣ حين يكون الأدب مع رسول الله ﷺ ميزان الإيمان"},{"href":"article75.html","title":"آية ٧-٩ حين يقوم الكون على ميزان"},{"href":"article131.html","title":"آية ١٥-١٧ فلسفة العطاء والمنع: حين يصحح القرآن ميزان الإنسان"},{"href":"article206.html","title":"السورة كاملة حِينَ يَسْقُطُ الْمَالُ وَالنَّسَبُ وَيَبْقَى مِيزَانُ الله"}],"الصراط":[{"href":"article189.html","title":"آية ١٥٣ صِرَاطِي… الطريق الذي يستقيم به الإنسان وتستقيم به الحياة والآخرة"}],"صحائف الأعمال":[{"href":"article222.html","title":"آية ١٠٤ حين تُطوى السماء… وتُفتح صحائف الأعمال"}],"الشفاعة":[],"المغفرة":[{"href":"article172.html","title":"آية ١٥٨ حين تُغلق أبواب التوبة… لا ينفع الإيمان المتأخر!"},{"href":"article124.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة"},{"href":"article129.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة (مقال آخر)"},{"href":"article225.html","title":"آية ٣٢ بوابة الأوابين… حين يعرف الله ضعفك ويعرف قلبك"}],"الجزاء":[],"الجنة":[{"href":"article227.html","title":"آية ٦٣-٦٤ تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا"}],"نعيم الجنة":[{"href":"article227.html","title":"آية ٦٣-٦٤ تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا"}],"أهل الجنة":[],"النار":[{"href":"articles/article248.html","title":"٥. 💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس"},{"href":"article8-ma-asbarahum.html","title":"آية ١٧٥ فما أصبرهم على النار"},{"href":"article209.html","title":"آية ١٩٣ مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ فِي رِحَابِ الآيَةِ 193 مِنْ آلِ عِمْرَانَ"},{"href":"article224.html","title":"آية ٧١-٧٢ وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار"},{"href":"article4-yathoob-alwajh.html","title":"آية ١٠٤ حين يذوب الوجه في اللهب"},{"href":"article33-tuqallabu-wujuhuhum.html","title":"آية ٦٦ حين تُقلَّب وجوههم في النار"},{"href":"article223.html","title":"آية ٢٤ حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾"},{"href":"article61.html","title":"١. حين يتكلم اللهيب"}],"جهنم":[{"href":"articles/article248.html","title":"٥. 💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس"},{"href":"article8-ma-asbarahum.html","title":"آية ١٧٥ فما أصبرهم على النار"},{"href":"article209.html","title":"آية ١٩٣ مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ فِي رِحَابِ الآيَةِ 193 مِنْ آلِ عِمْرَانَ"},{"href":"article224.html","title":"آية ٧١-٧٢ وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار"},{"href":"article4-yathoob-alwajh.html","title":"آية ١٠٤ حين يذوب الوجه في اللهب"},{"href":"article33-tuqallabu-wujuhuhum.html","title":"آية ٦٦ حين تُقلَّب وجوههم في النار"},{"href":"article223.html","title":"آية ٢٤ حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾"},{"href":"article61.html","title":"١. حين يتكلم اللهيب"}],"عذاب النار":[{"href":"articles/article248.html","title":"٥. 💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس"},{"href":"article8-ma-asbarahum.html","title":"آية ١٧٥ فما أصبرهم على النار"},{"href":"article209.html","title":"آية ١٩٣ مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ فِي رِحَابِ الآيَةِ 193 مِنْ آلِ عِمْرَانَ"},{"href":"article224.html","title":"آية ٧١-٧٢ وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار"},{"href":"article4-yathoob-alwajh.html","title":"آية ١٠٤ حين يذوب الوجه في اللهب"},{"href":"article33-tuqallabu-wujuhuhum.html","title":"آية ٦٦ حين تُقلَّب وجوههم في النار"},{"href":"article223.html","title":"آية ٢٤ حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾"},{"href":"article61.html","title":"١. حين يتكلم اللهيب"}],"أهل النار":[],"الحسرة والندامة":[{"href":"articles/article250.html","title":"٩. 🔪🇮🇷 ترامب وموس إيران: عندما يتحول «بلاع الموس» إلى سياسة دولية 😂🌎💣"},{"href":"article90.html","title":"آية ٣١ حين يصرخ الندم ولا يبقى إلا الحمل الثقيل"},{"href":"article145.html","title":"آية ٣٠ يا حسرة على العباد... حين يطرق الحق الأبواب ويختار الناس الظلام"},{"href":"articles/article242.html","title":"١. «تمام العيش»... عندما تصصبح المظالم مجرد إشعارات يجب كتمها! 😂📵"},{"href":"article49.html","title":"آية ١٢ رؤوس انحنت... لكن بعد أن أُغلق باب الرجعة"},{"href":"article55.html","title":"آية ١٤-١٥ خلف السور... حين ينطق الصمت ويسقط القناع"}],"يوسف عليه السلام":[{"href":"article42.html","title":"٣. من غيابة الجب إلى عرش البر"},{"href":"article40.html","title":"٤. حين خاف يعقوب على الرسالة"},{"href":"article16-yusuf-raf-aldhulm.html","title":"١. يوسف بين رفع الظلم والتحاكم"},{"href":"article104.html","title":"آية ٧ حين يتحول البئر إلى بوابة المجد"},{"href":"article22-qa-aljubb.html","title":"آية ١٩ من قاع الجب... تبدأ الحكاية لا تنتهي"}],"سورة يوسف":[{"href":"article40.html","title":"٤. حين خاف يعقوب على الرسالة"},{"href":"article16-yusuf-raf-aldhulm.html","title":"١. يوسف بين رفع الظلم والتحاكم"}],"موسى عليه السلام":[{"href":"article30-firawn-qarun.html","title":"١. بين فرعون وقارون"},{"href":"article92.html","title":"آية ٥٩-٧٠ حين اختار موسى ضوء النهار"}],"إبراهيم عليه السلام":[],"شعيب عليه السلام":[{"href":"article66.html","title":"١. شعيب عليه السلام... حين يصبح الغِشُّ ديناً"}],"نوح عليه السلام":[],"آدم عليه السلام":[],"عيسى عليه السلام":[],"محمد ﷺ":[],"فرعون":[{"href":"article30-firawn-qarun.html","title":"١. بين فرعون وقارون"}],"قارون":[],"مريم عليها السلام":[],"أصحاب الأخدود":[{"href":"article197.html","title":"آية ٤-٧ مواكب الشهادة ووجوه الطغيان: قراءة في فقه الأخدود وأزلية المعركة"},{"href":"article100.html","title":"آية ١٠ من فوهة الأخدود إلى أبواب الغفور"}],"العبر من القصص":[{"href":"article66.html","title":"١. شعيب عليه السلام... حين يصبح الغِشُّ ديناً"},{"href":"article40.html","title":"٤. حين خاف يعقوب على الرسالة"},{"href":"article30-firawn-qarun.html","title":"١. بين فرعون وقارون"},{"href":"article16-yusuf-raf-aldhulm.html","title":"١. يوسف بين رفع الظلم والتحاكم"}],"سنن الأنبياء":[],"الأسرة":[{"href":"article105.html","title":"١. تمهل الشهوة وانهيار الأسرة"}],"الزواج":[],"الزوجة":[],"الأب":[],"الأم":[],"الأبناء":[],"بر الوالدين":[],"صلة الرحم":[],"التربية":[],"الطلاق":[],"الميراث":[],"المجتمع":[],"الأمة":[{"href":"article17-ali-ibn-abi-talib.html","title":"١. أمير المؤمنين علي المبتلى المظلوم"},{"href":"article36.html","title":"١. الأكراد في سجلّ العزّة"}],"الأخوة":[{"href":"article174.html","title":"٣. \"ستفترق أمتي\" — دراسة حديثية وفقهية في حقيقة الفرقة الناجية وطريق الوحدة"}],"الوحدة":[{"href":"article174.html","title":"٣. \"ستفترق أمتي\" — دراسة حديثية وفقهية في حقيقة الفرقة الناجية وطريق الوحدة"}],"الفرقة":[{"href":"article174.html","title":"٣. \"ستفترق أمتي\" — دراسة حديثية وفقهية في حقيقة الفرقة الناجية وطريق الوحدة"}],"التكافل":[],"الإصلاح الاجتماعي":[],"العدل":[{"href":"article29-hilf-alfudul.html","title":"١. حلف الفضول"},{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"},{"href":"article36.html","title":"١. الأكراد في سجلّ العزّة"}],"الإصلاح":[],"الفساد":[{"href":"articles/article241.html","title":"٢. اسكت عن فساد الحاكم… وإلا أصبحتَ من الخوارج!"},{"href":"articles/article247.html","title":"جديد ✦ 17. مقال 247 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة 😂📢 «لا تشكُ من الأوضاع… فقط أنكر المنكر وأغمض عينيك!» 🤣🙈 اقرأ المقال ←"}],"الأمر بالمعروف":[],"النهي عن المنكر":[],"الحقوق":[{"href":"articles/article245.html","title":"١٢. حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"},{"href":"article29-hilf-alfudul.html","title":"١. حلف الفضول"},{"href":"article36.html","title":"١. الأكراد في سجلّ العزّة"},{"href":"article88.html","title":"١. إلى من يهمه الأمر"}],"الإنصاف":[{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"}],"رفع الظلم":[{"href":"article16-yusuf-raf-aldhulm.html","title":"١. يوسف بين رفع الظلم والتحاكم"}],"رد الحقوق":[],"القصاص":[],"الشهادة":[{"href":"article122.html","title":"آية ٢٩ والذين معه شهادة السماء التي تسقط كل شبهة"},{"href":"article197.html","title":"آية ٤-٧ مواكب الشهادة ووجوه الطغيان: قراءة في فقه الأخدود وأزلية المعركة"}],"الوفاء بالعهد":[{"href":"article29-hilf-alfudul.html","title":"١. حلف الفضول"}],"الوفاء بالعقود":[],"المال":[{"href":"article132.html","title":"آية ١٦٧ حين تتحول الأعمال إلى حسرات... المشهد الذي يهز القلوب قبل فوات الأوان"},{"href":"article89.html","title":"آية ٢٦ حين يعود الملك إلى مالكه"},{"href":"article222.html","title":"آية ١٠٤ حين تُطوى السماء… وتُفتح صحائف الأعمال"},{"href":"article187.html","title":"آية ٦-٨ حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة"},{"href":"article204.html","title":"السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},{"href":"article206.html","title":"السورة كاملة حِينَ يَسْقُطُ الْمَالُ وَالنَّسَبُ وَيَبْقَى مِيزَانُ الله"},{"href":"article170.html","title":"٣. حين يصبح الإيمان غريباً في القلب: بادروا بالأعمال قبل أن تأتي الفتنة"},{"href":"article9-hina-tustanzaf.html","title":"١. حين تُستنزف المليارات"},{"href":"article54.html","title":"١. من أوائل الإيمان إلى كمال اليقين"}],"الرزق":[{"href":"articles/article260.html","title":"آية ٦٢ اللهُ يَبْسُطُ وَيَقْدِرُ: حين تتجلّى حكمةُ الرزق بين البسط والقبض"},{"href":"article32-yaiduka-alshaytan.html","title":"آية ٢٦٨ حين يعدك الشيطان بالفقر"}],"الغنى":[],"الفقر":[],"التجارة":[{"href":"article57.html","title":"آية ١٦ تجارة الروح"},{"href":"article181.html","title":"آية ٢٠٧ التجارة التي لا تبور… حين تبيع نفسك لله فتملك كل شيء"},{"href":"article13-tasheea-alfahisha.html","title":"١. حين تتحول الفضيحة إلى تجارة"}],"البيع":[],"الشراء":[],"الدين":[],"الديون":[],"الربا":[{"href":"articles/article239.html","title":"٢. «اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!"}],"الوصية":[{"href":"article199.html","title":"٤. مسافرون في قطار الزمن… تدبّر في وصية «كأنك غريب»"}],"الأمانة المالية":[],"الكسب":[],"فتنة المال":[{"href":"articles/article248.html","title":"٥. 💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس"}],"الدعوة":[],"البلاغ":[],"الحكمة":[],"الموعظة الحسنة":[],"النصيحة":[],"الحوار":[{"href":"articles/article254.html","title":"آيات ١١١-١١٧ الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},{"href":"article134.html","title":"٢. حوار مع أكبر فتنة عرفتها البشرية — حديث الجساسة"},{"href":"article84.html","title":"١. جمهورية \"ما رأيك في فلان؟!\""}],"المناظرة":[],"الجدال":[],"الحجة":[],"البرهان":[],"الدليل":[],"الشبهات":[{"href":"article122.html","title":"آية ٢٩ والذين معه شهادة السماء التي تسقط كل شبهة"}],"الرد على الشبهات":[],"إقامة الحجة":[],"أدب الاختلاف":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"article84.html","title":"١. جمهورية \"ما رأيك في فلان؟!\""}],"الرد العلمي":[{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article224.html","title":"آية ٧١-٧٢ وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار"},{"href":"article146.html","title":"آية ٤١ حين تتمرد حلقة في كون يسبح الله"},{"href":"articles/article242.html","title":"١. «تمام العيش»... عندما تصصبح المظالم مجرد إشعارات يجب كتمها! 😂📵"},{"href":"article207.html","title":"٥. الطَّرِيقُ إِلَى سَرَابِ أَنْقَرَةَ: سَنَوَاتُ التِّيهِ فِي صَحَرَاءِ الأُرْدُوغَانِيَّةِ"},{"href":"article159.html","title":"٢. رد على \"الحلم العربي\"... الحقيقة الإسلامية"}],"الرد المنهجي":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article224.html","title":"آية ٧١-٧٢ وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار"},{"href":"article146.html","title":"آية ٤١ حين تتمرد حلقة في كون يسبح الله"},{"href":"articles/article242.html","title":"١. «تمام العيش»... عندما تصصبح المظالم مجرد إشعارات يجب كتمها! 😂📵"},{"href":"article207.html","title":"٥. الطَّرِيقُ إِلَى سَرَابِ أَنْقَرَةَ: سَنَوَاتُ التِّيهِ فِي صَحَرَاءِ الأُرْدُوغَانِيَّةِ"},{"href":"article159.html","title":"٢. رد على \"الحلم العربي\"... الحقيقة الإسلامية"}],"تصحيح المفاهيم":[{"href":"articles/article236.html","title":"٨. مسلمٌ يمشي بمحاذاة الحائط… حتى لا تصيبه الحقيقة!"}],"صناعة الوعي":[{"href":"article24-alqab-mamlaka.html","title":"٣. ألقاب مملكة ليست في مواضعها"},{"href":"article207.html","title":"٥. الطَّرِيقُ إِلَى سَرَابِ أَنْقَرَةَ: سَنَوَاتُ التِّيهِ فِي صَحَرَاءِ الأُرْدُوغَانِيَّةِ"},{"href":"article84.html","title":"١. جمهورية \"ما رأيك في فلان؟!\""},{"href":"articles/article247.html","title":"جديد ✦ 17. مقال 247 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة 😂📢 «لا تشكُ من الأوضاع… فقط أنكر المنكر وأغمض عينيك!» 🤣🙈 اقرأ المقال ←"}],"السنة النبوية":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article245.html","title":"١٢. حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"},{"href":"article106.html","title":"آية ١٠٧ حين بكى النبي ﷺ لأجلنا"},{"href":"article134.html","title":"٢. حوار مع أكبر فتنة عرفتها البشرية — حديث الجساسة"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},{"href":"articles/article238.html","title":"١١. حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},{"href":"article15-bara-aisha.html","title":"٨. حين تمتد الألسنة إلى الطهر"},{"href":"article229.html","title":"٧. سيفُ السُّنّة في المولد… وغمدُه في موسم الرياض!"},{"href":"article174.html","title":"٣. \"ستفترق أمتي\" — دراسة حديثية وفقهية في حقيقة الفرقة الناجية وطريق الوحدة"},{"href":"article182.html","title":"٢. المرء مع من أحب… حين يتحول الحب إلى طريقٍ إلى الحشر"},{"href":"article184.html","title":"٣. منابر النور… حين يكون الحب لله وحده"}],"الأحاديث النبوية":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article245.html","title":"١٢. حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"},{"href":"article106.html","title":"آية ١٠٧ حين بكى النبي ﷺ لأجلنا"},{"href":"article134.html","title":"٢. حوار مع أكبر فتنة عرفتها البشرية — حديث الجساسة"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},{"href":"articles/article238.html","title":"١١. حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},{"href":"article15-bara-aisha.html","title":"٨. حين تمتد الألسنة إلى الطهر"},{"href":"article229.html","title":"٧. سيفُ السُّنّة في المولد… وغمدُه في موسم الرياض!"},{"href":"article174.html","title":"٣. \"ستفترق أمتي\" — دراسة حديثية وفقهية في حقيقة الفرقة الناجية وطريق الوحدة"},{"href":"article182.html","title":"٢. المرء مع من أحب… حين يتحول الحب إلى طريقٍ إلى الحشر"},{"href":"article184.html","title":"٣. منابر النور… حين يكون الحب لله وحده"}],"شرح الحديث":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"articles/article245.html","title":"١٢. حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"},{"href":"article134.html","title":"٢. حوار مع أكبر فتنة عرفتها البشرية — حديث الجساسة"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},{"href":"articles/article238.html","title":"١١. حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},{"href":"article174.html","title":"٣. \"ستفترق أمتي\" — دراسة حديثية وفقهية في حقيقة الفرقة الناجية وطريق الوحدة"}],"فقه الحديث":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"}],"علوم الحديث":[],"أقوال النبي ﷺ":[],"أفعال النبي ﷺ":[],"هدي النبي ﷺ":[],"أخلاق النبي ﷺ":[],"السيرة النبوية":[],"التربية النبوية":[],"فقه السنة":[],"فوائد الحديث":[],"دروس الحديث":[],"الفتن":[{"href":"article211.html","title":"آية ١٥٩-١٦٠ حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},{"href":"article170.html","title":"٣. حين يصبح الإيمان غريباً في القلب: بادروا بالأعمال قبل أن تأتي الفتنة"},{"href":"article134.html","title":"٢. حوار مع أكبر فتنة عرفتها البشرية — حديث الجساسة"},{"href":"article175.html","title":"٤. حين يخفُّ الدين فتثقل الفتنة… صلابة اليقين في زمن الدجال"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},{"href":"article195.html","title":"٨. «وَعُدْتُمْ مِنْ حَيْثُ بَدَأْتُمْ»… حين تدور الأيام ويعود الإسلام غريبًا"},{"href":"article60.html","title":"آية ١٤٠ حين يشتدّ الظلام... لماذا تنتظر البشرية المخلّص؟"},{"href":"article69.html","title":"آية ١٤٠ حين يدور الزمان"}],"أشراط الساعة":[],"علامات الساعة":[],"آخر الزمان":[{"href":"articles/article245.html","title":"١٢. حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"},{"href":"article135.html","title":"٣. حين يكتب الله الفتح: خارطة النبوة من جزيرة العرب إلى آخر الزمان"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},{"href":"article194.html","title":"٧. حين يبهت الوَشْيُ… ويبقى الثوب: غربة التوحيد في آخر الزمان"},{"href":"article195.html","title":"٨. «وَعُدْتُمْ مِنْ حَيْثُ بَدَأْتُمْ»… حين تدور الأيام ويعود الإسلام غريبًا"},{"href":"article60.html","title":"آية ١٤٠ حين يشتدّ الظلام... لماذا تنتظر البشرية المخلّص؟"},{"href":"article69.html","title":"آية ١٤٠ حين يدور الزمان"}],"الدجال":[{"href":"article175.html","title":"٤. حين يخفُّ الدين فتثقل الفتنة… صلابة اليقين في زمن الدجال"}],"نزول عيسى":[],"المهدي":[],"الملاحم":[{"href":"articles/article251.html","title":"١٣. جيش عدن أبين... حين تتكلم النبوءة عن رجالٍ يخرجون من اليمن إلى ساحات الملاحم"}],"الفتن المعاصرة":[],"فقه الفتن":[],"الكون":[{"href":"articles/article262.html","title":"آيات ٣٩-٤٠ لَأُزَيِّنَنَّ لَهُمْ فِي الْأَرْضِ… حين يتجمّل الباطل حتى يُرى حقًّا"},{"href":"articles/article249.html","title":"آية ١ 🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح"},{"href":"article133.html","title":"آية ٩١ حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء"},{"href":"article203.html","title":"آية ١٠٢ حين تأمر السماء باليقظة: السلاح بين أيدي المؤمنين وسنّة القوة"},{"href":"article103.html","title":"آية ٣١ إذا تحركت الجبال بكلام الله"},{"href":"article169.html","title":"آية ٤٤ حين يسبّح الكون كله... ويبقى الإنسان وحده في الغفلة"},{"href":"article148.html","title":"آية ٥٩ حين يتكلم الكون... وتصمت القلوب"},{"href":"articles/article237.html","title":"آيات ٤٧-٤٨ يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ"},{"href":"articles/article243.html","title":"آية ١٠٩ مداد الكون أمام كلمات الله… حين ينفد البحر ولا تنفد العظمة"},{"href":"article43.html","title":"آية ٦٨-٧٠ بين محكمة الأرض ومحكمة السماء"},{"href":"article222.html","title":"آية ١٠٤ حين تُطوى السماء… وتُفتح صحائف الأعمال"},{"href":"article12-zilal-alrahma.html","title":"آية ٤٥ ظلال الرحمة بين حركة الكون وسكون الفناء"},{"href":"article125.html","title":"آية ٨٠ حين يهمس الألم ويأتي الجواب من السماء"},{"href":"article162.html","title":"آية ٤٤ الصرح الذي كشف وهم الشمس"},{"href":"article99.html","title":"آية ٦١ بين البحرين حاجز"},{"href":"article185.html","title":"آية ٦١ حين تكون الأرض قرارًا… يكون القلب بحاجة إلى قرار"},{"href":"article94.html","title":"آية ٦٢ باب السماء حين تغلق أبواب الأرض"},{"href":"article147.html","title":"آية ٦٥ حين اهتزت الأرض... سقطت الفلسفة وبقي الدعاء"},{"href":"article71.html","title":"آية ١١ بين قبضة الطين وعظمة الكون"},{"href":"article160.html","title":"آية ٤٦ حين تضيق الأرض... فارفع قلبك إلى فاطر السماء"},{"href":"article122.html","title":"آية ٢٩ والذين معه شهادة السماء التي تسقط كل شبهة"},{"href":"article218.html","title":"آية ١٨ آية الرضوان: حين سكنت القلوب تحت الشجرة… ففتح الله أبواب السماء"},{"href":"article53.html","title":"آية ٧-٨ بين نسيج السماء واضطراب القلوب"},{"href":"article163.html","title":"آية ٧ حين تنسج السماء رسالتها في قلب الإنسان"},{"href":"article75.html","title":"آية ٧-٩ حين يقوم الكون على ميزان"},{"href":"article200.html","title":"آية ١-١٧ حين يَثْقُبُ النجمُ ظلامَ السماء وتنكشف السرائر"},{"href":"article156.html","title":"آية ١١-١٤ حين يعود الغيث إلى السماء... وينشق القلب للحياة"},{"href":"article48.html","title":"آية ١٠ طريقان إلى السماء... وليس طريقًا إلى الهاوية"},{"href":"article204.html","title":"السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},{"href":"article202.html","title":"٩. ثلاث سنوات من العطش والجوع… حين تضيق الأرض، ويبقى زاد القلب!"},{"href":"article180.html","title":"٢. موسم الصيد السياسي: عند بعض الناس الحيوان يُؤكل… وعند بعضهم يُعبد… وعندنا يُنتخب!"},{"href":"article183.html","title":"٢. لا تجعل نفسكَ قاضيَ السماء… فمصائر العباد إلى الله"},{"href":"article7-alkhunnas.html","title":"آية ١٥-١٦ الخنس الجوار الكنس"},{"href":"article73.html","title":"آية ١٥-١٩ حين يقسم الله بالمختفي والراحل"}],"الخلق":[{"href":"article82.html","title":"آية ٣ من الطين إلى العرش"},{"href":"article83.html","title":"آية ١١٥ من عبث التراب إلى حكمة المصير"}],"السماوات":[],"الأرض":[],"الشمس":[],"القمر":[],"النجوم":[],"الليل والنهار":[],"الجبال":[],"البحار":[],"المطر":[],"الرياح":[{"href":"article64.html","title":"٢. حين تتكلم الريح"}],"النبات":[],"الحيوان":[],"آيات الآفاق":[],"آيات الأنفس":[],"التفكر في الخلق":[{"href":"articles/article262.html","title":"آيات ٣٩-٤٠ لَأُزَيِّنَنَّ لَهُمْ فِي الْأَرْضِ… حين يتجمّل الباطل حتى يُرى حقًّا"},{"href":"articles/article249.html","title":"آية ١ 🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح"},{"href":"article133.html","title":"آية ٩١ حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء"},{"href":"article203.html","title":"آية ١٠٢ حين تأمر السماء باليقظة: السلاح بين أيدي المؤمنين وسنّة القوة"},{"href":"article103.html","title":"آية ٣١ إذا تحركت الجبال بكلام الله"},{"href":"article169.html","title":"آية ٤٤ حين يسبّح الكون كله... ويبقى الإنسان وحده في الغفلة"},{"href":"article148.html","title":"آية ٥٩ حين يتكلم الكون... وتصمت القلوب"},{"href":"articles/article237.html","title":"آيات ٤٧-٤٨ يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ"},{"href":"articles/article243.html","title":"آية ١٠٩ مداد الكون أمام كلمات الله… حين ينفد البحر ولا تنفد العظمة"},{"href":"article43.html","title":"آية ٦٨-٧٠ بين محكمة الأرض ومحكمة السماء"},{"href":"article222.html","title":"آية ١٠٤ حين تُطوى السماء… وتُفتح صحائف الأعمال"},{"href":"article12-zilal-alrahma.html","title":"آية ٤٥ ظلال الرحمة بين حركة الكون وسكون الفناء"},{"href":"article125.html","title":"آية ٨٠ حين يهمس الألم ويأتي الجواب من السماء"},{"href":"article162.html","title":"آية ٤٤ الصرح الذي كشف وهم الشمس"},{"href":"article99.html","title":"آية ٦١ بين البحرين حاجز"},{"href":"article185.html","title":"آية ٦١ حين تكون الأرض قرارًا… يكون القلب بحاجة إلى قرار"},{"href":"article94.html","title":"آية ٦٢ باب السماء حين تغلق أبواب الأرض"},{"href":"article147.html","title":"آية ٦٥ حين اهتزت الأرض... سقطت الفلسفة وبقي الدعاء"},{"href":"article71.html","title":"آية ١١ بين قبضة الطين وعظمة الكون"},{"href":"article160.html","title":"آية ٤٦ حين تضيق الأرض... فارفع قلبك إلى فاطر السماء"},{"href":"article122.html","title":"آية ٢٩ والذين معه شهادة السماء التي تسقط كل شبهة"},{"href":"article218.html","title":"آية ١٨ آية الرضوان: حين سكنت القلوب تحت الشجرة… ففتح الله أبواب السماء"},{"href":"article53.html","title":"آية ٧-٨ بين نسيج السماء واضطراب القلوب"},{"href":"article163.html","title":"آية ٧ حين تنسج السماء رسالتها في قلب الإنسان"},{"href":"article75.html","title":"آية ٧-٩ حين يقوم الكون على ميزان"},{"href":"article200.html","title":"آية ١-١٧ حين يَثْقُبُ النجمُ ظلامَ السماء وتنكشف السرائر"},{"href":"article156.html","title":"آية ١١-١٤ حين يعود الغيث إلى السماء... وينشق القلب للحياة"},{"href":"article48.html","title":"آية ١٠ طريقان إلى السماء... وليس طريقًا إلى الهاوية"},{"href":"article204.html","title":"السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},{"href":"article202.html","title":"٩. ثلاث سنوات من العطش والجوع… حين تضيق الأرض، ويبقى زاد القلب!"},{"href":"article180.html","title":"٢. موسم الصيد السياسي: عند بعض الناس الحيوان يُؤكل… وعند بعضهم يُعبد… وعندنا يُنتخب!"},{"href":"article183.html","title":"٢. لا تجعل نفسكَ قاضيَ السماء… فمصائر العباد إلى الله"},{"href":"article7-alkhunnas.html","title":"آية ١٥-١٦ الخنس الجوار الكنس"}],"دلائل القدرة":[{"href":"articles/article262.html","title":"آيات ٣٩-٤٠ لَأُزَيِّنَنَّ لَهُمْ فِي الْأَرْضِ… حين يتجمّل الباطل حتى يُرى حقًّا"},{"href":"articles/article249.html","title":"آية ١ 🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح"},{"href":"article133.html","title":"آية ٩١ حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء"},{"href":"article203.html","title":"آية ١٠٢ حين تأمر السماء باليقظة: السلاح بين أيدي المؤمنين وسنّة القوة"},{"href":"article103.html","title":"آية ٣١ إذا تحركت الجبال بكلام الله"},{"href":"article169.html","title":"آية ٤٤ حين يسبّح الكون كله... ويبقى الإنسان وحده في الغفلة"},{"href":"article148.html","title":"آية ٥٩ حين يتكلم الكون... وتصمت القلوب"},{"href":"articles/article237.html","title":"آيات ٤٧-٤٨ يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ"},{"href":"articles/article243.html","title":"آية ١٠٩ مداد الكون أمام كلمات الله… حين ينفد البحر ولا تنفد العظمة"},{"href":"article43.html","title":"آية ٦٨-٧٠ بين محكمة الأرض ومحكمة السماء"},{"href":"article222.html","title":"آية ١٠٤ حين تُطوى السماء… وتُفتح صحائف الأعمال"},{"href":"article12-zilal-alrahma.html","title":"آية ٤٥ ظلال الرحمة بين حركة الكون وسكون الفناء"},{"href":"article125.html","title":"آية ٨٠ حين يهمس الألم ويأتي الجواب من السماء"},{"href":"article162.html","title":"آية ٤٤ الصرح الذي كشف وهم الشمس"},{"href":"article99.html","title":"آية ٦١ بين البحرين حاجز"},{"href":"article185.html","title":"آية ٦١ حين تكون الأرض قرارًا… يكون القلب بحاجة إلى قرار"},{"href":"article94.html","title":"آية ٦٢ باب السماء حين تغلق أبواب الأرض"},{"href":"article147.html","title":"آية ٦٥ حين اهتزت الأرض... سقطت الفلسفة وبقي الدعاء"},{"href":"article71.html","title":"آية ١١ بين قبضة الطين وعظمة الكون"},{"href":"article160.html","title":"آية ٤٦ حين تضيق الأرض... فارفع قلبك إلى فاطر السماء"},{"href":"article122.html","title":"آية ٢٩ والذين معه شهادة السماء التي تسقط كل شبهة"},{"href":"article218.html","title":"آية ١٨ آية الرضوان: حين سكنت القلوب تحت الشجرة… ففتح الله أبواب السماء"},{"href":"article53.html","title":"آية ٧-٨ بين نسيج السماء واضطراب القلوب"},{"href":"article163.html","title":"آية ٧ حين تنسج السماء رسالتها في قلب الإنسان"},{"href":"article75.html","title":"آية ٧-٩ حين يقوم الكون على ميزان"},{"href":"article200.html","title":"آية ١-١٧ حين يَثْقُبُ النجمُ ظلامَ السماء وتنكشف السرائر"},{"href":"article156.html","title":"آية ١١-١٤ حين يعود الغيث إلى السماء... وينشق القلب للحياة"},{"href":"article48.html","title":"آية ١٠ طريقان إلى السماء... وليس طريقًا إلى الهاوية"},{"href":"article204.html","title":"السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},{"href":"article202.html","title":"٩. ثلاث سنوات من العطش والجوع… حين تضيق الأرض، ويبقى زاد القلب!"},{"href":"article180.html","title":"٢. موسم الصيد السياسي: عند بعض الناس الحيوان يُؤكل… وعند بعضهم يُعبد… وعندنا يُنتخب!"},{"href":"article183.html","title":"٢. لا تجعل نفسكَ قاضيَ السماء… فمصائر العباد إلى الله"}],"دلائل الحكمة":[],"سنن الله":[],"سنة التغيير":[],"سنة النصر":[],"سنة الهزيمة":[],"سنة التمكين":[],"سنة التداول":[],"سنة التدافع":[],"سنة الاستدراج":[],"سنة الإمهال":[],"سنة الأخذ":[],"سنة الجزاء":[],"سنة الشكر":[],"سنة الظلم":[],"سنة الإصلاح":[],"سنن النهوض":[],"سنن السقوط":[],"سنن الأمم":[],"القرآن والواقع":[{"href":"articles/article250.html","title":"٩. 🔪🇮🇷 ترامب وموس إيران: عندما يتحول «بلاع الموس» إلى سياسة دولية 😂🌎💣"},{"href":"articles/article246.html","title":"٣. 🎬😂 «حربٌ على الشاشة فقط!».. سالم الطويل يكتشف أن غزة استوديو تصوير هوليوودي! 📺🍿🤡"},{"href":"articles/article245.html","title":"١٢. حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"articles/article241.html","title":"٢. اسكت عن فساد الحاكم… وإلا أصبحتَ من الخوارج!"},{"href":"article24-alqab-mamlaka.html","title":"٣. ألقاب مملكة ليست في مواضعها"},{"href":"article164.html","title":"٤. اتفاقية \"الخيبة المشتركة\"… تحالف للدفاع عن كل شيء إلا القدس!"},{"href":"article207.html","title":"٥. الطَّرِيقُ إِلَى سَرَابِ أَنْقَرَةَ: سَنَوَاتُ التِّيهِ فِي صَحَرَاءِ الأُرْدُوغَانِيَّةِ"},{"href":"articles/article236.html","title":"٨. مسلمٌ يمشي بمحاذاة الحائط… حتى لا تصيبه الحقيقة!"},{"href":"article180.html","title":"٢. موسم الصيد السياسي: عند بعض الناس الحيوان يُؤكل… وعند بعضهم يُعبد… وعندنا يُنتخب!"},{"href":"article231.html","title":"٢. موانع التكفير الجديدة: المشيخة و«خدمة وليّ الأمر»!"},{"href":"article154.html","title":"٢. الدولة العثمانية ومعركة موهاكس"},{"href":"article-alsuljuqi.html","title":"آية ٢٦ على أبواب العروش المهدمة"},{"href":"article139.html","title":"آية ١٢٤ حين يصبح الوطن محطة هروب لا موطن كرامة"},{"href":"article153.html","title":"١. سلسلة التأريخ الإسلامي الحقيقي (١) — سومنات... حين يتكلم التاريخ ويصمت التزييف"},{"href":"article21-suqut-alashkhas.html","title":"آية ١٤٤ حين يسقط الأشخاص فلا تسقط المبادئ"},{"href":"articles/article247.html","title":"جديد ✦ 17. مقال 247 · موسوعة السلجوقي التدبرية أحدث ما أضيف إلى الموسوعة 😂📢 «لا تشكُ من الأوضاع… فقط أنكر المنكر وأغمض عينيك!» 🤣🙈 اقرأ المقال ←"}],"التدبر المعاصر":[],"القرآن والحياة المعاصرة":[],"القرآن وبناء الوعي":[],"القرآن وصناعة الإنسان":[],"القرآن والتغيير":[],"القرآن والإصلاح":[],"القرآن والمجتمع":[],"القرآن والأمة":[],"القرآن والفتن المعاصرة":[],"القرآن والشبهات المعاصرة":[],"القرآن والتربية":[],"القرآن والأسرة":[],"القرآن والشباب":[],"القرآن والمرأة":[],"القرآن والعمل":[],"القرآن والمال":[],"القرآن والسياسة":[],"قراءة الواقع في ضوء القرآن":[],"الوعي القرآني":[],"البصيرة القرآنية":[],"أصول الفقه":[{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"articles/article257.html","title":"٧. عذرُ الجهل والتأويل... إلا إذا خالفناهم!"},{"href":"articles/article256.html","title":"٦. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article255.html","title":"٥. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article254.html","title":"آيات ١١١-١١٧ الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"},{"href":"article220.html","title":"١. المعايير الفقهية لتصنيف الديار: دراسة تأصيلية"},{"href":"article216.html","title":"٦. حِينَ تَتَحَوَّلُ قَاعِدَةُ «أَخَفِّ الضَّرَرَيْنِ» إِلَى جِسْرٍ لِتَمْكِينِ الضَّرَرِ الأَكْبَرِ"},{"href":"article44.html","title":"١. الجهل عذر أم تقصير؟"},{"href":"article217.html","title":"٢. التأويل بين العذر والإنكار"}],"القواعد الفقهية":[],"مقاصد الشريعة":[],"الأحكام الشرعية":[{"href":"article27-tashri-lighayrillah.html","title":"آية ٢١ حين يصبح التشريع لغير الله"},{"href":"articles/article235.html","title":"٤. حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},{"href":"article216.html","title":"٦. حِينَ تَتَحَوَّلُ قَاعِدَةُ «أَخَفِّ الضَّرَرَيْنِ» إِلَى جِسْرٍ لِتَمْكِينِ الضَّرَرِ الأَكْبَرِ"},{"href":"article113.html","title":"١. ومن أحسن من الله حكماً"},{"href":"article-hawa-sharia.html","title":"آية ٤٤-٥٠ حين يتحول الهوى إلى شريعة"},{"href":"article166.html","title":"آية ٩ حين يُكره حكم الله… تُطفأ مصابيح العمل"}],"الحلال والحرام":[{"href":"articles/article239.html","title":"٢. «اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!"},{"href":"article166.html","title":"آية ٩ حين يُكره حكم الله… تُطفأ مصابيح العمل"},{"href":"article91.html","title":"آية ١٦٨ بين اللقمة والخطوة"}],"الأدلة الشرعية":[],"الكتاب والسنة":[],"الإجماع":[],"القياس":[],"الاستصحاب":[],"الاستحسان":[],"المصلحة":[],"سد الذرائع":[],"العرف":[],"الاجتهاد":[],"التقليد":[],"الرخص":[],"العزائم":[],"الضرورات":[],"رفع الحرج":[],"الأمور بمقاصدها":[],"اليقين لا يزول بالشك":[],"المشقة تجلب التيسير":[],"الضرر يزال":[],"العادة محكمة":[],"درء المفاسد":[],"جلب المصالح":[],"مآلات الأفعال":[],"فقه الأولويات":[],"فقه الموازنات":[],"فقه النوازل":[],"الأعذار الشرعية":[{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"articles/article257.html","title":"٧. عذرُ الجهل والتأويل... إلا إذا خالفناهم!"},{"href":"articles/article256.html","title":"٦. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article255.html","title":"٥. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article254.html","title":"آيات ١١١-١١٧ الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"},{"href":"article44.html","title":"١. الجهل عذر أم تقصير؟"},{"href":"article217.html","title":"٢. التأويل بين العذر والإنكار"}],"الخطأ والنسيان":[],"الإكراه":[],"السياسة الشرعية":[{"href":"articles/article250.html","title":"٩. 🔪🇮🇷 ترامب وموس إيران: عندما يتحول «بلاع الموس» إلى سياسة دولية 😂🌎💣"},{"href":"articles/article246.html","title":"٣. 🎬😂 «حربٌ على الشاشة فقط!».. سالم الطويل يكتشف أن غزة استوديو تصوير هوليوودي! 📺🍿🤡"},{"href":"articles/article245.html","title":"١٢. حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"articles/article241.html","title":"٢. اسكت عن فساد الحاكم… وإلا أصبحتَ من الخوارج!"},{"href":"article164.html","title":"٤. اتفاقية \"الخيبة المشتركة\"… تحالف للدفاع عن كل شيء إلا القدس!"},{"href":"article207.html","title":"٥. الطَّرِيقُ إِلَى سَرَابِ أَنْقَرَةَ: سَنَوَاتُ التِّيهِ فِي صَحَرَاءِ الأُرْدُوغَانِيَّةِ"},{"href":"article180.html","title":"٢. موسم الصيد السياسي: عند بعض الناس الحيوان يُؤكل… وعند بعضهم يُعبد… وعندنا يُنتخب!"},{"href":"article231.html","title":"٢. موانع التكفير الجديدة: المشيخة و«خدمة وليّ الأمر»!"},{"href":"article154.html","title":"٢. الدولة العثمانية ومعركة موهاكس"}],"الطغيان":[{"href":"article50.html","title":"آية ٨٤ حين يعُدّ الله الأنفاس فلا تستعجل سقوط الطغيان"},{"href":"article177.html","title":"آية ٢٦ حين يشرّع الطاغوتُ لنفسه القتل: «ذَرُونِي أَقْتُلْ مُوسَى»"},{"href":"article178.html","title":"آية ٢٦ حين يتحول الطاغوت إلى «محامٍ عن الفضيلة»: ذَرُونِي أَقْتُلْ مُوسَى! (مقال آخر)"},{"href":"article179.html","title":"آية ٢٦ حين يتحول الطاغوت إلى «محامٍ عن الفضيلة»: ذَرُونِي أَقْتُلْ مُوسَى! (مقال ثالث)"},{"href":"article197.html","title":"آية ٤-٧ مواكب الشهادة ووجوه الطغيان: قراءة في فقه الأخدود وأزلية المعركة"},{"href":"article187.html","title":"آية ٦-٨ حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة"},{"href":"article219.html","title":"٢. تروسُ الطغيان… حين يتحوّل الجندي من إنسانٍ إلى أداةٍ في يدِ الظلم"},{"href":"article150.html","title":"آية ١٥-١٧ حين يسقط الجبار... ولا يبقى إلا وجه الله"}],"التأويل":[{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"articles/article257.html","title":"٧. عذرُ الجهل والتأويل... إلا إذا خالفناهم!"},{"href":"articles/article256.html","title":"٦. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article255.html","title":"٥. عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},{"href":"articles/article254.html","title":"آيات ١١١-١١٧ الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"},{"href":"article44.html","title":"١. الجهل عذر أم تقصير؟"},{"href":"article217.html","title":"٢. التأويل بين العذر والإنكار"}],"النية والإخلاص":[],"أهوال القيامة":[{"href":"article233.html","title":"٢. الخوف العاصم: حين يوقظك «اليوم العظيم» قبل أن تزلَّ القدم"},{"href":"article87.html","title":"آية ١٧٩ قلوب تمشي... ولكنها ماتت قبل أن تموت"},{"href":"article80.html","title":"آية ٣٤ يوم يموت الحزن إلى الأبد"},{"href":"article119.html","title":"السورة كاملة حين تموت الرحمة في القلب"},{"href":"article20-sakrat-almawt.html","title":"١. حين تنطفئ الأصوات ولا يبقى إلا العمل"},{"href":"article28-kayfa-jamaanahum.html","title":"آية ٢٥ كيف إذا جمعناهم؟!"},{"href":"article120.html","title":"آية ٢٢-٢٣ حين يُحشر الأشباه مع الأشباه"},{"href":"article70.html","title":"آية ٢-٣ حين يكون الأدب مع رسول الله ﷺ ميزان الإيمان"},{"href":"article75.html","title":"آية ٧-٩ حين يقوم الكون على ميزان"},{"href":"article131.html","title":"آية ١٥-١٧ فلسفة العطاء والمنع: حين يصحح القرآن ميزان الإنسان"},{"href":"article206.html","title":"السورة كاملة حِينَ يَسْقُطُ الْمَالُ وَالنَّسَبُ وَيَبْقَى مِيزَانُ الله"},{"href":"article189.html","title":"آية ١٥٣ صِرَاطِي… الطريق الذي يستقيم به الإنسان وتستقيم به الحياة والآخرة"},{"href":"articles/article248.html","title":"٥. 💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس"},{"href":"article8-ma-asbarahum.html","title":"آية ١٧٥ فما أصبرهم على النار"},{"href":"article209.html","title":"آية ١٩٣ مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ فِي رِحَابِ الآيَةِ 193 مِنْ آلِ عِمْرَانَ"},{"href":"article224.html","title":"آية ٧١-٧٢ وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار"},{"href":"article4-yathoob-alwajh.html","title":"آية ١٠٤ حين يذوب الوجه في اللهب"},{"href":"article33-tuqallabu-wujuhuhum.html","title":"آية ٦٦ حين تُقلَّب وجوههم في النار"},{"href":"article223.html","title":"آية ٢٤ حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾"},{"href":"article61.html","title":"١. حين يتكلم اللهيب"},{"href":"articles/article250.html","title":"٩. 🔪🇮🇷 ترامب وموس إيران: عندما يتحول «بلاع الموس» إلى سياسة دولية 😂🌎💣"},{"href":"article90.html","title":"آية ٣١ حين يصرخ الندم ولا يبقى إلا الحمل الثقيل"},{"href":"article145.html","title":"آية ٣٠ يا حسرة على العباد... حين يطرق الحق الأبواب ويختار الناس الظلام"},{"href":"articles/article242.html","title":"١. «تمام العيش»... عندما تصصبح المظالم مجرد إشعارات يجب كتمها! 😂📵"}],"رحمة الله":[{"href":"article152.html","title":"آية ١٥٩ حين تصنع الرحمة الرجال"},{"href":"article149.html","title":"آية ٤١-٤٤ حين لا يُنجي إلا الله: رحلة السفينة بين موج الابتلاء وشاطئ الرحمة"},{"href":"article78.html","title":"آية ٤٩-٥٠ بين نداء الرحمة وهيبة العذاب"},{"href":"article98.html","title":"آية ١١ حين تستعجل النفس وتتدخل رحمة الله"},{"href":"article12-zilal-alrahma.html","title":"آية ٤٥ ظلال الرحمة بين حركة الكون وسكون الفناء"},{"href":"article119.html","title":"السورة كاملة حين تموت الرحمة في القلب"},{"href":"article118.html","title":"١. العذر بالجهل بين رحمة الشريعة وعدلها"},{"href":"article10-saraqathu-alrahma.html","title":"١. جاء ليسرق الدنيا فسرقته الرحمة"},{"href":"article196.html","title":"٣. حين غَلَبَتِ الرَّحمةُ الغَضَبَ: تأملات في قوله ﷺ «إِنَّ رَحْمَتِي غَلَبَتْ غَضَبِي»"},{"href":"article172.html","title":"آية ١٥٨ حين تُغلق أبواب التوبة… لا ينفع الإيمان المتأخر!"},{"href":"article124.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة"},{"href":"article129.html","title":"آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة (مقال آخر)"}],"الشرك والتوحيد":[{"href":"articles/article261.html","title":"٩. حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},{"href":"articles/article258.html","title":"٨. «ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},{"href":"article234.html","title":"٣. ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},{"href":"article212.html","title":"آية ٦ الجهل ليس جوازَ عبورٍ إلى الشرك"},{"href":"article127.html","title":"آية ١٠٦ حين يختبئ الشرك خلف ستار الإيمان"},{"href":"article186.html","title":"آية ٣ حين يصبح القرب من الله حُجّةً للشرك: «ما نعبدهم إلا ليقرّبونا إلى الله زُلْفَى»"},{"href":"article27-tashri-lighayrillah.html","title":"آية ٢١ حين يصبح التشريع لغير الله"},{"href":"articles/article235.html","title":"٤. حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},{"href":"article111.html","title":"السورة كاملة براءة التوحيد"},{"href":"article76.html","title":"آية ١-٤ سورة تهدم كل الأصنام في القلب"},{"href":"article194.html","title":"٧. حين يبهت الوَشْيُ… ويبقى الثوب: غربة التوحيد في آخر الزمان"},{"href":"article195.html","title":"٨. «وَعُدْتُمْ مِنْ حَيْثُ بَدَأْتُمْ»… حين تدور الأيام ويعود الإسلام غريبًا"}],"التدبر القرآني":[{"href":"article133.html","title":"آية ٩١ حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء"},{"href":"article230.html","title":"آية ٢٨٥-٢٨٦ حين يضع الوحي عن كتفيك ثقل الطريق"},{"href":"article141.html","title":"آية ٧٨ أدوات الهداية ومنافذ العلم: تدبر في ثلاثية السمع والأبصار والأفئدة"},{"href":"article68.html","title":"آية ٣٧ رجال يصنعهم القرآن"},{"href":"article46.html","title":"آية ١٩٢-١٩٥ نفحات التنزيل... حين يخاطب الوحي القلب قبل السمع"},{"href":"article142.html","title":"آية ٦ أمهات المؤمنين... بيوت الوحي التي لا تطفئها سهام الافتراء"},{"href":"articles/article235.html","title":"٤. حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},{"href":"article136.html","title":"آية ٢٤ حين يفتح القرآن أبواب القلوب: رحلة التدبر من التلاوة إلى الحياة"},{"href":"article14-allama-alquran.html","title":"آية ١-٤ قبل أن يُخلق الإنسان كان القرآن"},{"href":"article137.html","title":"آية ١ سورة الإنسان... حين يأخذ القرآن بيد الروح من العدم إلى الخلود"},{"href":"article119.html","title":"السورة كاملة حين تموت الرحمة في القلب"},{"href":"article112.html","title":"السورة كاملة حين تغشى الوجوه الحقيقة"},{"href":"article226.html","title":"السورة كاملة الغاشية: حين يستيقظ القلب قبل أن يغشاه المصير"},{"href":"article131.html","title":"آية ١٥-١٧ فلسفة العطاء والمنع: حين يصحح القرآن ميزان الإنسان"},{"href":"article204.html","title":"السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},{"href":"article210.html","title":"السورة كاملة سورة العصر.. سفينة النجاة في بحر الزمن"},{"href":"article138.html","title":"السورة كاملة الكوثر... حين يسكب الله البلسم على القلوب المجروحة"},{"href":"article111.html","title":"السورة كاملة براءة التوحيد"},{"href":"article206.html","title":"السورة كاملة حِينَ يَسْقُطُ الْمَالُ وَالنَّسَبُ وَيَبْقَى مِيزَانُ الله"},{"href":"article76.html","title":"آية ١-٤ سورة تهدم كل الأصنام في القلب"},{"href":"article6-surat-alfalaq.html","title":"تفسير السورة سورة الفلق"},{"href":"article81.html","title":"٠. يسألونك... حين كان الوحي يصنع العقول (موضوعي)"},{"href":"article199.html","title":"٤. مسافرون في قطار الزمن… تدبّر في وصية «كأنك غريب»"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},{"href":"articles/article238.html","title":"١١. حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},{"href":"article113.html","title":"١. ومن أحسن من الله حكماً"}],"السيرة والنبوة":[],"النعمة والشكر":[{"href":"article140.html","title":"آية ٥٣ حين يذوب الغرور أمام نهر النعم"},{"href":"article34-tuhsi-alniam.html","title":"آية ١١ حين تُحصي النعم يزهر القلب"},{"href":"article187.html","title":"آية ٦-٨ حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة"},{"href":"article176.html","title":"٥. حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"}],"تصنيف الديار":[]};;
 
-    {href:"article149.html", title:"حِينَ لَا يُنْجِي إِلَّا اللَّهُ: رِحْلَةُ السَّفِينَةِ"},
-    {href:"article141.html", title:"أَدَوَاتُ الْهِدَايَةِ وَمَنَافِذُ الْعِلْمِ"},
-    {href:"article131.html", title:"فَلْسَفَةُ الْعَطَاءِ وَالْمَنْعِ: حِينَ يُصَحِّحُ الْقُرْآنُ مِيزَانَ الْإِنْسَانِ"},
-    {href:"article170.html", title:"حين يصبح الإيمان غريباً في القلب: بادروا بالأعمال قبل أن تأتي الفتنة"},
-    {href:"article173.html", title:"أنت لا تعيش فقط… أنت تحرث!"}
-  ],
-  "القلب": [
-    {href:"articles/article262.html", title:"لَأُزَيِّنَنَّ لَهُمْ فِي الْأَرْضِ… حين يتجمّل الباطل حتى يُرى حقًّا"},
-    {href:"articles/article260.html", title:"اللهُ يَبْسُطُ وَيَقْدِرُ: حين تتجلّى حكمةُ الرزق بين البسط والقبض"},
-    {href:"articles/article252.html", title:"حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء"},
-    {href:"articles/article253.html", title:"عِيسَىٰ بَيْنَ الرَّفْعِ وَالتَّطْهِيرِ وَغَلَبَةِ أَهْلِ الْحَقِّ"},
-    {href:"articles/article243.html", title:"مداد الكون أمام كلمات الله… حين ينفد البحر ولا تنفد العظمة"},
-    {href:"articles/article240.html", title:"«حين تتجافى الأجساد… وتحيا القلوب»"},
-    {href:"article232.html", title:"حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية"},
-    {href:"article209.html", title:"مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ"},
-    {href:"article210.html", title:"سورة العصر.. سفينة النجاة في بحر الزمن"},
-    {href:"article211.html", title:"حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},
-    {href:"article212.html", title:"الجهل ليس جوازَ عبورٍ إلى الشرك"},
-    {href:"article213.html", title:"حين تقوم الحجة وتسقط دعوى الجهل"},
-    {href:"article214.html", title:"حين تتكلم الكلمة بالكفر"},
-    {href:"article215.html", title:"حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء"},
-
-    {href:"article208.html", title:"حِينَ يَسْقُطُ الْوَهْمُ وَيَبْقَى الْوَاحِدُ الأَحَدُ"},
-    {href:"article119.html", title:"حِينَ يَصْدَأُ القَلْبُ... وَتُطْفَأُ مَصَابِيحُ الهِدَايَةِ"},
-    {href:"article116.html", title:"حِينَ يُطْفَأُ نُورُ الْقَلْبِ"},
-    {href:"article139.html", title:"حِينَ يَصْبَحُ الْوَطَنُ مَحَطَّةَ هَرُوبٍ لَا مَوْطِنَ كَرَامَةٍ"},
-    {href:"article133.html", title:"حِينَ يُحَاكِمُ الْهَوَى الْوَحْيَ... فَيُغْلِقُ الْقَلْبُ أَبْوَابَ السَّمَاءِ"},
-    {href:"article148.html", title:"حِينَ يَتَكَلَّمُ الْكَوْنُ... وَتَصْمُتُ الْقُلُوبُ"},
-    {href:"article121.html", title:"حِينُ يَسْكُنُ الْقَلْبُ إِلَى رَبِّهِ"},
-    {href:"article168.html", title:"حِيـنَ يَقْتَرِبُ الشَّيْطَـانُ… فَافْتَحْ بَابَ اللَّهِ"},
-    {href:"article171.html", title:"حرثُ الآخرة… حين يستقيم القلب فتستقيم الخطى"},
-    {href:"article198.html", title:"استظلَّ برهةً ثم انطلق… حين يصبح ظلُّ الدنيا طريقًا إلى الآخرة"},
-    {href:"article199.html", title:"مسافرون في قطار الزمن… تدبّر في وصية «كأنك غريب»"},
-    {href:"article200.html", title:"حين يَثْقُبُ النجمُ ظلامَ السماء وتنكشف السرائر"},
-    {href:"articles/article248.html", title:"💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس"},
-    {href:"articles/article249.html", title:"🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح"}
-  
-  ],
-  "النية": [
-    {href:"article167.html", title:"بَيْنَ «هَمَّ» وَ«نَوَى»... مَسَافَةٌ بَيْنَ الْخَاطِرِ وَالْعَزْمِ"}
-  ],
-  "القيامة": [
-    {href:"article233.html", title:"الخوف العاصم: حين يوقظك «اليوم العظيم» قبل أن تزلَّ القدم"},
-    {href:"article226.html", title:"الغاشية: حين يستيقظ القلب قبل أن يغشاه المصير"},
-    {href:"article223.html", title:"حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾"},
-    {href:"article222.html", title:"حين تُطوى السماء… وتُفتح صحائف الأعمال"},
-
-    {href:"article161.html", title:"حِينَ لَا تَبْقَى إِلَّا الزِّيَادَةُ فِي الْعَذَابِ"},
-    {href:"article157.html", title:"تَمَهَّلْ... لَقَدْ مُنِحْتَ فُرْصَةً لَا تُمْنَحُ لِأَحَدٍ"},
-    {href:"article120.html", title:"حِينُ يُحْشَرُ الْأَشْبَاهُ مَعَ الْأَشْبَاهِ"},
-    {href:"article130.html", title:"حِينَ يُنْتَزَعُ اللِّبَاسُ... وَتَبْدَأُ الْهَزِيمَةُ الْأُولَى لِلْإِنْسَانِ"},
-    {href:"article132.html", title:"حِينَ تَتَحَوَّلُ الْأَعْمَالُ إِلَى حَسَرَاتٍ"},
-    {href:"article192.html", title:"بينَ لَهِيبِ الإلقاءِ وَسَكِينَةِ الأمان"},
-    {href:"article204.html", title:"سورة الزلزلة... حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة"},
-    {href:"article205.html", title:"حين يلتقم صاحب القرن قرنه... ويستيقظ القلب قبل أن تأتي النفخة"},
-    {href:"articles/article237.html", title:"يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ"},
-    {href:"articles/article244.html", title:"✍️🔥 لا تَبَالِ... فالعاقبة هناك! 🔥✍️"}
-  
-  ],
-  "الرحمة": [
-    {href:"article232.html", title:"حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية"},
-    {href:"article227.html", title:"تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا"},
-    {href:"article225.html", title:"بوابة الأوابين… حين يعرف الله ضعفك ويعرف قلبك"},
-    {href:"article224.html", title:"وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار"},
-    {href:"article209.html", title:"مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ"},
-
-    {href:"article124.html", title:"حِينَ تَتَكَسَّرُ القُلُوبُ عَلَى أَعْتَابِ المَغْفِرَةِ"},
-    {href:"article160.html", title:"حِينَ تَضِيقُ الْأَرْضُ... فَارْفَعْ قَلْبَكَ إِلَى فَاطِرِ السَّمَاءِ"},
-    {href:"article123.html", title:"إِذَا فَتَحَ اللَّهُ أَبْوَابَ رَحْمَتِهِ... فَمَنْ ذَا الَّذِي يُغْلِقُهَا؟!"},
-    {href:"article156.html", title:"حِينَ يَعُودُ الْغَيْثُ إِلَى السَّمَاءِ... وَيَنْشَقُّ الْقَلْبُ لِلْحَيَاةِ"},
-    {href:"article183.html", title:"لا تجعل نفسكَ قاضيَ السماء… فمصائر العباد إلى الله"},
-    {href:"article196.html", title:"حِينَ غَلَبَتِ الرَّحمةُ الغَضَبَ"}
-  ],
-  "الشرك": [
-    {href:"articles/article261.html", title:"حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},
-    {href:"articles/article258.html", title:"«ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},
-    {href:"articles/article254.html", title:"الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},
-    {href:"articles/article235.html", title:"حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},
-    {href:"article234.html", title:"ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},
-    {href:"article228.html", title:"الاعتصام الأخير: ربُّ الناس وملكُ الناس وإلهُ الناس"},
-    {href:"article212.html", title:"الجهل ليس جوازَ عبورٍ إلى الشرك"},
-    {href:"article213.html", title:"حين تقوم الحجة وتسقط دعوى الجهل"},
-    {href:"article214.html", title:"حين تتكلم الكلمة بالكفر"},
-
-    {href:"article208.html", title:"حِينَ يَسْقُطُ الْوَهْمُ وَيَبْقَى الْوَاحِدُ الأَحَدُ"},
-    {href:"article127.html", title:"حِينَ يَخْتَبِئُ الشِّرْكُ خَلْفَ سِتَارِ الْإِيمَانِ"},
-    {href:"article158.html", title:"بَوْاَبَةُ النُّورِ... بَيْنَ إِرَادَةِ الرَّحْمَنِ وَأُمْنِيَاتِ أَهْلِ الشَّهَوَاتِ"},
-    {href:"article147.html", title:"حِينَ اهْتَزَّتِ الْأَرْضُ... سَقَطَتِ الْفَلْسَفَةُ وَبَقِيَ الدُّعَاءُ"},
-    {href:"article186.html", title:"حين يصبح القرب من الله حُجّةً للشرك: «ما نعبدهم إلا ليقرّبونا إلى الله زُلْفَى»"}
-  ],
-  "القرآن": [
-    {href:"articles/article262.html", title:"لَأُزَيِّنَنَّ لَهُمْ فِي الْأَرْضِ… حين يتجمّل الباطل حتى يُرى حقًّا"},
-    {href:"articles/article260.html", title:"اللهُ يَبْسُطُ وَيَقْدِرُ: حين تتجلّى حكمةُ الرزق بين البسط والقبض"},
-    {href:"articles/article259.html", title:"الزَّبَدُ يعلو لحظةً… والحقُّ يمكث أبدًا"},
-    {href:"articles/article254.html", title:"الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},
-    {href:"articles/article253.html", title:"عِيسَىٰ بَيْنَ الرَّفْعِ وَالتَّطْهِيرِ وَغَلَبَةِ أَهْلِ الْحَقِّ"},
-    {href:"articles/article252.html", title:"حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء"},
-    {href:"articles/article243.html", title:"مداد الكون أمام كلمات الله… حين ينفد البحر ولا تنفد العظمة"},
-    {href:"articles/article240.html", title:"«حين تتجافى الأجساد… وتحيا القلوب»"},
-    {href:"articles/article235.html", title:"حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},
-    {href:"article232.html", title:"حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية"},
-    {href:"article233.html", title:"الخوف العاصم: حين يوقظك «اليوم العظيم» قبل أن تزلَّ القدم"},
-    {href:"article234.html", title:"ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله"},
-    {href:"article230.html", title:"حين يضع الوحي عن كتفيك ثقل الطريق"},
-    {href:"article223.html", title:"حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾"},
-    {href:"article222.html", title:"حين تُطوى السماء… وتُفتح صحائف الأعمال"},
-
-    {href:"article221.html", title:"خُلُودٌ لَا يَبْلَىٰ… حين دخل الشيطان إلى الإنسان من باب الخلود"},
-    {href:"article209.html", title:"مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ"},
-    {href:"article210.html", title:"سورة العصر.. سفينة النجاة في بحر الزمن"},
-    {href:"article211.html", title:"حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},
-    {href:"article212.html", title:"الجهل ليس جوازَ عبورٍ إلى الشرك"},
-    {href:"article213.html", title:"حين تقوم الحجة وتسقط دعوى الجهل"},
-    {href:"article214.html", title:"حين تتكلم الكلمة بالكفر"},
-    {href:"article215.html", title:"حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء"},
-    {href:"article208.html", title:"حِينَ يَسْقُطُ الْوَهْمُ وَيَبْقَى الْوَاحِدُ الأَحَدُ"},
-    {href:"article136.html", title:"حِينَ يَفْتَحُ الْقُرْآنُ أَبْوَابَ الْقُلُوبِ"},
-    {href:"article166.html", title:"حِينَ يُكْرَهُ حُكْمُ اللَّهِ… تُطْفَأُ مَصَابِيحُ الْعَمَلِ"},
-    {href:"article117.html", title:"حِينَ تُسَاقُ الكِبْرِيَاءُ إِلَى النَّارِ"},
-    {href:"article169.html", title:"حِيـنَ يُسَبِّـحُ الكَـوْنُ كُلُّـهُ… وَيَبْقَـى الإِنْسَـانُ وَحْدَهُ فِي الغَفْلَـةِ!"},
-    {href:"article189.html", title:"صِرَاطِي… الطريق الذي يستقيم به الإنسان وتستقيم به الحياة والآخرة"},
-    {href:"articles/article237.html", title:"يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ"},
-    {href:"articles/article236.html", title:"مسلمٌ يمشي بمحاذاة الحائط… حتى لا تصيبه الحقيقة!"},
-    {href:"articles/article244.html", title:"✍️🔥 لا تَبَالِ... فالعاقبة هناك! 🔥✍️"},
-    {href:"articles/article249.html", title:"🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح"}
-  
-  ],
-  "النبوة": [
-    {href:"articles/article263.html", title:"زَمَنُ الصَّبْر... حِينَ يَصِيرُ الثَّبَاتُ عِبَادَةً عَظِيمَة"},
-    {href:"articles/article261.html", title:"حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},
-    {href:"articles/article258.html", title:"«ذَاتُ أَنْوَاط» ليست صكًّا مفتوحًا لعذر الجهل في الشرك!"},
-    {href:"articles/article254.html", title:"الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟"},
-    {href:"articles/article251.html", title:"جيش عدن أبين... حين تتكلم النبوءة عن رجالٍ يخرجون من اليمن إلى ساحات الملاحم"},
-    {href:"articles/article253.html", title:"عِيسَىٰ بَيْنَ الرَّفْعِ وَالتَّطْهِيرِ وَغَلَبَةِ أَهْلِ الْحَقِّ"},
-    {href:"articles/article238.html", title:"حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},
-    {href:"article134.html", title:"حِوَارٌ مَعَ أَكْبَرِ فِتْنَةٍ عَرَفَتْهَا الْبَشَرِيَّةُ"},
-    {href:"article151.html", title:"بَوْاَبَةُ النُّورِ... حِينَ يَفْتَحُ اللَّهُ لِعِبَادِهِ بَابَ الْمَحَبَّةِ"},
-    {href:"article135.html", title:"حِينَ يَكْتُبُ اللَّهُ الْفَتْحَ"},
-    {href:"article142.html", title:"أُمَّهَاتُ الْمُؤْمِنِينَ... بُيُوتُ الْوَحْيِ"},
-    {href:"article182.html", title:"المرء مع من أحب… حين يتحول الحب إلى طريقٍ إلى الحشر"},
-    {href:"article184.html", title:"منابر النور… حين يكون الحب لله وحده"},
-    {href:"articles/article245.html", title:"حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"}
-  
-  ],
-  "السياسة": [
-    {href:"articles/article259.html", title:"الزَّبَدُ يعلو لحظةً… والحقُّ يمكث أبدًا"},
-    {href:"articles/article242.html", title:"«تمام العيش»... عندما تصصبح المظالم مجرد إشعارات يجب كتمها! 😂📵"},
-    {href:"articles/article241.html", title:"اسكت عن فساد الحاكم… وإلا أصبحتَ من الخوارج!"},
-    {href:"articles/article239.html", title:"«اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!"},
-    {href:"articles/article235.html", title:"حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»"},
-    {href:"article231.html", title:"موانع التكفير الجديدة: المشيخة و«خدمة وليّ الأمر»!"},
-    {href:"article229.html", title:"سيفُ السُّنّة في المولد… وغمدُه في موسم الرياض!"},
-    {href:"article211.html", title:"حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},
-    {href:"article216.html", title:"حِينَ تَتَحَوَّلُ قَاعِدَةُ «أَخَفِّ الضَّرَرَيْنِ» إِلَى جِسْرٍ لِتَمْكِينِ الضَّرَرِ الأَكْبَرِ"},
-
-    {href:"article164.html", title:"اتِّفَاقِيَّةُ «الْخَيْبَةِ الْمُشْتَرَكَةِ»…"},
-    {href:"article153.html", title:"سُومَنَات... حِينَ يَتَكَلَّمُ التَّارِيخُ وَيَصْمُتُ التَّزْيِيفُ"},
-    {href:"article154.html", title:"الدولة العثمانية ومعركة موهاكس"},
-    {href:"article159.html", title:"رَدٌّ عَلَى «الْحُلْمِ الْعَرَبِيِّ»... الْحَقِيقَةُ الْإِسْلَامِيَّةُ"},
-    {href:"article180.html", title:"موسم الصيد السياسي: عند بعض الناس الحيوان يُؤكل… وعند بعضهم يُعبد… وعندنا يُنتخب!"},
-    {href:"article190.html", title:"بين فقه الصبر على الجور وفقه مقاومة الكفر: هل يجوز اختزال كلام الأئمة في شعار «لا خروج أبداً»؟"},
-    {href:"article203.html", title:"حين تأمر السماء باليقظة: السلاح بين أيدي المؤمنين وسنّة القوة"},
-    {href:"article207.html", title:"الطَّرِيقُ إِلَى سَرَابِ أَنْقَرَةَ: سَنَوَاتُ التِّيهِ فِي صَحَرَاءِ الأُرْدُوغَانِيَّةِ"},
-    {href:"articles/article245.html", title:"حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"},
-    {href:"articles/article246.html", title:"🎬😂 «حربٌ على الشاشة فقط!».. سالم الطويل يكتشف أن غزة استوديو تصوير هوليوودي! 📺🍿🤡"},
-    {href:"articles/article247.html", title:"😂📢 «لا تشكُ من الأوضاع… فقط أنكر المنكر وأغمض عينيك!» 🤣🙈"},
-    {href:"articles/article250.html", title:"🔪🇮🇷 ترامب وموس إيران: عندما يتحول «بلاع الموس» إلى سياسة دولية 😂🌎💣"}
-  
-  ],
-  "الفتن": [
-    {href:"articles/article263.html", title:"زَمَنُ الصَّبْر... حِينَ يَصِيرُ الثَّبَاتُ عِبَادَةً عَظِيمَة"},
-    {href:"articles/article251.html", title:"جيش عدن أبين... حين تتكلم النبوءة عن رجالٍ يخرجون من اليمن إلى ساحات الملاحم"},
-    {href:"articles/article252.html", title:"حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء"},
-    {href:"articles/article238.html", title:"حديث جبريل.. حين نزل الوحي ليبني الإنسان من الظاهر إلى الباطن إلى مقام الإحسان"},
-    {href:"article215.html", title:"حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء"},
-
-    {href:"article63.html", title:"القابض على الجمر"},
-    {href:"article97.html", title:"حين تغربل القلوب قبل الوجوه"},
-    {href:"article134.html", title:"حِوَارٌ مَعَ أَكْبَرِ فِتْنَةٍ عَرَفَتْهَا الْبَشَرِيَّةُ"},
-    {href:"article170.html", title:"حين يصبح الإيمان غريباً في القلب: بادروا بالأعمال قبل أن تأتي الفتنة"},
-    {href:"article174.html", title:"«سَتَفْتَرِقُ أُمَّتِي» — دراسة حديثية وفقهية في حقيقة الفرقة الناجية"},
-    {href:"article175.html", title:"حين يخفُّ الدين فتثقل الفتنة… صلابة اليقين في زمن الدجال"},
-    {href:"article176.html", title:"حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},
-    {href:"article193.html", title:"حين تنقلب الموازين… ويصبح اللُّكَع أسعد الناس بالدنيا!"},
-    {href:"article194.html", title:"حين يبهت الوَشْيُ… ويبقى الثوب: غربة التوحيد في آخر الزمان"},
-    {href:"article195.html", title:"«وَعُدْتُمْ مِنْ حَيْثُ بَدَأْتُمْ»… حين تدور الأيام ويعود الإسلام غريبًا"},
-    {href:"article202.html", title:"ثلاث سنوات من العطش والجوع… حين تضيق الأرض، ويبقى زاد القلب!"},
-    {href:"articles/article245.html", title:"حين تُمنَع الحقوق وتعود الراية: تأملات في حديث العراق والشام ومصر، وأفق الخلافة في آخر الزمان"}
-  
-  ],
-  "الطغيان": [
-    {href:"articles/article259.html", title:"الزَّبَدُ يعلو لحظةً… والحقُّ يمكث أبدًا"},
-    {href:"articles/article242.html", title:"«تمام العيش»... عندما تصصبح المظالم مجرد إشعارات يجب كتمها! 😂📵"},
-    {href:"articles/article241.html", title:"اسكت عن فساد الحاكم… وإلا أصبحتَ من الخوارج!"},
-    {href:"articles/article239.html", title:"«اللعنة بالتقسيط»… حين يصبح الربا حلالًا بمرسوم، ويصبح العلماء موظفي علاقات عامة!"},
-    {href:"article211.html", title:"حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان"},
-
-    {href:"article177.html", title:"حين يشرّع الطاغوتُ لنفسه القتل: «ذَرُونِي أَقْتُلْ مُوسَى»"},
-    {href:"article178.html", title:"حين يتحول الطاغوت إلى «محامٍ عن الفضيلة»: ذَرُونِي أَقْتُلْ مُوسَى!"},
-    {href:"article179.html", title:"حين يتحول الطاغوت إلى «محامٍ عن الفضيلة» (مقال ثالث)"},
-    {href:"article187.html", title:"حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة"},
-    {href:"article197.html", title:"مواكب الشهادة ووجوه الطغيان: قراءة في فقه الأخدود وأزلية المعركة"},
-    {href:"articles/article236.html", title:"مسلمٌ يمشي بمحاذاة الحائط… حتى لا تصيبه الحقيقة!"},
-    {href:"articles/article246.html", title:"🎬😂 «حربٌ على الشاشة فقط!».. سالم الطويل يكتشف أن غزة استوديو تصوير هوليوودي! 📺🍿🤡"},
-    {href:"articles/article247.html", title:"😂📢 «لا تشكُ من الأوضاع… فقط أنكر المنكر وأغمض عينيك!» 🤣🙈"}
-  
-  ],
-  "النعمة": [
-    {href:"articles/article260.html", title:"اللهُ يَبْسُطُ وَيَقْدِرُ: حين تتجلّى حكمةُ الرزق بين البسط والقبض"},
-    {href:"article140.html", title:"حين يذوب الغرور أمام نهر النعم"},
-    {href:"article176.html", title:"حين تتحول النعمة إلى فتنة… قراءة تدبرية في حديثٍ نبوي عن آخر الزمان"},
-    {href:"article187.html", title:"حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة"},
-    {href:"article201.html", title:"حين يتحوّل النعيم إلى نذير: ﴿فَأَذَاقَهَا اللَّهُ لِبَاسَ الْجُوعِ وَالْخَوْفِ﴾"},
-    {href:"article206.html", title:"حِينَ يَسْقُطُ الْمَالُ وَالنَّسَبُ وَيَبْقَى مِيزَانُ الله"},
-    {href:"articles/article248.html", title:"💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس"}
-  
-  ],
-  "التأويل": [
-    {href:"articles/article261.html", title:"حديث «ذات أنواط» بين دلالة النص ومبالغة الاستدلال"},
-    {href:"articles/article255.html", title:"عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},
-    {href:"articles/article256.html", title:"عُذْرُ الجَهْلِ وَالتَّأْوِيلِ... لَكِنْ لَيْسَ لِلْمُخَالِفِينَ!"},
-    {href:"articles/article257.html", title:"عذرُ الجهل والتأويل... إلا إذا خالفناهم!"},
-    {href:"article217.html", title:"التأويل بين العذر والإنكار"}
-  ],
-  "تصنيف الديار": [
-    {href:"article220.html", title:"المعايير الفقهية لتصنيف الديار: دراسة تأصيلية"}
-  ],
-};
-document.querySelectorAll('.tag-chip').forEach(function(chip){
-  chip.addEventListener('click', function(){
-    var wasOn = chip.classList.contains('on');
-    document.querySelectorAll('.tag-chip').forEach(function(c){c.classList.remove('on');});
-    var box = document.getElementById('tagResults');
-    if(wasOn){ box.style.display='none'; box.innerHTML=''; return; }
-    chip.classList.add('on');
-    var tag = chip.getAttribute('data-tag');
-    var items = tagsData[tag] || [];
-    if(!items.length){
-      box.innerHTML = '<div style="color:var(--mist);font-size:.9rem;">لا توجد مقالات مُوسَّمة بهذا بعد (تجربة أولية على عيّنة محدودة)</div>';
-    } else {
-      box.innerHTML = items.map(function(it){
-        return '<a class="tag-result-card" href="'+it.href+'">'+it.title+'</a>';
-      }).join('');
-    }
-    box.style.display = 'block';
+document.querySelectorAll('[data-topic-category] .topic-category-head').forEach(function(head){
+  head.addEventListener('click', function(){
+    var category = head.closest('[data-topic-category]');
+    var open = category.classList.toggle('open');
+    head.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 });
+
+(function(){
+  function closeTopicResults(){
+    document.querySelectorAll('.topic-inline-results').forEach(function(box){
+      box.remove();
+    });
+    document.querySelectorAll('.topic-tags .tag-chip.on').forEach(function(c){
+      c.classList.remove('on');
+    });
+  }
+
+  document.querySelectorAll('.topic-tags .tag-chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      if(chip.getAttribute('aria-disabled') === 'true') return;
+
+      var wasOn = chip.classList.contains('on');
+
+      /* نفس سلوك الموقع الأصلي: وسم واحد فقط فعّال في كل مرة. */
+      closeTopicResults();
+
+      if(wasOn) return;
+
+      chip.classList.add('on');
+
+      var tag = chip.getAttribute('data-tag') || '';
+      var items = (window.tagsData && tagsData[tag]) ? tagsData[tag] : [];
+
+      var box = document.createElement('div');
+      box.className = 'topic-inline-results';
+      box.setAttribute('data-for-tag', tag);
+
+      var heading = document.createElement('div');
+      heading.className = 'topic-results-heading';
+
+      var title = document.createElement('span');
+      title.textContent = 'مقالات وموضوعات: ' + tag;
+
+      var count = document.createElement('span');
+      count.className = 'topic-results-count';
+      count.textContent = 'عدد المقالات: ' + items.length;
+
+      heading.appendChild(title);
+      heading.appendChild(count);
+      box.appendChild(heading);
+
+      if(!items.length){
+        var empty = document.createElement('div');
+        empty.style.cssText = 'color:var(--mist);font-size:.88rem;padding:5px 2px;';
+        empty.textContent = 'لا توجد مقالات مُدرجة تحت هذا الوسم حاليًا.';
+        box.appendChild(empty);
+      }else{
+        items.forEach(function(it){
+          var a = document.createElement('a');
+          a.className = 'tag-result-card';
+          a.href = it.href;
+          a.textContent = it.title;
+          box.appendChild(a);
+        });
+      }
+
+      /* النتيجة تأتي مباشرة بعد الوسم المضغوط، وقبل بقية الوسوم. */
+      chip.insertAdjacentElement('afterend', box);
+
+      /* إبقاء موضع النتيجة مرئيًا خصوصًا على الهاتف. */
+      box.scrollIntoView({behavior:'smooth', block:'nearest'});
+    });
+  });
+})();
 
 function filterAll(){
   var raw=document.getElementById('searchInput').value.trim();
