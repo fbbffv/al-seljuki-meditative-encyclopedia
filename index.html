@@ -436,7 +436,7 @@ body.sepia .topic-results-shell{background:#FFFDF8 !important;border-color:#B879
 .branch.open .branch-sub{display:block;}
 .branch-sub li{position:relative;padding:5px 18px 5px 0;color:#1c2733;font-size:clamp(.9rem,1vw,1.02rem);font-weight:700;}
 .branch-sub li::before{content:'—';position:absolute;right:0;color:var(--gate-c);opacity:.6;}
-.branch-links{display:none;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin-top:8px;align-items:start;}
+.branch-links{display:none;grid-template-columns:1fr;gap:6px;margin-top:8px;align-items:start;}
 .branch.open .branch-links{display:grid;}
 .branch.open{max-height:72vh;overflow-y:auto;overflow-x:hidden;}
 .b-link{background:rgba(255,255,255,.96);border:1.5px solid var(--line);border-radius:14px;padding:3px 9px;font-size:.7rem;color:var(--ink);text-decoration:none;transition:background .2s;font-family:'Amiri Display',serif;font-weight:700;box-shadow:0 1px 4px rgba(10,25,47,.1);}
@@ -515,8 +515,17 @@ body.sepia .topic-results-shell{background:#FFFDF8 !important;border-color:#B879
 .surah-group.open .surah-arrow{transform:rotate(-90deg);}
 .branch-empty{color:#8a6a12;font-size:.85rem;font-style:italic;padding:4px 26px;}
 
+/* ===== عنوان قسم المؤلفات والكتب ===== */
+.books-section-heading{max-width:1200px;margin:52px auto 18px;padding:0 22px;text-align:center;}
+.books-section-heading .bsh-kicker{display:flex;align-items:center;justify-content:center;gap:14px;font-family:'Amiri Display',serif;color:var(--gold);font-size:clamp(1.45rem,2.6vw,2.15rem);font-weight:700;line-height:1.5;}
+.books-section-heading .bsh-kicker::before,.books-section-heading .bsh-kicker::after{content:'✦';color:var(--gold-l);font-size:.72em;opacity:.9;}
+.books-section-heading .bsh-sub{margin-top:5px;color:#1c2733;font-size:.95rem;font-weight:700;}
+body.dark .books-section-heading .bsh-kicker{color:var(--gold-lt);}
+body.dark .books-section-heading .bsh-sub{color:#E8CD6E;}
+@media(max-width:520px){.books-section-heading{margin-top:38px;padding:0 14px;}.books-section-heading .bsh-sub{font-size:.82rem;}}
+
 /* ===== نموذج الاتصال ===== */
-.contact{max-width:680px;margin:60px auto 0;padding:0 22px;}
+.contact{max-width:1200px;margin:60px auto 0;padding:0 22px;}
 .contact-card{background:linear-gradient(135deg,var(--night),#20180e);border:1.5px solid var(--gold);border-radius:20px;padding:34px 28px;position:relative;overflow:hidden;}
 .contact-card::before{content:'';position:absolute;inset:0;background:none;pointer-events:none;}
 .contact-card h2{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.5rem;text-align:center;margin-bottom:6px;position:relative;}
@@ -6308,8 +6317,57 @@ body.sepia .global-nav-box.is-current{
 </div>
 <div class="latest-grid">
 <a class="lc" href="articles/article306.html" style="--lc-a:#0f766e;--lc-b:#042f2e;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">1. مقال 306 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>أولًا: حديث جيش عدن أبين… قراءة في نشوء القوة والتحولات الإقليمية</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article305.html" style="--lc-a:#b45309;--lc-b:#451a03;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">2. مقال 305 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>🏔️✨ ذو القرنين بين مشارف الأرض ومغاربها… سدٌّ من الحديد، ورحمةٌ من الرب، ووعدٌ لا يتخلّف</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article304.html" style="--lc-a:#7e22ce;--lc-b:#3b0764;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">3. مقال 304 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>⚔️ صُلْحٌ على حافَةِ المَلاحِم</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article303.html" style="--lc-a:#1d4ed8;--lc-b:#172554;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">4. مقال 303 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>😂⚰️ ملحدٌ يخافُ من الله!… حين ينهارُ الإلحادُ عند بابِ الموت 🚪💀</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article302.html" style="--lc-a:#c2410c;--lc-b:#431407;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">5. مقال 302 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>🩸⚖️ «آلْآنَ وَقَدْ عَصَيْتَ قَبْلُ»… حين يسقط الطاغية، ويبقى سجلُّ المظلومين</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article301.html" style="--lc-a:#be185d;--lc-b:#500724;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">6. مقال 301 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>🌊⚔️ رجالُ عدنَ أبين… القوةُ الغامضة بين بشارةِ النصر وتحولاتِ آخر الزمان</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article300.html" style="--lc-a:#0f766e;--lc-b:#042f2e;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">7. مقال 300 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>👑🔥 مملكةُ التصفيق… حين يصبح المنافق حارساً للعرش ويصبح الصادق متهماً بالإرجاف</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article299.html" style="--lc-a:#b45309;--lc-b:#451a03;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">8. مقال 299 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>✍️ الشيطان وعداوته للإنسان على الصراط المستقيم</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article298.html" style="--lc-a:#7e22ce;--lc-b:#3b0764;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">9. مقال 298 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>باب المندب… لقمةٌ قد تتحول إلى تخمة</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article297.html" style="--lc-a:#1d4ed8;--lc-b:#172554;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">10. مقال 297 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>حين يشتد البلاء: لأن الله يعدّك لأمر أكبر</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article296.html" style="--lc-a:#c2410c;--lc-b:#431407;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">11. مقال 296 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>مفارقة العصر: حين يكثر القلم ويقلّ العلم</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article295.html" style="--lc-a:#be185d;--lc-b:#500724;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">12. مقال 295 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>فما أصبرهم على النار؟</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article294.html" style="--lc-a:#0f766e;--lc-b:#042f2e;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">13. مقال 294 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>أهل الفترة بين قيام الحجة والامتحان يوم القيامة</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article293.html" style="--lc-a:#b45309;--lc-b:#451a03;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">14. مقال 293 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>آية ١٦-١٧ على صراطك المستقيم… حيث يترصدنا الغواية</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article292.html" style="--lc-a:#7e22ce;--lc-b:#3b0764;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">15. مقال 292 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>آية ١٦-١٧ ✦ على صراطك المستقيم... حيث يترصدنا الغواية ✦</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article291.html" style="--lc-a:#1d4ed8;--lc-b:#172554;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">16. مقال 291 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>آية ٣٥ 🌳🍃 ظِلَالُ الخُلُودِ… حِينَ تَذْبُلُ جِنَانُ الدُّنْيَا وَتَبْقَى جِنَانُ الآخِرَةِ 🍃🌳</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article290.html" style="--lc-a:#c2410c;--lc-b:#431407;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">17. مقال 290 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>آية ١٨٥ 🌿✨ متاعُ الحياةِ الدنيا… بين زينةٍ تُغري، وحقيقةٍ تُبصّر، وآخرةٍ تبقى</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article289.html" style="--lc-a:#be185d;--lc-b:#500724;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">18. مقال 289 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>آية ٢٣ 🌿 لَا يُسْأَلُ عَمَّا يَفْعَلُ وَهُمْ يُسْأَلُونَ</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article288.html" style="--lc-a:#0f766e;--lc-b:#042f2e;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">19. مقال 288 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>آية ٧٢ ⚡ العذاب الذي يركض خلف الغافلين</h3><div class="lc-cta">اقرأ المقال ←</div></div></a><a class="lc" href="articles/article287.html" style="--lc-a:#b45309;--lc-b:#451a03;"><div class="lc-rib">جديد ✦</div><div class="lc-top"><div class="lc-cat">20. مقال 287 · موسوعة السلجوقي التدبرية</div><div class="lc-verse">أحدث ما أضيف إلى الموسوعة</div></div><div class="lc-body"><h3>😂 جهادُ «محاسن ولاة الأمر»… حتى لا يبقى للحاكم عيبٌ واحد!</h3><div class="lc-cta">اقرأ المقال ←</div></div></a></div>
+
 <!-- البوابات -->
+</div>
 </div><!-- /latestSec -->
+<!-- المؤلفات: منفصلة عن قسم أحدث ما أضيف -->
+<div class="books-section-heading" aria-labelledby="booksSectionTitle">
+  <h2 class="bsh-kicker" id="booksSectionTitle">قسم المؤلفات والكتب</h2>
+  <div class="bsh-sub">نتاجٌ علميٌّ ما بين التأصيل والتدبر</div>
+</div>
+<section class="books" id="booksSec">
+<div class="books-inner">
+<div class="book-card">
+<div class="book-cover"><div class="book-cover-3d"><img alt="غلاف كتاب نوادر التفاسير" src="book1-cover.png"/></div></div>
+<div class="book-info">
+<h3>نَوَادِرُ التَّفَاسِيرِ</h3>
+<div class="book-sub">فِي شَرْحِ وَتَدَبُّرِ بَعْضِ الآيَاتِ وَالسُّوَرِ</div>
+<p class="book-desc">كتابٌ يجمع لطائف وفوائد نادرة في تفسير آياتٍ مختارة من كتاب الله عزّ وجلّ، بأسلوب الشيخ التدبري المعروف الذي يجمع بين عمق العلم وجمال البيان.</p>
+<a class="book-btn" href="https://t.me/modawanie/13" rel="noopener" target="_blank">قراءة الكتاب على تليجرام</a>
+</div>
+</div>
+<div class="book-card">
+<div class="book-cover"><div class="book-cover-3d"><img alt="غلاف موسوعة درر الحياة في ظلال القرآن" src="موسوعة درر الحياة في ظلال القرآن/book2-cover.png"/></div></div>
+<div class="book-info">
+<h3>مَوْسُوعَةُ دُرَرِ الْحَيَاةِ فِي ظِلَالِ الْقُرْآنِ</h3>
+<div class="book-sub">مَوْسُوعَةٌ تَفْسِيرِيَّةٌ شَامِلَةٌ عَلَى أَجْزَاءٍ</div>
+<p class="book-desc">موسوعة تفسيرية موسّعة تجمع دُرَراً مستخلَصة من ظلال القرآن الكريم، مرتَّبة على أجزاء بحسب السور، بأسلوب الشيخ التدبري المعروف.</p>
+<a class="book-btn" href="موسوعة درر الحياة في ظلال القرآن/">تصفّح أجزاء الموسوعة</a>
+</div>
+</div>
+<article class="book-card">
+<div class="book-cover">
+<div class="book-cover-3d">
+<img alt="التوحيد في ضوء الكتاب والسنة" src="book3/book3-cover.png"/>
+</div>
+</div>
+<div class="book-info">
+<h3>التوحيد</h3>
+<div class="book-sub">في ضوء الكتاب والسنة</div>
+<div class="book-desc">
+          تأليف: هديل عمر<br/>
+          بإشراف الأستاذ: علي خليل السلجوقي التركماني
+        </div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;align-items:center;width:100%;margin:18px auto 0;">
+<a class="book-btn" href="book3/book3.pdf" rel="noopener" target="_blank">📖 قراءة الكتاب</a>
+<a class="book-btn" download="التوحيد في ضوء الكتاب والسنة.pdf" href="book3/book3.pdf">⬇️ تحميل الكتاب</a>
+</div>
+</div>
+</article>
+<div class="books-more">✦ المزيد من مؤلفات الشيخ لا يزال قيد الرفع على المنصة بإذن الله ✦</div>
+</div>
+</section>
 <section class="gates" id="gatesSec">
 <div class="gates-title"><h2>الْبَوَّابَاتُ الْمَعْرِفِيَّةُ</h2></div>
 <p class="gates-sub">أربعُ بوّاباتٍ كبرى، تنبثقُ من كلٍّ منها فروعُها. اضغط البوّابةَ لتُفتَح.</p>
