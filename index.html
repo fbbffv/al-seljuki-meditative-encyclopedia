@@ -5495,6 +5495,25 @@ body.sepia .global-nav-box.is-current{
 </style>
 </head>
 <body data-manifest-version="309">
+<a class="a11y-skip-link" href="#main-content">تجاوز إلى المحتوى الرئيسي</a>
+<main id="main-content">
+<button class="new-badge" id="newBadge" onclick="checkForUpdates()">
+<span class="nb-dot"></span>
+<span>🔔 توجد مقالات جديدة — اضغط للتحقق والتحديث</span>
+</button>
+<div id="prog"></div>
+<header class="hdr">
+<div class="hdr-i">
+<div class="brand">مَوْسُوعَةُ <b>السَّلْجُوقِي</b></div>
+<div class="modes">
+<button aria-label="تثبيت التطبيق" class="mode-btn install-hdr-btn" id="installHdrBtn" onclick="doInstall()" title="ثبّت الموسوعة على جهازك">📲</button>
+<button aria-label="تحميل الموسوعة كاملة" class="mode-btn" id="downloadAllBtn" onclick="downloadAllArticles()" title="تحميل كل المقالات للقراءة بلا إنترنت">⬇</button>
+<button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
+<button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="دافئ">◐</button>
+<button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
+</div>
+</div>
+</header>
 <!-- ═══ الشعار الموسوعي العلوي الجديد — مستقل فوق الهيدر الأصلي ═══ -->
 <section class="encyclopedia-logo-panel" aria-label="شعار موسوعة السلجوقي التدبرية">
   <div class="encyclopedia-logo-inner">
@@ -5526,26 +5545,6 @@ body.sepia .global-nav-box.is-current{
     </nav>
   </div>
 </section>
-
-<a class="a11y-skip-link" href="#main-content">تجاوز إلى المحتوى الرئيسي</a>
-<main id="main-content">
-<button class="new-badge" id="newBadge" onclick="checkForUpdates()">
-<span class="nb-dot"></span>
-<span>🔔 توجد مقالات جديدة — اضغط للتحقق والتحديث</span>
-</button>
-<div id="prog"></div>
-<header class="hdr">
-<div class="hdr-i">
-<div class="brand">مَوْسُوعَةُ <b>السَّلْجُوقِي</b></div>
-<div class="modes">
-<button aria-label="تثبيت التطبيق" class="mode-btn install-hdr-btn" id="installHdrBtn" onclick="doInstall()" title="ثبّت الموسوعة على جهازك">📲</button>
-<button aria-label="تحميل الموسوعة كاملة" class="mode-btn" id="downloadAllBtn" onclick="downloadAllArticles()" title="تحميل كل المقالات للقراءة بلا إنترنت">⬇</button>
-<button class="mode-btn on" id="mLight" onclick="setMode('light')" title="مضيء">☀</button>
-<button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="دافئ">◐</button>
-<button class="mode-btn" id="mDark" onclick="setMode('dark')" title="مظلم">☾</button>
-</div>
-</div>
-</header>
 <!-- الشعار العلوي المستقل -->
 <div class="top-emblem-wrap">
 <div class="top-emblem-box">
