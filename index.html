@@ -7224,6 +7224,7 @@ function closeWelcomeVideo(){
 
 /* زر: تحديث الموسوعة — يتحقق من وجود نسخة أحدث، ويطبّقها تلقائياً إن وُجدت */
 function checkForUpdates(){
+  if(typeof window.acknowledgeLatestVersion === 'function') window.acknowledgeLatestVersion();
   var btn = document.getElementById('checkUpdateBtn');
   var lbl = document.getElementById('checkUpdateLabel');
   var icon = btn.querySelector('.ql-icon');
@@ -7365,7 +7366,7 @@ function checkForUpdates(){
 (function(){
   var MANIFEST_URL = 'articles-manifest.json';
   var SEEN_KEY = 'suljuki_downloaded_articles_v1';
-  var CACHE_NAME = 'suljuki-v15';
+  var CACHE_NAME = 'suljuki-v16';
   var dlCard = document.getElementById('dlCard');
   var dlTitle = document.getElementById('dlTitle');
   var dlSub = document.getElementById('dlSub');
@@ -7469,7 +7470,22 @@ function checkForUpdates(){
       // إذا كانت أحدث، تظهر شارة تُنبّه الزائر بوجود مقالات جديدة لم تظهر بعد في هذه الصفحة المخزَّنة مؤقتاً
       var pageVersion = parseInt(document.body.getAttribute('data-manifest-version') || '0', 10);
       var liveVersion = parseInt(data.version || 0, 10);
-      if(liveVersion > pageVersion){
+      var LAST_ACK_VERSION_KEY = 'suljuki_last_ack_version_v1';
+      var savedAckVersion = null;
+      try{
+        var rawAckVersion = localStorage.getItem(LAST_ACK_VERSION_KEY);
+        if(rawAckVersion !== null) savedAckVersion = parseInt(rawAckVersion || '0', 10) || 0;
+      }catch(e){}
+      window.__liveManifestVersion = liveVersion;
+      window.acknowledgeLatestVersion = function(){
+        var acknowledgedVersion = parseInt(window.__liveManifestVersion || pageVersion || 0, 10) || 0;
+        try{ localStorage.setItem(LAST_ACK_VERSION_KEY, String(acknowledgedVersion)); }catch(e){}
+        var badge = document.getElementById('newBadge');
+        if(badge) badge.classList.remove('show');
+      };
+      // يعتمد الجرس على آخر إصدار أقرّ المستخدم برؤيته، لا على نسخة الصفحة المخزنة فقط.
+      // عند ترقية الأجهزة القديمة إلى هذا المنطق لأول مرة، يظهر الجرس مرة واحدة حتى يقرّ المستخدم بالتحديث.
+      if(savedAckVersion === null || liveVersion > savedAckVersion){
         var badge = document.getElementById('newBadge');
         if(badge) badge.classList.add('show');
       }
