@@ -5,7 +5,7 @@
   - كل مقال يزوره المستخدم مرة واحدة (بإنترنت) يُصبح متاحاً دائماً بعدها بلا إنترنت.
 */
 
-const CACHE_VERSION = 'suljuki-v14';
+const CACHE_VERSION = 'suljuki-v15';
 const CORE_ASSETS = [
   './',
   './index.html',
