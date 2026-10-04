@@ -54,6 +54,19 @@ jobs:
             done
           fi
 
+          # الأسئلة والأجوبة داخل مجلد qa/
+          if [ -d "qa" ]; then
+            for file in $(find qa -maxdepth 1 -type f -name "*.html" | sort); do
+              loc="$BASE_URL/$file"
+              priority="0.8"
+              lastmod=$(git log -1 --format=%cs -- "$file")
+              if [ -z "$lastmod" ]; then
+                lastmod=$(date +%Y-%m-%d)
+              fi
+              echo "  <url><loc>${loc}</loc><priority>${priority}</priority><lastmod>${lastmod}</lastmod></url>" >> "$OUT"
+            done
+          fi
+
           if [ -d "en" ]; then
             for file in $(find en -maxdepth 1 -name "*.html" | sed 's|^\./||' | sort); do
               if [ "$file" = "en/index.html" ]; then
