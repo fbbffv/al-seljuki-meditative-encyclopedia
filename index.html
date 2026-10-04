@@ -276,7 +276,8 @@ body{
   border-radius:14px;
   padding:8px 13px;
   font-family:'Cairo',sans-serif;
-  font-size:.78rem;
+  font-size:.84rem;
+  line-height:1.75;
   font-weight:700;
   line-height:1.35;
   cursor:pointer;
@@ -285,13 +286,13 @@ body{
 }
 .tag-chip:hover{
   transform:translateY(-2px);
-  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  background:linear-gradient(135deg,#D4AF37,#E8CD6E);
   color:var(--night);
   border-color:var(--gold);
   box-shadow:0 7px 18px rgba(212,175,55,.26);
 }
 .tag-chip.on{
-  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  background:linear-gradient(135deg,#D4AF37,#E8CD6E);
   color:var(--night);
   border-color:var(--gold);
   box-shadow:0 7px 18px rgba(212,175,55,.30);
@@ -1306,6 +1307,774 @@ body.dark .install-card,body.sepia .install-card{background:linear-gradient(135d
     font-size:.82rem !important;
   }
 }
+
+
+
+/* ═══ سؤال وجواب — تصميم أصلي من هوية الموسوعة ═══ */
+.qah{
+  max-width:1200px;
+  margin:56px auto 0;
+  padding:0 22px;
+  scroll-margin-top:132px;
+}
+.qah *{box-sizing:border-box}
+.qah-head{
+  text-align:center;
+  max-width:920px;
+  margin:0 auto 24px;
+}
+.qah-ornament{
+  font-family:'Amiri Display',serif;
+  color:var(--gold);
+  letter-spacing:.22em;
+  font-size:1rem;
+  margin-bottom:4px;
+}
+.qah-head h2{
+  font-family:'Amiri Display',serif;
+  font-size:clamp(2rem,4vw,3.3rem);
+  line-height:1.3;
+  color:var(--ink);
+  margin:0;
+}
+.qah-head h2 span{color:#6b1f35}
+.qah-head p{
+  color:#1c2733;
+  font-size:.95rem;
+  font-weight:700;
+  margin:8px auto 0;
+  max-width:760px;
+}
+.qah-stats{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin:24px auto;
+}
+.qah-stat{
+  background:linear-gradient(145deg,#fff,#f4ecdb);
+  border:1.5px solid var(--gold-l);
+  border-radius:16px;
+  padding:16px 12px;
+  text-align:center;
+  box-shadow:0 5px 18px rgba(10,25,47,.10);
+}
+.qah-stat strong{
+  display:block;
+  font-family:'Cairo',sans-serif;
+  font-size:1.45rem;
+  color:var(--night);
+  font-weight:900;
+}
+.qah-stat span{
+  display:block;
+  margin-top:2px;
+  color:#28343d;
+  font-size:.78rem;
+  font-weight:800;
+}
+.qah-search{
+  background:linear-gradient(135deg,var(--night),#20180e);
+  border:1.5px solid var(--gold);
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 8px 26px rgba(10,25,47,.16);
+  margin:0 auto 30px;
+}
+.qah-search label{
+  display:block;
+  color:var(--gold-lt);
+  font-weight:900;
+  margin-bottom:9px;
+}
+.qah-search-row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:10px;
+}
+.qah-search input{
+  min-width:0;
+  min-height:50px;
+  border:1.5px solid var(--gold);
+  border-radius:13px;
+  background:#fff;
+  color:var(--ink);
+  padding:11px 14px;
+  font-family:'Cairo',sans-serif;
+  font-weight:700;
+  outline:none;
+}
+.qah-search input:focus{
+  box-shadow:0 0 0 3px #5C4408,0 0 0 6px #FFF4B0;
+}
+.qah-search input::placeholder{
+  color:#4B5563;
+  opacity:1;
+}
+.qah-search-row button,
+.qah-tools button{
+  border:1.5px solid var(--gold);
+  border-radius:12px;
+  font-family:'Cairo',sans-serif;
+  font-weight:900;
+  cursor:pointer;
+}
+.qah-search-row button{
+  padding:10px 22px;
+  background:linear-gradient(135deg,#D4AF37,#E8CD6E);
+  color:var(--night);
+}
+.qah-tools{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:10px;
+}
+.qah-tools button{
+  min-height:44px;
+  padding:8px 14px;
+  background:rgba(255,255,255,.06);
+  color:var(--gold-lt);
+}
+.qah-tools button:hover{background:rgba(212,175,55,.16)}
+.qah-search-row button:focus-visible,
+.qah-tools button:focus-visible{
+  outline:3px solid #FFF4B0;
+  outline-offset:3px;
+}
+.qah-gate-head:focus-visible,
+.qah-branch-head:focus-visible,
+.qah-item-head:focus-visible{
+  outline:3px solid #5C4408;
+  outline-offset:-3px;
+}
+body.dark .qah-gate-head:focus-visible,
+body.dark .qah-branch-head:focus-visible,
+body.dark .qah-item-head:focus-visible{
+  outline-color:#FFF4B0;
+}
+.qah-gate-filter-wrap{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px solid rgba(92,68,8,.18);
+}
+.qah-gate-filter-label{
+  display:block;
+  margin-bottom:9px;
+  color:#FFF4B0;
+  font-size:.82rem;
+  font-weight:900;
+}
+.qah-gate-filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.qah-gate-filter{
+  min-height:44px;
+  padding:7px 12px;
+  border:1.5px solid var(--gold);
+  border-radius:999px;
+  background:#fff;
+  color:var(--ink);
+  font-family:'Cairo',sans-serif;
+  font-size:.76rem;
+  font-weight:900;
+  cursor:pointer;
+}
+.qah-gate-filter:hover,
+.qah-gate-filter:focus-visible{
+  background:#F5ECD7;
+  outline:3px solid #5C4408;
+  outline-offset:2px;
+}
+.qah-gate-filter.active,
+.qah-gate-filter[aria-pressed="true"]{
+  background:var(--night);
+  color:#FFF4B0;
+  border-color:var(--night);
+}
+.qah-block{
+  margin-top:30px;
+  --qah-card-bg:#FFFFFF;
+  --qah-card-border:var(--gold-l);
+  --qah-card-accent:#6B1F35;
+  --qah-tag-bg:#FFFAF0;
+  --qah-tag-ink:#5C4408;
+  --qah-section-heading:var(--ink);
+  --qah-empty-bg:#FFFFFF;
+  --qah-dark-card-bg:#0D1B2A;
+  --qah-dark-card-border:#D4AF37;
+  --qah-dark-accent:#FFD86A;
+  --qah-dark-tag-bg:#10283C;
+  --qah-dark-tag-ink:#FFF4B0;
+  --qah-dark-heading:#E8CD6E;
+  --qah-dark-empty-bg:#0D1B2A;
+}
+.qah-featured-block{
+  --qah-card-bg:#EAF6F3;
+  --qah-card-border:#0B4E49;
+  --qah-card-accent:#0B4E49;
+  --qah-tag-bg:#D7ECE8;
+  --qah-tag-ink:#073F3B;
+  --qah-section-heading:#0B4E49;
+  --qah-empty-bg:#EAF6F3;
+  --qah-dark-card-bg:#0B2022;
+  --qah-dark-card-border:#BEEFE8;
+  --qah-dark-accent:#BEEFE8;
+  --qah-dark-tag-bg:#123335;
+  --qah-dark-tag-ink:#D8FFF9;
+  --qah-dark-heading:#BEEFE8;
+  --qah-dark-empty-bg:#0B2022;
+}
+.qah-latest-block{
+  --qah-card-bg:#F1E7D2;
+  --qah-card-border:#8A6A12;
+  --qah-card-accent:#6B1F35;
+  --qah-tag-bg:#E8DDBF;
+  --qah-tag-ink:#4E3806;
+  --qah-section-heading:#6B1F35;
+  --qah-empty-bg:#F1E7D2;
+  --qah-dark-card-bg:#17130C;
+  --qah-dark-card-border:#E8CD6E;
+  --qah-dark-accent:#FFD86A;
+  --qah-dark-tag-bg:#2A2314;
+  --qah-dark-tag-ink:#FFF4B0;
+  --qah-dark-heading:#FFD86A;
+  --qah-dark-empty-bg:#17130C;
+}
+.qah-mostread-block{
+  --qah-card-bg:#F7E9ED;
+  --qah-card-border:#6B1F35;
+  --qah-card-accent:#6B1F35;
+  --qah-tag-bg:#EDD6DD;
+  --qah-tag-ink:#5A1730;
+  --qah-section-heading:#6B1F35;
+  --qah-empty-bg:#F7E9ED;
+  --qah-dark-card-bg:#241017;
+  --qah-dark-card-border:#FFD1DD;
+  --qah-dark-accent:#FFD1DD;
+  --qah-dark-tag-bg:#3A1823;
+  --qah-dark-tag-ink:#FFE5EC;
+  --qah-dark-heading:#FFD1DD;
+  --qah-dark-empty-bg:#241017;
+}
+.qah-title-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+.qah-title-row h3{
+  font-family:'Amiri Display',serif;
+  font-size:clamp(1.45rem,2.5vw,2rem);
+  color:var(--qah-section-heading,var(--ink));
+  margin:0;
+}
+.qah-title-row::after{
+  content:'';
+  height:1px;
+  flex:1;
+  background:linear-gradient(90deg,var(--gold),transparent);
+}
+.qah-title-mark{color:var(--qah-card-accent,var(--gold));font-size:.8rem}
+.qah-help{
+  color:#1c2733;
+  font-size:.88rem;
+  font-weight:700;
+  margin:-4px 0 16px;
+}
+.qah-latest{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:14px;
+}
+.qah-card{
+  border:1.5px solid var(--qah-card-border,var(--gold-l));
+  border-radius:17px;
+  background:var(--qah-card-bg,#FFFFFF);
+  padding:18px;
+  box-shadow:0 6px 20px rgba(10,25,47,.10);
+}
+.qah-card-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-bottom:8px;
+  color:var(--qah-card-accent,#6B1F35);
+  font-size:.78rem;
+  font-weight:900;
+}
+.qah-card h4{
+  font-family:'Amiri Display',serif;
+  font-size:1.28rem;
+  line-height:1.55;
+  color:var(--ink);
+  margin:0 0 7px;
+}
+.qah-card-meta{
+  color:#39444c;
+  font-size:.80rem;
+  font-weight:700;
+  line-height:1.75;
+  margin-bottom:8px;
+}
+.qah-card p{
+  color:#1c2733;
+  font-size:.92rem;
+  line-height:1.9;
+  font-weight:700;
+  margin:0 0 12px;
+}
+.qah-card-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin:0 0 12px;
+}
+.qah-card-tag{
+  display:inline-flex;
+  align-items:center;
+  min-height:28px;
+  padding:4px 9px;
+  border:1px solid var(--qah-card-border,var(--gold));
+  border-radius:999px;
+  background:var(--qah-tag-bg,#FFFAF0);
+  color:var(--qah-tag-ink,#5C4408);
+  font-size:.75rem;
+  font-weight:900;
+}
+.qah-card a{
+  display:inline-flex;
+  text-decoration:none;
+  color:var(--qah-card-accent,#6B1F35);
+  font-weight:900;
+  border-bottom:1px solid var(--qah-card-accent,#6B1F35);
+}
+.qah-empty{
+  border:1.5px dashed var(--qah-card-border,var(--gold));
+  border-radius:16px;
+  background:var(--qah-empty-bg,#FFFFFF);
+  padding:20px;
+  text-align:center;
+  color:#39444c;
+  font-weight:800;
+}
+.qah-pagination{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:18px;
+}
+.qah-pagination:empty{display:none}
+.qah-page-btn{
+  min-width:44px;
+  min-height:44px;
+  padding:7px 11px;
+  border:1.5px solid var(--gold);
+  border-radius:10px;
+  background:#fff;
+  color:var(--ink);
+  font-family:'Cairo',sans-serif;
+  font-weight:900;
+  cursor:pointer;
+}
+.qah-page-btn:hover,
+.qah-page-btn:focus-visible{
+  background:#F5ECD7;
+  outline:3px solid #5C4408;
+  outline-offset:2px;
+}
+.qah-page-btn[aria-current="page"]{
+  background:var(--night);
+  color:#FFF4B0;
+  border-color:var(--night);
+}
+.qah-page-btn:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+.qah-page-ellipsis{
+  min-width:28px;
+  text-align:center;
+  color:#39444c;
+  font-weight:900;
+}
+.qah-page-summary{
+  width:100%;
+  text-align:center;
+  margin-top:4px;
+  color:#39444c;
+  font-size:.82rem;
+  font-weight:800;
+}
+.qah-gate{
+  margin:16px 0;
+  border:1.5px solid var(--gold-l);
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 6px 22px rgba(10,25,47,.10);
+}
+.qah-gate-head{
+  width:100%;
+  border:0;
+  background:linear-gradient(135deg,var(--qah-gate-a,var(--night)),var(--qah-gate-b,#20180e));
+  color:#fff;
+  padding:18px 20px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:14px;
+  align-items:center;
+  text-align:right;
+  cursor:pointer;
+}
+.qah-gate-symbol{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border:1.5px solid var(--qah-symbol-border,var(--gold-l));
+  border-radius:14px;
+  color:var(--qah-symbol-ink,#fff);
+  background:linear-gradient(145deg,var(--qah-symbol-a,var(--gold)),var(--qah-symbol-b,var(--gold-l)));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.10),0 5px 14px rgba(0,0,0,.22);
+  font-size:1.35rem;
+}
+.qah-gate-text h4{
+  font-family:'Amiri Display',serif;
+  font-size:clamp(1.15rem,2vw,1.55rem);
+  color:var(--qah-title-ink,#FFF4B0);
+  margin:0;
+  line-height:1.4;
+}
+.qah-gate-text small{
+  display:block;
+  color:var(--qah-sub-ink,var(--gold-lt));
+  font-size:.75rem;
+  letter-spacing:.06em;
+  margin-bottom:2px;
+}
+.qah-gate-text p{
+  margin:3px 0 0;
+  color:#FFFFFF;
+  font-size:.84rem;
+  line-height:1.75;
+  font-weight:700;
+}
+.qah-arrow{
+  color:var(--qah-arrow-ink,var(--gold-lt));
+  font-size:1.35rem;
+  transition:transform .25s;
+}
+.qah-gate.open>.qah-gate-head .qah-arrow{transform:rotate(90deg)}
+.qah-gate-body{
+  display:none;
+  padding:14px;
+  background:#fbf8f1;
+}
+.qah-gate.open>.qah-gate-body{display:block}
+.qah-branch{
+  border:1px solid rgba(138,106,18,.45);
+  border-radius:14px;
+  overflow:hidden;
+  margin:10px 0;
+  background:#fff;
+}
+.qah-branch-head{
+  width:100%;
+  border:0;
+  background:linear-gradient(135deg,#f2ead7,#e9dec3);
+  color:var(--night);
+  padding:13px 15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  text-align:right;
+  font-family:'Amiri Display',serif;
+  font-size:1.03rem;
+  font-weight:700;
+  cursor:pointer;
+}
+.qah-branch.open>.qah-branch-head{
+  background:linear-gradient(135deg,#e9dec3,#ddcda7);
+}
+.qah-branch-body{display:none;padding:13px}
+.qah-branch.open>.qah-branch-body{display:block}
+.qah-group{margin:10px 0 16px}
+.qah-group-title{
+  font-family:'Amiri Display',serif;
+  font-size:1.13rem;
+  color:#6b1f35;
+  margin:0 0 8px;
+  padding-right:9px;
+  border-right:4px solid var(--gold);
+}
+.qah-items{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:8px;
+}
+.qah-item{
+  border:1px solid rgba(138,106,18,.34);
+  border-radius:12px;
+  overflow:hidden;
+  background:#fff;
+}
+.qah-item-head{
+  width:100%;
+  min-height:44px;
+  border:0;
+  background:#fff;
+  color:var(--ink);
+  padding:11px 12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  text-align:right;
+  font-family:'Cairo',sans-serif;
+  font-weight:900;
+  cursor:pointer;
+}
+.qah-count{
+  min-width:30px;
+  text-align:center;
+  border-radius:999px;
+  padding:2px 8px;
+  background:var(--night);
+  color:var(--gold-lt);
+  font-size:.74rem;
+}
+.qah-item.open>.qah-item-head{background:#f7f1e5}
+.qah-children{
+  display:none;
+  border-top:1px solid rgba(138,106,18,.26);
+  background:#fcfaf5;
+  padding:7px 10px;
+}
+.qah-item.open>.qah-children{display:block}
+.qah-child-wrap{
+  border-bottom:1px dashed rgba(138,106,18,.32);
+}
+.qah-child-wrap:last-child{border-bottom:0}
+.qah-child{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  padding:7px 3px;
+  border:0;
+  background:transparent;
+  color:#26323a;
+  font-family:'Cairo',sans-serif;
+  min-height:44px;
+  font-size:.86rem;
+  font-weight:800;
+  text-align:right;
+  cursor:pointer;
+}
+.qah-child:hover,
+.qah-child:focus-visible{
+  background:#F5ECD7;
+  outline:3px solid #5C4408;
+  outline-offset:1px;
+}
+.qah-child-count{
+  border:1px solid var(--gold);
+  border-radius:999px;
+  padding:1px 7px;
+  color:#6b4600;
+  font-size:.74rem;
+  font-weight:900;
+  white-space:nowrap;
+}
+.qah-child-questions{
+  display:none;
+  padding:2px 8px 9px;
+}
+.qah-child-wrap.open>.qah-child-questions{display:grid;gap:6px}
+.qah-child-question{
+  display:block;
+  padding:8px 10px;
+  border-right:3px solid var(--gold);
+  border-radius:8px;
+  background:#fff;
+  color:#1c2733;
+  text-decoration:none;
+  font-size:.84rem;
+  font-weight:800;
+  line-height:1.85;
+}
+.qah-child-question:hover,
+.qah-child-question:focus-visible{
+  background:#F5ECD7;
+  color:#6B1F35;
+  outline:3px solid #5C4408;
+  outline-offset:1px;
+}
+.qah-child-question small{
+  display:block;
+  margin-bottom:2px;
+  color:#6b4600;
+  font-size:.74rem;
+  font-weight:900;
+}
+
+/* وضع القراءة الداكن: قواعد خاصة بالمكوّن نفسه فقط */
+body.dark .qah-head h2{color:#E8CD6E}
+body.dark .qah-title-row h3{color:var(--qah-dark-heading,#E8CD6E)}
+body.dark .qah-head h2 span{color:#D4AF37}
+body.dark .qah-head p,
+body.dark .qah-help{color:#E8CD6E}
+body.dark .qah-stat,
+body.dark .qah-branch,
+body.dark .qah-item{
+  background:#0D1B2A;
+  border-color:#D4AF37;
+  box-shadow:none;
+}
+body.dark .qah-card{
+  background:var(--qah-dark-card-bg,#0D1B2A);
+  border-color:var(--qah-dark-card-border,#D4AF37);
+  box-shadow:none;
+}
+body.dark .qah-gate{
+  background:#0D1B2A;
+  border-color:var(--qah-gate-border,#D4AF37);
+  box-shadow:none;
+}
+body.dark .qah-stat strong,
+body.dark .qah-stat span,
+body.dark .qah-card h4,
+body.dark .qah-card p,
+body.dark .qah-card-meta,
+body.dark .qah-item-head{color:#E8CD6E}
+body.dark .qah-card-tag{
+  background:var(--qah-dark-tag-bg,#10283C);
+  color:var(--qah-dark-tag-ink,#FFF4B0);
+  border-color:var(--qah-dark-card-border,#D4AF37);
+}
+body.dark .qah-card-kicker,
+body.dark .qah-card a,
+body.dark .qah-title-mark{
+  color:var(--qah-dark-accent,#FFD86A);
+}
+body.dark .qah-ornament{color:#FFD86A}
+body.dark .qah-card a{border-bottom-color:var(--qah-dark-accent,#FFD86A)}
+body.dark .qah-search input::placeholder{color:#E8CD6E}
+body.dark .qah-gate-body,
+body.dark .qah-branch-body,
+body.dark .qah-children{background:#08111f}
+body.dark .qah-child{color:#E8CD6E}
+body.dark .qah-child-question{
+  background:#0D1B2A;
+  color:#FFFFFF;
+  border-right-color:#D4AF37;
+}
+body.dark .qah-child-question small{color:#E8CD6E}
+body.dark .qah-child-question:hover,
+body.dark .qah-child-question:focus-visible{
+  background:#12304c;
+  color:#FFF4B0;
+}
+body.dark .qah-branch-head{
+  background:linear-gradient(135deg,#0A2B52,#0D1B2A);
+  color:#FFF4B0;
+}
+body.dark .qah-branch.open>.qah-branch-head{background:#123b63}
+body.dark .qah-group-title{color:#FFD86A;border-right-color:#D4AF37}
+body.dark .qah-item-head{background:#0D1B2A}
+body.dark .qah-item.open>.qah-item-head{background:#12304c}
+body.dark .qah-child{color:#FFF;border-bottom-color:rgba(212,175,55,.28)}
+body.dark .qah-child-count{color:#FFF4B0;border-color:#D4AF37}
+body.dark .qah-empty{
+  background:var(--qah-dark-empty-bg,#0D1B2A);
+  color:var(--qah-dark-heading,#E8CD6E);
+  border-color:var(--qah-dark-card-border,#D4AF37);
+}
+body.dark .qah-page-btn{
+  background:#0D1B2A;
+  color:#FFF4B0;
+  border-color:#D4AF37;
+}
+body.dark .qah-page-btn:hover,
+body.dark .qah-page-btn:focus-visible{background:#12304c}
+body.dark .qah-page-btn[aria-current="page"]{
+  background:#D4AF37;
+  color:#081527;
+  border-color:#D4AF37;
+}
+body.dark .qah-page-ellipsis,
+body.dark .qah-page-summary{color:#E8CD6E}
+body.dark .qah-search input{background:#0D1B2A;color:#FFF4B0}
+body.dark .qah-gate-filter-label{color:#E8CD6E}
+body.dark .qah-gate-filter{
+  background:#0D1B2A;
+  color:#FFF4B0;
+  border-color:#D4AF37;
+}
+body.dark .qah-gate-filter:hover,
+body.dark .qah-gate-filter:focus-visible{background:#12304c}
+body.dark .qah-gate-filter.active,
+body.dark .qah-gate-filter[aria-pressed="true"]{
+  background:#D4AF37;
+  color:#081527;
+  border-color:#D4AF37;
+}
+
+/* الوضع الدافئ: يحافظ على هوية الموقع */
+body.sepia .qah-stat,
+body.sepia .qah-gate,
+body.sepia .qah-branch,
+body.sepia .qah-item{background:#FFFDF8}
+body.sepia .qah-card{background:var(--qah-card-bg,#FFFDF8)}
+body.sepia .qah-gate-body,
+body.sepia .qah-branch-body,
+body.sepia .qah-children{background:#FBF5E8}
+
+@media(max-width:760px){
+  .qah{padding:0 14px;margin-top:42px}
+  .qah-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qah-search-row{grid-template-columns:1fr}
+  .qah-search-row button{width:100%;min-height:48px}
+  .qah-gate-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qah-gate-filter{width:100%;min-height:46px}
+  .qah-latest{grid-template-columns:1fr}
+  .qah-card{padding:16px}
+  .qah-card h4{font-size:1.22rem;line-height:1.6}
+  .qah-card p{font-size:.94rem;line-height:1.95}
+  .qah-pagination{gap:6px}
+  .qah-page-btn{min-width:44px;min-height:44px;padding:7px 10px}
+  .qah-gate-head{grid-template-columns:44px 1fr auto;padding:15px 13px;gap:10px}
+  .qah-gate-symbol{width:44px;height:44px}
+  .qah-branch-head,.qah-item-head,.qah-child{min-height:46px}
+  .qah-child-question{padding:10px 11px;font-size:.86rem}
+}
+@media(max-width:420px){
+  .qah{padding:0 10px}
+  .qah-head h2{font-size:2rem}
+  .qah-stat{padding:13px 8px}
+  .qah-stat strong{font-size:1.25rem}
+  .qah-stat span{font-size:.75rem}
+  .qah-tools{display:grid;grid-template-columns:1fr 1fr}
+  .qah-tools button{min-height:46px}
+  .qah-tools button:last-child{grid-column:1/-1}
+  .qah-gate-filters{grid-template-columns:1fr}
+  .qah-title-row{gap:8px}
+  .qah-title-row h3{font-size:1.35rem}
+  .qah-card{padding:14px}
+  .qah-card-meta{font-size:.78rem}
+  .qah-card-tag{min-height:30px;font-size:.76rem}
+  .qah-page-summary{font-size:.78rem}
+  .qah-gate-head{padding:14px 10px;gap:8px}
+  .qah-gate-text h4{font-size:1.08rem}
+  .qah-gate-text p{font-size:.82rem;line-height:1.7}
+}
+/* ═══ نهاية تصميم سؤال وجواب ═══ */
 
 </style>
 <style id="portrait-browser-boxes-final">
@@ -3772,7 +4541,7 @@ body.dark .new-badge{color:#061326 !important}
   color:#e9cf70;
   background:rgba(212,175,55,.09);
   border:1px solid rgba(212,175,55,.18);
-  font-size:.68rem;
+  font-size:.75rem;
   font-weight:900;
 }
 .inline-result-title{
@@ -3912,7 +4681,8 @@ body.dark .topic-tags .tag-chip[aria-disabled="true"]:hover{
 .topic-inline-results .topic-results-count{
   color:var(--gold);
   font-family:'Cairo',sans-serif;
-  font-size:.78rem;
+  font-size:.84rem;
+  line-height:1.75;
   font-weight:700;
 }
 .topic-inline-results .tag-result-card{
@@ -4997,7 +5767,7 @@ html{
 }
 .global-nav-boxes{
   display:grid;
-  grid-template-columns:repeat(5,minmax(0,1fr));
+  grid-template-columns:repeat(6,minmax(0,1fr));
   gap:10px;
   width:100%;
 }
@@ -5024,13 +5794,13 @@ html{
 }
 .global-nav-box:hover{
   transform:translateY(-2px);
-  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  background:linear-gradient(135deg,#D4AF37,#E8CD6E);
   color:var(--night);
   border-color:var(--gold-lt);
   box-shadow:0 9px 22px rgba(212,175,55,.24);
 }
 .global-nav-box.is-current{
-  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  background:linear-gradient(135deg,#D4AF37,#E8CD6E);
   color:var(--night);
   border-color:#FFE99A;
   box-shadow:0 7px 20px rgba(212,175,55,.25);
@@ -5078,9 +5848,6 @@ body.sepia .global-nav-box.is-current{
     font-size:.73rem;
     border-radius:14px;
   }
-  /* الصف الثاني: صندوقان في المنتصف تمامًا */
-  .global-nav-box:nth-child(4){grid-column:2 / span 2;}
-  .global-nav-box:nth-child(5){grid-column:4 / span 2;}
 }
 @media(max-width:520px){
   .global-nav-boxes-wrap{
@@ -5100,8 +5867,6 @@ body.sepia .global-nav-box.is-current{
     line-height:1.45;
     border-radius:13px;
   }
-  .global-nav-box:nth-child(4){grid-column:2 / span 2;}
-  .global-nav-box:nth-child(5){grid-column:4 / span 2;}
 }
 @media(max-width:360px){
   .global-nav-boxes-wrap{padding:0 10px;}
@@ -5157,12 +5922,12 @@ body.sepia .global-nav-box.is-current{
 </style>
 
 </head>
-<body data-manifest-version="351">
+<body data-manifest-version="351" data-questions-version="6">
 <a class="a11y-skip-link" href="#main-content">تجاوز إلى المحتوى الرئيسي</a>
 <main id="main-content">
 <button class="new-badge" id="newBadge" onclick="checkForUpdates()">
 <span class="nb-dot"></span>
-<span>🔔 توجد مقالات جديدة — اضغط للتحقق والتحديث</span>
+<span>🔔 يوجد تحديث جديد في الموسوعة — اضغط للتحقق والتحديث</span>
 </button>
 <div id="prog"></div>
 <header class="hdr">
@@ -5183,6 +5948,7 @@ body.sepia .global-nav-box.is-current{
     <div class="stage1-gateway-track">
       <a class="stage1-gateway-link" href="#"><span class="stage1-gateway-icon">⌂</span>الرئيسية</a>
       <a class="stage1-gateway-link" href="#gatesSec"><span class="stage1-gateway-icon">▦</span>البوابات المعرفية</a>
+      <a class="stage1-gateway-link" href="#qaHub"><span class="stage1-gateway-icon">؟</span>سؤال وجواب</a>
       <a class="stage1-gateway-link" href="#topicsIndex"><span class="stage1-gateway-icon">☷</span>تصفح حسب الموضوع</a>
       <a class="stage1-gateway-link" href="#latestSec"><span class="stage1-gateway-icon">◷</span>أحدث الإضافات</a>
       <a class="stage1-gateway-link" href="#booksSec"><span class="stage1-gateway-icon">▤</span>المؤلفات والكتب</a>
@@ -5250,6 +6016,7 @@ body.sepia .global-nav-box.is-current{
 <a aria-label="تليجرام" href="https://t.me/MmMDKvcgvbbb" style="background:#0088cc;" target="_blank" title="تليجرام"><svg viewbox="0 0 24 24"><path d="M23.9 4.5c-.3-.2-.7-.3-1.1-.1L1.6 12.2c-.5.2-.8.6-.8 1.1s.4.9.9 1l5.3 1.7 2 6.3c.1.2.2.4.4.5.2.2.5.3.8.3.3 0 .6-.1.9-.4l2.8-2.7 4.9 3.6c.3.2.6.3.9.3.5 0 1-.3 1.2-.9l4.2-18.4c.1-.5-.1-.9-.5-1.1M9.5 15.4l-.6 4.2-1.4-4.6 9.3-6.1-7.3 6.5"></path></svg></a>
 <a aria-label="فيسبوك" href="https://www.facebook.com/share/18scvhye7K/" style="background:#1877F2;" target="_blank" title="صفحة الشيخ على فيسبوك"><svg viewbox="0 0 24 24"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12"></path></svg></a>
 <a aria-label="لينكدإن — الصفحة الرسمية لموسوعة السلجوقي التدبرية" href="https://www.linkedin.com/company/al-seljuki-meditative-encyclopedia/" rel="noopener noreferrer" style="background:linear-gradient(145deg,#0A66C2,#004182);border:1px solid rgba(212,175,55,.72);box-shadow:0 4px 16px rgba(10,102,194,.32),0 0 0 2px rgba(212,175,55,.10);" target="_blank" title="LinkedIn — الصفحة الرسمية لموسوعة السلجوقي التدبرية"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V8.98H7.1v11.47z"></path></svg></a>
+<a aria-label="إكس — صفحة الشيخ" href="https://x.com/OmirNajim" rel="noopener noreferrer" style="background:#000000;" target="_blank" title="إكس — صفحة الشيخ"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"></path></svg></a>
 </div>
 </div>
 </section>
@@ -5261,6 +6028,7 @@ body.sepia .global-nav-box.is-current{
 <a class="global-nav-box" href="#latestSec">أحدث الإضافات</a>
 <a class="global-nav-box" href="#booksSec">المؤلفات</a>
 <a class="global-nav-box" href="#gatesSec">البوابات المعرفية</a>
+<a class="global-nav-box" href="#qaHub">سؤال وجواب</a>
 </div>
 </nav>
 <!-- ===== البحث الموسوعي المضاف ===== -->
@@ -6781,6 +7549,84 @@ body.sepia .global-nav-box.is-current{
 </div>
 </div>
 </section>
+
+<!-- ═══ سؤال وجواب — مكوّن أصلي بهوية الموسوعة ═══ -->
+<section class="qah" id="qaHub" aria-labelledby="qahTitle">
+  <div class="qah-head">
+    <div class="qah-ornament">✦ ۩ ✦</div>
+    <h2 id="qahTitle"><span>سؤال</span> وجواب</h2>
+    <p>فهرس علمي للأسئلة والأجوبة، مرتب داخل البوابات الأربع المعتمدة في موسوعة السلجوقي التدبرية.</p>
+  </div>
+
+  <div class="qah-stats" aria-label="إحصاءات قسم سؤال وجواب">
+    <div class="qah-stat"><strong id="qahAnswerTotal">0</strong><span>إجابة منشورة</span></div>
+    <div class="qah-stat"><strong>4</strong><span>بوابات</span></div>
+    <div class="qah-stat"><strong id="qahBranchTotal">0</strong><span>فروع</span></div>
+    <div class="qah-stat"><strong id="qahCategoryTotal">0</strong><span>تصنيف وفرع دقيق</span></div>
+  </div>
+
+  <div class="qah-search" role="search" aria-label="البحث في قسم سؤال وجواب">
+    <label for="qahSearchInput">البحث في التصنيفات والأسئلة</label>
+    <div class="qah-search-row">
+      <input id="qahSearchInput" type="search" placeholder="مثال: القرآن، العقيدة، الفقه، القلب، العقل..." autocomplete="off">
+      <button id="qahSearchBtn" type="button">بحث</button>
+    </div>
+    <div class="qah-tools">
+      <button id="qahExpandAll" type="button">فتح الكل</button>
+      <button id="qahCollapseAll" type="button">إغلاق الكل</button>
+      <button id="qahClearSearch" type="button">مسح البحث</button>
+    </div>
+    <div class="qah-gate-filter-wrap" aria-labelledby="qahGateFilterLabel">
+      <span class="qah-gate-filter-label" id="qahGateFilterLabel">تصفية حسب البوابة</span>
+      <div class="qah-gate-filters" id="qahGateFilters">
+        <button class="qah-gate-filter active" type="button" data-gate="" aria-pressed="true">الكل</button>
+        <button class="qah-gate-filter" type="button" data-gate="بَوَّابَةُ الْوَحْيَيْنِ وَالتَّدَبُّرِ" aria-pressed="false">الوحيان والتدبر</button>
+        <button class="qah-gate-filter" type="button" data-gate="بَوَّابَةُ الْفِقْهِ وَالْأَنْوَارِ التَّأْصِيلِيَّةِ" aria-pressed="false">الفقه والتأصيل</button>
+        <button class="qah-gate-filter" type="button" data-gate="بَوَّابَةُ نَقْدِ الْوَاقِعِ وَالسِّيَاسَةِ الشَّرْعِيَّةِ" aria-pressed="false">نقد الواقع والسياسة</button>
+        <button class="qah-gate-filter" type="button" data-gate="بَوَّابَةُ الرَّقَائِقِ وَالشِّفَاءِ وَالْحَيَاةِ" aria-pressed="false">الرقائق والشفاء</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="qah-block qah-featured-block" id="qahFeaturedBlock">
+    <div class="qah-title-row">
+      <h3>أسئلة وأجوبة مختارة</h3>
+      <span class="qah-title-mark">◆</span>
+    </div>
+    <div class="qah-empty">
+      ستظهر هنا لاحقًا مجموعة مختارة بعناية من الأسئلة والأجوبة المميزة، لتسهيل الوصول إلى الموضوعات المهمة والنافعة.
+    </div>
+  </div>
+
+  <div class="qah-block qah-latest-block">
+    <div class="qah-title-row">
+      <h3 id="qahLatestTitle" aria-live="polite">أحدث الأسئلة والأجوبة</h3>
+      <span class="qah-title-mark">◆</span>
+    </div>
+    <div class="qah-latest" id="qahLatest"></div>
+    <nav class="qah-pagination" id="qahLatestPagination" aria-label="صفحات الأسئلة"></nav>
+  </div>
+
+  <div class="qah-block qah-mostread-block">
+    <div class="qah-title-row">
+      <h3>الأكثر قراءة</h3>
+      <span class="qah-title-mark">◆</span>
+    </div>
+    <div class="qah-latest" id="qahMostRead"></div>
+    <nav class="qah-pagination" id="qahMostReadPagination" aria-label="صفحات الأكثر قراءة"></nav>
+  </div>
+
+  <div class="qah-block">
+    <div class="qah-title-row">
+      <h3>شجرة التصنيفات</h3>
+      <span class="qah-title-mark">◆</span>
+    </div>
+    <p class="qah-help">البوابة ← الفرع ← القسم ← التصنيف ← التصنيف الدقيق ← السؤال.</p>
+    <div class="qah-tree" id="qahTree"></div>
+  </div>
+</section>
+<!-- ═══ نهاية سؤال وجواب ═══ -->
+
 <!-- نموذج الاتصال -->
 <div class="contact">
 <div class="contact-card">
@@ -7172,6 +8018,509 @@ window.addEventListener('scroll',function(){
   update();
   setInterval(update, 1000);
 })();
+
+
+/* ═══ سؤال وجواب — نظام التصنيفات والأسئلة ═══ */
+(function(){
+  const root=document.getElementById("qaHub");
+  if(!root) return;
+
+  const taxonomy=[{"no": "١", "title": "بَوَّابَةُ الْوَحْيَيْنِ وَالتَّدَبُّرِ", "en": "THE DIVINE SOURCE", "desc": "العقيدة والقرآن والحديث والسيرة في شجرة سؤال وجواب متعددة المستويات.", "branches": [{"title": "١. فرعُ التفسير والتدبر القرآني", "groups": [{"title": "العقيدة", "items": [{"name": "الإيمان", "children": ["الإيمان بالله", "الإيمان بالملائكة", "الإيمان بالكتب", "الإيمان بالرسل", "الإيمان باليوم الآخر وأشراط الساعة", "الإيمان بالقضاء والقدر", "الإيمان بالجن والسحر والعين"]}, {"name": "التوحيد", "children": ["الشرك وأنواعه", "الشفاعة", "الولاء والبراء"]}, {"name": "مذاهب وأديان", "children": ["مذاهب وفرق", "الأديان والملل"]}, {"name": "مسائل الاعتقاد", "children": ["أسماء الله وصفاته", "الكفر والنفاق", "البدع العقدية", "الإيمان والإسلام"]}]}, {"title": "القرآن وعلومه", "items": [{"name": "تفسير القرآن", "children": ["تفسير الآيات", "أسباب النزول", "غريب القرآن", "المناسبات والسياق"]}, {"name": "فضائل القرآن", "children": ["فضائل السور والآيات", "التلاوة والتدبر", "حفظ القرآن"]}, {"name": "أحكام المصاحف", "children": ["مس المصحف", "كتابة المصحف", "المصاحف الإلكترونية"]}]}]}, {"title": "٢. فرعُ السنة النبوية وشروح الحديث", "groups": [{"title": "الحديث وعلومه", "items": [{"name": "الأحاديث الصحيحة", "children": ["تخريج الحديث", "الجمع بين الروايات"]}, {"name": "الأحاديث الضعيفة", "children": ["الأحاديث المنتشرة", "العمل بالحديث الضعيف"]}, {"name": "مصطلح الحديث", "children": ["الجرح والتعديل", "الأسانيد والرواة", "قواعد التصحيح والتضعيف"]}, {"name": "شروح الأحاديث", "children": ["أحاديث العقيدة", "أحاديث الأحكام", "أحاديث الفتن والملاحم", "أحاديث الآداب والرقائق"]}]}]}, {"title": "٣. فرعُ القصص القرآني والنبوي", "groups": [{"title": "التاريخ والسيرة", "items": [{"name": "السيرة النبوية", "children": ["المولد والبعثة", "الهجرة", "الغزوات والسرايا", "شمائل النبي ﷺ", "أهل بيت النبي ﷺ"]}, {"name": "المناقب", "children": ["الصحابة", "أمهات المؤمنين", "العلماء والصالحون", "فضائل البلدان والأماكن"]}, {"name": "بدء الخلق وعجائب المخلوقات", "children": ["خلق الإنسان", "الملائكة والجن", "أخبار الأمم السابقة", "قصص الأنبياء"]}]}]}]}, {"no": "٢", "title": "بَوَّابَةُ الْفِقْهِ وَالْأَنْوَارِ التَّأْصِيلِيَّةِ", "en": "FIQH & FOUNDATIONS", "desc": "العبادات والمعاملات والأسرة وأصول الفقه مرتبة من الكلي إلى التفصيلي.", "branches": [{"title": "١. فرعُ الأحكام الفقهية والفتاوى", "groups": [{"title": "العبادات", "items": [{"name": "الطهارة", "children": ["المياه والنجاسات", "الوضوء", "الغسل", "التيمم", "الحيض والنفاس"]}, {"name": "الصلاة", "children": ["مواقيت الصلاة", "صفة الصلاة", "الجماعة والإمامة", "الجمعة", "صلاة المسافر", "النوافل", "سجود السهو"]}, {"name": "الزكاة", "children": ["زكاة الأموال", "زكاة الفطر", "مصارف الزكاة"]}, {"name": "الصوم", "children": ["أحكام رمضان", "المفطرات", "القضاء والكفارة", "صيام التطوع"]}, {"name": "الحج والعمرة", "children": ["الإحرام", "المواقيت", "المناسك", "محظورات الإحرام", "الهدي والفدية"]}, {"name": "الأيمان والنذور", "children": ["اليمين", "كفارة اليمين", "النذر"]}, {"name": "الأضحية", "children": ["شروط الأضحية", "وقت الأضحية", "تقسيم اللحم"]}, {"name": "الجنائز وأحكام المقابر", "children": ["الاحتضار", "الغسل والتكفين", "الصلاة على الميت", "الدفن والزيارة"]}, {"name": "الجهاد والهجرة", "children": ["ضوابط الجهاد", "الهجرة", "الأمان والعهود"]}]}, {"title": "المعاملات", "items": [{"name": "البيوع", "children": ["شروط البيع", "الربا", "الغرر", "المرابحة", "التقسيط", "البيع الإلكتروني"]}, {"name": "القرض والدين", "children": ["القرض الحسن", "توثيق الديون", "المماطلة"]}, {"name": "الشركة", "children": ["الشراكة", "المضاربة", "تصفية الشراكات"]}, {"name": "الوكالة", "children": ["التوكيل", "السمسرة"]}, {"name": "الوديعة والأمانات", "children": ["الودائع", "حفظ الأمانة"]}, {"name": "الهدية والهبة والعطية", "children": ["الهدايا", "الهبات", "العطايا"]}, {"name": "الأموال المحرمة", "children": ["الربا", "الرشوة", "القمار", "أكل المال بالباطل"]}, {"name": "الإرث وتوزيع التركة", "children": ["أصحاب الفروض", "العصبات", "الوصية", "قسمة التركة"]}, {"name": "الديات والجنايات", "children": ["الديات", "الجنايات", "القصاص"]}, {"name": "الحدود والتعزيرات", "children": ["الحدود", "التعزير", "الشروط والموانع"]}, {"name": "الشهادات والقضاء", "children": ["الشهادة", "البينة", "القضاء والتحكيم"]}, {"name": "العقود المعاصرة", "children": ["التأمين", "البطاقات المصرفية", "الأسهم", "العملات الرقمية", "حقوق النشر"]}]}, {"title": "فقه الأسرة", "items": [{"name": "الخِطبة", "children": ["اختيار الزوجين", "النظر للمخطوبة", "العدول عن الخطبة"]}, {"name": "النكاح", "children": ["أركان النكاح", "الولي والشهود", "المهر", "الأنكحة الباطلة"]}, {"name": "الحقوق الزوجية", "children": ["النفقة", "العشرة", "السكن", "القَسْم"]}, {"name": "المعاشرة الزوجية", "children": ["آداب النكاح", "المعاشرة", "العزل وتنظيم الحمل"]}, {"name": "الطلاق", "children": ["ألفاظ الطلاق", "الطلاق المعلق", "الطلاق البدعي"]}, {"name": "الخلع والفسخ", "children": ["الخلع", "الفسخ", "العيوب الزوجية"]}, {"name": "العدة", "children": ["عدة المطلقة", "عدة المتوفى عنها", "الاستبراء"]}, {"name": "الحضانة", "children": ["حق الحضانة", "زيارة المحضون", "النفقة على الأولاد"]}, {"name": "النسب والرضاع", "children": ["ثبوت النسب", "الرضاع المحرم", "التبني والكفالة"]}, {"name": "مشكلات أسرية", "children": ["الخلافات الزوجية", "تدخل الأهل", "العنف الأسري"]}]}, {"title": "العادات والأحكام العامة", "items": [{"name": "الأطعمة والأشربة", "children": ["الحلال والحرام", "الذبائح", "الصيد"]}, {"name": "اللباس والزينة", "children": ["لباس الرجل", "لباس المرأة", "الزينة"]}, {"name": "أحكام الفنون والإعلام", "children": ["التصوير", "التمثيل", "الموسيقى", "وسائل التواصل"]}, {"name": "السفر", "children": ["آداب السفر", "أحكام المسافر"]}, {"name": "الطب والتداوي", "children": ["العلاج", "الجراحة", "الأدوية", "التبرع بالأعضاء"]}]}]}, {"title": "٢. فرعُ أصول الفقه والقواعد الكلية", "groups": [{"title": "أصول الفقه", "items": [{"name": "مصادر التشريع", "children": ["الكتاب", "السنة", "الإجماع", "القياس", "الاستصحاب", "المصالح المرسلة"]}, {"name": "البدعة", "children": ["تعريف البدعة", "ضوابط البدعة", "البدعة الإضافية"]}, {"name": "التكليف", "children": ["الأهلية", "المشقة", "الضرورة", "الإكراه"]}, {"name": "دلالات الألفاظ", "children": ["العام والخاص", "المطلق والمقيد", "الأمر والنهي", "المفهوم والمنطوق"]}, {"name": "الاجتهاد والتقليد", "children": ["الاجتهاد", "التقليد", "الفتوى", "اختلاف العلماء"]}, {"name": "القواعد الفقهية", "children": ["اليقين لا يزول بالشك", "المشقة تجلب التيسير", "الضرر يزال", "العادة محكمة", "الأمور بمقاصدها"]}]}]}]}, {"no": "٣", "title": "بَوَّابَةُ نَقْدِ الْوَاقِعِ وَالسِّيَاسَةِ الشَّرْعِيَّةِ", "en": "REALITY & PUBLIC AFFAIRS", "desc": "السياسة الشرعية والدعوة والعلم والردود والقضايا المعاصرة.", "branches": [{"title": "١. فرعُ السياسة الشرعية والاقتصاد", "groups": [{"title": "السياسة الشرعية", "items": [{"name": "الحكم والسياسة", "children": ["الإمامة والولاية", "الشورى", "طاعة ولي الأمر", "النصيحة العامة"]}, {"name": "المصالح العامة", "children": ["رعاية مصالح الأمة", "الأمن", "العلاقات الدولية", "المعاهدات"]}, {"name": "القضايا العامة", "children": ["النوازل السياسية", "المواقف العامة", "الموازنات الشرعية"]}]}, {"title": "الاقتصاد والقضايا المالية", "items": [{"name": "الاقتصاد الإسلامي", "children": ["المصارف", "التمويل", "الاستثمار", "الأسواق"]}, {"name": "قضايا العمل", "children": ["الوظائف", "الأجور", "العقود", "حقوق العامل"]}]}]}, {"title": "٢. فرعُ المقالات التهكمية والساخرة", "groups": [{"title": "نقد الظواهر والأفكار", "items": [{"name": "نقد اجتماعي", "children": ["العادات المخالفة", "التقليد الأعمى", "الظواهر المجتمعية"]}, {"name": "نقد إعلامي وثقافي", "children": ["الإعلام", "الثقافة العامة", "المحتوى الرقمي"]}, {"name": "نقد اقتصادي وسياسي", "children": ["الخطاب الاقتصادي", "الخطاب السياسي", "التناقضات العامة"]}]}]}, {"title": "٣. فرعُ المناظرات والردود", "groups": [{"title": "العلم والدعوة", "items": [{"name": "الدعوة", "children": ["أصول الدعوة", "دعوة غير المسلمين", "الأمر بالمعروف والنهي عن المنكر", "وسائل الدعوة", "الداعية وآدابه"]}, {"name": "العلم", "children": ["آداب طلب العلم", "طلب العلم", "العلوم المختلفة"]}]}, {"title": "الردود والمناظرات", "items": [{"name": "الرد على الشبهات", "children": ["شبهات عقدية", "شبهات قرآنية", "شبهات حديثية", "شبهات فقهية"]}, {"name": "مناقشة المذاهب والأفكار", "children": ["الفرق والمذاهب", "الأديان", "الإلحاد", "العلمانية"]}, {"name": "أدب الحوار والمناظرة", "children": ["أصول المناظرة", "الإنصاف العلمي", "توثيق النقل", "كشف المغالطات"]}]}]}]}, {"no": "٤", "title": "بَوَّابَةُ الرَّقَائِقِ وَالشِّفَاءِ وَالْحَيَاةِ", "en": "HEART, HEALING & LIFE", "desc": "الرقائق والآداب والأخلاق والتربية والمشكلات النفسية والاجتماعية والطب والرؤى.", "branches": [{"title": "١. فرعُ الرقائق والسلوك", "groups": [{"title": "الرقائق", "items": [{"name": "التوبة", "children": ["أحكام التوبة", "شروط التوبة", "رد المظالم"]}, {"name": "محبة الله", "children": ["محبة الله", "الخوف والرجاء", "حسن الظن بالله"]}, {"name": "الأذكار الشرعية", "children": ["أذكار الصباح والمساء", "أذكار الأحوال", "الصلاة على النبي ﷺ"]}, {"name": "الدعاء", "children": ["آداب الدعاء", "أوقات الإجابة", "الاعتداء في الدعاء"]}, {"name": "الإخلاص", "children": ["النية", "الرياء", "العجب"]}, {"name": "فضائل الأعمال", "children": ["أعمال القلوب", "النوافل", "مواسم الطاعات"]}, {"name": "آفات اللسان", "children": ["الغيبة", "النميمة", "الكذب", "السب"]}, {"name": "الزهد والموت والآخرة", "children": ["ذكر الموت", "القبر", "الجنة والنار"]}]}, {"title": "الآداب", "items": [{"name": "المناهي اللفظية", "children": ["الألفاظ المحرمة", "الألفاظ المشتبهة"]}, {"name": "آداب التلاوة", "children": ["الاستماع", "القراءة", "سجود التلاوة"]}, {"name": "آداب السلام", "children": ["بدء السلام", "رد السلام", "السلام على غير المسلمين"]}, {"name": "آداب الأكل والشرب", "children": ["التسمية", "الأكل باليمين", "الضيافة"]}, {"name": "آداب النوم", "children": ["أذكار النوم", "هيئة النوم"]}, {"name": "آداب التقبيل والمعانقة", "children": ["المصافحة", "المعانقة"]}, {"name": "الأخوة الإسلامية", "children": ["الحب في الله", "حقوق المسلم", "الهجر"]}, {"name": "الأسماء والكنى والألقاب", "children": ["التسمية", "الكنى", "الألقاب"]}, {"name": "بر الوالدين", "children": ["حقوق الوالدين", "العقوق", "بر الوالدين بعد موتهما"]}, {"name": "صلة الرحم", "children": ["الأقارب", "القطيعة"]}, {"name": "حق الجار", "children": ["حقوق الجيران", "الأذى"]}, {"name": "آداب الضيافة", "children": ["إكرام الضيف", "الاستئذان"]}, {"name": "آداب السفر", "children": ["الرفقة", "دعاء السفر"]}, {"name": "حقوق الحيوان", "children": ["الرفق بالحيوان", "الاقتناء"]}]}, {"title": "الأخلاق", "items": [{"name": "الأخلاق المحمودة", "children": ["الصدق", "الأمانة", "الصبر", "الحلم", "التواضع", "الحياء"]}, {"name": "الأخلاق المذمومة", "children": ["الحسد", "الكبر", "الغضب", "العشق ومقدمات الفاحشة", "سوء الظن"]}]}, {"title": "التربية", "items": [{"name": "تربية الأولاد", "children": ["العقيدة والعبادة", "الأخلاق", "التعليم", "المراهقة"]}, {"name": "تربية النفس", "children": ["المحاسبة", "المجاهدة", "تنظيم الوقت", "العادات"]}]}]}, {"title": "٢. فرعُ الطب النبوي والتداوي", "groups": [{"title": "الطب والتداوي", "items": [{"name": "الطب النبوي", "children": ["الحجامة", "العسل", "الحبة السوداء", "التمر"]}, {"name": "الرقية الشرعية", "children": ["الرقية بالقرآن", "العين والحسد", "السحر", "المس"]}, {"name": "التداوي والأدوية", "children": ["الأدوية", "الجراحة", "العلاج النفسي", "العلاجات الحديثة"]}, {"name": "مشكلات نفسية واجتماعية", "children": ["مشكلات نفسية", "وساوس", "خوف وقلق", "مشكلات اجتماعية", "علاقات أسرية"]}]}]}, {"title": "٣. فرعُ تعبير الرؤى وتفسير الأحلام", "groups": [{"title": "الرؤى والأحلام", "items": [{"name": "قواعد تعبير الرؤى", "children": ["الرؤيا الصادقة", "الحلم", "حديث النفس", "ضوابط التعبير"]}, {"name": "آداب الرؤيا", "children": ["ما يفعل عند الرؤيا الحسنة", "ما يفعل عند الرؤيا المكروهة", "قص الرؤيا"]}, {"name": "رؤى متكررة", "children": ["رؤى الأنبياء والصالحين", "الرموز المشهورة", "الرؤى المتعلقة بالاستخارة"]}]}]}]}];
+  const qaData=[{
+    id:"006",
+    question:"ما المقصود بالذكر الكثير؟ وهل يجب ذكر الله في كل لحظة؟ وما حكم طريقة «الله هو» مع الأنفاس؟",
+    summary:"بيان معنى الذكر الكثير في القرآن، ونفي وجوب الذكر في كل ثانية، وبيان حال الصحابة، وحكم نسبة طريقة «الله هو» مع الأنفاس إلى الحسن البصري.",
+    gate:"بَوَّابَةُ الْوَحْيَيْنِ وَالتَّدَبُّرِ",
+    branch:"١. فرعُ التفسير والتدبر القرآني",
+    group:"القرآن وعلومه",
+    category:"تفسير القرآن",
+    subcategory:"تفسير الآيات",
+    tags:["الذكر", "الذكر الكثير", "أذكار الصباح والمساء", "الحسن البصري", "الطرق الصوفية", "البدع", "حنظلة الأسيدي", "ساعة وساعة"],
+    date:"2026-10-04",
+    dateLabel:"٤ أكتوبر ٢٠٢٦",
+    views:null,
+    url:"qa/006.html"
+  },
+{
+    id:"005",
+    question:"ما حكم استخدام رمز القلب الشائع (♥) في الزينة والإكسسوارات؟",
+    summary:"بيان حكم استعمال رمز القلب الشائع في الإكسسوارات والملابس والزينة، وما يذكر عن نسبته إلى رموز قديمة.",
+    gate:"بَوَّابَةُ الْفِقْهِ وَالْأَنْوَارِ التَّأْصِيلِيَّةِ",
+    branch:"١. فرعُ الأحكام الفقهية والفتاوى",
+    group:"العادات والأحكام العامة",
+    category:"اللباس والزينة",
+    subcategory:"الزينة",
+    tags:["رمز القلب", "الزينة", "الإكسسوارات", "التشبه", "العادات", "الرموز", "المباحات"],
+    date:"2026-10-04",
+    dateLabel:"٤ أكتوبر ٢٠٢٦",
+    views:null,
+    url:"qa/005.html"
+  },
+{
+    id:"004",
+    question:"هل يقع الطبع والختم على قلب المسلم؟ وما أسبابه وعلاجه؟",
+    summary:"بيان وقوع الطبع والران على قلب العاصي بقدر ذنبه، وأبرز أسبابه الشرعية، وطرق علاجه بالتوبة ومدافعة الفتن والافتقار إلى الله.",
+    gate:"بَوَّابَةُ الرَّقَائِقِ وَالشِّفَاءِ وَالْحَيَاةِ",
+    branch:"١. فرعُ الرقائق والسلوك",
+    group:"الرقائق",
+    category:"فضائل الأعمال",
+    subcategory:"أعمال القلوب",
+    tags:["الطبع على القلب", "ختم القلب", "الران", "المعاصي", "الفتن", "صلاة الجمعة", "التوبة", "القلب", "ابن القيم"],
+    date:"2026-10-04",
+    dateLabel:"٤ أكتوبر ٢٠٢٦",
+    views:null,
+    url:"qa/004.html"
+  },
+{
+    id:"003",
+    question:"ما صحة حديث «استفت قلبك ولو أفتاك الناس» وما معناه الصحيح؟",
+    summary:"بيان درجة حديث «استفت قلبك» وشواهده، وضبط معناه حتى لا يُتخذ ذريعة لتحليل المحرمات أو اتباع الهوى.",
+    gate:"بَوَّابَةُ الْوَحْيَيْنِ وَالتَّدَبُّرِ",
+    branch:"٢. فرعُ السنة النبوية وشروح الحديث",
+    group:"الحديث وعلومه",
+    category:"شروح الأحاديث",
+    subcategory:"أحاديث الآداب والرقائق",
+    tags:["استفت قلبك", "البر والإثم", "الفتوى", "القلب السليم", "الورع", "الأربعون النووية", "وابصة بن معبد"],
+    date:"2026-10-04",
+    dateLabel:"٤ أكتوبر ٢٠٢٦",
+    views:null,
+    url:"qa/003.html"
+  },
+{
+    id:"002",
+    question:"هل قلوب بني آدم بين أصبعين من أصابع الرحمن على الحقيقة؟",
+    summary:"بيان معنى حديث «القلوب بين أصبعين من أصابع الرحمن»، وإثبات الصفة بلا تكييف، وبيان أن البينية لا تستلزم المماسة ولا الحلول.",
+    gate:"بَوَّابَةُ الْوَحْيَيْنِ وَالتَّدَبُّرِ",
+    branch:"١. فرعُ التفسير والتدبر القرآني",
+    group:"العقيدة",
+    category:"مسائل الاعتقاد",
+    subcategory:"أسماء الله وصفاته",
+    tags:["صفات الله", "الأصابع", "تقليب القلوب", "أهل السنة", "السلف", "القلوب", "الإثبات بلا تكييف"],
+    date:"2026-10-04",
+    dateLabel:"٤ أكتوبر ٢٠٢٦",
+    views:null,
+    url:"qa/002.html"
+  },
+{
+    id:"001",
+    question:"كيف نجمع بين قوله تعالى: ﴿قُلُوبٌ يَعْقِلُونَ بِهَا﴾ وكون الدماغ مركز التفكير؟",
+    summary:"بيان دلالة نسبة التعقل إلى القلب في النصوص الشرعية، وكيفية فهمها مع الدور المعروف للدماغ في التفكير والمعالجة العصبية.",
+    gate:"بَوَّابَةُ الْوَحْيَيْنِ وَالتَّدَبُّرِ",
+    branch:"١. فرعُ التفسير والتدبر القرآني",
+    group:"القرآن وعلومه",
+    category:"تفسير القرآن",
+    subcategory:"تفسير الآيات",
+    tags:["القلب", "العقل", "الدماغ", "التدبر القرآني", "علم الأعصاب", "الشبهات", "القرآن والعلم"],
+    date:"2026-10-02",
+    dateLabel:"٢ أكتوبر ٢٠٢٦",
+    views:null,
+    url:"qa/001.html"
+  }];
+
+  const tree=root.querySelector("#qahTree");
+  const latest=root.querySelector("#qahLatest");
+  const mostRead=root.querySelector("#qahMostRead");
+  const latestPagination=root.querySelector("#qahLatestPagination");
+  const mostReadPagination=root.querySelector("#qahMostReadPagination");
+  const latestTitle=root.querySelector("#qahLatestTitle");
+  const PAGE_SIZE=8;
+
+  let latestPage=1;
+  let mostReadPage=1;
+  let currentRows=qaData;
+  let selectedGate="";
+
+  function esc(v){
+    return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
+  }
+  function normalize(v){
+    return String(v||"")
+      .toLowerCase()
+      .normalize("NFKD")
+      .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g,"")
+      .replace(/\u0640/g,"")
+      .replace(/[إأآٱ]/g,"ا")
+      .replace(/ى/g,"ي")
+      .replace(/ؤ/g,"و")
+      .replace(/ئ/g,"ي")
+      .replace(/[^\p{L}\p{N}\s♥]/gu," ")
+      .replace(/\s+/g," ")
+      .trim();
+  }
+  function queryTokens(v){
+    return normalize(v).split(" ").filter(Boolean);
+  }
+  function matchesTokens(value,tokens){
+    const haystack=normalize(value);
+    return tokens.every(token=>haystack.includes(token));
+  }
+  function branchCount(){return taxonomy.reduce((n,g)=>n+g.branches.length,0);}
+  function categoryCount(){
+    let n=0;
+    taxonomy.forEach(g=>g.branches.forEach(b=>b.groups.forEach(gr=>gr.items.forEach(it=>{n+=1+(it.children?.length||0);}))));
+    return n;
+  }
+  function countFor(label){
+    return qaData.filter(q=>[q.gate,q.branch,q.group,q.category,q.subcategory].includes(label)).length;
+  }
+
+  function questionsFor(label){
+    return qaData
+      .filter(q=>q.subcategory===label || (!q.subcategory && q.category===label))
+      .sort((a,b)=>{
+        const byDate=String(b.date).localeCompare(String(a.date));
+        return byDate || String(b.id).localeCompare(String(a.id));
+      });
+  }
+
+  function pageTokens(current,total){
+    if(total<=7) return Array.from({length:total},(_,i)=>i+1);
+    const keep=new Set([1,total,current,current-1,current+1,current-2,current+2]);
+    const nums=[...keep].filter(n=>n>=1&&n<=total).sort((a,b)=>a-b);
+    const tokens=[];
+    nums.forEach((n,i)=>{
+      if(i && n-nums[i-1]>1) tokens.push("…");
+      tokens.push(n);
+    });
+    return tokens;
+  }
+
+  function renderPagination(container,current,totalItems,onChange){
+    const totalPages=Math.ceil(totalItems/PAGE_SIZE);
+    if(totalPages<=1){
+      container.innerHTML="";
+      return;
+    }
+
+    const prevDisabled=current<=1;
+    const nextDisabled=current>=totalPages;
+    const tokens=pageTokens(current,totalPages);
+
+    container.innerHTML=`
+      <button class="qah-page-btn" type="button" data-page="${current-1}" ${prevDisabled?"disabled":""} aria-label="الصفحة السابقة">السابق</button>
+      ${tokens.map(token=>token==="…"
+        ? '<span class="qah-page-ellipsis" aria-hidden="true">…</span>'
+        : `<button class="qah-page-btn" type="button" data-page="${token}" ${token===current?'aria-current="page"':""} aria-label="الصفحة ${token}">${token.toLocaleString("ar")}</button>`
+      ).join("")}
+      <button class="qah-page-btn" type="button" data-page="${current+1}" ${nextDisabled?"disabled":""} aria-label="الصفحة التالية">التالي</button>
+      <div class="qah-page-summary">الصفحة ${current.toLocaleString("ar")} من ${totalPages.toLocaleString("ar")} · ${totalItems.toLocaleString("ar")} نتيجة</div>`;
+
+    container.querySelectorAll("button[data-page]:not(:disabled)").forEach(btn=>{
+      btn.addEventListener("click",()=>{
+        const target=Number(btn.dataset.page);
+        if(target<1||target>totalPages||target===current) return;
+        onChange(target);
+      });
+    });
+  }
+
+  function latestCard(q){
+    const tags=(q.tags||[]).slice(0,3);
+    return `
+      <article class="qah-card">
+        <div class="qah-card-kicker">سؤال رقم ${esc(q.id)} · ${esc(q.dateLabel)}</div>
+        <h4>${esc(q.question)}</h4>
+        <div class="qah-card-meta">${esc(q.group)} ← ${esc(q.category)} ← ${esc(q.subcategory)}</div>
+        <p>${esc(q.summary)}</p>
+        ${tags.length?`<div class="qah-card-tags" aria-label="وسوم السؤال">${tags.map(tag=>`<span class="qah-card-tag">${esc(tag)}</span>`).join("")}</div>`:""}
+        <a href="${esc(q.url)}">قراءة السؤال والجواب كاملًا ←</a>
+      </article>`;
+  }
+
+  function renderLatest(rows=currentRows,page=latestPage){
+    root.querySelector("#qahAnswerTotal").textContent=qaData.length;
+    currentRows=[...rows].sort((a,b)=>{
+      const byDate=String(b.date).localeCompare(String(a.date));
+      return byDate || String(b.id).localeCompare(String(a.id));
+    });
+
+    const totalPages=Math.max(1,Math.ceil(currentRows.length/PAGE_SIZE));
+    latestPage=Math.min(Math.max(1,page),totalPages);
+
+    if(!currentRows.length){
+      latest.innerHTML='<div class="qah-empty">لم نعثر على سؤال مطابق. جرّب كلمات أخرى أو تصفح التصنيفات.</div>';
+      latestPagination.innerHTML="";
+      return;
+    }
+
+    const start=(latestPage-1)*PAGE_SIZE;
+    latest.innerHTML=currentRows.slice(start,start+PAGE_SIZE).map(latestCard).join("");
+
+    renderPagination(latestPagination,latestPage,currentRows.length,(target)=>{
+      latestPage=target;
+      renderLatest(currentRows,latestPage);
+      latest.closest(".qah-block").scrollIntoView({behavior:"smooth",block:"start"});
+    });
+  }
+
+  function rankedMostRead(){
+    return qaData
+      .filter(q=>Number.isFinite(q.views) && (!selectedGate || q.gate===selectedGate))
+      .sort((a,b)=>b.views-a.views || String(b.id).localeCompare(String(a.id)));
+  }
+
+  function renderMostRead(page=mostReadPage){
+    const ranked=rankedMostRead();
+
+    if(!ranked.length){
+      mostRead.innerHTML='<div class="qah-empty">سيظهر ترتيب «الأكثر قراءة» عند توفر بيانات كافية عن القراءة.</div>';
+      mostReadPagination.innerHTML="";
+      return;
+    }
+
+    const totalPages=Math.max(1,Math.ceil(ranked.length/PAGE_SIZE));
+    mostReadPage=Math.min(Math.max(1,page),totalPages);
+    const start=(mostReadPage-1)*PAGE_SIZE;
+
+    mostRead.innerHTML=ranked.slice(start,start+PAGE_SIZE).map((q,index)=>{
+      const tags=(q.tags||[]).slice(0,3);
+      return `
+      <article class="qah-card">
+        <div class="qah-card-kicker">المرتبة ${(start+index+1).toLocaleString("ar")} · ${q.views.toLocaleString("ar")} قراءة</div>
+        <h4>${esc(q.question)}</h4>
+        <div class="qah-card-meta">${esc(q.group)} ← ${esc(q.category)} ← ${esc(q.subcategory)}</div>
+        <p>${esc(q.summary)}</p>
+        ${tags.length?`<div class="qah-card-tags" aria-label="وسوم السؤال">${tags.map(tag=>`<span class="qah-card-tag">${esc(tag)}</span>`).join("")}</div>`:""}
+        <a href="${esc(q.url)}">قراءة السؤال والجواب كاملًا ←</a>
+      </article>`;
+    }).join("");
+
+    renderPagination(mostReadPagination,mostReadPage,ranked.length,(target)=>{
+      mostReadPage=target;
+      renderMostRead(mostReadPage);
+      mostRead.closest(".qah-block").scrollIntoView({behavior:"smooth",block:"start"});
+    });
+  }
+
+  function renderTree(){
+    const icons=["۩","⚖","✒","❁"];
+    const gatePalettes=[
+      {a:"#0A2B52",b:"#123F73",symbolA:"#1B4F8A",symbolB:"#2D6BA8",border:"#78A9E0",title:"#FFF4B0",sub:"#E8CD6E",arrow:"#FFD86A",symbolInk:"#FFFFFF"},
+      {a:"#5A1730",b:"#7A2342",symbolA:"#7A2342",symbolB:"#A33A5C",border:"#D48AA3",title:"#FFF4B0",sub:"#F4D6DF",arrow:"#FFD6E2",symbolInk:"#FFFFFF"},
+      {a:"#173A5C",b:"#1D4768",symbolA:"#23567D",symbolB:"#3E78A2",border:"#8EC5E7",title:"#FFF4B0",sub:"#D9EEF9",arrow:"#D9EEF9",symbolInk:"#FFFFFF"},
+      {a:"#513804",b:"#5B4005",symbolA:"#B17D13",symbolB:"#D4AF37",border:"#F1D77B",title:"#FFF8D4",sub:"#F4E2A8",arrow:"#FFF1A8",symbolInk:"#17120B"}
+    ];
+    tree.innerHTML=taxonomy.map((gate,gi)=>`
+      <section class="qah-gate" data-gate="${esc(gate.title)}" data-search="${esc([gate.title,gate.en,gate.desc].join(" "))}" style="--qah-gate-a:${gatePalettes[gi].a};--qah-gate-b:${gatePalettes[gi].b};--qah-gate-border:${gatePalettes[gi].border};--qah-symbol-a:${gatePalettes[gi].symbolA};--qah-symbol-b:${gatePalettes[gi].symbolB};--qah-symbol-border:${gatePalettes[gi].border};--qah-symbol-ink:${gatePalettes[gi].symbolInk};--qah-title-ink:${gatePalettes[gi].title};--qah-sub-ink:${gatePalettes[gi].sub};--qah-arrow-ink:${gatePalettes[gi].arrow};">
+        <button class="qah-gate-head" type="button">
+          <span class="qah-gate-symbol">${icons[gi]||gate.no}</span>
+          <span class="qah-gate-text">
+            <small>${esc(gate.en)}</small>
+            <h4>${esc(gate.title)}</h4>
+            <p>${esc(gate.desc)}</p>
+          </span>
+          <span class="qah-arrow">‹</span>
+        </button>
+        <div class="qah-gate-body">
+          ${gate.branches.map(branch=>`
+            <section class="qah-branch" data-search="${esc(branch.title)}">
+              <button class="qah-branch-head" type="button"><span>${esc(branch.title)}</span><span>＋</span></button>
+              <div class="qah-branch-body">
+                ${branch.groups.map(group=>`
+                  <section class="qah-group" data-search="${esc(group.title)}">
+                    <h5 class="qah-group-title">${esc(group.title)}</h5>
+                    <div class="qah-items">
+                      ${group.items.map(item=>`
+                        <article class="qah-item" data-search="${esc([item.name,...(item.children||[])].join(" "))}">
+                          <button class="qah-item-head" type="button">
+                            <span>${esc(item.name)}</span>
+                            <span class="qah-count">${countFor(item.name)}</span>
+                          </button>
+                          <div class="qah-children">
+                            ${(item.children||[]).map(child=>{
+                              const childQuestions=questionsFor(child);
+                              const panelId=`qah-child-${gi}-${normalize(branch.title).replace(/[^\p{L}\p{N}]+/gu,"-")}-${normalize(group.title).replace(/[^\p{L}\p{N}]+/gu,"-")}-${normalize(item.name).replace(/[^\p{L}\p{N}]+/gu,"-")}-${normalize(child).replace(/[^\p{L}\p{N}]+/gu,"-")}`;
+                              return `
+                              <div class="qah-child-wrap" data-category="${esc(child)}">
+                                <button class="qah-child" type="button" aria-expanded="false" aria-controls="${esc(panelId)}">
+                                  <span>${esc(child)}</span>
+                                  <span class="qah-child-count">${childQuestions.length} إجابة</span>
+                                </button>
+                                <div class="qah-child-questions" id="${esc(panelId)}">
+                                  ${childQuestions.map(q=>`
+                                    <a class="qah-child-question" href="${esc(q.url)}">
+                                      <small>سؤال رقم ${esc(q.id)}</small>
+                                      ${esc(q.question)}
+                                    </a>`).join("")}
+                                </div>
+                              </div>`;
+                            }).join("")}
+                          </div>
+                        </article>`).join("")}
+                    </div>
+                  </section>`).join("")}
+              </div>
+            </section>`).join("")}
+        </div>
+      </section>`).join("");
+
+    root.querySelectorAll(".qah-gate-head").forEach(btn=>{
+      btn.setAttribute("aria-expanded","false");
+      btn.addEventListener("click",()=>{
+        const el=btn.closest(".qah-gate");
+        const open=!el.classList.contains("open");
+        el.classList.toggle("open",open);
+        btn.setAttribute("aria-expanded",open?"true":"false");
+      });
+    });
+    root.querySelectorAll(".qah-branch-head").forEach(btn=>{
+      btn.setAttribute("aria-expanded","false");
+      btn.addEventListener("click",()=>{
+        const el=btn.closest(".qah-branch");
+        const open=!el.classList.contains("open");
+        el.classList.toggle("open",open);
+        btn.setAttribute("aria-expanded",open?"true":"false");
+      });
+    });
+    root.querySelectorAll(".qah-item-head").forEach(btn=>{
+      btn.setAttribute("aria-expanded","false");
+      btn.addEventListener("click",()=>{
+        const el=btn.closest(".qah-item");
+        const open=!el.classList.contains("open");
+        el.classList.toggle("open",open);
+        btn.setAttribute("aria-expanded",open?"true":"false");
+      });
+    });
+    root.querySelectorAll(".qah-child").forEach(btn=>btn.addEventListener("click",()=>{
+      const wrap=btn.closest(".qah-child-wrap");
+      const open=!wrap.classList.contains("open");
+      wrap.classList.toggle("open",open);
+      btn.setAttribute("aria-expanded",open?"true":"false");
+    }));
+  }
+
+  function selectedGateLabel(){
+    const active=root.querySelector('.qah-gate-filter[aria-pressed="true"]');
+    return active ? active.textContent.trim() : "الكل";
+  }
+
+  function search(){
+    const rawQuery=root.querySelector("#qahSearchInput").value;
+    const tokens=queryTokens(rawQuery);
+    const q=tokens.join(" ");
+    const gates=[...root.querySelectorAll(".qah-gate")];
+
+    gates.forEach(gate=>{
+      const gateAllowed=!selectedGate || gate.dataset.gate===selectedGate;
+      if(!gateAllowed){
+        gate.style.display="none";
+        return;
+      }
+
+      if(!tokens.length){
+        gate.style.display="";
+        gate.querySelectorAll(".qah-branch,.qah-group,.qah-item").forEach(el=>el.style.display="");
+        return;
+      }
+
+      let gateHit=matchesTokens(gate.dataset.search,tokens);
+      gate.querySelectorAll(".qah-branch").forEach(branch=>{
+        let branchHit=matchesTokens(branch.dataset.search,tokens);
+        branch.querySelectorAll(".qah-group").forEach(group=>{
+          let groupHit=matchesTokens(group.dataset.search,tokens);
+          let anyItem=false;
+          group.querySelectorAll(".qah-item").forEach(item=>{
+            const hit=matchesTokens(item.dataset.search,tokens);
+            item.style.display=(hit||groupHit||branchHit||gateHit)?"":"none";
+            if(hit){item.classList.add("open");anyItem=true;}
+          });
+          const show=groupHit||anyItem||branchHit||gateHit;
+          group.style.display=show?"":"none";
+          if(show) branchHit=true;
+        });
+        branch.style.display=(branchHit||gateHit)?"":"none";
+        if(branchHit){branch.classList.add("open");gateHit=true;}
+      });
+      gate.style.display=gateHit?"":"none";
+      if(gateHit) gate.classList.add("open");
+    });
+
+    const rows=qaData.filter(item=>{
+      if(selectedGate && item.gate!==selectedGate) return false;
+      if(!tokens.length) return true;
+      const searchable=[
+        item.question,item.summary,item.gate,item.branch,item.group,item.category,item.subcategory,...item.tags
+      ].join(" ");
+      return matchesTokens(searchable,tokens);
+    });
+
+    const gateLabel=selectedGateLabel();
+    if(tokens.length){
+      latestTitle.textContent=selectedGate
+        ? `نتائج البحث — ${gateLabel} (${rows.length.toLocaleString("ar")})`
+        : `نتائج البحث (${rows.length.toLocaleString("ar")})`;
+    }else{
+      latestTitle.textContent=selectedGate
+        ? `أحدث الأسئلة والأجوبة — ${gateLabel}`
+        : "أحدث الأسئلة والأجوبة";
+    }
+
+    latestPage=1;
+    mostReadPage=1;
+    renderLatest(rows,latestPage);
+    renderMostRead(mostReadPage);
+  }
+
+  root.querySelector("#qahBranchTotal").textContent=branchCount();
+  root.querySelector("#qahCategoryTotal").textContent=categoryCount();
+  root.querySelector("#qahSearchBtn").addEventListener("click",search);
+  root.querySelector("#qahSearchInput").addEventListener("input",search);
+  root.querySelector("#qahSearchInput").addEventListener("keydown",event=>{
+    if(event.key==="Enter"){
+      event.preventDefault();
+      search();
+    }
+  });
+  root.querySelector("#qahClearSearch").addEventListener("click",()=>{root.querySelector("#qahSearchInput").value="";search();});
+  root.querySelectorAll(".qah-gate-filter").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      selectedGate=btn.dataset.gate||"";
+      root.querySelectorAll(".qah-gate-filter").forEach(item=>{
+        const active=item===btn;
+        item.classList.toggle("active",active);
+        item.setAttribute("aria-pressed",active?"true":"false");
+      });
+      search();
+    });
+  });
+  root.querySelector("#qahExpandAll").addEventListener("click",()=>{
+    root.querySelectorAll(".qah-gate,.qah-branch,.qah-item").forEach(el=>el.classList.add("open"));
+    root.querySelectorAll(".qah-gate-head,.qah-branch-head,.qah-item-head").forEach(btn=>btn.setAttribute("aria-expanded","true"));
+  });
+  root.querySelector("#qahCollapseAll").addEventListener("click",()=>{
+    root.querySelectorAll(".qah-gate,.qah-branch,.qah-item").forEach(el=>el.classList.remove("open"));
+    root.querySelectorAll(".qah-gate-head,.qah-branch-head,.qah-item-head").forEach(btn=>btn.setAttribute("aria-expanded","false"));
+  });
+
+  async function loadMostReadViews(){
+    try{
+      const response=await fetch("qa/most-read.json",{cache:"no-store"});
+      if(!response.ok) throw new Error("most-read.json");
+      const payload=await response.json();
+      const rows=Array.isArray(payload)?payload:(Array.isArray(payload.items)?payload.items:[]);
+      const viewsById=new Map(
+        rows
+          .filter(row=>row && row.id!=null && Number.isFinite(Number(row.views)))
+          .map(row=>[String(row.id).padStart(3,"0"),Number(row.views)])
+      );
+
+      qaData.forEach(question=>{
+        const id=String(question.id).padStart(3,"0");
+        question.views=viewsById.has(id)?viewsById.get(id):null;
+      });
+    }catch(error){
+      qaData.forEach(question=>{question.views=null;});
+    }
+    renderMostRead();
+  }
+
+  renderTree();
+  renderLatest();
+  renderMostRead();
+  loadMostReadViews();
+})();
+/* ═══ نهاية نظام سؤال وجواب ═══ */
+
 </script>
 <script>
 function toggleNasheed(){
@@ -7365,7 +8714,7 @@ function checkForUpdates(){
 <script>
 (function(){
   var MANIFEST_URL = 'articles-manifest.json';
-  var SEEN_KEY = 'suljuki_downloaded_articles_v1';
+  var SEEN_KEY = 'suljuki_downloaded_content_v2';
   var CACHE_NAME = 'suljuki-v16';
   var dlCard = document.getElementById('dlCard');
   var dlTitle = document.getElementById('dlTitle');
@@ -7379,16 +8728,25 @@ function checkForUpdates(){
   function saveSeen(list){
     try{ localStorage.setItem(SEEN_KEY, JSON.stringify(list)); }catch(e){}
   }
-  async function findMissing(articles){
-    if(!Array.isArray(articles) || articles.some(function(a){ return typeof a !== 'string' || !a; })){
-      throw new Error('Invalid articles manifest');
+  function getContentList(data){
+    var articles = Array.isArray(data && data.articles) ? data.articles : [];
+    var questions = Array.isArray(data && data.questions) ? data.questions : [];
+    var all = articles.concat(questions);
+    if(all.some(function(u){ return typeof u !== 'string' || !u; })){
+      throw new Error('Invalid content manifest');
+    }
+    return all;
+  }
+  async function findMissing(urls){
+    if(!Array.isArray(urls)){
+      throw new Error('Invalid content list');
     }
     var cache = await caches.open(CACHE_NAME);
     var seen = [], missing = [];
-    for(var i = 0; i < articles.length; i++){
-      var articleUrl = articles[i];
-      if(await cache.match(articleUrl)) seen.push(articleUrl);
-      else missing.push(articleUrl);
+    for(var i = 0; i < urls.length; i++){
+      var contentUrl = urls[i];
+      if(await cache.match(contentUrl)) seen.push(contentUrl);
+      else missing.push(contentUrl);
     }
     saveSeen(seen);
     return missing;
@@ -7396,19 +8754,19 @@ function checkForUpdates(){
   function showDlCard(){ dlCard.classList.add('show'); }
   window.dismissDlCard = function(){ dlCard.classList.remove('show'); };
 
-  // يحفظ الملفات مباشرة في نظام التخزين (Cache Storage) دون انتظار عامل الخدمة،
-  // لضمان توفّرها فوراً بلا إنترنت بغض النظر عن توقيت تفعيل عامل الخدمة
+  // يحفظ المقالات والأسئلة والأجوبة مباشرة في Cache Storage،
+  // لضمان توفرها للقراءة بلا إنترنت بعد التحميل.
   async function downloadList(urls, silent){
     if(!urls.length){
       if(!silent){
         dlTitle.textContent = 'الموسوعة محدَّثة بالفعل ✅';
-        dlSub.textContent = 'كل المقالات محمَّلة مسبقاً على جهازك';
+        dlSub.textContent = 'كل المقالات والأسئلة والأجوبة محمَّلة مسبقاً على جهازك';
         showDlCard();
         setTimeout(function(){ dlCard.classList.remove('show'); }, 3000);
       }
       return;
     }
-    if(!silent){ dlTitle.textContent = 'جاري تحميل المقالات الجديدة...'; showDlCard(); }
+    if(!silent){ dlTitle.textContent = 'جاري تحميل المحتوى الجديد...'; showDlCard(); }
     var cache = await caches.open(CACHE_NAME);
     var seen = getSeen();
     var okCount = 0;
@@ -7433,16 +8791,17 @@ function checkForUpdates(){
     }
     saveSeen(seen);
     if(!silent){
-      dlTitle.textContent = failedCount ? 'لم يكتمل تحميل جميع المقالات' : 'اكتمل التحميل ✅';
-      dlSub.textContent = okCount + ' مقالاً جديداً أصبح متاحاً بلا إنترنت';
+      dlTitle.textContent = failedCount ? 'لم يكتمل تحميل جميع الملفات' : 'اكتمل التحميل ✅';
+      dlSub.textContent = okCount + ' ملفاً جديداً أصبح متاحاً بلا إنترنت';
       if(failedCount){
-        dlSub.textContent += ' — تعذّر تحميل ' + failedCount + ' مقالاً. اضغط زر التحميل للمحاولة مجدداً.';
+        dlSub.textContent += ' — تعذّر تحميل ' + failedCount + ' ملفاً. اضغط زر التحميل للمحاولة مجدداً.';
       }else{
         setTimeout(function(){ dlCard.classList.remove('show'); }, 3500);
       }
     }
   }
 
+  // نبقي الاسم القديم للدالة حفاظاً على توافق زر التحميل الموجود في الصفحة.
   window.downloadAllArticles = async function(){
     if(downloading) return;
     downloading = true;
@@ -7451,7 +8810,7 @@ function checkForUpdates(){
       var res = await fetch(MANIFEST_URL + '?v=' + Date.now(), {cache:'no-store'});
       if(!res.ok) throw new Error('Manifest request failed');
       var data = await res.json();
-      var toDownload = await findMissing(data.articles);
+      var toDownload = await findMissing(getContentList(data));
       await downloadList(toDownload, false);
     }catch(e){
       dlTitle.textContent = 'تعذّر التحميل';
@@ -7463,40 +8822,47 @@ function checkForUpdates(){
     dlBtn.style.opacity = '1';
   };
 
-  // تحديث تلقائي صامت: عند فتح الموسوعة وبوجود إنترنت، يُنزَّل فقط ما هو جديد لم يُحمَّل من قبل
+  // تحديث تلقائي صامت + جرس واحد للمقالات والأسئلة والأجوبة.
   if(navigator.onLine){
-    fetch(MANIFEST_URL + '?v=' + Date.now(), {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error('Manifest request failed'); return r.json(); }).then(async function(data){
-      // مقارنة نسخة الصفحة الحالية المعروضة في المتصفح بنسخة الملف الحيّ على الخادم
-      // إذا كانت أحدث، تظهر شارة تُنبّه الزائر بوجود مقالات جديدة لم تظهر بعد في هذه الصفحة المخزَّنة مؤقتاً
-      var pageVersion = parseInt(document.body.getAttribute('data-manifest-version') || '0', 10);
-      var liveVersion = parseInt(data.version || 0, 10);
-      var LAST_ACK_VERSION_KEY = 'suljuki_last_ack_version_v1';
-      var savedAckVersion = null;
-      try{
-        var rawAckVersion = localStorage.getItem(LAST_ACK_VERSION_KEY);
-        if(rawAckVersion !== null) savedAckVersion = parseInt(rawAckVersion || '0', 10) || 0;
-      }catch(e){}
-      window.__liveManifestVersion = liveVersion;
+    fetch(MANIFEST_URL + '?v=' + Date.now(), {cache:'no-store'}).then(function(r){
+      if(!r.ok) throw new Error('Manifest request failed');
+      return r.json();
+    }).then(async function(data){
+      var pageArticleVersion = parseInt(document.body.getAttribute('data-manifest-version') || '0', 10) || 0;
+      var pageQuestionsVersion = parseInt(document.body.getAttribute('data-questions-version') || '0', 10) || 0;
+      var liveArticleVersion = parseInt(data.version || 0, 10) || 0;
+      var liveQuestionsVersion = parseInt(data.questionsVersion || 0, 10) || 0;
+
+      // مفتاح واحد موحّد: يتغير إذا أضيف مقال أو سؤال جديد.
+      var pageReleaseKey = pageArticleVersion + ':' + pageQuestionsVersion;
+      var liveReleaseKey = liveArticleVersion + ':' + liveQuestionsVersion;
+      var LAST_ACK_RELEASE_KEY = 'suljuki_last_ack_release_v2';
+      var savedAckRelease = null;
+      try{ savedAckRelease = localStorage.getItem(LAST_ACK_RELEASE_KEY); }catch(e){}
+
+      window.__liveReleaseKey = liveReleaseKey;
       window.acknowledgeLatestVersion = function(){
-        var acknowledgedVersion = parseInt(window.__liveManifestVersion || pageVersion || 0, 10) || 0;
-        try{ localStorage.setItem(LAST_ACK_VERSION_KEY, String(acknowledgedVersion)); }catch(e){}
+        var acknowledged = window.__liveReleaseKey || pageReleaseKey;
+        try{ localStorage.setItem(LAST_ACK_RELEASE_KEY, String(acknowledged)); }catch(e){}
         var badge = document.getElementById('newBadge');
         if(badge) badge.classList.remove('show');
       };
-      // يعتمد الجرس على آخر إصدار أقرّ المستخدم برؤيته، لا على نسخة الصفحة المخزنة فقط.
-      // عند ترقية الأجهزة القديمة إلى هذا المنطق لأول مرة، يظهر الجرس مرة واحدة حتى يقرّ المستخدم بالتحديث.
-      if(savedAckVersion === null || liveVersion > savedAckVersion){
+
+      if(savedAckRelease === null || liveReleaseKey !== savedAckRelease){
         var badge = document.getElementById('newBadge');
         if(badge) badge.classList.add('show');
       }
+
       if(downloading) return;
       downloading = true;
       try{
-        var newOnes = await findMissing(data.articles);
+        var newOnes = await findMissing(getContentList(data));
         if(newOnes.length && newOnes.length <= 15){
           await downloadList(newOnes, true);
         }
-      }finally{ downloading = false; }
+      }finally{
+        downloading = false;
+      }
     }).catch(function(){});
   }
 })();
