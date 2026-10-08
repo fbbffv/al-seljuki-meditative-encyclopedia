@@ -12,8 +12,10 @@ gtag('config', 'G-1Y000RD20N');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Sheikh Ali Khalil Abbas Al-Seljuki Al-Turkamani Al-Laylani">
 <meta name="robots" content="index, follow">
+<meta name="description" content="The English-language extension of Al-Seljuki Meditative Encyclopedia, presenting selected translated articles from the original Arabic encyclopedia.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Al-Seljuki Meditative Encyclopedia | English Section">
+<meta property="og:description" content="A refined English gateway to selected translated content from Al-Seljuki Meditative Encyclopedia.">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Al-Seljuki Meditative Encyclopedia">
 <meta property="og:image" content="https://fbbffv.github.io/al-seljuki-meditative-encyclopedia/icon.png">
@@ -21,379 +23,239 @@ gtag('config', 'G-1Y000RD20N');
 <link href="https://fonts.googleapis.com/css2?family=Amiri+Display&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#1c2733; --parch:#FFFFFF; --gold:#5c4408; --gold-l:#D4AF37; --gold-lt:#E8CD6E;
-  --night:#0A192F; --line:rgba(212,175,55,.7);
+  --surface:#FFFDF8;--surface-2:#F1E9D8;--ink:#091522;--muted:#2B3947;
+  --navy:#061524;--navy-2:#0B2B49;--gold:#5A3D00;--gold-2:#D4AF37;--gold-soft:#FFF1A8;
+  --burgundy:#6A2039;--emerald:#155B4A;--royal:#184F85;--line:#8A6718;
+  --shadow:0 18px 48px rgba(6,21,36,.11);
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 body{
-  background:var(--parch);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.85;font-weight:600;
-  font-feature-settings:"kern" 1,"liga" 1,"calt" 1;
-  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
-  background-image:none;
+  min-height:100vh;overflow-x:hidden;
+  background:
+    radial-gradient(circle at 8% -2%,rgba(212,175,55,.13),transparent 28rem),
+    radial-gradient(circle at 94% 14%,rgba(24,79,133,.10),transparent 30rem),
+    linear-gradient(180deg,#FBF8F2 0%,#F4EEE3 52%,#F8F4EC 100%);
+  color:var(--ink);font-family:'Cairo',sans-serif;font-weight:600;line-height:1.9;
 }
-body.dark{--ink:#E8CD6E;--parch:#08111f;background:#08111f;}
-body.dark .branch{background:rgba(13,27,42,.85) !important;}
-body.dark .intro{background:rgba(13,27,42,.7) !important;color:#E8CD6E !important;}
-body.sepia{--ink:#0A192F;--parch:#F4ECD8;background:#F4ECD8;}
-body.sepia .branch{background:rgba(255,255,255,.7) !important;}
-.hdr{background:var(--night);padding:28px 20px;text-align:center;border-bottom:3px solid var(--gold-l);position:sticky;top:0;z-index:200;}
-.hdr h1{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:clamp(1.3rem,2.5vw + 0.4rem,2.3rem);font-weight:800;margin-bottom:8px;text-shadow:0 1px 3px rgba(0,0,0,.5);}
-.hdr p{color:#cbd5e1;font-size:.9rem;}
-.lang-links{margin-top:14px;display:flex;gap:10px;justify-content:center;}
-.lang-btn{display:inline-block;color:var(--gold-lt);font-size:.85rem;text-decoration:none;border:1px solid rgba(212,178,90,.65);padding:7px 18px;border-radius:20px;font-weight:600;transition:background .2s;}
-.hdr-top-bar{display:flex;justify-content:space-between;align-items:center;max-width:760px;margin:0 auto 14px;}
-.back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--gold-lt);font-size:.85rem;text-decoration:none;border:1px solid rgba(212,178,90,.65);padding:7px 16px;border-radius:20px;font-weight:600;background:rgba(212,178,90,.08);transition:background .2s;}
-.back-btn:hover{background:rgba(212,178,90,.22);}
-.modes{display:flex;gap:6px;}
-.mode-btn{width:36px;height:36px;border-radius:9px;border:1px solid rgba(212,178,90,.7);background:rgba(212,178,90,.08);color:var(--gold-lt);cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
-.mode-btn:hover,.mode-btn.on{background:rgba(212,178,90,.24);}
-.lang-btn:hover{background:rgba(212,178,90,.15);}
-.lang-btn.active{background:var(--gold-l);color:var(--night);}
-
-.wrap{max-width:820px;margin:0 auto;padding:44px 20px 70px;}
-
-.intro{background:rgba(255,255,255,.92);border:1.5px solid var(--line);border-radius:14px;padding:26px 30px;margin-bottom:32px;text-align:center;box-shadow:0 4px 20px rgba(10,25,47,.14);}
-.intro h2{font-family:'Amiri Display',serif;color:var(--gold);font-size:1.2rem;margin-bottom:10px;}
-.intro p{font-size:clamp(.96rem,1vw + 0.2rem,1.1rem);line-height:1.9;color:var(--ink);font-weight:600;}
-
-.branch{background:#fff;border:1.5px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;box-shadow:0 4px 16px rgba(10,25,47,.1);}
-.branch-h{background:var(--night);color:#fff;padding:15px 22px;font-family:'Amiri Display',serif;font-size:1.02rem;font-weight:700;display:flex;align-items:center;justify-content:space-between;}
-.branch-status{font-size:.7rem;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:12px;font-weight:600;}
-.branch-body{padding:16px 22px;color:#3d4b5c;font-size:.88rem;font-style:italic;font-weight:600;}
-
-.notify-box{background:linear-gradient(135deg,var(--night),#152a45);border:2px solid var(--gold-l);border-radius:16px;padding:32px 28px;text-align:center;margin-top:34px;}
-.notify-box h3{font-family:'Amiri Display',serif;color:var(--gold-lt);font-size:1.15rem;margin-bottom:12px;}
-.notify-box p{color:#e2e8f0;font-size:.92rem;line-height:1.9;margin-bottom:18px;}
-.contact-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
-.contact-btn{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.08);color:var(--gold-lt);text-decoration:none;padding:9px 20px;border-radius:22px;font-size:.85rem;font-weight:700;border:1px solid var(--gold-l);transition:background .2s;}
-.contact-btn:hover{background:rgba(255,255,255,.18);}
-
-footer{background:var(--night);color:#f8fafc;text-align:center;padding:26px 20px;font-size:.85rem;border-top:3px solid var(--gold-l);margin-top:30px;}
-footer .fb{font-family:'Amiri Display',serif;font-size:1.02rem;margin-bottom:6px;font-weight:800;color:var(--gold-l);}
-
+body.dark{
+  --surface:#0B1624;--surface-2:#11253A;--ink:#FFFFFF;--muted:#D7E1EC;
+  --navy:#020711;--navy-2:#0A2745;--gold:#FFD45A;--gold-2:#D4AF37;--gold-soft:#FFF4B0;
+  --burgundy:#E8A0B5;--emerald:#79D8BA;--royal:#79BFFF;--line:#D4AF37;
+  background:
+    radial-gradient(circle at 8% -2%,rgba(255,212,90,.08),transparent 28rem),
+    radial-gradient(circle at 94% 14%,rgba(57,169,255,.08),transparent 30rem),
+    linear-gradient(180deg,#040911 0%,#07111F 52%,#050B13 100%);
+  color-scheme:dark;
+}
+body.sepia{
+  --surface:#FFF8E8;--surface-2:#E7D5B2;--ink:#17100B;--muted:#3B3025;
+  --navy:#3A1020;--navy-2:#5B1B31;--gold:#5A2B00;--gold-2:#B87900;--gold-soft:#FFF0A8;
+  --burgundy:#71324A;--emerald:#315C4D;--royal:#5B4A3A;--line:#8A6200;
+  background:radial-gradient(circle at 10% 0%,rgba(138,98,0,.12),transparent 28rem),linear-gradient(180deg,#F8EFDE 0%,#F0E1C4 100%);
+  color-scheme:light;
+}
+a,button{font:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #005FCC;outline-offset:3px}
+body.dark a:focus-visible,body.dark button:focus-visible{outline-color:#FFD45A}
+.skip-link{position:fixed;top:10px;left:10px;z-index:9999;transform:translateY(-180%);padding:10px 16px;border:2px solid #FFD45A;border-radius:10px;background:#061524;color:#fff;font-weight:900;text-decoration:none}
+.skip-link:focus{transform:translateY(0)}
+.hdr{position:sticky;top:0;z-index:500;background:radial-gradient(circle at 18% 0%,rgba(255,212,90,.13),transparent 18rem),linear-gradient(135deg,var(--navy),var(--navy-2));border-bottom:2px solid var(--gold-2);box-shadow:0 8px 30px rgba(0,0,0,.22)}
+.hdr-inner{width:min(1180px,calc(100% - 28px));min-height:76px;margin:auto;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px}
+.back-btn{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:8px 16px;border:1.5px solid var(--gold-2);border-radius:999px;background:rgba(255,255,255,.06);color:var(--gold-soft);font-weight:900;cursor:pointer}
+.back-btn:hover{background:rgba(255,255,255,.12)}
+.brand{min-width:0;text-align:center;color:#fff}
+.brand strong{display:block;font-family:'Amiri Display',serif;font-size:clamp(1.08rem,2.2vw,1.65rem);color:var(--gold-soft);line-height:1.25}
+.brand span{display:block;margin-top:2px;color:#fff;font-size:.68rem;opacity:.92}
+.modes{display:flex;gap:7px}
+.mode-btn{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--gold-2);border-radius:12px;background:rgba(255,255,255,.06);color:var(--gold-soft);cursor:pointer;font-size:1rem}
+.mode-btn:hover,.mode-btn.on{background:var(--gold-2);color:#07111F}
+.hero{position:relative;overflow:hidden;isolation:isolate;background:
+linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px),
+radial-gradient(circle at 16% 18%,rgba(255,212,90,.16),transparent 25rem),
+radial-gradient(circle at 84% 82%,rgba(80,170,230,.13),transparent 24rem),
+linear-gradient(135deg,#04111F 0%,#0A2B52 55%,#061625 100%);
+background-size:38px 38px,38px 38px,auto,auto,auto;color:#fff;border-bottom:1px solid rgba(212,175,55,.6)}
+.hero::before,.hero::after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(255,212,90,.18);transform:rotate(45deg);z-index:-1}
+.hero::before{top:-112px;right:-72px} .hero::after{bottom:-122px;left:-82px}
+.hero-inner{width:min(1080px,calc(100% - 32px));margin:auto;text-align:center;padding:68px 0 54px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#FFF4B0;font-size:.8rem;font-weight:900;letter-spacing:.05em;margin-bottom:9px}
+.eyebrow::before,.eyebrow::after{content:"✦";color:#FFD45A}
+.hero h1{font-family:'Amiri Display',serif;font-size:clamp(2.15rem,5.5vw,4.5rem);line-height:1.25;font-weight:900;color:#fff}
+.hero h1 span{color:#FFD45A}
+.hero p{max-width:820px;margin:15px auto 0;color:#fff;font-size:clamp(.98rem,1.2vw,1.14rem);line-height:1.95;font-weight:700}
+.lang-links{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:22px}
+.lang-btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:8px 16px;border:1.5px solid #D4AF37;border-radius:999px;background:#10283C;color:#FFF4B0;text-decoration:none;font-size:.78rem;font-weight:900}
+.lang-btn:hover{background:#173B5A} .lang-btn.active{background:#FFD45A;color:#07111F;border-color:#FFD45A}
+.wrap{width:min(1080px,calc(100% - 28px));margin:0 auto;padding:48px 0 76px}
+.intro{position:relative;overflow:hidden;text-align:center;background:radial-gradient(circle at 90% 10%,rgba(212,175,55,.08),transparent 12rem),linear-gradient(145deg,var(--surface),color-mix(in srgb,var(--surface) 86%,var(--surface-2) 14%));border:1.5px solid var(--line);border-radius:24px;padding:32px 30px;margin-bottom:30px;box-shadow:var(--shadow)}
+.intro::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold-2),var(--burgundy),var(--royal),var(--gold-2))}
+.intro h2{font-family:'Amiri Display',serif;color:var(--gold);font-size:clamp(1.45rem,2.8vw,2.05rem);line-height:1.4;font-weight:900;margin-bottom:12px}
+.intro p{max-width:78ch;margin:0 auto;color:var(--ink);font-size:clamp(.96rem,1vw + .18rem,1.08rem);line-height:2;font-weight:650}
+.branch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.branch{position:relative;overflow:hidden;min-height:180px;display:flex;flex-direction:column;background:var(--surface);border:1.5px solid var(--branch-line,var(--line));border-radius:22px;box-shadow:0 14px 36px rgba(6,21,36,.08)}
+.branch:nth-child(1){--branch-a:#0F467A;--branch-b:#153A5E;--branch-line:#1A568E}
+.branch:nth-child(2){--branch-a:#5A2A46;--branch-b:#71324A;--branch-line:#7A3C57}
+.branch:nth-child(3){--branch-a:#165748;--branch-b:#1F6A58;--branch-line:#2D715F}
+.branch:nth-child(4){--branch-a:#6A4710;--branch-b:#7C5A19;--branch-line:#8B671D}
+.branch:nth-child(5){--branch-a:#3B3D6F;--branch-b:#4D4F84;--branch-line:#5E6096}
+.branch:nth-child(6){--branch-a:#274A57;--branch-b:#315E6B;--branch-line:#3A7180}
+.branch-h{min-height:74px;background:linear-gradient(135deg,var(--branch-a),var(--branch-b));color:#fff;padding:18px 20px;font-family:'Amiri Display',serif;font-size:clamp(1.05rem,1.6vw,1.28rem);font-weight:900;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.branch-status{flex:0 0 auto;display:inline-flex;align-items:center;min-height:32px;padding:4px 10px;border:1px solid #FFF4B0;border-radius:999px;background:#071727;color:#FFF4B0;font-family:'Cairo',sans-serif;font-size:.68rem;font-weight:900}
+.branch-body{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px 20px;background:linear-gradient(145deg,var(--surface),var(--surface-2));color:var(--ink);font-size:.9rem;font-style:normal;line-height:1.9;font-weight:700}
+.notify-box{position:relative;overflow:hidden;text-align:center;margin-top:34px;padding:34px 28px;border:1.5px solid var(--gold-2);border-radius:24px;background:radial-gradient(circle at 14% 18%,rgba(255,212,90,.12),transparent 15rem),linear-gradient(135deg,var(--navy),var(--navy-2));box-shadow:0 18px 46px rgba(6,21,36,.16)}
+.notify-box h3{font-family:'Amiri Display',serif;color:var(--gold-soft);font-size:clamp(1.35rem,2.6vw,1.95rem);font-weight:900;margin-bottom:10px}
+.notify-box p{max-width:720px;margin:0 auto 18px;color:#fff;font-size:.94rem;line-height:1.9;font-weight:700}
+.contact-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.contact-btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 18px;border:1.5px solid var(--gold-2);border-radius:999px;background:rgba(255,255,255,.06);color:var(--gold-soft);text-decoration:none;font-size:.82rem;font-weight:900}
+.contact-btn:hover{background:rgba(255,255,255,.12)}
+.to-top-btn{position:fixed;right:6px;bottom:20px;z-index:450;width:32px;height:40px;border:0;background:transparent;color:var(--gold);font-size:1.45rem;font-weight:900;cursor:pointer;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(8px);transition:opacity .2s,transform .2s,color .2s;text-shadow:0 2px 8px rgba(0,0,0,.18)}
+.to-top-btn.show{opacity:.95;visibility:visible;pointer-events:auto;transform:none} .to-top-btn:hover{color:var(--burgundy)} body.dark .to-top-btn{color:#FFF4B0}
+footer{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center;padding:30px 20px 36px;border-top:2px solid var(--gold-2);margin-top:24px}
+footer .fb{font-family:'Amiri Display',serif;font-size:1.08rem;font-weight:900;color:var(--gold-soft);margin-bottom:5px}
+footer .fb span{color:var(--gold-soft)!important} footer p{font-size:.8rem;color:#fff}
+::selection{background:#163F6B;color:#fff} body.dark ::selection{background:#FFD45A;color:#07111F} body.sepia ::selection{background:#71324A;color:#fff}
+@media(max-width:820px){.branch-grid{grid-template-columns:1fr}}
 @media(max-width:640px){
-.branch-h{flex-direction:column;gap:6px;text-align:center;}
+  .hdr-inner{grid-template-columns:auto 1fr auto;gap:8px;min-height:82px}
+  .back-btn{width:44px;padding:0;font-size:0} .back-btn::before{content:"←";font-size:1.1rem}
+  .brand strong{font-size:1rem} .brand span{font-size:.6rem}
+  .mode-btn{width:42px;height:42px} .hero-inner{padding:50px 0 42px}
+  .wrap{width:calc(100% - 22px);padding-top:34px} .intro{padding:25px 18px}
+  .branch-h{flex-direction:column;text-align:center;justify-content:center}
 }
-@media screen and (min-width:1921px){body{font-size:20px;}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media(forced-colors:active){.intro,.branch,.notify-box,.back-btn,.mode-btn,.lang-btn,.contact-btn{forced-color-adjust:auto;border:2px solid CanvasText}}
 </style>
-
-<style id="final-global-accessibility-clarity">
-/* Final WCAG-oriented clarity/accessibility layer.
-   Content and JavaScript behavior are preserved. */
-html{
-  -webkit-text-size-adjust:100%;
-  text-size-adjust:100%;
-  scroll-behavior:smooth;
-}
-body{
-  font-weight:600;
-  line-height:1.9;
-  overflow-wrap:break-word;
-}
-a:focus-visible,
-button:focus-visible,
-[tabindex]:focus-visible{
-  outline:3px solid #005FCC !important;
-  outline-offset:3px !important;
-  box-shadow:0 0 0 2px #FFFFFF !important;
-}
-.a11y-skip-link{
-  position:fixed;
-  top:10px;
-  right:10px;
-  z-index:10000;
-  transform:translateY(-180%);
-  padding:10px 16px;
-  border:2px solid #FFD21A;
-  border-radius:10px;
-  background:#07111F;
-  color:#FFFFFF;
-  font-weight:800;
-  text-decoration:none;
-  box-shadow:0 4px 14px rgba(0,0,0,.25);
-}
-.a11y-skip-link:focus{
-  transform:translateY(0);
-}
-#main-content{scroll-margin-top:110px;}
-
-/* Ensure interactive controls remain comfortably touchable. */
-button,
-a.back-btn,
-a.home-link,
-a.lang-btn,
-a.contact-btn,
-.sbtn{
-  min-height:36px;
-}
-
-/* High-contrast light-mode text and controls */
-body:not(.dark):not(.sepia) .section p,
-body:not(.dark):not(.sepia) .mission-item p,
-body:not(.dark):not(.sepia) .branch-body,
-body:not(.dark):not(.sepia) .intro p,
-body:not(.dark):not(.sepia) .sm-links a{
-  color:#07111F !important;
-}
-body:not(.dark):not(.sepia) .section h2,
-body:not(.dark):not(.sepia) .intro h2,
-body:not(.dark):not(.sepia) .sm-group-name{
-  color:#6B4300 !important;
-}
-
-/* Dark mode */
-body.dark a,
-body.dark .section p,
-body.dark .mission-item p,
-body.dark .branch-body,
-body.dark .intro p,
-body.dark .sm-links a{
-  color:#FFFFFF !important;
-}
-body.dark .section h2,
-body.dark .intro h2,
-body.dark .sm-group-name{
-  color:#FFD21A !important;
-}
-
-/* Warm mode */
-body.sepia .section p,
-body.sepia .mission-item p,
-body.sepia .branch-body,
-body.sepia .intro p,
-body.sepia .sm-links a{
-  color:#17100B !important;
-}
-body.sepia .section h2,
-body.sepia .intro h2,
-body.sepia .sm-group-name{
-  color:#71324A !important;
-}
-
-/* Motion safety */
-@media (prefers-reduced-motion:reduce){
-  html{
-    scroll-behavior:auto !important;
-  }
-  *,
-  *::before,
-  *::after{
-    animation-duration:.01ms !important;
-    animation-iteration-count:1 !important;
-    transition-duration:.01ms !important;
-    scroll-behavior:auto !important;
-  }
-}
-
-/* Large-screen readability */
-@media screen and (min-width:1921px){
-  body{font-size:20px;}
-}
-
-/* Small-screen spacing and readable controls */
-@media (max-width:640px){
-  .hdr-top-bar{
-    gap:10px;
-    flex-wrap:wrap;
-  }
-  .wrap,
-  .sm-wrap{
-    width:100%;
-  }
-}
-</style>
-
 </head>
 <body>
-<a class="a11y-skip-link" href="#main-content">تجاوز إلى المحتوى الرئيسي</a>
-<main id="main-content">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div id="modeStatus" role="status" aria-live="polite" aria-atomic="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0"></div>
 
 <header class="hdr">
-<div class="hdr-top-bar" role="navigation" aria-label="التنقل الرئيسي">
-  <a href="../index.html" class="back-btn">→ Back</a>
-  <div class="modes">
-    <button class="mode-btn on" id="mLight" onclick="setMode('light')" title="Light">☀</button>
-    <button class="mode-btn" id="mSepia" onclick="setMode('sepia')" title="Sepia">◐</button>
-    <button class="mode-btn" id="mDark" onclick="setMode('dark')" title="Dark">☾</button>
+  <div class="hdr-inner">
+    <button class="back-btn" id="backBtn" type="button" aria-label="Go back">← Back</button>
+    <div class="brand"><strong>Al-Seljuki Meditative Encyclopedia</strong><span>English Knowledge Gateway</span></div>
+    <div class="modes" aria-label="Display modes">
+      <button class="mode-btn on" id="mLight" type="button" data-mode="light" aria-label="Light mode" title="Light mode">☀</button>
+      <button class="mode-btn" id="mSepia" type="button" data-mode="sepia" aria-label="Warm mode" title="Warm mode">◐</button>
+      <button class="mode-btn" id="mDark" type="button" data-mode="dark" aria-label="Dark mode" title="Dark mode">☾</button>
+    </div>
   </div>
-</div>
-<h1>◈ Al-Seljuki Meditative Encyclopedia</h1>
-<p>English Section — an extension of the original Arabic encyclopedia</p>
-<div class="lang-links">
-  <a href="../index.html" class="lang-btn">العربية (Original)</a>
-  <a href="index.html" class="lang-btn active">English</a>
-</div>
 </header>
 
-<div class="wrap">
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-inner">
+    <div class="eyebrow">English-language extension</div>
+    <h1 id="heroTitle">Al-Seljuki <span>Meditative Encyclopedia</span></h1>
+    <p>Selected translated content from the original Arabic encyclopedia, presented through a refined, accessible, and modern reading experience for non-Arabic-speaking readers.</p>
+    <div class="lang-links" aria-label="Language navigation">
+      <a href="../index.html" class="lang-btn">العربية (Original)</a>
+      <a href="index.html" class="lang-btn active" aria-current="page">English</a>
+    </div>
+  </div>
+</section>
 
-<div class="intro">
+<main id="main-content">
+  <div class="wrap">
+    <div class="intro">
 <h2>About This Section</h2>
 <p>This is the English-language extension of <strong>Al-Seljuki Meditative Encyclopedia</strong>, an Islamic scholarly encyclopedia authored by <strong>Sheikh Ali Khalil Abbas Al-Seljuki Al-Turkamani Al-Laylani</strong>. The Arabic encyclopedia remains the primary and authoritative source; this section presents selected articles translated into English to serve non-Arabic-speaking readers. New translated articles will be added here progressively.</p>
 </div>
-
-<!-- الأفرع (فارغة حالياً، جاهزة لاستقبال المقالات) -->
-<div class="branch">
-  <div class="branch-h">Quranic Exegesis &amp; Reflection <span class="branch-status">Coming Soon</span></div>
-  <div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
+    <div class="branch-grid"><div class="branch">
+<div class="branch-h">Quranic Exegesis &amp; Reflection <span class="branch-status">Coming Soon</span></div>
+<div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
 </div>
 <div class="branch">
-  <div class="branch-h">Prophetic Tradition &amp; Hadith Commentary <span class="branch-status">Coming Soon</span></div>
-  <div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
+<div class="branch-h">Prophetic Tradition &amp; Hadith Commentary <span class="branch-status">Coming Soon</span></div>
+<div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
 </div>
 <div class="branch">
-  <div class="branch-h">Quranic &amp; Prophetic Narratives <span class="branch-status">Coming Soon</span></div>
-  <div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
+<div class="branch-h">Quranic &amp; Prophetic Narratives <span class="branch-status">Coming Soon</span></div>
+<div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
 </div>
 <div class="branch">
-  <div class="branch-h">Islamic Jurisprudence &amp; Rulings <span class="branch-status">Coming Soon</span></div>
-  <div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
+<div class="branch-h">Islamic Jurisprudence &amp; Rulings <span class="branch-status">Coming Soon</span></div>
+<div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
 </div>
 <div class="branch">
-  <div class="branch-h">Islamic Governance &amp; Contemporary Affairs <span class="branch-status">Coming Soon</span></div>
-  <div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
+<div class="branch-h">Islamic Governance &amp; Contemporary Affairs <span class="branch-status">Coming Soon</span></div>
+<div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
 </div>
 <div class="branch">
-  <div class="branch-h">Spiritual Refinement &amp; Conduct <span class="branch-status">Coming Soon</span></div>
-  <div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
-</div>
-
-<div class="notify-box">
+<div class="branch-h">Spiritual Refinement &amp; Conduct <span class="branch-status">Coming Soon</span></div>
+<div class="branch-body">Translated articles for this section will appear here soon, in shā’ Allāh.</div>
+</div></div>
+    <div class="notify-box">
 <h3>More Translated Content Coming Soon</h3>
 <p>We are actively working with our translation team to bring more articles to this section. Follow us or reach out for updates.</p>
 <div class="contact-row">
 <a class="contact-btn" href="mailto:tahirnajim1987@gmail.com">✉ Email</a>
-<a class="contact-btn" href="https://wa.me/9647700610518" target="_blank" rel="noopener">💬 WhatsApp</a>
-<a class="contact-btn" href="https://t.me/MmMDKvcgvbbb" target="_blank" rel="noopener">📨 Telegram</a>
+<a class="contact-btn" href="https://wa.me/9647700610518" rel="noopener" target="_blank">💬 WhatsApp</a>
+<a class="contact-btn" href="https://t.me/MmMDKvcgvbbb" rel="noopener" target="_blank">📨 Telegram</a>
 </div>
 </div>
-
-</div>
-
+  </div>
 </main>
 
+<button class="to-top-btn" id="toTopBtn" type="button" aria-label="Back to top" title="Back to top">↑</button>
 <footer>
 <div class="fb">Al-Seljuki <span style="color:#E8CD6E;">Meditative Encyclopedia</span></div>
 <p>© All rights reserved to Ali Khalil Abbas Al-Seljuki Al-Turkamani Al-Laylani</p>
 </footer>
 
 <script>
-function setMode(m){
-  document.body.classList.remove('dark','sepia');
-  if(m!=='light') document.body.classList.add(m);
-  ['Light','Sepia','Dark'].forEach(function(x){
-    var el = document.getElementById('m'+x);
-    if(el) el.classList.toggle('on', x.toLowerCase()===m);
+(function(){
+  var MODE_KEY='seljukiEnglishMode';
+  function applyMode(mode,save){
+    if(['light','sepia','dark'].indexOf(mode)===-1) mode='light';
+    document.body.classList.remove('dark','sepia');
+    if(mode!=='light') document.body.classList.add(mode);
+    ['Light','Sepia','Dark'].forEach(function(name){
+      var btn=document.getElementById('m'+name);
+      if(btn){
+        var active=name.toLowerCase()===mode;
+        btn.classList.toggle('on',active);
+        btn.setAttribute('aria-pressed',active?'true':'false');
+      }
+    });
+    if(save!==false){
+      var status=document.getElementById('modeStatus');
+      if(status) status.textContent={light:'Light mode enabled',sepia:'Warm mode enabled',dark:'Dark mode enabled'}[mode]||'';
+      try{localStorage.setItem(MODE_KEY,mode);}catch(e){}
+    }
+  }
+  document.querySelectorAll('.mode-btn[data-mode]').forEach(function(btn){
+    btn.addEventListener('click',function(){applyMode(btn.dataset.mode,true);});
   });
-}
+  var saved='light';
+  try{saved=localStorage.getItem(MODE_KEY)||localStorage.getItem('seljukiMode')||'light';}catch(e){}
+  applyMode(saved,false);
+
+  var backBtn=document.getElementById('backBtn');
+  if(backBtn){
+    backBtn.addEventListener('click',function(){
+      var sameOrigin=false;
+      try{sameOrigin=document.referrer && new URL(document.referrer).origin===location.origin;}catch(e){}
+      if(sameOrigin || history.length>1){
+        history.back();
+        setTimeout(function(){if(document.visibilityState==='visible') location.href='../index.html';},700);
+      }else{location.href='../index.html';}
+    });
+  }
+
+  var toTopBtn=document.getElementById('toTopBtn');
+  if(toTopBtn){
+    function updateTop(){toTopBtn.classList.toggle('show',window.scrollY>320);}
+    window.addEventListener('scroll',updateTop,{passive:true});
+    window.addEventListener('pageshow',updateTop);
+    toTopBtn.addEventListener('click',function(){
+      window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    });
+    updateTop();
+  }
+})();
 </script>
-
-<style id="seljuki-english-luxury-modern-v2">
-/* Luxury / modern / high-contrast visual layer — content and structure preserved */
-:root{
-  --ink:#07111F !important;
-  --parch:#FFFFFF !important;
-  --gold:#6B4300 !important;
-  --gold-l:#FFD21A !important;
-  --gold-lt:#FFF1A6 !important;
-  --night:#071A33 !important;
-  --line:#B87900 !important;
-}
-body{background:#FFFFFF !important;color:#07111F !important;}
-body.dark{
-  --ink:#FFFFFF !important;--parch:#070D18 !important;
-  --gold:#FFD21A !important;--gold-l:#FFD21A !important;--gold-lt:#FFF4B0 !important;
-  --night:#050A12 !important;--line:#39A9FF !important;
-  background:#070D18 !important;color:#FFFFFF !important;
-}
-body.sepia{
-  --ink:#17100B !important;--parch:#FFF9ED !important;
-  --gold:#71324A !important;--gold-l:#FFD65A !important;--gold-lt:#FFF0B0 !important;
-  --night:#4A1830 !important;--line:#9A5A00 !important;
-  background:#FFF9ED !important;color:#17100B !important;
-}
-
-/* crisp rendering: no glow/shadow on text or interface */
-.hdr h1,.hdr p,.back-btn,.mode-btn,.lang-btn,.intro h2,.intro p,
-.branch-h,.branch-body,.branch-status,.notify-box h3,.notify-box p,
-.contact-btn,footer,.fb{ text-shadow:none !important; filter:none !important; opacity:1 !important; }
-
-/* Header */
-.hdr{background:#071A33 !important;border-bottom:3px solid #FFD21A !important;}
-.hdr h1{color:#FFD21A !important;}
-.hdr p{color:#FFFFFF !important;}
-.back-btn,.mode-btn,.lang-btn{color:#FFF1A6 !important;border-color:#FFD21A !important;background:#0D2B4A !important;}
-.back-btn:hover,.mode-btn:hover,.mode-btn.on,.lang-btn:hover{background:#16466F !important;}
-.lang-btn.active{background:#FFD21A !important;color:#07111F !important;}
-
-/* Light */
-.intro{background:#FFFFFF !important;border:2px solid #B87900 !important;box-shadow:none !important;}
-.intro h2{color:#6B4300 !important;}
-.intro p{color:#07111F !important;}
-.branch{background:#FFFFFF !important;border:2px solid #0A5CC8 !important;box-shadow:none !important;}
-.branch-h{background:#0A5CC8 !important;color:#FFFFFF !important;}
-.branch-status{background:#FFFFFF !important;color:#07111F !important;border:1px solid #FFFFFF !important;}
-.branch-body{background:#F2F7FF !important;color:#07111F !important;}
-.notify-box{background:#071A33 !important;border:2px solid #FFD21A !important;}
-.notify-box h3{color:#FFD21A !important;}
-.notify-box p{color:#FFFFFF !important;}
-.contact-btn{background:#0D2B4A !important;color:#FFF1A6 !important;border:2px solid #FFD21A !important;}
-.contact-btn:hover{background:#16466F !important;}
-footer{background:#071A33 !important;color:#FFFFFF !important;border-top:3px solid #FFD21A !important;}
-footer .fb{color:#FFD21A !important;}
-footer .fb span{color:#FFF1A6 !important;}
-
-/* Sepia */
-body.sepia .hdr{background:#4A1830 !important;border-bottom-color:#FFD65A !important;}
-body.sepia .hdr h1,body.sepia .hdr p{color:#FFF0B0 !important;}
-body.sepia .back-btn,body.sepia .mode-btn,body.sepia .lang-btn{color:#FFF0B0 !important;background:#672442 !important;border-color:#FFD65A !important;}
-body.sepia .back-btn:hover,body.sepia .mode-btn:hover,body.sepia .mode-btn.on,body.sepia .lang-btn:hover{background:#823055 !important;}
-body.sepia .lang-btn.active{background:#FFD65A !important;color:#17100B !important;}
-body.sepia .intro{background:#FFFDF7 !important;border-color:#9A5A00 !important;}
-body.sepia .intro h2{color:#71324A !important;}
-body.sepia .intro p{color:#17100B !important;}
-body.sepia .branch{background:#FFFDF7 !important;border-color:#9A5A00 !important;}
-body.sepia .branch-h{background:#71324A !important;color:#FFFFFF !important;}
-body.sepia .branch-status{background:#FFFFFF !important;color:#17100B !important;}
-body.sepia .branch-body{background:#FFF2C7 !important;color:#17100B !important;}
-body.sepia .notify-box{background:#4A1830 !important;border-color:#FFD65A !important;}
-body.sepia .notify-box h3{color:#FFD65A !important;}
-body.sepia .notify-box p{color:#FFFFFF !important;}
-body.sepia .contact-btn{background:#672442 !important;color:#FFF0B0 !important;border-color:#FFD65A !important;}
-body.sepia .contact-btn:hover{background:#823055 !important;}
-body.sepia footer{background:#4A1830 !important;color:#FFFFFF !important;border-top-color:#FFD65A !important;}
-body.sepia footer .fb{color:#FFD65A !important;}
-
-/* Dark */
-body.dark .hdr{background:#050A12 !important;border-bottom-color:#FFD21A !important;}
-body.dark .hdr h1{color:#FFD21A !important;}
-body.dark .hdr p{color:#FFFFFF !important;}
-body.dark .back-btn,body.dark .mode-btn,body.dark .lang-btn{background:#102B4A !important;color:#FFF4B0 !important;border-color:#39A9FF !important;}
-body.dark .back-btn:hover,body.dark .mode-btn:hover,body.dark .mode-btn.on,body.dark .lang-btn:hover{background:#16466F !important;}
-body.dark .lang-btn.active{background:#FFD21A !important;color:#07111F !important;}
-body.dark .intro{background:#0B1626 !important;border-color:#FFD21A !important;box-shadow:none !important;}
-body.dark .intro h2{color:#FFD21A !important;}
-body.dark .intro p{color:#FFFFFF !important;}
-body.dark .branch{background:#0B1626 !important;border-color:#39A9FF !important;box-shadow:none !important;}
-body.dark .branch-h{background:#123A73 !important;color:#FFFFFF !important;}
-body.dark .branch-status{background:#FFD21A !important;color:#07111F !important;border-color:#FFD21A !important;}
-body.dark .branch-body{background:#102B4A !important;color:#FFFFFF !important;}
-body.dark .notify-box{background:#071A33 !important;border-color:#FFD21A !important;}
-body.dark .notify-box h3{color:#FFD21A !important;}
-body.dark .notify-box p{color:#FFFFFF !important;}
-body.dark .contact-btn{background:#102B4A !important;color:#FFF4B0 !important;border-color:#39A9FF !important;}
-body.dark .contact-btn:hover{background:#16466F !important;}
-body.dark footer{background:#050A12 !important;color:#FFFFFF !important;border-top-color:#FFD21A !important;}
-body.dark footer .fb{color:#FFD21A !important;}
-body.dark footer .fb span{color:#FFF4B0 !important;}
-
-/* keyboard focus and non-text/UI contrast */
-a:focus-visible,button:focus-visible{
-  outline:3px solid #00A6FF !important;outline-offset:3px !important;
-  box-shadow:none !important;
-}
-</style>
-
 </body>
 </html>
