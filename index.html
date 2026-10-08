@@ -8541,6 +8541,7 @@ body.sepia .global-nav-box.is-current{
 <a class="bab-link c-agate" href="article199.html">٤. مسافرون في قطار الزمن… تدبّر في وصية «كأنك غريب»</a>
 <a class="bab-link c-agate" href="articles/article248.html">٥. 💰 بين مائة دينار وسخط القلب: حين تكثر الأموال وتضيق النفوس</a>
 <a class="bab-link c-agate" href="articles/article269.html">٦. حِينَ يَحْتَجِبُ الْجَلَالُ بِالنُّورِ</a>
+<a class="bab-link c-agate" href="articles/article365.html">٧. حين يفهم الإنسان أن الدنيا دار مكابدة، وأن الراحة الكاملة ليست هنا</a>
 </div><div class="bab-group c-sage">
 <div class="bab-head" onclick="toggleGate(this)">٣. باب أشراط الساعة والغيبيات <span class="bab-arrow">‹</span>
 </div>
@@ -9656,7 +9657,7 @@ window.addEventListener('scroll',function(){
     mostRead.innerHTML=ranked.slice(start,start+PAGE_SIZE).map((q,index)=>{
       const tags=(q.tags||[]).slice(0,3);
       return `
-      <article class="qah-card">
+      <article class="qah-card" data-href="${esc(q.url)}" role="link" tabindex="0" aria-label="فتح السؤال: ${esc(q.question)}">
         <div class="qah-card-kicker">المرتبة ${(start+index+1).toLocaleString("ar")} · ${q.views.toLocaleString("ar")} قراءة</div>
         <h4>${esc(q.question)}</h4>
         <div class="qah-card-meta">${esc(q.group)} ← ${esc(q.category)} ← ${esc(q.subcategory)}</div>
@@ -9776,14 +9777,14 @@ window.addEventListener('scroll',function(){
   }
 
   root.addEventListener("click",event=>{
-    const card=event.target.closest(".qah-featured-block .qah-card[data-href], .qah-latest-block .qah-card[data-href]");
+    const card=event.target.closest(".qah-featured-block .qah-card[data-href], .qah-latest-block .qah-card[data-href], .qah-mostread-block .qah-card[data-href]");
     if(!card || !root.contains(card)) return;
     if(event.target.closest("a,button,input,select,textarea,label")) return;
     openQaCard(card);
   });
 
   root.addEventListener("keydown",event=>{
-    const card=event.target.closest(".qah-featured-block .qah-card[data-href], .qah-latest-block .qah-card[data-href]");
+    const card=event.target.closest(".qah-featured-block .qah-card[data-href], .qah-latest-block .qah-card[data-href], .qah-mostread-block .qah-card[data-href]");
     if(!card || event.target!==card || (event.key!=="Enter" && event.key!==" ")) return;
     event.preventDefault();
     openQaCard(card);
