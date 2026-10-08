@@ -1,7 +1,22 @@
 {
-  "generatedAt": null,
-  "source": "Google Analytics 4 Data API",
-  "metric": "screenPageViews",
-  "period": "all_time",
-  "items": []
+  "source": "Google Analytics 4 — manual review",
+  "period": {
+    "start": "2026-06-01",
+    "end": "2026-10-08"
+  },
+  "updated": "2026-10-08",
+  "items": [
+    {
+      "id": "007",
+      "views": 21
+    },
+    {
+      "id": "006",
+      "views": 15
+    },
+    {
+      "id": "002",
+      "views": 10
+    }
+  ]
 }
