@@ -8084,7 +8084,7 @@ body.sepia .global-nav-box.is-current{
 
   <div class="article-showcase-block article-mostread-block">
     <div class="article-showcase-title-row">
-      <h3>مقالات الأكثر قراءة</h3>
+      <h3>المقالات الأكثر قراءة</h3>
       <span class="article-showcase-title-mark">◆</span>
     </div>
     <p class="article-showcase-help">يضم هذا القسم المقالات الأكثر قراءة في الموسوعة، مرتبة وفق أحدث بيانات المتابعة، ليصل القارئ سريعًا إلى أكثر المواد حضورًا واهتمامًا.</p>
@@ -10068,11 +10068,18 @@ window.addEventListener('scroll',function(){
 
       if(status){
         var updated=cleanText(payload && payload.updated);
+        if(updated){
+          var dateMatch=updated.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+          if(dateMatch){
+            var d=new Date(Number(dateMatch[1]),Number(dateMatch[2])-1,Number(dateMatch[3]));
+            updated=new Intl.DateTimeFormat("ar-IQ",{day:"numeric",month:"long",year:"numeric"}).format(d);
+          }
+        }
         status.textContent=updated ? "آخر تحديث لبيانات القراءة: "+updated : "";
       }
 
       if(!rows.length){
-        showEmpty("سيظهر ترتيب المقالات الأكثر قراءة عند إضافة بيانات Google Analytics إلى ملف articles/most-read.json.");
+        showEmpty("سيظهر هنا ترتيب المقالات الأكثر قراءة عند توفر أحدث بيانات القراءة.");
         return;
       }
 
