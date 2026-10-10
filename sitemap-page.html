@@ -216,6 +216,21 @@ footer p{font-size:.8rem;color:#fff}
 @media(forced-colors:active){
   .sm-branch,.sm-group,.sm-stats,.sm-search input,.sm-tool,.mode-btn,.back-btn{forced-color-adjust:auto;border:2px solid CanvasText}
 }
+
+/* شارات الآيات في فرع التفسير والتدبر القرآني فقط */
+.sm-ayah-pill{
+ display:inline-flex;align-items:center;justify-content:center;vertical-align:baseline;
+ white-space:nowrap;direction:rtl;unicode-bidi:isolate;
+ margin-inline:0 9px;padding:2px 12px;min-height:29px;
+ border:2px solid #795019;border-radius:999px;
+ background:#FFF0C9;color:#342008;
+ font-family:'Cairo',sans-serif;font-size:.85em;font-weight:900;line-height:1.7;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.7);
+}
+body.sepia .sm-ayah-pill{background:#FCE5B4;color:#32200C;border-color:#795019}
+body.dark .sm-ayah-pill{background:#203A54;color:#FFFFFF;border-color:#E8BC60;box-shadow:none}
+@media (max-width:600px){.sm-ayah-pill{padding:2px 9px;margin-inline-end:6px;min-height:28px}}
+@media (forced-colors:active){.sm-ayah-pill{border:2px solid CanvasText;color:CanvasText;background:Canvas}}
 </style>
 </head>
 <body>
@@ -262,309 +277,311 @@ footer p{font-size:.8rem;color:#fff}
     
 <div class="sm-stats">◈ إجمالي المحتوى: خريطة شاملة لمقالات الموسوعة وأسئلتها وأجوبتها، مرتبة حسب الأفرع والسور والأبواب والأقسام</div>
 <div class="sm-branch" style="--bc:#8a6a12">
-<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ١. فرعُ التفسير والتدبر القرآني <span class="sm-count">٢١٥ مقالاً</span></button>
+<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ١. فرعُ التفسير والتدبر القرآني <span class="sm-count">٢١٨ مقالاً</span></button>
 <div class="sm-branch-body">
 <div class="sm-group"><div class="sm-group-name">٢- سورة البقرة</div><ul class="sm-links">
-<li><a href="article57.html">١. آية ١٦ تجارة الروح</a></li><li><a href="article234.html">٢. آية ٥٠ ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله</a></li><li><a href="article234.html">٣. آية ٥٤ ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله</a></li><li><a href="article133.html">٤. آية ٩١ حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء</a></li><li><a href="article211.html">٥. آية ١٥٩-١٦٠ حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان</a></li><li><a href="article132.html">٦. آية ١٦٧ حين تتحول الأعمال إلى حسرات... المشهد الذي يهز القلوب قبل فوات الأوان</a></li><li><a href="article91.html">٧. آية ١٦٨ بين اللقمة والخطوة</a></li><li><a href="article8-ma-asbarahum.html">٨. آية ١٧٥ فما أصبرهم على النار</a></li><li><a href="articles/article295.html">٩. آية ١٧٥ فما أصبرهم على النار؟</a></li><li><a href="article181.html">١٠. آية ٢٠٧ التجارة التي لا تبور… حين تبيع نفسك لله فتملك كل شيء</a></li><li><a href="article77.html">١١. آية ٢١٠ حين ينشق الغمام</a></li><li><a href="article11-sarab-aldunya.html">١٢. آية ٢١٢ بين سراب الدنيا وعلو الآخرة</a></li><li><a href="article32-yaiduka-alshaytan.html">١٣. آية ٢٦٨ حين يعدك الشيطان بالفقر</a></li><li><a href="article230.html">١٤. آية ٢٨٥-٢٨٦ حين يضع الوحي عن كتفيك ثقل الطريق</a></li></ul></div>
+<li><a href="article57.html">١. <span class="sm-ayah-pill">آية ١٦</span> تجارة الروح</a></li><li><a href="article234.html">٢. <span class="sm-ayah-pill">آية ٥٠</span> ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله</a></li><li><a href="article234.html">٣. <span class="sm-ayah-pill">آية ٥٤</span> ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله</a></li><li><a href="article133.html">٤. <span class="sm-ayah-pill">آية ٩١</span> حين يحاكم الهوى الوحي... فيغلق القلب أبواب السماء</a></li><li><a href="article211.html">٥. <span class="sm-ayah-pill">آية ١٥٩-١٦٠</span> حين يُكتم النور: أمانة العلم بين لعن الكتمان وفتنة علماء السلطان</a></li><li><a href="article132.html">٦. <span class="sm-ayah-pill">آية ١٦٧</span> حين تتحول الأعمال إلى حسرات... المشهد الذي يهز القلوب قبل فوات الأوان</a></li><li><a href="article91.html">٧. <span class="sm-ayah-pill">آية ١٦٨</span> بين اللقمة والخطوة</a></li><li><a href="article8-ma-asbarahum.html">٨. <span class="sm-ayah-pill">آية ١٧٥</span> فما أصبرهم على النار</a></li><li><a href="articles/article295.html">٩. <span class="sm-ayah-pill">آية ١٧٥</span> فما أصبرهم على النار؟</a></li><li><a href="article181.html">١٠. <span class="sm-ayah-pill">آية ٢٠٧</span> التجارة التي لا تبور… حين تبيع نفسك لله فتملك كل شيء</a></li><li><a href="article77.html">١١. <span class="sm-ayah-pill">آية ٢١٠</span> حين ينشق الغمام</a></li><li><a href="article11-sarab-aldunya.html">١٢. <span class="sm-ayah-pill">آية ٢١٢</span> بين سراب الدنيا وعلو الآخرة</a></li><li><a href="article32-yaiduka-alshaytan.html">١٣. <span class="sm-ayah-pill">آية ٢٦٨</span> حين يعدك الشيطان بالفقر</a></li><li><a href="article230.html">١٤. <span class="sm-ayah-pill">آية ٢٨٥-٢٨٦</span> حين يضع الوحي عن كتفيك ثقل الطريق</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٣- سورة آل عمران</div><ul class="sm-links">
 <li><a href="articles/article282.html">١. آية ١٤-١٥🌿✨ زِينَةُ الشَّهَوَاتِ بَيْنَ فِتْنَةِ الدُّنْيَا وَحُسْنِ الْمَآبِ ✨🌿</a></li>
-<li><a href="article28-kayfa-jamaanahum.html">٢. آية ٢٥ كيف إذا جمعناهم؟!</a></li>
-<li><a href="article-alsuljuqi.html">٣. آية ٢٦ على أبواب العروش المهدمة</a></li>
-<li><a href="article89.html">٤. آية ٢٦ حين يعود الملك إلى مالكه</a></li>
-<li><a href="articles/article253.html">٥. آيات ٥٥-٥٧ عِيسَىٰ بَيْنَ الرَّفْعِ وَالتَّطْهِيرِ وَغَلَبَةِ أَهْلِ الْحَقِّ</a></li>
-<li><a href="article69.html">٦. آية ١٤٠ حين يدور الزمان</a></li>
-<li><a href="article60.html">٧. آية ١٤٠ حين يشتدّ الظلام... لماذا تنتظر البشرية المخلّص؟</a></li>
-<li><a href="articles/article252.html">٨. آية ١٤٣ حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء</a></li>
-<li><a href="article21-suqut-alashkhas.html">٩. آية ١٤٤ حين يسقط الأشخاص فلا تسقط المبادئ</a></li>
-<li><a href="article96.html">١٠. آية ١٥١ حين تنهزم القلوب قبل الجيوش</a></li>
-<li><a href="article152.html">١١. آية ١٥٩ حين تصنع الرحمة الرجال</a></li>
-<li><a href="articles/article290.html">١٢. آية ١٨٥ 🌿✨ متاعُ الحياةِ الدنيا… بين زينةٍ تُغري، وحقيقةٍ تُبصّر، وآخرةٍ تبقى</a></li>
-<li><a href="article209.html">١٣. آية ١٩٣ مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ</a></li></ul></div>
+<li><a href="article28-kayfa-jamaanahum.html">٢. <span class="sm-ayah-pill">آية ٢٥</span> كيف إذا جمعناهم؟!</a></li>
+<li><a href="article-alsuljuqi.html">٣. <span class="sm-ayah-pill">آية ٢٦</span> على أبواب العروش المهدمة</a></li>
+<li><a href="article89.html">٤. <span class="sm-ayah-pill">آية ٢٦</span> حين يعود الملك إلى مالكه</a></li>
+<li><a href="articles/article253.html">٥. <span class="sm-ayah-pill">آيات ٥٥-٥٧</span> عِيسَىٰ بَيْنَ الرَّفْعِ وَالتَّطْهِيرِ وَغَلَبَةِ أَهْلِ الْحَقِّ</a></li>
+<li><a href="article69.html">٦. <span class="sm-ayah-pill">آية ١٤٠</span> حين يدور الزمان</a></li>
+<li><a href="article60.html">٧. <span class="sm-ayah-pill">آية ١٤٠</span> حين يشتدّ الظلام... لماذا تنتظر البشرية المخلّص؟</a></li>
+<li><a href="articles/article252.html">٨. <span class="sm-ayah-pill">آية ١٤٣</span> حين تسقط الأماني أمام الحقيقة: من تمنّي البلاء إلى الثبات عند اللقاء</a></li>
+<li><a href="article21-suqut-alashkhas.html">٩. <span class="sm-ayah-pill">آية ١٤٤</span> حين يسقط الأشخاص فلا تسقط المبادئ</a></li>
+<li><a href="article96.html">١٠. <span class="sm-ayah-pill">آية ١٥١</span> حين تنهزم القلوب قبل الجيوش</a></li>
+<li><a href="article152.html">١١. <span class="sm-ayah-pill">آية ١٥٩</span> حين تصنع الرحمة الرجال</a></li>
+<li><a href="articles/article290.html">١٢. <span class="sm-ayah-pill">آية ١٨٥</span> 🌿✨ متاعُ الحياةِ الدنيا… بين زينةٍ تُغري، وحقيقةٍ تُبصّر، وآخرةٍ تبقى</a></li>
+<li><a href="article209.html">١٣. <span class="sm-ayah-pill">آية ١٩٣</span> مِنَ السَّمَاعِ إِلَى النَّجَاةِ: مَنَارَاتُ الهِدَايَةِ وَدُعَاءُ الأَبْرَارِ</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٤- سورة النساء</div><ul class="sm-links">
-<li><a href="article158.html">١. آية ٢٧-٢٨ بوابة النور... بين إرادة الرحمن وأمنيات أهل الشهوات</a></li>
-<li><a href="article3-zagm-iman.html">٢. آية ٦٠ حين يصبح الزعم إيماناً</a></li>
-<li><a href="article203.html">٣. آية ١٠٢ حين تأمر السماء باليقظة: السلاح بين أيدي المؤمنين وسنّة القوة</a></li>
+<li><a href="article158.html">١. <span class="sm-ayah-pill">آية ٢٧-٢٨</span> بوابة النور... بين إرادة الرحمن وأمنيات أهل الشهوات</a></li>
+<li><a href="article3-zagm-iman.html">٢. <span class="sm-ayah-pill">آية ٦٠</span> حين يصبح الزعم إيماناً</a></li>
+<li><a href="article203.html">٣. <span class="sm-ayah-pill">آية ١٠٢</span> حين تأمر السماء باليقظة: السلاح بين أيدي المؤمنين وسنّة القوة</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٥- سورة المائدة</div><ul class="sm-links">
-<li><a href="article213.html">١. آية ١٩ حين تقوم الحجة وتسقط دعوى الجهل</a></li>
-<li><a href="article-hawa-sharia.html">٢. آية ٤٤-٥٠ حين يتحول الهوى إلى شريعة</a></li>
-<li><a href="article208.html">٣. آية ٧٣-٧٥ حِينَ يَسْقُطُ الْوَهْمُ وَيَبْقَى الْوَاحِدُ الأَحَدُ</a></li>
-<li><a href="articles/article254.html">٤. آيات ١١١-١١٧ الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟</a></li>
+<li><a href="article213.html">١. <span class="sm-ayah-pill">آية ١٩</span> حين تقوم الحجة وتسقط دعوى الجهل</a></li>
+<li><a href="article-hawa-sharia.html">٢. <span class="sm-ayah-pill">آية ٤٤-٥٠</span> حين يتحول الهوى إلى شريعة</a></li>
+<li><a href="article208.html">٣. <span class="sm-ayah-pill">آية ٧٣-٧٥</span> حِينَ يَسْقُطُ الْوَهْمُ وَيَبْقَى الْوَاحِدُ الأَحَدُ</a></li>
+<li><a href="articles/article254.html">٤. <span class="sm-ayah-pill">آيات ١١١-١١٧</span> الحَوَارِيُّونَ وَ«العُذْرُ بِالْجَهْلِ»... أَيُّ جَهْلٍ تَقْصِدُونَ؟</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٦- سورة الأنعام</div><ul class="sm-links">
-<li><a href="articles/article351.html">١. آية ١ بين خلق السماوات والأرض وجعل الظلمات والنور… ثم الذين كفروا بربهم يعدلون</a></li>
-<li><a href="article233.html">٢. آية ١٥ الخوف العاصم: حين يوقظك «اليوم العظيم» قبل أن تزلَّ القدم</a></li>
-<li><a href="article90.html">٣. آية ٣١ حين يصرخ الندم ولا يبقى إلا الحمل الثقيل</a></li>
-<li><a href="articles/article309.html">٤. آية ٥٤ كَتَبَ رَبُّكُمْ عَلَى نَفْسِهِ الرَّحْمَةَ</a></li><li><a href="articles/article315.html">٥. آية ٥٥ 🌿 حين يكشف القرآن طريق المجرمين: فقه البصيرة ومعرفة الشر لحيازة الخير 🌿</a></li>
-<li><a href="article232.html">٦. آية ١٢٥ حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية</a></li>
-<li><a href="article189.html">٧. آية ١٥٣ صِرَاطِي… الطريق الذي يستقيم به الإنسان وتستقيم به الحياة والآخرة</a></li>
-<li><a href="article172.html">٨. آية ١٥٨ حين تُغلق أبواب التوبة… لا ينفع الإيمان المتأخر!</a></li>
+<li><a href="articles/article351.html">١. <span class="sm-ayah-pill">آية ١</span> بين خلق السماوات والأرض وجعل الظلمات والنور… ثم الذين كفروا بربهم يعدلون</a></li>
+<li><a href="article233.html">٢. <span class="sm-ayah-pill">آية ١٥</span> الخوف العاصم: حين يوقظك «اليوم العظيم» قبل أن تزلَّ القدم</a></li>
+<li><a href="article90.html">٣. <span class="sm-ayah-pill">آية ٣١</span> حين يصرخ الندم ولا يبقى إلا الحمل الثقيل</a></li>
+<li><a href="articles/article309.html">٤. <span class="sm-ayah-pill">آية ٥٤</span> كَتَبَ رَبُّكُمْ عَلَى نَفْسِهِ الرَّحْمَةَ</a></li><li><a href="articles/article315.html">٥. <span class="sm-ayah-pill">آية ٥٥</span> 🌿 حين يكشف القرآن طريق المجرمين: فقه البصيرة ومعرفة الشر لحيازة الخير 🌿</a></li>
+<li><a href="article232.html">٦. <span class="sm-ayah-pill">آية ١٢٥</span> حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية</a></li>
+<li><a href="article189.html">٧. <span class="sm-ayah-pill">آية ١٥٣</span> صِرَاطِي… الطريق الذي يستقيم به الإنسان وتستقيم به الحياة والآخرة</a></li>
+<li><a href="article172.html">٨. <span class="sm-ayah-pill">آية ١٥٨</span> حين تُغلق أبواب التوبة… لا ينفع الإيمان المتأخر!</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٧- سورة الأعراف</div><ul class="sm-links">
-<li><a href="articles/article292.html">١. آية ١٦-١٧ ✦ على صراطك المستقيم... حيث يترصدنا الغواية ✦</a></li><li><a href="articles/article293.html">٢. آية ١٦-١٧ على صراطك المستقيم… حيث يترصدنا الغواية</a></li><li><a href="articles/article299.html">٣. آية ١٦-١٧ ✍️ الشيطان وعداوته للإنسان على الصراط المستقيم</a></li><li><a href="article130.html">٤. آية ٢٧ حين يُنتزع اللباس وتبدأ الهزيمة الأولى للإنسان</a></li><li><a href="article62.html">٥. آية ٤٤ حين ينقلب المشهد</a></li><li><a href="article215.html">٦. آية ١١٦ حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء</a></li><li><a href="article234.html">٧. آية ١٣٨-١٤٠ ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله</a></li><li><a href="article35-mithaq-bala.html">٨. آية ١٧٢ ميثاق «بلى»... حين اختارت الروح طريق الامتحان</a></li><li><a href="article18-insalakha.html">٩. آية ١٧٥ حين يُسلخ القلب من النور</a></li><li><a href="article232.html">١٠. آية ١٧٨ حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية</a></li><li><a href="article87.html">١١. آية ١٧٩ قلوب تمشي... ولكنها ماتت قبل أن تموت</a></li></ul></div>
+<li><a href="articles/article292.html">١. <span class="sm-ayah-pill">آية ١٦-١٧</span> ✦ على صراطك المستقيم... حيث يترصدنا الغواية ✦</a></li><li><a href="articles/article293.html">٢. <span class="sm-ayah-pill">آية ١٦-١٧</span> على صراطك المستقيم… حيث يترصدنا الغواية</a></li><li><a href="articles/article299.html">٣. <span class="sm-ayah-pill">آية ١٦-١٧</span> ✍️ الشيطان وعداوته للإنسان على الصراط المستقيم</a></li><li><a href="article130.html">٤. <span class="sm-ayah-pill">آية ٢٧</span> حين يُنتزع اللباس وتبدأ الهزيمة الأولى للإنسان</a></li><li><a href="article62.html">٥. <span class="sm-ayah-pill">آية ٤٤</span> حين ينقلب المشهد</a></li><li><a href="article215.html">٦. <span class="sm-ayah-pill">آية ١١٦</span> حين يخدع السحرُ العينَ ولا يغيّر الحقيقة: بين وهم الحواس وحقيقة الابتلاء</a></li><li><a href="article234.html">٧. <span class="sm-ayah-pill">آية ١٣٨-١٤٠</span> ردٌّ على من يحتج بقصة بني إسرائيل على العذر بالجهل في الشرك بالله</a></li><li><a href="article35-mithaq-bala.html">٨. <span class="sm-ayah-pill">آية ١٧٢</span> ميثاق «بلى»... حين اختارت الروح طريق الامتحان</a></li><li><a href="article18-insalakha.html">٩. <span class="sm-ayah-pill">آية ١٧٥</span> حين يُسلخ القلب من النور</a></li><li><a href="article232.html">١٠. <span class="sm-ayah-pill">آية ١٧٨</span> حين يُفتح الصدر للنور: رحلة القلب من الاختناق إلى الهداية</a></li><li><a href="article87.html">١١. <span class="sm-ayah-pill">آية ١٧٩</span> قلوب تمشي... ولكنها ماتت قبل أن تموت</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٨- سورة الأنفال</div><ul class="sm-links">
-<li><a href="article144.html">١. آية ٧ وراء الشوكة... يصنع الله الرجال</a></li>
-<li><a href="article102.html">٢. آية ١٢ حين يهزم الرعب الجيوش</a></li>
-<li><a href="article188.html">٣. آية ٣٤ ولاية التقوى وسقوط أوهام الاستحقاق</a></li>
+<li><a href="article144.html">١. <span class="sm-ayah-pill">آية ٧</span> وراء الشوكة... يصنع الله الرجال</a></li>
+<li><a href="article102.html">٢. <span class="sm-ayah-pill">آية ١٢</span> حين يهزم الرعب الجيوش</a></li>
+<li><a href="article188.html">٣. <span class="sm-ayah-pill">آية ٣٤</span> ولاية التقوى وسقوط أوهام الاستحقاق</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٩- سورة التوبة</div><ul class="sm-links">
-<li><a href="article212.html">١. آية ٦ الجهل ليس جوازَ عبورٍ إلى الشرك</a></li>
-<li><a href="article214.html">٢. آية ٦٥-٦٦ حين تتكلم الكلمة بالكفر</a></li>
-<li><a href="article47.html">٣. آية ١٠١ عذاب الستر المنكشف</a></li>
-<li><a href="article79.html">٤. آية ١١١ الصفقة التي لا تخسر أبداً</a></li>
+<li><a href="article212.html">١. <span class="sm-ayah-pill">آية ٦</span> الجهل ليس جوازَ عبورٍ إلى الشرك</a></li>
+<li><a href="article214.html">٢. <span class="sm-ayah-pill">آية ٦٥-٦٦</span> حين تتكلم الكلمة بالكفر</a></li>
+<li><a href="article47.html">٣. <span class="sm-ayah-pill">آية ١٠١</span> عذاب الستر المنكشف</a></li>
+<li><a href="article79.html">٤. <span class="sm-ayah-pill">آية ١١١</span> الصفقة التي لا تخسر أبداً</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١٠- سورة يونس</div><ul class="sm-links">
-<li><a href="article82.html">١. آية ٣ من الطين إلى العرش</a></li><li><a href="articles/article302.html">٢. آية ٩٠-٩٢ 🩸⚖️ «آلْآنَ وَقَدْ عَصَيْتَ قَبْلُ»… حين يسقط الطاغية، ويبقى سجلُّ المظلومين</a></li></ul></div>
+<li><a href="article82.html">١. <span class="sm-ayah-pill">آية ٣</span> من الطين إلى العرش</a></li><li><a href="articles/article302.html">٢. <span class="sm-ayah-pill">آية ٩٠-٩٢</span> 🩸⚖️ «آلْآنَ وَقَدْ عَصَيْتَ قَبْلُ»… حين يسقط الطاغية، ويبقى سجلُّ المظلومين</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">١١- سورة هود</div><ul class="sm-links">
-<li><a href="article149.html">١. آية ٤١-٤٤ حين لا يُنجي إلا الله: رحلة السفينة بين موج الابتلاء وشاطئ الرحمة</a></li>
+<li><a href="article149.html">١. <span class="sm-ayah-pill">آية ٤١-٤٤</span> حين لا يُنجي إلا الله: رحلة السفينة بين موج الابتلاء وشاطئ الرحمة</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١٢- سورة يوسف</div><ul class="sm-links">
-<li><a href="article104.html">١. آية ٧ حين يتحول البئر إلى بوابة المجد</a></li>
-<li><a href="article22-qa-aljubb.html">٢. آية ١٩ من قاع الجب... تبدأ الحكاية لا تنتهي</a></li>
-<li><a href="article127.html">٣. آية ١٠٦ حين يختبئ الشرك خلف ستار الإيمان</a></li>
+<li><a href="article104.html">١. <span class="sm-ayah-pill">آية ٧</span> حين يتحول البئر إلى بوابة المجد</a></li>
+<li><a href="article22-qa-aljubb.html">٢. <span class="sm-ayah-pill">آية ١٩</span> من قاع الجب... تبدأ الحكاية لا تنتهي</a></li>
+<li><a href="article127.html">٣. <span class="sm-ayah-pill">آية ١٠٦</span> حين يختبئ الشرك خلف ستار الإيمان</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١٣- سورة الرعد</div><ul class="sm-links">
-<li><a href="articles/article259.html">١. آية ١٧ الزَّبَدُ يعلو لحظةً… والحقُّ يمكث أبدًا</a></li>
-<li><a href="article121.html">٢. آية ٢٨-٢٩ حين يسكن القلب إلى ربه</a></li>
-<li><a href="article103.html">٣. آية ٣١ إذا تحركت الجبال بكلام الله</a></li>
-<li><a href="articles/article291.html">٤. آية ٣٥ 🌳🍃 ظِلَالُ الخُلُودِ… حِينَ تَذْبُلُ جِنَانُ الدُّنْيَا وَتَبْقَى جِنَانُ الآخِرَةِ 🍃🌳</a></li></ul></div>
+<li><a href="articles/article259.html">١. <span class="sm-ayah-pill">آية ١٧</span> الزَّبَدُ يعلو لحظةً… والحقُّ يمكث أبدًا</a></li>
+<li><a href="article121.html">٢. <span class="sm-ayah-pill">آية ٢٨-٢٩</span> حين يسكن القلب إلى ربه</a></li>
+<li><a href="article103.html">٣. <span class="sm-ayah-pill">آية ٣١</span> إذا تحركت الجبال بكلام الله</a></li>
+<li><a href="articles/article291.html">٤. <span class="sm-ayah-pill">آية ٣٥</span> 🌳🍃 ظِلَالُ الخُلُودِ… حِينَ تَذْبُلُ جِنَانُ الدُّنْيَا وَتَبْقَى جِنَانُ الآخِرَةِ 🍃🌳</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">١٤- سورة إبراهيم</div><ul class="sm-links">
-<li><a href="article150.html">١. آية ١٥-١٧ حين يسقط الجبار... ولا يبقى إلا وجه الله</a></li>
+<li><a href="article150.html">١. <span class="sm-ayah-pill">آية ١٥-١٧</span> حين يسقط الجبار... ولا يبقى إلا وجه الله</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١٥- سورة الحجر</div><ul class="sm-links">
-<li><a href="articles/article262.html">١. آية ٣٩-٤٠ لَأُزَيِّنَنَّ لَهُمْ فِي الْأَرْضِ… حين يتجمّل الباطل حتى يُرى حقًّا</a></li>
-<li><a href="article78.html">٢. آية ٤٩-٥٠ بين نداء الرحمة وهيبة العذاب</a></li>
+<li><a href="articles/article262.html">١. <span class="sm-ayah-pill">آية ٣٩-٤٠</span> لَأُزَيِّنَنَّ لَهُمْ فِي الْأَرْضِ… حين يتجمّل الباطل حتى يُرى حقًّا</a></li>
+<li><a href="article78.html">٢. <span class="sm-ayah-pill">آية ٤٩-٥٠</span> بين نداء الرحمة وهيبة العذاب</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١٦- سورة النحل</div><ul class="sm-links">
-<li><a href="articles/article340.html">١. آية ٣٦ اعْبُدُوا اللَّهَ وَاجْتَنِبُوا الطَّاغُوتَ — التوحيد الذي يحرر الإنسان من كل طغيان</a></li>
-<li><a href="article140.html">٢. آية ٥٣ حين يذوب الغرور أمام نهر النعم</a></li>
-<li><a href="article141.html">٣. آية ٧٨ أدوات الهداية ومنافذ العلم: تدبر في ثلاثية السمع والأبصار والأفئدة</a></li>
-<li><a href="article201.html">٤. آية ١١٢ حين يتحوّل النعيم إلى نذير: ﴿فَأَذَاقَهَا اللَّهُ لِبَاسَ الْجُوعِ وَالْخَوْفِ﴾</a></li>
+<li><a href="articles/article340.html">١. <span class="sm-ayah-pill">آية ٣٦</span> اعْبُدُوا اللَّهَ وَاجْتَنِبُوا الطَّاغُوتَ — التوحيد الذي يحرر الإنسان من كل طغيان</a></li>
+<li><a href="article140.html">٢. <span class="sm-ayah-pill">آية ٥٣</span> حين يذوب الغرور أمام نهر النعم</a></li>
+<li><a href="article141.html">٣. <span class="sm-ayah-pill">آية ٧٨</span> أدوات الهداية ومنافذ العلم: تدبر في ثلاثية السمع والأبصار والأفئدة</a></li>
+<li><a href="article201.html">٤. <span class="sm-ayah-pill">آية ١١٢</span> حين يتحوّل النعيم إلى نذير: ﴿فَأَذَاقَهَا اللَّهُ لِبَاسَ الْجُوعِ وَالْخَوْفِ﴾</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١٧- سورة الإسراء</div><ul class="sm-links">
-<li><a href="article114.html">١. آية ١ الذي باركنا حوله</a></li>
-<li><a href="article65.html">٢. آية ٤-٧ الوعد الذي يتكرر</a></li>
-<li><a href="article98.html">٣. آية ١١ حين تستعجل النفس وتتدخل رحمة الله</a></li>
-<li><a href="articles/article331.html">٤. آية ١٥ مَنِ اهْتَدَىٰ فَإِنَّمَا يَهْتَدِي لِنَفْسِهِ… هل الآية عذرٌ في الشركيات بحجة الجهل؟</a></li>
-<li><a href="article171.html">٥. آية ١٩-٢٠ حرثُ الآخرة… حين يستقيم القلب فتستقيم الخطى</a></li>
-<li><a href="article169.html">٦. آية ٤٤ حين يسبّح الكون كله... ويبقى الإنسان وحده في الغفلة</a></li>
-<li><a href="articles/article322.html">٧. آية ٤٤ في موكب التسبيح.. الوجود كله يسبّح لله</a></li>
-<li><a href="article148.html">٨. آية ٥٩ حين يتكلم الكون... وتصمت القلوب</a></li>
-<li><a href="article41.html">٩. آية ٦٤-٦٥ صوت يسبق السقوط... وجيش لا ينام</a></li>
-<li><a href="article93.html">١٠. آية ١٠٠ حين يضيق الإنسان وتتسع خزائن الرحمن</a></li>
+<li><a href="article114.html">١. <span class="sm-ayah-pill">آية ١</span> الذي باركنا حوله</a></li>
+<li><a href="article65.html">٢. <span class="sm-ayah-pill">آية ٤-٧</span> الوعد الذي يتكرر</a></li>
+<li><a href="article98.html">٣. <span class="sm-ayah-pill">آية ١١</span> حين تستعجل النفس وتتدخل رحمة الله</a></li>
+<li><a href="articles/article331.html">٤. <span class="sm-ayah-pill">آية ١٥</span> مَنِ اهْتَدَىٰ فَإِنَّمَا يَهْتَدِي لِنَفْسِهِ… هل الآية عذرٌ في الشركيات بحجة الجهل؟</a></li>
+<li><a href="article171.html">٥. <span class="sm-ayah-pill">آية ١٩-٢٠</span> حرثُ الآخرة… حين يستقيم القلب فتستقيم الخطى</a></li>
+<li><a href="article169.html">٦. <span class="sm-ayah-pill">آية ٤٤</span> حين يسبّح الكون كله... ويبقى الإنسان وحده في الغفلة</a></li>
+<li><a href="articles/article322.html">٧. <span class="sm-ayah-pill">آية ٤٤</span> في موكب التسبيح.. الوجود كله يسبّح لله</a></li>
+<li><a href="article148.html">٨. <span class="sm-ayah-pill">آية ٥٩</span> حين يتكلم الكون... وتصمت القلوب</a></li>
+<li><a href="article41.html">٩. <span class="sm-ayah-pill">آية ٦٤-٦٥</span> صوت يسبق السقوط... وجيش لا ينام</a></li>
+<li><a href="article93.html">١٠. <span class="sm-ayah-pill">آية ١٠٠</span> حين يضيق الإنسان وتتسع خزائن الرحمن</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١٨- سورة الكهف</div><ul class="sm-links">
-<li><a href="articles/article237.html">١. آيات ٤٧-٤٨ يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ</a></li>
-<li><a href="articles/article305.html">٢. آيات ٨٩-٩٩ 🏔️✨ ذو القرنين بين مشارف الأرض ومغاربها… سدٌّ من الحديد، ورحمةٌ من الرب، ووعدٌ لا يتخلّف</a></li>
-<li><a href="articles/article243.html">٣. آية ١٠٩ مداد الكون أمام كلمات الله… حين ينفد البحر ولا تنفد العظمة</a></li>
+<li><a href="articles/article237.html">١. <span class="sm-ayah-pill">آيات ٤٧-٤٨</span> يَوْمٌ تَسِيرُ فِيهِ الْجِبَالُ وَلا يَغِيبُ فِيهِ أَحَدٌ</a></li>
+<li><a href="articles/article305.html">٢. <span class="sm-ayah-pill">آيات ٨٩-٩٩</span> 🏔️✨ ذو القرنين بين مشارف الأرض ومغاربها… سدٌّ من الحديد، ورحمةٌ من الرب، ووعدٌ لا يتخلّف</a></li>
+<li><a href="articles/article243.html">٣. <span class="sm-ayah-pill">آية ١٠٩</span> مداد الكون أمام كلمات الله… حين ينفد البحر ولا تنفد العظمة</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١٩- سورة مريم</div><ul class="sm-links">
-<li><a href="article227.html">١. آية ٦٣-٦٤ تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا</a></li>
-<li><a href="article224.html">٢. آية ٧١-٧٢ وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار</a></li>
-<li><a href="article50.html">٣. آية ٨٤ حين يعُدّ الله الأنفاس فلا تستعجل سقوط الطغيان</a></li>
-<li><a href="article85.html">٤. آية ٩٥ حين ينفض الجمع</a></li>
+<li><a href="article227.html">١. <span class="sm-ayah-pill">آية ٦٣-٦٤</span> تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا</a></li>
+<li><a href="article224.html">٢. <span class="sm-ayah-pill">آية ٧١-٧٢</span> وَإِنْ مِنْكُمْ إِلَّا وَارِدُهَا — حين يعبر المؤمن على شفير النار</a></li>
+<li><a href="article50.html">٣. <span class="sm-ayah-pill">آية ٨٤</span> حين يعُدّ الله الأنفاس فلا تستعجل سقوط الطغيان</a></li>
+<li><a href="article85.html">٤. <span class="sm-ayah-pill">آية ٩٥</span> حين ينفض الجمع</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٢٠- سورة طه</div><ul class="sm-links">
-<li><a href="article92.html">١. آية ٥٩-٧٠ حين اختار موسى ضوء النهار</a></li>
-<li><a href="articles/article341.html">٢. آية ٧٢ 🌿 فَاقْضِ مَا أَنتَ قَاضٍ... فَالدُّنْيَا إِلَى زَوَالٍ 🌿</a></li>
-<li><a href="articles/article318.html">٣. آية ٨٢ ثم اهتدى… فليست التوبة لحظةً عابرة</a></li>
-<li><a href="article221.html">٤. آية ١٢٠ خُلُودٌ لَا يَبْلَىٰ… حين دخل الشيطان إلى الإنسان من باب الخلود</a></li>
-<li><a href="article139.html">٥. آية ١٢٤ حين يصبح الوطن محطة هروب لا موطن كرامة</a></li>
-<li><a href="article116.html">٦. آية ١٢٥-١٢٦ حين يُطفأ نور القلب</a></li>
+<li><a href="article92.html">١. <span class="sm-ayah-pill">آية ٥٩-٧٠</span> حين اختار موسى ضوء النهار</a></li>
+<li><a href="articles/article341.html">٢. <span class="sm-ayah-pill">آية ٧٢</span> 🌿 فَاقْضِ مَا أَنتَ قَاضٍ... فَالدُّنْيَا إِلَى زَوَالٍ 🌿</a></li>
+<li><a href="articles/article318.html">٣. <span class="sm-ayah-pill">آية ٨٢</span> ثم اهتدى… فليست التوبة لحظةً عابرة</a></li>
+<li><a href="article221.html">٤. <span class="sm-ayah-pill">آية ١٢٠</span> خُلُودٌ لَا يَبْلَىٰ… حين دخل الشيطان إلى الإنسان من باب الخلود</a></li>
+<li><a href="article139.html">٥. <span class="sm-ayah-pill">آية ١٢٤</span> حين يصبح الوطن محطة هروب لا موطن كرامة</a></li>
+<li><a href="article116.html">٦. <span class="sm-ayah-pill">آية ١٢٥-١٢٦</span> حين يُطفأ نور القلب</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٢١- سورة الأنبياء</div><ul class="sm-links">
-<li><a href="articles/article289.html">١. آية ٢٣ 🌿 لَا يُسْأَلُ عَمَّا يَفْعَلُ وَهُمْ يُسْأَلُونَ</a></li>
-<li><a href="article43.html">٢. آية ٦٨-٧٠ بين محكمة الأرض ومحكمة السماء</a></li>
-<li><a href="article19-dhun-nun.html">٣. آية ٨٧ من أعماق الظلمات يولد فجر النجاة</a></li>
-<li><a href="article115.html">٤. آية ٨٧-٨٨ من خرج من أمر الله أدركته الظلمات</a></li>
-<li><a href="article222.html">٥. آية ١٠٤ حين تُطوى السماء… وتُفتح صحائف الأعمال</a></li>
-<li><a href="article126.html">٦. آية ١٠٥ حين يكتب الله وعده فمن ذا الذي يملك أن يمحوه</a></li>
-<li><a href="article128.html">٧. آية ١٠٥ (موسّعة) حين يكتب الله وعده — دراسة موسوعية موسّعة (٥٢ قسماً)</a></li>
-<li><a href="article106.html">٨. آية ١٠٧ حين بكى النبي ﷺ لأجلنا</a></li></ul></div>
+<li><a href="articles/article289.html">١. <span class="sm-ayah-pill">آية ٢٣</span> 🌿 لَا يُسْأَلُ عَمَّا يَفْعَلُ وَهُمْ يُسْأَلُونَ</a></li>
+<li><a href="article43.html">٢. <span class="sm-ayah-pill">آية ٦٨-٧٠</span> بين محكمة الأرض ومحكمة السماء</a></li>
+<li><a href="article19-dhun-nun.html">٣. <span class="sm-ayah-pill">آية ٨٧</span> من أعماق الظلمات يولد فجر النجاة</a></li>
+<li><a href="article115.html">٤. <span class="sm-ayah-pill">آية ٨٧-٨٨</span> من خرج من أمر الله أدركته الظلمات</a></li>
+<li><a href="article222.html">٥. <span class="sm-ayah-pill">آية ١٠٤</span> حين تُطوى السماء… وتُفتح صحائف الأعمال</a></li>
+<li><a href="article126.html">٦. <span class="sm-ayah-pill">آية ١٠٥</span> حين يكتب الله وعده فمن ذا الذي يملك أن يمحوه</a></li>
+<li><a href="article128.html">٧. <span class="sm-ayah-pill">آية ١٠٥</span> (موسّعة) حين يكتب الله وعده — دراسة موسوعية موسّعة (٥٢ قسماً)</a></li>
+<li><a href="article106.html">٨. <span class="sm-ayah-pill">آية ١٠٧</span> حين بكى النبي ﷺ لأجلنا</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٢٢- سورة الحج</div><ul class="sm-links">
-<li><a href="articles/article345.html">١. آية ٧٣ عجزُ الذباب وجلالُ الخالق — حين تهزم حشرةٌ صغيرة غرورَ الإنسان</a></li>
+<li><a href="articles/article345.html">١. <span class="sm-ayah-pill">آية ٧٣</span> عجزُ الذباب وجلالُ الخالق — حين تهزم حشرةٌ صغيرة غرورَ الإنسان</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٢٣- سورة المؤمنون</div><ul class="sm-links">
-<li><a href="article168.html">١. آية ٩٧-٩٨ حين يقترب الشيطان… فافتح باب الله</a></li>
-<li><a href="article157.html">٢. آية ٩٩-١٠٠ تمهّل... لقد مُنحت فرصة لا تُمنح لأحد</a></li>
-<li><a href="article101.html">٣. آية ١٠١ حين تنهار شجرة الأنساب</a></li>
-<li><a href="article4-yathoob-alwajh.html">٤. آية ١٠٤ حين يذوب الوجه في اللهب</a></li>
-<li><a href="article83.html">٥. آية ١١٥ من عبث التراب إلى حكمة المصير</a></li>
+<li><a href="article168.html">١. <span class="sm-ayah-pill">آية ٩٧-٩٨</span> حين يقترب الشيطان… فافتح باب الله</a></li>
+<li><a href="article157.html">٢. <span class="sm-ayah-pill">آية ٩٩-١٠٠</span> تمهّل... لقد مُنحت فرصة لا تُمنح لأحد</a></li>
+<li><a href="article101.html">٣. <span class="sm-ayah-pill">آية ١٠١</span> حين تنهار شجرة الأنساب</a></li>
+<li><a href="article4-yathoob-alwajh.html">٤. <span class="sm-ayah-pill">آية ١٠٤</span> حين يذوب الوجه في اللهب</a></li>
+<li><a href="article83.html">٥. <span class="sm-ayah-pill">آية ١١٥</span> من عبث التراب إلى حكمة المصير</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٢٤- سورة النور</div><ul class="sm-links">
-<li><a href="article68.html">١. آية ٣٧ رجال يصنعهم القرآن</a></li>
+<li><a href="article68.html">١. <span class="sm-ayah-pill">آية ٣٧</span> رجال يصنعهم القرآن</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٢٥- سورة الفرقان</div><ul class="sm-links">
-<li><a href="article38.html">١. آية ٢٣ بين هباء الرماد وخلود الأثر</a></li>
-<li><a href="article12-zilal-alrahma.html">٢. آية ٤٥ ظلال الرحمة بين حركة الكون وسكون الفناء</a></li>
+<li><a href="article38.html">١. <span class="sm-ayah-pill">آية ٢٣</span> بين هباء الرماد وخلود الأثر</a></li>
+<li><a href="article12-zilal-alrahma.html">٢. <span class="sm-ayah-pill">آية ٤٥</span> ظلال الرحمة بين حركة الكون وسكون الفناء</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٢٦- سورة الشعراء</div><ul class="sm-links">
-<li><a href="article125.html">١. آية ٨٠ حين يهمس الألم ويأتي الجواب من السماء</a></li>
-<li><a href="article86.html">٢. آية ٨٨-٨٩ القلب السليم... جواز العبور إلى الله</a></li>
-<li><a href="article46.html">٣. آية ١٩٢-١٩٥ نفحات التنزيل... حين يخاطب الوحي القلب قبل السمع</a></li>
+<li><a href="article125.html">١. <span class="sm-ayah-pill">آية ٨٠</span> حين يهمس الألم ويأتي الجواب من السماء</a></li>
+<li><a href="article86.html">٢. <span class="sm-ayah-pill">آية ٨٨-٨٩</span> القلب السليم... جواز العبور إلى الله</a></li>
+<li><a href="article46.html">٣. <span class="sm-ayah-pill">آية ١٩٢-١٩٥</span> نفحات التنزيل... حين يخاطب الوحي القلب قبل السمع</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٢٧- سورة النمل</div><ul class="sm-links">
-<li><a href="article162.html">١. آية ٤٤ الصرح الذي كشف وهم الشمس</a></li>
-<li><a href="article99.html">٢. آية ٦١ بين البحرين حاجز</a></li>
-<li><a href="article185.html">٣. آية ٦١ حين تكون الأرض قرارًا… يكون القلب بحاجة إلى قرار</a></li>
-<li><a href="article94.html">٤. آية ٦٢ باب السماء حين تغلق أبواب الأرض</a></li>
-<li><a href="articles/article288.html">٥. آية ٧٢ ⚡ العذاب الذي يركض خلف الغافلين</a></li></ul></div>
+<li><a href="article162.html">١. <span class="sm-ayah-pill">آية ٤٤</span> الصرح الذي كشف وهم الشمس</a></li>
+<li><a href="article99.html">٢. <span class="sm-ayah-pill">آية ٦١</span> بين البحرين حاجز</a></li>
+<li><a href="article185.html">٣. <span class="sm-ayah-pill">آية ٦١</span> حين تكون الأرض قرارًا… يكون القلب بحاجة إلى قرار</a></li>
+<li><a href="article94.html">٤. <span class="sm-ayah-pill">آية ٦٢</span> باب السماء حين تغلق أبواب الأرض</a></li>
+<li><a href="articles/article288.html">٥. <span class="sm-ayah-pill">آية ٧٢</span> ⚡ العذاب الذي يركض خلف الغافلين</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٢٩- سورة العنكبوت</div><ul class="sm-links">
-<li><a href="articles/article260.html">١. آية ٦٢ اللهُ يَبْسُطُ وَيَقْدِرُ: حين تتجلّى حكمةُ الرزق بين البسط والقبض</a></li>
-<li><a href="article67.html">٢. آية ٦٤ الدنيا... مسرح ينطفئ ضوؤه</a></li>
-<li><a href="article147.html">٣. آية ٦٥ حين اهتزت الأرض... سقطت الفلسفة وبقي الدعاء</a></li>
+<li><a href="articles/article260.html">١. <span class="sm-ayah-pill">آية ٦٢</span> اللهُ يَبْسُطُ وَيَقْدِرُ: حين تتجلّى حكمةُ الرزق بين البسط والقبض</a></li>
+<li><a href="article67.html">٢. <span class="sm-ayah-pill">آية ٦٤</span> الدنيا... مسرح ينطفئ ضوؤه</a></li>
+<li><a href="article147.html">٣. <span class="sm-ayah-pill">آية ٦٥</span> حين اهتزت الأرض... سقطت الفلسفة وبقي الدعاء</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٠- سورة الروم</div><ul class="sm-links">
-<li><a href="article191.html">١. آية ٤-٥ لِلَّهِ الأَمْرُ مِنْ قَبْلُ وَمِنْ بَعْدُ… حين يسقط وهمُ السيطرة ويبقى تدبيرُ الله</a></li>
-<li><a href="article146.html">٢. آية ٤١ حين تتمرد حلقة في كون يسبح الله</a></li>
+<li><a href="article191.html">١. <span class="sm-ayah-pill">آية ٤-٥</span> لِلَّهِ الأَمْرُ مِنْ قَبْلُ وَمِنْ بَعْدُ… حين يسقط وهمُ السيطرة ويبقى تدبيرُ الله</a></li>
+<li><a href="article146.html">٢. <span class="sm-ayah-pill">آية ٤١</span> حين تتمرد حلقة في كون يسبح الله</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٢- سورة السجدة</div><ul class="sm-links">
-<li><a href="article49.html">١. آية ١٢ رؤوس انحنت... لكن بعد أن أُغلق باب الرجعة</a></li>
-<li><a href="articles/article240.html">٢. آية ١٥-١٧ «حين تتجافى الأجساد… وتحيا القلوب»</a></li>
+<li><a href="article49.html">١. <span class="sm-ayah-pill">آية ١٢</span> رؤوس انحنت... لكن بعد أن أُغلق باب الرجعة</a></li>
+<li><a href="articles/article240.html">٢. <span class="sm-ayah-pill">آية ١٥-١٧</span> «حين تتجافى الأجساد… وتحيا القلوب»</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٣- سورة الأحزاب</div><ul class="sm-links">
-<li><a href="article142.html">١. آية ٦ أمهات المؤمنين... بيوت الوحي التي لا تطفئها سهام الافتراء</a></li>
-<li><a href="article151.html">٢. آية ٥٦ بوابة النور... حين يفتح الله لعباده باب المحبة</a></li>
-<li><a href="article33-tuqallabu-wujuhuhum.html">٣. آية ٦٦ حين تُقلَّب وجوههم في النار</a></li>
+<li><a href="article142.html">١. <span class="sm-ayah-pill">آية ٦</span> أمهات المؤمنين... بيوت الوحي التي لا تطفئها سهام الافتراء</a></li>
+<li><a href="article151.html">٢. <span class="sm-ayah-pill">آية ٥٦</span> بوابة النور... حين يفتح الله لعباده باب المحبة</a></li>
+<li><a href="article33-tuqallabu-wujuhuhum.html">٣. <span class="sm-ayah-pill">آية ٦٦</span> حين تُقلَّب وجوههم في النار</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٤- سورة سبأ</div><ul class="sm-links">
-<li><a href="articles/article312.html">١. آية ٣٣ حين يصبح الاستضعاف عذرًا لبيع الدين</a></li>
+<li><a href="articles/article312.html">١. <span class="sm-ayah-pill">آية ٣٣</span> حين يصبح الاستضعاف عذرًا لبيع الدين</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٥- سورة فاطر</div><ul class="sm-links">
-<li><a href="article123.html">١. آية ٢ إذا فتح الله أبواب رحمته</a></li>
-<li><a href="article80.html">٢. آية ٣٤ يوم يموت الحزن إلى الأبد</a></li>
+<li><a href="article123.html">١. <span class="sm-ayah-pill">آية ٢</span> إذا فتح الله أبواب رحمته</a></li>
+<li><a href="article80.html">٢. <span class="sm-ayah-pill">آية ٣٤</span> يوم يموت الحزن إلى الأبد</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٦- سورة يس</div><ul class="sm-links">
-<li><a href="article59.html">١. آية ٩ حين تُغلق نوافذ الروح</a></li>
-<li><a href="article145.html">٢. آية ٣٠ يا حسرة على العباد... حين يطرق الحق الأبواب ويختار الناس الظلام</a></li>
+<li><a href="article59.html">١. <span class="sm-ayah-pill">آية ٩</span> حين تُغلق نوافذ الروح</a></li>
+<li><a href="article145.html">٢. <span class="sm-ayah-pill">آية ٣٠</span> يا حسرة على العباد... حين يطرق الحق الأبواب ويختار الناس الظلام</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٧- سورة الصافات</div><ul class="sm-links">
-<li><a href="article71.html">١. آية ١١ بين قبضة الطين وعظمة الكون</a></li>
-<li><a href="article120.html">٢. آية ٢٢-٢٣ حين يُحشر الأشباه مع الأشباه</a></li>
+<li><a href="article71.html">١. <span class="sm-ayah-pill">آية ١١</span> بين قبضة الطين وعظمة الكون</a></li>
+<li><a href="article120.html">٢. <span class="sm-ayah-pill">آية ٢٢-٢٣</span> حين يُحشر الأشباه مع الأشباه</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٨- سورة ص</div><ul class="sm-links">
-<li><a href="articles/article244.html">١. آية ٦٢-٦٣ ✍️🔥 لا تَبَالِ... فالعاقبة هناك! 🔥✍️</a></li>
+<li><a href="articles/article244.html">١. <span class="sm-ayah-pill">آية ٦٢-٦٣</span> ✍️🔥 لا تَبَالِ... فالعاقبة هناك! 🔥✍️</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٣٩- سورة الزمر</div><ul class="sm-links">
-<li><a href="article186.html">١. آية ٣ حين يصبح القرب من الله حُجّةً للشرك: «ما نعبدهم إلا ليقرّبونا إلى الله زُلْفَى»</a></li>
-<li><a href="article160.html">٢. آية ٤٦ حين تضيق الأرض... فارفع قلبك إلى فاطر السماء</a></li>
-<li><a href="article124.html">٣. آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة</a></li>
-<li><a href="article129.html">٤. آية ٥٣ حين تتكسر القلوب على أعتاب المغفرة (مقال آخر)</a></li>
-</ul></div>
+<li><a href="article186.html">١. <span class="sm-ayah-pill">آية ٣</span> حين يصبح القرب من الله حُجّةً للشرك: «ما نعبدهم إلا ليقرّبونا إلى الله زُلْفَى»</a></li>
+<li><a href="article160.html">٢. <span class="sm-ayah-pill">آية ٤٦</span> حين تضيق الأرض... فارفع قلبك إلى فاطر السماء</a></li>
+<li><a href="article124.html">٣. <span class="sm-ayah-pill">آية ٥٣</span> حين تتكسر القلوب على أعتاب المغفرة</a></li>
+<li><a href="article129.html">٤. <span class="sm-ayah-pill">آية ٥٣</span> حين تتكسر القلوب على أعتاب المغفرة (مقال آخر)</a></li>
+
+<li><a href="articles/article369.html">٥. <span class="sm-ayah-pill">آية ٦٨-٧٠</span> ونحن نلهث وراء الدنيا… فإذا بالصور يُنفخ فيه، وإذا الأرض تشرق بنور ربها!</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٤٠- سورة غافر</div><ul class="sm-links">
-<li><a href="article177.html">١. آية ٢٦ حين يشرّع الطاغوتُ لنفسه القتل: «ذَرُونِي أَقْتُلْ مُوسَى»</a></li>
-<li><a href="article178.html">٢. آية ٢٦ حين يتحول الطاغوت إلى «محامٍ عن الفضيلة»: ذَرُونِي أَقْتُلْ مُوسَى! (مقال آخر)</a></li>
-<li><a href="article179.html">٣. آية ٢٦ حين يتحول الطاغوت إلى «محامٍ عن الفضيلة»: ذَرُونِي أَقْتُلْ مُوسَى! (مقال ثالث)</a></li>
+<li><a href="article177.html">١. <span class="sm-ayah-pill">آية ٢٦</span> حين يشرّع الطاغوتُ لنفسه القتل: «ذَرُونِي أَقْتُلْ مُوسَى»</a></li>
+<li><a href="article178.html">٢. <span class="sm-ayah-pill">آية ٢٦</span> حين يتحول الطاغوت إلى «محامٍ عن الفضيلة»: ذَرُونِي أَقْتُلْ مُوسَى! (مقال آخر)</a></li>
+<li><a href="article179.html">٣. <span class="sm-ayah-pill">آية ٢٦</span> حين يتحول الطاغوت إلى «محامٍ عن الفضيلة»: ذَرُونِي أَقْتُلْ مُوسَى! (مقال ثالث)</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٤١- سورة فصلت</div><ul class="sm-links">
-<li><a href="article223.html">١. آية ٢٤ حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾</a></li>
-<li><a href="article192.html">٢. آية ٤٠ بينَ لَهِيبِ الإلقاءِ وَسَكِينَةِ الأمان: حين تسقط الأقنعة… ولا يبقى إلا ما قدّم القلبُ والإنسان</a></li>
+<li><a href="article223.html">١. <span class="sm-ayah-pill">آية ٢٤</span> حين ينتهي زمن الاعتذار: تأملات في قوله تعالى ﴿فَإِن يَصْبِرُوا فَالنَّارُ مَثْوًى لَّهُمْ ۖ وَإِن يَسْتَعْتِبُوا فَمَا هُم مِّنَ الْمُعْتَبِينَ﴾</a></li>
+<li><a href="article192.html">٢. <span class="sm-ayah-pill">آية ٤٠</span> بينَ لَهِيبِ الإلقاءِ وَسَكِينَةِ الأمان: حين تسقط الأقنعة… ولا يبقى إلا ما قدّم القلبُ والإنسان</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٤٢- سورة الشورى</div><ul class="sm-links">
-<li><a href="article173.html">١. آية ٢٠ أنت لا تعيش فقط… أنت تحرث!</a></li>
-<li><a href="article27-tashri-lighayrillah.html">٢. آية ٢١ حين يصبح التشريع لغير الله</a></li>
-<li><a href="articles/article235.html">٣. آية ٢١ حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»</a></li>
-<li><a href="article165.html">٤. آية ٤٧ استجيبوا لربكم... قبل أن يُغلق الباب ويُطوى الكتاب</a></li>
+<li><a href="article173.html">١. <span class="sm-ayah-pill">آية ٢٠</span> أنت لا تعيش فقط… أنت تحرث!</a></li>
+<li><a href="article27-tashri-lighayrillah.html">٢. <span class="sm-ayah-pill">آية ٢١</span> حين يصبح التشريع لغير الله</a></li>
+<li><a href="articles/article235.html">٣. <span class="sm-ayah-pill">آية ٢١</span> حين يتحول التشريع إلى خصومة مع الوحي: «أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم...»</a></li>
+<li><a href="article165.html">٤. <span class="sm-ayah-pill">آية ٤٧</span> استجيبوا لربكم... قبل أن يُغلق الباب ويُطوى الكتاب</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٤٤- سورة الدخان</div><ul class="sm-links">
-<li><a href="article5-yawm-albatsha.html">١. آية ١٦ يوم البطشة الكبرى</a></li>
+<li><a href="article5-yawm-albatsha.html">١. <span class="sm-ayah-pill">آية ١٦</span> يوم البطشة الكبرى</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٤٧- سورة محمد</div><ul class="sm-links">
-<li><a href="article74.html">١. آية ٦ الطريق الذي لا يضل سالكه</a></li>
-<li><a href="article166.html">٢. آية ٩ حين يُكره حكم الله… تُطفأ مصابيح العمل</a></li>
-<li><a href="article136.html">٣. آية ٢٤ حين يفتح القرآن أبواب القلوب: رحلة التدبر من التلاوة إلى الحياة</a></li>
+<li><a href="article74.html">١. <span class="sm-ayah-pill">آية ٦</span> الطريق الذي لا يضل سالكه</a></li>
+<li><a href="article166.html">٢. <span class="sm-ayah-pill">آية ٩</span> حين يُكره حكم الله… تُطفأ مصابيح العمل</a></li>
+<li><a href="article136.html">٣. <span class="sm-ayah-pill">آية ٢٤</span> حين يفتح القرآن أبواب القلوب: رحلة التدبر من التلاوة إلى الحياة</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٤٨- سورة الفتح</div><ul class="sm-links">
-<li><a href="article218.html">١. آية ١٨ آية الرضوان: حين سكنت القلوب تحت الشجرة… ففتح الله أبواب السماء</a></li>
-<li><a href="article122.html">٢. آية ٢٩ والذين معه شهادة السماء التي تسقط كل شبهة</a></li>
+<li><a href="article218.html">١. <span class="sm-ayah-pill">آية ١٨</span> آية الرضوان: حين سكنت القلوب تحت الشجرة… ففتح الله أبواب السماء</a></li>
+<li><a href="article122.html">٢. <span class="sm-ayah-pill">آية ٢٩</span> والذين معه شهادة السماء التي تسقط كل شبهة</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٤٩- سورة الحجرات</div><ul class="sm-links">
-<li><a href="article70.html">١. آية ٢-٣ حين يكون الأدب مع رسول الله ﷺ ميزان الإيمان</a></li>
+<li><a href="article70.html">١. <span class="sm-ayah-pill">آية ٢-٣</span> حين يكون الأدب مع رسول الله ﷺ ميزان الإيمان</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٥١- سورة الذاريات</div><ul class="sm-links">
-<li><a href="article163.html">١. آية ٧ حين تنسج السماء رسالتها في قلب الإنسان</a></li>
-<li><a href="article53.html">٢. آية ٧-٨ بين نسيج السماء واضطراب القلوب</a></li>
+<li><a href="article163.html">١. <span class="sm-ayah-pill">آية ٧</span> حين تنسج السماء رسالتها في قلب الإنسان</a></li>
+<li><a href="article53.html">٢. <span class="sm-ayah-pill">آية ٧-٨</span> بين نسيج السماء واضطراب القلوب</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٥٣- سورة النجم</div><ul class="sm-links">
-<li><a href="article225.html">١. آية ٣٢ بوابة الأوابين… حين يعرف الله ضعفك ويعرف قلبك</a></li>
-<li><a href="articles/article354.html">٢. آية ٤٣-٤٤ حين يضحك القلب وحين تفيض العين… ﴿وَأَنَّهُ هُوَ أَضْحَكَ وَأَبْكَى﴾</a></li>
+<li><a href="article225.html">١. <span class="sm-ayah-pill">آية ٣٢</span> بوابة الأوابين… حين يعرف الله ضعفك ويعرف قلبك</a></li>
+<li><a href="articles/article354.html">٢. <span class="sm-ayah-pill">آية ٤٣-٤٤</span> حين يضحك القلب وحين تفيض العين… ﴿وَأَنَّهُ هُوَ أَضْحَكَ وَأَبْكَى﴾</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٥٥- سورة الرحمن</div><ul class="sm-links">
-<li><a href="article14-allama-alquran.html">١. آية ١-٤ قبل أن يُخلق الإنسان كان القرآن</a></li>
-<li><a href="article75.html">٢. آية ٧-٩ حين يقوم الكون على ميزان</a></li>
-</ul></div>
+<li><a href="article14-allama-alquran.html">١. <span class="sm-ayah-pill">آية ١-٤</span> قبل أن يُخلق الإنسان كان القرآن</a></li>
+<li><a href="article75.html">٢. <span class="sm-ayah-pill">آية ٧-٩</span> حين يقوم الكون على ميزان</a></li>
+
+<li><a href="articles/article375.html">٣. <span class="sm-ayah-pill">آية ٢٦-٢٧</span> حين تنطفئ الدنيا ويبقى وجه ربك ذو الجلال والإكرام</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٥٧- سورة الحديد</div><ul class="sm-links">
-<li><a href="article51.html">١. آية ١٢ حين يسعى النور ويتخلف الظلام</a></li>
-<li><a href="article55.html">٢. آية ١٤-١٥ خلف السور... حين ينطق الصمت ويسقط القناع</a></li>
-<li><a href="article107.html">٣. آية ٢٠ حين تتحول الخضرة إلى حطام</a></li>
-<li><a href="article108.html">٤. آية ٢٠ حين تتحول الخضرة إلى حطام (مقال ثانٍ)</a></li>
+<li><a href="article51.html">١. <span class="sm-ayah-pill">آية ١٢</span> حين يسعى النور ويتخلف الظلام</a></li>
+<li><a href="article55.html">٢. <span class="sm-ayah-pill">آية ١٤-١٥</span> خلف السور... حين ينطق الصمت ويسقط القناع</a></li>
+<li><a href="article107.html">٣. <span class="sm-ayah-pill">آية ٢٠</span> حين تتحول الخضرة إلى حطام</a></li>
+<li><a href="article108.html">٤. <span class="sm-ayah-pill">آية ٢٠</span> حين تتحول الخضرة إلى حطام (مقال ثانٍ)</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٥٨- سورة المجادلة</div><ul class="sm-links">
-<li><a href="article37.html">١. آية ٧ حين يكون الله رابع النجوى</a></li>
-<li><a href="articles/article323.html">٢. آية ١١ القرآن يرفعك قبل أن يرفعك</a></li>
-<li><a href="articles/article330.html">٣. آية ٢٢ حين تتعارض رابطة الإيمان مع رابطة الظلم</a></li></ul></div>
+<li><a href="article37.html">١. <span class="sm-ayah-pill">آية ٧</span> حين يكون الله رابع النجوى</a></li>
+<li><a href="articles/article323.html">٢. <span class="sm-ayah-pill">آية ١١</span> القرآن يرفعك قبل أن يرفعك</a></li>
+<li><a href="articles/article330.html">٣. <span class="sm-ayah-pill">آية ٢٢</span> حين تتعارض رابطة الإيمان مع رابطة الظلم</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٥٩- سورة الحشر</div><ul class="sm-links">
-<li><a href="articles/article321.html">١. آية ٢١ حين يخشع الجبل ولا يخشع القلب</a></li>
+<li><a href="articles/article321.html">١. <span class="sm-ayah-pill">آية ٢١</span> حين يخشع الجبل ولا يخشع القلب</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٦٠- سورة الممتحنة</div><ul class="sm-links">
-<li><a href="article143.html">١. آية ٤ حين تنكشف الحدود... وتُولد الهوية الإيمانية</a></li>
+<li><a href="article143.html">١. <span class="sm-ayah-pill">آية ٤</span> حين تنكشف الحدود... وتُولد الهوية الإيمانية</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٦١- سورة الصف</div><ul class="sm-links">
-<li><a href="articles/article249.html">١. آية ١ 🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح</a></li>
+<li><a href="articles/article249.html">١. <span class="sm-ayah-pill">آية ١</span> 🌌 حين يسبّح الكون ويغفل الإنسان: رحلة القلب في موكب التسبيح</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٧٤- سورة المدثر</div><ul class="sm-links">
-<li><a href="article155.html">١. آية ٨-١٠ حين يخرس العالم... ويتكلم الناقور</a></li>
+<li><a href="article155.html">١. <span class="sm-ayah-pill">آية ٨-١٠</span> حين يخرس العالم... ويتكلم الناقور</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٧٦- سورة الإنسان</div><ul class="sm-links">
-<li><a href="article137.html">١. آية ١ سورة الإنسان... حين يأخذ القرآن بيد الروح من العدم إلى الخلود</a></li>
+<li><a href="article137.html">١. <span class="sm-ayah-pill">آية ١</span> سورة الإنسان... حين يأخذ القرآن بيد الروح من العدم إلى الخلود</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٧٨- سورة النبأ</div><ul class="sm-links">
-<li><a href="article72.html">١. آية ١٨-٢٦ حين تُطوى الدنيا</a></li>
-<li><a href="article161.html">٢. آية ٣٠ حين لا تبقى إلا الزيادة في العذاب... رسالة إلى كل قلب قبل فوات الأوان</a></li>
+<li><a href="article72.html">١. <span class="sm-ayah-pill">آية ١٨-٢٦</span> حين تُطوى الدنيا</a></li>
+<li><a href="article161.html">٢. <span class="sm-ayah-pill">آية ٣٠</span> حين لا تبقى إلا الزيادة في العذاب... رسالة إلى كل قلب قبل فوات الأوان</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٨١- سورة التكوير</div><ul class="sm-links">
-<li><a href="article95.html">١. آية ١-١٤ بعد اثنتي عشرة «إذا»... حين لا يبقى معك إلا ما أحضرت</a></li>
-<li><a href="article7-alkhunnas.html">٢. آية ١٥-١٦ الخنس الجوار الكنس</a></li>
-<li><a href="article73.html">٣. آية ١٥-١٩ حين يقسم الله بالمختفي والراحل</a></li>
+<li><a href="article95.html">١. <span class="sm-ayah-pill">آية ١-١٤</span> بعد اثنتي عشرة «إذا»... حين لا يبقى معك إلا ما أحضرت</a></li>
+<li><a href="article7-alkhunnas.html">٢. <span class="sm-ayah-pill">آية ١٥-١٦</span> الخنس الجوار الكنس</a></li>
+<li><a href="article73.html">٣. <span class="sm-ayah-pill">آية ١٥-١٩</span> حين يقسم الله بالمختفي والراحل</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٨٣- سورة المطففين</div><ul class="sm-links">
-<li><a href="article119.html">١. آية ١٤ حين يصدأ القلب وتُطفأ مصابيح الهداية</a></li>
+<li><a href="article119.html">١. <span class="sm-ayah-pill">آية ١٤</span> حين يصدأ القلب وتُطفأ مصابيح الهداية</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٨٤- سورة الانشقاق</div><ul class="sm-links">
-<li><a href="article58.html">١. آية ٦ من صرخة المهد إلى لقاء الرب</a></li>
-<li><a href="article52.html">٢. آية ٧-٩ بين العرض والنجاة</a></li>
+<li><a href="article58.html">١. <span class="sm-ayah-pill">آية ٦</span> من صرخة المهد إلى لقاء الرب</a></li>
+<li><a href="article52.html">٢. <span class="sm-ayah-pill">آية ٧-٩</span> بين العرض والنجاة</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٨٥- سورة البروج</div><ul class="sm-links">
-<li><a href="article197.html">١. آية ٤-٧ مواكب الشهادة ووجوه الطغيان: قراءة في فقه الأخدود وأزلية المعركة</a></li>
-<li><a href="article100.html">٢. آية ١٠ من فوهة الأخدود إلى أبواب الغفور</a></li>
+<li><a href="article197.html">١. <span class="sm-ayah-pill">آية ٤-٧</span> مواكب الشهادة ووجوه الطغيان: قراءة في فقه الأخدود وأزلية المعركة</a></li>
+<li><a href="article100.html">٢. <span class="sm-ayah-pill">آية ١٠</span> من فوهة الأخدود إلى أبواب الغفور</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٨٦- سورة الطارق</div><ul class="sm-links">
-<li><a href="article200.html">١. آية ١-١٧ حين يَثْقُبُ النجمُ ظلامَ السماء وتنكشف السرائر</a></li>
-<li><a href="article156.html">٢. آية ١١-١٤ حين يعود الغيث إلى السماء... وينشق القلب للحياة</a></li>
-</ul></div>
+<li><a href="article200.html">١. <span class="sm-ayah-pill">آية ١-١٧</span> حين يَثْقُبُ النجمُ ظلامَ السماء وتنكشف السرائر</a></li>
+<li><a href="articles/article374.html">٢. <span class="sm-ayah-pill">آية ٨</span> ﴿ إِنَّهُ عَلَىٰ رَجْعِهِ لَقَادِرٌ ﴾ — خواطر التركماني</a></li>
+<li><a href="article156.html">٣. <span class="sm-ayah-pill">آية ١١-١٤</span> حين يعود الغيث إلى السماء... وينشق القلب للحياة</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٨٧- سورة الأعلى</div><ul class="sm-links">
-<li><a href="article26-sabbih-alaala.html">١. آية ١ سبح اسم ربك الأعلى</a></li>
+<li><a href="article26-sabbih-alaala.html">١. <span class="sm-ayah-pill">آية ١</span> سبح اسم ربك الأعلى</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٨٨- سورة الغاشية</div><ul class="sm-links">
 <li><a href="article112.html">١. السورة كاملة حين تغشى الوجوه الحقيقة</a></li>
 <li><a href="article226.html">٢. السورة كاملة الغاشية: حين يستيقظ القلب قبل أن يغشاه المصير</a></li>
-<li><a href="articles/article268.html">٣. آيات ٢-٧ عَامِلَةٌ نَاصِبَةٌ</a></li></ul></div>
+<li><a href="articles/article268.html">٣. <span class="sm-ayah-pill">آيات ٢-٧</span> عَامِلَةٌ نَاصِبَةٌ</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٨٩- سورة الفجر</div><ul class="sm-links">
-<li><a href="article131.html">١. آية ١٥-١٧ فلسفة العطاء والمنع: حين يصحح القرآن ميزان الإنسان</a></li>
+<li><a href="article131.html">١. <span class="sm-ayah-pill">آية ١٥-١٧</span> فلسفة العطاء والمنع: حين يصحح القرآن ميزان الإنسان</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٩٠- سورة البلد</div><ul class="sm-links">
-<li><a href="articles/article365.html">١. آية ٤ وَخُلِقَ الإِنْسَانُ فِي كَبَدٍ</a></li>
-<li><a href="article48.html">٢. آية ١٠ طريقان إلى السماء... وليس طريقًا إلى الهاوية</a></li>
+<li><a href="articles/article365.html">١. <span class="sm-ayah-pill">آية ٤</span> وَخُلِقَ الإِنْسَانُ فِي كَبَدٍ</a></li>
+<li><a href="article48.html">٢. <span class="sm-ayah-pill">آية ١٠</span> طريقان إلى السماء... وليس طريقًا إلى الهاوية</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٩١- سورة الشمس</div><ul class="sm-links">
-<li><a href="articles/article353.html">١. آيات ١-١٠ من ضياء الشمس إلى أعماق النفس: طريق الفلاح وطريق الخيبة</a></li>
+<li><a href="articles/article353.html">١. <span class="sm-ayah-pill">آيات ١-١٠</span> من ضياء الشمس إلى أعماق النفس: طريق الفلاح وطريق الخيبة</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٩٣- سورة الضحى</div><ul class="sm-links">
-<li><a href="article34-tuhsi-alniam.html">١. آية ١١ حين تُحصي النعم يزهر القلب</a></li>
+<li><a href="article34-tuhsi-alniam.html">١. <span class="sm-ayah-pill">آية ١١</span> حين تُحصي النعم يزهر القلب</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">٩٦- سورة العلق</div><ul class="sm-links">
-<li><a href="articles/article267.html">١. آيات ١-٥ اقرأ... من العَلَق إلى آفاق العلم</a></li>
-<li><a href="article187.html">٢. آية ٦-٨ حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة</a></li></ul></div>
+<li><a href="articles/article267.html">١. <span class="sm-ayah-pill">آيات ١-٥</span> اقرأ... من العَلَق إلى آفاق العلم</a></li>
+<li><a href="article187.html">٢. <span class="sm-ayah-pill">آية ٦-٨</span> حين يرى الإنسانُ نفسه مستغنيًا: طغيان النعمة وامتحان المال والقوة</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٩٩- سورة الزلزلة</div><ul class="sm-links">
 <li><a href="article204.html">١. السورة كاملة حين تتكلم الأرض، وتنكشف الأعمال، وتسقط أوهام الغفلة</a></li>
 <li><a href="articles/article327.html">٢. السورة كاملة إذا زُلزلت الأرض… يومٌ تتكلم فيه الأرض وتظهر فيه خفايا الإنسان</a></li></ul></div>
@@ -585,13 +602,13 @@ footer p{font-size:.8rem;color:#fff}
 <li><a href="article206.html">١. السورة كاملة حِينَ يَسْقُطُ الْمَالُ وَالنَّسَبُ وَيَبْقَى مِيزَانُ الله</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١١٢- سورة الإخلاص</div><ul class="sm-links">
-<li><a href="article76.html">١. آية ١-٤ سورة تهدم كل الأصنام في القلب</a></li>
+<li><a href="article76.html">١. <span class="sm-ayah-pill">آية ١-٤</span> سورة تهدم كل الأصنام في القلب</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١١٣- سورة الفلق</div><ul class="sm-links">
 <li><a href="article6-surat-alfalaq.html">١. تفسير السورة سورة الفلق</a></li>
 </ul></div>
 <div class="sm-group"><div class="sm-group-name">١١٤- سورة الناس</div><ul class="sm-links">
-<li><a href="article228.html">١. آية ١-٦ الاعتصام الأخير: ربُّ الناس وملكُ الناس وإلهُ الناس</a></li>
+<li><a href="article228.html">١. <span class="sm-ayah-pill">آية ١-٦</span> الاعتصام الأخير: ربُّ الناس وملكُ الناس وإلهُ الناس</a></li>
 </ul></div>
 <ul class="sm-links">
 <li><a href="article81.html">٠. يسألونك... حين كان الوحي يصنع العقول (موضوعي)</a></li>
@@ -601,7 +618,7 @@ footer p{font-size:.8rem;color:#fff}
 </ul>
 </div></div>
 <div class="sm-branch" style="--bc:#1B3A5C">
-<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ٢. فرعُ السنة النبوية وشروح الحديث <span class="sm-count">٥٠ مقالاً</span></button>
+<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ٢. فرعُ السنة النبوية وشروح الحديث <span class="sm-count">٥١ مقالاً</span></button>
 <div class="sm-branch-body">
 <div class="sm-group"><div class="sm-group-name">١. باب الفتن والثبات على الدين</div><ul class="sm-links">
 <li><a href="article63.html">١. القابض على الجمر</a></li>
@@ -646,7 +663,8 @@ footer p{font-size:.8rem;color:#fff}
 <li><a href="articles/article320.html">٣٢. فهم الفتن بين الميزان الشرعي والواقع الاقتصادي</a></li>
 <li><a href="articles/article325.html">٣٣. ثَلاثَةُ أَجْنَادٍ عَلَى طَرِيقِ التَّحَوُّلَاتِ الْكُبْرَى</a></li>
 <li><a href="articles/article326.html">٣٤. نبوءة «سيصير الأمر جنودًا مجندة» بين الماء والفتنة والقحطاني</a></li><li><a href="articles/article367.html">٣٥. إخبارات النبي ﷺ ودلالتها على نبوته وضرورة تنزيل أحاديث الفتن على الواقع</a></li>
-</ul></div>
+
+<li><a href="articles/article371.html">٣٦. من الأحلاس إلى السَّرَّاء، ومن الدُّهيماء إلى الدجّال: قراءة تدبّرية في أحاديث الفتن وتنزيلها على واقع الأمة</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٤. باب السيرة والأخلاق الاجتماعية</div><ul class="sm-links">
 <li><a href="article29-hilf-alfudul.html">١. حلف الفضول</a></li>
 <li><a href="article182.html">٢. المرء مع من أحب… حين يتحول الحب إلى طريقٍ إلى الحشر</a></li>
@@ -742,7 +760,7 @@ footer p{font-size:.8rem;color:#fff}
 </ul></div>
 </div></div>
 <div class="sm-branch" style="--bc:#0A192F">
-<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ٧. فرعُ المقالات التهكمية والساخرة <span class="sm-count">١٨ مقالاً</span></button>
+<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ٧. فرعُ المقالات التهكمية والساخرة <span class="sm-count">٢٠ مقالاً</span></button>
 <div class="sm-branch-body">
 <div class="sm-group"><div class="sm-group-name">١. باب نقد النفاق الاجتماعي</div><ul class="sm-links">
 <li><a href="article56.html">١. كازانوفا... ولكن بعمامة!</a></li>
@@ -751,13 +769,15 @@ footer p{font-size:.8rem;color:#fff}
 <li><a href="articles/article246.html">٤. 🎬😂 «حربٌ على الشاشة فقط!».. سالم الطويل يكتشف أن غزة استوديو تصوير هوليوودي! 📺🍿🤡</a></li><li><a href="articles/article247.html">٥. 😂📢 «لا تشكُ من الأوضاع… فقط أنكر المنكر وأغمض عينيك!» 🤣🙈</a></li>
 <li><a href="articles/article270.html">٦. «يا وليَّ النِّعَم»… من سفرة عم إبراهيم إلى «سفرة» ولي العهد!</a></li><li><a href="articles/article285.html">٧. 🇮🇶😂 العراقي… المواطن الذي تتنازع عليه الصواريخ وتختلف عليه الشعوب!</a></li><li><a href="articles/article286.html">٨. 😂🇮🇶 «علي وياك علي»… جمهورية الهتاف العراقي: من نوري سعيد إلى آخر رئيس! 📢👑</a></li><li><a href="articles/article300.html">٩. 👑🔥 مملكةُ التصفيق… حين يصبح المنافق حارساً للعرش ويصبح الصادق متهماً بالإرجاف</a></li>
 <li><a href="articles/article346.html">١٠. ارفع رأسك يا أخي... بس شوف المجاري أولاً!</a></li>
-</ul></div>
+
+<li><a href="articles/article368.html">١١. 🇮🇶💵 الدينار العراقي في الإنعاش… والبيضة صارت من علية القوم! 🥚😂</a></li></ul></div>
 <div class="sm-group"><div class="sm-group-name">٢. باب نقد الخطاب الديني المتساهل</div><ul class="sm-links">
 <li><a href="article109.html">١. الهيئة العامة لتطبيع الكبائر</a></li>
 <li><a href="articles/article265.html">٢. حضرة الشاويش عبدالعزيز الريس… عندما يصبح السجن شهادةَ بطولة!</a></li>
 <li><a href="articles/article266.html">٣. شرعنة القتل بالإمضاءات… حين يصبح ختم الورقة أطول من عمر الإنسان!</a></li><li><a href="articles/article287.html">٤. 😂 جهادُ «محاسن ولاة الأمر»… حتى لا يبقى للحاكم عيبٌ واحد!</a></li><li><a href="articles/article316.html">٥. 🚽💣 مملكة الاستنجاء العظمى</a></li><li><a href="articles/article319.html">٦. 🎭😂 شيوخ… لكن ظرفاء!</a></li>
 <li><a href="articles/article337.html">٧. 🖋️ يا رسلان… أيُّهما كان أولى بـ«مستراحٌ منه»؟! — حين يصبح عالمُ الحديث «مجرمًا» في خطابك… ويصمت اللسان عن مقام النبوة!</a></li>
-<li><a href="articles/article356.html">٨. 🕌📢 مؤامرة «نُودِيَ» على صلاة الجمعة! 🤣</a></li></ul></div>
+<li><a href="articles/article356.html">٨. 🕌📢 مؤامرة «نُودِيَ» على صلاة الجمعة! 🤣</a></li>
+<li><a href="articles/article370.html">٩. 😂📢 فقه الذنوب بالجملة… وغزة تدفع الفاتورة وحدها! 🤦‍♂️💸</a></li></ul></div>
 </div></div>
 <div class="sm-branch" style="--bc:#d97706">
 <button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ٨. فرعُ المناظرات والردود <span class="sm-count">٢٩ مقالاً</span></button>
@@ -828,7 +848,7 @@ footer p{font-size:.8rem;color:#fff}
 <div class="sm-branch-body">
 </div></div>
 <div class="sm-branch" style="--bc:#0284C7">
-<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ١١. فرعُ تعبير الرؤى وتفسير الأحلام <span class="sm-count">٥ مقالات</span></button>
+<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> ١١. فرعُ تعبير الرؤى وتفسير الأحلام <span class="sm-count">٧ مقالات</span></button>
 <div class="sm-branch-body">
 <div class="sm-group"><div class="sm-group-name">١. باب منهج تعبير الرؤى وفقه القرائن</div><ul class="sm-links">
 <li><a href="articles/article348.html">١. منهجنا في تعبير الرؤى — من فهم القصة إلى فقه القرائن والمستندات</a></li>
@@ -836,9 +856,11 @@ footer p{font-size:.8rem;color:#fff}
 <li><a href="articles/article355.html">٣. حين تتداخل الرؤيا والحقيقة</a></li>
 <li><a href="articles/article358.html">٤. حين يتكلم المنام بلغة القرائن</a></li>
 <li><a href="articles/article361.html">٥. الرمز الشاذ في الرؤيا: التفصيل الذي يبدو زائداً وقد يكون رأس الخيط</a></li>
-</ul></div>
+
+<li><a href="articles/article372.html">٦. الرمز الشاذ في الرؤيا: التفصيل الذي يبدو زائداً وقد يكون رأس الخيط</a></li>
+<li><a href="articles/article373.html">٧. الرمز المخفي في تفسير المنام: ما الذي تقوله الرؤيا دون أن تنطق به؟</a></li></ul></div>
 </div></div><div class="sm-branch" style="--bc:#6b1f35">
-<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> سؤال وجواب <span class="sm-count">٨ أسئلة وأجوبة</span></button>
+<button aria-expanded="false" class="sm-branch-h" type="button"><span class="sm-arrow">▾</span> سؤال وجواب <span class="sm-count">١٤ سؤالًا وجوابًا</span></button>
 <div class="sm-branch-body">
 <div class="sm-group">
 <div class="sm-group-name">الأسئلة والأجوبة المنشورة</div>
@@ -851,6 +873,13 @@ footer p{font-size:.8rem;color:#fff}
 <li><a href="qa/006.html">6. ما المقصود بالذكر الكثير؟ وهل يجب ذكر الله في كل لحظة؟ وما حكم طريقة «الله هو» مع الأنفاس؟</a></li>
 <li><a href="qa/007.html">7. ما حكم «السلفة» أو «الجمعية» الدورية؟ وهل تدخل في القرض الذي جر نفعًا؟</a></li>
 <li><a href="qa/008.html">8. ما معنى قوله تعالى: ﴿وَلَوْ أَرَادُوا الْخُرُوجَ لَأَعَدُّوا لَهُ عُدَّةً﴾ [التوبة: 46]؟</a></li>
+
+<li><a href="qa/009.html">9. هل تفسير المنام هبة من الله أم هو علم يُتَعَلَّم؟</a></li>
+<li><a href="qa/010.html">10. كيف نميز أضغاث الأحلام عن الرؤيا الصادقة؟ وكيف نعرف أن هذا المنام رؤية أو حديث نفس؟</a></li>
+<li><a href="qa/011.html">11. هل كثرة المنامات تعد من أضغاث الأحلام؟</a></li>
+<li><a href="qa/012.html">12. إذا تعلم الشخص تفسير المنام، هل يكون تفسيره لنفسه أدق؟</a></li>
+<li><a href="qa/013.html">13. هل يستطيع أي شخص أن يرى رؤيا صادقة حتى لو كان كافراً، أم لا بد أن تتوفر فيه صفات مميزة؟</a></li>
+<li><a href="qa/014.html">14. هل يمكن للرؤيا أن تتحقق بعد سنوات طويلة، مثل عشر سنوات أو أقل؟</a></li>
 </ul>
 </div>
 </div>
