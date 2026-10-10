@@ -5,7 +5,9 @@
   - كل مقال يزوره المستخدم مرة واحدة (بإنترنت) يُصبح متاحاً دائماً بعدها بلا إنترنت.
 */
 
-const CACHE_VERSION = 'suljuki-v16';
+const CACHE_VERSION = 'suljuki-v17';
+const MOST_READ_CACHE = 'suljuki-most-read-persistent-v1';
+const MOST_READ_PATHS = ['/qa/most-read.json', '/articles/most-read.json'];
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -27,7 +29,7 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
       Promise.all(
-        keys.filter((key) => key !== CACHE_VERSION).map((key) => caches.delete(key))
+        keys.filter((key) => key.startsWith('suljuki-v') && key !== CACHE_VERSION).map((key) => caches.delete(key))
       )
     ).then(() => self.clients.claim())
   );
@@ -52,6 +54,23 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+
+  // قوائم الأكثر قراءة: الشبكة أولاً، مع الاحتفاظ بآخر نسخة ناجحة دائماً.
+  if (MOST_READ_PATHS.some((path) => url.pathname.endsWith(path))) {
+    event.respondWith((async () => {
+      const cache = await caches.open(MOST_READ_CACHE);
+      try {
+        const response = await fetch(req);
+        if (response.ok) await cache.put(req, response.clone());
+        return response;
+      } catch (error) {
+        const saved = await cache.match(req, {ignoreSearch:true});
+        if (saved) return saved;
+        throw error;
+      }
+    })());
+    return;
+  }
 
   if (isHomePageRequest(url)) {
     // الصفحة الرئيسية فقط: اعرض المحفوظ فوراً (بلا انتظار)، وحدّثه في الخلفية بصمت

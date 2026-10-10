@@ -6875,7 +6875,6 @@ body.sepia #latestSec .lc-article-quote::before{color:var(--lc-b,#273B55) !impor
       <a class="stage1-gateway-link" href="#qaBanner"><span class="stage1-gateway-icon">؟</span>سؤال وجواب</a>
       <a class="stage1-gateway-link" href="#topicsBanner"><span class="stage1-gateway-icon">☷</span>تصفح حسب الموضوع</a>
       <a class="stage1-gateway-link" href="#latestBanner"><span class="stage1-gateway-icon">◷</span>أحدث الإضافات</a>
-      <a class="stage1-gateway-link" href="#articleHighlightsBanner"><span class="stage1-gateway-icon">◆</span>مختارات والأكثر قراءة</a>
       <a class="stage1-gateway-link" href="#booksBanner"><span class="stage1-gateway-icon">▤</span>المؤلفات والكتب</a>
       <a class="stage1-gateway-link" href="sitemap-page.html"><span class="stage1-gateway-icon">⌘</span>خريطة الموسوعة</a>
       <a class="stage1-gateway-link" href="about.html"><span class="stage1-gateway-icon">◉</span>عن الموسوعة</a>
@@ -8825,6 +8824,25 @@ body.sepia #latestSec .lc-article-quote::before{color:var(--lc-b,#273B55) !impor
 </div>
 </div>
 <script>
+/* حفظ آخر بيانات صحيحة لقوائم الأكثر قراءة وإتاحتها دون اتصال */
+async function seljukiReadMostRead(url){
+  var key='seljuki_most_read_offline_v1_'+url;
+  try{
+    var response=await fetch(url,{cache:'no-store'});
+    if(!response.ok) throw new Error('most-read HTTP '+response.status);
+    var payload=await response.json();
+    if(!payload || ( !Array.isArray(payload) && !Array.isArray(payload.items))) throw new Error('invalid most-read data');
+    try{localStorage.setItem(key,JSON.stringify(payload));}catch(e){}
+    return payload;
+  }catch(error){
+    try{
+      var saved=localStorage.getItem(key);
+      if(saved){var payload=JSON.parse(saved);if(Array.isArray(payload)||Array.isArray(payload.items)) return payload;}
+    }catch(e){}
+    throw error;
+  }
+}
+
 // بيانات المقالات القرآنية الحالية (٣٣) — تُبنى منها روابط الفرع القرآني
 var QURAN=[
 ["article34-tuhsi-alniam.html","حين تُحصي النعم يزهر القلب"],
@@ -9800,9 +9818,7 @@ window.addEventListener('scroll',function(){
 
   async function loadMostReadViews(){
     try{
-      const response=await fetch("qa/most-read.json",{cache:"no-store"});
-      if(!response.ok) throw new Error("most-read.json");
-      const payload=await response.json();
+      const payload=await seljukiReadMostRead("qa/most-read.json");
       const rows=Array.isArray(payload)?payload:(Array.isArray(payload.items)?payload.items:[]);
       const viewsById=new Map(
         rows
@@ -9943,11 +9959,7 @@ window.addEventListener('scroll',function(){
     root.appendChild(empty);
   }
 
-  fetch("articles/most-read.json",{cache:"no-store"})
-    .then(function(response){
-      if(!response.ok) throw new Error("most-read");
-      return response.json();
-    })
+  seljukiReadMostRead("articles/most-read.json")
     .then(function(payload){
       var rows=Array.isArray(payload)?payload:(Array.isArray(payload.items)?payload.items:[]);
       rows=rows
