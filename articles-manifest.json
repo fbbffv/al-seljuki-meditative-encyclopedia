@@ -1,6 +1,8 @@
 {
-  "version": 375,
+  "version": 377,
   "articles": [
+    "articles/article377.html",
+    "articles/article376.html",
     "articles/article368.html",
     "articles/article369.html",
     "articles/article370.html",
@@ -375,8 +377,14 @@
     "articles/article301.html",
     "articles/article302.html"
   ],
-  "questionsVersion": 14,
+  "questionsVersion": 20,
   "questions": [
+    "qa/020.html",
+    "qa/019.html",
+    "qa/018.html",
+    "qa/017.html",
+    "qa/016.html",
+    "qa/015.html",
     "qa/014.html",
     "qa/013.html",
     "qa/012.html",
