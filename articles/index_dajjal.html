@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A192F">
+<meta name="description" content="الفهرس المستقل للفصول الثمانية من دراسة: من الميقات المعلوم إلى فتنة الظهور الأخير — إبليس والمسيح الدجّال.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Display&amp;family=Cairo:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<title>من الميقات المعلوم إلى فتنة الظهور الأخير | إبليس والمسيح الدجّال</title>
+<style>
+:root{
+  --navy:#0A192F;
+  --navy-2:#0D1B2A;
+  --navy-3:#1B3A5C;
+  --gold:#5C4408;
+  --gold-bright:#D4AF37;
+  --gold-light:#E8CD6E;
+  --ivory:#FBF8F1;
+  --paper:#FFFFFF;
+  --ink:#081527;
+  --muted:#34445A;
+  --burgundy:#6B1F35;
+  --line:#B9891A;
+  --shadow:0 18px 44px rgba(10,25,47,.12);
+  --focus:#6B1F35;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--ivory)}
+body{
+  margin:0;min-height:100vh;background:
+    radial-gradient(ellipse at 8% 12%,rgba(212,175,55,.10),transparent 28rem),
+    radial-gradient(ellipse at 92% 48%,rgba(27,58,92,.07),transparent 30rem),
+    var(--ivory);
+  color:var(--ink);
+  font-family:"Cairo",sans-serif;
+  font-size:16px;font-weight:600;line-height:1.9;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+  font-feature-settings:"kern" 1,"liga" 1,"calt" 1;font-kerning:normal;font-optical-sizing:auto;
+}
+a{color:inherit}
+a:focus-visible{outline:3px solid #6B1F35;outline-offset:4px;border-radius:6px}
+.skip-link{
+  position:absolute;top:10px;right:12px;z-index:20;
+  padding:10px 16px;border:2px solid var(--gold-bright);border-radius:10px;
+  background:var(--paper);color:var(--navy);font-weight:900;
+  transform:translateY(-160%);
+}
+.skip-link:focus{transform:translateY(0)}
+.site-header{
+  position:relative;z-index:2;
+  background:linear-gradient(112deg,var(--navy),#111D2D 58%,#241B10);
+  border-bottom:3px solid var(--gold-bright);
+  box-shadow:0 8px 28px rgba(10,25,47,.20);
+}
+.header-inner{
+  width:min(1160px,calc(100% - 36px));min-height:72px;margin:auto;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+}
+.brand{
+  display:flex;align-items:center;gap:12px;color:#FFF4B0;
+  font-family:"Amiri Display",serif;font-size:1.12rem;font-weight:800;
+  letter-spacing:.01em;
+}
+.brand-seal{
+  width:39px;height:39px;display:grid;place-items:center;flex:0 0 39px;
+  border:1px solid var(--gold-bright);border-radius:12px;
+  color:var(--gold-light);font-size:1.15rem;
+  background:linear-gradient(145deg,rgba(212,175,55,.19),rgba(212,175,55,.04));
+  box-shadow:inset 0 0 0 4px rgba(212,175,55,.055);
+}
+.header-note{
+  color:#FFF4B0;font-size:.78rem;font-weight:800;
+  border:1px solid rgba(212,175,55,.75);border-radius:999px;
+  padding:5px 13px;background:rgba(212,175,55,.09);
+}
+
+.header-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.home-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:8px 15px;border:1.5px solid #FFF4B0;border-radius:999px;background:linear-gradient(135deg,#E8CD6E,#D4AF37);color:#0A192F;text-decoration:none;font-family:"Cairo",sans-serif;font-size:.84rem;font-weight:900;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.18);transition:transform .18s ease,box-shadow .18s ease}
+.home-link:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(0,0,0,.24)}
+.home-link:focus-visible{outline:3px solid #FFFFFF;outline-offset:4px}
+.home-link svg{width:18px;height:18px;flex:0 0 18px}
+@media(max-width:560px){.header-inner{padding:10px 0;min-height:unset;align-items:flex-start}.header-actions{gap:7px}.home-link{min-height:39px;padding:7px 11px;font-size:.76rem}.header-note{font-size:.7rem;padding:5px 9px}}
+@media(prefers-reduced-motion:reduce){.home-link{transition:none}.home-link:hover{transform:none}}
+main{width:min(1120px,calc(100% - 36px));margin:0 auto}
+.hero{
+  position:relative;isolation:isolate;overflow:hidden;text-align:center;
+  /* صندوق العنوان وحده يمتد من حافة الشاشة إلى حافتها ويلتصق بالهيدر */
+  width:100vw;max-width:none;
+  margin:0 calc(50% - 50vw) 42px;
+  padding:clamp(48px,7vw,82px) clamp(20px,6vw,76px) 52px;
+  border:0;border-bottom:1.5px solid var(--gold-bright);border-radius:0;
+  color:#fff;background:
+    radial-gradient(circle at 12% 18%,rgba(212,175,55,.17),transparent 26%),
+    radial-gradient(circle at 88% 84%,rgba(107,31,53,.25),transparent 28%),
+    linear-gradient(135deg,#071326 0%,#0A192F 55%,#17283D 100%);
+  box-shadow:0 22px 54px rgba(10,25,47,.20),inset 0 0 0 7px rgba(212,175,55,.055);
+}
+.hero:before,.hero:after{
+  content:"";position:absolute;z-index:-1;width:210px;height:210px;
+  border:1px solid rgba(232,205,110,.30);transform:rotate(45deg);
+  pointer-events:none;
+}
+.hero:before{top:-158px;right:-96px;box-shadow:0 0 0 14px rgba(212,175,55,.05),0 0 0 29px rgba(212,175,55,.035)}
+.hero:after{bottom:-166px;left:-96px;box-shadow:0 0 0 14px rgba(212,175,55,.05),0 0 0 29px rgba(212,175,55,.035)}
+.hero-frame{
+  position:absolute;inset:15px;border:1px solid rgba(232,205,110,.24);
+  border-radius:17px;pointer-events:none;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  margin-bottom:19px;color:#FFF4B0;font-size:.88rem;font-weight:900;
+  letter-spacing:.035em;
+}
+.eyebrow:before,.eyebrow:after{
+  content:"✦";color:var(--gold-bright);font-size:.85rem;
+}
+h1{
+  max-width:920px;margin:0 auto;color:#FFFFFF;
+  font-family:"Amiri Display",serif;
+  font-size:clamp(2rem,4vw + 0.5rem,4.2rem);font-weight:700;
+  line-height:1.4;letter-spacing:0;text-wrap:balance;
+}
+h1 span{
+  display:block;margin-top:5px;color:#FFF4B0;
+  font-size:.68em;font-weight:900;
+}
+.ornament{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  width:min(250px,70%);margin:25px auto 22px;color:var(--gold-light);
+}
+.ornament:before,.ornament:after{
+  content:"";height:2px;flex:1;background:linear-gradient(90deg,transparent,var(--gold-bright));
+}
+.ornament:after{transform:scaleX(-1)}
+.ornament span{font-size:1.05rem}
+.subtitle{
+  max-width:830px;margin:0 auto;color:#FFFFFF;
+  font-size:clamp(1rem,1.8vw,1.18rem);font-weight:700;line-height:2.05;
+}
+.author{
+  margin:27px 0 0;color:#FFF4B0;font-size:.96rem;font-weight:800;
+}
+.author strong{
+  display:block;margin-top:5px;color:#FFFFFF;font-size:1.12rem;font-weight:900;
+}
+.hero-meta{
+  display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-top:27px;
+}
+.hero-meta span{
+  display:inline-flex;align-items:center;min-height:34px;padding:5px 13px;
+  border:1px solid rgba(232,205,110,.75);border-radius:999px;
+  background:#14263D;color:#FFF4B0;font-size:.76rem;font-weight:900;
+}
+
+.share-wrap{display:flex;flex-direction:column;align-items:center;gap:7px;margin:25px auto 0}
+.share-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:9px 24px;border:1.5px solid #FFF4B0;border-radius:999px;background:linear-gradient(135deg,#E8CD6E,#D4AF37);color:#0A192F;font-family:"Cairo",sans-serif;font-size:.96rem;font-weight:900;cursor:pointer;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .18s ease,box-shadow .18s ease}
+.share-button:hover{transform:translateY(-2px);box-shadow:0 11px 26px rgba(0,0,0,.28)}
+.share-button:focus-visible{outline:3px solid #FFFFFF;outline-offset:4px}
+.share-icon{width:19px;height:19px;flex:0 0 19px}
+.share-status{min-height:1.5em;color:#FFF4B0;font-size:.78rem;font-weight:800}
+@media(max-width:520px){.share-button{min-height:46px;padding:8px 20px;font-size:.9rem}}
+@media(prefers-reduced-motion:reduce){.share-button{transition:none}.share-button:hover{transform:none}}
+
+.contents{padding:0 0 58px}
+.section-head{text-align:center;margin:0 auto 25px}
+.section-kicker{
+  color:var(--gold);font-size:.77rem;font-weight:900;letter-spacing:.12em;
+}
+.section-head h2{
+  margin:4px 0 0;color:var(--navy);
+  font-family:"Amiri Display",serif;font-size:clamp(1.4rem,2.6vw,2.15rem);
+  font-weight:900;line-height:1.5;
+}
+.section-head:after{
+  content:"";display:block;width:86px;height:3px;
+  background:linear-gradient(90deg,var(--gold-bright),var(--burgundy));
+  margin:12px auto 0;border-radius:3px;
+}
+.section-head p{color:#26364A;font-size:.94rem;font-weight:700;margin:10px 0 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.chapter-card{
+  position:relative;isolation:isolate;overflow:hidden;min-width:0;
+  display:flex;align-items:stretch;gap:16px;
+  padding:19px 20px 17px;text-decoration:none;
+  border:1px solid #B9891A;border-radius:17px;
+  background:linear-gradient(135deg,#FFFFFF 0%,#FFFDF8 72%,#F5EEDC 100%);
+  color:var(--ink);box-shadow:0 7px 22px rgba(10,25,47,.075);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.chapter-card:before{
+  content:"";position:absolute;z-index:-1;inset:0 0 0 auto;width:5px;
+  background:linear-gradient(180deg,var(--gold-bright),var(--burgundy));
+}
+.chapter-card:hover{
+  transform:translateY(-3px);border-color:var(--navy-3);
+  box-shadow:0 15px 30px rgba(10,25,47,.14);
+}
+.chapter-card:focus-visible{
+  outline:3px solid var(--focus);outline-offset:4px;
+}
+.card-index{
+  flex:0 0 48px;width:48px;height:48px;display:grid;place-items:center;
+  margin-top:2px;border:1.5px solid var(--gold);border-radius:14px;
+  background:linear-gradient(145deg,#FFF8E5,#F0E2C3);
+  color:var(--navy);font-size:1rem;font-weight:900;direction:ltr;
+  box-shadow:inset 0 1px 0 #FFFFFF,0 3px 9px rgba(10,25,47,.07);
+}
+.card-copy{font-family:"Cairo",sans-serif;display:flex;flex:1;min-width:0;flex-direction:column;align-items:flex-start}
+.card-kicker{
+  margin-bottom:5px;font-family:"Cairo",sans-serif;color:var(--burgundy);font-size:.75rem;font-weight:900;
+}
+.card-title{
+  display:block;font-family:"Amiri Display",serif;color:#081527;font-size:clamp(1.15rem,2vw,1.65rem);font-weight:700;
+  line-height:1.4;overflow-wrap:anywhere;
+}
+.card-action{
+  display:flex;font-family:"Cairo",sans-serif;align-items:center;gap:9px;margin-top:13px;padding-top:9px;
+  width:100%;border-top:1px solid rgba(92,68,8,.28);
+  color:#26364A;font-size:.87rem;font-weight:900;
+}
+.card-action span{color:var(--gold);font-size:1.25rem;transition:transform .18s}
+.chapter-card:hover .card-action span{transform:translateX(-4px)}
+.card-mark{
+  align-self:flex-start;margin:3px 0 0;color:#9A741D;
+  font-size:1.1rem;opacity:.85;
+}
+.footer{
+  margin:0 auto 28px;padding:19px 16px;text-align:center;
+  border-top:1px solid rgba(92,68,8,.35);color:#26364A;
+  font-size:.83rem;font-weight:700;
+}
+.footer strong{color:var(--navy);font-weight:900}
+
+/* ===== بانر الحقوق — مستوحى من الهوية الملونة للموسوعة ===== */
+/* ===== شريط الحقوق بعرض الشاشة كاملًا — هوية الموسوعة الملونة ===== */
+.rights-banner{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  width:100vw;
+  margin:0 calc(50% - 50vw);
+  padding:0;
+  border:0;
+  border-top:3px solid #D4AF37;
+  border-bottom:3px solid #6B1F35;
+  border-radius:0;
+  background:
+    linear-gradient(90deg,#D4AF37 0%,#6B1F35 24%,#0A192F 51%,#2F4A3A 76%,#D4AF37 100%);
+  box-shadow:0 -12px 34px rgba(10,25,47,.13);
+}
+.rights-banner:before{
+  content:"";
+  position:absolute;inset:3px 0 auto;height:3px;
+  background:linear-gradient(90deg,#6B1F35,#D4AF37,#FFFFFF,#D4AF37,#6B1F35);
+  opacity:.95;pointer-events:none;
+}
+.rights-banner:after{
+  content:"";
+  position:absolute;inset:auto 0 3px;height:2px;
+  background:linear-gradient(90deg,#2F4A3A,#D4AF37,#6B1F35,#D4AF37,#2F4A3A);
+  pointer-events:none;
+}
+.rights-banner-inner{
+  position:relative;
+  width:min(1240px,100%);
+  min-height:154px;
+  margin:0 auto;
+  padding:27px clamp(18px,4vw,52px) 25px;
+  display:grid;
+  grid-template-columns:1fr 1.35fr 1fr;
+  align-items:center;
+  gap:24px;
+  text-align:center;
+  color:#FFFFFF;
+  background:
+    radial-gradient(ellipse at 12% 50%,rgba(212,175,55,.13),transparent 30%),
+    radial-gradient(ellipse at 88% 50%,rgba(107,31,53,.24),transparent 30%),
+    linear-gradient(100deg,#0A192F 0%,#0D1B2A 48%,#1B3A5C 100%);
+}
+.rights-brand{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  color:#FFF4B0;font-size:clamp(.88rem,1.5vw,1.04rem);font-weight:900;
+  line-height:1.8;
+}
+.rights-emblem{color:#D4AF37;font-size:1rem}
+.rights-main{
+  width:100%;
+  margin:0 auto;
+  padding:8px 20px 10px;
+  border:0;
+  border-right:1px solid rgba(212,175,55,.72);
+  border-left:1px solid rgba(212,175,55,.72);
+  border-radius:0;
+  background:linear-gradient(100deg,rgba(107,31,53,.18),#6B1F35 48%,rgba(107,31,53,.18));
+  box-shadow:none;
+}
+.rights-overline{
+  display:block;margin-bottom:2px;
+  color:#FFF4B0;font-size:.75rem;font-weight:900;letter-spacing:.035em;
+}
+.rights-main strong{
+  display:block;color:#FFFFFF;
+  font-family:"Amiri Display",serif;
+  font-size:clamp(1.5rem,3vw,2.15rem);
+  font-weight:900;line-height:1.5;
+}
+.rights-copyright{
+  display:inline-block;margin-top:2px;
+  color:#FFF4B0;font-size:.84rem;font-weight:900;
+}
+.rights-author{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:4px;margin:0 auto;color:#FFF4B0;font-size:.8rem;font-weight:800;
+  line-height:1.8;
+}
+.rights-author strong{color:#FFFFFF;font-size:.9rem;font-weight:900}
+.rights-note{
+  grid-column:1/-1;
+  max-width:920px;margin:-8px auto 0;
+  color:#FFFFFF;font-size:.75rem;font-weight:700;line-height:1.8;
+}
+@media(max-width:720px){
+  .rights-banner{width:100vw;margin:0 calc(50% - 50vw)}
+  .rights-banner-inner{
+    min-height:0;
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:24px 16px 22px;
+  }
+  .rights-main{
+    width:min(560px,100%);
+    padding:9px 12px 10px;
+    border-right:0;border-left:0;
+    border-top:1px solid rgba(212,175,55,.65);
+    border-bottom:1px solid rgba(212,175,55,.65);
+  }
+  .rights-author{font-size:.76rem}
+  .rights-author strong{font-size:.84rem}
+  .rights-note{grid-column:auto;margin:0;font-size:.72rem}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+@media(forced-colors:active){
+  .rights-banner,.rights-banner-inner,.rights-main{border:1px solid CanvasText}
+  .rights-brand,.rights-overline,.rights-main strong,.rights-copyright,.rights-author,.rights-author strong,.rights-note{color:CanvasText}
+}
+
+@media(max-width:720px){
+  body{font-size:16px}
+  main{width:min(100% - 24px,580px)}
+  .header-inner{width:calc(100% - 24px);min-height:62px}
+  .brand{font-size:1rem}
+  .header-note{font-size:.68rem;padding:4px 9px}
+  .hero{width:100vw;margin:0 calc(50% - 50vw) 30px;padding:40px 18px 34px;border-radius:0}
+  .hero-frame{inset:10px;border-radius:0}
+  .grid{grid-template-columns:1fr;gap:12px}
+  .chapter-card{padding:17px 16px 15px;gap:13px}
+  .card-title{font-size:1.18rem;line-height:1.5}
+  .card-index{width:43px;height:43px;flex-basis:43px;border-radius:12px}
+}
+@media(min-width:560px) and (max-width:720px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chapter-card{gap:10px;padding:15px 13px}
+  .card-index{width:39px;height:39px;flex-basis:39px;font-size:.9rem}
+  .card-title{font-size:1rem;line-height:1.45}
+  .card-mark{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{transition:none!important;animation:none!important}
+}
+/* نطاقات العرض الواسعة: الشاشات الكبيرة والتلفاز وواجهات 4K/8K */
+@media screen and (min-width:1921px){
+  body{font-size:20px;}
+  main{width:min(1600px,calc(100% - 64px));}
+  .header-inner{max-width:1640px;}
+  .hero{padding-top:clamp(70px,6vw,112px);padding-bottom:68px;}
+  .grid{gap:22px;}
+  .chapter-card{padding:24px 26px;gap:20px;}
+}
+@media screen and (min-width:3200px){
+  main{width:min(1840px,calc(100% - 100px));}
+  .header-inner{max-width:1880px;}
+  .hero h1{font-size:clamp(4.2rem,3.2vw,5.4rem);}
+  .section-head h2{font-size:clamp(2.6rem,2vw,3.4rem);}
+  .chapter-card{padding:30px 34px;}
+  .card-title{font-size:1.12rem;}
+}
+/* هواتف صغيرة جدًا: منع تزاحم النصوص والأزرار */
+@media(max-width:359px){
+  body{font-size:15px;}
+  main{width:calc(100% - 18px);}
+  .header-inner{width:calc(100% - 18px);gap:8px;}
+  .brand{font-size:.88rem;gap:7px;}
+  .brand-seal{width:32px;height:32px;flex-basis:32px;}
+  .header-note{font-size:.62rem;padding:4px 7px;}
+  .hero{width:100vw;margin:0 calc(50% - 50vw) 30px;padding:34px 13px 28px;}
+  h1{font-size:clamp(1.75rem,8vw,2.25rem);}
+  .chapter-card{padding:14px 12px;gap:10px;}
+  .card-title{font-size:.96rem;line-height:1.45;}
+}
+@media(hover:none){.chapter-card:hover{transform:none;}}
+
+@media print{
+  body{background:#fff}
+  .site-header{background:#fff;border-bottom:2px solid #5C4408;box-shadow:none}
+  .brand,.header-note{color:#081527}
+  .hero{box-shadow:none;break-inside:avoid}
+  .chapter-card{box-shadow:none;break-inside:avoid}
+}
+</style>
+<link rel="canonical" href="https://fbbffv.github.io/al-seljuki-meditative-encyclopedia/articles/index_dajjal.html"/>
+<meta property="og:url" content="https://fbbffv.github.io/al-seljuki-meditative-encyclopedia/articles/index_dajjal.html"/>
+</head>
+<body>
+<a class="skip-link" href="#chapters-title">انتقل إلى فهرس الفصول</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand"><span class="brand-seal" aria-hidden="true">۩</span><span>مَوْسُوعَةُ السَّلْجُوقِي</span></div>
+    <div class="header-actions">
+      <span class="header-note">بوابة بحث علمي مستقل</span>
+      <a class="home-link" href="../index.html" aria-label="العودة إلى الصفحة الرئيسية الرسمية للموسوعة" title="العودة إلى الصفحة الرئيسية الرسمية">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"></path><path d="M5 9v12h14V9"></path><path d="M9 21v-7h6v7"></path></svg>
+        <span>الصفحة الرسمية</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" aria-labelledby="page-title">
+    <div class="hero-frame" aria-hidden="true"></div>
+    <div class="eyebrow">دراسة علمية تدبّرية</div>
+    <h1 id="page-title">من الميقات المعلوم إلى فتنة الظهور الأخير<span>إبليس والمسيح الدجّال</span></h1>
+    <div class="ornament" aria-hidden="true"><span>❁</span></div>
+    <p class="subtitle">«قراءة تدبّرية اجتهادية في وحدة الصراع، واحتمال الصلة بين إبليس والدجّال، وأسرار الفتنة والظهور في آخر الزمان»</p>
+    <p class="author">بقلم:<strong>الشيخ علي خليل عباس السلجوقي التركماني</strong></p>
+    <div class="hero-meta" aria-label="معلومات البحث">
+      <span>ثمانية فصول</span><span>صفحات مستقلة</span><span>قراءة مباشرة دون اتصال</span>
+    </div>
+    <div class="share-wrap">
+      <button class="share-button" id="share-research" type="button" aria-label="مشاركة البحث">
+        <svg class="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><path d="m8.7 10.7 6.6-4.4M8.7 13.3l6.6 4.4"></path></svg>
+        <span>مشاركة البحث</span>
+      </button>
+      <span class="share-status" id="share-status" role="status" aria-live="polite"></span>
+    </div>
+
+  </section>
+  <section class="contents" aria-labelledby="chapters-title">
+    <div class="section-head">
+      <div class="section-kicker">دليل القراءة</div>
+      <h2 id="chapters-title">فهرس الفصول الثمانية</h2>
+      <p>اختر الفصل للانتقال مباشرة إلى صفحته المستقلة</p>
+    </div>
+    <nav class="grid" aria-label="روابط الفصول الثمانية">
+      <a class="chapter-card" href="article407_1.html" aria-label="قراءة الفصل 1: أسرار الميقات المعلوم: إبليس بين أجل الإنظار وسرّ الظهور… وهل يكون الدجال هو إبليس؟">
+        <span class="card-index" aria-hidden="true">01</span>
+        <span class="card-copy">
+          <span class="card-kicker">الفصل الأول</span>
+          <span class="card-title">أسرار الميقات المعلوم: إبليس بين أجل الإنظار وسرّ الظهور… وهل يكون الدجال هو إبليس؟</span>
+          <span class="card-action">قراءة الفصل <span aria-hidden="true">←</span></span>
+        </span>
+        <span class="card-mark" aria-hidden="true">❖</span>
+      </a>
+      <a class="chapter-card" href="article407_2.html" aria-label="قراءة الفصل 2: أسرار إبليس والدجال: من صراع آدم والشيطان إلى يوم الوقت المعلوم">
+        <span class="card-index" aria-hidden="true">02</span>
+        <span class="card-copy">
+          <span class="card-kicker">الفصل الثاني</span>
+          <span class="card-title">أسرار إبليس والدجال: من صراع آدم والشيطان إلى يوم الوقت المعلوم</span>
+          <span class="card-action">قراءة الفصل <span aria-hidden="true">←</span></span>
+        </span>
+        <span class="card-mark" aria-hidden="true">❖</span>
+      </a>
+      <a class="chapter-card" href="article407_3.html" aria-label="قراءة الفصل 3: هل الدجّال هو إبليس نفسه؟">
+        <span class="card-index" aria-hidden="true">03</span>
+        <span class="card-copy">
+          <span class="card-kicker">الفصل الثالث</span>
+          <span class="card-title">هل الدجّال هو إبليس نفسه؟</span>
+          <span class="card-action">قراءة الفصل <span aria-hidden="true">←</span></span>
+        </span>
+        <span class="card-mark" aria-hidden="true">❖</span>
+      </a>
+      <a class="chapter-card" href="article407_4.html" aria-label="قراءة الفصل 4: هل الدجّال الذي رآه تميم الداري هو إبليس؟ حوار في التجسّد والقيود والميقات المعلوم">
+        <span class="card-index" aria-hidden="true">04</span>
+        <span class="card-copy">
+          <span class="card-kicker">الفصل الرابع</span>
+          <span class="card-title">هل الدجّال الذي رآه تميم الداري هو إبليس؟ حوار في التجسّد والقيود والميقات المعلوم</span>
+          <span class="card-action">قراءة الفصل <span aria-hidden="true">←</span></span>
+        </span>
+        <span class="card-mark" aria-hidden="true">❖</span>
+      </a>
+      <a class="chapter-card" href="article407_5.html" aria-label="قراءة الفصل 5: الدجّال بين الرؤيا النبوية وحرمة مكة: حقيقة الظهور ومراحل التمهيد والتجسّد">
+        <span class="card-index" aria-hidden="true">05</span>
+        <span class="card-copy">
+          <span class="card-kicker">الفصل الخامس</span>
+          <span class="card-title">الدجّال بين الرؤيا النبوية وحرمة مكة: حقيقة الظهور ومراحل التمهيد والتجسّد</span>
+          <span class="card-action">قراءة الفصل <span aria-hidden="true">←</span></span>
+        </span>
+        <span class="card-mark" aria-hidden="true">❖</span>
+      </a>
+      <a class="chapter-card" href="article407_6.html" aria-label="قراءة الفصل 6: الدجّال وإبليس: هل يكون الدجّال التجسّد الأخير لإبليس في عالم البشر؟">
+        <span class="card-index" aria-hidden="true">06</span>
+        <span class="card-copy">
+          <span class="card-kicker">الفصل السادس</span>
+          <span class="card-title">الدجّال وإبليس: هل يكون الدجّال التجسّد الأخير لإبليس في عالم البشر؟</span>
+          <span class="card-action">قراءة الفصل <span aria-hidden="true">←</span></span>
+        </span>
+        <span class="card-mark" aria-hidden="true">❖</span>
+      </a>
+      <a class="chapter-card" href="article407_7.html" aria-label="قراءة الفصل 7: الدجال وحقيقة الأيام الأربعين">
+        <span class="card-index" aria-hidden="true">07</span>
+        <span class="card-copy">
+          <span class="card-kicker">الفصل السابع</span>
+          <span class="card-title">الدجال وحقيقة الأيام الأربعين</span>
+          <span class="card-action">قراءة الفصل <span aria-hidden="true">←</span></span>
+        </span>
+        <span class="card-mark" aria-hidden="true">❖</span>
+      </a>
+      <a class="chapter-card" href="article407_8.html" aria-label="قراءة الفصل 8: إبليس هو المسيح الدجّال: من بداية الصراع مع آدم إلى التجسّد الأخير للفتنة في عالم البشر">
+        <span class="card-index" aria-hidden="true">08</span>
+        <span class="card-copy">
+          <span class="card-kicker">الفصل الثامن</span>
+          <span class="card-title">إبليس هو المسيح الدجّال: من بداية الصراع مع آدم إلى التجسّد الأخير للفتنة في عالم البشر</span>
+          <span class="card-action">قراءة الفصل <span aria-hidden="true">←</span></span>
+        </span>
+        <span class="card-mark" aria-hidden="true">❖</span>
+      </a>
+    </nav>
+  </section>
+  <footer class="rights-banner" aria-label="حقوق النشر والملكية الفكرية">
+  <div class="rights-banner-inner">
+    <div class="rights-brand">
+      <span class="rights-emblem" aria-hidden="true">✦</span>
+      <span>موسوعة السلجوقي التدبرية</span>
+      <span class="rights-emblem" aria-hidden="true">✦</span>
+    </div>
+    <div class="rights-main">
+      <span class="rights-overline">الملكية الفكرية وحقوق النشر</span>
+      <strong>جميع الحقوق محفوظة</strong>
+      <span class="rights-copyright">© موسوعة السلجوقي التدبرية</span>
+    </div>
+    <div class="rights-author">
+      <span>إعداد وتأليف</span>
+      <strong>الشيخ علي خليل عباس السلجوقي التركماني</strong>
+    </div>
+    <p class="rights-note">هذا الفهرس بوابة تعريفية للفصول الثمانية، وتُفتح مواد البحث من صفحاتها المستقلة.</p>
+  </div>
+</footer>
+</main>
+
+<script>
+(() => {
+  const button = document.getElementById('share-research');
+  const status = document.getElementById('share-status');
+  if (!button || !status) return;
+  const shareData = {
+    title: 'من الميقات المعلوم إلى فتنة الظهور الأخير | إبليس والمسيح الدجّال',
+    text: 'قراءة تدبّرية اجتهادية في وحدة الصراع، واحتمال الصلة بين إبليس والدجّال، وأسرار الفتنة والظهور في آخر الزمان.',
+    url: window.location.href
+  };
+  async function copyLink() {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(shareData.url);
+      } else {
+        const field = document.createElement('textarea');
+        field.value = shareData.url;
+        field.setAttribute('readonly', '');
+        field.style.position = 'fixed'; field.style.opacity = '0';
+        document.body.appendChild(field); field.select();
+        const copied = document.execCommand('copy');
+        field.remove();
+        if (!copied) throw new Error('copy unavailable');
+      }
+      status.textContent = 'نُسخ رابط البحث؛ يمكنك إرساله الآن.';
+    } catch (_) {
+      status.textContent = 'تعذّر نسخ الرابط تلقائيًا؛ انسخ عنوان الصفحة من شريط المتصفح.';
+    }
+  }
+  button.addEventListener('click', async () => {
+    status.textContent = '';
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        status.textContent = 'تم فتح خيارات مشاركة البحث.';
+      } catch (error) {
+        if (error && error.name === 'AbortError') return;
+        await copyLink();
+      }
+    } else {
+      await copyLink();
+    }
+  });
+})();
+</script>
+</body>
+</html>
