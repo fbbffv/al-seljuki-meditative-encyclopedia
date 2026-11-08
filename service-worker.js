@@ -5,7 +5,7 @@
   - كل مقال يزوره المستخدم مرة واحدة (بإنترنت) يُصبح متاحاً دائماً بعدها بلا إنترنت.
 */
 
-const CACHE_VERSION = 'suljuki-v34';
+const CACHE_VERSION = 'suljuki-v35';
 const MOST_READ_CACHE = 'suljuki-most-read-persistent-v1';
 const MOST_READ_PATHS = ['/qa/most-read.json', '/articles/most-read.json'];
 const CORE_ASSETS = [
