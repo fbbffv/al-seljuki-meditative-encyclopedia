@@ -4,7 +4,7 @@
   - يحفظ كل صفحة/مقال/فهرس يزوره المستخدم من النطاق نفسه.
   - زر التنزيل وجرس التحديث يحفظان كامل قائمة المحتوى في Cache Storage.
 */
-const CACHE_VERSION = 'suljuki-v43';
+const CACHE_VERSION = 'suljuki-v44';
 const MOST_READ_CACHE = 'suljuki-most-read-persistent-v1';
 const MOST_READ_PATHS = ['/qa/most-read.json', '/articles/most-read.json'];
 const CORE_ASSETS = [
@@ -47,6 +47,24 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  // بيان الإصدارات يجب أن يأتي من الشبكة أولاً حتى يستطيع جرس التحديث اكتشاف النسخة المنشورة.
+  if (url.pathname.endsWith('/articles-manifest.json')) {
+    event.respondWith((async () => {
+      const cache = await caches.open(CACHE_VERSION);
+      const canonical = new Request(new URL('articles-manifest.json', self.registration.scope).href);
+      try {
+        const fresh = await fetch(request, {cache:'no-store'});
+        if (fresh && fresh.ok) await cache.put(canonical, fresh.clone());
+        return fresh;
+      } catch (error) {
+        const saved = await cache.match(canonical, {ignoreSearch:true});
+        if (saved) return saved;
+        throw error;
+      }
+    })());
+    return;
+  }
 
   if (MOST_READ_PATHS.some((path) => url.pathname.endsWith(path))) {
     event.respondWith((async () => {

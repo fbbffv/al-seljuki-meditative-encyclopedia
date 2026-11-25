@@ -10645,12 +10645,108 @@ function checkForUpdates(){
   }
 })();
 </script>
+<!-- ═══ اكتشاف تحديثات الموسوعة وإظهار جرس التنبيه تلقائياً ═══ -->
+<script>
+(function(){
+  'use strict';
+  var badge = document.getElementById('newBadge');
+  if (!badge) return;
+  var VERSION_KEY = 'suljuki_last_acknowledged_manifest_v1';
+  var QUESTIONS_KEY = 'suljuki_last_acknowledged_questions_v1';
+  var PENDING_VERSION_KEY = 'suljuki_pending_manifest_update_v1';
+  var PENDING_QUESTIONS_KEY = 'suljuki_pending_questions_update_v1';
+  var PAGE_VERSION = Number(document.body.getAttribute('data-manifest-version') || 0);
+  var PAGE_QUESTIONS = Number(document.body.getAttribute('data-questions-version') || 0);
+  var MANIFEST_URL = 'articles-manifest.json';
+  var checking = false;
+
+  function readAcknowledgedVersion(){
+    try {
+      var saved = localStorage.getItem(VERSION_KEY);
+      if (saved !== null) { var value = Number(saved); return Number.isFinite(value) && value >= 0 ? value : PAGE_VERSION; }
+      // إذا اكتُشف التحديث قبل إعادة تحميل الصفحة، نبقي خط الأساس قديماً حتى يراه المستخدم بعد التحديث.
+      if (localStorage.getItem(PENDING_VERSION_KEY) !== null) return 0;
+      // ترحيل لمستخدمي نظام التنزيل السابق: لم يكن الجرس يحفظ آخر إصدار تمت رؤيته.
+      // نعرض لهم تنبيهاً واحداً عن الإصدار الحالي، ثم يُحفظ الإصدار عند الضغط على الجرس.
+      if (localStorage.getItem('suljuki_downloaded_content_v3') !== null) return Math.max(0, PAGE_VERSION - 1);
+      return PAGE_VERSION;
+    } catch (e) { return PAGE_VERSION; }
+  }
+  function showUpdate(version, count){
+    var label = badge.querySelector('span:last-child');
+    if (label) label.textContent = count > 0
+      ? '🔔 يوجد '+count+' تحديث/تحديثات جديدة في الموسوعة — اضغط للتنزيل'
+      : '🔔 يتوفر تحديث جديد للموسوعة — اضغط للتنزيل';
+    badge.dataset.availableVersion = String(version);
+    badge.classList.add('show');
+    badge.setAttribute('aria-label', 'يوجد تحديث جديد للموسوعة. اضغط لتنزيله');
+  }
+  function hideUpdate(){
+    badge.classList.remove('show');
+    delete badge.dataset.availableVersion;
+  }
+  window.acknowledgeLatestVersion = function(version){
+    var value = Number(version || badge.dataset.availableVersion || PAGE_VERSION);
+    if (!Number.isFinite(value) || value < 0) value = PAGE_VERSION;
+    try {
+      localStorage.setItem(VERSION_KEY, String(value));
+      var q = Number(localStorage.getItem(PENDING_QUESTIONS_KEY) || PAGE_QUESTIONS);
+      localStorage.setItem(QUESTIONS_KEY, String(q));
+      localStorage.removeItem(PENDING_VERSION_KEY);
+      localStorage.removeItem(PENDING_QUESTIONS_KEY);
+    } catch (e) {}
+    hideUpdate();
+  };
+  window.checkEncyclopediaUpdates = async function(){
+    if (checking || !navigator.onLine) return;
+    checking = true;
+    try {
+      var url = new URL(MANIFEST_URL, document.baseURI);
+      url.searchParams.set('update_check', String(Date.now()));
+      var response = await fetch(url.href, {cache:'no-store', credentials:'same-origin'});
+      if (!response.ok) throw new Error('Manifest HTTP '+response.status);
+      var data = await response.json();
+      var remoteVersion = Number(data && data.version || 0);
+      var remoteQuestions = Number(data && data.questionsVersion || 0);
+      var pageQuestions = Number(document.body.getAttribute('data-questions-version') || 0);
+      var acknowledged = readAcknowledgedVersion();
+      var savedQuestions = Number(localStorage.getItem(QUESTIONS_KEY));
+      if (!Number.isFinite(savedQuestions)) savedQuestions = (localStorage.getItem(PENDING_QUESTIONS_KEY) !== null ? 0 : pageQuestions);
+      var hasNewArticles = remoteVersion > acknowledged;
+      var hasNewQuestions = remoteQuestions > savedQuestions;
+      if (hasNewArticles || hasNewQuestions) {
+        try {
+          if (hasNewArticles) localStorage.setItem(PENDING_VERSION_KEY, String(remoteVersion));
+          if (hasNewQuestions) localStorage.setItem(PENDING_QUESTIONS_KEY, String(remoteQuestions));
+        } catch (e) {}
+        var delta = Math.max(0, remoteVersion - acknowledged);
+        showUpdate(remoteVersion, delta);
+      } else {
+        // لا نمسح تنبيهاً سابقاً لم يُعالج بعد.
+        if (remoteVersion <= acknowledged && !hasNewQuestions) hideUpdate();
+      }
+    } catch (error) {
+      // الفشل المؤقت في الشبكة لا يخفي جرساً سبق إظهاره ولا يعطل الصفحة.
+      console.warn('تعذر فحص تحديثات الموسوعة:', error);
+    } finally { checking = false; }
+  };
+  window.addEventListener('online', window.checkEncyclopediaUpdates);
+  window.addEventListener('focus', window.checkEncyclopediaUpdates);
+  document.addEventListener('visibilitychange', function(){
+    if (!document.hidden) window.checkEncyclopediaUpdates();
+  });
+  window.addEventListener('load', function(){
+    window.checkEncyclopediaUpdates();
+    window.setInterval(window.checkEncyclopediaUpdates, 6 * 60 * 60 * 1000);
+  });
+})();
+</script>
 <!-- ═══ تحميل المحتوى للقراءة بلا إنترنت بطلب المستخدم مع عدّاد ظاهر ═══ -->
 <script>
 (function(){
   var MANIFEST_URL = 'articles-manifest.json';
   var SEEN_KEY = 'suljuki_downloaded_content_v3';
-  var CACHE_NAME = 'suljuki-v43';
+  var CACHE_NAME = 'suljuki-v44';
   var EXTRA_OFFLINE_ASSETS = [
     './', 'index.html', 'sitemap-page.html', 'articles/index_article453.html',
     'articles-manifest.json', 'service-worker.js', 'manifest.json',
