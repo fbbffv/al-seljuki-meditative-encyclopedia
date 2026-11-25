@@ -1,70 +1,62 @@
 /*
-  عامل خدمة موسوعة السلجوقي — الإصدار الثاني (مُصحَّح)
-  - يعرض الصفحة الرئيسية فوراً من الذاكرة المحفوظة (سرعة فورية)، ثم يتحقق من التحديثات؛ ولا ينزّل مجموعة المقالات إلا بطلب المستخدم.
-  - يُميّز بدقة بين الصفحة الرئيسية والمقالات، بحيث تُفتح كل المقالات المحفوظة سابقاً بلا إنترنت.
-  - كل مقال يزوره المستخدم مرة واحدة (بإنترنت) يُصبح متاحاً دائماً بعدها بلا إنترنت.
+  عامل خدمة موسوعة السلجوقي — التخزين الشامل v43
+  - يخزن الملفات الأساسية كلّاً على حدة حتى لا يفشل التخزين بسبب ملف واحد مفقود.
+  - يحفظ كل صفحة/مقال/فهرس يزوره المستخدم من النطاق نفسه.
+  - زر التنزيل وجرس التحديث يحفظان كامل قائمة المحتوى في Cache Storage.
 */
-
-const CACHE_VERSION = 'suljuki-v35';
+const CACHE_VERSION = 'suljuki-v43';
 const MOST_READ_CACHE = 'suljuki-most-read-persistent-v1';
 const MOST_READ_PATHS = ['/qa/most-read.json', '/articles/most-read.json'];
 const CORE_ASSETS = [
-  './',
-  './index.html',
-  './manifest.json',
-  './icon.png',
-  './sheikh.png'
+  './', './index.html', './sitemap-page.html', './articles-manifest.json',
+  './service-worker.js', './articles/index_article453.html',
+  './manifest.json', './icon.png', './sheikh.png', './logo-header.png',
+  './about.html', './en/index.html'
 ];
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
-  event.waitUntil(
-    caches.open(CACHE_VERSION).then((cache) =>
-      cache.addAll(CORE_ASSETS).catch(() => {})
-    )
-  );
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_VERSION);
+    // لا نستخدم addAll هنا: فشل ملف منفرد لا ينبغي أن يمنع حفظ بقية الملفات.
+    await Promise.all(CORE_ASSETS.map(async (asset) => {
+      try {
+        const response = await fetch(asset, {cache:'reload'});
+        if (response && response.ok) await cache.put(asset, response.clone());
+      } catch (error) {
+        // سيعاد طلب الملف عند زيارة الصفحة أو عند تشغيل التنزيل الشامل.
+      }
+    }));
+  })());
 });
 
 self.addEventListener('activate', (event) => {
-  event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(
-        keys.filter((key) => key.startsWith('suljuki-v') && key !== CACHE_VERSION).map((key) => caches.delete(key))
-      )
-    ).then(() => self.clients.claim())
-  );
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.filter((key) => key.startsWith('suljuki-v') && key !== CACHE_VERSION).map((key) => caches.delete(key)));
+    await self.clients.claim();
+  })());
 });
 
-// دالة مساعدة: هل هذا الطلب هو تحديداً الصفحة الرئيسية؟ (وليس أي انتقال آخر كفتح مقال)
-function isHomePageRequest(url) {
-  return url.pathname.endsWith('/') || url.pathname.endsWith('/index.html');
-}
-
-
-// تطبيق التحديث فوراً عند طلب الصفحة الرئيسية.
 self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
+  if (event.data && event.data.type === 'SKIP_WAITING') self.skipWaiting();
 });
 
 self.addEventListener('fetch', (event) => {
-  const req = event.request;
-  if (req.method !== 'GET') return;
-
-  const url = new URL(req.url);
+  const request = event.request;
+  if (request.method !== 'GET') return;
+  const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // قوائم الأكثر قراءة: الشبكة أولاً، مع الاحتفاظ بآخر نسخة ناجحة دائماً.
   if (MOST_READ_PATHS.some((path) => url.pathname.endsWith(path))) {
     event.respondWith((async () => {
       const cache = await caches.open(MOST_READ_CACHE);
       try {
-        const response = await fetch(req);
-        if (response.ok) await cache.put(req, response.clone());
+        const response = await fetch(request);
+        if (response && response.ok) await cache.put(request, response.clone());
         return response;
       } catch (error) {
-        const saved = await cache.match(req, {ignoreSearch:true});
+        const saved = await cache.match(request, {ignoreSearch:true});
         if (saved) return saved;
         throw error;
       }
@@ -72,35 +64,18 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (isHomePageRequest(url)) {
-    // الصفحة الرئيسية فقط: اعرض المحفوظ فوراً (بلا انتظار)، وحدّثه عند طلب التصفح؛ أما تنزيل جميع المقالات فيتم بزر التحميل مع عدّاد
-    event.respondWith(
-      caches.match(req).then((cached) => {
-        const networkUpdate = fetch(req).then((res) => {
-          if (res && res.status === 200) {
-            caches.open(CACHE_VERSION).then((cache) => cache.put(req, res.clone()));
-          }
-          return res;
-        }).catch(() => cached);
-        return cached || networkUpdate;
-      })
-    );
-    return;
-  }
-
-  // كل شيء آخر (المقالات، الصور، الأيقونات): الكاش أولاً للسرعة والعمل بلا إنترنت،
-  // مع تحديث الكاش في الخلفية عند توفر الإنترنت
-  event.respondWith(
-    caches.match(req).then((cached) => {
-      const networkFetch = fetch(req)
-        .then((res) => {
-          if (res && res.status === 200) {
-            caches.open(CACHE_VERSION).then((cache) => cache.put(req, res.clone()));
-          }
-          return res;
-        })
-        .catch(() => cached);
-      return cached || networkFetch;
-    })
-  );
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_VERSION);
+    const cached = await cache.match(request, {ignoreSearch:true});
+    if (cached) return cached;
+    try {
+      const response = await fetch(request);
+      if (response && response.ok) await cache.put(request, response.clone());
+      return response;
+    } catch (error) {
+      const fallback = await cache.match(request, {ignoreSearch:true});
+      if (fallback) return fallback;
+      throw error;
+    }
+  })());
 });
